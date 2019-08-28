@@ -1,0 +1,22 @@
+---
+description: アプリの管理には、アプリの設定と、様々な変数および指標の管理が含まれます。
+keywords: モバイル
+seo-description: アプリの管理には、アプリの設定と、様々な変数および指標の管理が含まれます。
+seo-title: アプリ設定
+solution: Marketing Cloud、Analytics
+title: アプリ設定
+topic: 指標
+uuid: 2ca93f92- f812-434c- add0-5bdf1442eb20
+translation-type: tm+mt
+source-git-commit: 3b744229b3fc288363be74c3c4adcd71ecc4fad4
+
+---
+
+
+# アプリ設定{#manage-app-settings}
+
+アプリの管理には、アプリの設定と様々な変数や指標の管理が含まれます。
+
+>[!IMPORTANT]
+>
+>このページを編集するには、モバイルアプリ管理者グループのメンバーである必要があります。To determine whether you are a member of this group, click **[!UICONTROL Admin Tools]** &gt; **[!UICONTROL User Management]** &gt; **[!UICONTROL Groups]** &gt; **[!UICONTROL Mobile App Admin]**.
