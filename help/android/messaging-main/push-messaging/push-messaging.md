@@ -59,7 +59,7 @@ Adobe Mobile および Adobe Mobile SDK を使用すると、ユーザーにプ�
    プッシュクリックスルーレポートを有効にするための要件を次に示します。
 
    * In your implementation of `FireBaseMessageService`, the Bundle object that contains the message data, which is passed into the `onMessageReceived` method with the RemoteMessage object, must be added to the Intent that is used to open the target activity on a click-through. この方法は `putExtras` 、メソッドを使用して実行できます。For more information, see [putExtras](https://developer.android.com/reference/android/content/Intent.html#putExtras(android.os.Bundle))).
-   
+
    ```java
    Intent intent = new Intent(this, MainActivity.class);
       intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
