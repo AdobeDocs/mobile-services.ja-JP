@@ -119,9 +119,10 @@ Analyticsの自動生成された訪問者識別子を返します。
    >この呼び出しはヒットを送信しません。
 
    * このメソッドの構文を次に示します。
-   ```java
-   publicstaticvoidtrackTimedActionStart(Stringaction,Map<String,Object>contextData);
-   ```
+
+      ```java
+      publicstaticvoidtrackTimedActionStart(Stringaction,Map<String,Object>contextData);
+      ```
 
    * このメソッドのコードサンプルを次に示します。
 
