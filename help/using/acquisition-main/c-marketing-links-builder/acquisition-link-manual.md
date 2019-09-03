@@ -8,7 +8,7 @@ title: ダウンロード計測用リンクの手動作成
 topic: 指標
 uuid: d7709203- f793-4982- adaa-9c3c914aca2b
 translation-type: tm+mt
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+source-git-commit: 54e3b2d673356a616987537d20758bef8b044db4
 
 ---
 
@@ -44,7 +44,7 @@ iOS の場合、次の正しいプロトコルを使用していることを確�
 
 * `{mobile-services-app-hash}` は、設定 `acquisition:appid ` ファイル内のアプリケーション識別子と一致します。
 
-   You can locate `{mobile-services-app-has}` in the Manage App Settings page under Acquisition SDK Options in the Tracking ID field.
+   You can locate `{mobile-services-app-hash}` in the Manage App Settings page under Acquisition SDK Options in the Tracking ID field.
 
    ![](assets/tracking-id.png)
 
