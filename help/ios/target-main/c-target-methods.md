@@ -7,7 +7,7 @@ title: iOSのTargetメソッド
 topic: 開発者と導入
 uuid: 692bcda1-02ba-4902- bd65-15888adf1952
 translation-type: tm+mt
-source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
+source-git-commit: 8dc075603544aaab7fdedb1ff10a12f7fa7e21f5
 
 ---
 
@@ -20,7 +20,7 @@ SDKは、現在、Analytics、Target、Audience Manager、Adobe Experience Platf
 
 >[!TIP]
 >
->ライフサイクル指標は、各 mbox が読み込むパラメーターとして送信されます。詳しくは、[ライフサイクル指標](/help/ios/metrics.md)を参照してください。
+>ライフサイクル指標は、各 mbox が読み込むパラメーターとして送信されます。詳しくは、[ライフサイクル指標](/help/ios/metrics.md)を参照してください。`didFinishLaunching` delegateメソッド内でTargetリクエストを送信する場合は、Target実装コードの前に、また `[ADBMobile trackAction:data:]` は `[ADBMobile trackState:data:]` 呼び出しを追加します。これにより、Targetリクエストに完全なライフサイクルデータが含まれます。
 
 ## クラスリファレンス:ADBTargetLocationRequest
 
@@ -32,11 +32,11 @@ NSString *defaultContent;
 NSMutableDictionary *parameters;
 ```
 
-### 文字列定数
+### String constants
 
 >[!TIP]
 >
->次の定数は、カスタムパラメーターにキーを設定するときに使いやすくするためのものです。
+>The following constants are for ease of use when you set keys for custom parameters.
 
 ```iOS
 NSString *const ADBTargetParameterOrderId; 
@@ -264,7 +264,7 @@ NSString *const ADBTargetParameterMboxHost;
 
    >[!TIP]
    >
-   >SDKのバージョン4.10.0以降、Targetはcookieを使用しなくなりました。このメソッドは、thirdPartyID と sessionID をリセットします。
+   >このメソッドは、thirdPartyID と sessionID をリセットします。
 
    * このメソッドの構文を次に示します。
 
