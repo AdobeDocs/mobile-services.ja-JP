@@ -8,7 +8,7 @@ title: Adobe Experience Platform IDサービスのメソッド
 topic: 開発者と導入
 uuid: c5107a7e-273b-4f71-8738-4c603479b24c
 translation-type: tm+mt
-source-git-commit: a54a969bb6abedfeb0fc20276d260664b68c1d66
+source-git-commit: 8fc515a6e89044b9dac98b3f207c5f43b658a2ec
 
 ---
 
@@ -17,7 +17,7 @@ source-git-commit: a54a969bb6abedfeb0fc20276d260664b68c1d66
 
 Android ライブラリによって提供される Experience Cloud ID メソッドを示します。
 
-SDKは、現在、Analytics、Target、Audience Manager、Adobe Experience Platform IDサービスなど、複数のAdobe Experience Cloudソリューションをサポートしています。
+The SDK currently supports multiple Adobe Experience Cloud Solutions], including Analytics, Target, Audience Manager, and the Adobe Experience Platform Identity Service.
 
 Methods are prefixed according to the solution. For example, Experience Cloud ID methods are prefixed with `visitor`. For more information, see [Experience Cloud ID Configuration](/help/android/c-marketing-cloud/mcvid.md).
 
@@ -25,14 +25,14 @@ Methods are prefixed according to the solution. For example, Experience Cloud ID
 
    アドビ JavaScript ライブラリで使用するために、アドビ訪問者データを URL 文字列に追加します。このメソッドを使用するには、Mobile SDK 4.12 以降が必要です。詳しくは、[訪問者 ID ヘルパー関数の追加](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-appendvisitorid.html)を参照してください。
 
-   >[!重要]
+   >[!IMPORTANT]
    >
    >このメソッドは、ブロックネットワーク呼び出しを引き起こす可能性があります。時間的制約があるスレッドでこのメソッドを呼び出さないでください。
 
    * このメソッドの構文を次に示します。
 
       ```java
-      URL java.lang.String  
+      public static String appendToURL(final String URL) 
       ```
 
       訪問者情報が追加される、必須の URL 文字列。
