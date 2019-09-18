@@ -2,12 +2,12 @@
 description: Experience Cloud ソリューション用 iOS SDK 4.x を使用すると、ネイティブの Apple iPhone および iPad アプリケーションを測定したり、アプリ内からターゲットコンテンツを配信したり、Audience Manager でオーディエンスデータを活用および収集したりできます。
 seo-description: Experience Cloud ソリューション用 iOS SDK 4.x を使用すると、ネイティブの Apple iPhone および iPad アプリケーションを測定したり、アプリ内からターゲットコンテンツを配信したり、Audience Manager でオーディエンスデータを活用および収集したりできます。
 seo-title: Experience Cloud ソリューション用 iOS SDK 4.x
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: Experience Cloud ソリューション用 iOS SDK 4.x
 topic: 開発者と導入
-uuid: 8b374cee-1432-460b- aac2-70623dd80a04
+uuid: 8b374cee-1432-460b-aac2-70623dd80a04
 translation-type: tm+mt
-source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
+source-git-commit: 1070450065776fdb7d13e9b21ce62ceeee55b80e
 
 ---
 
@@ -18,7 +18,11 @@ Experience Cloud ソリューション用 iOS SDK 4.x を使用すると、ネ�
 
 >[!IMPORTANT]
 >
->Mobile Servicesの獲得、ディープリンク、位置情報およびモバイルメッセージング機能へのアクセスを有効にするには、Adobe Analytics Mobile Marketing Add- on SKUが必要です。詳しくは、Adobe CSMにお問い合わせください。
+>Mobile Servicesでモバイル獲得、ディープリンク、位置情報およびモバイルメッセージング機能にアクセスできるようにするには、Adobe Analytics Mobile Marketing Add-on SKUが必要です。 詳しくは、Adobe CSMにお問い合わせください。
+
+>[!IMPORTANT]
+>
+>Adobe Experience Platform Mobile SDKは、 [iOS 13およびXcode 11をサポートするようになりました][https://developer.apple.com/ios/]。 シームレスな互換性を確保するには、Experience Platform Mobile SDK [拡張の最新バージョンを使用してください](https://app.gitbook.com/@aep-sdks/s/docs/resources/frequently-asked-questions/current-sdk-versions)。
 
 ## Adobe Experience Cloud SDK の新規リリース
 
@@ -41,13 +45,13 @@ Adobe Experience Platform Mobile SDK に関する情報やドキュメントを�
 
 * この SDK のバージョン 4.2 以降では、すべてのヒットが HTTP POST を使用して送信されるようになりました。
 
-   これは収集またはレポートされるデータには影響しませんが、ヒットを表示するためにPOSTデータ検査をサポートするパケットアナライザーを使用する必要があります。
+   これは、収集またはレポートされるデータには影響しませんが、ヒットを表示するには、POSTデータの検査をサポートするパケットアナライザーを使用する必要があります。
 
 * If you are upgrading from a previous version (2.x or 3.x), see the [4.x Migration Guide](/help/ios/getting-started/migration-v3.md).
 
 ## Adobe Mobile ユーザー向けドキュメント {#section_7583FD5FDED143619048E9744A3F2D21}
 
-Adobe Mobile Services は、モバイルアプリケーション用のモバイルマーケティング機能を Adobe Experience Cloud 上で統合する新しい UI を提供します。最初に、Mobileサービスは、Adobe Analytics、Adobe Audience ManagerおよびAdobe TargetソリューションおよびAdobe Experience Platform IDサービスのアプリ分析およびターゲット機能とのシームレスな統合を提供します。
+Adobe Mobile Services は、モバイルアプリケーション用のモバイルマーケティング機能を Adobe Experience Cloud 上で統合する新しい UI を提供します。最初は、Adobe Analytics、Adobe Audience Manager、Adobe targetの各ソリューション、Adobe Experience Platform IDサービスのアプリ分析およびターゲット化機能をシームレスに統合できます。
 
 Mobile Services UI の詳細を学習し、ユーザードキュメントを読むには、[Adobe Mobile Services](/help/using/home.md) を参照してください。
 
