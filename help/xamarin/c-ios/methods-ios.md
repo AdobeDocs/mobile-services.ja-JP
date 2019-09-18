@@ -2,12 +2,12 @@
 description: Experience Cloud ソリューション 4.x SDK 用 Xamarin コンポーネントの iOS メソッド。
 keywords: Xamarin
 seo-description: Experience Cloud ソリューション 4.x SDK 用 Xamarin コンポーネントの iOS メソッド。
-seo-title: iOSのメソッド
+seo-title: iOSメソッド
 solution: Marketing Cloud，開発者
-title: iOSのメソッド
-uuid: d6a056db-80c1-44d0-970f- c961ad01b0bc
+title: iOSメソッド
+uuid: d6a056db-80c1-44d0-970f-c961ad01b0bc
 translation-type: tm+mt
-source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
+source-git-commit: f53953831e6471ea64eb2ae06ddae16ca0eab6f6
 
 ---
 
@@ -34,7 +34,7 @@ Experience Cloud ソリューション 4.x SDK 用 Xamarin コンポーネント
       ADBMobile.CollectLifecycleData();
       ```
 
-* **debugLogging**
+* **DebugLogging**
 
    現在のデバッグログの環境設定を返します。デフォルト値は `false` です。
 
@@ -57,13 +57,15 @@ Experience Cloud ソリューション 4.x SDK 用 Xamarin コンポーネント
    * このメソッドの構文を次に示します。
 
       ```objective-c
-      public static void SetDebugLogging(bool enabled); 
-      
+      public static void SetDebugLogging(bool enabled);
+      ```
+
    * このメソッドのコードサンプルを次に示します。
 
       ```objective-c
       ADBMobile.SetDebugLogging(true);
-      
+      ```
+
 * **LifetimeValue**
 
    現在のユーザーのライフタイム値を返します。
@@ -71,21 +73,21 @@ Experience Cloud ソリューション 4.x SDK 用 Xamarin コンポーネント
    * このメソッドの構文を次に示します。
 
       ```objective-c
-      public static double LifetimeValue(); 
+      public static double LifetimeValue();
       ```
 
    * このメソッドのコードサンプルを次に示します。
 
       ```objective-c
-      var lifetimeValue = ADBMobile.LifetimeValue(); 
+      var lifetimeValue = ADBMobile.LifetimeValue();
       ```
 
 * **PrivacyStatus**
 
    現在のユーザーのプライバシーステータスの enum 表現を返します。
-   * `ADBMobilePrivacyStatus.OptIn` - ヒットは即座に送信されます。
-   * `ADBMobilePrivacyStatus.OptOut` - ヒットは破棄されます。
-   * ADBMobilePrivacyStatus.Unknown - オフライン追跡が有効な場合、プライバシーステータスがオプトイン（ヒットが送信される）またはオプトアウト（ヒットが破棄される）に変更されるまで、ヒットは保存されます。オフライン追跡が無効になっている場合、プライバシーステータスがオプトインに変更されるまで、ヒットは破棄されます。
+   * `ADBMobilePrivacyStatus.OptIn`  — ヒットは直ちに送信されます。
+   * `ADBMobilePrivacyStatus.OptOut`  — ヒットは破棄されます。
+   * ADBMobilePrivacyStatus.Unknown - オフライン追跡が有効な場合、プライバシーステータスがオプトイン（ヒットが送信される）またはオプトアウト（ヒットが破棄される）に変更されるまで、ヒットは保存されます。オフライン追跡が無効な場合、プライバシーステータスがオプトインに変わるまで、ヒットは破棄されます。
    The default value is set in the [ADBMobileConfig.json](/help/ios/configuration/json-config/json-config.md).
 
    * このメソッドの構文を次に示します。
@@ -97,15 +99,15 @@ Experience Cloud ソリューション 4.x SDK 用 Xamarin コンポーネント
    * このメソッドのコードサンプルを次に示します。
 
       ```objective-c
-       var privacyStatus = ADBMobile.PrivacyStatus(); 
+      var privacyStatus = ADBMobile.PrivacyStatus();
       ```
 
 
 * **SetPrivacyStatus**
 
    現在のユーザーのプライバシーステータスをステータスに設定します。次のいずれかに設定します。
-   * `ADBMobilePrivacyStatus.OptIn` - ヒットは即座に送信されます。
-   * `ADBMobilePrivacyStatus.OptOut` - ヒットは破棄されます。
+   * `ADBMobilePrivacyStatus.OptIn`  — ヒットは直ちに送信されます。
+   * `ADBMobilePrivacyStatus.OptOut`  — ヒットは破棄されます。
    * `ADBMobilePrivacyStatus.Unknown` - オフライン追跡が有効になっている場合、プライバシーステータスがオプトイン（ヒットが送信される）またはオプトアウト（ヒットが破棄される）に変更されるまで、ヒットは保存されます。オフライン追跡が有効になっていない場合、プライバシーステータスがオプトインに変更されるまで、ヒットは破棄されます。
 
    * このメソッドの構文を次に示します。
@@ -174,12 +176,12 @@ Experience Cloud ソリューション 4.x SDK 用 Xamarin コンポーネント
 
    >[!TIP]
    >
-   >このメソッドは、バックグラウンドで通知を登録するアプリで使用することを目的としており、アプリがバックグラウンドにある間に実行されるコードからのみ呼び出される必要があります。
+   >このメソッドは、バックグラウンドで通知を登録するアプリに対して使用されることを目的としており、アプリがバックグラウンドで実行されている間に実行されるコードからのみ呼び出す必要があります。
 
    * このメソッドの構文を次に示します。
 
       ```objective-c
-       public static void KeepLifecycleSessionAlive();
+      public static void KeepLifecycleSessionAlive();
       ```
 
    * このメソッドのコードサンプルを次に示します。
@@ -203,15 +205,15 @@ Experience Cloud ソリューション 4.x SDK 用 Xamarin コンポーネント
    * このメソッドのコードサンプルを次に示します。
 
       ```objective-c
-       var trackingId = ADBMobile.TrackingIdentifier();
+      var trackingId = ADBMobile.TrackingIdentifier();
       ```
 
 * **TrackState**
 
-   オプションのコンテキストデータでアプリ状態を追跡します。状態は、「title screen」、「level 1」、「pause」など、アプリで利用できる表示です。これらの状態は、Webサイト上のページと同様に `TrackState` 、呼び出しページビュー数を増分します。状態が空の場合、レポートには「アプリ名アプリのバージョン（ビルド）」と表示されます。レポートにこの値がある場合、各 `TrackState` 呼び出しで state を設定していることを確認してください。
+   オプションのコンテキストデータでアプリ状態を追跡します。状態は、「title screen」、「level 1」、「pause」など、アプリで利用できる表示です。これらの状態は、Webサイト上のページに似ており、呼び出しによってページビュー数が増加します。状態が空の場合、レポートに「app name app version (build)」と表示されます。 `TrackState` レポートにこの値がある場合、各 `TrackState` 呼び出しで state を設定していることを確認してください。
 
    [!TIP]
-   >これはページビュー数が増える唯一のトラッキング呼び出しです。
+   >これは、ページビュー数を増やす唯一のトラッキングコールです。
    >
    * このメソッドの構文を次に示します。
 
@@ -251,7 +253,7 @@ Experience Cloud ソリューション 4.x SDK 用 Xamarin コンポーネント
    バックグラウンドで発生したアクションを追跡します。これにより、特定の状況でライフサイクルイベントが発生するのを抑えます。
 
    >[!TIP]
-   このメソッドは、アプリケーションがバックグラウンドにある間に実行されるコードでのみ呼び出す必要があります。
+   このメソッドは、アプリがバックグラウンドにある間に実行されるコードでのみ呼び出す必要があります。
 
    * このメソッドの構文を次に示します。
 
@@ -321,7 +323,7 @@ Experience Cloud ソリューション 4.x SDK 用 Xamarin コンポーネント
 
    * このメソッドの構文を次に示します。
 
-      public nbsp;static void trackLifetimeValueValueIncrement（double amount， NSDictionary cdata）;
+      public nbsp;static void trackLifetimeValueIncrease(double amount, NSDictionary cdata);
 
    * このメソッドのコードサンプルを次に示します。
 
@@ -383,11 +385,12 @@ Experience Cloud ソリューション 4.x SDK 用 Xamarin コンポーネント
       ```objective-c
       ADBMobile.TrackTimedActionEnd  ("level2", (double  arg1,  double  arg2,  NSMutableDictionary  arg3)  =>  { 
       return  Convert.ToSByte(true); 
-      }); 
-      
+      });
+      ```
+
 * **TrackingTimedActionExists**
 
-   時間指定アクションが進行中であるかどうかを返します。
+   時間指定アクションが進行中かどうかを返します。
 
    * このメソッドの構文を次に示します。
 
@@ -483,8 +486,8 @@ Experience Cloud ソリューション 4.x SDK 用 Xamarin コンポーネント
    * このメソッドのコードサンプルを次に示します。
 
       ```objective-c
-       NSDictionary  ids  =  NSDictionary.FromObjectAndKey  (NSObject.FromObject  ("value2"),  NSObject.FromObject  ("pushID")); 
-       ADBMobile.VisitorSyncIdentifiers(ids); 
+      NSDictionary  ids  =  NSDictionary.FromObjectAndKey  (NSObject.FromObject  ("value2"),  NSObject.FromObject  ("pushID")); 
+      ADBMobile.VisitorSyncIdentifiers(ids); 
       ```
 
 ## Target メソッド {#section_C1E4121CAF9D43538511D857A1F549A7}
@@ -502,11 +505,11 @@ Experience Cloud ソリューション 4.x SDK 用 Xamarin コンポーネント
    * このメソッドのコードサンプルを次に示します。
 
       ```objective-c
-       NSDictionary  dict  =  NSDictionary.FromObjectAndKey  (NSObject.FromObject  ("value2"),  NSObject.FromObject  ("key1")); 
-       ADBTargetLocationRequest  req  =  ADBMobile.TargetCreateRequest  ("iOSTest",  "defGal",  dict); 
-       ADBMobile.TargetLoadRequest(req,    (context)  =>  { 
-       Console.WriteLine  (context); 
-       });
+      NSDictionary  dict  =  NSDictionary.FromObjectAndKey  (NSObject.FromObject  ("value2"),  NSObject.FromObject  ("key1")); 
+      ADBTargetLocationRequest  req  =  ADBMobile.TargetCreateRequest  ("iOSTest",  "defGal",  dict); 
+      ADBMobile.TargetLoadRequest(req,    (context)  =>  { 
+      Console.WriteLine  (context); 
+      });
       ```
 
 * **TargetCreateRequest**
@@ -528,13 +531,14 @@ Experience Cloud ソリューション 4.x SDK 用 Xamarin コンポーネント
 
 * **TargetCreateOrderConfirmRequest**
 
-   を作成 `ADBTargetLocationRequest`します。
+   を作成しま `ADBTargetLocationRequest`す。
 
    * このメソッドの構文を次に示します。
 
       ```objective-c
       public static ADBTargetLocationRequest ADBTargetLocationRequest TargetCreateRequest (string name, string defaultContent, NSDictionary parameters);
-      
+      ```
+
    * このメソッドのコードサンプルを次に示します。
 
       ```objective-c
@@ -774,7 +778,7 @@ Experience Cloud ソリューション 4.x SDK 用 Xamarin コンポーネント
    * このメソッドのコードサンプルを次に示します。
 
       ```objective-c
-       ADBMobile.MediaStop (settings.Name, 3);
+      ADBMobile.MediaStop (settings.Name, 3);
       ```
 
 * **MediaClick**
