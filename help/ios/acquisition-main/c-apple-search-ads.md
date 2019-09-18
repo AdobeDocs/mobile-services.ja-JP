@@ -2,12 +2,12 @@
 description: Adobe SDK は、Apple Search Ads アプリのアトリビューション API を利用して、開発者とマーケターが Apple App Store の Search Ads キャンペーンからのアプリのダウンロード数を追跡し、アトリビューションをおこなえるようにします。
 seo-description: Adobe SDK は、Apple Search Ads アプリのアトリビューション API を利用して、開発者とマーケターが Apple App Store の Search Ads キャンペーンからのアプリのダウンロード数を追跡し、アトリビューションをおこなえるようにします。
 seo-title: Apple Search Ads
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: Apple Search Ads
 topic: 開発者と導入
-uuid: 790080e8-067e-4bfd- a169-0027db4fdff3
+uuid: 790080e8-067e-4bfd-a169-0027db4fdff3
 translation-type: tm+mt
-source-git-commit: 9c6923d14d1a5f30e5873299def61b0734e52429
+source-git-commit: ebcc04ab3e80aafb9d9ec2e1fbc809c743554cb7
 
 ---
 
@@ -27,13 +27,13 @@ Apple Ads を使用する利点には以下のものがあります。
 
 >[!TIP]
 >
->Apple広告を実装するには、iOS SDKバージョン4.13.2以降が必要です。
+>Apple Adsを実装するには、iOS SDKバージョン4.13.2以降が必要です。
 
 Search Ads アトリビューションに対してアプリを有効にするには
 
 1. Adobe SDK バージョン 4.13.2 以降を実装します。
 
-   詳しくは、[コアの実装とライフサイクル](/help/ios/getting-started/dev-qs.md)。
+   詳しくは、 [Core implementation and lifecycle](/help/ios/getting-started/dev-qs.md).
 
 1. iAd フレームワークをアプリの Xcode プロジェクトファイルに追加します。
 
@@ -43,11 +43,10 @@ Search Ads アトリビューションに対してアプリを有効にするに
 
    If attribution = `true`, all of the `iad-*` fields will be included in the lifecycle hit.
 
-   さらに、以下の値が "`iad`" 辞書から一般的な獲得コンテキストデータフィールドにマッピングされます。
+   In addition, the following values will be mapped from the `"iad"` dictionary to our typical acquisition context data fields:
 
-   * " `iad-campaign-id`" --&gt; " `a.referrer.campaign.trackingcode`"
-   * " `iad-campaign-name`" --&gt;" `a.referrer.campaign.name``"
-   * " `iad-adgroup-id`" --&gt; " `a.referrer.campaign.content`"
-   * " `iad-keyword`" --&gt; " `a.referrer.campaign.term`"
-   このマッピングによって、標準のレポートで値を使用できるようになります。
-
+   * `"iad-campaign-id"` --&gt; `"a.referrer.campaign.trackingcode"`
+   * `"iad-campaign-name"` --&gt; `"a.referrer.campaign.name"`
+   * `"iad-adgroup-id"` --&gt; `"a.referrer.campaign.content"`
+   * `"iad-keyword"` --&gt; `"a.referrer.campaign.term"`
+   このマッピングにより、標準のレポートで値を使用できるようになります。
