@@ -2,12 +2,12 @@
 description: iOS ライブラリの実装や、起動、アップグレード、セッション、関与ユーザーといったライフサイクル指標の収集に役立つ情報です。
 seo-description: iOS ライブラリの実装や、起動、アップグレード、セッション、関与ユーザーといったライフサイクル指標の収集に役立つ情報です。
 seo-title: コア実装とライフサイクル
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: コア実装とライフサイクル
 topic: 開発者と導入
-uuid: 96d06325- e424-4770-8659-4b5431318ee3
+uuid: 96d06325-e424-4770-8659-4b5431318ee3
 translation-type: tm+mt
-source-git-commit: f39c18e48dc72e0ed8e8e35d962a1ae028055b87
+source-git-commit: be980e0e639d5b0df3f1b6a6f91f3ad0a5efe8d7
 
 ---
 
@@ -24,7 +24,7 @@ iOS ライブラリの実装や、起動、アップグレード、セッショ�
 
 **前提条件**
 
-SDKをダウンロードする前に、コア実装と *ライフサイクル* で [レポートスイートを作成して開発](/help/ios/getting-started/requirements.md) レポートスイートを設定し、設定ファイルの事前入力バージョンをダウンロードします。
+SDKをダウンロードする前に、 *Core実装およびライフサイクルのレポートスイートの作成の手順を実行して*[](/help/ios/getting-started/requirements.md) 、開発レポートスイートを設定し、設定ファイルの事前入力バージョンをダウンロードします。
 
 SDK をダウンロードするには
 
@@ -32,7 +32,7 @@ SDK をダウンロードするには
 
    * `ADBMobile.h`：iOS AppMeasurement に使用する Objective-C ヘッダーファイル。
    * `ADBMobileConfig.json`：アプリ用にカスタマイズされた SDK 設定ファイル。
-   * `AdobeMobileLibrary.a`は、iOSデバイス用のライブラリビルド（armv7、armv7s、arm64）およびシミュレーター（i386， x86_64）を含むbitcode対応の大きなバイナリです。
+   * `AdobeMobileLibrary.a`、iOSデバイス用のライブラリビルド(armv7、armv7s、arm64)とシミュレーター(i386、x86_64)を含む、ビットコード対応の大きなバイナリ。
 
       ターゲットが iOS アプリを対象としている場合は、このファットバイナリがリンクされている必要があります。
 
@@ -64,17 +64,18 @@ SDK をダウンロードするには
    ![](assets/step_3.png)
 
 1. Click **[!UICONTROL Finish]**.
-1. **[!UICONTROL プロジェクトナビゲーター]**&#x200B;で、を選択 **[!UICONTROL`ADBMobileConfig.json`]**&#x200B;します。
-1. **[!UICONTROL ファイルインスペクタ]**&#x200B;で、Adobe SDKを使用するプロジェクトの任意のターゲットにJSONファイルを追加します。
+1. In **[!UICONTROL Project Navigator]**, select **[!UICONTROL`ADBMobileConfig.json`]**.
+1. In **[!UICONTROL File Inspector]**, add the JSON file to any targets in your project that will use the Adobe SDK.
 
    ![](assets/step_4.png)
 
-1. **[!UICONTROL プロジェクトナビゲーター]**&#x200B;で、次の手順を実行します。
+1. In **[!UICONTROL Project Navigator]**, complete the following steps:
 
    1. アプリをクリックします。
    1. 「**[!UICONTROL General]**」タブで、ターゲットを選択し、「**[!UICONTROL Linked Frameworks]and** Libraries **」セクションで、必要なフレームワークおよびライブラリをリンクします。**
    * **iOS App Targets**
       * `SystemConfiguration.framework`
+      * `WebKit.framework`
       * `libsqlite3.0.tbd`
       * `AdobeMobileLibrary.a`
    * **iOS エクステンションのターゲット**
@@ -105,7 +106,7 @@ SDK をダウンロードするには
 
 After you enable lifecycle, each time your app is launched, one hit is sent to measure launches, upgrades, sessions, engaged users, and other [Lifecycle Metrics](/help/ios/metrics.md).
 
-次のin `collectLifecycleData`/ `collectLifecycleDataWithAdditionalData` callを追加 `application:didFinishLaunchingWithOptions`します。
+次に/ `collectLifecycleData`呼び出し `collectLifecycleDataWithAdditionalData` を追加しま `application:didFinishLaunchingWithOptions`す。
 
 ```objective-c
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions { 
@@ -114,7 +115,7 @@ After you enable lifecycle, each time your app is launched, one hit is sent to m
 }
 ```
 
-### ライフサイクル呼び出しに追加データを含める
+### ライフサイクル呼び出しに追加のデータを含める
 
 追加データをライフサイクル指標コールに含めるには、`collectLifecycleDataWithAdditionalData` : を使用します。
 
