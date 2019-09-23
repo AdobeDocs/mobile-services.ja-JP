@@ -7,7 +7,7 @@ title: Experience Cloud ソリューション用 iOS SDK 4.x
 topic: 開発者と導入
 uuid: 8b374cee-1432-460b-aac2-70623dd80a04
 translation-type: tm+mt
-source-git-commit: 0f6eec995626f4c93f56d59b682083bd0428d9e1
+source-git-commit: a16fe85f44d2ce852e806b2cc41fb5d40952ad6d
 
 ---
 
@@ -18,11 +18,11 @@ Experience Cloud ソリューション用 iOS SDK 4.x を使用すると、ネ�
 
 >[!IMPORTANT]
 >
->The Adobe Analytics Mobile Marketing Add-on SKU is required to enable Mobile Services access to mobile acquisition, deep linking, geolocation, and mobile messaging capabilities. For more information, contact your Adobe CSM.
+>The Adobe Analytics Mobile Marketing Add-on SKU is required to enable Mobile Services access to mobile acquisition, deep linking, geolocation, and mobile messaging capabilities. 詳しくは、Adobe CSMにお問い合わせください。
 
 >[!IMPORTANT]
 >
->The iOS SDK 4.x for Experience Cloud Solutions is now supports [iOS 13 and Xcode 11][https://developer.apple.com/ios/]. シームレスな互換性を確保するには、4.x iOS SDKの最新バージョンを使用します。 最新バージョンについて詳しくは、リリースノートを参照 [してください](/help/ios/rel-notes.md)。
+>The iOS SDK 4.x for Experience Cloud Solutions is now supports [iOS 13 and Xcode 11](https://developer.apple.com/ios/). To ensure seamless compatibility, use the latest versions of the 4.x iOS SDKs. For more information about the latest version, see the [release notes](/help/ios/rel-notes.md).
 
 ## Adobe Experience Cloud SDK の新規リリース
 
