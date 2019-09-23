@@ -1,17 +1,17 @@
 ---
 cloud: experience-cloud
-product: モバイルサービス
-solution-title: Mobile Services
+product: mobile-services
+solution-title: Learn & Support
 solution-hub-url: https://helpx.adobe.com/jp/support/experience-cloud/core-services.html
 solution-icon: help/assets/experience-cloud-logo-24.png
-getting-started-title: 導入
+getting-started-title: はじめに
 getting-started-url: https://docs.adobe.com/content/help/en/mobile-services/using/get-started-ug/gs.html
 tutorials-title: チュートリアル
 tutorials-url: https://helpx.adobe.com/jp/experience-cloud/tutorials.html
 git-repo: https://github.com/AdobeDocs/mobile-services.en
 index: true
 translation-type: tm+mt
-source-git-commit: d9cb2a642393a26ee5530beb0491649248b86286
+source-git-commit: aad8cec624ea2dd4741d1cc3d1d76af5dba44227
 
 ---
 
@@ -33,7 +33,7 @@ metadata. md ファイルにはリポジトリ内のユーザーガイド TOC.md
 | tutorials-url | ビデオチュートリアル（ヘルプチュートリアルまたは KT チュートリアル）へのリンク |
 | mini-toc-levels | 右パネルに表示される見出しレベルの数を指定します。デフォルトは 2 です。 |
 | git-repo | コラボレーションリポジトリの場所を指定します。公開ドキュメントに github.com のミラーを使用 |
-| index | set index= no for soft launch |
+| index | set index=no for soft launch |
 
 TOC.md ファイル内
 
