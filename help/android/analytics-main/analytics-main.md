@@ -3,32 +3,30 @@ description: この情報は、Android SDK を Adobe Analytics で使用する�
 keywords: android;library;mobile;sdk
 seo-description: この情報は、Android SDK を Adobe Analytics で使用する場合に役立ちます。
 seo-title: 解析の概要
-solution: Marketing Cloud、Analytics
-title: 解析の概要
+solution: Marketing Cloud,Analytics
+title: Analytics overview
 topic: 開発者と導入
-uuid: cc9fa1d9- bc48-4d03-854a- f7b263580a91
+uuid: cc9fa1d9-bc48-4d03-854a-f7b263580a91
 translation-type: tm+mt
-source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
+source-git-commit: b690ec677cf5aedfb2673b707f82716af1851124
 
 ---
 
 
-# 解析の概要 {#analytics}
+# Analytics overview {#analytics}
 
-この節の情報は、Android SDKとAdobe Analyticsの併用に役立ちます。
+The information in this section helps you use the Android SDK with Adobe Analytics.
 
-## Adobe Experience Cloud SDK の新規リリース
+## New Adobe Experience Platform Mobile SDK Release
 
 Adobe Experience Platform Mobile SDK に関する情報やドキュメントをお探しの場合、最新のドキュメントについては、[こちら](https://aep-sdks.gitbook.io/docs/)をクリックしてください。
 
->[!IMPORTANT]
->
->2018 年 9 月に、SDK の新しいメジャーバージョンをリリースしました。これらの新しい Adobe Experience Platform Mobile SDK は、[Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) から設定できます。
+2018 年 9 月に、SDK の新しいメジャーバージョンをリリースしました。これらの新しい Adobe Experience Platform Mobile SDK は、[Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) から設定できます。
 
-* 利用を開始するには、[Launch](https://launch.adobe.com/) にアクセスしてください。
+* To get started, go to Adobe Experience Platform Launch.
 * Experience Platform SDK リポジトリの内容については、[Github：Adobe Experience Platform SDKs](https://github.com/Adobe-Marketing-Cloud/acp-sdks) を参照してください。
 
-## Analyticsトラッキング識別子の生成
+## Analytics追跡識別子の生成
 
 SDK では、識別子を使用してユーザーをトラッキングします。以下に識別子の階層を示します。
 
@@ -38,7 +36,7 @@ SDK では、識別子を使用してユーザーをトラッキングします�
 
 >[!TIP]
 >
->Experience Cloud Identifierの正しい頭字語は、ECIDです。SDK ではまだ MID を使用していますが、古い名称です。
+>Experience cloud識別子の正しい頭字語はECIDです。 SDK ではまだ MID を使用していますが、古い名称です。
 
 AID はトラッキング識別子とも呼ばれ、アプリが MID を使用するように設定されていない場合に SDK によって生成されます。その値は、起動からアプリのアップグレードまでの間、`SharedPreferences` で保持されます。ユーザーがデバイスからアプリを削除してから再インストールした場合、またはアプリ開発者が SharedPreferences をクリアした場合、SDK によって新しい識別子が生成されます。このプロセスにより、Analytics レポートに新しいユーザーが追加されます。
 
