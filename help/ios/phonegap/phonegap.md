@@ -3,12 +3,12 @@ description: このプラグインを使用すると、PhoneGap プロジェク�
 keywords: phonegap
 seo-description: このプラグインを使用すると、PhoneGap プロジェクトから iOS AppMeasurement コールを送信できます。
 seo-title: PhoneGap プラグイン
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: PhoneGap プラグイン
 topic: 開発者と導入
-uuid: f88bcf10-1f9e-4c97- b348-40db797c9923
+uuid: f88bcf10-1f9e-4c97-b348-40db797c9923
 translation-type: tm+mt
-source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+source-git-commit: 517ae533864aebe9c6a20d877a9638d5d3e2a071
 
 ---
 
@@ -17,20 +17,19 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 このプラグインを使用すると、PhoneGap プロジェクトから iOS AppMeasurement コールを送信できます。
 
-## Adobe Experience Cloud SDK の新規リリース
+## 新しいAdobe Experience Platform Mobile SDKリリース
 
 Adobe Experience Platform Mobile SDK に関する情報やドキュメントをお探しの場合、最新のドキュメントについては、[こちら](https://aep-sdks.gitbook.io/docs/)をクリックしてください。
 
 2018 年 9 月に、SDK の新しいメジャーバージョンをリリースしました。これらの新しい Adobe Experience Platform Mobile SDK は、[Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) から設定できます。
 
-* 利用を開始するには、Launch にアクセスしてください。
+* To get started, go to Adobe Experience Platform Launch.
 * Experience Platform SDK リポジトリの内容については、[Github：Adobe Experience Platform SDKs](https://github.com/Adobe-Marketing-Cloud/acp-sdks) を参照してください。
 
->[!IMPORTANT]
->
-> If you are using the Adobe Experience Platform Mobile SDKs with Adobe Launch, you **must** also install the Adobe Analytics Mobile Services extension to use Adobe Mobile Services features such as in-App messaging, push notifications or Acquisition links. 詳しくは、「[Adobe Analytics - Mobile Services](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services)」を参照してください。
 
-PhoneGapプロジェクトを作成するには [、PhoneGap](https://helpx.adobe.com/experience-manager/6-4/mobile/using/phonegap.html)を参照してください。
+## PhoneGapプロジェクトの作成
+
+To create a PhoneGap project, see PhoneGap.[](https://helpx.adobe.com/experience-manager/6-4/mobile/using/phonegap.html)
 
 ## npm を使用したプラグインのインストール: {#section_43229E57C16944C0B51531CB92089189}
 
@@ -42,7 +41,7 @@ PhoneGapプロジェクトを作成するには [、PhoneGap](https://helpx.adob
 
 ## プラグインの手動インストール {#section_D53BA60D488C4DB8AD2BDF90439C180A}
 
-### AppMeasurementライブラリのインクルード
+### Include the AppMeasurement library
 
 AppMeasurement を取り込むには：
 
@@ -52,8 +51,8 @@ AppMeasurement を取り込むには：
    1. Select **[!UICONTROL Copy items into destination group's folder (if needed)]**.
    1. AppMeasurement コードを使用するターゲットを選択します。
 
-1. `ADB_Helper.js` プロジェクト内の `www` フォルダーにドラッグします。
-1. `res/xml` フォルダー内で、 `config.xml` 次を追加して新しいプラグインを開き、登録します。
+1. Drag `ADB_Helper.js` into the `www` folder in your project.
+1. In the `res/xml` folder, open `config.xml` and register an new plugin by adding the following:
 
    ```
    <feature name="ADBMobile_PhoneGap"> 
@@ -61,7 +60,7 @@ AppMeasurement を取り込むには：
    </feature>
    ```
 
-### アプリ権限の追加
+### アプリの権限の追加
 
 AppMeasurement ライブラリには以下が必要です。
 
