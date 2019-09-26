@@ -2,23 +2,32 @@
 description: WatchOS 2 以降、WatchKit エクステンションが Apple Watch 端末で動作するようになります。この環境で動作するアプリケーションが iOS 本体アプリとデータを共有するには、WatchConnectivity フレームワークが必要です。
 seo-description: WatchOS 2 以降、WatchKit エクステンションが Apple Watch 端末で動作するようになります。この環境で動作するアプリケーションが iOS 本体アプリとデータを共有するには、WatchConnectivity フレームワークが必要です。
 seo-title: WatchOS 2 を使用した Apple Watch 実装
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: WatchOS 2 を使用した Apple Watch 実装
 topic: 開発者と導入
-uuid: 9498467e- db5e-411e- a00e- d19841f485de
+uuid: 9498467e-db5e-411e-a00e-d19841f485de
 translation-type: tm+mt
-source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
+source-git-commit: 718e336b9002fe3d5282697d4302d12a89297181
 
 ---
 
 
 # Apple Watch implementation with WatchOS 2{#apple-watch-implementation-with-watchos}
 
-WatchOS2から、WatchKit ExtensionsをApple Watchで実行できます。Applications that run in this environment require the `WatchConnectivity` framework to share data with their containing iOS app.
+WatchOS 2以降では、WatchKit拡張機能をApple Watch上で実行できます。 Applications that run in this environment require the `WatchConnectivity` framework to share data with their containing iOS app.
 
 >[!TIP]
 >
->v4.6.0以降 `AdobeMobileLibrary` はサポート `WatchConnectivity` されています。
+>v4.6.0 `AdobeMobileLibrary` 以降はサポートさ `WatchConnectivity` れています。
+
+## New Adobe Experience Platform Mobile SDK Release
+
+Adobe Experience Platform Mobile SDK に関する情報やドキュメントをお探しの場合、最新のドキュメントについては、[こちら](https://aep-sdks.gitbook.io/docs/)をクリックしてください。
+
+2018 年 9 月に、SDK の新しいメジャーバージョンをリリースしました。これらの新しい Adobe Experience Platform Mobile SDK は、[Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) から設定できます。
+
+* 開始するには、Adobe Experience Platform Launchに移動します。
+* Experience Platform SDK リポジトリの内容については、[Github：Adobe Experience Platform SDKs](https://github.com/Adobe-Marketing-Cloud/acp-sdks) を参照してください。
 
 ## はじめに {#section_70BC28BB69414F169196953D3D264BC1}
 
@@ -35,7 +44,7 @@ WatchOS2から、WatchKit ExtensionsをApple Watchで実行できます。Applic
 
 WatchKit アプリの開発について詳しくは、[Watch App のアーキテクチャ](https://developer.apple.com/library/ios/documentation/General/Conceptual/WatchKitProgrammingGuide/DesigningaWatchKitApp.html#//apple_ref/doc/uid/TP40014969-CH3-SW1)を参照してください。
 
-## アプリケーションを設定する {#section_0A2A3995575B4E2ABD12E426BA06AEFF}
+## 含まれるアプリの設定 {#section_0A2A3995575B4E2ABD12E426BA06AEFF}
 
 次の手順を Xcode プロジェクトで実行します。
 
@@ -60,7 +69,7 @@ WatchKit アプリの開発について詳しくは、[Watch App のアーキテ
    #import “ADBMobile.h”
    ```
 
-1. `ADBMobile` ライブラリを呼び出す前に、アプリケーション `application:didFinishLaunchingWithOptions:` の委任で、を設定 `WCSession`します。
+1. Before making a call to the `ADBMobile` library, in `application:didFinishLaunchingWithOptions:` of your app delegate, configure your `WCSession`.
 
    ```objective-c
    // check for session availability 
@@ -73,7 +82,7 @@ WatchKit アプリの開発について詳しくは、[Watch App のアーキテ
 
 1. In your app delegate, implement the `session:didReceiveMessage:` and `session:didReceiveUserInfo:` methods.
 
-   `syncSettings:``ADBMobile` はライブラリ内で呼び出されます。boolは、その辞書が `ADBMobile` ライブラリによる消費を目的としていたかどうかを示すboolを返します。`No` を返す場合、メッセージは Adobe SDK から開始されたものではありません。
+   `syncSettings:` がライブラリ内で呼び出さ `ADBMobile` れ、ディクショナリがライブラリでの使用を目的としているかどうかを示すboolが返さ `ADBMobile` れます。 `No` を返す場合、メッセージは Adobe SDK から開始されたものではありません。
 
    ```objective-c
    - (void) session:(WCSession *)session didReceiveMessage:(NSDictionary<NSString *,id> *)message { 
@@ -90,7 +99,7 @@ WatchKit アプリの開発について詳しくは、[Watch App のアーキテ
    } 
    ```
 
-## WatchKit拡張機能の設定 {#section_5ADE31741E514330A381F2E3CFD4A814}
+## WatchKit拡張の設定 {#section_5ADE31741E514330A381F2E3CFD4A814}
 
 1. Ensure that the `ADBMobileConfig.json` file is a member of your WatchKit extension’s target.
 1. WatchKit エクステンションのターゲットの「**[!UICONTROL Build Phases]**」タブで、「**Link Binary with Libraries]」セクションを展開して、以下のライブラリを追加します。[!UICONTROL **
@@ -98,7 +107,7 @@ WatchKit アプリの開発について詳しくは、[Watch App のアーキテ
    * `AdobeMobileLibrary_Watch.a`
    * `libsqlite3.tbd`
 
-1. `WKExtensionDelegate` プロトコルを実装するクラスで、プロトコルを読み込み `WatchConnectivity` 、追加 `WCSessionDelegate` します。
+1. In your class that implements the `WKExtensionDelegate` protocol, import `WatchConnectivity` and add the `WCSessionDelegate` protocol.
 
    ```objective-c
    #import <WatchConnectivity/WatchConnectivity.h> 
@@ -111,7 +120,7 @@ WatchKit アプリの開発について詳しくは、[Watch App のアーキテ
    #import “ADBMobile.h”
    ```
 
-1. `applicationDidFinishLaunching` 拡張機能の委任で、ライブラリを呼び出す `WCSession` 前に設定 `ADBMobile` します。
+1. In `applicationDidFinishLaunching` of your extension delegate, configure your `WCSession` before making any calls to the `ADBMobile` library.
 
    ```objective-c
    // check for session availability 
@@ -130,7 +139,7 @@ WatchKit アプリの開発について詳しくは、[Watch App のアーキテ
 
 1. In your extension delegate, implement the `session:didReceiveMessage:` and `session:didReceiveUserInfo:` methods.
 
-   `syncSettings:``ADBMobile` はライブラリ内で呼び出されます。boolは、その辞書が `ADBMobile` ライブラリによる消費を目的としていたかどうかを示すboolを返します。`NO` を返す場合、メッセージは Adobe SDK から開始されたものではありません。
+   `syncSettings:` がライブラリ内で呼び出さ `ADBMobile` れ、ディクショナリがライブラリでの使用を目的としているかどうかを示すboolが返さ `ADBMobile` れます。 `NO` を返す場合、メッセージは Adobe SDK から開始されたものではありません。
 
    ```objective-c
    - (void) session:(WCSession *)session didReceiveMessage:(NSDictionary<NSString *,id> *)message { 
