@@ -2,29 +2,25 @@
 description: Experience Cloud ソリューションに iOS SDK を使用するのに役立つ参考資料です。
 seo-description: Experience Cloud ソリューションに iOS SDK を使用するのに役立つ参考資料です。
 seo-title: iOS SDK リファレンス
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: iOS SDK リファレンス
 topic: 開発者と導入
-uuid: 4e80b0ce- d36e-440e-96ff- de5df6804e3e
+uuid: 4e80b0ce-d36e-440e-96ff-de5df6804e3e
 translation-type: tm+mt
-source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
+source-git-commit: b690ec677cf5aedfb2673b707f82716af1851124
 
 ---
 
 
 # iOS SDK reference {#ios-sdk-reference}
 
-この節の情報は、iOS SDK for Experience Cloudソリューションの使用に役立ちます。
+The information in this section helps you use the iOS SDK for Experience Cloud Solutions.
 
-## Adobe Experience Cloud SDK の新規リリース
+## New Adobe Experience Platform Mobile SDK Release
 
 Adobe Experience Platform Mobile SDK に関する情報やドキュメントをお探しの場合、最新のドキュメントについては、[こちら](https://aep-sdks.gitbook.io/docs/)をクリックしてください。
 
 2018 年 9 月に、SDK の新しいメジャーバージョンをリリースしました。これらの新しい Adobe Experience Platform Mobile SDK は、[Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) から設定できます。
 
-* 利用を開始するには、Launch にアクセスしてください。
+* To get started, go to Adobe Experience Platform Launch.
 * Experience Platform SDK リポジトリの内容については、[Github：Adobe Experience Platform SDKs](https://github.com/Adobe-Marketing-Cloud/acp-sdks) を参照してください。
-
->[!IMPORTANT]
->
-> If you are using the Adobe Experience Platform Mobile SDKs with Adobe Launch, you **must** also install the Adobe Analytics Mobile Services extension to use Adobe Mobile Services features such as in-App messaging, push notifications or Acquisition links. 詳しくは、「[Adobe Analytics - Mobile Services](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services)」を参照してください。
