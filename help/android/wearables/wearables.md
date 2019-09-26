@@ -1,32 +1,30 @@
 ---
 description: Android SDK バージョン 4.5 から新しい Android 拡張機能が追加され、Android ウェアラブルアプリからデータを収集できるようになりました。
 seo-description: Android SDK バージョン 4.5 から新しい Android 拡張機能が追加され、Android ウェアラブルアプリからデータを収集できるようになりました。
-seo-title: ウェアラブルの概要
-solution: Marketing Cloud、Analytics
-title: ウェアラブルの概要
+seo-title: Wearables overview
+solution: Marketing Cloud,Analytics
+title: 変数の概要
 topic: 開発者と導入
-uuid: f9a5d692-0ef6-4cdf-831e- e50be291f083
+uuid: f9a5d692-0ef6-4cdf-831e-e50be291f083
 translation-type: tm+mt
-source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
+source-git-commit: b690ec677cf5aedfb2673b707f82716af1851124
 
 ---
 
 
-# ウェアラブルの概要 {#wearables}
+# Wearables overview {#wearables}
 
-この節の情報では、Android拡張機能を使用してAndroidウェアラブルアプリからデータを収集する方法について説明します。
+The information in this section helps you understand how you can use the Android extension to collect data from your Android Wearable app.
 
 >[!TIP]
 >
->Android SDKバージョン4.5以上がインストールされている必要があります。
+>You must have at least the Android SDK version 4.5 installed.
 
-## Adobe Experience Cloud SDK の新規リリース
+## New Adobe Experience Platform Mobile SDK Release
 
 Adobe Experience Platform Mobile SDK に関する情報やドキュメントをお探しの場合、最新のドキュメントについては、[こちら](https://aep-sdks.gitbook.io/docs/)をクリックしてください。
 
->[!IMPORTANT]
->
->2018 年 9 月に、SDK の新しいメジャーバージョンをリリースしました。これらの新しい Adobe Experience Platform Mobile SDK は、[Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) から設定できます。
+2018 年 9 月に、SDK の新しいメジャーバージョンをリリースしました。これらの新しい Adobe Experience Platform Mobile SDK は、[Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) から設定できます。
 
-* 利用を開始するには、[Launch](https://launch.adobe.com/) にアクセスしてください。
+* To get started, go to Adobe Experience Platform Launch.
 * Experience Platform SDK リポジトリの内容については、[Github：Adobe Experience Platform SDKs](https://github.com/Adobe-Marketing-Cloud/acp-sdks) を参照してください。
