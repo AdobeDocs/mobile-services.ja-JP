@@ -2,12 +2,12 @@
 description: iOS エクステンションを使用して、Apple Watch アプリ（WatchOS 1）、Today ウィジェット、Photo Editing ウィジェットおよびその他の iOS エクステンションアプリから使用状況データを収集できます。
 seo-description: iOS エクステンションを使用して、Apple Watch アプリ（WatchOS 1）、Today ウィジェット、Photo Editing ウィジェットおよびその他の iOS エクステンションアプリから使用状況データを収集できます。
 seo-title: iOS エクステンション実装
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: iOS エクステンション実装
 topic: 開発者と導入
-uuid: 8abc03fe-403e-4643- ada1-30e403ede238
+uuid: 8afc03fe-403e-4643-ada1-30e403ede238
 translation-type: tm+mt
-source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
+source-git-commit: 718e336b9002fe3d5282697d4302d12a89297181
 
 ---
 
@@ -16,18 +16,14 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
 iOS エクステンションを使用して、Apple Watch アプリ（WatchOS 1）、Today ウィジェット、Photo Editing ウィジェットおよびその他の iOS エクステンションアプリから使用状況データを収集できます。
 
-## Adobe Experience Cloud SDK の新規リリース
+## New Adobe Experience Platform Mobile SDK Release
 
 Adobe Experience Platform Mobile SDK に関する情報やドキュメントをお探しの場合、最新のドキュメントについては、[こちら](https://aep-sdks.gitbook.io/docs/)をクリックしてください。
 
 2018 年 9 月に、SDK の新しいメジャーバージョンをリリースしました。これらの新しい Adobe Experience Platform Mobile SDK は、[Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) から設定できます。
 
-* 利用を開始するには、Launch にアクセスしてください。
+* To get started, go to Adobe Experience Platform Launch.
 * Experience Platform SDK リポジトリの内容については、[Github：Adobe Experience Platform SDKs](https://github.com/Adobe-Marketing-Cloud/acp-sdks) を参照してください。
-
->[!IMPORTANT]
->
-> If you are using the Adobe Experience Platform Mobile SDKs with Adobe Launch, you **must** also install the Adobe Analytics Mobile Services extension to use Adobe Mobile Services features such as in-App messaging, push notifications or Acquisition links. 詳しくは、「[Adobe Analytics - Mobile Services](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services)」を参照してください。
 
 ## Recommendations for using the iOS SDK instead of your wrapper {#section_97577331FD9E4FFBBE05D402C67AEE69}
 
@@ -53,9 +49,9 @@ Watch アプリ向けの SDK には、アプリ内メッセージ以外のすべ
 
 
 
-WatchKit アプリを使用する場合は、3 つ目のターゲットが必要です。Apple Watch用の開発について詳しくは、 [開発用のApple Watch](https://developer.apple.com/library/ios/documentation/General/Conceptual/WatchKitProgrammingGuide/index.html#//apple_ref/doc/uid/TP40014969-CH8-SW1)を参照してください。
+WatchKit アプリを使用する場合は、3 つ目のターゲットが必要です。For more information on developing for Apple Watch, see Developing for Apple Watch.[](https://developer.apple.com/library/ios/documentation/General/Conceptual/WatchKitProgrammingGuide/index.html#//apple_ref/doc/uid/TP40014969-CH8-SW1)
 
-## アプリケーションを設定する {#section_0BAB0842E4C04A62B5E03DFC4BA77851}
+## Configure the containing app {#section_0BAB0842E4C04A62B5E03DFC4BA77851}
 
 次の手順を Xcode プロジェクトで実行します。
 
@@ -78,7 +74,7 @@ WatchKit アプリを使用する場合は、3 つ目のターゲットが必要
 
 1. アプリが予期せぬエラーなくビルドされることを確認します。
 
-## 拡張機能の設定 {#section_28C994B7892340AC8D1F07AF26FF3946}
+##  拡張機能の設定{#section_28C994B7892340AC8D1F07AF26FF3946}
 
 1. Ensure that the `ADBMobileConfig.json` file is a member of the extension's target.
 1. エクステンションのターゲットの「**[!UICONTROL Build Phases]**」タブで、「**Link Binary with Libraries]」セクションを展開して、以下のライブラリを追加します。[!UICONTROL **
