@@ -7,7 +7,7 @@ title: Experience Cloud ソリューション用 iOS SDK 4.x
 topic: 開発者と導入
 uuid: 8b374cee-1432-460b-aac2-70623dd80a04
 translation-type: tm+mt
-source-git-commit: a16fe85f44d2ce852e806b2cc41fb5d40952ad6d
+source-git-commit: 6d92beff55f359d667b399e66bae4cbffa4a1a0a
 
 ---
 
@@ -18,24 +18,20 @@ Experience Cloud ソリューション用 iOS SDK 4.x を使用すると、ネ�
 
 >[!IMPORTANT]
 >
->The Adobe Analytics Mobile Marketing Add-on SKU is required to enable Mobile Services access to mobile acquisition, deep linking, geolocation, and mobile messaging capabilities. 詳しくは、Adobe CSMにお問い合わせください。
+>Mobile Servicesでモバイル獲得、ディープリンク、位置情報およびモバイルメッセージング機能にアクセスできるようにするには、Adobe Analytics Mobile Marketing Add-on SKUが必要です。 詳しくは、Adobe CSMにお問い合わせください。
 
 >[!IMPORTANT]
 >
->The iOS SDK 4.x for Experience Cloud Solutions is now supports [iOS 13 and Xcode 11](https://developer.apple.com/ios/). To ensure seamless compatibility, use the latest versions of the 4.x iOS SDKs. For more information about the latest version, see the [release notes](/help/ios/rel-notes.md).
+>Experience cloudソリューション用iOS SDK 4.xで [iOS 13とXcode 11がサポートされるようになりました](https://developer.apple.com/ios/)。 シームレスな互換性を確保するには、4.x iOS SDKの最新バージョンを使用します。 最新バージョンについて詳しくは、リリースノートを参照 [してください](/help/ios/rel-notes.md)。
 
-## Adobe Experience Cloud SDK の新規リリース
+## New Adobe Experience Platform Mobile SDK Release
 
 Adobe Experience Platform Mobile SDK に関する情報やドキュメントをお探しの場合、最新のドキュメントについては、[こちら](https://aep-sdks.gitbook.io/docs/)をクリックしてください。
 
 2018 年 9 月に、SDK の新しいメジャーバージョンをリリースしました。これらの新しい Adobe Experience Platform Mobile SDK は、[Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) から設定できます。
 
-* 利用を開始するには、Launch にアクセスしてください。
+* To get started, go to Adobe Experience Platform Launch.
 * Experience Platform SDK リポジトリの内容については、[Github：Adobe Experience Platform SDKs](https://github.com/Adobe-Marketing-Cloud/acp-sdks) を参照してください。
-
->[!IMPORTANT]
->
-> If you are using the Adobe Experience Platform Mobile SDKs with Adobe Launch, you **must** also install the Adobe Analytics Mobile Services extension to use Adobe Mobile Services features such as in-App messaging, push notifications or Acquisition links. 詳しくは、「[Adobe Analytics - Mobile Services](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services)」を参照してください。
 
 注意事項：
 
