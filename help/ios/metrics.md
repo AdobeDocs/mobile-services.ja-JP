@@ -2,32 +2,28 @@
 description: 以下の表に、ライフサイクル実装後にモバイルライブラリで自動的に測定できる指標とディメンションの一覧を示します。
 seo-description: 以下の表に、ライフサイクル実装後にモバイルライブラリで自動的に測定できる指標とディメンションの一覧を示します。
 seo-title: ライフサイクル指標
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: ライフサイクル指標
 topic: 開発者と導入
-uuid: b795e383- d59b-4a3c-9e14- ffe8fb58412c
+uuid: b795e383-d59b-4a3c-9e14-ffe8fb58412c
 translation-type: tm+mt
-source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
+source-git-commit: a6608bf4d36a6fb6aca00f50cc058c09dbd931b1
 
 ---
 
 
 # Lifecycle metrics {#lifecycle-metrics}
 
-ライフサイクル実装後にモバイルライブラリによって自動的に測定される指標とディメンションを以下に示します。
+Here are the metrics and dimensions that can be automatically measured by the mobile library after lifecycle is implemented.
 
-## Adobe Experience Cloud SDK の新規リリース
+## 新しいAdobe Experience Platform Mobile SDKリリース
 
 Adobe Experience Platform Mobile SDK に関する情報やドキュメントをお探しの場合、最新のドキュメントについては、[こちら](https://aep-sdks.gitbook.io/docs/)をクリックしてください。
 
 2018 年 9 月に、SDK の新しいメジャーバージョンをリリースしました。これらの新しい Adobe Experience Platform Mobile SDK は、[Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) から設定できます。
 
-* 利用を開始するには、Launch にアクセスしてください。
+* To get started, go to [Experience Platform Launch](https://launch.adobe.com/).
 * Experience Platform SDK リポジトリの内容については、[Github：Adobe Experience Platform SDKs](https://github.com/Adobe-Marketing-Cloud/acp-sdks) を参照してください。
-
->[!IMPORTANT]
->
-> If you are using the Adobe Experience Platform Mobile SDKs with Adobe Launch, you **must** also install the Adobe Analytics Mobile Services extension to use Adobe Mobile Services features such as in-App messaging, push notifications or Acquisition links. 詳しくは、「[Adobe Analytics - Mobile Services](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services)」を参照してください。
 
 
 ## Lifecycle metrics and dimensions {#section_78F036C4296F4BA3A47C2044F79C86C1}
@@ -93,13 +89,13 @@ Analytics の場合、各ライフサイクルトラッキングコールとと�
 
 >[!IMPORTANT]
 >
-> *日別関与ユーザー* 数指標および *月別関与ユーザー* 数指標は、Analytics指標に自動的には保存されません。これらの指標を取り込むカスタムイベントを設定する処理ルールを作成する必要があります。
+> 日別関与 *ユーザー指標と月別関* 与ユーザー指標は ** 、Analytics指標に自動的には保存されません。 You must create a processing rule that sets a custom event to capture these metrics.
 
-### ディメンション
+#### ディメンション
 
 * **インストール日**
 
-   インストール後の初回起動日。日付形式 `MM/DD/YYYY`は、
+   インストール後の初回起動日。日付の形式はです `MM/DD/YYYY`。
 
    * Analytics コンテキストデータ／Target: `a.InstallDate`
    * Audience Management: `c_a_InstallDate`
@@ -189,12 +185,12 @@ Analytics の場合、各ライフサイクルトラッキングコールとと�
    * Audience Management: `c_a_Resolution`
    >[!IMPORTANT]
    >
-   >前回アップグレードから *の日数*、 *最終アップグレード*&#x200B;からの起動回数、 *通信事業者名* のディメンションは、Analytics変数に自動的に保存されません。レポート用にAnalytics変数に値をコピーする処理ルールを作成する必要があります。
+   >前回ア *ップグレードからの日数*、前回ア *ップグレードからの起動回数*、通信事業者名 *(Carrier Name* )ディメンションは、Analytics変数に自動的には保存されません。 You must create a processing rule to copy the values to an Analytics variable for reporting.
 
 
 ## Additional mobile metrics and dimensions {#section_0B32BBF9CA734103BEDB5E755FFE5B31}
 
-以下の指標およびディメンションは、一覧表示された方法でモバイルソリューション変数に取り込まれます。
+以下の指標とディメンションは、モバイルソリューション変数で、リストに示した方法で取り込まれます。
 
 ### 指標
 
@@ -226,11 +222,11 @@ Analytics の場合、各ライフサイクルトラッキングコールとと�
 
    Populated by `trackLocation` methods.
 
-   * Analyticsコンテキストデータ/Targetパラメーター:
+   * Analytics Context Data/Targetパラメーター：
 
       * `a.loc.lat.a`
       * `a.loc.lon.a`
-   * Audience Managementの特性:
+   * Audience Managementの特徴：
 
       * `c_a_loc_lat_a`
       * `c_a_loc_lon_a`
@@ -240,11 +236,11 @@ Analytics の場合、各ライフサイクルトラッキングコールとと�
 
    trackLocation メソッドによって設定されます。
 
-   * Analyticsコンテキストデータ/Targetパラメーター:
+   * Analytics Context Data/Target parameter:
 
       * `a.loc.lat.b`
       * `a.loc.lon.b`
-   * Audience Managementの特性:
+   * Audience Management trait:
 
       * `c_a_loc_lat_b`
       * `c_a_loc_lon_b`
@@ -254,11 +250,11 @@ Analytics の場合、各ライフサイクルトラッキングコールとと�
 
    Populated by `trackLocation` methods.
 
-   * Analyticsコンテキストデータ/Targetパラメーター:
+   * Analytics Context Data/Target parameter:
 
       * `a.loc.lat.c`
       * `a.loc.lon.c`
-   * Audience Managementの特性:
+   * Audience Managementの特徴：
 
       * `c_a_loc_lat_c`
       * `c_a_loc_lon_c`
