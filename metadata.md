@@ -1,7 +1,7 @@
 ---
 cloud: experience-cloud
 product: mobile-services
-solution-title: Learn & Support
+solution-title: ラーニングとサポート
 solution-hub-url: https://helpx.adobe.com/jp/support/experience-cloud/core-services.html
 solution-icon: help/assets/experience-cloud-logo-24.png
 getting-started-title: はじめに
