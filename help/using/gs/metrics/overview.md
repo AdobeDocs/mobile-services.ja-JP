@@ -3,7 +3,7 @@ description: 最近表示したアプリの主要パフォーマンス指標を�
 keywords: モバイル
 seo-description: 最近表示したアプリの主要パフォーマンス指標を表示できます。デフォルトでは、最大 12 個のアプリを表示できます。概要ページで、日付範囲を変更し、フィルターを作成して、データをセグメント化したり、アプリを編集したりできます。
 seo-title: モバイル指標の表示
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: モバイル指標の表示
 topic: 指標
 uuid: 57db0b77-6b0a-4a0c-9aad-0731275233fd
@@ -27,7 +27,7 @@ If the app you want to view is not displayed, search for it by typing the app's 
 
    主要指標では直近の 30 日間のデータが表示されます。右上にあるカレンダーアイコンをクリックして、これを変更できます。日付範囲またはあらかじめ設定されている期間をドロップダウンリストから選択できます。
 
-* **データのフィルター**
+* **データのフィルタ**
 
    ユーザーフィルターを設定して、各アプリのデータをセグメント化できます。
 
@@ -38,7 +38,7 @@ If the app you want to view is not displayed, search for it by typing the app's 
    1. 「**[!UICONTROL フィルター]**」アイコンをクリックして、**共通フィルター[!UICONTROL ダイアログボックスを表示します。]**
    1. Click **[!UICONTROL Add Rule]**, select an option from the drop-down list, and type the necessary information.
 
-      例えば、 **[!UICONTROL アプリケーションのバージョン]** とバージョン `4.5` を選択できます。**[!UICONTROL デバイスタイプ]** とタイプを選択 `Android`できます。
+      例えば、「 **[!UICONTROL App Version]** 」を選択し、バージョンを `4.5` 入力します。 You could select **[!UICONTROL Device Type]** and type `Android`.
 
       >[!TIP]
       >
@@ -47,13 +47,13 @@ If the app you want to view is not displayed, search for it by typing the app's 
    1. Click **[!UICONTROL Update]**.
    >[!TIP]
    >
-   >**[!UICONTROL フィルター]** アイコンの横に、アクティブフィルターの数を示す青い吹き出しが表示されます。
+   >A blue bubble displays next to the **[!UICONTROL Filter]** icon to indicate the number of active filters.
 
    To cancel filters, click the **[!UICONTROL Filter]** icon, and click **[!UICONTROL Cancel]**.
 
 * **主要業績評価指標の表示**
 
-   アプリの名前をクリックして、主要業績評価指標の詳細を表示します。グラフの線は色分けされ、データポイントにマウスポインターを置くと、特定の日付の統計を表示できます。ドリルダウンするには、主要 **** 業績評価指標の **[!UICONTROL 横にある/アイコンをクリック]**&#x200B;します。グラフの線は色分けされており、任意のデータポイントにマウスを移動して特定の日付の統計を表示できます。表の列ヘッダーをクリックすると、昇順または降順にデータを並べ替えることができます。
+   アプリの名前をクリックして、主要業績評価指標の詳細を表示します。グラフの線は色分けされ、データポイントにマウスポインターを置くと、特定の日付の統計を表示できます。ドリルダウンするには、「主要業績評価指標」の **** 横にある「&gt;」アイコ **[!UICONTROL ンをクリックします]**。 The lines on the chart are color coded, and you can mouse over any data point to see statistics for specific dates. 表の列ヘッダーをクリックすると、昇順または降順にデータを並べ替えることができます。
 
 ## Edit an app's settings {#section_C1CF227A2E534A798F0073E43AD6A2D1}
 
