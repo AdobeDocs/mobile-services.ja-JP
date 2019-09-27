@@ -3,7 +3,7 @@ description: この情報は、Android デバイスでバージョン 3 の獲�
 keywords: android;library;mobile;sdk
 seo-description: この情報は、Android デバイスでバージョン 3 の獲得キャンペーンリンクをラウンドトリップする場合に役立ちます。
 seo-title: バージョン 3 の獲得のテスト
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: バージョン 3 の獲得のテスト
 topic: 開発者と導入
 uuid: 5e38b43d-389e-4412-99e5-3e6223b6ad28
@@ -19,13 +19,13 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
 >[!IMPORTANT]
 >
->V3での獲得は、Adobe Mobile Services UIのダウンロード計測用リンクで作成したダウンロード計測用リンクを指します。この機能を使用するには、Experience Cloud ソリューション 4.6.0 以降用の Android SDK 4.x にアップグレードする必要があります。
+>Acquisition in V3 refers to the acquisition links that you create with the Acquisition Builder in the Adobe Mobile Services UI. この機能を使用するには、Experience Cloud ソリューション 4.6.0 以降用の Android SDK 4.x にアップグレードする必要があります。
 
 モバイルアプリがまだ Google Play に登録されていない場合は、マーケティングリンクを作成するときに任意のモバイルアプリをリンク先として選択できます。これは、ダウンロード計測用リンクのクリック後に獲得サーバーによってリダイレクトされるアプリにのみ影響を与えます。リンクのテスト機能には影響を与えません。クエリ文字列パラメーターは、Google Play ストアに渡されます。これらのパラメーターは、キャンペーンのブロードキャストの一環としてインストール時にアプリに渡されます。モバイルアプリでの獲得のラウンドトリップテストには、このタイプのブロードキャストのシミュレーションが必要です。
 
 The app must be freshly installed, or have data cleared in **[!UICONTROL Settings]**, each time a test is run. そうすることで、アプリが最初に起動したときに、キャンペーンクエリ文字列パラメーターに関連付けられている初期ライフサイクル指標が送信されます。
 
-1. モバイルアプリ獲得の [前提条件タスクを完了](/help/android/acquisition-main/acquisition.md) し、ブロードキャスト受信者が正しく実装されていることを確認 `INSTALL_REFERRER`します。
+1. 「モバイルアプリの獲得」の前提 [条件のタスクを実行し](/help/android/acquisition-main/acquisition.md) 、のブロードキャスト受信機が正しく実装されていることを確認しま `INSTALL_REFERRER`す。
 1. In the Adobe Mobile Services UI, click  **[!UICONTROL Acquisition]** &gt; **[!UICONTROL Marketing Links Builder]** and generate an Acquisition Marketing Link URL that sets Google Play as the destination for Android devices.
 
    詳しくは、[マーケティングリンクビルダー](/help/using/acquisition-main/c-marketing-links-builder/c-marketing-links-builder.md)を参照してください。
@@ -34,7 +34,7 @@ The app must be freshly installed, or have data cleared in **[!UICONTROL Setting
 
    >[!TIP]
    >
-   >ダウンロード計測用リンクのAndroidおよびiOSアプリの両方を参照する場合は、Google Playをデフォルトのストアとして使用します。
+   >If you refer to both Android and iOS apps in the acquisition link, use Google Play as the default store.
 
 1. デスクトップのブラウザーで、生成されたリンクを開きます。
 
@@ -43,7 +43,7 @@ The app must be freshly installed, or have data cleared in **[!UICONTROL Setting
 
 1. Copy the unique ID after `utm_content%3D`.
 
-   前の例では、ID `91b52ce097b1464b9b47cb2995c493cc6ab2c3a3`はです。
+   前の例では、IDはです `91b52ce097b1464b9b47cb2995c493cc6ab2c3a3`。
 
 1. 手順 3 の一意の ID を使用して、次の形式の獲得エンドリンクを作成します。
 
@@ -63,7 +63,7 @@ The app must be freshly installed, or have data cleared in **[!UICONTROL Setting
 
    | 設定 | 値 |
    |--- |--- |
-   | acquisition | The server should be `c00.adobe.com`.   *`appid`* は、ダウンロード計測 `appid` 用リンクと同じにする必要があります。 |
+   | acquisition | The server should be `c00.adobe.com`.   *`appid`*  should equal the `appid`  in your acquisition link. |
    | analytics | テストのために、ブロードキャストを手動で送信するのに十分な時間（60 秒以上）に送信タイムアウトを設定します。テスト後に元のタイムアウト設定に復元できます。 |
 
 1. デバイスをコンピューターに接続し、アプリをアンインストールしてからインストールし直します。
@@ -97,7 +97,7 @@ Broadcast completed: result=0`
 | Analytics - Unable to decode response(*String*). | 応答の形式が正しくありません。 |
 | Analytics - Unable to parse response (*a JSON Response*). | JSON 文字列の形式が正しくありません。 |
 | Analytics - Unable to parse acquisition service response (no contextData parameter in response). | 応答に contextData パラメーターがありません。 |
-| Analytics - Acquisition referrer data was not complete (no `a.referrer.campaign.name` in context data), ignoring. | `a.referrer.campaign.name` はcontextDataには含まれません。 |
+| Analytics - Acquisition referrer data was not complete (no `a.referrer.campaign.name` in context data), ignoring. | `a.referrer.campaign.name`  がcontextDataに含まれていない。 |
 | Analytics - Acquisition referrer timed out. | `referrerTimeout` で定義された時間内に応答を取得できませんでした。値を増やしてもう一度試してください。また、アプリのインストール前にダウンロード計測用リンクを開いたことも確認してください。 |
 
 次の情報に留意してください。
