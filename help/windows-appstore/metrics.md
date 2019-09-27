@@ -3,10 +3,10 @@ description: モバイルライブラリによって自動的に測定される�
 keywords: android;library;mobile;sdk
 seo-description: モバイルライブラリによって自動的に測定される指標およびディメンションの一覧を示します。
 seo-title: ライフサイクル指標
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: ライフサイクル指標
 topic: 開発者と導入
-uuid: c483271f- f620-46f4- aad8- d5f02d763f7d
+uuid: c483271f-f620-46f4-aad8-d5f02d763f7d
 translation-type: tm+mt
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
@@ -17,13 +17,13 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 モバイルライブラリによって自動的に測定される指標およびディメンションの一覧を示します。
 
-詳しくは、「ライフサイクルデータ [のトラブルシューティング](https://helpx.adobe.com/analytics/kb/troubleshoot-lifecycle-data.html)」を参照してください。
+詳しくは、「ライフサイクルデータのトラブルシ [ューティング」を参照してくださ](https://helpx.adobe.com/analytics/kb/troubleshoot-lifecycle-data.html)い。
 
 ## Lifecycle metrics and dimensions {#section_78F036C4296F4BA3A47C2044F79C86C1}
 
-設定された場合、ライフサイクル指標は、コンテキストデータパラメーターで Analytics に送信され、mbox 呼び出しのたびにパラメーターで Target に送信され、シグナルとして Audience Manager に送信されます。AnalyticsとTargetでは同じ形式を使用し、Audience Managerは各指標に異なるプレフィックスを使用します。
+設定された場合、ライフサイクル指標は、コンテキストデータパラメーターで Analytics に送信され、mbox 呼び出しのたびにパラメーターで Target に送信され、シグナルとして Audience Manager に送信されます。AnalyticsとTargetは同じ形式を使用し、Audience Managerは指標ごとに異なるプレフィックスを使用します。
 
-Analyticsの場合、ライフサイクルトラッキングコールと共に送信されるコンテキストデータは、以下に一覧表示されている指標またはディメンションを使用して自動的にキャプチャおよびレポートされ、例外が示されます。
+Analyticsの場合、各ライフサイクル追跡呼び出しと共に送信されるコンテキストデータは、以下に示す指標またはディメンションを使用して自動的に取得およびレポートされ、例外が記録されます。
 
 ### 指標
 
@@ -47,7 +47,7 @@ Analyticsの場合、ライフサイクルトラッキングコールと共に�
 
    >[!TIP]
    >
-   >この指標は、Analytics指標に自動的には保存されません。この指標を取得するためのカスタムイベントを設定する処理ルールを作成する必要があります。
+   >この指標は、Analytics指標に自動的には保存されません。 この指標を取得するためのカスタムイベントを設定する処理ルールを作成する必要があります。
 
    * Analytics context data/Target parameter: `a.DailyEngUserEvent`
    * Audience Manager signal: `c_a_DailyEngUserEvent`
@@ -58,7 +58,7 @@ Analyticsの場合、ライフサイクルトラッキングコールと共に�
 
    >[!IMPORTANT]
    >
-   >この指標は、Analytics指標に自動的には保存されません。この指標を取得するためのカスタムイベントを設定する処理ルールを作成する必要があります。
+   >この指標は、Analytics指標に自動的には保存されません。 この指標を取得するためのカスタムイベントを設定する処理ルールを作成する必要があります。
 
    * Analytics context data/Target parameter: `a.MonthlyEngUserEvent`
    * Audience Manager signal: `c_a_MonthlyEngUserEvent`
@@ -88,7 +88,7 @@ Analyticsの場合、ライフサイクルトラッキングコールと共に�
 
 * **インストール日**
 
-   インストール後の初回起動日。日付形式 `MM/DD/YYYY`は、
+   インストール後の初回起動日。日付の形式はです `MM/DD/YYYY`。
 
    * Analytics context data/Target: `a.InstallDate`
    * Audience Manager: `c_a_InstallDate`
@@ -137,7 +137,7 @@ Analyticsの場合、ライフサイクルトラッキングコールと共に�
 
 * **オペレーティングシステムのバージョン**
 
-   OSバージョン。
+   The OS version.
 
    * Analytics context data/Target: `a.OSVersion`
    * Audience Manager: `c_a_OSVersion`
@@ -148,7 +148,7 @@ Analyticsの場合、ライフサイクルトラッキングコールと共に�
 
    >[!IMPORTANT]
    >
-   >この指標は、Analytics変数に自動的には保存されません。レポート用にこの値を Analytics 変数にコピーする処理ルールを作成する必要があります。
+   >この指標は、Analytics変数に自動的には保存されません。 レポート用にこの値を Analytics 変数にコピーする処理ルールを作成する必要があります。
 
    * Analytics context data/Target: `a.DaysSinceLastUpgrade`
    * Audience Manager: `c_a_DaysSinceLastUpgrade`
@@ -159,7 +159,7 @@ Analyticsの場合、ライフサイクルトラッキングコールと共に�
 
    >[!IMPORTANT]
    >
-   >この指標は、Analytics変数に自動的には保存されません。レポート用にこの値を Analytics 変数にコピーする処理ルールを作成する必要があります。
+   >この指標は、Analytics変数に自動的には保存されません。 レポート用にこの値を Analytics 変数にコピーする処理ルールを作成する必要があります。
 
    * Analytics context data/Target: `a.LaunchesSinceUpgrade`
    * Audience Manager: `c_a_LaunchesSinceUpgrade`
@@ -177,7 +177,7 @@ Analyticsの場合、ライフサイクルトラッキングコールと共に�
 
    >[!IMPORTANT]
    >
-   >この指標は、Analytics変数に自動的には保存されません。レポート用にこの値を Analytics 変数にコピーする処理ルールを作成する必要があります。
+   >This metric is not automatically stored in an Analytics variable. レポート用にこの値を Analytics 変数にコピーする処理ルールを作成する必要があります。
 
    * Analytics context data/Target: `a.CarrierName`
    * Audience Manager: `c_a_CarrierName`
@@ -192,7 +192,7 @@ Analyticsの場合、ライフサイクルトラッキングコールと共に�
 
 ## Additional mobile metrics and dimensions {#section_0B32BBF9CA734103BEDB5E755FFE5B31}
 
-以下の指標およびディメンションは、説明に記載されているメソッドによってモバイルソリューション変数に取り込まれます。
+The following metrics and dimensions are captured in mobile solution variables by the methods listed in the description.
 
 ### 指標
 
@@ -201,21 +201,21 @@ Analyticsの場合、ライフサイクルトラッキングコールと共に�
    Populated by `trackTimedAction` methods.
 
    * Analytics context data/Target parameter: `a.action.time.total`
-   * Audience Manager特性: `c_a_action_time_total`
+   * Audience Manager trait: `c_a_action_time_total`
 
 * **アプリでのアクション時間**
 
    Populated by `trackTimedAction` methods.
 
    * Analytics context data/Target parameter: `a.action.time.inapp`
-   * Audience Manager特性: `c_a_action_time_inapp`
+   * Audience Manager trait: `c_a_action_time_inapp`
 
 * **ライフタイム値（イベント）**
 
    Populated by `trackLifetimeValue` methods.
 
    * Analytics context data/Target parameter: `a.ltv.amount`
-   * Audience Manager特性: `c_a_ltv_amount`
+   * Audience Manager trait: `c_a_ltv_amount`
 
 ## ディメンション
 
@@ -223,11 +223,11 @@ Analyticsの場合、ライフサイクルトラッキングコールと共に�
 
    Populated by `trackLocation` methods.
 
-   * Analyticsコンテキストデータ/Targetパラメーター:
+   * Analyticsコンテキストデータ/Targetパラメーター：
 
       * `a.loc.lat.a`
       * `a.loc.lon.a`
-   * Audience Manager特性:
+   * Audience Managerの特徴：
 
       * `c_a_loc_lat_a`
       * `c_a_loc_lon_a`
@@ -237,11 +237,11 @@ Analyticsの場合、ライフサイクルトラッキングコールと共に�
 
    Populated by `trackLocation` methods.
 
-   * Analyticsコンテキストデータ/Targetパラメーター:
+   * Analytics context data/Target parameter:
 
       * `a.loc.lat.b`
       * `a.loc.lon.b`
-   * Audience Manager特性:
+   * Audience Managerの特徴：
 
       * `c_a_loc_lat_b`
       * `c_a_loc_lon_b`
@@ -251,11 +251,11 @@ Analyticsの場合、ライフサイクルトラッキングコールと共に�
 
    Populated by `trackLocation` methods.
 
-   * Analyticsコンテキストデータ/Targetパラメーター:
+   * Analytics context data/Target parameter:
 
       * `a.loc.lat.c`
       * `a.loc.lon.c`
-   * Audience Manager特性:
+   * Audience Managerの特徴：
 
       * `c_a_loc_lat_c`
       * `c_a_loc_lon_c`
@@ -266,18 +266,18 @@ Analyticsの場合、ライフサイクルトラッキングコールと共に�
    デバイスが定義された POI 内にある場合に `trackLocation` メソッドによって設定されます。
 
    * Analytics context data/Target parameter: `a.loc.poi`
-   * Audience Manager特性: `c_a_loc_poi`
+   * Audience Managerの特徴： `c_a_loc_poi`
 
 * **目標地点の中心までの距離**
 
    デバイスが定義された POI 内にある場合に `trackLocation` メソッドによって設定されます。
 
    * Analytics context data/Target parameter: `a.loc.dist`
-   * Audience Manager特性: `c_a_loc_dist`
+   * Audience Managerの特徴： `c_a_loc_dist`
 
 * **ライフタイム値（コンバージョン変数）**
 
    Populated by `trackLifetimeValue` methods.
 
    * Analytics context data/Target parameter: `a.ltv.amount`
-   * Audience Manager特性: `c_a_ltv_amount`
+   * Audience Managerの特徴： `c_a_ltv_amount`
