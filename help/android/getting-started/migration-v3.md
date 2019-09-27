@@ -3,10 +3,10 @@ description: この情報は、Android ライブラリのバージョン 3.x ま
 keywords: android;library;mobile;sdk
 seo-description: この情報は、Android ライブラリのバージョン 3.x または 2.x をバージョン 4.x に移行する場合に役立ちます。
 seo-title: Android 4.x ライブラリへの移行
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: Android 4.x ライブラリへの移行
 topic: 開発者と導入
-uuid: 906e83bb-2faf-4aa2- ac9b-3fba6b833c7e
+uuid: 906e83bb-2faf-4aa2-ac9b-3fba6b833c7e
 translation-type: tm+mt
 source-git-commit: 68bc21f1c6dba2faeed332495592114af90c8f61
 
@@ -80,9 +80,9 @@ source-git-commit: 68bc21f1c6dba2faeed332495592114af90c8f61
 
 ### バージョン 3.x からの移行
 
-バージョン3. xから4に移行するには、設定変数/メソッド値を `ADBMobileConfig.json` 変数に移動します。
+To migrate from version 3.x to 4, move the configuration variable/method value to the  variable.`ADBMobileConfig.json`
 
-| 設定変数またはメソッド | `ADBMobileConfig.json` ファイル内の変数 |
+| 設定変数または方法 | Variable in the `ADBMobileConfig.json` file |
 |--- |--- |
 | setOfflineTrackingEnabled | "offlineEnabled" |
 | setOfflineHitLimit | "batchLimit" |
@@ -96,14 +96,14 @@ source-git-commit: 68bc21f1c6dba2faeed332495592114af90c8f61
 
 ### バージョン 2.x からの移行
 
-バージョン2. xからバージョン4に移行するには、最初の列の値を2列目の変数に移動します。
+バージョン2.xからバージョン4に移行するには、最初の列の値を2番目の列の変数に移動します。
 
-| 設定変数 | `ADBMobileConfig.json` ファイル内の変数 |
+| 設定変数 | Variable in the `ADBMobileConfig.json` file |
 | --- |--- |
 | trackOffline | "offlineEnabled" |
 | offlineLimit | "batchLimit" |
 | account | "rsids" |
-| trackingServer | "server"の場合は、プレフィックスを `"https://"` 削除します。プロトコルプレフィックスは、"ssl" 設定に基づいて自動的に追加されます。 |
+| trackingServer | "server", remove the  prefix. `"https://"`プロトコルプレフィックスは、"ssl" 設定に基づいて自動的に追加されます。 |
 | trackingServerSecure | 削除します。安全な接続をおこなうには、"server" を定義し、"ssl" を有効にします。 |
 | charSet | "charset" |
 | currencyCode | "currency" |
@@ -116,21 +116,21 @@ source-git-commit: 68bc21f1c6dba2faeed332495592114af90c8f61
 | dynamicVariablePrefix | 削除します。使用されなくなりました。 |
 | visitorNamespace | 削除します。使用されなくなりました。 |
 | usePlugins | 削除します。使用されなくなりました。 |
-| useBestPracticesチャーン測定（getChurnInstance）へのすべての呼び出し | 「削除」をクリックし、「ライフサイクル指標」に置き換えます。 |
+| useBestPracticesチャーン測定（getChurnInstance）へのすべての呼び出し | Remove, replaced by  Lifecycle Metrics. |
 
 ## Update track calls and tracking variables {#section_96E7D9B3CDAC444789503B7E7F139AB9}
 
 バージョン 4 の SDK では、Web に焦点を当てた `track` 呼び出しと `trackLink` 呼び出しを使用する代わりに、次のメソッドを使用します。
 
-* `trackState`（ `home dashboard`例 `app settings`:、など、アプリで使用可能な `cart`ビュー）。
+* `trackState`, which are the views that are available in your app, such as `home dashboard`, `app settings`, `cart`, and so on.
 
    これらの状態は Web サイト上のページによく似ており、`trackState` コールはページビュー数を増分します。
 
-* `trackAction` アクション（ `logons`例えば、アプリ `banner taps``feed subscriptions`内で発生する、測定対象となるアクションなど）を実行します。
+* `trackAction` アプリで発生 `logons`し、測 `banner taps`定 `feed subscriptions`する、、、などのアクションを設定します。
 
 The `contextData` parameter for both of these methods is a `HashMap<String, Object>`, which contains the name-value pairs that are sent as context data.
 
-## イベント、prop、eVar
+## イベント、propおよびeVar
 
 バージョン 4 では、event、eVar、prop、継承、リストなどの変数をアプリ内で直接割り当てることができなくなりました。SDK は、コンテキストデータと処理ルールを使用して、レポート用にアプリデータを Analytics 変数にマップするようになりました。
 
@@ -144,11 +144,11 @@ The `contextData` parameter for both of these methods is a `HashMap<String, Obje
 
 変数に直接代入していた値を `data` HashMap に追加する必要があります。This means that calls to `setProp`, `setEvar`, and assignments to persistent context data should be removed and the values be added to the `data` parameter.
 
-## appSection/server、geoZip、トランザクションID、キャンペーン、その他の標準変数
+## AppSection/server, GeoZip, transaction ID, Campaign, and other standard variables
 
 上記の変数を含め、測定オブジェクトに設定していたデータは `data` HashMap に追加する必要があります。`trackState` または `trackAction` 呼び出しで送信されるデータは、`data` パラメーターのペイロードのみです。
 
-### トラッキングコールの置換
+### トラッキングコールの置き換え
 
 次のメソッドを `trackState` または `trackAction` の呼び出しで置き換えます。
 
@@ -166,7 +166,7 @@ The `contextData` parameter for both of these methods is a `HashMap<String, Obje
 
 ## Custom visitor ID {#section_2CF930C13BA64F04959846E578B608F3}
 
-`visitorID` 変数を呼び出しに置き換え `setUserIdentifier`ます。
+Replace the `visitorID` variable with a call to `setUserIdentifier`.
 
 ## Offline tracking {#section_5D4CD8CD1BE041A79A8657E31C0D24C6}
 
