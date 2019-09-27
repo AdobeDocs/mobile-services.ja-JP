@@ -2,7 +2,7 @@
 description: Experience Cloud ソリューション用 Windows 8.1 ユニバーサルアプリストア SDK 4.x を使用すると、ネイティブ Windows 8.1 および Windows Phone 8.1 アプリケーションを測定し、アプリ内でターゲットを絞り込んだコンテンツを配信し、Audience Manager を通じてオーディエンスデータを活用および収集することができます。
 seo-description: Experience Cloud ソリューション用 Windows 8.1 ユニバーサルアプリストア SDK 4.x を使用すると、ネイティブ Windows 8.1 および Windows Phone 8.1 アプリケーションを測定し、アプリ内でターゲットを絞り込んだコンテンツを配信し、Audience Manager を通じてオーディエンスデータを活用および収集することができます。
 seo-title: 'Experience Cloud ソリューション用 Windows 8.1 ユニバーサルアプリストア SDK 4.x '
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: 'Experience Cloud ソリューション用 Windows 8.1 ユニバーサルアプリストア SDK 4.x '
 topic: 開発者と導入
 uuid: a06d8cf2-5d2d-49a8-86ac-102e2934ea59
@@ -14,7 +14,7 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 # Experience Cloud ソリューション用 Windows 8.1 ユニバーサルアプリストア SDK 4.x {#windows-universal-app-store-sdk-x-for-experience-cloud-solutions}
 
-Windows8.1Universal App Store SDK4. x for Experience Cloud Solutionsを使用すると、ネイティブWindows8.1およびWindows Phone8.1アプリケーションを測定したり、アプリケーションでターゲットコンテンツを配信したり、Audience Managerを使用してオーディエンスデータを活用および収集したりできます。
+Windows 8.1 Universal App Store SDK 4.x for Experience Cloud Solutions lets you measure native Windows 8.1 and Windows Phone 8.1 applications, deliver targeted content in your app, and leverage and collect audience data through Audience Manager.
 
 **最終更新日：2015 年 8 月 21 日**
 
@@ -32,7 +32,7 @@ Visual Studio 2013 以降。
 
 ## Adobe Mobile Services {#section_7583FD5FDED143619048E9744A3F2D21}
 
-Adobe Mobile Services は、モバイルアプリケーション用のモバイルマーケティング機能を Adobe Experience Cloud 上で統合する新しい UI を提供します。最初に、Mobileサービスは、Adobe AnalyticsおよびAdobe Targetのアプリ分析機能とターゲット機能とのシームレスな統合を提供します。
+Adobe Mobile Services は、モバイルアプリケーション用のモバイルマーケティング機能を Adobe Experience Cloud 上で統合する新しい UI を提供します。最初は、Mobileサービスは、Adobe AnalyticsとAdobe targetのアプリ分析とターゲティング機能をシームレスに統合します。
 
 詳しくは、[Adobe Mobile Services のドキュメント](/help/using/home.md)を参照してください。
 
