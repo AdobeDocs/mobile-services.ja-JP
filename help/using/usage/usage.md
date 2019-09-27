@@ -3,10 +3,10 @@ description: 使用状況レポートには、セッションの平均長さ、�
 keywords: モバイル
 seo-description: 使用状況レポートには、セッションの平均長さ、日次および月次の利用ユーザー数、アップグレード回数、その他の情報が表示され、アプリの使用方法や使用頻度を把握できます。リテンションレポートでは、初回起動後 1 日、7 日間および 28 日間のユーザーリテンションを簡単に確認できます。
 seo-title: レポート
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: レポート
 topic: レポート, 指標
-uuid: 2abc2bd1- dbae-4af1-9b8d-1df2f6d3a81f
+uuid: 2abc2bd1-dbae-4af1-9b8d-1df2f6d3a81f
 translation-type: tm+mt
 source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
 
