@@ -3,10 +3,10 @@ description: イベントのシリアル化は処理ルールでサポートさ�
 keywords: android;library;mobile;sdk
 seo-description: イベントのシリアル化は処理ルールでサポートされていません。Mobile SDK では、コンテキストデータパラメーターに特殊な構文を使用して、シリアル化されたイベントをサーバー呼び出しで直接設定する必要があります。
 seo-title: イベントのシリアル化
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: イベントのシリアル化
 topic: 開発者と導入
-uuid: acdeda16- ab83-4cfc-907d-33448b801b31
+uuid: acdeda16-ab83-4cfc-907d-33448b801b31
 translation-type: tm+mt
 source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
 
