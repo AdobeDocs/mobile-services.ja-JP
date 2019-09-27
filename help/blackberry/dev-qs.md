@@ -1,8 +1,8 @@
 ---
 title: 開発者クイックスタート
 seo-title: BlackBerry Developer Quick Start for Adobe Mobile Services
-description: BlackBerry開発者クイックスタートガイドは、Adobe Mobile Services用BlackBerryライブラリの実装プロセスを理解するのに役立ちます。
-seo-description: BlackBerry開発者クイックスタートガイドは、Adobe Mobile Services用BlackBerryライブラリの実装プロセスを理解するのに役立ちます。
+description: 『BlackBerry開発者クイックスタートガイド』は、Adobe Mobile Services用BlackBerryライブラリを実装するプロセスを理解するのに役立ちます。
+seo-description: The BlackBerry Developer Quick Start Guide helps you understand the process to implement the BlackBerry library for Adobe Mobile Services.
 translation-type: tm+mt
 source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
 
@@ -34,17 +34,17 @@ source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
 ## プロジェクトへの SDK の追加
 
 1. Right-click on your project and select **[!UICONTROL Configure]** &gt; **[!UICONTROL Add Library]**.
-1. **[!UICONTROL 「外部ライブラリ」を選択]** し、「 **[!UICONTROL 次へ]**」をクリックします。
+1. Select **[!UICONTROL External library]** and click **[!UICONTROL Next]**.
 1. 「**[!UICONTROL デバイスライブラリ]」フィールドの横にある「****参照[!UICONTROL 」をクリックします。]**
-1. `ADBMobile-4.0.0BETA-BlackBerry` フォルダーに移動します。
-1. `Device-Debug` フォルダー内で、「 `libADBMobileShared.so`**[!UICONTROL 開く]**」を選択します。
+1. Navigate to the `ADBMobile-4.0.0BETA-BlackBerry` folder.
+1. In the `Device-Debug` folder, select `libADBMobileShared.so` and click **[!UICONTROL Open]**.
 1. 「**[!UICONTROL シミュレーターライブラリ]」フィールドの横にある「****参照[!UICONTROL 」をクリックします。]**
-1. `ADBMobile-4.0.0BETA-BlackBerry` フォルダーに移動します。
-1. `Device-Debug` フォルダー内で、「 `libADBMobileShared.so`**[!UICONTROL 開く]**」を選択します。
+1. Navigate to the `ADBMobile-4.0.0BETA-BlackBerry` folder.
+1. In the `Device-Debug` folder, select `libADBMobileShared.so` and click **[!UICONTROL Open]**.
 1. 「**[!UICONTROL フォルダーを含める]」フィールドの横にある「****参照[!UICONTROL 」をクリックします。]**
-1. `ADBMobile-4.0.0BETA-BlackBerry` フォルダーに移動します。
+1. Navigate to the `ADBMobile-4.0.0BETA-BlackBerry` folder.
 1. 含めるフォルダーに `public` フォルダーを追加します。
-1. `ADBMobile-4.0.0BETA-BlackBerry` フォルダーには、 `.json` 設定ファイルがあり `ADBMobileConfig.json`ます。
+1. In the `ADBMobile-4.0.0BETA-BlackBerry` folder, there is a `.json` config file named `ADBMobileConfig.json`.
 
    そのファイルをプロジェクトのルートにコピーします。
 1. Right-click on your project and select **[!UICONTROL Refresh]**.
@@ -55,18 +55,18 @@ source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
 1. 「**[!UICONTROL （すべての設定）]**」が選択されていることを確認し、ウィンドウの「**[!UICONTROL アセット]」セクションで「**&#x200B;ファイルを追加&#x200B;**」をクリックします。**
    >[!TIP]
    >
-   >QNX ModeFactics IDEには、これらのボタンが表示されないことがあるバグがあります。ボタンが表示されない場合は、表示されるまでウィンドウのサイズを変更してください。
+   >There is a bug in the QNX Momentics IDE that sometimes prevents those buttons from being visible. If you can't see the buttons, resize the windows until they appear.
 
-1. **[!UICONTROL 「ワークスペース]**」をクリックします。
+1. 「ワークスペ **[!UICONTROL ース]**」をクリック
 1. Find the `ADBMobileConfig.json` file in your project and click **[!UICONTROL OK]**.
 
 Your application can import the classes/interfaces from the `adobeMobileLibrary.jar` library by using `#include <ADBMobile.hpp>`.
 
-## アプリ権限の追加
+## アプリの権限の追加
 
-`bar-descriptor.xml` プロジェクトディレクトリで、行を追加 `<permission>access_internet</permission>`するか、QNX **[!UICONTROL MobMentics]** IDEで **[!UICONTROL 「アプリケーション]** 」タブの権限セクションの「インターネット」ボックスを選択します。
+In `bar-descriptor.xml` in the project directory, add the line `<permission>access_internet</permission>`, or in the QNX Momentics IDE, select the **[!UICONTROL Internet]** box on the permissions section of the **[!UICONTROL Application]** tab.
 
-## `ADBMobileConfig.json` 設定ファイルの更新
+## Update the `ADBMobileConfig.json` config file
 
 `ADBMobileConfig.json` ファイルには、グローバルな SDK 設定が含まれています。最初に、いくつかの値を更新する必要があります。
 
@@ -87,6 +87,6 @@ Your application can import the classes/interfaces from the `adobeMobileLibrary.
 }
 ```
 
-You must at least update the `rsids` and `server` parameters. 詳しくは、 [Adobe Mobileクラスおよびメソッドリファレンス](/help/blackberry/methods.md)を参照してください。
+You must at least update the `rsids` and `server` parameters. 詳しくは、 [Adobe mobileクラスおよびメソッドリファレンスを参照してください](/help/blackberry/methods.md)。
 
 これで、BlackBerry 10 アプリに Analytics を実装できるようになりました。
