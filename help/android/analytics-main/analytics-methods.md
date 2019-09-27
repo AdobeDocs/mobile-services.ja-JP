@@ -3,10 +3,10 @@ description: Android ライブラリによって提供される Adobe Analytics 
 keywords: android;library;mobile;sdk
 seo-description: Android ライブラリによって提供される Adobe Analytics メソッドのリストを示します。
 seo-title: Analytics メソッド
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: Analytics メソッド
 topic: 開発者と導入
-uuid: ac7c640e-9dcc-4724- b561-019cc025d5a7
+uuid: ac7c640e-9dcc-4724-b561-019cc025d5a7
 translation-type: tm+mt
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
@@ -17,7 +17,7 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 Android ライブラリによって提供される Adobe Analytics メソッドのリストを示します。
 
-SDKは現在、Analytics]、Target]、Audience Manager、およびAdobe Experience Platform IDサービスを含む複数のAdobe Experience Cloudソリューションをサポートしています。これらのメソッドには、ソリューションに応じたプレフィックスが付けられています。例えば、Experience Cloud ID メソッドのプレフィックスは、`analytics` です。
+SDKは、現在、Analytics]、Target]、Audience Manager]およびAdobe Experience Platform Identity Service]を含む、複数のAdobe Experience cloudソリューションをサポートしています。 これらのメソッドには、ソリューションに応じたプレフィックスが付けられています。例えば、Experience Cloud ID メソッドのプレフィックスは、`analytics` です。
 
 次の各メソッドを使用して、Adobe Analytics レポートスイートにデータを送信します。
 
@@ -29,7 +29,7 @@ SDKは現在、Analytics]、Target]、Audience Manager、およびAdobe Experien
 
    >[!TIP]
    >
-   >これはページビュー数が増える唯一のトラッキング呼び出しです。
+   >This is the only tracking call that increments page views.
 
    * このメソッドの構文を次に示します。
 
@@ -43,7 +43,7 @@ SDKは現在、Analytics]、Target]、Audience Manager、およびAdobe Experien
       Analytics.trackState("loginScreen",null);
       ```
 
-* **trackAction**&#x200B;アプリ内のアクションを追跡します。
+* **trackActionアプリ**&#x200B;内のアクションを追跡します。
 
    Actions that you want to measure, such as `logons`, `banner taps`, `feed subscriptions`, and other metrics, that occur in your app.
 
@@ -59,8 +59,7 @@ SDKは現在、Analytics]、Target]、Audience Manager、およびAdobe Experien
       Analytics.trackAction("heroBannerTouched",null);
       ```
 
-* **getTrackingIdentifier**:
-Analyticsの自動生成された訪問者識別子を返します。
+* **getTrackingIdentifier** Analyticsで自動的に生成された訪問者識別子を返します。
 
    これは、初回起動時に生成され、それ以降、保存および使用されるアプリ固有の一意の訪問者 ID です。ID は、アプリをアップグレードしても保持され、アプリをアンインストールすると削除されます。
 
@@ -78,7 +77,7 @@ Analyticsの自動生成された訪問者識別子を返します。
 
 * **trackLocation**
 
-   定義された目標地点に現在の緯度、経度および位置を送信します。詳しくは、 [地域と目標地点](/help/android/location/geo-poi.md)を参照してください。
+   現在の緯度、経度、位置を、定義した目標地点に送信します。 詳しくは、地域と目 [標地点を参照してください](/help/android/location/geo-poi.md)。
 
    * このメソッドの構文を次に示します。
 
@@ -119,10 +118,9 @@ Analyticsの自動生成された訪問者識別子を返します。
    >この呼び出しはヒットを送信しません。
 
    * このメソッドの構文を次に示します。
-
-      ```java
-      publicstaticvoidtrackTimedActionStart(Stringaction,Map<String,Object>contextData);
-      ```
+   ```java
+   publicstaticvoidtrackTimedActionStart(Stringaction,Map<String,Object>contextData);
+   ```
 
    * このメソッドのコードサンプルを次に示します。
 
@@ -145,7 +143,7 @@ Analyticsの自動生成された訪問者識別子を返します。
       public static void trackTimedActionUpdate(Stringaction,Map <String,Object> contextData); 
       ```
 
-   * 以下に、このメソッドのコードサンプルを示します。
+   * Here is a code sample for this method:
 
       ```java
       HashMap cdata = new HashMap<String Object> (); 
