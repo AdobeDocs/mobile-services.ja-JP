@@ -2,10 +2,10 @@
 description: 時間計測アクションを使用すると、アクションの開始から終了までのアプリ内時間と合計時間を測定できます。SDK は、アクションが完了するまでにかかる各セッションの時間と全セッションの合計時間を計算します。時間計測アクションを使用して、セグメントを定義し、購入までの時間、パスレベル、チェックアウトフローなどを比較することができます。
 seo-description: 時間計測アクションを使用すると、アクションの開始から終了までのアプリ内時間と合計時間を測定できます。SDK は、アクションが完了するまでにかかる各セッションの時間と全セッションの合計時間を計算します。時間計測アクションを使用して、セグメントを定義し、購入までの時間、パスレベル、チェックアウトフローなどを比較することができます。
 seo-title: 時間計測アクション
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: 時間計測アクション
 topic: 開発者と導入
-uuid: 5a48a580- b942-4e49-9f1b-078fea7fcdb
+uuid: 5a48a580-b942-4e49-9f1b-078fea7fccdb
 translation-type: tm+mt
 source-git-commit: 97c0dc17bcc624b38e9eb8023eb1d69d02568d11
 
@@ -31,7 +31,7 @@ source-git-commit: 97c0dc17bcc624b38e9eb8023eb1d69d02568d11
 
 1. ライブラリをプロジェクトに追加し、ライフサイクルを実装します。
 
-   詳しくは、コア実装および *ライフサイクル* で [、"SDKおよび設定ファイルのIntelliJ IDEAまたはEclipseプロジェクトへの追加」を参照](/help/android/getting-started/dev-qs.md)してください。
+   詳しくは、 *Core実装およびライフサイクルでのIntelliJ IDEAまたはEclipseプロジェクトへのSDKと設定ファイルの追加*[を参照してください](/help/android/getting-started/dev-qs.md)。
 1. ライブラリをインポートします。
 
    ```java
