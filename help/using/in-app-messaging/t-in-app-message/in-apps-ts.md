@@ -3,10 +3,10 @@ description: この情報は、アプリ内メッセージの問題のトラブ�
 keywords: モバイル
 seo-description: この情報は、アプリ内メッセージの問題のトラブルシューティングに役立ちます。
 seo-title: アプリ内メッセージのトラブルシューティング
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: アプリ内メッセージのトラブルシューティング
 topic: 指標
-uuid: 8813e8d8- bb1e-46ad-83cd-98ae68f73ce6
+uuid: 8813e8d8-bb1e-46ad-83cd-98ae68f73ce6
 translation-type: tm+mt
 source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
@@ -37,13 +37,13 @@ source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
 **アプリ内メッセージを管理ページの「状態**」列でリストビューをチェックして、メッセージがライブになっているかどうかを確認します。
 
-## 一度 *表示*&#x200B;し、常に **&#x200B;表示して、 *オーディエンスページでオフライン* 設定を表示します。
+## オーディエン *スページでは*、一度表示 *、常に表示*、オフ ** ライン設定の表示を確認できます。
 
 これらの設定が正しいことを確認します。オーディエンスページで、「**トリガー**」タブのオプションを確認します。このオプションでは、メッセージの表示頻度を指定できます。
 
 ## 起動イベントをトリガーとして使用する場合
 
-起動イベントは、新規セッションでのみ実行されます。セッションが開始されるタイミングについて詳しくは、`lifecycleTimeout`[を追加します。](/help/ios/configuration/json-config/json-config.md)
+起動イベントは、新規セッションでのみ実行されます。セッションが開始されるタイミングについて詳しくは、 `lifecycleTimeout` in the [ADBMobile JSON config](/help/ios/configuration/json-config/json-config.md) file.
 
 ## メッセージをリモートで更新しましたが、アプリで古いメッセージが表示されています。
 
@@ -77,7 +77,7 @@ SDK は、ライフサイクル開始時に、新しい／更新されたメッ�
 
 次の手順を完了します。
 
-1. 設定ファイル内のメッセージURLをカールして、リモートメッセージが更新されていることを確認します（例: `curl "https://assets.adobedtm.com/b213090c5204bf94318f4ef0539a38b487d10368/scripts/satellite-542c62859662383b1a0008f4.json"`）
+1. 設定ファイル内のメッセージURLをカールして、リモートメッセージが更新されたことを確認します(例 `curl "https://assets.adobedtm.com/b213090c5204bf94318f4ef0539a38b487d10368/scripts/satellite-542c62859662383b1a0008f4.json"`:)
 1. アプリケーションを閉じます。
 1. Wait for a time period that is longer than the `lifecycleTimeout` in the config file.
 1. アプリを開き、メッセージが表示される場所に移動して、更新されていることを確認します。
