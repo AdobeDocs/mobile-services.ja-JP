@@ -2,11 +2,11 @@
 description: Android ウィジェットは、アプリと同じメソッドを使用して追跡できます。ウィジェットは、アプリケーションコンテキストをアプリと共有するので、ヒットの順番および訪問者 ID は保持されます。
 keywords: android;library;mobile;sdk
 seo-description: Android ウィジェットは、アプリと同じメソッドを使用して追跡できます。ウィジェットは、アプリケーションコンテキストをアプリと共有するので、ヒットの順番および訪問者 ID は保持されます。
-seo-title: Androidウィジェット
-solution: Marketing Cloud、Analytics
+seo-title: Android widgets
+solution: Marketing Cloud,Analytics
 title: Androidウィジェット
 topic: 開発者と導入
-uuid: 1a3718ff-967b-4c8e- ae0b- ba15bddbda0a
+uuid: 1a3718ff-967b-4c8e-ae0b-ba15bddbda0a
 translation-type: tm+mt
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
