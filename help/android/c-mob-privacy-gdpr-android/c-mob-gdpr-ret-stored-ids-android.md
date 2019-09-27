@@ -1,9 +1,9 @@
 ---
 description: この情報は、GDPR のデータアクセス要求に関連してローカルに保存されている SDK ID を Android アプリから取得する場合に役立ちます。
 seo-description: この情報は、GDPR のデータアクセス要求に関連してローカルに保存されている SDK ID を Android アプリから取得する場合に役立ちます。
-seo-title: 保存済み識別子の取得
-title: 保存済み識別子の取得
-uuid: 6fd3d202- b0a1-4c80-96f4-369fc24ac0a3
+seo-title: Retrieving stored identifiers
+title: 保存された識別子の取得
+uuid: 6fd3d202-b0a1-4c80-96f4-369fc24ac0a3
 translation-type: tm+mt
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
@@ -16,7 +16,7 @@ source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 >[!IMPORTANT]
 >
->`getAllIdentifiersAsync` このメソッドは、SDKに格納されているIDを取得します。このメソッドは、ユーザーがオプトアウトする&#x200B;**前**&#x200B;に呼び出す必要があります。
+>The `getAllIdentifiersAsync` method retrieves identities stored in the SDK. このメソッドは、ユーザーがオプトアウトする&#x200B;**前**&#x200B;に呼び出す必要があります。
 
 （存在する場合）SDK ID はローカルに保存され、JSON 文字列で返されます。この文字列には次の情報が含まれている可能性があります。
 
