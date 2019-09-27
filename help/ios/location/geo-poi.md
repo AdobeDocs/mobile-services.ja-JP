@@ -1,11 +1,11 @@
 ---
 description: 位置情報を利用すると、緯度と経度およびアプリ内にあらかじめ定義されている目標地点を用いてロケーションデータを測定することができます。
 seo-description: 位置情報を利用すると、緯度と経度およびアプリ内にあらかじめ定義されている目標地点を用いてロケーションデータを測定することができます。
-seo-title: 位置情報と目標地点
-solution: Marketing Cloud、Analytics
-title: 位置情報と目標地点
+seo-title: 地域と目標地点
+solution: Marketing Cloud,Analytics
+title: Geo-Location and points of interest
 topic: 開発者と導入
-uuid: c800ec85- a33f-425d- b28f- bfe8bf229ae8
+uuid: c800ec85-a33f-425d-b28f-bf8229ae8
 translation-type: tm+mt
 source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
@@ -34,15 +34,15 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 “analytics.poi”: “https://assets.adobedtm.com/…/yourfile.json”,
 ```
 
-詳しくは [、ADBMobile JSON Config](/help/ios/configuration/json-config/json-config.md)を参照してください。
+詳しくは、ADBMobile JSON Configを参 [照してください](/help/ios/configuration/json-config/json-config.md)。
 
-この設定がない場合は、更新されたバージョンの `ADBMobile.json` ファイルをダウンロードして、アプリに追加する必要があります。詳しくは、「開始する前にSDKおよびテストツールを *ダウンロードする」* を参照 [](/help/ios/getting-started/requirements.md)してください。
+この設定がない場合は、更新されたバージョンの `ADBMobile.json` ファイルをダウンロードして、アプリに追加する必要があります。詳しい情報と手順については、『開始する前に *SDKとテストツールをダウンロードする* 』を参 [照してください](/help/ios/getting-started/requirements.md)。
 
-## 地域の位置とPOISの追跡 {#section_B1616E400A7548F9A672F97FEC75AE27}
+## 地域とPOIの追跡 {#section_B1616E400A7548F9A672F97FEC75AE27}
 
 1. ライブラリをプロジェクトに追加し、ライフサイクルを実装します。
 
-   詳しくは、コア実装および *ライフサイクル* で [プロジェクトにSDKおよび設定ファイルを追加を参照](/help/ios/getting-started/dev-qs.md)してください。
+   詳しくは、コア実装とラ *イフサイクルでのプロジェクトへのSDKと設定ファイルの追加* ( [英語のみ)を参照してください](/help/ios/getting-started/dev-qs.md)。
 1. ライブラリをインポートします。
 
    ```objective-c
@@ -58,9 +58,9 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
    >[!TIP]
    >
-   >いつ `trackLocation` でも呼び出すことができます。
+   >いつでも電話 `trackLocation` できます。
 
-   `trackLocation` 呼び出しに渡される場所を決定するには、「ユーザーの場所 [を取得する」を使用](https://developer.apple.com/Library/ios/documentation/UserExperience/Conceptual/LocationAwarenessPG/CoreLocation/CoreLocation.html)します。
+   呼び出しに渡す場所を指定するには、「 `trackLocation` Getting the User’s Location [」を使用します](https://developer.apple.com/Library/ios/documentation/UserExperience/Conceptual/LocationAwarenessPG/CoreLocation/CoreLocation.html)。
 
 さらに、ロケーションが定義済みの POI 半径内にあると判断された場合は、`a.loc.poi` コンテキストデータ変数が `trackLocation` ヒットとともに送信され、ロケーションレポートに POI としてレポートされます。`a.loc.dist` コンテキスト変数も、定義された座標からの距離（メートル単位）と共に送信されます。
 
@@ -74,7 +74,7 @@ NSMutableDictionary *contextData = [NSMutableDictionary dictionary];
 [ADBMobile trackLocation: currentLocation data:contextData];
 ```
 
-コンテキストデータ値は、カスタム変数にマップする必要があります。
+Context data values must be mapped to custom variables:
 
 ![](assets/map-location-context-data.png)
 
@@ -97,7 +97,7 @@ NSMutableDictionary *contextData = [NSMutableDictionary dictionary];
 
 次の情報に留意してください。
 
-* `trackLocation` リクエストは `trackAction` 、呼び出しと同等に送信されます。
+* A `trackLocation` request sends in the equivalent of a `trackAction` call.
 
 * POI は、通常の `trackAction` 呼び出しおよび `trackState` 呼び出しの一部としては送信されないので、POI を追跡するには `trackLocation` 呼び出しを使用する必要があります。
 
