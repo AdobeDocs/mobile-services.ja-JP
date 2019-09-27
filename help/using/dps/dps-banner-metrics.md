@@ -1,12 +1,12 @@
 ---
-description: バナー指標レポートには、既存のデータのサンバーストチャートが表示されます。このレポートはDigital Publishing Suite（DPS）のお客様のみ利用できます。
+description: バナー指標レポートには、既存のデータのサンバーストチャートが表示されます。このレポートは、Digital Publishing Suite(DPS)のお客様のみ利用できます。
 keywords: モバイル
-seo-description: バナー指標レポートには、既存のデータのサンバーストチャートが表示されます。このレポートはDigital Publishing Suite（DPS）のお客様のみ利用できます。
+seo-description: バナー指標レポートには、既存のデータのサンバーストチャートが表示されます。このレポートは、Digital Publishing Suite(DPS)のお客様のみ利用できます。
 seo-title: バナー指標
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: バナー指標
 topic: 指標
-uuid: 50638c55- f10d-43d7-8d12- e48908572766
+uuid: 50638c55-f10d-43d7-8d12-e48908572766
 translation-type: tm+mt
 source-git-commit: 7f53ece867144236f170533d8474dada4c29ad39
 
@@ -15,7 +15,7 @@ source-git-commit: 7f53ece867144236f170533d8474dada4c29ad39
 
 # バナー指標 {#banner-metrics}
 
-**[!UICONTROL バナー指標]レポートには、既存のデータのサンバーストチャートが表示されます。**&#x200B;このレポートはDigital Publishing Suite（DPS）のお客様のみ利用できます。
+**[!UICONTROL バナー指標]レポートには、既存のデータのサンバーストチャートが表示されます。** This report is only available to Digital Publishing Suite (DPS) customers.
 
 ![](assets/dps_banner_name.png)
 
@@ -23,7 +23,7 @@ source-git-commit: 7f53ece867144236f170533d8474dada4c29ad39
 
 * **[!UICONTROL バナー名]**：バナーの名前です。
 * **[!UICONTROL 読者]**：アプリユーザー数です。
-* **[!UICONTROL バナー名インスタンス]**。クリック数とインプレッション数によってバナーが参照された回数です。
+* **[!UICONTROL バナー名インスタンス]**：クリック数およびインプレッション数によってバナーが参照された回数です。
 * **[!UICONTROL バナークリック]**：ユーザーがバナーをクリックした回数です。
 * **[!UICONTROL バナーインプレッション]**：バナーがブラウザーページで閲覧（または表示）された回数です。
 
