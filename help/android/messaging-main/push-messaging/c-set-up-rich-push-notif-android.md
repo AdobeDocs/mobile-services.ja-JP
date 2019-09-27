@@ -3,7 +3,7 @@ description: Android の通知に画像ファイルを添付することがで�
 seo-description: Android の通知に画像ファイルを添付することができます。ビジュアルコンポーネントを追加すると、プッシュ通知に対するユーザーのエンゲージメントが大幅に高まる可能性があります。
 seo-title: リッチプッシュ通知の受信
 title: リッチプッシュ通知の受信
-uuid: 4a0340a6-666b-49b6-907a-9afc966fddbd
+uuid: 4a0340a6-666b-49b6-907a-9afc966dfdba
 translation-type: tm+mt
 source-git-commit: dca3663986b3ecc6e9fb736cc99513279715225c
 
@@ -30,7 +30,7 @@ Android の通知に画像ファイルを添付することができます。ビ
 
 >[!IMPORTANT]
 >
->`onMessageReceived()` 実装を含むクラスは、受信したデータを処理します。
+>この実装を含むクラスは、受 `onMessageReceived()` 信したデータを処理します。
 
 If the push message contains a Media URL, the URL will be available in the `RemoteMessage` parameter that is passed to the `onMessageReceived()` function. 使用するキーは、次のコードサンプルに示すように、`attachment-url` です。
 
