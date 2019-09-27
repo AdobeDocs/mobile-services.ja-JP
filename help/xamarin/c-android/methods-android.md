@@ -2,10 +2,10 @@
 description: Experience Cloud ソリューション 4.x SDK 用 Xamarin コンポーネントの Android メソッド。
 keywords: Xamarin
 seo-description: Experience Cloud ソリューション 4.x SDK 用 Xamarin コンポーネントの Android メソッド。
-seo-title: Androidのメソッド
+seo-title: Android methods
 solution: Marketing Cloud，開発者
-title: Androidのメソッド
-uuid: 860af1c4- f57e-4bcb-8308-4e316da9a27b
+title: Androidメソッド
+uuid: 860af1c4-f57e-4bcb-8308-4e316da9a27b
 translation-type: tm+mt
 source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
@@ -18,7 +18,7 @@ Experience Cloud ソリューション 4.x SDK 用 Xamarin コンポーネント
 
 ## Configuration methods {#section_405AA09390E346E5BB7B1F4E0F65F51E}
 
-* **debugLogging**
+* **DebugLogging**
 
    現在のデバッグログの環境設定を返し、デフォルトはfalseです。
 
@@ -54,8 +54,8 @@ Experience Cloud ソリューション 4.x SDK 用 Xamarin コンポーネント
 * **PrivacyStatus**
 
    現在のユーザーのプライバシーステータスの enum 表現を返します。
-   * `ADBMobilePrivacyStatus.OptIn` - ヒットは即座に送信されます。
-   * `ADBMobilePrivacyStatus.OptOut` - ヒットは破棄されます。
+   * `ADBMobilePrivacyStatus.OptIn`  — ヒットは直ちに送信されます。
+   * `ADBMobilePrivacyStatus.OptOut`  — ヒットは破棄されます。
    * `ADBMobilePrivacyStatus.Unknown` - オフライン追跡が有効になっている場合、プライバシーステータスがオプトイン（ヒットが送信される）またはオプトアウト（ヒットが破棄される）に変更されるまで、ヒットは保存されます。オフライン追跡が有効になっていない場合、プライバシーステータスがオプトインに変更されるまで、ヒットは破棄されます。
    デフォルト値は [ADBMobileConfig.json](/help/android/configuration/json-config/json-config.md) ファイルに設定します。
 
@@ -75,7 +75,7 @@ Experience Cloud ソリューション 4.x SDK 用 Xamarin コンポーネント
 
 * **UserIdentifier**
 
-   カスタム識別子が設定されている場合、この識別子を返します。カスタム識別子が設定されていない場合、nullを返します。デフォルト値は `null` です。
+   カスタム識別子が設定されている場合、この識別子を返します。 カスタム識別子が設定されていない場合は、nullを返します。 デフォルト値は `null` です。
 
    * このメソッドの構文を次に示します。
 
@@ -176,7 +176,7 @@ Experience Cloud ソリューション 4.x SDK 用 Xamarin コンポーネント
 
 * **SetLargeIconResourceId(int resourceId)**
 
-   （4.2以降） SDKによって作成された通知に使用される大きいアイコンを設定します。このアイコンは、ユーザーが通知センターで通知を完了したときに表示されるプライマリ画像です。
+   （4.2以降）SDKによって作成される通知に使用する大きいアイコンを設定します。 This icon is the primary image that is displayed when the user sees the complete notification in the notification center.
 
    * このメソッドの構文を次に示します。
 
@@ -192,7 +192,7 @@ Experience Cloud ソリューション 4.x SDK 用 Xamarin コンポーネント
 
 * **SetSmallIconResourceId(int resourceId)**
 
-   （4.2以降） SDKによって作成された通知に使用される小さいアイコンを設定します。このアイコンはステータスバーに表示され、ユーザーが通知センターで完全な通知を表示したときに表示されるセカンダリ画像です。
+   （4.2以降）SDKによって作成される通知に使用する小さいアイコンを設定します。 This icon displays in the status bar and is the secondary image shown when the user sees the complete notification in the notification center.
 
    * このメソッドの構文を次に示します。
 
@@ -210,7 +210,7 @@ Experience Cloud ソリューション 4.x SDK 用 Xamarin コンポーネント
 
 * **TrackingIdentifier**
 
-   Analytics 用に自動的に生成された ID を返します。これは、初回起動時に生成され、その時点から使用されるアプリケーション固有の一意のIDです。このIDは、アプリケーションのアップグレード間で保持され、アンインストール時に削除されます。
+   Analytics 用に自動的に生成された ID を返します。これは、初回起動時に生成され、その時点から保存および使用される、アプリ固有の一意のIDです。 このIDは、アプリのアップグレードの間も保持され、アンインストール時に削除されます。
 
    * このメソッドの構文を次に示します。
 
@@ -230,7 +230,7 @@ Experience Cloud ソリューション 4.x SDK 用 Xamarin コンポーネント
 
    >[!TIP]
    >
-   >これはページビュー数が増える唯一のトラッキング呼び出しです。
+   >これは、ページビュー数を増やす唯一のトラッキングコールです。
 
    * このメソッドの構文を次に示します。
 
@@ -273,7 +273,7 @@ Experience Cloud ソリューション 4.x SDK 用 Xamarin コンポーネント
 
 * **TrackLocation**
 
-   現在地点の緯度と経度の座標を送信します。`ADBMobileConfig.json` ファイルで定義されている目標地点を使用して、パラメーターとして指定された場所が任意のPOIにあるかどうかを判断します。現在の座標が定義した目標地点内にある場合、コンテキストデータ変数に代入され、`TrackLocation` コールで送信されます。
+   現在地点の緯度と経度の座標を送信します。Also uses points of interest defined in the `ADBMobileConfig.json` file to determine whether the location that was provided as a parameter is in any of your POIs. 現在の座標が定義した目標地点内にある場合、コンテキストデータ変数に代入され、`TrackLocation` コールで送信されます。
 
    * このメソッドの構文を次に示します。
 
@@ -354,7 +354,7 @@ Experience Cloud ソリューション 4.x SDK 用 Xamarin コンポーネント
       public static void TrackTimedActionStart(string action,IDictionary<string, Object> cdata); 
       ```
 
-   * このメソッドのコードサンプルを次に示します。
+   * Here is code sample for this method:
 
       ```java
       Analytics.TrackTimedActionStart("level2", null);
@@ -424,7 +424,7 @@ Experience Cloud ソリューション 4.x SDK 用 Xamarin コンポーネント
 
 * **SendQueuedHits**
 
-   現在キューに格納されているヒット数に関係なく、ライブラリがオフラインキュー内のすべてのヒットを送信するように強制します。
+   Forces the library to send all hits in the offline queue, regardless of how many hits are currently queued.
 
    * このメソッドの構文を次に示します。
 
@@ -551,7 +551,7 @@ Experience Cloud ソリューション 4.x SDK 用 Xamarin コンポーネント
 
 * **CreateOrderConfirmRequest**
 
-   を作成 `ADBTargetLocationRequest`します。
+   を作成しま `ADBTargetLocationRequest`す。
 
    * このメソッドの構文を次に示します。
 
@@ -633,7 +633,7 @@ Experience Cloud ソリューション 4.x SDK 用 Xamarin コンポーネント
 
 * **AudienceSetDpidAndDpuuid**
 
-   および `dpid` を設定 `dpuuid`します。If `dpid` and `dpuuid` are set, they are sent with each signal.
+   とを設定し `dpid` ます `dpuuid`。 If `dpid` and `dpuuid` are set, they are sent with each signal.
 
    * このメソッドの構文を次に示します。
 
@@ -691,7 +691,7 @@ Experience Cloud ソリューション 4.x SDK 用 Xamarin コンポーネント
 
 ## Video {#section_CBCE1951CE204A108AD4CA7BB07C7F98}
 
-Video Analyticsについて詳しくは [、ビデオ分析](/help/android/analytics-main/video-qs.md)を参照してください。
+ビデオ分析について詳しくは、ビデオ分析を参照 [してください](/help/android/analytics-main/video-qs.md)。
 
 * **MediaSettings**
 
@@ -727,7 +727,7 @@ Video Analyticsについて詳しくは [、ビデオ分析](/help/android/analy
       MediaSettings adSettings = Media.AdSettingsWith ("adName1", 2, "playerName1", "name1", "podName1", 4, "CPM1"); 
       ```
 
-* **開く**
+* **Open**
 
    追跡する `ADBMediaSettings` オブジェクトを開きます。
 
