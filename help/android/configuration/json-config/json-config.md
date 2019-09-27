@@ -2,10 +2,10 @@
 description: この情報は、ADBMobile.json 設定ファイルを使用する場合に役立ちます。
 seo-description: この情報は、ADBMobile.json 設定ファイルを使用する場合に役立ちます。
 seo-title: ADBMobile JSON 設定
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: ADBMobile JSON 設定
 topic: 開発者と導入
-uuid: 1decf605-7bc3-4e73- ad52-1prop5821599e
+uuid: 1decf605-7bc3-4e73-ad52-1ecd5821599e
 translation-type: tm+mt
 source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
 
@@ -14,27 +14,27 @@ source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
 
 # ADBMobile JSON config file {#adbmobile-json-config}
 
-この情報は、ADBMobile. json設定ファイル内の変数を理解するのに役立ちます。
+This information helps you understand the variables in the ADBMobile.json config file.
 
-## `ADBMobileConfig.json` configファイルリファレンス {#section_5AD4EDF87E304980B4AC4A5657FDA8B9}
+## `ADBMobileConfig.json` 設定ファイルの参照 {#section_5AD4EDF87E304980B4AC4A5657FDA8B9}
 
 複数のプラットフォームで同じ設定ファイルをアプリに使用することができます。
 
 >[!TIP]
 >
->**Android**&#x200B;では、ファイルを `ADBMobileConfig.json``assets` フォルダー内に配置する必要があります。
+>In **Android**, the `ADBMobileConfig.json` file must be placed in the `assets` folder.
 
-以下に、JSONファイル内の変数と各変数に必要な最小SDKバージョンのリストを示します。
+Here is a list of the variables in the JSON file and the minimum SDK version you need for each variable:
 
-* **獲得**
+* **acquisition**
    * 最小 SDK バージョン：4.1
    * モバイルアプリの獲得を有効にします。
       * `server`：最初の起動時に獲得リファラーの確認がおこなわれる獲得サーバー。
       * `appid`：獲得サーバー上でこのアプリを一意に識別する、生成された ID。
-   このセクションがない場合は、モバイルアプリの獲得を有効にし、SDK 設定ファイルを再度ダウンロードします。詳しくは、この変数のリストの *referentTimeout* を参照してください。
+   このセクションがない場合は、モバイルアプリの獲得を有効にし、SDK 設定ファイルを再度ダウンロードします。For more information, see referrerTimeout in this list of variables.**
 
 * **analyticsForwardingEnabled**
-   * 最小SDKバージョンは4.8.0です。
+   * Minimum SDK version is 4.8.0.
    * デフォルト値は `false` です。
 
       `audienceManager` オブジェクトのプロパティ。Audience Manager が設定され、`analyticsForwardingEnabled` が `true` に設定されている場合、すべての Analytics トラフィックも Audience Manager に転送されます。
@@ -53,7 +53,7 @@ source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
 
          >[!IMPORTANT]
          >
-         >バックグラウンドセッションのヒット情報がセッション情報サーバ呼び出しで送信され、追加のサーバーコールが適用される場合があります。
+         >日付を遡ったセッションヒット情報は、セッション情報サーバーコールで送信され、追加のサーバーコールが適用される場合があります。
 
 * **batchLimit**
    * 最小 SDK バージョン：4.1
@@ -64,7 +64,7 @@ source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
       次の情報に留意してください。
 
       * デフォルト値は `0` です。これはバッチ処理が有効になっていないことを意味します。
-      * 必要 `offlineEnabled = true`です。
+      * Requires .`offlineEnabled = true`
 
 * **charset**
    * 最小 SDK バージョン：4.0
@@ -78,11 +78,11 @@ source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
 
       >[!IMPORTANT]
       >
-      >この変数は、Targetで必須です。
+      >この変数は、Targetで必要です。
 
 * **coopUnsafe**
    * 最小 SDK バージョン：4.16.1
-   * `marketingCloud` オブジェクトのブールプロパティ。このプロパティを設定すると、デバイスがExperience `true`CloudのDevice Co- opをオプトアウトする原因となります。
+   * The Boolean property of the `marketingCloud` object that, when set to `true`, causes the device to be opted-out of the Experience Cloud's Device Co-Op.
    * Default value is `false`.
    * この設定は、Device Co-op をプロビジョニングしたユーザー&#x200B;**にのみ**&#x200B;適用されます。
    Device Co-op のユーザーで、この値を `true` に設定する必要がある場合は、Co-op グループに連絡して、お使いの Device Co-op アカウント上でブラックリストフラグをリクエストする必要があります。これらのフラグをセルフサービスで有効にする方法はありません。
@@ -154,7 +154,7 @@ source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
       …/yourfile.json”`,
       ```
 
-      これを設定しない場合は、`ADBMobile.json` ファイルを更新してこの行を含める必要があります。更新された設定ファイルをダウンロードするには、「開始する前に」を [](/help/android/getting-started/requirements.md)参照してください。
+      これを設定しない場合は、`ADBMobile.json` ファイルを更新してこの行を含める必要があります。更新された設定ファイルをダウンロードするには、「開始する前に [」を参照してくださ](/help/android/getting-started/requirements.md)い。
 
 * **postback**
    * 最小 SDK バージョン：4.6
@@ -185,7 +185,7 @@ source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
 
       >[!IMPORTANT]
       >
-      >この変数は、獲得で必要です。この変数を `0` に設定するか含めない場合、SDK は獲得データを待機せず、獲得指標は追跡されません。
+      >この変数は、獲得で必須です。 この変数を `0` に設定するか含めない場合、SDK は獲得データを待機せず、獲得指標は追跡されません。
 
 * **remotes**
    * 最小 SDK バージョン：4.2
