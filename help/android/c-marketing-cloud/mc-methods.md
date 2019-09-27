@@ -2,9 +2,9 @@
 description: Android ライブラリによって提供される Experience Cloud ID メソッドを示します。
 keywords: android;library;mobile;sdk
 seo-description: Android ライブラリによって提供される Experience Cloud ID メソッドを示します。
-seo-title: Adobe Experience Platform IDサービスのメソッド
-solution: Marketing Cloud、Analytics
-title: Adobe Experience Platform IDサービスのメソッド
+seo-title: Adobe Experience Platform Identity Service methods
+solution: Marketing Cloud,Analytics
+title: Adobe Experience Platform Identity Service methods
 topic: 開発者と導入
 uuid: c5107a7e-273b-4f71-8738-4c603479b24c
 translation-type: tm+mt
@@ -13,11 +13,11 @@ source-git-commit: 8fc515a6e89044b9dac98b3f207c5f43b658a2ec
 ---
 
 
-# Adobe Experience Platform IDサービスのメソッド{#experience-cloud-id-service-methods}
+# Adobe Experience Platform Identity Service methods{#experience-cloud-id-service-methods}
 
 Android ライブラリによって提供される Experience Cloud ID メソッドを示します。
 
-The SDK currently supports multiple Adobe Experience Cloud Solutions], including Analytics, Target, Audience Manager, and the Adobe Experience Platform Identity Service.
+SDKは、現在、Analytics、Target、Audience ManagerおよびAdobe Experience Platform IDサービスを含む、複数のAdobe Experience cloudソリューションをサポートしています。
 
 Methods are prefixed according to the solution. For example, Experience Cloud ID methods are prefixed with `visitor`. For more information, see [Experience Cloud ID Configuration](/help/android/c-marketing-cloud/mcvid.md).
 
@@ -27,7 +27,7 @@ Methods are prefixed according to the solution. For example, Experience Cloud ID
 
    >[!IMPORTANT]
    >
-   >このメソッドは、ブロックネットワーク呼び出しを引き起こす可能性があります。時間的制約があるスレッドでこのメソッドを呼び出さないでください。
+   >このメソッドは、ネットワーク呼び出しをブロックする原因となる可能性があります。 時間的制約があるスレッドでこのメソッドを呼び出さないでください。
 
    * このメソッドの構文を次に示します。
 
@@ -147,9 +147,9 @@ Methods are prefixed according to the solution. For example, Experience Cloud ID
       List<VisitorID> myVisitorIDs = Visitor.getIdentifiers(); 
       ```
 
-* **getURLVariablesAsync**
+* **getUrlVariablesAsync**
 
-   バージョン4.16.0で導入されたこのメソッドは、訪問者IDサービスURL変数を含む適切な形式の文字列を返します。このメソッドの使用方法について詳しくは [、Adobe Experience Platform Identity Serviceメソッド](/help/android/reference/hybrid-app.md)を参照してください。
+   バージョン4.16.0で導入されたこのメソッドは、訪問者IDサービスのURL変数を含む適切な形式の文字列を返します。 このメソッドの使用方法について詳しくは、 [Adobe Experience Platform IDサービスのメソッドを参照してください](/help/android/reference/hybrid-app.md)。
 
    * このメソッドの構文を次に示します。
 
