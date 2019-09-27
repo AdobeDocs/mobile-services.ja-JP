@@ -2,10 +2,10 @@
 description: アプリケーションの起動時に、別の ADBMobile JSON 設定ファイルを読み込むことができます。
 seo-description: アプリケーションの起動時に、別の ADBMobile JSON 設定ファイルを読み込むことができます。
 seo-title: ADBMobile JSON 設定パスのオーバーライド
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: ADBMobile JSON 設定パスのオーバーライド
 topic: 開発者と導入
-uuid: 6872a5d7-0c5a-4fdc- b7bf- ad1534763a6a
+uuid: 6872a5d7-0c5a-4fdc-b7bf-ad1534763a6a
 translation-type: tm+mt
 source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
 
@@ -16,7 +16,7 @@ source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
 
 アプリケーションの起動時に、別の ADBMobile JSON 設定ファイルを読み込むことができます。
 
-`Config.overrideConfigStream(configInput)` このメソッドを使用すると、アプリケーションの起動時に `ADBMobile.json` 異なる設定ファイルへのパスを指定できます。This method must be called before any other Experience Cloud SDK call (before `Config.collectLifecycleData()` ), typically in the `onCreate` method of your first loaded activity.
+The `Config.overrideConfigStream(configInput)` method allows you to specify the path to a different `ADBMobile.json` configuration file when the application starts. This method must be called before any other Experience Cloud SDK call (before `Config.collectLifecycleData()` ), typically in the `onCreate` method of your first loaded activity.
 
 このメソッドを別のパスで呼び出すと、アプリケーションが終了するまで設定ファイルが一時的にオーバーライドされます。
 
