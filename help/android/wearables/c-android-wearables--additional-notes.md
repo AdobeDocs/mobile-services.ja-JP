@@ -1,11 +1,11 @@
 ---
 description: この情報は、Android ウェアラブルアプリからデータを収集できる Android 拡張機能を設定する場合に役立ちます。
 seo-description: この情報は、Android ウェアラブルアプリからデータを収集できる Android 拡張機能を設定する場合に役立ちます。
-seo-title: Androidウェアラブル追加メモ
-solution: Marketing Cloud、Analytics
-title: Androidウェアラブル追加メモ
+seo-title: Android Wearables  Additional Notes
+solution: Marketing Cloud,Analytics
+title: Android Wearablesに関する追加の注意事項
 topic: 開発者と導入
-uuid: 3bcf352b-4d46-4ab3-81ec- c27e86fe9be3
+uuid: 3bcf352b-4d46-4ab3-81ec-c27e86fe9be3
 translation-type: tm+mt
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
@@ -21,12 +21,12 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
    * `RunMode` = `Application`
 
-      このヒットは、ハンドヘルドアプリケーションから入手できます。
+      このヒットはハンドヘルドアプリから得られます。
 
    * `RunMode` = `Extension`
 
-      このヒットはウェアラブルアプリから取得されます。
+      ヒットはウェアラブルアプリから発生します。
 
-* SDKは、自動的に/content/help/jp/aem- forms/6-1/watched- `aid`app.`vid``visitor` `service id`html/`privacy``setPrivacyStatus`statusをハンドヘルドアプリケーションに同期し、ウェアラブルアプリケーション`setUserIdentifier``idSync` から呼び出さないでください。
-* [ウェアラブルアプリでは、アプリ内メッセージ](/help/android/messaging-main/messaging/messaging.md)、 [Target](/help/android/target-main/target.md)および [](/help/android/audience-manager/audiencemgmt.md) Audience Managerは無効になります。
+* SDKは、ハンドヘルドアプリからウェアラブルアプリに `aid`//`vid`/`visitor` /ステータスを自動的に同期するので、ウェアラブルアプリから `service id`/`privacy` / `setPrivacyStatus`/`setUserIdentifier``idSync` を呼び出さないでください。
+* [アプリ内メッセージ](/help/android/messaging-main/messaging/messaging.md)、 [Target](/help/android/target-main/target.md)、 [](/help/android/audience-manager/audiencemgmt.md) Audience Managerは、ウェアラブルアプリでは無効です。
 
