@@ -3,10 +3,10 @@ description: Adobe Mobile を使用して様々な指標を測定したり、ア
 keywords: モバイル
 seo-description: Adobe Mobile を使用して様々な指標を測定したり、アプリに関して追跡する指標を収集したりできます。
 seo-title: モバイル指標
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: モバイル指標
 topic: 指標
-uuid: c4457f4a-9d1c-4fe9- ad4a-9eb2e37feab7
+uuid: c4457f4a-9d1c-4fe9-ad4a-9eb2e37feab7
 translation-type: tm+mt
 source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
 
@@ -31,7 +31,7 @@ Adobe Mobile を使用して様々な指標を測定したり、アプリに関�
 
 * **売上高**
 
-   アプリストアによって収集された売上高と、アプリ内課金イベントを使用して直接測定された売上高を表示できます。Other cart metrics are available by [Customize Reports](/help/using/usage/reports-customize/reports-customize.md).
+   アプリストアによって収集された売上高や、アプリ内購入イベントを使用して直接測定された売上高を表示できます。 Other cart metrics are available by [Customize Reports](/help/using/usage/reports-customize/reports-customize.md).
 
 * **アプリイベント**
 
@@ -43,7 +43,7 @@ Adobe Mobile を使用して様々な指標を測定したり、アプリに関�
 
 * **ロケーションと目標地点**
 
-   Analytics レポートスイートで地域レポートが有効になっている場合、いくつかのロケーションに関するレポートを利用できます。Wi- Fiでは、地域レポートの精度はデスクトップWebブラウザーと同様です。携帯電話のデータ接続時の精度は、キャリアやリクエストのルーティング経路によって異なります。
+   Analytics レポートスイートで地域レポートが有効になっている場合、いくつかのロケーションに関するレポートを利用できます。Wi-Fiでは、地域レポートの精度はデスクトップのWebブラウザーの精度に似ています。 携帯電話のデータ接続時の精度は、キャリアやリクエストのルーティング経路によって異なります。
 
    精度を向上させるために、アプリに位置および目標地点の追跡機能を追加することもできます。これらのオプションを使用すると、モバイルデバイスの GPS による詳細な緯度と経度の位置データを取得でき、ジオフェンシングによって、ユーザーが事前に定義された目標地点から一定の範囲内にいるかどうかを判断できます。
 
