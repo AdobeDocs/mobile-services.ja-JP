@@ -1,11 +1,11 @@
 ---
-description: Adobe Experience Platform IDサービスは、Experience Cloudソリューション全体でユニバーサル訪問者IDを提供します。Analytics は、Target、ビデオのハートビート、将来の Experience Cloud 統合に ID サービスを必要とします。
-seo-description: Adobe Experience Platform IDサービスは、Experience Cloudソリューション全体でユニバーサル訪問者IDを提供します。Analytics は、Target、ビデオのハートビート、将来の Experience Cloud 統合に ID サービスを必要とします。
+description: Adobe Experience Platform IDサービスは、Experience cloudソリューション全体で汎用の訪問者IDを提供します。 Analytics は、Target、ビデオのハートビート、将来の Experience Cloud 統合に ID サービスを必要とします。
+seo-description: Adobe Experience Platform IDサービスは、Experience cloudソリューション全体で汎用の訪問者IDを提供します。 Analytics は、Target、ビデオのハートビート、将来の Experience Cloud 統合に ID サービスを必要とします。
 seo-title: Experience Cloud IDの設定
-solution: Marketing Cloud、Analytics
-title: Experience Cloud IDの設定
+solution: Marketing Cloud,Analytics
+title: Experience Cloud ID configuration
 topic: 開発者と導入
-uuid: 8ebdf2bf- c581-448f-9542- f99a19784fe7
+uuid: 8ebdf2bf-c581-448f-9542-f99a19784fe7
 translation-type: tm+mt
 source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
@@ -14,21 +14,21 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
 # Experience Cloud ID configuration {#experience-cloud-id-configuration}
 
-Adobe Experience Platform IDサービスは、Experience Cloudソリューション全体でユニバーサル訪問者IDを提供します。Analytics は、Target、ビデオのハートビート、将来の Experience Cloud 統合に ID サービスを必要とします。
+Adobe Experience Platform IDサービスは、Experience cloudソリューション全体で汎用の訪問者IDを提供します。 Analytics は、Target、ビデオのハートビート、将来の Experience Cloud 統合に ID サービスを必要とします。
 
 >[!TIP]
 >
->Adobe Experience Platform IDサービスを使用していない場合は、このIDを入力する必要はありません。For more information, see [Adobe Experience Platform Identity Service](https://marketing.adobe.com/resources/help/en_US/mcvid/).
+>Adobe Experience Platform IDサービスを使用していない場合は、このIDを入力する必要はありません。 For more information, see [Adobe Experience Platform Identity Service](https://marketing.adobe.com/resources/help/en_US/mcvid/).
 
 >[!IMPORTANT]
 >
->この機能にはSDKバージョン4.3以降が必要です。
+>この機能には、SDKバージョン4.3以降が必要です。
 
 Experience Cloud ID を有効にするには：
 
 1. ライブラリをプロジェクトに追加し、ライフサイクルを実装します。
 
-   詳しくは、コア実装および *ライフサイクル* で [、"SDKおよび設定ファイルのIntelliJ IDEAまたはEclipseプロジェクトへの追加」を参照](/help/android/getting-started/dev-qs.md)してください。
+   詳しくは、 *Core実装およびライフサイクルのIntelliJ IDEAまたはEclipse ProjectへのSDKと設定ファイルの追加*[を参照してください](/help/android/getting-started/dev-qs.md)。
 
 1. ライブラリをインポートします。
 
@@ -36,7 +36,7 @@ Experience Cloud ID を有効にするには：
    import com.adobe.mobile.*;
    ```
 
-1. ファイルに `ADBMobileConfig.json` 次の `marketingCloudorg`ファイルが含まれていることを確認します。
+1. Verify that the  file contains the :`ADBMobileConfig.json``marketingCloudorg`
 
    ```js
    "marketingCloud" : { 
@@ -52,7 +52,7 @@ Experience Cloud ID を有効にするには：
 
    >[!IMPORTANT]
    >
-   >`@AdobeOrg`含める必要があります。
+   >You must include .`@AdobeOrg`
 
    If these IDs are not configured, download an updated `ADBMobileConfig.json` file from Adobe Mobile services. 詳しくは、[開始する前に](/help/android/getting-started/requirements.md)を参照してください。
 
