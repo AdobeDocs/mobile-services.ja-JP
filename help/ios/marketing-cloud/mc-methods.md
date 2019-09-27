@@ -1,11 +1,11 @@
 ---
-description: iOSライブラリから提供されるAdobe Experience Platform Identity Serviceメソッドを次に示します。
-seo-description: iOSライブラリから提供されるAdobe Experience Platform Identity Serviceメソッドを次に示します。
+description: iOSライブラリが提供するAdobe Experience Platform IDサービスのメソッドを以下に示します。
+seo-description: Here are the Adobe Experience Platform Identity Service methods that are provided by the iOS library.
 seo-title: Adobe Experience Platform IDサービスのメソッド
-solution: Marketing Cloud、Analytics
-title: Adobe Experience Platform IDサービスのメソッド
+solution: Marketing Cloud,Analytics
+title: Adobe Experience Platform Identity Service methods
 topic: 開発者と導入
-uuid: cdd307bc-8b7d-47a8- b77e-00902b9e2968
+uuid: cdd307bc-8b7d-47a8-b77e-00902b9e2968
 translation-type: tm+mt
 source-git-commit: cbbb85b4d117fcaa502a1e01423f1f5d3b2ecc2b
 
@@ -14,19 +14,19 @@ source-git-commit: cbbb85b4d117fcaa502a1e01423f1f5d3b2ecc2b
 
 # Adobe Experience Platform IDサービスのメソッド {#experience-cloud-id-service-methods}
 
-iOSライブラリから提供されるAdobe Experience Platform Identity Serviceメソッドを次に示します。
+iOSライブラリが提供するAdobe Experience Platform IDサービスのメソッドを以下に示します。
 
 SDK は現在、Analytics、Target、Audience Manager、Experience Cloud ID サービスなど、複数の Adobe Experience Cloud ソリューションをサポートしています。
 
 Methods are prefixed according to the solution, and Experience Cloud ID methods are prefixed with `visitor`. 詳しくは、[Experience Cloud ID の有効化](/help/ios/marketing-cloud/mcvid.md)を参照してください。
 
-* **`+`（nullable NSURL`*`） visitorAppendToURL:（nullable NSURL`*`） url;**
+* **`+`(nullable NSURL`*`)visitorAppendToURL:(nullable NSURL`*`)url;**
 
-   アドビ JavaScript ライブラリで使用するために、アドビ訪問者データを URL 文字列に追加します。このメソッドを使用するには、モバイルSDKバージョン4.12以降が必要です。詳しくは、[訪問者 ID ヘルパー関数の追加](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-appendvisitorid.html)を参照してください。
+   アドビ JavaScript ライブラリで使用するために、アドビ訪問者データを URL 文字列に追加します。この方法を使用するには、Mobile SDKバージョン4.12以降が必要です。 詳しくは、[訪問者 ID ヘルパー関数の追加](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-appendvisitorid.html)を参照してください。
 
    >[!IMPORTANT]
    >
-   >このメソッドは、ブロックネットワーク呼び出しを引き起こす可能性があります。時間的制約があるスレッドでこのメソッドを呼び出さないでください。
+   >このメソッドは、ネットワーク呼び出しをブロックする原因となる可能性があります。 時間的制約があるスレッドでこのメソッドを呼び出さないでください。
 
    * Input: `URL<NSURL>`
 A required URL string that the visitor information will be appended to.
@@ -135,9 +135,9 @@ A required URL string that the visitor information will be appended to.
       NSArray *myVisitorIDs = [ADBMobile visitorGetIDs];
       ```
 
-* **visitorGetURLVariablesAsync**
+* **visitorgetUrlVariablesAsync**
 
-   バージョン4.16.0で導入されたこのメソッドは、訪問者IDサービスURL変数を含む適切な形式の文字列を返します。このメソッドの使用方法について詳しくは [、Adobe Experience Platform Identity Serviceメソッド](/help/ios/reference/hybrid-app.md)を参照してください。
+   バージョン4.16.0で導入されたこのメソッドは、訪問者IDサービスのURL変数を含む適切な形式の文字列を返します。 For more information about how this method is used, see Adobe Experience Platform Identity Service methods.[](/help/ios/reference/hybrid-app.md)
 
    * このメソッドの構文を次に示します。
 
