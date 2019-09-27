@@ -2,7 +2,7 @@
 description: ポストバック機能の定義およびソースコードのサンプルです。
 seo-description: ポストバック機能の定義およびソースコードのサンプルです。
 seo-title: ポストバックのサンプル
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: ポストバックのサンプル
 topic: 開発者と導入
 uuid: 809c5646-7a80-40df-984b-0af89d854259
@@ -18,7 +18,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
 >[!CAUTION]
 >
->この例は、情報提供のみを目的としています。`ADBMobileConfig.json` ファイルは、Adobe Mobile UI で設定する必要があります。手動で変更しないでください。リモートメッセージの設定が有効になっている場合、手動で編集した設定ファイルは危険を招く可能性があります。
+>This example is provided for informational purposes only. `ADBMobileConfig.json` ファイルは、Adobe Mobile UI で設定する必要があります。手動で変更しないでください。リモートメッセージの設定が有効になっている場合、手動で編集した設定ファイルは危険を招く可能性があります。
 
 ## ADBMobileConfig.json definition {#section_0F6EC001AB6D488E815F50C7F5DA022E}
 
@@ -58,6 +58,6 @@ NSDictionary *contextData = @{@"user.name":@"bob", @"user.zip":@"90210"};
 [ADBMobile trackState:@"MainMenu" data:contextData];
 ```
 
-Because its state is `“MainMenu”`, this tracking call triggers the above postback message. URLによって、すべてのテンプレート変数がヒットの値に置き換えられます。ユーザーの以前のセッションが132秒で、そのユーザーがiOS SDKバージョン4.6.0にあると仮定した場合、次のURLの例を示します。
+Because its state is `“MainMenu”`, this tracking call triggers the above postback message. URLは、すべてのテンプレート変数をヒットの値に置き換えます。 Assuming that the user’s previous session was 132 seconds long, and that user is on iOS SDK version 4.6.0, here is an example of the resulting URL:
 
 `https://my.server.com/?user=bob&zip=90210&c16=4.6.0-iOS&c27=cln,132`
