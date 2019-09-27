@@ -1,11 +1,11 @@
 ---
 description: iOS ライブラリが提供するメソッドの一覧を以下に示します。
 seo-description: iOS ライブラリが提供するメソッドの一覧を以下に示します。
-seo-title: 設定メソッド
-solution: Marketing Cloud、Analytics
-title: 設定メソッド
+seo-title: 設定方法
+solution: Marketing Cloud,Analytics
+title: 設定方法
 topic: 開発者と導入
-uuid: 623c7b07- fbb3-4d39- a5c4- e64faec4ca29
+uuid: 623c7b07-fbb3-4d39-a5c4-e64faec4ca29
 translation-type: tm+mt
 source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
@@ -16,15 +16,15 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
 iOS ライブラリが提供するメソッドの一覧を以下に示します。
 
-SDKは、現在、Analytics、Target、Audience Manager、Adobe Experience Platform IDサービスを含む複数のAdobe Experience Cloudソリューションをサポートしています。
+SDKは、現在、Analytics、Target、Audience Manager、Adobe Experience Platform IDサービスを含む、複数のAdobe Experience cloudソリューションをサポートしています。
 
 * **setAppExtensionType**
 
    現在実行中のエクステンションの種類を判断するように Adobe Mobile SDK 設定を指定します。
 
    次のいずれかの値に設定します。
-   * `ADBMobileAppExtensionTypeRegular` - 拡張機能は、アプリケーションを含むアプリケーションにバンドルされています。
-   * `ADBMobileAppExtensionTypeStandAlone` - 拡張子が含まれているアプリケーションにはバンドルされていません。
+   * `ADBMobileAppExtensionTypeRegular`  — 拡張は、含まれるアプリにバンドルされています。
+   * `ADBMobileAppExtensionTypeStandAlone`  — 拡張は、含まれるアプリにバンドルされていません。
    >[!TIP]
    >
    >This method should **only** be used if your app has an extension or is a stand-alone extension. For more information, see *ADBMobileAppExtensionType* below.
@@ -63,8 +63,8 @@ SDKは、現在、Analytics、Target、Audience Manager、Adobe Experience Platf
 
    現在のユーザーのプライバシーステータスの enum 表現を返します。
 
-   * `ADBMobilePrivacyStatusOptIn` - ヒットは即座に送信されます。
-   * `ADBMobilePrivacyStatusOptOut` - ヒットは破棄されます。
+   * `ADBMobilePrivacyStatusOptIn` - hits are sent immediately.
+   * `ADBMobilePrivacyStatusOptOut`  — ヒットは破棄されます。
    * `ADBMobilePrivacyStatusUnknown` - オフライン追跡が有効になっている場合、プライバシーステータスがオプトイン（ヒットが送信される）またはオプトアウト（ヒットが破棄される）に変更されるまで、ヒットは保存されます。オフライン追跡が有効になっていない場合、プライバシーステータスがオプトインに変更されるまで、ヒットは破棄されます。デフォルト値は `ADBMobileConfig.json` ファイルに設定します。
 
    * このメソッドの構文を次に示します。
@@ -85,8 +85,8 @@ SDKは、現在、Analytics、Target、Audience Manager、Adobe Experience Platf
 
    次のいずれかの値に設定します。
 
-   * `ADBMobilePrivacyStatusOptIn` - ヒットは即座に送信されます。
-   * `ADBMobilePrivacyStatusOptOut` - ヒットは破棄されます。
+   * `ADBMobilePrivacyStatusOptIn`  — ヒットは直ちに送信されます。
+   * `ADBMobilePrivacyStatusOptOut`  — ヒットは破棄されます。
    * `ADBMobilePrivacyStatusUnknown` - オフライン追跡が有効になっている場合、プライバシーステータスがオプトイン（ヒットが送信される）またはオプトアウト（ヒットが破棄される）に変更されるまで、ヒットは保存されます。オフライン追跡が有効になっていない場合、プライバシーステータスがオプトインに変更されるまで、ヒットは破棄されます。
 
    * このメソッドの構文を次に示します。
@@ -123,7 +123,7 @@ SDKは、現在、Analytics、Target、Audience Manager、Adobe Experience Platf
 
    >[!TIP]
    >
-   >アプリケーションがExperience Cloud3. xから4. x SDKにアップグレードすると、以前のカスタムまたは自動生成された訪問者IDがカスタムユーザー識別子として取得され、保存されます。詳しくは、以下の `userIdentifier` 行を参照してください。これによって、SDK をアップグレードしても訪問者データが保持されます。4.x SDK を新規インストールした場合、ユーザー識別子は `nil` なので、トラッキング識別子が使用されます。
+   >If your app upgrades from the Experience Cloud 3.x to the 4.x SDK, the previous custom or automatically generated visitor ID is retrieved and stored as the custom user identifier. 詳しくは、以下の `userIdentifier` 行を参照してください。これによって、SDK をアップグレードしても訪問者データが保持されます。4.x SDK を新規インストールした場合、ユーザー識別子は `nil` なので、トラッキング識別子が使用されます。
 
    * このメソッドの構文を次に示します。
 
@@ -143,7 +143,7 @@ SDKは、現在、Analytics、Target、Audience Manager、Adobe Experience Platf
 
    >[!TIP]
    >
-   >アプリケーションがExperience Cloud3. x SDKから4. x SDKにアップグレードすると、以前のカスタムまたは自動生成された訪問者IDがカスタムユーザー識別子として取得され、保存されます。これにより、SDK をアップグレードしても訪問者データは保存されます。
+   >アプリがExperience Cloud 3.xから4.x SDKにアップグレードされた場合、以前にカスタムまたは自動生成された訪問者IDが取得され、カスタムユーザーIDとして保存されます。 これにより、SDK をアップグレードしても訪問者データは保存されます。
 
    4.x SDK での新規インストールの場合、ユーザー識別子は設定されるまで `nil` です。
 
@@ -213,7 +213,7 @@ SDKは、現在、Analytics、Target、Audience Manager、Adobe Experience Platf
 
    >[!TIP]
    >
-   >このメソッドは、バックグラウンドで通知を登録するアプリで使用することを目的としており、アプリがバックグラウンドにある間に実行されるコードからのみ呼び出される必要があります。
+   >このメソッドは、バックグラウンドで通知を登録するアプリに対して使用されることを目的としており、アプリがバックグラウンドで実行されている間に実行されるコードからのみ呼び出す必要があります。
 
    * このメソッドの構文を次に示します。
 
@@ -251,7 +251,7 @@ SDKは、現在、Analytics、Target、Audience Manager、Adobe Experience Platf
 
    ライフサイクル指標収集時に追加データとして渡すことができます。
 
-   このメソッドは、アプリケーションのエントリポイントから呼び出す必要があります。Where applicable, this may include one or both of the methods `application:didFinishLaunchingWithOptions:` and/or `applicationWillEnterForeground:` in your AppDelegate class.
+   This method must be called from the entry point of your app. Where applicable, this may include one or both of the methods `application:didFinishLaunchingWithOptions:` and/or `applicationWillEnterForeground:` in your AppDelegate class.
 
    >[!IMPORTANT]
    >
