@@ -1,12 +1,12 @@
 ---
 description: Adobe Mobile Services の最新のリリース情報です。
-keywords: mobile;リリースノート;whats new
+keywords: モバイル；リリースノート；新機能
 seo-description: Adobe Mobile Services の最新のリリース情報です。
-seo-title: Adobe Mobile Servicesのリリースノート
-solution: Marketing Cloud、Analytics
+seo-title: Release notes for Adobe Mobile Services
+solution: Marketing Cloud,Analytics
 title: リリースノート
 topic: 指標
-uuid: 522b0589- d61f-4a9f-952e- ba7ce11af2f9
+uuid: 522b0589-d61f-4a9f-952e-ba7ce11af2f9
 translation-type: tm+mt
 source-git-commit: 4b5be6c51c716114e597a80d475f838e23abb1b1
 
