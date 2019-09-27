@@ -3,10 +3,10 @@ description: ビデオ測定ソリューションを使用して Android でビ�
 keywords: android;library;mobile;sdk
 seo-description: ビデオ測定ソリューションを使用して Android でビデオを測定する方法について説明します。
 seo-title: ビデオ分析
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: ビデオ分析
 topic: 開発者と導入
-uuid: a137cc27- dc28-48c0- b08e-2ca17d2c7e1d
+uuid: a137cc27-dc28-48c0-b08e-2ca17d2c7e1d
 translation-type: tm+mt
 source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
 
@@ -19,30 +19,30 @@ source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
 
 >[!TIP]
 >
->ビデオの再生中に、頻繁な「ハートビート」コールが送信され、再生時間を測定します。これらのハートビート呼び出しは、10 秒ごとに送信されるので、ビデオエンゲージメント指標やビデオフォールアウトレポートがより正確になります。アドビのビデオ測定ソリューションについて詳しくは、Adobe Analyticsでのオーディオおよびビデオ [の測定を](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html)参照してください。
+>ビデオの再生中に、頻繁な「ハートビート」コールが送信され、再生時間を測定します。これらのハートビート呼び出しは、10 秒ごとに送信されるので、ビデオエンゲージメント指標やビデオフォールアウトレポートがより正確になります。アドビのビデオ測定ソリューションについて詳しくは、「Adobe Analyticsでのオ [ーディオとビデオの測定」を参照してください](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html)。
 
-ビデオを測定する一般的なプロセスは、どのプラットフォームでも同様です。ここでは、開発者タスクの概要とコードサンプルを提示します。次の表に、Analytics に送信されるメディアデータのリストを示します。処理ルールを使用して、コンテキストデータをAnalytics変数にマップします。
+ビデオを測定する一般的なプロセスは、どのプラットフォームでも同様です。ここでは、開発者タスクの概要とコードサンプルを提示します。次の表に、Analytics に送信されるメディアデータのリストを示します。処理ルールは、コンテキストデータをAnalytics変数にマップするために使用されます。
 
 ## Map player events to Analytics variables {#section_E84987F878AB4A3A83AE700FEC4C9D4D}
 
 * **a.media.name**
-   * 変数タイプ:eVar
+   * 変数型：eVar
       * デフォルトの有効期限：訪問
       * カスタムインサイト（s.prop、ビデオパスに使用）
    * （**必須**）訪問者が何らかの方法でビデオを表示すると、このコンテキストデータ変数は、実装に指定されているビデオの名前を収集します。この変数では分類を追加できます。
    * （**オプション**）カスタムインサイト変数は、ビデオパス情報を提供します。
 
 * **a.media.name**
-   * 変数タイプ:カスタムインサイト（s. prop）
+   * 変数型：カスタムインサイト(s.prop)
    * （**オプション**）ビデオパス情報を提供します。
 
       >[!IMPORTANT]
       >
-      >この変数に対しては、ExpCareからパスを有効にする必要があります。
+      >この変数に対してExpCareによってパスが有効にされている必要があります。
    * イベントタイプ：カスタムインサイト（s.prop）
 
 * **a.media.segment**
-   * 変数タイプ:eVar
+   * Variable type: eVar
    * デフォルトの有効期限：ページビュー
    * （**必須**）セグメント名や、ビデオ内でのセグメントの発生順序を含め、ビデオセグメントデータを収集します。
 
@@ -57,33 +57,33 @@ source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
 
 
 * **a.contentType**
-   * 変数タイプ:eVar
+   * Variable type: eVar
    * デフォルトの有効期限：ページビュー
    * 訪問者によって閲覧されたコンテンツのタイプに関するデータを収集します。
 
       ビデオ指標によって送信されるヒットには、`video` というコンテンツタイプが割り当てられます。ビデオ指標の見地からすると、**コンテンツタイプ**&#x200B;を使用することで、ビデオ訪問者を識別して、ビデオのコンバージョン率を計算できます。
 
 * **a.media.timePlayed**
-   * 変数タイプ:イベント
+   * Variable type: Event
    * タイプ：カウンター
    * 前回のデータ収集プロセス（イメージリクエスト）以降のビデオ視聴秒数をカウントします。
 
 * **a.media.view**
-   * 変数タイプ:イベント
+   * Variable type: Event
    * タイプ：カウンター
    * 訪問者がビデオの一部を視聴したことを示します。
 
       ただし、訪問者がビデオを視聴した時間や視聴した部分に関する情報は提供されません。
 
 * **a.media.segmentView**
-   * 変数タイプ:イベント
+   * Variable type: Event
    * タイプ：カウンター
    * 訪問者がビデオセグメントの一部を視聴したことを示します。
 
       ただし、訪問者がビデオを視聴した時間や視聴した部分に関する情報は提供されません。
 
 * **a .media.complete**
-   * 変数タイプ:イベント
+   * Variable type: Event
    * タイプ：カウンター
    * ユーザーがビデオを最後まで視聴したことを示します。
 
@@ -151,7 +151,7 @@ public boolean eventFirstTime;
 
 ## Media Measurement class and method reference {#section_50DF9359A7B14DF092634C8E913C77FE}
 
-以下に、Media Measurementクラスのメソッドを示します。
+Here are the methods in the Media Measurement class:
 
 * **settingsWith**
 
@@ -248,7 +248,7 @@ public boolean eventFirstTime;
       public static void stop(String name, double offset); 
       ```
 
-   * 以下にコードサンプルまたはこのメソッドを示します。
+   * 次に、コードサンプルまたはこのメソッドを示します。
 
       ```java
       Media.stop("name", 0);
