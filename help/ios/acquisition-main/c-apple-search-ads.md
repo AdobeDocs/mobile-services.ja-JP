@@ -14,7 +14,7 @@ source-git-commit: ebcc04ab3e80aafb9d9ec2e1fbc809c743554cb7
 
 # Apple Search Ads {#apple-search-ads}
 
-Adobe SDK は、Apple Search Ads アプリのアトリビューション API を利用して、開発者とマーケターが Apple App Store の Search Ads キャンペーンからのアプリのダウンロード数を追跡し、アトリビューションをおこなえるようにします。Search Ads キャンペーンについて詳しくは、[Apple Search Ads](https://searchads.apple.com) を参照してください。
+Adobe SDK は、Apple Search Ads アプリのアトリビューション API を利用して、開発者とマーケターが Apple App Store の Search Ads キャンペーンからのアプリのダウンロード数を追跡し、アトリビューションをおこなえるようにします。Search Ads キャンペーンについて詳しくは、[Apple Search Ads](https://searchads.apple.com) / を参照してください。
 
 ## メリット {#section_CEA30C652AC8470784B8054E299B80FA}
 
@@ -43,7 +43,7 @@ Search Ads アトリビューションに対してアプリを有効にするに
 
    If attribution = `true`, all of the `iad-*` fields will be included in the lifecycle hit.
 
-   In addition, the following values will be mapped from the `"iad"` dictionary to our typical acquisition context data fields:
+   さらに、以下の値が `"iad"` 辞書から一般的な獲得コンテキストデータフィールドにマッピングされます。
 
    * `"iad-campaign-id"` --&gt; `"a.referrer.campaign.trackingcode"`
    * `"iad-campaign-name"` --&gt; `"a.referrer.campaign.name"`
