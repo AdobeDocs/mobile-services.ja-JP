@@ -2,10 +2,10 @@
 description: 'null'
 keywords: Unity
 seo-description: 'null'
-seo-title: ADBMobile. csメソッド
+seo-title: ADBMobile.csメソッド
 solution: Marketing Cloud，開発者
-title: ADBMobile. csメソッド
-uuid: af504934- febd-45d9-81e2-2a310f4c65dc
+title: ADBMobile.csメソッド
+uuid: af504934-febd-45d9-81e2-2a310f4c65dc
 translation-type: tm+mt
 source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
@@ -14,7 +14,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
 # ADBMobile.cs methods {#adbmobile-cs-methods}
 
-## 設定メソッド
+## 設定方法
 
 * **CollectLifecycleData**
 
@@ -83,7 +83,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 * **GetPrivacyStatus**
 
    現在のユーザーのプライバシーステータスの enum 表現を返します。
-   * `MOBILE_PRIVACY_STATUS_OPT_IN`:ヒットはすぐに送信されます。
+   * `MOBILE_PRIVACY_STATUS_OPT_IN`:ヒットは直ちに送信されます。
    * `MOBILE_PRIVACY_STATUS_OPT_OUT`:ヒットは破棄されます。
    * `MOBILE_PRIVACY_STATUS_UNKNOWN`：オフライン追跡が有効な場合、プライバシーステータスがオプトイン（ヒットが送信される）またはオプトアウト（ヒットが破棄される）に変更されるまで、ヒットは保存されます。
 
@@ -139,7 +139,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
    >[!TIP]
    >
-   >このメソッドは、バックグラウンドで通知を登録するアプリで使用することを目的としており、アプリがバックグラウンドにある間に実行されるコードからのみ呼び出される必要があります。
+   >このメソッドは、バックグラウンドでの通知に登録するアプリに対して使用されることを目的としており、アプリがバックグラウンドで実行されている間に実行されるコードからのみ呼び出す必要があります。
 
    * このメソッドの構文を次に示します。
 
@@ -171,7 +171,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
 * **SetContext（Android のみ）**
 
-   unityPlayerの現在のアクティビティからアプリケーションコンテキストを設定する必要があることをSDKに示します。
+   Indicates to the SDK that it should set its application context from the UnityPlayer's current activity.
 
    * このメソッドの構文を次に示します。
 
@@ -205,7 +205,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
    現在のユーザーのプライバシーステータスをステータスに設定します。次のいずれかに設定します。
 
-   * `MOBILE_PRIVACY_STATUS_OPT_IN`:ヒットはすぐに送信されます。
+   * `MOBILE_PRIVACY_STATUS_OPT_IN`:ヒットは直ちに送信されます。
    * `MOBILE_PRIVACY_STATUS_OPT_OUT`:ヒットは破棄されます。
    * `MOBILE_PRIVACY_STATUS_UNKNOWN`：オフライン追跡が有効な場合、プライバシーステータスがオプトイン（ヒットが送信される）またはオプトアウト（ヒットが破棄される）に変更されるまで、ヒットは保存されます。オフライン追跡が有効になっていない場合、プライバシーステータスがオプトインに変更されるまで、ヒットは破棄されます。
 
@@ -215,7 +215,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
       public static void SetPrivacyStatus(ADBPrivacyStatusstatus); 
       ```
 
-   * 以下に、この構文のコードサンプルを示します。
+   * Here is the code sample for this syntax:
 
       ```java
       ADBMobile.SetPrivacyStatus(ADBMobile.ADBPrivacyStatus.MOBILE_PRIVACY_STATUS_OPT_IN);
@@ -237,7 +237,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
       ADBMobile.SetUserIdentifier("myCustomUserId"); 
       ```
 
-## Analyticsのメソッド
+## Analyticsメソッド
 
 * **GetTrackingIdentifier**
 
@@ -263,7 +263,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
    >[!TIP]
    >
-   >これはページビュー数が増える唯一のトラッキング呼び出しです。
+   >これは、ページビュー数を増やす唯一のトラッキングコールです。
 
    * このメソッドの構文を次に示します。
 
@@ -305,7 +305,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
    >[!TIP]
    >
-   >このメソッドは、アプリケーションがバックグラウンドにある間に実行されるコードでのみ呼び出す必要があります。
+   >このメソッドは、アプリがバックグラウンドにある間に実行されるコードでのみ呼び出す必要があります。
 
    * このメソッドの構文を次に示します。
 
@@ -499,7 +499,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
       var queueSize = ADBMobile.TrackingGetQueueSize();
       ```
 
-## Experience Cloud IDメソッド
+## Experience Cloud IDの方法
 
 * **GetMarketingCloudID**
 
