@@ -3,10 +3,10 @@ description: products 変数は、処理ルールを使用して設定するこ�
 keywords: android;library;mobile;sdk
 seo-description: products 変数は、処理ルールを使用して設定することができません。Mobile SDK では、コンテキストデータパラメーターに特殊な構文を使用して、products をサーバー呼び出しで設定する必要があります。
 seo-title: products 変数
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: products 変数
 topic: 開発者と導入
-uuid: f4484022- cb8b-4dea-9209-5a110ba607df
+uuid: f4484022-cb8b-4dea-9209-5a110ba607df
 translation-type: tm+mt
 source-git-commit: 7aff336586058302046a728a0b1b0ce12660c1ba
 
@@ -17,7 +17,7 @@ source-git-commit: 7aff336586058302046a728a0b1b0ce12660c1ba
 
 products 変数は、処理ルールを使用して設定することができません。Mobile SDK では、コンテキストデータパラメーターに特殊な構文を使用して、products をサーバー呼び出しで設定する必要があります。
 
-*products* 変数を設定するには、コンテキストデータキーを設定し、 `"&&products"`*products* 変数に定義されている構文を使用して値を設定します。
+To set the *products* variable, set a context data key to `"&&products"`, and set the value by using the syntax that is defined for the *products* variable:
 
 ```java
 cdata.put("&&products", "Category;Product;Quantity;Price[,Category;Product;Quantity;Price]");
@@ -42,8 +42,8 @@ Analytics.trackAction("purchase", cdata);
 Analytics.trackState("Order Confirmation", cdata);
 ```
 
-*products* 変数はイメージリクエストで設定され、他の変数はコンテキストデータとして設定されます。すべてのコンテキストデータ変数は、処理ルールを使用してマッピングする必要があります。
+The *products* variable is set on the image request, and the other variables are set as context data. すべてのコンテキストデータ変数は、処理ルールを使用してマッピングする必要があります。
 
 ![](assets/map-products.png)
 
-例えば、*products* 変数を使用します。これは、この変数がSDKによってイメージリクエストに直接設定されるためです。
+Folio Builder *products* variable by using processing rules because this variable is set directly on the image request by the SDK.
