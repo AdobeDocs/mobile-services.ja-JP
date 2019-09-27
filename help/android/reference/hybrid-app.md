@@ -1,11 +1,11 @@
 ---
 description: アプリでモバイル Web コンテンツを開く場合は、ネイティブとモバイル Web の間を移動する訪問者が別々に識別されないようにします。
 seo-description: アプリでモバイル Web コンテンツを開く場合は、ネイティブとモバイル Web の間を移動する訪問者が別々に識別されないようにします。
-seo-title: アプリとモバイルWebの間の訪問者トラッキング
-solution: Marketing Cloud、Analytics
-title: アプリとモバイルWebの間の訪問者トラッキング
+seo-title: アプリとモバイルWeb間の訪問者トラッキング
+solution: Marketing Cloud,Analytics
+title: アプリとモバイルWeb間の訪問者トラッキング
 topic: 開発者と導入
-uuid: 073572e4-4c55-4b27- b4a7- e4349ccde7bf
+uuid: 073572e4-4c55-4b27-b4a7-e4349ccde7bf
 translation-type: tm+mt
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
@@ -16,15 +16,15 @@ source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 アプリでモバイル Web コンテンツを開く場合は、ネイティブとモバイル Web の間を移動する訪問者が別々に識別されないようにします。
 
-## アプリの訪問者ID
+## Visitor IDs in apps
 
 Android SDK は、アプリのインストール時に一意の訪問者 ID を生成します。この ID は、モバイルデバイスの永続メモリに保存され、ヒットごとに送信され、ユーザーがアプリをアンインストールするときにのみ削除されます。
 
 >[!TIP]
 >
->アプリの訪問者IDはアップグレードによって持続します。
+>App visitor IDs persist through upgrades.
 
-## モバイルWebの訪問者ID
+## モバイルWebでの訪問者ID
 
 一般的なモバイル Web 実装では、デスクトップサイトで使用されているのと同じ標準の Analytics `s_code.js` または `AppMeasurement.js` を使用します。JavaScript ライブラリには、一意の訪問者 ID を生成する独自メソッドがあり、アプリからモバイル Web コンテンツを開くと、異なる訪問者 ID が生成される原因となります。
 
@@ -32,9 +32,9 @@ Android SDK は、アプリのインストール時に一意の訪問者 ID を�
 
 アプリとモバイル Web で同じ訪問者 ID を使用するには、以下のようにします。
 
-1. "ライブラリをプロジェクトに追加し、ライフサイクルを実装します。
+1. 「ライブラリをプロジェクトに追加し、ライフサイクルを実装します。
 
-   詳しくは、コア実装および *ライフサイクル* で [、"SDKおよび設定ファイルのIntelliJ IDEAまたはEclipseプロジェクトへの追加」を参照](/help/android/getting-started/dev-qs.md)してください。
+   For more information, see Add the SDK and Config File to your IntelliJ IDEA or Eclipse Project in Core implementation and lifecycle.**[](/help/android/getting-started/dev-qs.md)
 
 1. Web ビューを開くために使用される URL に訪問者情報を追加するために、`visitorAppendToURL` を呼び出します。
 
@@ -89,5 +89,5 @@ Android SDK は、アプリのインストール時に一意の訪問者 ID を�
 
 >[!IMPORTANT]
 >
->アドビが実装を検証できるようにするには、サンプルアプリケーションと関連するサイトを共有する必要があります。
+>アドビが実装を検証できるようにするには、サンプルアプリケーションと関連サイトを共有する必要があります。
 
