@@ -3,10 +3,10 @@ description: アプリストアの概要レポートは、アプリストア指�
 keywords: モバイル
 seo-description: アプリストアの概要レポートは、アプリストア指標のスナップショットを提供します（アプリストア指標には、ダウンロード数、アプリ内購入、アプリストア評価平均、ダウンロードの売上高、アプリ内での売上高、国別ダウンロード数、アプリストア別ダウンロード数、名前別アプリ内購入数が含まれます）。
 seo-title: アプリストアの概要レポート
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: アプリストアの概要レポート
 topic: 指標
-uuid: ac066f31- ec4b-4b67- b839-780c2cd1574e
+uuid: ac066f31-ec4b-4b67-b839-780c2cd1574e
 translation-type: tm+mt
 source-git-commit: 3b744229b3fc288363be74c3c4adcd71ecc4fad4
 
@@ -29,11 +29,11 @@ source-git-commit: 3b744229b3fc288363be74c3c4adcd71ecc4fad4
 
 >[!IMPORTANT]
 >
->Adobe Analyticsのダウンロード数、ランク、売上高、レーティングなどのアプリストア指標では、適切なベンダーとのData Connector統合が必要です。`appFigures` で現在提供されている統合の場合は、統合を有効にする前に`appFigures`、適切な製品やサービスを **** から購入する必要があります。Data Connector の統合について詳しくは、[Adobe Exchange](https://www.adobeexchange.com/experiencecloud.html) を参照してください。
+>App store metrics, such as downloads, rank, revenue, rating, and so on in Adobe Analytics require a Data Connector integration with an appropriate vendor. `appFigures` で現在提供されている統合の場合は、統合を有効にする前に`appFigures`、適切な製品やサービスを **** から購入する必要があります。Data Connector の統合について詳しくは、[Adobe Exchange](https://www.adobeexchange.com/experiencecloud.html) を参照してください。
 
 >[!TIP]
 >
->右上のカレンダーアイコンをクリックしてレポートの日付範囲を変更するだけでなく、一部のドリルダウンレポートをカスタマイズしたり、フィルターやシリーズ（指標）を追加したり、共通フィルターを追加したり、PDFまたはCSV形式でレポートをダウンロードしたりできます。For more information, see [Customize reports](/help/using/usage/reports-customize/reports-customize.md).
+>右上のカレンダーアイコンをクリックしてレポートの日付範囲を変更する以外にも、一部のドリルダウンレポートのカスタマイズ、フィルターとシリーズ（指標）の追加、共通フィルターの追加、PDFまたはCSV形式でのレポートのダウンロードが可能です。 For more information, see [Customize reports](/help/using/usage/reports-customize/reports-customize.md).
 
 ## アプリストア評価平均 {#section_60D0D21824AE4450BC3E34D7ACA12A7A}
 
@@ -41,7 +41,7 @@ source-git-commit: 3b744229b3fc288363be74c3c4adcd71ecc4fad4
 
 ![](assets/app_store_rating.png)
 
-**[!UICONTROL App Store平均評価]** ウィジェットの任意の場所をクリックして、日付別評価平均を示すグラフおよび表を表示できます。ある日のデータを表示するには、その日の上にマウスポインターを置きます。
+You can click anywhere on the **[!UICONTROL App Store Average Rating]** widget to display a graph and chart that displays the average rating by date. ある日のデータを表示するには、その日の上にマウスポインターを置きます。
 
 ![](assets/app_store_downloads_detail.png)
 
