@@ -3,7 +3,7 @@ description: プロジェクトにライブラリを追加した後は、アプ�
 seo-description: プロジェクトにライブラリを追加した後は、アプリケーション内のどこでも任意の Analytics メソッドを呼び出せます（クラスに ADBMobile.h が読み込まれていることを確認してください）。
 seo-title: Analytics
 title: Analytics
-uuid: de018ea- b37d-4afe-83a0-8011381d7aff
+uuid: de018eda-b37d-4afe-83a0-8011381d7aff
 translation-type: tm+mt
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
@@ -19,7 +19,7 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 コードを追加する前に、次の手順を完了してモバイルアプリケーションのライフサイクル追跡を有効にするよう Analytics 管理者に依頼してください。この手順を完了すると、開発を開始する際にレポートスイートで指標を収集できるようになります。
 
 
-1. **[!UICONTROL 管理ツール]** / **[!UICONTROL レポートスイート]** を開き、モバイルレポートスイートを選択します。
+1. Open **[!UICONTROL Admin Tools]** &gt; **[!UICONTROL Report Suites]** and select your mobile report suite(s).
 1. Click **[!UICONTROL Edit Settings]** &gt; **[!UICONTROL Mobile Management]** &gt; **[!UICONTROL Mobile Application Reporting]**.
 
    ![](assets/mobile-settings.png)
@@ -50,7 +50,7 @@ Lifecycle metrics are now ready to be captured, and Mobile Application Reports] 
 ## Events, props, and eVars {#concept_B885D5A71A5D45129CE7C1C3426A7D28}
 
 
-[ADBMobileクラスとメソッドリファレンス](/help/blackberry/methods.md)を確認した場合は、イベント、eVar、prop、heiies、およびリストを設定することをお勧めします。バージョン 4 では、これらの種類の変数をアプリケーション内で直接割り当てられなくなっています。代わりに、SDK は、コンテキストデータと処理ルールを使用して、レポート用にアプリデータを Analytics 変数にマップします。
+『 [ADBMobileクラスとメソッドリファレンス』を参照している場合](/help/blackberry/methods.md)、イベント、eVar、prop、ヒア、リストを設定する場所が分からないかもしれません。 バージョン 4 では、これらの種類の変数をアプリケーション内で直接割り当てられなくなっています。代わりに、SDK は、コンテキストデータと処理ルールを使用して、レポート用にアプリデータを Analytics 変数にマップします。
 
 処理ルールには次の利点があります。
 
@@ -68,7 +68,7 @@ Lifecycle metrics are now ready to be captured, and Mobile Application Reports] 
 
 [処理ルール](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/processing-rules/processing-rules.html)
 
-[処理ルールを使用する権限があります](https://helpx.adobe.com/analytics/kb/processing-rules-authorization.html)
+[処理ルールの使用を承認する](https://helpx.adobe.com/analytics/kb/processing-rules-authorization.html)
 
 「名前空間」を使用してコンテキストデータ変数をグループ化することをお勧めします。これにより論理的な順序を維持できます。例えば、ある製品に関する情報を収集する場合、以下の変数を定義できます。
 
@@ -106,14 +106,14 @@ Lifecycle metrics are now ready to be captured, and Mobile Application Reports] 
 
 >[!TIP]
 >
->アドビが名前空間を予約 `a.`します。このわずかな制約以外で、競合を回避するために必要なのは、コンテキストデータ変数をログイン会社内で一意にすることだけです。
+>アドビは名前空間を予約しま `a.`す。 このわずかな制約以外で、競合を回避するために必要なのは、コンテキストデータ変数をログイン会社内で一意にすることだけです。
 
-## オフライン追跡の有効化 {#concept_402F4ECE240B4CA1B779322A7BFCB8DE}
+## オフライン追跡を有効にする {#concept_402F4ECE240B4CA1B779322A7BFCB8DE}
 
 To store hits when the device is offline, you can optionally enable offline tracking in the `ADBMobileConfig.json` file.
 
 オフライン追跡を有効にする前に、設定ファイルのリファレンスで説明されているタイムスタンプの要件に十分注意してください。
 
-## Analyticsのメソッド
+## Analyticsメソッド
 
-BlackBerryで使用できるAnalyticsメソッドの一覧については、Adobe *Mobileクラスおよびメソッドリファレンス* の [Analyticsメソッド](/help/blackberry/methods.md)を参照してください。
+BlackBerryで使用できるAnalyticsメソッドの一覧については、 *Adobe mobileクラスの* Analyticsメソッドおよびメソッドリ [ファレンスを参照してください](/help/blackberry/methods.md)。
