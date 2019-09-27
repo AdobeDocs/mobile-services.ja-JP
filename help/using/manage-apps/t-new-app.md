@@ -3,10 +3,10 @@ description: 新しいアプリの作成および主要指標の設定をおこ�
 keywords: モバイル
 seo-description: 新しいアプリの作成および主要指標の設定をおこなったり、Adobe Analytics および Adobe Audience Manager の SDK オプションを設定したり、獲得および ID サービスオプションを設定したり、設定ファイル、SDK、開発者およびテスター向けツールをダウンローするための情報です。
 seo-title: 新しいアプリの追加
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: 新しいアプリの追加
 topic: 指標
-uuid: 706b5e4d-1318-4a9e-8c69- ffabf51fa02c
+uuid: 706b5e4d-1318-4a9e-8c69-ffabf51fa02c
 translation-type: tm+mt
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
@@ -26,11 +26,11 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
    * 「**[!UICONTROL 新規作成]」をクリックして、アプリを作成します。**
    * To add additional apps, click Manage Apps in the left navigation menu and click **[!UICONTROL Add]**.
 
-      サインインについて詳しくは [、サインイン](/help/using/gs/gs-signin.md)を参照してください。
+      サインインについて詳しくは、「サインイン」を参照 [してくださ](/help/using/gs/gs-signin.md)い。
 
       >[!TIP]
       >
-      >既存のアプリを管理するには、左側のナビゲーションメニューの「アプリを管理」をクリックし、変更するアプリをクリックします。アプリの情報ページで、変更を加えることができます。
+      >既存のアプリを管理するには、左側のナビゲーションメニューで「アプリを管理」をクリックし、変更するアプリをクリックします。 アプリの情報ページで、変更を加えることができます。
 
 1. 次のフィールドに情報を入力します。
 
@@ -42,22 +42,22 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
    * **[!UICONTROL レポートスイート ID]**
 
-      このIDは、Adobe Analyticsでレポートスイートを一意に識別します。ID の先頭に会社のプレフィックスが自動的に追加されます。
+      このIDは、Adobe Analyticsのレポートスイートを一意に識別します。 ID の先頭に会社のプレフィックスが自動的に追加されます。
 
    * **[!UICONTROL 次の設定をコピー]**
 
-      変数、イベント、処理ルールなどの設定は、このレポートスイートのように、新しいレポートスイートで設定されます。**設定のコピー元**&#x200B;レポートスイートがモバイルアプリのテンプレート、またはオフラインで使用可能な既存レポートスイートを選択した場合にのみ、Mobile Servicesで作成されたレポートスイートはオフライン計測が有効になります（タイムスタンプが付けられます）。x
+      変数、イベント、処理ルールなどの設定は、このレポートスイートとまったく同じように、新しいレポートスイートに設定されます。 **設定のコピー元**&#x200B;レポートスイートがモバイルアプリのテンプレート、またはオフラインで使用可能な既存レポートスイートを選択した場合にのみ、Mobile Servicesで作成されたレポートスイートはオフライン計測が有効になります（タイムスタンプが付けられます）。x
 
    * **[!UICONTROL タイムゾーン]**
 
-      すべてのレポート日はこのタイムゾーンにあります。デフォルトでは、ブラウザーで使用されているタイムゾーン（に近いもの）が選択されています。
+      すべてのレポート日はこのタイムゾーンに設定されます。 デフォルトでは、ブラウザーで使用されているタイムゾーン（に近いもの）が選択されています。
 
    * **[!UICONTROL 通貨]**
 
-      売上高はこのタイプの通貨として追跡およびレポートされます。
+      売上高は、このタイプの通貨として追跡およびレポートされます。
    >[!TIP]
    >
-   >仮想レポートスイート（VRS）を使用するには、 [仮想レポートスイート](/help/using/manage-apps/c-mob-vrs.md)を参照してください。
+   >仮想レポートスイート(VRS)を使用するには、仮想レポートスイ [ートを参照してください](/help/using/manage-apps/c-mob-vrs.md)。
 
    * **[!UICONTROL アイコン]**
 
@@ -65,7 +65,7 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
    * **[!UICONTROL 名前]**
 
-      (**Optional**) Type a descriptive name for the app. この名前を使用すると、アプリをすばやく見つけることができ、わかりやすい名前を付けてアプリの目的や設定をすばやく把握できます。
+      (**Optional**) Type a descriptive name for the app. この名前は、アプリをすばやく見つけるのに役立ち、わかりやすい名前を付けると、アプリの目的と設定をすばやく理解するのに役立ちます。
 
    * **[!UICONTROL タイプ]**
 
@@ -77,13 +77,13 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
          You can leave the **[!UICONTROL Standard}** option selected for most apps.
 
-      * **[!UICONTROL パブリケーション]**
+      * **[!UICONTROL 公開]**
 
          アプリが Adobe Digital Publishing Suite を使用して構築されている場合、このオプションを選択できます。
 
       * **[!UICONTROL ゲーム]**
 
-         このオプションは、「**[!UICONTROL 標準]**」オプションに似ていますが、「**ゲーム]」では、レポートで使用される用語がゲーム用の用語に更新されます。[!UICONTROL **&#x200B;例えば、ユーザーはプレイヤーに変更されます。ゲームアプリには、ゲーム特有のレポートが自動的に表示されます。
+         このオプションは、「**[!UICONTROL 標準]**」オプションに似ていますが、「**ゲーム]」では、レポートで使用される用語がゲーム用の用語に更新されます。[!UICONTROL ** For example, users is changed to players. ゲームアプリには、ゲーム特有のレポートが自動的に表示されます。
    * **[!UICONTROL 説明]**
 
       (**Optional**) Type a description for the app.
