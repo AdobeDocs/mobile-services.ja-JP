@@ -2,10 +2,10 @@
 description: 'null'
 seo-description: 'null'
 seo-title: Analytics
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: Analytics
 topic: 開発者と導入
-uuid: c2extenite3d3-77a7-4a8e- bbe4-3db10a77996a
+uuid: c2cef3d3-77a7-4a8e-bbe4-3db10a77996a
 translation-type: tm+mt
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
@@ -14,17 +14,17 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 # Analytics {#analytics}
 
-プロジェクトにライブラリを追加すると、Analyticsメソッドの任意の呼び出しをアプリ内の任意の場所に行うことができます。
+After you add the library to your project, you can make any of the Analytics method calls anywhere in your app.
 
 >[!TIP]
 >
->クラスに必ず読み込み `ADBMobile.h` ます。
+>Ensure that you import  to your class.`ADBMobile.h`
 
 ## Enable mobile application reports in Analytics {#section_F2F9234009184F20BA36B5CDE872B424}
 
 コードを追加する前に、次の手順を完了してモバイルアプリケーションのライフサイクル追跡を有効にするよう Analytics 管理者に依頼してください。この手順を完了すると、開発を開始する際にレポートスイートで指標を収集できるようになります。
 
-1. **[!UICONTROL 管理ツール]** / **[!UICONTROL レポートスイート]** を開き、モバイルレポートスイートを選択します。
+1. Open **[!UICONTROL Admin Tools]** &gt; **[!UICONTROL Report Suites]** and select your mobile report suite(s).
 
 1. Click **[!UICONTROL Edit Settings]** &gt; **[!UICONTROL Mobile Management]** &gt; **[!UICONTROL Mobile Application Reporting]**.
 
@@ -38,7 +38,7 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 これで、ライフサイクル指標を収集する準備が整い、「モバイルアプリケーションレポート」がマーケティングレポートインターフェイスの&#x200B;**レポート**&#x200B;メニューに表示されます。
 
-### 新しいバージョン
+### New versions
 
 モバイルアプリケーションレポートの新しいバージョンは定期的にリリースされます。新しいバージョンは自動的にレポートスイートに適用されないので、これらの手順を繰り返してアップグレードを実行する必要があります。新しい Experience Cloud 機能をアプリケーションに追加する際には、毎回これらの手順を繰り返して最新の設定が適用されるようにすることをお勧めします。
 
@@ -46,7 +46,7 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 ライフサイクル指標をアプリケーションで収集するには、次の例のように、アプリケーションがアクティベートされる部分に呼び出しを追加します。
 
-### winJS（default. js）
+### WinJS in default.js
 
 ```js
 app.onactivated = function (args) { 
@@ -61,7 +61,7 @@ app.oncheckpoint = function (args) {
 }
 ```
 
-### C#（App. xaml. cs）
+### C# in App.xaml.cs
 
 ```js
 public App() 
@@ -122,7 +122,7 @@ If `CollectLifecycleData()` is called twice in the same session, your applicatio
 
 ## Events, props, and eVars {#section_76EA6F5611184C5CAE6E62956D84D7B6}
 
-[SDKメソッド](/help/universal-windows/c-configuration/methods.md)を見ている場合は、イベント、eVar、prop、heies、およびリストを設定することをお勧めします。バージョン 4 では、これらの種類の変数をアプリケーション内で直接割り当てられなくなっています。代わりに、SDK は、コンテキストデータと処理ルールを使用して、レポート用にアプリデータを Analytics 変数にマップします。
+If you've looked at [SDK methods](/help/universal-windows/c-configuration/methods.md), you are probably wondering where to set events, eVars, props, heirs, and lists. バージョン 4 では、これらの種類の変数をアプリケーション内で直接割り当てられなくなっています。代わりに、SDK は、コンテキストデータと処理ルールを使用して、レポート用にアプリデータを Analytics 変数にマップします。
 
 処理ルールには次の利点があります。
 
@@ -178,11 +178,11 @@ If `CollectLifecycleData()` is called twice in the same session, your applicatio
 
 >[!TIP]
 >
->アドビが名前空間を予約 `a.`します。この制限以外に、コンテキストデータ変数は、競合を避けるためにログイン会社内で一意にする必要があります。
+>アドビは名前空間を予約しま `a.`す。 Other than this restriction, context data variables just need to be unique in your login company to avoid collisions.
 
 ## Products variable {#section_AFBA36F3718C44D29AF81B9E1056A1B4}
 
-モバイルSDK *`products`* で設定するには、特別な構文を使用する必要があります。詳しくは [、「製品変数](/help/universal-windows/analytics/products.md)」を参照してください。
+モバイルSDK *`products`* に設定するには、特別な構文を使用する必要があります。 詳しくは、 [Products変数を参照してください](/help/universal-windows/analytics/products.md)。
 
 ## (Optional) Enable offline tracking {#section_955B2A03EB854742BDFC4A0A3C287009}
 
@@ -190,7 +190,7 @@ To store hits when the device is offline, you can enable offline tracking in the
 
 ## Geo-location and points of interest {#section_BAD34A8DD013454DB355121316BD7FD4}
 
-位置情報は位置データ（緯度と経度）に加え、事前定義された目標点を測定する場合に役立ちます。`TrackLocation` 各呼び出しが送信されます。
+位置情報は位置データ（緯度と経度）に加え、事前定義された目標点を測定する場合に役立ちます。Each `TrackLocation` call sends:
 
 * 緯度／経度および POI（`ADBMobileConfig.json` 設定ファイルで定義されている POI 内の場合）。
 
