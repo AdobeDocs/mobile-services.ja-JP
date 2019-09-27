@@ -1,9 +1,9 @@
 ---
-description: 'アプリ設定を管理ページで、次の種類の変更を行うことができます '
-seo-description: 'アプリ設定を管理ページで、次の種類の変更を行うことができます '
+description: 'アプリ設定ページで、次のタイプの変更を行うことができます '
+seo-description: 'アプリ設定ページで、次のタイプの変更を行うことができます '
 seo-title: アプリの設定
 title: アプリの設定
-uuid: c088e12d-73b6-40c4- b8cc- ec3bb3d3aa4a
+uuid: c088e12d-73b6-40c4-b8cc-ec3bb3d3aa4a
 translation-type: tm+mt
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
@@ -59,7 +59,7 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
    >[!IMPORTANT]
    >
-   >SDKおよびツールをダウンロードする前に、SDK Analyticsオプションを設定する必要があります。詳しくは、"SDK Analyticsオプション [の設定](/help/using/c-manage-app-settings/c-mob-confg-app/t-config-analytics/t-config-analytics.md)」を参照してください。
+   >SDKとツールをダウンロードする前に、SDK Analyticsのオプションを設定する必要があります。 詳しくは、「SDK Analyticsオプシ [ョンの設定」を参照してください](/help/using/c-manage-app-settings/c-mob-confg-app/t-config-analytics/t-config-analytics.md)。
 
    4.x SDK へのアップグレードの準備が整っている場合、または新しいアプリケーションを作成する場合は、最新の SDK および開発ツールをアプリ設定ページの下部からダウンロードします。
 
