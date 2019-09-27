@@ -4,7 +4,7 @@ keywords: Xamarin
 seo-description: Experience Cloud ソリューション 4.x SDK 用 Xamarin コンポーネントの iOS メソッド。
 seo-title: iOSメソッド
 solution: Marketing Cloud，開発者
-title: iOSメソッド
+title: iOS methods
 uuid: d6a056db-80c1-44d0-970f-c961ad01b0bc
 translation-type: tm+mt
 source-git-commit: f53953831e6471ea64eb2ae06ddae16ca0eab6f6
@@ -87,7 +87,7 @@ Experience Cloud ソリューション 4.x SDK 用 Xamarin コンポーネント
    現在のユーザーのプライバシーステータスの enum 表現を返します。
    * `ADBMobilePrivacyStatus.OptIn`  — ヒットは直ちに送信されます。
    * `ADBMobilePrivacyStatus.OptOut`  — ヒットは破棄されます。
-   * ADBMobilePrivacyStatus.Unknown - オフライン追跡が有効な場合、プライバシーステータスがオプトイン（ヒットが送信される）またはオプトアウト（ヒットが破棄される）に変更されるまで、ヒットは保存されます。オフライン追跡が無効な場合、プライバシーステータスがオプトインに変わるまで、ヒットは破棄されます。
+   * ADBMobilePrivacyStatus.Unknown - オフライン追跡が有効な場合、プライバシーステータスがオプトイン（ヒットが送信される）またはオプトアウト（ヒットが破棄される）に変更されるまで、ヒットは保存されます。If offline tracking is disabled, hits are discarded until the privacy status changes to opt in.
    The default value is set in the [ADBMobileConfig.json](/help/ios/configuration/json-config/json-config.md).
 
    * このメソッドの構文を次に示します。
@@ -253,7 +253,7 @@ Experience Cloud ソリューション 4.x SDK 用 Xamarin コンポーネント
    バックグラウンドで発生したアクションを追跡します。これにより、特定の状況でライフサイクルイベントが発生するのを抑えます。
 
    >[!TIP]
-   このメソッドは、アプリがバックグラウンドにある間に実行されるコードでのみ呼び出す必要があります。
+   This method should only be called in code that runs while your app is in the background.
 
    * このメソッドの構文を次に示します。
 
