@@ -3,7 +3,7 @@ description: Adobe SDK を使用して、個人識別情報（PII）を収集し
 seo-description: Adobe SDK を使用して、個人識別情報（PII）を収集し、サードパーティのエンドポイントに送信することができます。
 seo-title: PII ポストバック
 title: PII ポストバック
-uuid: 08f76a52-75dd-4fc1- b4cc-4f5ef93d0f7
+uuid: 08f76a52-75dd-4fc1-b4cc-4f5eef93d0f7
 translation-type: tm+mt
 source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
 
@@ -18,13 +18,13 @@ Adobe SDK を使用して PII を収集する場合は、追跡 PII 呼び出し
 
 >[!TIP]
 >
->PIIポストバックタイプを使用するには、HTTPSをサポートするエンドポイントが必要です。
+>An endpoint that supports HTTPS is required to use the PII postback type.
 
 ## Tracking PII postbacks {#section_36B967B888CF467EACCDEF61DFA0B12B}
 
 1. ライブラリをプロジェクトに追加し、ライフサイクルを実装します。
 
-   詳しくは、コア実装および *ライフサイクル* で [プロジェクトにSDKおよび設定ファイルを追加を参照](/help/ios/getting-started/dev-qs.md)してください。
+   詳しくは、コア実装とラ *イフサイクルでのプロジェクトへのSDKと設定ファイルの追加* ( [英語のみ)を参照してください](/help/ios/getting-started/dev-qs.md)。
 1. ライブラリをインポートします。
 
    ```objective-c
