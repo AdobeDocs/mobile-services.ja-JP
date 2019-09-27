@@ -1,9 +1,9 @@
 ---
 description: BlackBerry ライブラリが提供するクラスおよびメソッド。
 seo-description: BlackBerry ライブラリが提供するクラスおよびメソッド。
-seo-title: Adobe Mobileクラスとメソッドリファレンス
-title: Adobe Mobileクラスとメソッドリファレンス
-uuid: 1e42d759- be43-4bb3- ac1a- c7d64133d61c
+seo-title: Adobe mobileクラスおよびメソッドリファレンス
+title: Adobe Mobile class and method reference
+uuid: 1e42d759-be43-4bb3-ac1a-c7d64133d61c
 translation-type: tm+mt
 source-git-commit: 68bc21f1c6dba2faeed332495592114af90c8f61
 
@@ -14,7 +14,7 @@ source-git-commit: 68bc21f1c6dba2faeed332495592114af90c8f61
 
 BlackBerry ライブラリが提供するクラスおよびメソッド。
 
-SDKは現在、Adobe Analyticsをサポートしており、メソッドはソリューションに基づく個別のクラスにあります。
+The SDK currently has support for Adobe Analytics, and methods are in separate classes based on the solution.
 
 ## SDK settings {#section_C1EB977043C04D2B93E5A63DB72828B6}
 
@@ -44,8 +44,8 @@ SDKは現在、Adobe Analyticsをサポートしており、メソッドはソ�
 
    現在のユーザーのプライバシーステータスを `status` に設定します。次のいずれかの値に設定します。
 
-   * `ADBMobilePrivacyStatusOptIn` - ヒットは即座に送信されます。
-   * `ADBMobilePrivacyStatusOptOut` - ヒットは破棄されます。
+   * `ADBMobilePrivacyStatusOptIn` - hits are sent immediately.
+   * `ADBMobilePrivacyStatusOptOut`  — ヒットは破棄されます。
    * `ADBMobilePrivacyStatusUnknown` - レポートスイートでタイムスタンプが有効になっている場合、プライバシーステータスがオプトイン（ヒットが送信される）またはオプトアウト（ヒットが破棄される）に変更されるまで、ヒットは保存されます。レポートスイートのタイムスタンプが有効になっていない場合、プライバシーステータスがオプトインに変更されるまで、ヒットは破棄されます。
 
    * このメソッドの構文を次に示します。
@@ -153,7 +153,7 @@ SDKは現在、Adobe Analyticsをサポートしており、メソッドはソ�
 
    >[!TIP]
    >
-   >これはページビュー数が増える唯一のトラッキング呼び出しです。
+   >This is the only tracking call that increments page views.
 
    * このメソッドの構文を次に示します。
 
@@ -199,15 +199,15 @@ SDKは現在、Adobe Analyticsをサポートしており、メソッドはソ�
         ADBMobile::trackLocation(event, null);
       ```
 
-## `ADBMobileConfig.json` configファイルリファレンス {#section_5AD4EDF87E304980B4AC4A5657FDA8B9}
+## `ADBMobileConfig.json` 設定ファイルの参照 {#section_5AD4EDF87E304980B4AC4A5657FDA8B9}
 
-`ADBMobileConfig.json` ファイルを *assets* フォルダーに配置する必要があります。
+The `ADBMobileConfig.json` file must be placed in the *assets* folder.
 
 * **rsids**
 
    （必須）Analytics データを受け取るための 1 つまたは複数のレポートスイート。レポートスイート ID を複数指定する場合は、スペースを入れずにレポートスイート ID をコンマで区切る必要があります。
 
-   以下に、この変数のコードサンプルを示します。
+   Here are the code sample for this variable:
 
    ```js
    "rsids" : "rsid"
@@ -219,7 +219,7 @@ SDKは現在、Adobe Analyticsをサポートしており、メソッドはソ�
 
 * **server**
 
-   （必須）Analytics サーバー。This variable should be populated with the server domain, without an `https://` or `https://` protocol prefix. プロトコルプレフィックスは、`ssl` 変数に基づいてライブラリで自動的に処理されます。`ssl` が `true` の場合、このサーバーとの安全な接続が確立されます。`ssl` が `false` の場合、このサーバーとの安全でない接続が確立されます。
+   (必須). Analytics サーバー。This variable should be populated with the server domain, without an `https://` or `https://` protocol prefix. プロトコルプレフィックスは、`ssl` 変数に基づいてライブラリで自動的に処理されます。`ssl` が `true` の場合、このサーバーとの安全な接続が確立されます。`ssl` が `false` の場合、このサーバーとの安全でない接続が確立されます。
 
 * **charset**
 
@@ -235,7 +235,7 @@ SDKは現在、Adobe Analyticsをサポートしており、メソッドはソ�
 
    >[!TIP]
    >
-   >If timestamps are enabled on your report suite, your `offlineEnabled` configuration property *must* be `true`. レポートスイートでタイムスタンプが有効になっていない場合、`offlineEnabled` 設定プロパティを&#x200B;*必ず* false に設定してください。このプロパティを適切に設定しなければ、データが失われます。レポートスイートのタイムスタンプが有効になっているかどうか判断できない場合は、エンタープライズサポートに [お問い合わせ](https://helpx.adobe.com/contact/enterprise-support.ec.html)ください。
+   >If timestamps are enabled on your report suite, your `offlineEnabled` configuration property *must* be `true`. レポートスイートでタイムスタンプが有効になっていない場合、`offlineEnabled` 設定プロパティを&#x200B;*必ず* false に設定してください。このプロパティを適切に設定しなければ、データが失われます。レポートスイートのタイムスタンプが有効になっているかどうか判断できない場合は、 contact Enterprise Support.[](https://helpx.adobe.com/contact/enterprise-support.ec.html)
 
    現在、同じレポートスイートで JavaScript と AppMeasurement からデータを収集している場合は、モバイルデータのレポートスイートを個別に設定するか、`s.timestamp` 変数を使用するすべての JavaScript ヒットにカスタムタイムスタンプを含めます。
 
@@ -253,12 +253,12 @@ SDKは現在、Adobe Analyticsをサポートしており、メソッドはソ�
 
 * **privacyDefault**
 
-   * `optedin` - ヒットは即座に送信されます。
-   * `optedout` - ヒットは破棄されます。
+   * `optedin`  — ヒットは直ちに送信されます。
+   * `optedout`  — ヒットは破棄されます。
    * `optunknown` - レポートスイートでタイムスタンプが有効になっている場合、プライバシーステータスがオプトイン（ヒットが送信される）またはオプトアウト（ヒットが破棄される）に変更されるまで、ヒットは保存されます。
 
       レポートスイートのタイムスタンプが有効になっていない場合、プライバシーステータスがオプトインに変更されるまで、ヒットは破棄されます。
-   この変数は初期値のみを設定します。この値をコードで設定または変更した場合、値が変更されるか、アプリがアンインストールされて再インストールされるまで、新しい値が使用されます。
+   この変数は初期値のみを設定します。 この値をコードで設定または変更した場合、値が変更されるか、アプリがアンインストールされて再インストールされるまで、新しい値が使用されます。
 
    デフォルト値は `optedin` です。
 
