@@ -3,7 +3,7 @@ description: Adobe Analytics では、管理ツールホームページで役割
 seo-description: Adobe Analytics では、管理ツールホームページで役割を管理できます。
 seo-title: 役割と権限
 title: 役割と権限
-uuid: ad350f8d- ef51-4519-98aa-3025bc0f5588
+uuid: ad350f8d-ef51-4519-98aa-3025bc0f5588
 translation-type: tm+mt
 source-git-commit: c7cac006340e01d0fd1f6afe3419e6fd17294a98
 
@@ -28,9 +28,9 @@ Analytics 管理者は、ユーザーグループを管理したり、権限を�
 
 この役割について詳しくは、次のコンテンツを参照してください。
 
-* [ユーザー管理の概要](https://docs.adobe.com/content/help/en/analytics/admin/user-product-management/user-management/users.html)
+* [User management overview](https://docs.adobe.com/content/help/en/analytics/admin/user-product-management/user-management/users.html)
 
-* [ユーザーおよびグループ権限の変更](https://docs.adobe.com/content/help/en/analytics/admin/user-product-management/user-management/permissions-changes.html)
+* [User and Group permission changes](https://docs.adobe.com/content/help/en/analytics/admin/user-product-management/user-management/permissions-changes.html)
 
 ### モバイルアプリ管理者
 
@@ -44,11 +44,11 @@ Analytics 管理者は、ユーザーグループを管理したり、権限を�
 
 次に、Mobile Services UI でのアクセスオプションに関する追加情報を示します。
 
-### アプリおよびレポートスイート
+### アプリとレポートスイート
 
 すべての Mobile Services アプリは、レポートスイートに結び付けられています。ユーザーにレポートスイートへのアクセス権がない場合、そのレポートスイートに関連付けられたアプリにアクセスできません。
 
-### Mobile ServicesおよびAnalyticsの機能
+### Mobile ServicesとAnalyticsの機能
 
 プッシュメッセージなどの UI の機能にアクセスするための Analytics 契約が会社にない場合、権限レベルにかかわらず、会社のユーザーにはその機能へのアクセス権がありません。
 
@@ -58,13 +58,13 @@ Analytics 管理者は、ユーザーグループを管理したり、権限を�
 
 ### Analytics 管理者
 
-* すべてのユーザーおよびモバイルアプリ管理者権限
+* すべてのユーザーおよびモバイルアプリの管理者権限
 * 新しいレポートスイートを使用したアプリの作成
 * Mobile Services からのアプリの削除
 
    >[!IMPORTANT]
    >
-   >アプリはMobile Services UIで削除されていますが、Analyticsには引き続きレポートスイートが存在します。
+   >Although the app has been deleted in the Mobile Services UI, the report suite still exists in Analytics.
 
 * アプリ設定
 
@@ -94,7 +94,7 @@ Analytics 管理者は、ユーザーグループを管理したり、権限を�
 
 グループおよびユーザーについて詳しくは、次を参照してください。
 
-* [ユーザーグループの設定](https://docs.adobe.com/content/help/en/analytics/admin/user-product-management/user-groups/groups.html)
+* [User group settings](https://docs.adobe.com/content/help/en/analytics/admin/user-product-management/user-groups/groups.html)
 * [グループにユーザーを追加する](https://docs.adobe.com/content/help/en/analytics/admin/user-product-management/user-management/t-add-user-to-group.html)
 
 ### Mobile Servicesユーザー
@@ -106,7 +106,7 @@ Analytics 管理者は、ユーザーグループを管理したり、権限を�
 
    >[!IMPORTANT]
    >
-   >ユーザーは、Adobe Analyticsでアクセスできるレポートスイートのみを表示できます。
+   >ユーザーは、Adobe Analyticsでアクセス権を持つレポートスイートのみを表示できます。
 
 * アプリ設定の表示
 
@@ -116,7 +116,7 @@ Analytics 管理者は、ユーザーグループを管理したり、権限を�
    * ポストバックの表示
    * リンク先の表示
 
-* レポートの表示と実行
+* View and Run Reports
 * マーケティングリンクの表示
 * 従来のダウンロード計測用リンクの表示および書き出し
 * 場所（目標地点）設定の表示および書き出し
