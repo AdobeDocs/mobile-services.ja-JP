@@ -3,10 +3,10 @@ description: ファネルレポートは、顧客がモバイルアプリの操�
 keywords: モバイル
 seo-description: ファネルレポートは、顧客がモバイルアプリの操作中にマーケティングキャンペーンを放棄した地点や、定義済みのコンバージョンパスからそれた地点を特定します。また、ファネルレポートを使用して、様々なセグメントのアクションを比較できます。
 seo-title: ファネルレポート
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: ファネルレポート
 topic: レポート, 指標
-uuid: 268b4ab9-2e29-4423-9f79- ad93f5231ede
+uuid: 268b4ab9-2e29-4423-9f79-ad93f5231ede
 translation-type: tm+mt
 source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
@@ -23,7 +23,7 @@ source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
 >[!TIP]
 >
->カスタムファネルを保存するには、設定を行ってレポートを実行した後、URLを保存します。この URL は、共有したり、ドキュメントに保存したりできます。
+>カスタムファネルを保存するには、URLを設定してレポートを実行した後でURLを保存します。 この URL は、共有したり、ドキュメントに保存したりできます。
 
 次に、このレポートの例を示します。
 
@@ -53,7 +53,7 @@ To generate the report, click **[!UICONTROL Run]**.
    Customize your reports by changing the **[!UICONTROL Show By]** options, adding metrics and filters, and adding additional series (metrics), and more. For more information, see [Customize Reports](/help/using/usage/reports-customize/reports-customize.md).
 * **[!UICONTROL フィルター]**
 
-   「**[!UICONTROL フィルター]」をクリックし、様々なレポートにわたるフィルターを作成して、すべてのモバイルレポートにおけるセグメントのパフォーマンスを確認します。**&#x200B;共通フィルターを定義すると、パス（画面遷移）レポート以外のすべてのレポートに適用できます。詳しくは、共通フィルター [の追加](/help/using/usage/reports-customize/t-sticky-filter.md)を参照してください。
+   「**[!UICONTROL フィルター]」をクリックし、様々なレポートにわたるフィルターを作成して、すべてのモバイルレポートにおけるセグメントのパフォーマンスを確認します。**&#x200B;共通フィルターを定義すると、パス（画面遷移）レポート以外のすべてのレポートに適用できます。詳しくは、「共通フィルターの追 [加」を参照してください](/help/using/usage/reports-customize/t-sticky-filter.md)。
 * **[!UICONTROL ダウンロード]**
 
-   **[!UICONTROL «PDF]** »また **[!UICONTROL は«CSV]** »をクリックして、ドキュメントをダウンロードまたは開き、Mobile Servicesにアクセスできない、またはプレゼンテーションでファイルを使用するユーザーと共有します。
+   Click **[!UICONTROL PDF]** or **[!UICONTROL CSV]** to download or open documents and share with users who do not have access to Mobile Services or to use the file in presentations.
