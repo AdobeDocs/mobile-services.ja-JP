@@ -2,11 +2,11 @@
 description: この情報は、アプリ内メッセージのトラブルシューティングに役立ちます。
 keywords: モバイル
 seo-description: この情報は、アプリ内メッセージのトラブルシューティングに役立ちます。
-seo-title: アプリ内メッセージのトラブルシューティング
-solution: Marketing Cloud、Analytics
-title: アプリ内メッセージのトラブルシューティング
+seo-title: Troubleshoot In-App Messaging
+solution: Marketing Cloud,Analytics
+title: Troubleshoot In-App Messaging
 topic: 指標
-uuid: 39c3a21d-92c2-4004- b00f-99b6f91d3696
+uuid: 39c3a21d-92c2-4004-b00f-99b6f91d3696
 translation-type: tm+mt
 source-git-commit: 12e01e112debffd877dd62f1fd2505724b2aae7d
 
@@ -35,7 +35,7 @@ Ensure that you have an [In-App Messaging](/help/android/messaging-main/messagin
 
 メッセージが発行されているかどうかを確認するには、アプリ内メッセージを管理ページの&#x200B;**ステータス**&#x200B;列で、メッセージのリストを確認します。
 
-## 一度 *表示*&#x200B;し、常に *表示して、「**オーディエンス」タブでオフライン* 設定を表示します。
+## Look at show once, show always, show offline  settings on the Audience tab.******
 
 これらの設定が正しく行われていることを確認します。「**[!UICONTROL 閲覧者]**」タブで、メッセージの表示頻度を指定するための「**トリガー[!UICONTROL 」オプションを確認します。]**
 
