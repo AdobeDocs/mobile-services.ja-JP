@@ -3,10 +3,10 @@ description: この情報は、Android デバイスで従来のダウンロー�
 keywords: android;library;mobile;sdk
 seo-description: この情報は、Android デバイスで従来のダウンロード計測キャンペーンリンクをラウンドトリップする場合に役立ちます。
 seo-title: 従来のダウンロード計測のテスト
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: 従来のダウンロード計測のテスト
 topic: 開発者と導入
-uuid: bb7ace96-68eb-4f43- b3cf- af80730b9cee
+uuid: bb7ace96-68eb-4f43-b3cf-af80730b9cee
 translation-type: tm+mt
 source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
 
