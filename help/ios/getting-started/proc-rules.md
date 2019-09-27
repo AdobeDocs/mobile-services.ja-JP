@@ -2,10 +2,10 @@
 description: 処理ルールは、コンテキストデータ変数で送信したデータを、レポート用に eVar や prop などの変数にコピーするために使用します。
 seo-description: 処理ルールは、コンテキストデータ変数で送信したデータを、レポート用に eVar や prop などの変数にコピーするために使用します。
 seo-title: 処理ルールとコンテキストデータ
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: 処理ルールとコンテキストデータ
 topic: 開発者と導入
-uuid: 51338pcm- fa52-4d9c-97c4-947a4100465d
+uuid: 51338ccd-fa52-4d9c-97c4-947a4100465d
 translation-type: tm+mt
 source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
 
@@ -19,9 +19,9 @@ source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
 詳しくは、以下のコンテンツを参照してください。
 
 * [処理ルールのトレーニング](https://tv.adobe.com/embed/1181/16506/)（Summit 2013）
-* 処理ルールを使用する権限があります
+* Become authorized to use processing rules
 
-   処理ルールについて詳しくは [、処理ルールの概要](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/processing-rules/processing-rules.html)を参照してください。
+   For more information about processing rules, see Processing rules overview.[](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/processing-rules/processing-rules.html)
 
 処理ルールを使用する際には、次の情報に留意してください。
 
@@ -63,5 +63,5 @@ source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
 
 >[!TIP]
 >
->アドビが名前空間「 `a.`」を予約しています。この制約の他に、衝突を回避するために従うべき唯一の要件は、コンテキストデータ変数をログイン会社内で一意にすることです。
+>アドビは名前空間「」を予約 `a.`します。 この制約の他に、衝突を回避するために従うべき唯一の要件は、コンテキストデータ変数をログイン会社内で一意にすることです。
 
