@@ -1,27 +1,27 @@
 ---
-description: 以下の情報は、獲得テストの問題のトラブルシューティングに役立ちます。
-keywords: android;獲得、テスト
-seo-description: 以下の情報は、獲得テストの問題のトラブルシューティングに役立ちます。
-seo-title: 獲得テストのトラブルシューティング
-solution: Marketing Cloud、Analytics
-title: 獲得テストのトラブルシューティング
+description: The following information helps you troubleshoot Acquisition testing issues.
+keywords: android;Acquisition;testing
+seo-description: The following information helps you troubleshoot Acquisition testing issues.
+seo-title: Troubleshooting Acquisition testing
+solution: Marketing Cloud,Analytics
+title: Troubleshooting Acquisition testing
 translation-type: tm+mt
 source-git-commit: da8798d7ee1f05dcade31cced5404d78c9cf360a
 
 ---
 
 
-# 獲得テストのトラブルシューティング {#aquistion-testing-troubleshooting}
+# Troubleshooting Acquisition testing {#aquistion-testing-troubleshooting}
 
-獲得テスト時に直面する可能性のある問題と、いくつかの解決策を以下に示します。
+Here are some issues you might face when testing Acquisition and some possible solutions:
 
-* それ以外の場合は、ADBMobileConfig. jsonファイルをassetsフォルダーに配置します。
+* 特に指定しない場合、ADBMobileConfig.jsonファイルはassetsフォルダーに配置する必要があります。
 
-* 名前では大文字と小文字が区別されるので、小文字の文字には名前を指定しないでください。
+* 名前は大文字と小文字が区別されるので、小文字で名前を付けないでください。
 
-   メインアクティビティから `Config.setContext(this.getApplicationContext())` 呼び出されることを確認する必要があります。詳しくは [、設定メソッド](https://docs.adobe.com/content/help/en/mobile-services/android/configuration-android/methods.html)を参照してください。
+   You need to ensure that  is called from the main activity. `Config.setContext(this.getApplicationContext())`詳しくは、設定方法を参照 [してください](https://docs.adobe.com/content/help/en/mobile-services/android/configuration-android/methods.html)。
 
-* 提供されたAndroidManifest.xmlファイルにいくつかのユーザー権限がありません。これらの権限は、データを送信し、オフライントラッキングコールを記録するために必要です。
+* 提供されたAndroidManifest.xmlファイルには、いくつかのユーザー権限がないので、データを送信し、オフライントラッキングコールを記録するために必要です。
 
    ```html
    <manifest..>
@@ -31,11 +31,11 @@ source-git-commit: da8798d7ee1f05dcade31cced5404d78c9cf360a
    </manifest>
    ```
 
-* 設定では、リファラータイムアウトが設定されている場合 `referrerTimeout: 5`、アプリケーションがインストールされ、初回起動された時点で5秒の時間枠にインストールインテントを送信する必要があり、インストールヒットに追加されたリファラー情報を確認する必要があります。
+* 設定で、リファラータイムアウトがに設定されている場合は、アプリケーションを初めてインストールして起動した後、5秒の時間枠でインストールインテントを送信し、インストールヒットに追加されたリファラー情報を確認する必要があります。 `referrerTimeout: 5`
 
-   手動テストの場合、インストール `referrerTimeout` ヒットの処理前にリファラー情報を送信するのに十分な時間があることを、10~15秒に増やします。
+   手動テストの場合は、インス `referrerTimeout` トールヒットが処理される前にリファラー情報を送信するのに十分な時間があるように、10 ～ 15秒に増やします。
 
-* マーケティングリンクの獲得 [](https://docs.adobe.com/content/help/en/mobile-services/android/acquisition-android/t-testing-marketing-link-acquisition.html) のテストのすべての手順を実行して、シェルを実行し、 `adb` 次の手順を実行することが重要です。
+* 「マーケティングリンクの獲得のテスト」のすべ [ての手順を順に実行し](https://docs.adobe.com/content/help/en/mobile-services/android/acquisition-android/t-testing-marketing-link-acquisition.html) 、シェルを実行してから `adb` 、次の手順を必ず実行することが重要です。
 
    ```java
    am broadcast -a com.android.vending.INSTALL_REFERRER -n 
@@ -45,4 +45,4 @@ source-git-commit: da8798d7ee1f05dcade31cced5404d78c9cf360a
 
 >[!IMPORTANT]
 >
->リファラーインテントを正しく処理するには、これら2つのコマンドを個別に実行する必要があります。そうしないと、リファラー情報が `adb` 二重にエスケープされ、ブロードキャスト受信者によって受信されたデータは不完全になります。
+>リファラーインテントを正しく処理するには、これら2つのコマンドを個別に実行する必要があります。  それ以外の場 `adb` 合は、リファラー情報をダブルエスケープし、ブロードキャスト受信機が受信したデータは不完全になります。
