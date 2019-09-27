@@ -2,10 +2,10 @@
 description: Universal Windows Platform ライブラリで提供されているクラスとメソッドです。
 seo-description: Universal Windows Platform ライブラリで提供されているクラスとメソッドです。
 seo-title: SDKメソッド
-solution: Marketing Cloud、Analytics
-title: SDKメソッド
+solution: Marketing Cloud,Analytics
+title: SDK methods
 topic: 開発者と導入
-uuid: e3aa41d6-7bc0-4208- a662-12907c209a77
+uuid: e3aa41d6-7bc0-4208-a662-12907c209a77
 translation-type: tm+mt
 source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
@@ -20,7 +20,7 @@ Universal Windows Platform ライブラリで提供されているクラスと�
 >
 >When you consume `winmd` methods from winJS (JavaScript), all methods automatically have their first letter lowercased.
 
-* **getVersion（winJS:getVersion）**
+* **GetVersion (winJS:getVersion)**
 
    Adobe Mobile ライブラリの現在のバージョンを返します。
 
@@ -36,15 +36,15 @@ Universal Windows Platform ライブラリで提供されているクラスと�
       var ADB = ADBMobile;var libVersion = ADB.Config.getVersion();
       ```
 
-* **getPrivacyStatusAsync（winJS:getPrivacyStatusAsync）**
+* **GetPrivacyStatusAsync (winJS:getPrivacyStatusAsync)**
 
    現在のユーザーのプライバシーステータスの enum 表現を返します。
 
-   * `ADBMobilePrivacyStatusOptIn` - ヒットはすぐに送信されます。
-   * `ADBMobilePrivacyStatusOptOut` - ヒットは破棄されます。
-   * `ADBMobilePrivacyStatusUnknown` - レポートスイートでタイムスタンプが有効になっている場合、プライバシーステータスがオプトイン（ヒットが送信される）またはオプトアウト（ヒットが破棄される）に変わるまで、ヒットは保存されます。レポートスイートのタイムスタンプが有効になっていない場合、プライバシーステータスがオプトインに変更されるまで、ヒットは破棄されます。
+   * `ADBMobilePrivacyStatusOptIn` - Hits are sent immediately.
+   * `ADBMobilePrivacyStatusOptOut`  — ヒットは破棄されます。
+   * `ADBMobilePrivacyStatusUnknown`  — レポートスイートでタイムスタンプが有効な場合、プライバシーステータスがオプトイン（ヒットが送信される）またはオプトアウト（ヒットが破棄される）に変わるまで、ヒットは保存されます。 レポートスイートのタイムスタンプが有効になっていない場合、プライバシーステータスがオプトインに変更されるまで、ヒットは破棄されます。
 
-      The default value is set in the `ADBMobileConfig.json` config file. 詳しくは [、ADBMobileConfig. json configファイル](/help/universal-windows/c-configuration/c.json.md)を参照してください。
+      The default value is set in the `ADBMobileConfig.json` config file. 詳しくは、ADBMobileConfig.json設定フ [ァイルを参照してください](/help/universal-windows/c-configuration/c.json.md)。
 
    * このメソッドの構文を次に示します。
 
@@ -53,7 +53,7 @@ Universal Windows Platform ライブラリで提供されているクラスと�
       ^getPrivacyStatusAsync();
       ```
 
-   * このメソッドのコードサンプルを次に示します。
+   * Here are the code samples for this method:
 
       **Cシャープ**
 
@@ -73,12 +73,12 @@ Universal Windows Platform ライブラリで提供されているクラスと�
       );
       ```
 
-* **setPrivacyStatus（winJS:SetPrivacyStatus）**
+* **SetPrivacyStatus (winJS:setPrivacyStatus)**
 
    現在のユーザーのプライバシーステータスを `status` に設定します。次のいずれかの値に設定します。
-   * `ADBMobilePrivacyStatusOptIn` - ヒットは即座に送信されます。
-   * `ADBMobilePrivacyStatusOptOut` - ヒットは破棄されます。
-   * `DBMobilePrivacyStatusUnknown` - レポートスイートにタイムスタンプが有効な場合、プライバシーステータスがオプトイン（ヒットが送信される）またはオプトアウト（ヒットが破棄される）に変更されるまで、ヒットは保存されます。レポートスイートのタイムスタンプが有効になっていない場合、プライバシーステータスがオプトインに変更されるまで、ヒットは破棄されます。
+   * `ADBMobilePrivacyStatusOptIn` - hits are sent immediately.
+   * `ADBMobilePrivacyStatusOptOut` - hits are discarded.
+   * `DBMobilePrivacyStatusUnknown`  — レポートスイートでタイムスタンプが有効な場合、プライバシーステータスがオプトイン（ヒットが送信される）またはオプトアウト（ヒットが破棄される）に変わるまで、ヒットは保存されます。 レポートスイートのタイムスタンプが有効になっていない場合、プライバシーステータスがオプトインに変更されるまで、ヒットは破棄されます。
 
       * このメソッドの構文を次に示します。
 
@@ -86,9 +86,9 @@ Universal Windows Platform ライブラリで提供されているクラスと�
          static void SetPrivacyStatus(ADBMobilePrivacyStatus status);
          ```
 
-      * このメソッドのコードサンプルを次に示します。
+      * このメソッドのコード例を次に示します。
 
-         **C- sharp**
+         **Cシャープ**
 
          ```csharp
          public enum class ADBMobilePrivacyStatus : int { 
@@ -106,7 +106,7 @@ Universal Windows Platform ライブラリで提供されているクラスと�
          );
          ```
 
-* **getLifetimeValue（winJS:getLifetimeValue）**
+* **GetLifetimeValue (winJS:getLifetimeValue)**
 
    現在のユーザーのライフタイム値を返します。デフォルト値は `0` です。
 
@@ -123,14 +123,14 @@ Universal Windows Platform ライブラリで提供されているクラスと�
       var ltv = ADB.Config.getLifetimeValue();
       ```
 
-* **getUserIdentifier（WinJS:getUserIdentifier）**
+* **GetUserIdentifier (winJS:getUserIdentifier)**
 
    カスタム識別子が設定されている場合、カスタムユーザー識別子を返します。Returns `null` if a custom identifier is not set.
 デフォルト値は `null` です。
 
    >[!IMPORTANT]
    >
-   >アプリケーションがExperience Cloud3. x SDKから4. x SDKにアップグレードすると、以前のIDサービス（カスタムまたは自動生成）が取得され、カスタムユーザー識別子として保存されます。これにより、SDK をアップグレードしても訪問者データが保持されます。4.x SDK での新規インストールの場合、ユーザー識別子は設定されるまで `null` です。
+   >アプリがExperience Cloud 3.xから4.x SDKにアップグレードされた場合、以前のIDサービス（カスタムまたは自動生成）が取得され、カスタムユーザーIDとして保存されます。 これにより、SDK をアップグレードしても訪問者データが保持されます。4.x SDK での新規インストールの場合、ユーザー識別子は設定されるまで `null` です。
 
    * このメソッドの構文を次に示します。
 
@@ -145,7 +145,7 @@ Universal Windows Platform ライブラリで提供されているクラスと�
       var userId = ADB.Config.getUserIdentifier(); 
       ```
 
-* **setUserIdentifier（WinJS:setUserIdentifier）**
+* **SetUserIdentifier (winJS:setUserIdentifier)**
 
    ユーザー識別子を `identifier` に設定します。
 
@@ -162,7 +162,7 @@ Universal Windows Platform ライブラリで提供されているクラスと�
       ADB.Config.setUserIdentifier("someUserId");
       ```
 
-* **getDebugLogging（winJS:getDebugLogging）**
+* **GetDebugLogging (winJS:getDebugLogging)**
 
    現在のデバッグログの環境設定を返します。デフォルト値は `false` です。
 
@@ -179,7 +179,7 @@ Universal Windows Platform ライブラリで提供されているクラスと�
       var logging = ADB.Config.getDebugLogging();
       ```
 
-* **setDebugLogging（winJS:setDebugLogging）**
+* **SetDebugLogging (winJS:setDebugLogging)**
 
    デバッグログの環境設定を `debugLogging` に設定します。デバッグログはデバッグバージョンのライブラリを使用している場合にのみ機能し、リリースバージョンを使用している場合、この設定は無視されます。
 
@@ -196,7 +196,7 @@ Universal Windows Platform ライブラリで提供されているクラスと�
       ADB.Config.setDebugLogging(true);
       ```
 
-* **CollectLifecycleData（winJS:CollectLifecycleData）**
+* **CollectLifecycleData (winJS:collectLifecycleData)**
 
    SDK のすべてのソリューションで使用するライフサイクルデータを収集するように SDK に指示します。For more information, see  [Lifecycle metrics](/help/universal-windows/metrics.md).
 
@@ -213,7 +213,7 @@ Universal Windows Platform ライブラリで提供されているクラスと�
       ADB.Config.collectLifecycleData();
       ```
 
-* **PauseCollectingLifecycleData（WinJS:PauseCollectingLifecycleData）**
+* **PauseCollecting &#x200B; LifecycleData (winJS:pauseCollecting &#x200B; LifecycleData)**
 
    ライフサイクル指標が正しく計算されるように、アプリが一時停止されたことを SDK に通知します。例えば、一時停止中にタイムスタンプを収集して、セッションの長さの計測を一時停止します。また、クラッシュ回数を正しく計測するためのフラグを設定します。詳しくは、[ライフサイクル指標](/help/universal-windows/metrics.md)を参照してください。
 
