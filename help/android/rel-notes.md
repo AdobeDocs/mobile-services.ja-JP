@@ -2,7 +2,7 @@
 description: Experience Cloud ソリューション用 Android SDK 4.x のリリースノートと既知の問題です。
 seo-description: Experience Cloud ソリューション用 Android SDK 4.x のリリースノートと既知の問題です。
 seo-title: リリースノート
-solution: Marketing Cloud ,Analytics
+solution: Marketing Cloud,Analytics
 title: リリースノート
 topic: 開発者と導入
 uuid: 16bb4de8-a216-47a8-928c-0b1e1421adcf
@@ -14,7 +14,7 @@ source-git-commit: 7fe7c78262a6d35dd27787554bb4f9ee92faa952
 
 # リリースノート {#release-notes}
 
-Experience cloudソリューション用Android SDK 4.xのリリースノート、既知の問題およびホットフィックス情報を次に示します。
+Here is the release notes, known issues, and hot fix information for Android SDK 4.x for Experience Cloud Solutions:
 
 **2019年9月21日：バージョン4.17.10**
 
@@ -31,7 +31,7 @@ Experience cloudソリューション用Android SDK 4.xのリリースノート�
 **2019年6月7日：バージョン4.17.7**
 
 * 一般 — 20未満のAndroid APIレベルでのネットワーク呼び出しで、TLS 1.1またはTLS 1.2が使用されるようになりました。
-* 解析 — プッシュ通知が有効な場合に、プッシュオプトインステータスがライフサイクルデータに追加されました。
+* Analytics - Appended push opt-in status to Lifecycle data when push notifications are enabled.
 
 **2019年5月25日：バージョン4.17.6**
 
