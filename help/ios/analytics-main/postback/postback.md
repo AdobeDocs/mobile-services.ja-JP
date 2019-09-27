@@ -2,9 +2,9 @@
 description: ポストバックを使用すると、SDK によって収集されたデータをサードパーティのサーバーに送信できます。アプリ内メッセージを表示するために使用しているのと同じトリガーおよび特性を活用して、カスタマイズしたデータをサードパーティのサーバーに送信するように SDK を設定できます。
 seo-description: ポストバックを使用すると、SDK によって収集されたデータをサードパーティのサーバーに送信できます。アプリ内メッセージを表示するために使用しているのと同じトリガーおよび特性を活用して、カスタマイズしたデータをサードパーティのサーバーに送信するように SDK を設定できます。
 seo-title: ポストバック
-solution: Marketing Cloud、Analytics
-title: ポストバックの概要
-uuid: 25e2a5fb-1203-40dd-96cd- b23e0f23376d
+solution: Marketing Cloud,Analytics
+title: Postbacks overview
+uuid: 25e2a5fb-1203-40dd-96cd-b23e0f23376d
 translation-type: tm+mt
 source-git-commit: 83e6968efb0ed1b4ef504286c6cb2e8e4d2eaf94
 
@@ -33,7 +33,7 @@ SDK が既知の内部データで自動的に置き換えをおこなう固有�
 |--- |--- |
 | `{%sdkver%}` | SDK のバージョンを返します。 |
 | `{%cachebust%}` | 1 ～ 100000000 の間の乱数に解決されます。 |
-| `{%adid%}` | IDFA を返します。このトークンは、使用 `setAdvertisingIdentifier`した場合にのみ機能します。 |
-| `{%pushid%}` | プッシュ識別子トークンを返します。このトークンは、使用 `setPushIdentifier`した場合にのみ機能します。 |
+| `{%adid%}` | IDFA を返します。このトークンは、使用した場合にのみ機能しま `setAdvertisingIdentifier`す。 |
+| `{%pushid%}` | プッシュ識別子トークンを返します。このトークンは、使用した場合にのみ機能しま `setPushIdentifier`す。 |
 | `{%timestampu%}` | 現在のタイムスタンプをエポックタイムで返します。 |
 | `{%timestampz%}` | 現在のタイムスタンプを JavaScript（ISO 8601）形式で返します。 |
