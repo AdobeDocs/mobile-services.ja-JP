@@ -1,20 +1,20 @@
 ---
 description: ADBMobile JSON 設定ファイルを使用する際に役立つ情報です。
 seo-description: ADBMobile JSON 設定ファイルを使用する際に役立つ情報です。
-seo-title: ADBMobileConfig. json設定ファイル
-solution: Marketing Cloud、Analytics
-title: ADBMobileConfig. json設定ファイル
+seo-title: ADBMobileConfig.json設定ファイル
+solution: Marketing Cloud,Analytics
+title: ADBMobileConfig.json設定ファイル
 topic: 開発者と導入
-uuid: a45b91cc-982e-4d6c- a4e4- d2e4b4fa7556
+uuid: a45b91cc-982e-4d6c-a4e4-d2e4b4fa7556
 translation-type: tm+mt
 source-git-commit: 1dbdb998228bd3b0ae41e774b6e9aa111d8dbe1c
 
 ---
 
 
-# `ADBMobileConfig.json` configファイル {#adbmobileconfig-json-config}
+# `ADBMobileConfig.json` 設定ファイル {#adbmobileconfig-json-config}
 
-`ADBMobile.json` 設定ファイルの使用に役立つ情報です。
+Information to help you use the `ADBMobile.json` config file.
 
 現在、SDK では、Analytics、Target、Audience Manager をはじめとする複数の Adobe Experience Cloud ソリューションがサポートさています。これらのメソッドには、ソリューションに応じたプレフィックスが付けられています。設定メソッドには「Config」というプレフィックスが付けられています。
 
@@ -22,7 +22,7 @@ source-git-commit: 1dbdb998228bd3b0ae41e774b6e9aa111d8dbe1c
 
    （Analytics の場合は必須）：Analytics データを受け取るための 1 つまたは複数のレポートスイート。レポートスイート ID を複数指定する場合は、スペースを入れずにレポートスイート ID をコンマで区切る必要があります。
 
-   * 以下に、この変数のコードサンプルを示します。
+   * この変数のコード例を次に示します。
 
       ```js
       "rsids" : "rsid"
@@ -60,25 +60,25 @@ source-git-commit: 1dbdb998228bd3b0ae41e774b6e9aa111d8dbe1c
 
 * **batchLimit**
 
-   ヒットのバッチ送信を有効にします。例えば、この変数を 50 に設定すると、キューに格納されているヒットの数が 50 に達したときに、キュー内のすべてのヒットが一括で送信されます。必要 `offlineEnabled=true`です。The default value is `0` (No batching).
+   ヒットのバッチ送信を有効にします。例えば、この変数を 50 に設定すると、キューに格納されているヒットの数が 50 に達したときに、キュー内のすべてのヒットが一括で送信されます。が必要で `offlineEnabled=true`す。 The default value is `0` (No batching).
 
 * **privacyDefault**
 
-   * `optedin` - ヒットは即座に送信されます。
-   * `optedout` - ヒットは破棄されます。
+   * `optedin`  — ヒットは直ちに送信されます。
+   * `optedout` - hits are discarded.
    * `optunknown` - レポートスイートでタイムスタンプが有効になっている場合、プライバシーステータスがオプトイン（ヒットが送信される）またはオプトアウト（ヒットが破棄される）に変更されるまで、ヒットは保存されます。レポートスイートのタイムスタンプが有効になっていない場合、プライバシーステータスがオプトインに変更されるまで、ヒットは破棄されます。
 
       デフォルト値は `optedin` です。
 
       >[!TIP]
       >
-      >これにより、デフォルト値のみが設定されます。この値がコード内で設定または変更された場合、値が再び変更されるか、アプリがアンインストールされて再インストールされるまで、コードによって設定された値がローカルストレージに保存されて使用され続けます。
+      >This sets the default value only. この値がコード内で設定または変更された場合、値が再び変更されるか、アプリがアンインストールされて再インストールされるまで、コードによって設定された値がローカルストレージに保存されて使用され続けます。
 
 * **poi**
 
    各 POI 配列は、対象の地点の POI 名、緯度、経度、半径（メートル単位）を保持します。POI 名には任意の文字列を使用できます。`trackLocation` 呼び出しの送信時に、現在の座標が定義した POI 内にある場合は、コンテキストデータ変数に値が代入され、`trackLocation` 呼び出しで送信されます。
 
-   * 以下に、この変数のコードサンプルを示します。
+   * この変数のコード例を次に示します。
 
       ```js
       "poi": [
