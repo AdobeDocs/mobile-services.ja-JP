@@ -2,9 +2,9 @@
 description: 表示、トリガーおよび特徴オプションを含む、アプリ内メッセージのオーディエンスオプションを設定できます。
 keywords: モバイル
 seo-description: 表示、トリガーおよび特徴オプションを含む、アプリ内メッセージのオーディエンスオプションを設定できます。
-seo-title: オーディエンス内メッセージ
-solution: Marketing Cloud、Analytics
-title: オーディエンス内メッセージ
+seo-title: オーディエンスのアプリ内メッセージ
+solution: Marketing Cloud,Analytics
+title: オーディエンスのアプリ内メッセージ
 topic: 指標
 uuid: 6c815d4c-7626-4cf4-9158-3f059c79317a
 translation-type: tm+mt
@@ -43,7 +43,8 @@ source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
       >
       >複数のトリガーを選択した場合、メッセージを表示するには、すべてのトリガーが同じヒットで発生する必要があります。
 
-   * **[!UICONTROL 特性]**&#x200B;アプリ内メッセージがトリガーされたときにどのユーザーに表示されるかを決定し、指定したデータを持つヒットにオーディエンスをフィルター（セグメント化）することができます。例えば、目標地点にデンバーが含まれるというルールを定義できます。このフィルターを使用すると、トリガーの時点で目標地点のいずれかの名前に「デンバー」が含まれている顧客にメッセージを表示できます。
+   * **[!UICONTROL Traits
+You can determine who should see the in-app message when it is triggered and filter (segment) the audience to hits that have specified data.]**&#x200B;例えば、目標地点にデンバーが含まれるというルールを定義できます。このフィルターを使用すると、トリガーの時点で目標地点のいずれかの名前に「デンバー」が含まれている顧客にメッセージを表示できます。
 
 
 
@@ -51,7 +52,7 @@ source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
 
 >[!IMPORTANT]
 >
->トリガーと特性は、アプリからAnalyticsに渡されるデータを使用します。値はコンテキストデータ、マップされた変数、および指標として渡されます。変数はテキストベースの値であり、指標は数値です。
+>トリガーと特性は、アプリからAnalyticsに渡されるデータを使用します。 値はコンテキストデータ、マップされた変数、および指標として渡されます。変数はテキストベースの値であり、指標は数値です。
 
 To see the mapping of these key value pairs in the Mobile Services UI and validate the value for your trigger, click **[!UICONTROL Manage App Settings]** &gt;  **[!UICONTROL Manage Variables &amp; Metrics]** &gt;, which displays the following tabs:
 
@@ -63,9 +64,9 @@ To see the mapping of these key value pairs in the Mobile Services UI and valida
 
 ### Selecting metrics and variables {#example_AB126F03BD1C4094B791E230B3DB1189}
 
-![トリガーオプション](assets/custom_trigger_matcher_options.png)
+![トリガオプション](assets/custom_trigger_matcher_options.png)
 
-次のシナリオでは、トリガーとして指標を選択するか、変数を選択するかを決定します。
+次のシナリオは、指標と変数のどちらをトリガーとして選択するかを決定する際に役立ちます。
 
 ### 指標
 
@@ -74,9 +75,9 @@ To see the mapping of these key value pairs in the Mobile Services UI and valida
 1. Click **[!UICONTROL Manage Messages]** &gt; **[!UICONTROL Create Message]**.
 1. **[!UICONTROL 「オーディエンス」]**&#x200B;タブの&#x200B;**「トリガー」[!UICONTROL セクションで以下の手順を実行します。]**
 
-   1. **[!UICONTROL 「起動]** して **[!UICONTROL 存在]**&#x200B;する」などの標準イベントを選択します。
+   1. Select a standard event such as **[!UICONTROL Launched]** and select **[!UICONTROL exists]**.
    1. カスタムのデータポイントであり、指標にマッピングされている 2 番目のトリガーを選択します。
-   1. **[!UICONTROL 「番号]**」で、マッチャーオプションを選択します。
+   1. Under **[!UICONTROL Number]**, select a matcher option.
 
 ### 変数
 
@@ -85,8 +86,8 @@ To see the mapping of these key value pairs in the Mobile Services UI and valida
 1. Click **[!UICONTROL Manage Messages]** &gt; **[!UICONTROL Create Message]**.
 1. **[!UICONTROL 「オーディエンス」]**&#x200B;タブの&#x200B;**「トリガー」[!UICONTROL セクションで以下の手順を実行します。]**
 
-   1. **[!UICONTROL 「起動]** して **[!UICONTROL 存在]**&#x200B;する」などの標準イベントを選択します。
+   1. Select a standard event such as **[!UICONTROL Launched]** and select **[!UICONTROL exists]**.
    1. カスタムのデータポイントであり、変数にマッピングされている 2 番目のトリガーを選択します。
-   1. **[!UICONTROL 「テキスト]**」で、マッチャーオプションを選択します。
+   1. Under **[!UICONTROL Text]**, select a matcher option.
 
 For more information about context data, variables, and metrics, see [Managing your app](/help/using/manage-apps/manage-apps.md).
