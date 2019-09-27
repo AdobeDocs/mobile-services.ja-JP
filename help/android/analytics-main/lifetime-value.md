@@ -2,10 +2,10 @@
 description: ライフタイム値を使用すると、各 Android ユーザーの全期間値を測定し、ターゲットにすることができます。この値は、全期間の購入、広告ビュー、ビデオ完了、ソーシャルシェア、写真のアップロードなどを保存するために使用できます。
 seo-description: ライフタイム値を使用すると、各 Android ユーザーの全期間値を測定し、ターゲットにすることができます。この値は、全期間の購入、広告ビュー、ビデオ完了、ソーシャルシェア、写真のアップロードなどを保存するために使用できます。
 seo-title: 訪問者のライフタイム値
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: 訪問者のライフタイム値
 topic: 開発者と導入
-uuid: ba0308de-282e-46f9- a14c-19fb6d5c363e
+uuid: ba0308de-282e-46f9-a14c-19fb6d5c363e
 translation-type: tm+mt
 source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
 
@@ -20,9 +20,9 @@ source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
 
 ## Track the visitor lifetime value {#section_390943A49AF841F2941E65D6DF2B3F5A}
 
-1. [ライブラリにライブラリを追加して、ライフサイクルを実装します。
+1. [ライブラリをプロジェクトに追加し、ライフサイクルを実装します。
 
-   詳しくは、コア実装および *ライフサイクル* で [、"SDKおよび設定ファイルのIntelliJ IDEAまたはEclipseプロジェクトへの追加」を参照](/help/android/getting-started/dev-qs.md)してください。
+   詳しくは、 *Core実装およびライフサイクルのIntelliJ IDEAまたはEclipse ProjectへのSDKと設定ファイルの追加*[を参照してください](/help/android/getting-started/dev-qs.md)。
 1. ライブラリをインポートします。
 
    ```java
