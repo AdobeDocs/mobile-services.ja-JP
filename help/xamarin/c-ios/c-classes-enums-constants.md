@@ -3,7 +3,7 @@ description: Xamarin アプリケーションで使用するクラスおよび�
 seo-description: Xamarin アプリケーションで使用するクラスおよび列挙型のリスト。
 seo-title: クラスと列挙
 title: クラスと列挙
-uuid: 410d27ee- ce2b-4183-971e-39a7031d1bd5
+uuid: 410d27ee-ce2b-4183-971e-39a7031d1bd5
 translation-type: tm+mt
 source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
