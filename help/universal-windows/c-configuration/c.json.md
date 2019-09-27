@@ -1,9 +1,9 @@
 ---
 description: ADBMobile JSON 設定ファイルを使用する際に役立つ情報です。
 seo-description: ADBMobile JSON 設定ファイルを使用する際に役立つ情報です。
-seo-title: ADBMobileConfig. json config
-solution: Marketing Cloud、Analytics
-title: ADBMobileConfig. json config
+seo-title: ADBMobileConfig.json config
+solution: Marketing Cloud,Analytics
+title: ADBMobileConfig.json config
 topic: 開発者と導入
 uuid: cbcb54a3-4b8f-4651-8ce9-2731ac988545
 translation-type: tm+mt
@@ -12,7 +12,7 @@ source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
 ---
 
 
-# ADBMobileConfig. json設定ファイル {#adbmobileconfig-json-config}
+# ADBMobileConfig.json設定ファイル {#adbmobileconfig-json-config}
 
 ADBMobile JSON 設定ファイルを使用する際に役立つ情報です。
 
@@ -52,7 +52,7 @@ ADBMobile JSON 設定ファイルを使用する際に役立つ情報です。
 
    If time stamps are enabled on your report suite, your `offlineEnabled` configuration property *must* be `true`. if your report suite is not timestamp enabled, your `offlineEnabled` configuration property *must* be `false`.
 
-   このプロパティを適切に設定しなければ、データが失われます。レポートスイートでタイムスタンプが有効になっているかどうかが不明な場合は、カスタマーケアにお問い合わせください。If you are currently reporting AppMeasurement data to a report suite that also collects data from JavaScript, you might need to set up a separate report suite for mobile data or include a custom timestamp on all JavaScript hits using the `s.timestamp` variable.
+   このプロパティを適切に設定しなければ、データが失われます。If you are unsure whether a report suite is timestamp enabled, contact Customer Care. If you are currently reporting AppMeasurement data to a report suite that also collects data from JavaScript, you might need to set up a separate report suite for mobile data or include a custom timestamp on all JavaScript hits using the `s.timestamp` variable.
 
    デフォルト値は `false` です。
 
@@ -66,17 +66,17 @@ ADBMobile JSON 設定ファイルを使用する際に役立つ情報です。
 
    ヒットのバッチ送信を有効にします。
 
-   For example, if set to `50`, hits are queued until 50 are stored, then all queued hits are sent. デフォルト `offlineEnabled=true`値で、デフォルト値は `0` （バッチ処理なし）です。
+   For example, if set to `50`, hits are queued until 50 are stored, then all queued hits are sent. Requires , and the default value is  (No batching).`offlineEnabled=true``0`
 
 * **privacyDefault**
 
    オプションは以下のとおりです。
 
-   * `optedin` - ヒットは即座に送信されます。
-   * `optedout` - ヒットは破棄されます。
+   * `optedin`  — ヒットは直ちに送信されます。
+   * `optedout` - hits are discarded.
    * `optunknown` - レポートスイートでタイムスタンプが有効になっている場合、プライバシーステータスがオプトイン（ヒットが送信される）またはオプトアウト（ヒットが破棄される）に変更されるまで、ヒットは保存されます。レポートスイートのタイムスタンプが有効になっていない場合、プライバシーステータスがオプトインに変更されるまで、ヒットは破棄されます。
 
-      これにより、デフォルト値のみが設定されます。この値がコード内で設定または変更された場合、値が再び変更されるか、アプリがアンインストールされて再インストールされるまで、コードによって設定された値がローカルストレージに保存されて使用され続けます。
+      これにより、デフォルト値のみが設定されます。 この値がコード内で設定または変更された場合、値が再び変更されるか、アプリがアンインストールされて再インストールされるまで、コードによって設定された値がローカルストレージに保存されて使用され続けます。
 
       デフォルト値は `optedin` です。
 
@@ -84,7 +84,7 @@ ADBMobile JSON 設定ファイルを使用する際に役立つ情報です。
 
    各 POI 配列は、対象の地点の POI 名、緯度、経度、半径（メートル単位）を保持します。POI 名には任意の文字列を使用できます。`trackLocation` 呼び出しの送信時に、現在の座標が定義した POI 内にある場合は、コンテキストデータ変数に値が代入され、`trackLocation` 呼び出しで送信されます。
 
-   * 以下に、この変数のコードサンプルを示します。
+   * この変数のコード例を次に示します。
 
       ```js
        "poi" [ 
