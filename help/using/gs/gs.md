@@ -2,11 +2,11 @@
 description: この情報は、Adobe Mobile Services の理解と使用に役立ちます。
 keywords: モバイル
 seo-description: この情報は、Adobe Mobile Services の理解と使用に役立ちます。
-seo-title: 導入
-solution: Marketing Cloud、Analytics
-title: 導入
+seo-title: はじめに
+solution: Marketing Cloud,Analytics
+title: はじめに
 topic: 指標
-uuid: a7ae7c5a- dab8-4603- b4cd- af73a2f09f71
+uuid: a7ae7c5a-dab8-4603-b4cd-af73a2f09f71
 translation-type: tm+mt
 source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
@@ -41,7 +41,7 @@ Adobe Mobile Services は、次の方法でモバイルアプリのエンゲー�
 
 **&#x200B;獲得では、有料メディア、オウンドメディアおよび無料メディアを使用して、ユーザーの獲得を推進し、主要なアプリストアからのアプリダウンロードを促します。Adobe Mobile Services を使用すると、アプリユーザーの獲得プロセスを加速できます。
 
-Adobe Mobile Services には、獲得の追跡およびディープリンクを含む、ユーザー獲得ワークフローが備わっており、アプリユーザーの獲得についてチャネルの効果を測定できます。どのチャネルからどのチャネルを訪問したかをトラッキングするマーケティングリンクにより、利益のあるユーザや関与しているユーザーを誘導するのに最も効果的な獲得チャネルを把握できます。
+Adobe Mobile Services には、獲得の追跡およびディープリンクを含む、ユーザー獲得ワークフローが備わっており、アプリユーザーの獲得についてチャネルの効果を測定できます。どのチャネルから来たユーザーを追跡するマーケティングリンクを使用すると、どの獲得チャネルが利益を上げ、関与したユーザーを最も効果的に導くかを把握できます。
 
 さらに、ディープリンクを使用すると、表示させたいアプリコンテンツにユーザーを直接導くことができ、必要に応じてアプリのインストールを促すことができます。
 
@@ -82,7 +82,7 @@ Adobe Audience Manager を使用して、リッチデータでオーディエン
 * アプリ内メッセージがリアルタイム分析、アラートおよび新しいオファー／コンテンツによってトリガーされる。
 * ビュー数、クリックスルー率およびダウンストリームの行動を把握する。
 
-### Adobe Mobile Messaging
+### Adobe Mobile messaging
 
 プッシュ通知およびアプリ内通知を使用して、ユーザーとコミュニケーションを取ることができます。アプリ内メッセージがユーザーがアクティブにアプリを操作しているときにアプリ内で送信されるのに対して、プッシュ通知はデバイスのオペレーティングシステムを介して送信されます。アプリ内メッセージには、通常、ポップアップやインタースティシャルなど、様々な形式を含めることができます。
 
@@ -121,7 +121,7 @@ Adobe Mobile では、次のタイプのメッセージを設定できます。
 
 ロケーションについて詳しくは、次のコンテンツを参照してください。
 
-* [Mobile Servicesユーザーガイドの場所](/help/using/location/c-location-overview.md)
+* [Mobile Servicesユーザーガイド内の場所](/help/using/location/c-location-overview.md)
 * Android SDK ガイドの[ロケーション](/help/android/location/location.md)
 * iOS SDK ガイドの[ロケーション](/help/ios/location/location.md)
 
