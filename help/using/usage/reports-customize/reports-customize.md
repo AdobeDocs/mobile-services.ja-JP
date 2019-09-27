@@ -3,10 +3,10 @@ description: この情報は、組み込みのレポートを理解し、カス�
 keywords: モバイル
 seo-description: この情報は、組み込みのレポートを理解し、カスタマイズするのに役立ちます。
 seo-title: レポートのカスタマイズ
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: レポートのカスタマイズ
 topic: レポート, 指標
-uuid: 39ba9af3- eaee-44b9- bea4- c8f43a0d2a6c
+uuid: 39ba9af3-eaee-44b9-bea4-c8f43a0d2a6c
 translation-type: tm+mt
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
@@ -34,12 +34,12 @@ To display the Customize rail, click the name of the app to go to its Overview p
 
 | 数値 | 説明 |
 |--- |--- |
-| 1 | **[!UICONTROL 日付範囲]**&#x200B;では、ドロップダウンリストでレポートに対して様々な日付範囲を選択できます。グラフ（7）と対応する表（8）のすべてのデータは、選択した日付範囲に対応しています。 |
-| 2 | **[!UICONTROL 「表示方法]**」では、レポートに時間ベースまたはディメンションベースの表示を選択できます。例えば、この図では、「日」が選択されています。グラフ（7）の下の日付、および表（8）の行を見ると、時系列レポートに日別のデータが表示されています。レポートにシリーズを追加することによって、時系列レポートには最大で 6 つの指標を表示できます。ライフサイクルディメンションを選択すると、ランキングリストの上位 50 件の値、日または週別のトレンド上位 5 件の値、トップ 5 または 10 の値の分類を表示できます。 |
-| 3 | **[!UICONTROL シリーズ]**&#x200B;は、前述の例のユーザー、起動回数、初回起動、App Store でのダウンロード数など、個別の指標を表しています。各シリーズは色分けされ、グラフ（7）と表（8）にデータが表示されます。追加のシリーズ（指標）や、異なるレポートスイートの様々なアプリを追加して、データを比較できます。詳しくは、レポートへのシリーズ（指標） [の追加を](/help/using/usage/reports-customize/t-reports-series.md)参照してください。 |
-| 4 | With **[!UICONTROL Add Filter]**, you can customize the built-in reports by adding additional filters (segments).  詳しくは、「レポートへのフィルター [の追加](/help/using/usage/reports-customize/t-reports-customize.md)」を参照してください。 |
-| 5 | With **[!UICONTROL Add Series]**, you can customize the built-in reports by adding additional series (metrics) or apps in different report suites to compare data.  詳しくは、レポートへのシリーズ（指標） [の追加を](/help/using/usage/reports-customize/t-reports-series.md)参照してください。 |
-| 6 | **[!UICONTROL 共通フィルター]**&#x200B;を使用すると、異なるレポートにわたるフィルターを作成できます。例えば、すべてのモバイルレポートにおいて、特定のセグメントのパフォーマンスを確認することもできます。共通フィルターを定義すると、パス（画面遷移）レポート以外のすべてのレポートに適用されます。詳しくは、共通フィルター [の追加](/help/using/usage/reports-customize/t-sticky-filter.md)を参照してください。 |
+| 1 | In **[!UICONTROL Date Ranges]**, the drop-down list lets you select various date ranges for your report. グラフ（7）と対応する表（8）のすべてのデータは、選択した日付範囲に対応しています。 |
+| 2 | In **[!UICONTROL Show By]**, the drop-down list lets you select a time-based or dimension-based display for your report.  例えば、この図では、「日」が選択されています。グラフ（7）の下の日付、および表（8）の行を見ると、時系列レポートに日別のデータが表示されています。レポートにシリーズを追加することによって、時系列レポートには最大で 6 つの指標を表示できます。ライフサイクルディメンションを選択すると、ランキングリストの上位 50 件の値、日または週別のトレンド上位 5 件の値、トップ 5 または 10 の値の分類を表示できます。 |
+| 3 | **[!UICONTROL シリーズ]**&#x200B;は、前述の例のユーザー、起動回数、初回起動、App Store でのダウンロード数など、個別の指標を表しています。各シリーズは色分けされ、グラフ（7）と表（8）にデータが表示されます。追加のシリーズ（指標）や、異なるレポートスイートの様々なアプリを追加して、データを比較できます。詳しくは、「レポートへ [のシリーズ（指標）の追加」を参照してください](/help/using/usage/reports-customize/t-reports-series.md)。 |
+| 4 | With **[!UICONTROL Add Filter]**, you can customize the built-in reports by adding additional filters (segments).  詳しくは、「レポートへのフィル [ターの追加」を参照してください](/help/using/usage/reports-customize/t-reports-customize.md)。 |
+| 5 | With **[!UICONTROL Add Series]**, you can customize the built-in reports by adding additional series (metrics) or apps in different report suites to compare data.  For more information, see [Add Series (Metrics) to Reports](/help/using/usage/reports-customize/t-reports-series.md). |
+| 6 | With **[!UICONTROL Sticky Filter]**, you can create a filter that spans different reports. 例えば、すべてのモバイルレポートにおいて、特定のセグメントのパフォーマンスを確認することもできます。共通フィルターを定義すると、パス（画面遷移）レポート以外のすべてのレポートに適用されます。詳しくは、「共通フィルターの追 [加」を参照してください](/help/using/usage/reports-customize/t-sticky-filter.md)。 |
 | 7 | **[!UICONTROL データのグラフ]には、選択した指標に基づく適切なグラフでデータが表示されます。**&#x200B;グラフには、折れ線グラフ、棒グラフ、ドーナツグラフなどがあります。 |
 | 8 | **[!UICONTROL データの表]には、データが表形式で表示されます。**&#x200B;列ヘッダーをクリックして、昇順または降順でデータを並べ替えることができます。 |
 
