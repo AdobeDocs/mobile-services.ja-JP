@@ -1,11 +1,11 @@
 ---
-description: 'レポートスイートを設定してAndroidアプリデータを収集する前に、以下の前提条件のタスクを実行します '
-seo-description: 'レポートスイートを設定してAndroidアプリデータを収集する前に、以下の前提条件のタスクを実行します '
+description: 'レポートスイートを設定し、Androidアプリデータを収集する前に、次の前提条件となるタスクを実行します '
+seo-description: 'レポートスイートを設定し、Androidアプリデータを収集する前に、次の前提条件となるタスクを実行します '
 seo-title: 事前準備
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: 事前準備
 topic: 開発者と導入
-uuid: 0ca9e937-8d40-4570-9dbf-9aemc6ecedf6
+uuid: 0ca9e937-8d40-4570-9dbf-9aecc6ecedf6
 translation-type: tm+mt
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
@@ -50,11 +50,11 @@ Adobe Mobile Services UI には、以下のいずれかの方法でログイン�
 
 ### Experience Cloud
 
-Adobe ID を使用して [Experience Cloud](https://marketing.adobe.com) にログインします。この方法は、会社が Experience Cloud でプロビジョニングされていることと、お使いの Analytics アカウントがリンクされていることを前提としています。詳しくは、Experience Cloudユーザーと製品 [の管理](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/admin-getting-started.html)を参照してください。
+Adobe ID を使用して [Experience Cloud](https://marketing.adobe.com) にログインします。この方法は、会社が Experience Cloud でプロビジョニングされていることと、お使いの Analytics アカウントがリンクされていることを前提としています。詳しくは、Experience cloudユーザーと [製品の管理を参照してください](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/admin-getting-started.html)。
 
 >[!TIP]
 >
->会社がExperience Cloudでプロビジョニングされているかどうか不明な場合は、既存のAdobe Analyticsアカウントを使用してください。
+>会社がExperience cloudでプロビジョニングされているかどうか不明な場合は、既存のAdobe Analyticsアカウントを使用します。
 
 ### Adobe Analytics
 
@@ -73,7 +73,7 @@ Adobe ID を使用して [Experience Cloud](https://marketing.adobe.com) にロ�
 1. アプリの名前を入力し、レポートスイートのタイプを選択します。
 
    例えば、`mycomobileappdev` などのレポートスイート ID です。開発版と実稼働版では別個のレポートスイートおよびアプリを設定する必要があります。そのため、実稼働版を設定する準備が整ったら、これらの手順を繰り返します。
-1. **[!UICONTROL レポートスイートID]**&#x200B;で、レポートスイート名が表示されていることを確認します。
+1. In **[!UICONTROL Report Suite ID]**, verify that your report suite name is displayed.
 1. 「**[!UICONTROL 次の設定をコピー]**」で、**モバイルアプリのテンプレート[!UICONTROL が選択されていることを確認します。]**
 
    このテンプレートでタイムスタンプを有効にして、オフラインデータを収集することができます。また、モバイルソリューション変数をアクティベートして、ライフサイクル指標をキャプチャします。
@@ -95,7 +95,7 @@ Adobe ID を使用して [Experience Cloud](https://marketing.adobe.com) にロ�
 
 >[!TIP]
 >
->アプリケーションの設定ファイルはSDKダウンロードに自動的に追加されるので、そのファイルを個別にダウンロードする必要はありません。ただし、SDK を既にダウンロードしており、更新された設定を取得したい場合は、設定ファイルをもう一度ダウンロードしてください。
+>アプリの設定ファイルはSDKのダウンロードに自動的に含まれるので、そのファイルを個別にダウンロードする必要はありません。 ただし、SDK を既にダウンロードしており、更新された設定を取得したい場合は、設定ファイルをもう一度ダウンロードしてください。
 
 Android Studio を使用している場合は、アプリの `build.gradle` ファイルに以下のコードを追加することもできます。
 
