@@ -2,26 +2,26 @@
 description: 日付範囲オプション、Analytics セグメントおよびカスタムセグメントを含む、プッシュメッセージのオーディエンスオプションを定義および設定できます。
 keywords: モバイル
 seo-description: 日付範囲オプション、Analytics セグメントおよびカスタムセグメントを含む、プッシュメッセージのオーディエンスオプションを定義および設定できます。
-seo-title: オーディエンスはプッシュメッセージのオーディエンスセグメントの定義と設定
-solution: Marketing Cloud、Analytics
-title: オーディエンスはプッシュメッセージのオーディエンスセグメントの定義と設定
+seo-title: オーディエンスプッシュメッセージ用のオーディエンスセグメントの定義と設定
+solution: Marketing Cloud,Analytics
+title: オーディエンスプッシュメッセージ用のオーディエンスセグメントの定義と設定
 topic: 指標
-uuid: efd410e7-3b6c-4cf4- a26f- b11688adc491
+uuid: efd410e7-3b6c-4cf4-a26f-b11688adc491
 translation-type: tm+mt
 source-git-commit: f28ea0db13b8d8f209d7521d1f61f1c290e688aa
 
 ---
 
 
-# オーディエンス:プッシュメッセージ{#audience-define-and-configure-audience-segments-for-push-messages}
+# オーディエンス：プッシュメッセージ{#audience-define-and-configure-audience-segments-for-push-messages}
 
 日付範囲オプション、Analytics セグメントおよびカスタムセグメントを含む、プッシュメッセージのオーディエンスオプションを定義および設定できます。
 
 ## Define audience segments {#section_7C4D2393CF7441959FE2381A02867CAC}
 
-レポートスイートまたは仮想レポートスイートには 1 つまたは複数のアプリからのデータが含まれるので、プッシュメッセージ用のオーディエンスセグメントが作成されると、そのセグメントには 1 つまたは複数のアプリからのユーザーが含まれます。仮想レポートスイートについて詳しくは、[仮想レポートスイート](/help/using/manage-apps/c-mob-vrs.md)。
+レポートスイートまたは仮想レポートスイートには 1 つまたは複数のアプリからのデータが含まれるので、プッシュメッセージ用のオーディエンスセグメントが作成されると、そのセグメントには 1 つまたは複数のアプリからのユーザーが含まれます。仮想レポートスイートについて詳しくは、 [Virtual report suites](/help/using/manage-apps/c-mob-vrs.md).
 
-Adobe Mobile Services では、マーケターは、プラットフォームごとに 1 つのアプリにのみプッシュします。マーケターが複数のアプリからのユーザーを含むセグメントにプッシュしようとすると、処理が深刻なプッシュの失敗を引き起こし、ユーザーがブラックリストに記載される可能性があることを示す警告が表示されます。プッシュの失敗が発生した場合は、「プッシュメッセージの失敗の解決」**（[プッシュメッセージ](/help/using/in-app-messaging/t-create-push-message/c-schedule-push-message.md)のトラブルシューティング
+Adobe Mobile Services では、マーケターは、プラットフォームごとに 1 つのアプリにのみプッシュします。マーケターが複数のアプリからのユーザーを含むセグメントにプッシュしようとすると、処理が深刻なプッシュの失敗を引き起こし、ユーザーがブラックリストに記載される可能性があることを示す警告が表示されます。プッシュの失敗が発生した場合は、「プッシュメッセージの失敗の解決」**（ [Troubleshooting push messaging](/help/using/in-app-messaging/t-create-push-message/c-schedule-push-message.md).
 
 セグメント定義で Audience Manager データを使用するには、[Audience Analytics](https://docs-author-stg.corp.adobe.com/content/help/en/analytics/integration/audience-analytics/mc-audiences-aam.html) を参照してください。
 
@@ -29,7 +29,7 @@ Adobe Mobile Services では、マーケターは、プラットフォームご�
 >
 >If app users are blacklisted, marketers can **never** send push messages to those affected users again.
 
-複数のアプリにわたるユーザーを含むオーディエンスセグメントを選択すると、次のアラートが表示されることがあります。
+複数のアプリにまたがるユーザーを含むオーディエンスセグメントを選択すると、次のアラートが表示される場合があります。
 
 ![複数のアプリ名](assets/multiple_appname.png)
 
@@ -43,16 +43,16 @@ The app name is based on the pared down version of the appId, which is automatic
 
 以下に例を示します。
 
-* `Bea[rd]cons 1.0 (123)` と表示される `Bea[rd]cons`
-* `Bea[rd]cons 1.2 (1.2)` と表示される `Bea[rd]cons`
-* `Bea[rd]cons 1.2.3.4.5.6.7 (1111)` と表示される `Bea[rd]cons .7`
-* `Bea[rd]cons 1.2.3. (1.2.3.4.5.6)` と表示される `Bea[rd]cons (.6)`
+* `Bea[rd]cons 1.0 (123)` は `Bea[rd]cons`
+* `Bea[rd]cons 1.2 (1.2)` は `Bea[rd]cons`
+* `Bea[rd]cons 1.2.3.4.5.6.7 (1111)` は `Bea[rd]cons .7`
+* `Bea[rd]cons 1.2.3. (1.2.3.4.5.6)` は `Bea[rd]cons (.6)`
 
-リストされたアプリにプッシュメッセージを送信し続けるには、「**はい、続行します。** »チェックボックスをオンにして、??«送信??****
+リストされたアプリにプッシュメッセージを送信し続けるには、「**はい、続行します。** チェックボックスをオンにして「送信」をク **[!UICONTROL リックしま]**&#x200B;す。
 
 ## ベストプラクティス
 
-以下に、覚えておくべきベストプラクティスを示します。
+次に、覚えておくべきベストプラクティスをいくつか示します。
 
 * 混乱を減らすために、複数のアプリからのデータを含むモバイルアプリ仮想レポートスイートを定義するのを&#x200B;**避けます**。
 * プッシュメッセージを送信する際に、**毎回**、オーディエンスセグメントの一部として一意のアプリ ID を使用します。これにより、1 つのアプリ&#x200B;**のみ**&#x200B;に属するオーディエンスセグメントにプッシュ通知が送信されます。
@@ -67,7 +67,7 @@ The app name is based on the pared down version of the appId, which is automatic
 
 ## Configure audience segments {#section_A92C60885A30421B8150820EC1CCBF13}
 
-1. 新しいプッシュメッセージのオーディエンスページに移動します。
+1. 新しいプッシュメッセージを表示するには、オーディエンスページに移動します。
 
    For more information, see [Create a push message](/help/using/in-app-messaging/t-create-push-message/t-create-push-message.md).
 
@@ -83,7 +83,7 @@ The app name is based on the pared down version of the appId, which is automatic
 
       これは、SDK がプッシュメッセージオプトイン eVar に対して `True` の値を送信していることを意味します。
 
-   * デバイスに有効なデバイストークンがあり、Adobe Analyticsがオプトインフラグを設定していない場合でも、メッセージはデバイスにプッシュされません。
+   * デバイスに有効なデバイストークンがある場合でも、Adobe Analyticsがオプトインフラグを設定していない限り、メッセージはデバイスにプッシュされません。
 
    * プッシュメッセージのトラブルシューティングについては、次を参照してください。
 
@@ -107,7 +107,7 @@ The app name is based on the pared down version of the appId, which is automatic
 
    * **[!UICONTROL Analytics セグメント]**
 
-      ドロップダウンリストから既存のAdobe Analyticsセグメントを選択します。For more information, see [Build segments](https://docs.adobe.com/content/help/en/analytics/components/segmentation/segmentation-workflow/seg-build.html).
+      ドロップダウンリストから既存のAdobe Analyticsセグメントを選択します。 For more information, see [Build segments](https://docs.adobe.com/content/help/en/analytics/components/segmentation/segmentation-workflow/seg-build.html).
 
    * **[!UICONTROL カスタムセグメント]**
 
