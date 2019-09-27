@@ -3,10 +3,10 @@ description: この情報は、追加のシリーズ（指標）や、異なる�
 keywords: モバイル
 seo-description: この情報は、追加のシリーズ（指標）や、異なるレポートスイートのアプリを追加して組み込みのレポートをカスタマイズし、データを比較するのに役立ちます。
 seo-title: レポートへのシリーズ（指標）の追加
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: レポートへのシリーズ（指標）の追加
 topic: レポート, 指標
-uuid: 84fffb1f-70e6-4c02-9b3b-526e9c924f74
+uuid: 84fdfb1f-70e6-4c02-9b3b-526e9c924f74
 translation-type: tm+mt
 source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
 
@@ -19,7 +19,7 @@ source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
 
 >[!IMPORTANT]
 >
->モバイルアプリ指標は、Reports&amp; Analytics、ad hoc analysis、data warehouseおよびその他のAnalyticsレポートインターフェイスでも使用できます。分類やレポートタイプが Adobe Mobile で使用できない場合、別のレポートインターフェイスを使用して生成できます。
+>モバイルアプリ指標は、Reports &amp; Analytics、Ad Hoc Analysis、Data Warehouseおよびその他のAnalyticsレポートインターフェイスでも使用できます。 分類やレポートタイプが Adobe Mobile で使用できない場合、別のレポートインターフェイスを使用して生成できます。
 
 In this example, we will customize the **[!UICONTROL Users &amp; Sessions]** report, but the instructions can apply to any report.
 
@@ -43,11 +43,11 @@ In this example, we will customize the **[!UICONTROL Users &amp; Sessions]** rep
 
       ![手順の結果](assets/add_series.png)
 
-   * 異なるアプリスイートに新しいアプリを追加して、アプリ間でデータを比較できるようにするには、新しく作成したシリーズでアプリ名をクリックし、目的のアプリを選択します。
+   * 新しいアプリを別のレポートスイートに追加してアプリ間でデータを比較するには、新しく作成したシリーズのアプリ名をクリックし、目的のアプリを選択します。
 
       ![](assets/add_series_app.png)
 
 1. （条件付き）新しいシリーズにフィルターを追加します。
 
-   詳しくは、レポートへのフィルターの [追加](/help/using/usage/reports-customize/t-reports-customize.md)を参照してください。
-1. **[!UICONTROL 「更新]** し **[!UICONTROL て実行]**」をクリックします。
+   詳しくは、「レポートへのフィル [ターの追加」を参照してくださ](/help/using/usage/reports-customize/t-reports-customize.md)い。
+1. Click **[!UICONTROL Update]** and **[!UICONTROL Run]**.
