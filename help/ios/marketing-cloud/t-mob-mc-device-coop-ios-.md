@@ -3,7 +3,7 @@ description: Experience Cloud Device Co-op の使用を開始するには、ア�
 seo-description: Experience Cloud Device Co-op の使用を開始するには、アドビの担当者にお問い合わせください。
 seo-title: Experience Cloud Device Co-op
 title: Experience Cloud Device Co-op
-uuid: 434a6f8f- ec24-439d-95f0- a246b384b3b5
+uuid: 434a6f8f-ec24-439d-95f0-a246b384b3b5
 translation-type: tm+mt
 source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
@@ -24,20 +24,20 @@ SDK バージョン 4.16.1 以降の Device Co-op ユーザーは、Experience C
 
 1. Adobe Mobile SDK を実装します。
 
-   詳しくは、 [コアの実装とライフサイクル](/help/ios/getting-started/dev-qs.md)を参照してください。
+   For more information, see Core Implementation and Lifecycle.[](/help/ios/getting-started/dev-qs.md)
 1. Experience Cloud ID を有効にします。
 
    For more information, see [Experience Cloud ID](/help/ios/marketing-cloud/mcvid.md).
 1. ここに記載されているいずれかの同期メソッドを使用して、認証済み ID（CRM ID やハッシュされた電子メールなど）を渡します。
 
-   詳しくは、 [Adobe Experience Platform IDサービスのメソッド](/help/ios/marketing-cloud/mc-methods.md)を参照してください。
+   For more information, see Adobe Experience Platform Identity Service Methods.[](/help/ios/marketing-cloud/mc-methods.md)
 
 ## `coopUnsafe` フラグ
 
-`coopUnsafe` フラグについて、次の情報を追加しました。
+Here is some additional information on the `coopUnsafe` flag:
 
 * 最小 SDK バージョン：4.16.1
-* `marketingCloud` オブジェクトのブールプロパティ。このプロパティを設定すると、デバイスがExperience `true`CloudのDevice Co- opをオプトアウトする原因となります。
+* The Boolean property of the `marketingCloud` object that, when set to `true`, causes the device to be opted-out of the Experience Cloud's Device Co-Op.
 * Default value is `false`.
 * この設定は、Device Co-op をプロビジョニングしたユーザー&#x200B;**にのみ**&#x200B;適用されます。
 
