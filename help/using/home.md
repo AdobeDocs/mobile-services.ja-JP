@@ -1,10 +1,10 @@
 ---
-description: Adobe Mobile Services用テクニカルドキュメント
-seo-description: このガイドでは、Adobe Mobile Servicesの技術ドキュメントとセルフヘルプについて説明します。これにより、モバイルアプリケーション用の各ソリューションがAdobe Experience Cloud上で統合され、モバイルアプリケーションのユーザーエンゲージメントを理解し、改善することができます。
+description: Tech docs for Adobe Mobile Services
+seo-description: This guide outlines technical documentation and self help for Adobe Mobile Services, which brings together mobile marketing capabilities for mobile applications from across the Adobe Experience Cloud, allowing you to understand and improve user engagement with mobile applications.
 seo-title: Adobe Mobile Services
-solution: Marketing Cloud、Analytics、Experience Cloud
+solution: Marketing Cloud, Analytics, Experience Cloud
 title: Adobe Mobile Services
-uuid: e86a77c9-4ff1-403f- a5a1-4afbdc4e6f68
+uuid: e86a77c9-4ff1-403f-a5a1-4afbdc4e6f68
 translation-type: tm+mt
 source-git-commit: 20fdbba819f7c182a23a01cd06e1738ad83eba38
 
@@ -13,11 +13,11 @@ source-git-commit: 20fdbba819f7c182a23a01cd06e1738ad83eba38
 
 # Adobe Mobile Services {#adobe-mobile-services}
 
-このガイドでは、Adobe Mobile Servicesの技術ドキュメントとセルフヘルプについて説明します。これにより、モバイルアプリケーション用の各ソリューションがAdobe Experience Cloud上で統合され、モバイルアプリケーションのユーザーエンゲージメントを理解し、改善することができます。
+このガイドでは、Adobe Mobile Servicesの技術ドキュメントとセルフヘルプについて説明します。このドキュメントは、モバイルアプリ用の各ソリューションをAdobe Experience cloud上で統合し、モバイルアプリの利用状況を把握し、改善に役立ちます。
 
 >[!IMPORTANT]
 >
->Mobile Servicesの獲得、ディープリンク、位置情報およびモバイルメッセージング機能へのアクセスを有効にするには、Adobe Analytics Mobile Marketing Add- on SKUが必要です。詳しくは、Adobe CSMにお問い合わせください。
+>Mobile Servicesでモバイル獲得、ディープリンク、位置情報およびモバイルメッセージング機能にアクセスできるようにするには、Adobe Analytics Mobile Marketing Add-on SKUが必要です。 詳しくは、Adobe CSMにお問い合わせください。
 
 ## Adobe Experience Cloud SDK の新規リリース
 
@@ -34,13 +34,13 @@ Adobe Experience Platform Mobile SDK に関する情報やドキュメントを�
 
 >[!IMPORTANT]
 >
->UIで機能を設定することはできますが、生成された設定ファイルをダウンロードしてSDKに追加するまで、これらの機能は機能しません。For information about downloading and configuring the SDKs, see the *SDK documentation* section on this page.
+>UIで機能を設定できますが、これらの機能は、生成された設定ファイルをダウンロードしてSDKに追加するまで機能しません。 For information about downloading and configuring the SDKs, see the *SDK documentation* section on this page.
 
-最新のリリースノートについては、[Experience Cloud リリースノート](https://docs.adobe.com/content/help/en/release-notes/experience-cloud/current.html)」を参照してください。
+最新のリリースノートについては、「[Experience Cloud リリースノート](https://docs.adobe.com/content/help/en/release-notes/experience-cloud/current.html)」を参照してください。
 
 ## よく読まれるトピック {#section_AFFBC9EDDE5B4E4493A7C2896121A773}
 
-このガイドのよくあるトピックは以下のとおりです。
+このガイドでは、よく読まれるトピックをいくつか示します。
 
 * [導入](/help/using/gs/gs.md)
 * [サインインしています](/help/using/gs/gs-signin.md)
@@ -48,19 +48,19 @@ Adobe Experience Platform Mobile SDK に関する情報やドキュメントを�
 * [モバイル指標](/help/using/gs/metrics/metrics.md)
 * [メッセージ](/help/using/in-app-messaging/in-app-messaging.md)
 * [獲得](/help/using/acquisition-main/acquisition-main.md)
-* [ロケーション](/help/using/location/c-location-overview.md)
+* [場所](/help/using/location/c-location-overview.md)
 * [よくある質問 - Mobile Services](/help/using/faq-mobile.md)
 
 ## 開発者
 
-以下に、開発者に役立つリンクを示します。
+開発者を支援するリンクをいくつか示します。
 
 * [Mobile SDK およびツールのダウンロード](/help/using/c-manage-app-settings/c-mob-confg-app/t-config-analytics/download-sdk.md)
 * [開発者](https://marketing.adobe.com/resources/help/en_US/reference/developer.html)
 
 ## コミュニティリソース
 
-以下に、その他のリソースを示します。
+その他のリソースを次に示します。
 
 * [Experience Cloud フォーラム](https://forums.adobe.com/community/experience-cloud)
 * [Adobe Experience Cloud コミュニティ](https://helpx.adobe.com/marketing-cloud.html?promoid=KAWSE)
