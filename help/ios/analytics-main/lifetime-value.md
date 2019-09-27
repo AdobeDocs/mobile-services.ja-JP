@@ -1,9 +1,9 @@
 ---
 description: ライフタイム値を使用して、各ユーザーのライフタイム値を測定し、ターゲットを設定できます。
 seo-description: ライフタイム値を使用して、各ユーザーのライフタイム値を測定し、ターゲットを設定できます。
-seo-title: 訪問者のライフタイム値
-solution: Marketing Cloud、Analytics
-title: 訪問者のライフタイム値
+seo-title: Visitor lifetime value
+solution: Marketing Cloud,Analytics
+title: 訪問者の全期間値
 topic: 開発者と導入
 uuid: d830d18b-4313-43bb-8d75-3789869d0f1d
 translation-type: tm+mt
@@ -22,7 +22,7 @@ source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 1. ライブラリをプロジェクトに追加し、ライフサイクルを実装します。
 
-   詳しくは、コア実装および *ライフサイクル* で [プロジェクトにSDKおよび設定ファイルを追加を参照](/help/ios/getting-started/dev-qs.md)してください。
+   For more information, see Add the SDK and Config File to your Project in Core Implementation and Lifecycle.**[](/help/ios/getting-started/dev-qs.md)
 1. ライブラリをインポートします。
 
    ```objective-c
@@ -45,7 +45,7 @@ NSMutableDictionary *contextData = [NSMutableDictionary dictionary];
 [ADBMobile trackLifetimeValueIncrease:increaseAmount data:contextData];
 ```
 
-コンテキストデータ値は、カスタム変数にマップする必要があります。
+Context data values must be mapped to custom variables:
 
 ![](assets/map-variable-context-ltv.png)
 
