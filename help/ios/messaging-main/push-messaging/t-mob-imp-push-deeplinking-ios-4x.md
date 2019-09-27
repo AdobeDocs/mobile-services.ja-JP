@@ -3,7 +3,7 @@ description: Adobe Mobile Services UI で設定したディープリンク URL �
 seo-description: Adobe Mobile Services UI で設定したディープリンク URL は、プッシュペイロードの adb_deeplink キーに含まれます。
 seo-title: ディープリンクを使用したプッシュメッセージの実装
 title: ディープリンクを使用したプッシュメッセージの実装
-uuid: ee9590fc-8bd3-4111-9221-9011d9edbd84
+uuid: e9590fc-8bd3-4111-9221-9011d9edbd84
 translation-type: tm+mt
 source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
 
@@ -22,11 +22,11 @@ Adobe Mobile Services UI で設定したディープリンク URL は、プッ�
 
    * リモート通知用の delegate メソッド
 
-      `didReceiveRemoteNotification:` アプリケーションまたは `didReceiveRemoteNotification:fetchCompletionHandler:` アプリケーションでは、キーを使用して `userInfo` 辞書にアクセスしてURLを取得 `adb_deeplink` できます。
+      In the `didReceiveRemoteNotification:` application or in the `didReceiveRemoteNotification:fetchCompletionHandler:` application, you can get the URL by accessing the `userInfo` dictionary with the `adb_deeplink` key.
 
    * The delegate methods for `UNUserNotificationCenter`
 
-      `userNotificationCenter:didReceiveNotificationResponse:withCompletionHandler:` この方法では、キー内の `userInfo` 辞書からプッシュペイロードを取得 `adb_deeplink` できます。
+      In the `userNotificationCenter:didReceiveNotificationResponse:withCompletionHandler:` method, you can get the push payload from the `userInfo` dictionary, in the `adb_deeplink` key.
 
 以下に例を示します。
 
