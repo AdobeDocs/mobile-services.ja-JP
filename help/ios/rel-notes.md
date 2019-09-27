@@ -2,7 +2,7 @@
 description: Experience Cloud ソリューション用 iOS SDK 4.x のリリースノートと既知の問題です。
 seo-description: Experience Cloud ソリューション用 iOS SDK 4.x のリリースノートと既知の問題です。
 seo-title: リリースノート
-solution: Marketing Cloud ,Analytics
+solution: Marketing Cloud,Analytics
 title: リリースノート
 topic: 開発者と導入
 uuid: e1613dc5-02a4-43a7-997a-29b4de98b4d1
