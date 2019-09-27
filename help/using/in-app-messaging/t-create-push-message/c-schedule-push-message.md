@@ -2,9 +2,9 @@
 description: Adobe Mobile Services UI で、プッシュメッセージを即座に配信したり、後で配信したり、繰り返しイベントとして配信したりするようにスケジュールできます。これらのイベントは、毎日、毎週または毎月ベースでスケジュールできます。
 keywords: モバイル
 seo-description: Adobe Mobile Services UI で、プッシュメッセージを即座に配信したり、後で配信したり、繰り返しイベントとして配信したりするようにスケジュールできます。これらのイベントは、毎日、毎週または毎月ベースでスケジュールできます。
-seo-title: プッシュメッセージのスケジュール設定
-solution: Marketing Cloud、Analytics
-title: プッシュメッセージのスケジュール設定
+seo-title: プッシュメッセージのスケジュール
+solution: Marketing Cloud,Analytics
+title: プッシュメッセージのスケジュール
 topic: 指標
 uuid: 6810e27a-016f-4286-8fe2-9972d85fa326
 translation-type: tm+mt
@@ -13,13 +13,13 @@ source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
 ---
 
 
-# スケジュール:プッシュメッセージ{#schedule-push-message}
+# スケジュール：プッシュメッセージ{#schedule-push-message}
 
 Adobe Mobile Services UI で、プッシュメッセージを即座に配信したり、後で配信したり、繰り返しイベントとして配信したりするようにスケジュールできます。これらのイベントは、毎日、毎週または毎月ベースでスケジュールできます。
 
 >[!TIP]
 >
->ユーザーは、いつでもプッシュメッセージジョブのスケジュール設定を変更できます。繰り返しのスケジュールのメッセージを送信する適切な日付がない場合、例えば、31 日ごとに毎月繰り返すジョブの場合の 2 月 31 日や月の第 5 週の火曜日には、メッセージは送信されません。
+>ユーザーは、プッシュメッセージジョブのスケジュール設定をいつでも変更できます。 繰り返しのスケジュールのメッセージを送信する適切な日付がない場合、例えば、31 日ごとに毎月繰り返すジョブの場合の 2 月 31 日や月の第 5 週の火曜日には、メッセージは送信されません。
 
 次の情報に留意してください。
 
@@ -38,7 +38,7 @@ Adobe Mobile Services UI で、プッシュメッセージを即座に配信し�
 
 * **[!UICONTROL 繰り返し]ドロップダウンリストに表示されるオプションは、入力または選択した日付によって異なります。**
 
-   例えば、入力 `Saturday, October 7`した場合、次のオプションが表示されます。
+   For example, if you typed , the following options are displayed:`Saturday, October 7`
 
    * **[!UICONTROL なし]**
    * **[!UICONTROL 毎日]**
@@ -59,36 +59,36 @@ Adobe Mobile Services UI で、プッシュメッセージを即座に配信し�
 
 ## Schedule a recurring push message {#section_675BD754E5A04423A1751193698A978F}
 
-1. 新しいプッシュメッセージのスケジュールページで、 **[!UICONTROL 「スケジュール済み」]** または「 **[!UICONTROL 今すぐ]**」を選択します。
+1. 新しいプッシュメッセージのスケジュールページで、「スケジュール済み」または「今 **[!UICONTROL すぐ]** 」を選 **[!UICONTROL 択します]**。
 
    For more information, see [Create a push message](/help/using/in-app-messaging/t-create-push-message/t-create-push-message.md).
 
-   **[!UICONTROL 「今すぐ]**」を選択すると、メッセージが直ちにプッシュされます。To prevent the message from being scheduled immediately, click **[!UICONTROL Save as Draft]**.
+   If you selected **[!UICONTROL Now]**, the message is pushed immediately. To prevent the message from being scheduled immediately, click **[!UICONTROL Save as Draft]**.
 
    ![](assets/schedule-push-message.png)
 
-1. **[!UICONTROL 「スケジュール済み]**」を選択した場合は、カレンダーアイコンをクリックして、開始日を選択または入力します。
-1. 時間を入力します。
-1. **[!UICONTROL 「繰り返し」]**&#x200B;で、次のいずれかのオプションを選択します。
+1. If you selected **[!UICONTROL Scheduled]**, click the calendar icon and select or type a start date.
+1. 時間を入力します。 
+1. Under **[!UICONTROL Repeat]**, select one of the following options:
 
    * **[!UICONTROL なし]**
    * **[!UICONTROL 毎日]**
    * **[!UICONTROL 毎週火曜日]**
-   * **`<Day x>`その月の**
+   * **`<Day x>`月の**
 
       表示されるオプションは、開始日として選択または入力した日付によって異なります。
-   * **`<nth day>`月ごと**
+   * **`<nth day>`毎月**
 
       表示される値は、開始日として選択または入力した日付によって異なります。
 
-1. **[!UICONTROL 「終了繰り返し]**」で、終了日時を入力します。
+1. In **[!UICONTROL End Repeat]**, type an end date and time.
 1. 次のいずれかのオプションをクリックします。
 
    * **[!UICONTROL ドラフトとして保存]**
 
       このオプションは、メッセージをドラフト形式で保存します。このオプションを選択して、完成していないメッセージを保存したり、メッセージを保存して他の誰かがそのメッセージを編集および承認してからアクティブ化したりできます。
 
-      If you selected **[!UICONTROL Now]** in the previous step, the draft message is sent immediately on activation. メッセージをプッシュする日時を選択した場合は、このスケジュールに従ってメッセージがプッシュされます。
+      If you selected **[!UICONTROL Now]** in the previous step, the draft message is sent immediately on activation. If you selected a date and time to push the message, the message is pushed according to this schedule.
 
    * **[!UICONTROL 保存してスケジュール]**
 
