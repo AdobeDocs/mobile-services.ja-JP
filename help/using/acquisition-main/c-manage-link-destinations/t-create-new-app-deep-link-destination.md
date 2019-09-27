@@ -3,10 +3,10 @@ description: Web またはアプリ内のディープリンクにユーザーを
 keywords: モバイル
 seo-description: Web またはアプリ内のディープリンクにユーザーを導く、新しいリンク先を作成できます。
 seo-title: 新しいリンク先の作成
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: 新しいリンク先の作成
 topic: 指標
-uuid: 390e3dea-0221-4f97-980d- a90ca9f162fa
+uuid: 390e3dea-0221-4f97-980d-a90ca9f162fa
 translation-type: tm+mt
 source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
@@ -24,11 +24,11 @@ Web またはアプリ内のディープリンクにユーザーを導く、新�
 1. 次のフィールドに情報を入力します。
    * **[!UICONTROL タイトル]**
 
-      アプリリンクの宛先にわかりやすい名前を入力します。タイトルは、Adobe Mobile Services UI のリンク先を管理ページにのみ表示されます。説明的な名前は、組織のメンバーがすばやく特定のリンク先を見つけて、目的のインサイトを得るのに役立ちます。
+      アプリリンク先を説明する名前を入力します。 タイトルは、Adobe Mobile Services UI のリンク先を管理ページにのみ表示されます。説明的な名前は、組織のメンバーがすばやく特定のリンク先を見つけて、目的のインサイトを得るのに役立ちます。
 
    * **[!UICONTROL リンクタイプ]**
 
-      使用可能なリンクタイプのリストを次に示します。
+      Here is a list of the available link types:
 
       * **[!UICONTROL アプリのディープリンク]**
 
@@ -49,7 +49,7 @@ Web またはアプリ内のディープリンクにユーザーを導く、新�
 
    * **[!UICONTROL リンクタイプ]**
 
-      選択したリンクの実際のURLを入力します。このフィールドのラベルは、選択したリンクのタイプに応じて変わります。
+      選択したリンクの実際のURLを入力します。 このフィールドのラベルは、選択したリンクのタイプによって異なります。
 
    * **[!UICONTROL 備考]**
 
