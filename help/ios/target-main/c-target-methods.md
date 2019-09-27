@@ -1,11 +1,11 @@
 ---
 description: iOS ライブラリが提供する Adobe Target メソッドの一覧を以下に示します。
 seo-description: iOS ライブラリが提供する Adobe Target メソッドの一覧を以下に示します。
-seo-title: Adobe Mobile ServicesのiOS Targetメソッド
-solution: Marketing Cloud、Analytics
-title: iOSのTargetメソッド
+seo-title: iOS Target Methods for Adobe Mobile Services
+solution: Marketing Cloud,Analytics
+title: Target Methods for iOS
 topic: 開発者と導入
-uuid: 692bcda1-02ba-4902- bd65-15888adf1952
+uuid: 692bcda1-02ba-4902-bd65-15888adf1952
 translation-type: tm+mt
 source-git-commit: 8dc075603544aaab7fdedb1ff10a12f7fa7e21f5
 
@@ -16,13 +16,13 @@ source-git-commit: 8dc075603544aaab7fdedb1ff10a12f7fa7e21f5
 
 iOS ライブラリが提供する Adobe Target メソッドの一覧を以下に示します。
 
-SDKは、現在、Analytics、Target、Audience Manager、Adobe Experience Platform IDサービスを含む複数のAdobe Experience Cloudソリューションをサポートしています。メソッドには、ソリューションに応じたプレフィックスが付きます。例えば、 メソッドの場合、プレフィックスは「`target`target」です。
+The SDK currently has support for multiple Adobe Experience Cloud Solutions, including Analytics, Target, Audience Manager, and the Adobe Experience Platform Identity Service. メソッドには、ソリューションに応じたプレフィックスが付きます。例えば、 メソッドの場合、プレフィックスは「`target`target」です。
 
 >[!TIP]
 >
->ライフサイクル指標は、各 mbox が読み込むパラメーターとして送信されます。詳しくは、[ライフサイクル指標](/help/ios/metrics.md)を参照してください。`didFinishLaunching` delegateメソッド内でTargetリクエストを送信する場合は、Target実装コードの前に、また `[ADBMobile trackAction:data:]` は `[ADBMobile trackState:data:]` 呼び出しを追加します。これにより、Targetリクエストに完全なライフサイクルデータが含まれます。
+>ライフサイクル指標は、各 mbox が読み込むパラメーターとして送信されます。詳しくは、[ライフサイクル指標](/help/ios/metrics.md)を参照してください。Targetリクエストをdelegateメソッド内で送信する場 `didFinishLaunching` 合は、Target実装コードの前に `[ADBMobile trackAction:data:]` OR `[ADBMobile trackState:data:]` 呼び出しを追加します。 これにより、Targetリクエストには、完全なライフサイクルデータが含まれます。
 
-## クラスリファレンス:ADBTargetLocationRequest
+## クラス参照：ADBTargetLocationRequest
 
 ### プロパティ
 
@@ -32,7 +32,7 @@ NSString *defaultContent;
 NSMutableDictionary *parameters;
 ```
 
-### String constants
+### 文字列定数
 
 >[!TIP]
 >
@@ -152,7 +152,7 @@ NSString *const ADBTargetParameterMboxHost;
                                  }];
       ```
 
-      基本的なTarget APIについて詳しくは、 [Adobe Target開発者](https://docs.adobe.com/dev/products/target/reference/delivery.html)を参照してください。
+      For more information about the underlying Target API, see Adobe Target Developers.[](https://docs.adobe.com/dev/products/target/reference/delivery.html)
 
 
 
@@ -191,7 +191,7 @@ NSString *const ADBTargetParameterMboxHost;
 
 * **targetCreateOrder&#x200B;ConfirmRequestWithName:&#x200B;orderId:&#x200B;orderTotal:&#x200B;productPurchasedId:&#x200B;parameters**
 
-   を作成 `ADBTargetLocationRequest`します。
+   を作成しま `ADBTargetLocationRequest`す。
 
    * このメソッドの構文を次に示します。
 
@@ -264,7 +264,7 @@ NSString *const ADBTargetParameterMboxHost;
 
    >[!TIP]
    >
-   >このメソッドは、thirdPartyID と sessionID をリセットします。
+   >SDKのバージョン4.10.0以降、Targetはcookieを使用しなくなりました。 このメソッドは、thirdPartyID と sessionID をリセットします。
 
    * このメソッドの構文を次に示します。
 
