@@ -14,11 +14,11 @@ source-git-commit: 13ff2cb549c4b82a4e0285e1c7c6b3f9c1a5bd4b
 
 Adobe Mobile Services UI で設定したディープリンク URL は、プッシュペイロードの adb_deeplink キーに含まれます。
 
-URLは `remoteMessage.getData().get("adb_deeplink")``FirebaseMessagingService`、
+URLは、を呼び出すことで取得 `remoteMessage.getData().get("adb_deeplink")` できます `FirebaseMessagingService`。
 
 >[!TIP]
 >
->ペイロードにディープリンクURLがあるかどうかに応じて、様々なインテントを定義できます。
+>ペイロードにディープリンクURLが含まれているかどうかに応じて、様々なインテントを定義できます。
 
 1. 次のどちらかのタスクを実行します。
 
