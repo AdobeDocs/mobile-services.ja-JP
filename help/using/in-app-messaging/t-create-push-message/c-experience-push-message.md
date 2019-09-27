@@ -2,11 +2,11 @@
 description: 名前、メッセージテキストおよび宛先オプションを含む、プッシュメッセージおよびリッチプッシュメッセージのエクスペリエンスオプションを設定できます。また、iOS デバイスのペイロードオプションおよびカスタムオプションを含む、高度なオプションも設定できます。
 keywords: モバイル
 seo-description: 名前、メッセージテキストおよび宛先オプションを含む、プッシュメッセージおよびリッチプッシュメッセージのエクスペリエンスオプションを設定できます。また、iOS デバイスのペイロードオプションおよびカスタムオプションを含む、高度なオプションも設定できます。
-seo-title: エクスペリエンスプッシュメッセージ
-solution: Marketing Cloud、Analytics
-title: エクスペリエンスプッシュメッセージ
+seo-title: エクスペリエンスのプッシュメッセージ
+solution: Marketing Cloud,Analytics
+title: エクスペリエンスのプッシュメッセージ
 topic: 指標
-uuid: 1a8baf3e-9fea-452c- b0fc-4ba8ac270861
+uuid: 1a8baf3e-9fea-452c-b0fc-4ba8ac270861
 translation-type: tm+mt
 source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
@@ -17,9 +17,9 @@ source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
 名前、メッセージテキストおよび宛先オプションを含む、プッシュメッセージおよびリッチプッシュメッセージのエクスペリエンスオプションを設定できます。また、iOS デバイスのペイロードオプションおよびカスタムオプションを含む、高度なオプションも設定できます。
 
-1. 新しいプッシュメッセージのオーディエンスページで **[!UICONTROL 、「エクスペリエンス]**」をクリックします。
+1. On the Audience page for a new push message, click Experience.****
 
-   ![エクスペリエンスプッシュメッセージ画面](assets/experience-push-message.png)
+   ![エクスペリエンスのプッシュメッセージ画面](assets/experience-push-message.png)
 
 1. このメッセージの名前を入力します。
 1. 次のフィールドの「**[!UICONTROL メッセージ]」セクションに情報を入力します。**
@@ -30,7 +30,7 @@ source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
    * **[!UICONTROL メディア URL]**
 
-      プッシュ通知メッセージで使用するメディアファイルの URL を入力します。高度なプッシュ通知を使用する要件については、以下の *「リッチプッシュ通知* の要件」を参照してください。
+      プッシュ通知メッセージで使用するメディアファイルの URL を入力します。For requirements to use rich push notifications, see Requirements for Rich Push Notifications below.**
 
       >[!IMPORTANT]
       >
@@ -49,18 +49,18 @@ source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
 ## リッチプッシュ通知の要件
 
-以下に、豊富なプッシュ通知を送信するための要件を示します。
+リッチプッシュ通知を送信する場合の要件を次に示します。
 
 * **サポートされているバージョン**
 
-   以下のバージョンでは、リッチプッシュ通知がサポートされています。
+   リッチプッシュ通知は、次のバージョンでサポートされています。
    * Android 4.1.0 以降
    * iOS 10 以降
 
       >[!IMPORTANT]
       >
       >次の情報に留意してください。
-      >* 以前のバージョンに送信されたリッチプッシュメッセージは送信されますが、テキストのみが表示されます。
+      >* 以前のバージョンに送信されたリッチプッシュメッセージは引き続き送信されますが、テキストのみが表示されます。
       >* 現時点では、視聴のサポートはありません。
 
 
@@ -75,14 +75,14 @@ source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
    * HTTPS のみ
 
 * **サイズ調整**
-   * 画像は2:1形式でなければなりません。または、切り抜かれます。
+   * Images must be in a 2:1 format, or they will be cropped.
 
 リッチプッシュ通知の設定について詳しくは、次のコンテンツを参照してください。
 
-* [Androidでプッシュ通知を受信する](/help/android/messaging-main/push-messaging/c-set-up-rich-push-notif-android.md)
+* [Androidでのプッシュ通知の受信](/help/android/messaging-main/push-messaging/c-set-up-rich-push-notif-android.md)
 * [iOSでのリッチプッシュ通知の受信](/help/ios/messaging-main/push-messaging/c-set-up-rich-push-notif-ios.md)
 
-エクスペリエンスページでプッシュメッセージを設定するには:
+To configure a push message on the Experience page:
 
 1. (**Optional**) Click the **[!UICONTROL Show Advanced Options]** link to configure additional options:
 
@@ -104,9 +104,9 @@ source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
 1. （オプション）次のアイコンをクリックして、メッセージのレイアウトをプレビューします。
 
-   * **[!UACROL x Summary}**
+   * **[!UICONTROL x概要}**
 
-      プレビューペインを非表示にします。![プレビュー](assets/icon_preview.png) をクリックすると、プレビューペインが再び表示されます。
+      Hides the preview pane. 「プレビュ ![ー](assets/icon_preview.png) 」をクリックして、プレビューパネルを再度表示します。
 
    * **[!UICONTROL 方向の変更]**
 
@@ -114,22 +114,22 @@ source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
    * **[!UICONTROL ユーザーの腕時計でのプレビュー]**
 
-      ユーザーの視聴時にメッセージをプレビューするには、監視アイコンをクリック ![](assets/icon_watch.png)します。
+      ユーザーの腕時計に表示されるメッセージをプレビューするには、ウォッチアイコンをク ![リックしま](assets/icon_watch.png)す。
 
    * **[!UICONTROL ユーザーの携帯電話でのプレビュー]**
 
-      ユーザーの携帯電話アイコンに表示されるメッセージをプレビューするには、 ![「電話」アイコン](assets/icon_phone.png)をクリックします。
+      ユーザーの携帯電話に表示されるメッセージをプレビューするには、電話アイコンをクリ ![ックします](assets/icon_phone.png)。
 
    * **[!UICONTROL ユーザーのタブレットでのプレビュー]**
 
-      ユーザーのタブレットでメッセージをプレビューするには、タブレットアイコンをクリック ![](assets/icon_tablet.png)します。
+      ユーザーのタブレットでメッセージをプレビューするには、タブレットアイコンをク ![リックしま](assets/icon_tablet.png)す。
    プレビューパネルの下部に、前の手順で選択したオーディエンスの説明を表示できます。
 
-1. **（オプション**）「 **[!UICONTROL テスト」]** をクリックして、テスト目的で指定したデバイスにメッセージをプッシュします。
+1. (**Optional**) Click **[!UICONTROL Test]** to push your message to specified devices for testing purposes.
 1. サービスを選択して、メッセージをプッシュする少なくとも 1 つのデバイスのプッシュトークンを入力します。
 
    複数のデバイスにメッセージをプッシュするには、コンマ区切りリストでトークンを指定します。
 
-1. 設定スケジュールオプションを設定します。
+1. Configure メッセージのスケジュールオプション。
 
-   詳しくは [、「スケジュール」を参照してください。プッシュメッセージ](/help/using/in-app-messaging/t-create-push-message/c-schedule-push-message.md)を参照してください。
+   詳しくは、スケジュールを参照して [ください。プッシュメッセージ](/help/using/in-app-messaging/t-create-push-message/c-schedule-push-message.md)。
