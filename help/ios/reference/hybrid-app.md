@@ -2,10 +2,10 @@
 description: アプリでモバイル Web コンテンツを開く場合は、訪問者がネイティブアプリからモバイル Web に移動したり、その逆に移動したりしても、別の訪問者として識別されないようにする必要があります。
 seo-description: アプリでモバイル Web コンテンツを開く場合は、訪問者がネイティブアプリからモバイル Web に移動したり、その逆に移動したりしても、別の訪問者として識別されないようにする必要があります。
 seo-title: アプリとモバイル Web にまたがる訪問者トラッキング
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: アプリとモバイル Web にまたがる訪問者トラッキング
 topic: 開発者と導入
-uuid: 2d951de6-3954-4379- a4ff-99b9695b9869
+uuid: 2d951de6-3954-4379-a4ff-99b9695b9869
 translation-type: tm+mt
 source-git-commit: 9257d6b6c2c14d0422cda65fcc9c677ac5ac47a9
 
@@ -16,25 +16,25 @@ source-git-commit: 9257d6b6c2c14d0422cda65fcc9c677ac5ac47a9
 
 アプリでモバイル Web コンテンツを開く場合は、訪問者がネイティブアプリからモバイル Web に移動したり、その逆に移動したりしても、別の訪問者として識別されないようにする必要があります。
 
-## アプリの訪問者ID
+## アプリ内の訪問者ID
 
 アプリをインストールすると、iOS SDK が一意の訪問者 ID を生成します。この ID はモバイルデバイスの持続メモリに保存され、各ヒットとともに送信されます。この ID が削除されるのは、ユーザーがアプリをアンインストールしたときだけです。。
 
 >[!TIP]
 >
->アプリの訪問者IDはアップグレードによって持続します。
+>アプリの訪問者IDはアップグレード後も保持されます。
 
-## モバイルWebの訪問者ID
+## Visitor IDs in the mobile web
 
 一般的なモバイル Web 実装では、デスクトップサイトで使用されているのと同じ標準の Analytics `s_code.js` または `AppMeasurement.js` を使用します。JavaScript ライブラリには、一意の訪問者 ID を生成する独自メソッドがあり、アプリからモバイル Web コンテンツを開くと、異なる訪問者 ID が生成される原因となります。
 
-アプリおよびモバイルWebで同じ訪問者IDを使用するには、URL内のモバイルWebにアプリ訪問者IDを渡します。
+To use the same visitor ID in the app and mobile web and pass the app visitor ID to the mobile web in the URL:
 
 ## Implement visitor tracking between an app and mobile web {#section_EDC91D6C67AD43999227707C2769C65D}
 
 1. ライブラリをプロジェクトに追加し、ライフサイクルを実装します。
 
-   詳しくは、コア実装および *ライフサイクル* で [プロジェクトにSDKおよび設定ファイルを追加を参照](/help/ios/getting-started/dev-qs.md)してください。
+   詳しくは、コア実装とラ *イフサイクルでのプロジェクトへのSDKと設定ファイルの追加* ( [英語のみ)を参照してください](/help/ios/getting-started/dev-qs.md)。
 1. Web ビューを開くために使用される URL に訪問者情報を追加するために、`visitorAppendToURL` を呼び出します。
 
    ```objective-c
@@ -60,7 +60,7 @@ source-git-commit: 9257d6b6c2c14d0422cda65fcc9c677ac5ac47a9
 
 モバイル Web コンテンツからのヒットが発生したら、各ヒットに `mid` パラメーターが存在することと、この値がアプリのコードによって送信される `mid` と一致していることを確認します。
 
-## 訪問者追跡のトラブルシューティング {#section_C070AE85E3CE4E9893FD4F40E73F2C92}
+## 訪問者トラッキングのトラブルシューティング {#section_C070AE85E3CE4E9893FD4F40E73F2C92}
 
 ### I do not see `[ADBMobile visitorAppendToURL:]`.
 
