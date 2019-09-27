@@ -3,7 +3,7 @@ description: マーケターは、アプリをプロモーションし、アク�
 keywords: モバイル
 seo-description: マーケターは、アプリをプロモーションし、アクセスを促進するトラッキングリンクを作成できます。これらのトラッキングリンクは、アプリストア、アプリ内ディープリンクおよびインタースティシャルにユーザーを導くことができ、アプリ内の行動に関連付けることができます。マーケターは、必要に応じてユーザーを iOS、Android またはその他のプラットフォームにルーティングする単一のリンクを作成できます。
 seo-title: 獲得
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: 獲得
 topic: 指標
 uuid: 987146e4-2cca-46e7-88aa-74b62d9f1dc5
@@ -32,15 +32,15 @@ Adobe Experience Platform Mobile SDK に関する情報やドキュメントを�
 
 >[!IMPORTANT]
 >
->UIで機能を設定することはできますが、生成された設定ファイルをダウンロードしてSDKに追加するまで、これらの機能は機能しません。For information about downloading and configuring the SDKs, see the *SDK documentation* section on this page.)
+>Although you can configure features in the UI, these features will not work until you download the generated configuration file and add this file to the SDK. For information about downloading and configuring the SDKs, see the *SDK documentation* section on this page.)
 
-トラッキング可能なモバイルアプリマーケティングリンクについて、レポートを作成、編集、管理および表示できます。
+You can create, edit, manage, and view reports on trackable mobile app Marketing Links.
 
 >[!TIP]
 >
->この機能には、Adobe Analytics-モバイルアプリまたはAdobe Analytics Premium SKUが必要です。
+>This functionality requires the Adobe Analytics - Mobile Apps or the Adobe Analytics Premium SKU.
 
-以下の獲得レポートは、マーケティングリンクのパフォーマンスに関するインサイトを提供します。
+The following Acquisition reports provide insight into how your Marketing Links are performing:
 
 * **概要** {#section_5B2BA47F22694919A472AB591101237E}
 
@@ -50,7 +50,7 @@ Adobe Experience Platform Mobile SDK に関する情報やドキュメントを�
 
 * **リンクレポート** {#section_A23A640C363B43569D9D484CF49EA277}
 
-   このレポートは、マーケティングリンクのパフォーマンスにランク表示を提供します。主要パフォーマンス指標と共にリンク名が表示されますが、このレポートはカスタマイズすることもできます。詳しくは、 [レポートのカスタマイズ](/help/using/usage/reports-customize/t-reports-customize.md).
+   このレポートは、マーケティングリンクのパフォーマンスをランク表示します。 主要パフォーマンス指標と共にリンク名が表示されますが、このレポートはカスタマイズすることもできます。詳しくは、 [レポートのカスタマイズ](/help/using/usage/reports-customize/t-reports-customize.md).
 
    次の情報に留意してください。
 
