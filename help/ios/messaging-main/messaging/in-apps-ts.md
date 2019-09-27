@@ -3,7 +3,7 @@ description: この情報は、アプリ内メッセージのトラブルシュ�
 keywords: モバイル
 seo-description: この情報は、アプリ内メッセージのトラブルシューティングに役立ちます。
 seo-title: アプリ内メッセージのトラブルシューティング
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: アプリ内メッセージのトラブルシューティング
 topic: 指標
 uuid: 58533aa3-2eb2-4597-8525-77e4e5975e56
@@ -35,13 +35,13 @@ SDK のバージョンが 4.2 以上で、正しく設定されていること�
 
 「アプリ内メッセージを管理」ページのリストビューをクリックして、「状態」列で発行されているかどうか確認します。
 
-## 一度 *表示*&#x200B;し、常に *表示して、「**オーディエンス」タブでオフライン* 設定を表示します。
+## 「オーディエン *ス」タブで、一度表示*、常 *に表示*、オフ ** ライン設定を表示するを確認します。
 
 これらの設定が正しく行われていることを確認します。「**[!UICONTROL 閲覧者]**」タブで、メッセージの表示頻度を指定するための「**トリガー[!UICONTROL 」オプションを確認します。]**
 
 ## 起動イベントをトリガーとして使用する場合
 
-起動イベントは、新規セッションでのみ実行されます。For more information about when a session begins, see the `lifecycleTimeout` row in the JSON Config file. 詳しくは [、ADBMobile JSON Config](/help/ios/configuration/json-config/json-config.md)を参照してください。
+起動イベントは、新規セッションでのみ実行されます。For more information about when a session begins, see the `lifecycleTimeout` row in the JSON Config file. For more information, see  ADBMobile JSON Config.[](/help/ios/configuration/json-config/json-config.md)
 
 ## メッセージをリモートで更新しましたが、アプリで古いメッセージが表示されています。
 
