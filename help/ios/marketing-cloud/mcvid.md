@@ -1,8 +1,8 @@
 ---
-description: Adobe Experience Platform IDサービスは、Experience Cloudソリューション全体でユニバーサル訪問者IDを提供します。Analytics は、Target、ビデオのハートビート、将来の Experience Cloud 統合に ID サービスを必要とします。
-seo-description: Adobe Experience Platform IDサービスは、Experience Cloudソリューション全体でユニバーサル訪問者IDを提供します。Analytics は、Target、ビデオのハートビート、将来の Experience Cloud 統合に ID サービスを必要とします。
+description: Adobe Experience Platform IDサービスは、Experience cloudソリューション全体で汎用の訪問者IDを提供します。 Analytics は、Target、ビデオのハートビート、将来の Experience Cloud 統合に ID サービスを必要とします。
+seo-description: Adobe Experience Platform IDサービスは、Experience cloudソリューション全体で汎用の訪問者IDを提供します。 Analytics は、Target、ビデオのハートビート、将来の Experience Cloud 統合に ID サービスを必要とします。
 seo-title: Experience Cloud ID
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: Experience Cloud ID
 topic: 開発者と導入
 uuid: 13628ea8-3cd4-4cfc-8ff6-722c33f7813a
@@ -14,11 +14,11 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
 # Experience Cloud ID {#experience-cloud-id}
 
-Adobe Experience Platform IDサービスは、Experience Cloudソリューション全体でユニバーサル訪問者IDを提供します。Analytics は、Target、ビデオのハートビート、将来の Experience Cloud 統合に ID サービスを必要とします。
+Adobe Experience Platform IDサービスは、Experience cloudソリューション全体で汎用の訪問者IDを提供します。 Analytics は、Target、ビデオのハートビート、将来の Experience Cloud 統合に ID サービスを必要とします。
 
 >[!TIP]
 >
->Adobe Experience Platform IDサービスを使用していない限り、Experience Cloud IDに入力する必要はありません。For more information, see [Adobe Experience Platform Identity Service](https://marketing.adobe.com/resources/help/en_US/mcvid/).
+>Adobe Experience Platform IDサービスを使用していない限り、Experience Cloud IDを入力する必要はありません。 For more information, see [Adobe Experience Platform Identity Service](https://marketing.adobe.com/resources/help/en_US/mcvid/).
 
 **SDK バージョン 4.3 以降が必要**
 
@@ -26,14 +26,14 @@ Adobe Experience Platform IDサービスは、Experience Cloudソリューショ
 
 1. ライブラリをプロジェクトに追加し、ライフサイクルを実装します。
 
-   詳しくは、コア実装および *ライフサイクル* で [プロジェクトにSDKおよび設定ファイルを追加を参照](/help/ios/getting-started/dev-qs.md)してください。
+   詳しくは、コア実装とラ *イフサイクルでのプロジェクトへのSDKと設定ファイルの追加* ( [英語のみ)を参照してください](/help/ios/getting-started/dev-qs.md)。
 1. ライブラリをインポートします。
 
    ```objective-c
    #import "ADBMobile.h"
    ```
 
-1. ファイルに `ADBMobileConfig.json` 次の `marketingCloud``org`ファイルが含まれていることを確認します。
+1. ファイルに次の内容 `ADBMobileConfig.json` が含まれていることを確認しま `marketingCloud``org`す。
 
    ```js
    "marketingCloud" : { 
@@ -45,8 +45,8 @@ Adobe Experience Platform IDサービスは、Experience Cloudソリューショ
 
    >[!IMPORTANT]
    >
-   >`@AdobeOrg`含める必要があります。
+   >を含める必要がありま `@AdobeOrg`す。
 
-   If these values are not present, download an updated `ADBMobileConfig.json` file from Adobe Mobile services. 詳しくは [、ADBMobile JSON config](/help/ios/getting-started/requirements.md)を参照してください。
+   If these values are not present, download an updated `ADBMobileConfig.json` file from Adobe Mobile services. 詳しくは、ADBMobile JSON configを参照 [してください](/help/ios/getting-started/requirements.md)。
 
 設定後、Experience Cloud ID が生成され、すべてのヒットに含まれます。カスタムや自動生成など、その他の訪問者 ID は、引き続き各ヒットとともに送信されます。
