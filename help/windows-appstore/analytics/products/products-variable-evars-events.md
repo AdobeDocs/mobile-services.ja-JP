@@ -2,10 +2,10 @@
 description: products 変数をマーチャンダイジング eVar および製品固有イベントと共に使用した例です。
 seo-description: products 変数をマーチャンダイジング eVar および製品固有イベントと共に使用した例です。
 seo-title: マーチャンダイジング eVar および製品固有のイベントを持つ products 変数
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: マーチャンダイジング eVar および製品固有のイベントを持つ products 変数
 topic: 開発者と導入
-uuid: 94e882e4- b19d-4c48-9dfb-331465490347
+uuid: 94e882e4-b19d-4c48-9dfb-331465490347
 translation-type: tm+mt
 source-git-commit: b630c5cf09be7fbe31018cbf50564001eb6e2a5a
 
@@ -37,5 +37,5 @@ ADB.Analytics.trackState("Order Confirmation", cdata);
 
 >[!TIP]
 >
->*`&&products`* 変数を使用して製品固有のイベントをトリガーする場合、そのイベントを *`&&events`* 変数に設定する必要もあります。そうしないと、処理中にイベントが除外されます。
+>If you trigger a product-specific event using the  variable, you must also set that event in the  variable, otherwise the event is filtered out during processing.*`&&products`**`&&events`*
 
