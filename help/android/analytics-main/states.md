@@ -2,10 +2,10 @@
 description: 状態とは、アプリケーションの様々な画面または表示のことです。
 seo-description: 状態とは、アプリケーションの様々な画面または表示のことです。
 seo-title: アプリの状態の追跡
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: アプリの状態の追跡
 topic: 開発者と導入
-uuid: 69c99d05-5816-4c86-97c5- d218dc26c129
+uuid: 69c99d05-5816-4c86-97c5-d218dc26c129
 translation-type: tm+mt
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
@@ -22,7 +22,7 @@ source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 1. ライブラリをプロジェクトに追加し、ライフサイクルを実装します。
 
-   詳しくは、コア実装および *ライフサイクル* で [、"SDKおよび設定ファイルのIntelliJ IDEAまたはEclipseプロジェクトへの追加」を参照](/help/android/getting-started/dev-qs.md)してください。
+   詳しくは、 *Core実装およびライフサイクルのIntelliJ IDEAまたはEclipse ProjectへのSDKと設定ファイルの追加*[を参照してください](/help/android/getting-started/dev-qs.md)。
 
 1. ライブラリをインポートします。
 
