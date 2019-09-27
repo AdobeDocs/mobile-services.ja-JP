@@ -16,7 +16,7 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 >[!IMPORTANT]
 >
->Before using the `ADBTarget` element in your TVML pages, you must configure your TVML/TVJS app to use the tvOS SDK. 詳しくは、tvOSを使用した [Apple TV実装](/help/ios/apple-tv-implementation-tvos/apple-tv-implementation-tvos.md)を参照してください。
+>Before using the `ADBTarget` element in your TVML pages, you must configure your TVML/TVJS app to use the tvOS SDK. 詳しくは、「 [Apple TV Implementation with tvOS](/help/ios/apple-tv-implementation-tvos/apple-tv-implementation-tvos.md)」を参照してください。
 
 ## はじめに {#section_88445645FD67416EAF6FDC3E3D3F5C33}
 
@@ -30,11 +30,11 @@ The returned content from Target replaces all content between `<ADBTarget>` and 
 
 >[!TIP]
 >
->置き換えたいものを計画する必要があります。
+>必要に応じて、置き換えるものを計画する必要があります。
 
 ユースケースには、ラベルの文字列値を置き換えるくらいシンプルなものもあれば、ページ全体を置き換えるくらい複雑なものもあります。
 
-## ADBTarget要素の設定 {#section_44A7AEC6FC0648ADAD0BACB57D493AFA}
+## ADBTarget要素を設定します {#section_44A7AEC6FC0648ADAD0BACB57D493AFA}
 
 `ADBTarget` 要素内で、`mbox` プロパティに Mbox 名を指定する必要があります。You can optionally add custom properties to your request in the `customParameterName="customParameterValue"` format.
 
@@ -42,56 +42,56 @@ The returned content from Target replaces all content between `<ADBTarget>` and 
 
    Mbox ロケーション名.
 
-   * プロパティタイプ:文字列
+   * プロパティタイプ：文字列
    * このプロパティは必須です。
 
 * **`id`**
 
    注文ID。
 
-   * プロパティタイプ:文字列
-   * このプロパティは必須 **で** はありません。
+   * プロパティタイプ：文字列
+   * このプロパティは **必須ではありません** 。
 
 * **`total`**
 
    注文の合計。
 
-   * プロパティタイプ:文字列
-   * このプロパティは必須 **で** はありません。
+   * プロパティタイプ：文字列
+   * このプロパティは **必須ではありません** 。
 
 * **`purchasedProductIds`**
 
    この注文で購入する製品の ID のコンマ区切りリスト。
 
-   * 以下に、このプロパティのコードサンプルを示します。
+   * このプロパティのコード例を次に示します。
 
 
       ```objective-c
       purchasedProductIds="product1,product2,product3" 
       ```
 
-   * プロパティタイプ:文字列
-   * このプロパティは必須 **で** はありません。
+   * プロパティタイプ：文字列
+   * This property is not required.****
 
 * **`mboxParameters`**
 
-   `mboxParameters` のキーと値のペアのリスト。この文字列内の各エントリはセミコロンで区切られ、キー値はコロンで区切られます。
+   `mboxParameters` のキーと値のペアのリスト。この文字列の各エントリはセミコロンで区切られ、キー値はコロンで区切られます。
 
-   * 以下に、このプロパティのコードサンプルを示します。
+   * このプロパティのコード例を次に示します。
 
       ```objective-c
       mboxParameters="mboxparameterKey:mboxParameterValue;mboxParameterKey1:mboxParameterValue1;mboxParameterKey2:mboxParameterValue2"
       ```
 
-   * プロパティタイプ:文字列
-   * このプロパティは必須 **で** はありません。
+   * Property type: String
+   * This property is not required.****
 
 * **`customParameterName`**
 
-   このプロパティの値 `customParameterValue`は、です。
+   The value of this property is .`customParameterValue`
 
-   * プロパティタイプ:文字列
-   * このプロパティは必須 **で** はありません。
+   * プロパティタイプ：文字列
+   * This property is not required.****
 
 
 ## 例 {#section_6D6D6E8C7FE147168FC30D83CBC06985}
