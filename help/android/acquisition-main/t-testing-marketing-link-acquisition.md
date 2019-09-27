@@ -1,12 +1,12 @@
 ---
-description: 以下の手順では、Androidデバイス上のマーケティングリンクを使用して獲得キャンペーンをラウンドトリップします。
+description: 以下の手順は、Androidデバイス上のマーケティングリンクを使用して獲得キャンペーンをラウンドトリップする場合に役立ちます。
 keywords: android;library;mobile;sdk
-seo-description: 以下の手順では、Androidデバイス上のマーケティングリンクを使用して獲得キャンペーンをラウンドトリップします。
+seo-description: 以下の手順は、Androidデバイス上のマーケティングリンクを使用して獲得キャンペーンをラウンドトリップする場合に役立ちます。
 seo-title: マーケティングリンクによる獲得のテスト
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: マーケティングリンクによる獲得のテスト
 topic: 開発者と導入
-uuid: d0933dcc-8fc3-4f60-987f-7a54559aaspx5
+uuid: d0933dcc-8fc3-4f60-987f-7a54559aacf5
 translation-type: tm+mt
 source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
@@ -15,13 +15,13 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
 # Testing Marketing Link acquisition {#testing-marketing-link-acquisition}
 
-以下の手順では、Androidデバイス上のマーケティングリンクを使用して獲得キャンペーンをラウンドトリップします。
+以下の手順は、Androidデバイス上のマーケティングリンクを使用して獲得キャンペーンをラウンドトリップする場合に役立ちます。
 
-モバイルアプリがまだGoogle Playにない場合は、マーケティングリンクの作成時に任意のモバイルアプリを宛先として選択できます。この設定は、ダウンロード計測用リンクをクリックした後に、獲得サーバーによってどのアプリにリダイレクトされるかに影響するだけで、ダウンロード計測用リンクをテストすること自体には影響しません。クエリ文字列パラメーターは、Google Play ストアに渡されます。これらのパラメーターは、キャンペーンのブロードキャストの一環としてインストール時にアプリに渡されます。モバイルアプリでの獲得のラウンドトリップテストには、このタイプのブロードキャストのシミュレーションが必要です。
+If your mobile app is not yet in Google Play, you can select any mobile app as a destination when creating the Marketing Link. この設定は、ダウンロード計測用リンクをクリックした後に、獲得サーバーによってどのアプリにリダイレクトされるかに影響するだけで、ダウンロード計測用リンクをテストすること自体には影響しません。クエリ文字列パラメーターは、Google Play ストアに渡されます。これらのパラメーターは、キャンペーンのブロードキャストの一環としてインストール時にアプリに渡されます。モバイルアプリでの獲得のラウンドトリップテストには、このタイプのブロードキャストのシミュレーションが必要です。
 
 The app must be freshly installed, or have data cleared in **[!UICONTROL Settings]**, each time a test is run. そうすることで、アプリが最初に起動したときに、キャンペーンクエリ文字列パラメーターに関連付けられている初期ライフサイクル指標が送信されます。
 
-1. モバイルアプリの獲得で [前提条件のタスクを完了](/help/android/acquisition-main/acquisition.md) し、ブロードキャスト受信者が正しく実装されていることを確認 `INSTALL_REFERRER`します。
+1. モバイルアプリの獲得の前提 [条件のタスクを実行し](/help/android/acquisition-main/acquisition.md) 、のブロードキャスト受信機が正しく実装されていることを確認しま `INSTALL_REFERRER`す。
 1. In the Adobe Mobile Services] UI, click  **[!UICONTROL Acquisition]** &gt; **[!UICONTROL Marketing Links Builder]** and generate an Acquisition Marketing Link URL that sets Google Play as the destination for Android devices.
 
    詳しくは、[マーケティングリンクビルダー](/help/using/acquisition-main/c-marketing-links-builder/c-marketing-links-builder.md)を参照してください。
@@ -38,7 +38,7 @@ The app must be freshly installed, or have data cleared in **[!UICONTROL Setting
 
 1. Copy the unique ID after `utm_content%3D`.
 
-   前の例では、ID `91b52ce097b1464b9b47cb2995c493cc6ab2c3a3`はです。
+   In the previous example, the ID is .`91b52ce097b1464b9b47cb2995c493cc6ab2c3a3`
 
    デバイスで一意の ID を取得できない場合、デスクトップで次の `CURL` コマンドを実行して、応答文字列から一意の ID を取得します。
 
@@ -69,7 +69,7 @@ The app must be freshly installed, or have data cleared in **[!UICONTROL Setting
 
    | 設定 | 値 |
    |--- |--- |
-   | acquisition | サーバーは、 `c00.adobe.com`ダウンロード計測 *`appid`* 用リンク `appid` と一致している必要があります。 |
+   | acquisition | The server should be `c00.adobe.com`, and      *`appid`*  should equal the `appid` in your acquisition link. |
    | analytics | テストのために、ブロードキャストを手動で送信するのに十分な時間（60 秒以上）に送信タイムアウトを設定します。テスト後に元のタイムアウト設定に復元できます。 |
 
 1. デバイスをコンピューターに接続し、アプリをアンインストールしてからインストールし直します。
@@ -114,7 +114,7 @@ The app must be freshly installed, or have data cleared in **[!UICONTROL Setting
    | Analytics - Unable to decode response(`<string>`). | 応答の形式が正しくありません。 |
    | Analytics - Unable to parse response (`a JSON Response`). | JSON 文字列の形式が正しくありません。 |
    | Analytics - Unable to parse acquisition service response (no `contextData` parameter in response). | 応答に `contextData` パラメーターがありません。 |
-   | Analytics - Acquisition referrer data was not complete (no `a.referrer.campaign.name` in context data), ignoring. | `a.referrer.campaign.name` はcontextDataには含まれません。 |
+   | Analytics - Acquisition referrer data was not complete (no `a.referrer.campaign.name` in context data), ignoring. | `a.referrer.campaign.name` is not included in contextData. |
    | Analytics - Acquisition referrer timed out. | `referrerTimeout` で定義された時間内に応答を取得できませんでした。値を増やしてもう一度試してください。また、アプリのインストール前にダウンロード計測用リンクを開いたことも確認してください。 |
 
 次の情報に留意してください。
@@ -123,7 +123,7 @@ The app must be freshly installed, or have data cleared in **[!UICONTROL Setting
 * `INSTALL_REFERRER` のブロードキャスト方法について詳しくは、Google Developers ガイドの [Google Play キャンペーン測定のテスト](https://developers.google.com/analytics/solutions/testing-play-campaigns)を参照してください。
 * アドビが提供する `acquisitionTest.jar` Java ツールを使用して、一意の ID を取得し、インストールリファラーをブロードキャストできます。そのため、手順 3 ～ 10 における情報の取得に役立ちます。
 
-**Javaツールのインストール**
+**Install the Java tool**
 
 この Java ツールをインストールするには：
 
@@ -138,4 +138,4 @@ The app must be freshly installed, or have data cleared in **[!UICONTROL Setting
 java -jar acquisitionTester.jar -a com.adobe.test -r com.adobe.test.ReferrerReceiver -l "https://c00.adobe.com/v3/appid/start?a_i_id=123456&a_g_id=com.adobe.test&a_dd=i&ctxa.referrer.campaign.name=name&ctxa.referrer.campaign.trackingcode=1234
 ```
 
-マーケティングリンクは、有効期限が10分のサーバー側でキャッシュされます。マーケティングリストに変更を加えた場合は、リンクを再度使用する前に、変更が適用されるまで約 10 分間待ってください。
+The Marketing Links are cached on the server side with a ten-minutes expiration time. マーケティングリストに変更を加えた場合は、リンクを再度使用する前に、変更が適用されるまで約 10 分間待ってください。
