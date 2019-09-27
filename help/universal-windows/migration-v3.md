@@ -1,22 +1,22 @@
 ---
 description: ここでは、Windows モバイル SDK バージョン 3.x から Experience Cloud ソリューション用 Universal Windows Platform 4.x SDK に移行する方法について説明します。
 seo-description: ここでは、Windows モバイル SDK バージョン 3.x から Experience Cloud ソリューション用 Universal Windows Platform 4.x SDK に移行する方法について説明します。
-seo-title: 4. xに移行
-solution: Marketing Cloud、Analytics
-title: 4. xに移行
+seo-title: 4.xへの移行
+solution: Marketing Cloud,Analytics
+title: Migrate to 4.x
 topic: 開発者と導入
-uuid: bdd6c5cd-3892-4e99- b69e-77105ad66e25
+uuid: bdd6c5cd-3892-4e99-b69e-77105ad66e25
 translation-type: tm+mt
 source-git-commit: 68bc21f1c6dba2faeed332495592114af90c8f61
 
 ---
 
 
-# 4. x SDKへの移行{#migrate-to-x}
+# 4.x SDKへの移行{#migrate-to-x}
 
-ここでは、WindowsモバイルSDKの3. xバージョンからUniversal Windows Platform4. x SDKへの移行方法について説明します。
+ここでは、3.xバージョンのWindowsモバイルSDKからUniversal Windows Platform 4.x SDK for Experience cloudソリューションに移行する方法について説明します。
 
-バージョン4. xへの移行により、静的メソッドですべての機能にアクセスできるようになりました。独自のオブジェクトを追跡する必要はなくなりました。
+With the move to version 4.x, all functionality is now accessible through static methods. You no longer need to keep track of your own objects.
 
 以降の節では、バージョン 3.x からバージョン 4.x への移行について説明します。
 
@@ -54,11 +54,11 @@ source-git-commit: 68bc21f1c6dba2faeed332495592114af90c8f61
 
 次の表に、設定ファイルに移動する必要がある設定変数を示します。最初の列の変数に設定されている値を 2 番目の列の変数に移動し、古い設定変数をコードから削除します。
 
-### 3. xからの移行
+### 3.xからの移行
 
-次の表に、3. x SDK内の変数と4. x SDKの新しい名前のリストを示します。
+The following table provides a list of variables in the 3.x SDKs and the new name in the 4.x SDKs:
 
-| 設定変数／メソッド | `ADBMobileConfig.json` ファイル内の変数。 |
+| 設定変数／メソッド | Variable in the `ADBMobileConfig.json` file. |
 |--- |--- |
 | offlineTrackingEnabled | "offlineEnabled" |
 | reportSuiteIDs | "rsids" |
@@ -82,7 +82,7 @@ source-git-commit: 68bc21f1c6dba2faeed332495592114af90c8f61
 
 ### イベント、prop、eVar
 
-[SDKメソッド](/help/universal-windows/c-configuration/methods.md)を見ている場合は、イベント、eVar、prop、heies、およびリストを設定することをお勧めします。バージョン 4 では、これらの種類の変数をアプリケーション内で直接割り当てられなくなっています。代わりに、SDK は、コンテキストデータと処理ルールを使用して、レポート用にアプリデータを Analytics 変数にマップします。
+If you've looked at the SDK methods, you are probably wondering where to set events, eVars, props, heirs, and lists. [](/help/universal-windows/c-configuration/methods.md)バージョン 4 では、これらの種類の変数をアプリケーション内で直接割り当てられなくなっています。代わりに、SDK は、コンテキストデータと処理ルールを使用して、レポート用にアプリデータを Analytics 変数にマップします。
 
 処理ルールには、次の利点があります。
 
@@ -90,15 +90,15 @@ source-git-commit: 68bc21f1c6dba2faeed332495592114af90c8f61
 * レポートスイートに固有の変数を設定する代わりに、意味のある名前をデータに使用できます。
 * 追加のデータの送信にはほとんど影響しません。これらの値は、処理ルールを使用してマップされるまではレポートに表示されません。
 
-詳しくは、Analyticsの概要の *「処理ルール* 」の節 [](/help/universal-windows/analytics/analytics.md)を参照してください。
+For more information, see the Processing rules section in Analytics overview.**[](/help/universal-windows/analytics/analytics.md)
 
 変数に直接代入していた値をコンテキストデータに追加する必要があります。This means that calls to `SetProp`, `SetEvar`, and assignments to persistent context data should all be removed and the values added to context data.
 
-### appSection/Server、geoZip、トランザクションID、キャンペーン、その他の標準変数
+### AppSection/Server、GeoZip、トランザクションID、Campaign、その他の標準変数
 
-上記の変数を含め、測定オブジェクトに設定していたデータはコンテキストデータに追加する必要があります。つまり、また `TrackState``TrackAction` は呼び出しとともに送信される唯一のデータは `data` 、パラメーターのペイロードです。
+上記の変数を含め、測定オブジェクトに設定していたデータはコンテキストデータに追加する必要があります。つまり、または呼び出しで送信される唯一のデ `TrackState` ータは、 `TrackAction` パラメーターのペイロード `data` です。
 
-**トラッキングコールの置換**
+**トラッキングコールの置き換え**
 
 コード全体で、次のメソッドを `trackState` または `trackAction` の呼び出しで置き換えます。
 
@@ -111,11 +111,11 @@ source-git-commit: 68bc21f1c6dba2faeed332495592114af90c8f61
 
 ## カスタム ID サービス {#section_2CF930C13BA64F04959846E578B608F3}
 
-`visitorID` 変数を呼び出しに置き換え `setUserIdentifier`ます。
+Replace the `visitorID` variable with a call to `setUserIdentifier`.
 
 ## Offline tracking {#section_5D4CD8CD1BE041A79A8657E31C0D24C6}
 
-`ADBMobileConfig.json` ファイル内でオフライン追跡が有効になります。その他すべてのオフライン設定は自動的に実行されます。
+Offline tracking is enabled in the `ADBMobileConfig.json` file. All other offline configuration is done automatically.
 
 コード全体で次のメソッドの呼び出しを削除します。
 
@@ -138,4 +138,4 @@ ADB.Analytics.trackAction("product view", cdata);
 
 ![](assets/prod-view.png)
 
-`"&&products"` （この例では）値の値は、追跡する `";Cool Shoe`イベントのタイプの製品文字列構文に従う必要があります。
+The value of `"&&products"` (in this example, the value is `";Cool Shoe`") should follow the products string syntax for the type of event that you are tracking.
