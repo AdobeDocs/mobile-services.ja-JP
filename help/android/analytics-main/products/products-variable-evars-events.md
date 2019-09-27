@@ -3,10 +3,10 @@ description: マーチャンダイジング eVar および製品固有のイベ�
 keywords: android;library;mobile;sdk
 seo-description: マーチャンダイジング eVar および製品固有のイベントを持つ products 変数の例を以下に示します。
 seo-title: マーチャンダイジング eVar および製品固有のイベントを持つ products 変数
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: マーチャンダイジング eVar および製品固有のイベントを持つ products 変数
 topic: 開発者と導入
-uuid: 64f822a0-6cf-48e7-8886-31b93d8198a3
+uuid: 64f822a0-6ccf-48e7-8886-31b93d8198a3
 translation-type: tm+mt
 source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
 
@@ -37,5 +37,5 @@ Analytics.trackState("Order Confirmation", cdata);
 
 >[!TIP]
 >
->変数を *`&&products`* 使用して製品固有のイベントをトリガーする場合は、 *`&&events`* 変数にそのイベントも設定する必要があります。設定しなかった場合、そのイベントは処理中に除外されます。
+>If you trigger a product-specific event by using the  variable, you must also set that event in the  variable. *`&&products`**`&&events`*&#x200B;設定しなかった場合、そのイベントは処理中に除外されます。
 
