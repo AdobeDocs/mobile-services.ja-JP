@@ -1,9 +1,9 @@
 ---
 description: Web ブラウザーを使用して Adobe Mobile Services にサインインできます。
-keywords: mobile;change password;ログイン、log out;login;logout;サインイン、signin
+keywords: モバイル；パスワードの変更；ログイン；ログアウト；ログイン；ログアウト；ログイン；サインイン；サインイン
 seo-description: Web ブラウザーを使用して Adobe Mobile Services にサインインできます。
 seo-title: サインイン
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: サインイン
 topic: 指標
 uuid: d6ea0ca1-3511-4133-9d41-21ea2d2f7b3a
@@ -47,7 +47,7 @@ Enterprise ID を使用して Adobe Mobile Services UI にサインインする�
 
    >[!IMPORTANT]
    >
-   >**[!UICONTROL Facebook]** または **[!UICONTROL Google]** をクリックしてサインインする場合、FacebookアカウントおよびGoogleアカウントの電子メールアドレスは、Adobe AnalyticsにアクセスできるAdobe IDまたはEnterprise IDアカウントの電子メールアドレスと一致する必要があります。FacebookまたはGoogleの電子メールの資格情報が自分のAdobe IDまたはEnterprise IDのユーザー電子メールアドレスと一致しない場合は、管理者に問い合わせてください。
+   >If you click **[!UICONTROL Facebook]** or **[!UICONTROL Google]** to sign in, your Facebook and Google account email address must match the Adobe ID or Enterprise ID account email address that has access to Adobe Analytics. FacebookまたはGoogleの電子メール資格情報がAdobe IDまたはEnterprise IDのユーザーの電子メールアドレスと一致しない場合は、管理者に問い合わせてください。
 
 ### Analytics ID
 
@@ -62,7 +62,7 @@ Analytics ID を使用して Adobe Mobile Services UI にサインインする�
 
 次のいずれかの方法でパスワードをリセットします。
 
-* **Adobe IDを使用する** Adobe Experience Cloud:
+* **Adobe Experience Cloud If you use your Adobe ID:**
 
    1. 「**[!UICONTROL Adobe ID を使用してサインイン]」をクリックして、「**&#x200B;パスワードを忘れた場合&#x200B;****」リンクをクリックします。
    1. Type the email account that is associated with your Adobe ID and click **[!UICONTROL Send]**.
