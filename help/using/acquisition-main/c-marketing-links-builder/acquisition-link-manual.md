@@ -1,27 +1,27 @@
 ---
-description: URLパラメーターを手動で設定することで、新しいモバイルアプリユーザーを即座に獲得するマーケティングリンクを作成できます。
+description: URLパラメーターを手動で設定することで、新しいモバイルアプリユーザーをその場で取得するマーケティングリンクを作成できます。
 keywords: モバイル
-seo-description: URLパラメーターを手動で設定することで、新しいモバイルアプリユーザーを即座に獲得するマーケティングリンクを作成できます。
+seo-description: URLパラメーターを手動で設定することで、新しいモバイルアプリユーザーをその場で取得するマーケティングリンクを作成できます。
 seo-title: ダウンロード計測用リンクの手動作成
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: ダウンロード計測用リンクの手動作成
 topic: 指標
-uuid: d7709203- f793-4982- adaa-9c3c914aca2b
+uuid: d7709203-f793-4982-adaa-9c3c914aca2b
 translation-type: tm+mt
 source-git-commit: 54e3b2d673356a616987537d20758bef8b044db4
 
 ---
 
 
-# ダウンロード計測用リンクの手動作成 {#create-acquisition-link-manually}
+# Manually create Acquisition links {#create-acquisition-link-manually}
 
-URLパラメーターを手動で設定することで、新しいモバイルアプリユーザーを即座に獲得するマーケティングリンクを作成できます。
+URLパラメーターを手動で設定することで、新しいモバイルアプリユーザーをその場で取得するマーケティングリンクを作成できます。
 
 >[!IMPORTANT]
 >
->この機能にはSDKバージョン4.6以降が必要です。詳しくは [、獲得の前提条件](/help/using/acquisition-main/c-acquisition-prerequisites.md)を参照してください。
+>この機能を使用するには、SDKバージョン4.6以降が必要です。 詳しくは、獲得の前提条件を参 [照してください](/help/using/acquisition-main/c-acquisition-prerequisites.md)。
 
-次の図に、手動で作成したトラッキングリンクのコンポーネントと、ダウンロード計測用リンクを手動で作成するときに適切に設定する必要がある様々なURLパラメーターを示します。
+The following diagram illustrates the components of a manually built tracking link and displays the different URL parameters that you must properly configure when manually creating acquisition links.
 
 ![](assets/acquisition_url.png)
 
@@ -33,7 +33,7 @@ URLパラメーターを手動で設定することで、新しいモバイル�
 
 >[!TIP]
 >
->使用しているAndroid SDKのバージョンは、このプロセスに影響しません。
+>使用しているAndroid SDKのバージョンは、このプロセスには影響しません。
 
 iOS の場合、次の正しいプロトコルを使用していることを確認します。
 
@@ -42,13 +42,13 @@ iOS の場合、次の正しいプロトコルを使用していることを確�
 
 ここでは、次の条件が当てはまります。
 
-* `{mobile-services-app-hash}` は、設定 `acquisition:appid ` ファイル内のアプリケーション識別子と一致します。
+* `{mobile-services-app-hash}` matches the application identifier in the configuration `acquisition:appid ` file.
 
    You can locate `{mobile-services-app-hash}` in the Manage App Settings page under Acquisition SDK Options in the Tracking ID field.
 
    ![](assets/tracking-id.png)
 
-* `{parameters}` は、標準的な具体的なURLクエリパラメーターのリストです。
+* `{parameters}` は、標準的な特定の名前を持つURLクエリパラメーターのリストです。
 
 次にパラメーターのリストを示します。
 
@@ -56,43 +56,43 @@ iOS の場合、次の正しいプロトコルを使用していることを確�
 
    Google Play ストアのアプリ識別子.
 
-   * サンプル値: `com.adobe.beardcons`
+   * サンプル値： `com.adobe.beardcons`
 
 * **`a_g_lo`**
 
    Google Play ストアのロケールの上書き.
 
-   * サンプル値: `ko`
+   * サンプル値： `ko`
 
 * **`a_i_id`**
 
    iTunes Store のアプリ識別子.
 
-   * サンプル値: `835196493`
+   * サンプル値： `835196493`
 
 * **`a_i_lo`**
 
    iTunes Store のロケールの上書き.
 
-   * サンプル値: `jp`
+   * サンプル値： `jp`
 
 * **`a_dd`**
 
    自動リダイレクトのデフォルトのストア.
 
-   * サンプル値: `i | g`
+   * サンプル値： `i | g`
 
 * **`a_cid`**
 
    カスタムIDの上書き（通常、iOSの場合はIDFA、Androidの場合はADID）。
 
-   * サンプル値: `Any String < 255 characters (UTF-8 encoded)`
+   * Sample value: `Any String < 255 characters (UTF-8 encoded)`
 
 * **`ctx*`**
 
    Keys prefixed with `ctx` will be in the context data of the resulting launch hit.
 
-   * サンプル値: `ctxmy.custom.key=myValue`
+   * Sample value: `ctxmy.custom.key=myValue`
 
 * **`ctxa.referrer.campaign.name`**
 
@@ -100,7 +100,7 @@ iOS の場合、次の正しいプロトコルを使用していることを確�
 
    このパラメーターは、様々なダウンロード計測用リンクのパフォーマンスを比較する場合のレポートに必要です。
 
-   * サンプル値:2015Summit Conference
+   * サンプル値：2015年サミット会議
 
 * **`ctxa.referrer.campaign.trackingcode`**
 
@@ -108,37 +108,37 @@ iOS の場合、次の正しいプロトコルを使用していることを確�
 
    このパラメーターは、様々なダウンロード計測用リンクのパフォーマンスを比較する場合のレポートに必要です。
 
-   * サンプル値: `lexsxouj`
+   * サンプル値： `lexsxouj`
 
 * **`ctxa.referrer.campaign.source`**
 
-   ソースです。
+   ソース。
 
-   * サンプル値:広告ネットワーク
+   * サンプル値：広告ネットワーク
 
 * **`ctxa.referrer.campaign.medium`**
 
    メディア
 
-   * サンプル値:電子メール
+   * サンプル値：電子メール
 
 * **`ctxa.referrer.campaign.content`**
 
    コンテンツ
 
-   * サンプル値:画像#325689
+   * Sample value: Image # 325689
 
 * **`ctxa.referrer.campaign.term`**
 
    用語
 
-   * サンプル値:ハイキング+ブーツ
+   * サンプル値：ハイキング+ブーツ
 
 
-ダウンロード計測用リンクを手動で作成するときは、次の情報を覚えておいてください。
+When you manually create acquisition links, remember the following information:
 
 * この表に記載されていないすべてのパラメーターは、アプリストアのリダイレクトの一部として渡されます。
-* すべてのパラメーターは技術的にはオプションですが、少なくとも1つのストアIDが指定されている場合、リンクは機能しません。
+* 少なくとも1つのストアIDが指定されている場合、リンクは機能しませんが、すべてのパラメーターは技術的にはオプションです。
 
    An example of a store ID is `a_g_id`/ `a_i_id`.
 
