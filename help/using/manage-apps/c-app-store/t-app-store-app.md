@@ -3,10 +3,10 @@ description: Apple App Store または Google Play からアプリを追加で�
 keywords: モバイル
 seo-description: Apple App Store または Google Play からアプリを追加できます。
 seo-title: アプリストアからのアプリの追加
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: アプリストアからのアプリの追加
 topic: 指標
-uuid: 94c8a924-5156-4742-8b5b-88d9ea13bpf
+uuid: 94c8a924-5156-4742-8b5b-88d9ea13bfed
 translation-type: tm+mt
 source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
 
@@ -21,9 +21,9 @@ Apple App Store または Google Play からアプリを追加できます。
 
    * Sign in to Adobe Mobile Services and click **[!UICONTROL Create New]**.
 
-      Mobile Services UIへのサインインについて詳しくは [、サインイン](/help/using/gs/gs-signin.md)を参照してください。
+      For more information about signing in to the Mobile Services UI, see Sign in.[](/help/using/gs/gs-signin.md)
 
-   * アプリを追加するには、左側のナビゲーションメニューで「アプリを管理»をクリック????し、??«追加??********
+   * To add apps, in the left navigation menu, click Manage Apps and click Add.********
 
 1. Click **[!UICONTROL Add App Store App]**.
 1. 次のタスクを実行します。
@@ -31,9 +31,9 @@ Apple App Store または Google Play からアプリを追加できます。
    * アプリストアを選択します。
       * **[!UICONTROL Apple App Store]**
       * **[!UICONTROL Google Play]**
-   * アプリストア名で検索し、アプリを選択します。
+   * Search by app store name and select the app.
 
-      選択したアプリに関する情報をプレビューできます。これにより、適切なアプリを選択したかどうかを判断できます。
+      選択したアプリに関する情報をプレビューして、正しいアプリを選択したかどうかを判断できます。
 
    * アプリケーション ID を入力します。
 
