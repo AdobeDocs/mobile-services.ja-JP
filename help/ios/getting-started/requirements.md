@@ -2,10 +2,10 @@
 description: iOS アプリデータを収集するようにレポートスイートを設定するには、次の手順を実行します。
 seo-description: iOS アプリデータを収集するようにレポートスイートを設定するには、次の手順を実行します。
 seo-title: 事前準備
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: 事前準備
 topic: 開発者と導入
-uuid: 04133f68-3618-41fd-8a13- pit5b6f04df6
+uuid: 04133f68-3618-41fd-8a13-aec5b6f04df6
 translation-type: tm+mt
 source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
 
@@ -52,11 +52,11 @@ Adobe Mobile Services には、以下のいずれかの方法でログインで�
 
    Adobe ID を使用して [Experience Cloud](https://marketing.adobe.com) にログインします。
 
-   この方法は、会社がプロビジョニング済みで、Analyticsアカウントをリンクしていることを前提としています。プロビジョニングについて詳しくは、Experience Cloudユーザーと製品 [の管理](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/admin-getting-started.html)を参照してください。アカウントのリンクについて詳しくは [、組織とアカウントのリンク](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/organizations.html)を参照してください。
+   この方法は、会社がプロビジョニング済みで、Analyticsアカウントがリンク済みであることを前提としています。 For more information about provisioning, see [Manage Experience Cloud users and products](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/admin-getting-started.html). For more information about linking your account, see Organizations and account linking.[](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/organizations.html)
 
    >[!TIP]
    >
-   >会社がExperience Cloudでプロビジョニングされているかどうか不明な場合は、既存のAdobe Analyticsアカウントを使用してください。
+   >会社がExperience cloudでプロビジョニングされているかどうか不明な場合は、既存のAdobe Analyticsアカウントを使用します。
 
 * **Adobe Analytics**
 
@@ -74,18 +74,18 @@ Adobe Mobile Services には、以下のいずれかの方法でログインで�
 
 1. アプリの名前を入力し、一意のレポートスイート ID を選択します。
 
-   例えば、`mycomobileappdev` などのレポートスイート ID です。開発版と実稼動版の異なるレポートスイートおよびアプリケーションを設定する必要があります。本番用バージョンをセットアップする準備ができたら、これらの手順を繰り返します。
+   例えば、`mycomobileappdev` などのレポートスイート ID です。You need to set up separate report suites and apps for the development and production versions. When you are ready to set up the production version, repeat these steps.
 1. 「**[!UICONTROL モバイルアプリのテンプレート]」を選択したままにします。**
 
    このテンプレートでタイムスタンプを有効にして、オフラインデータを収集することができます。また、モバイルソリューション変数をアクティベートして、ライフサイクル指標をキャプチャします。
 
-1. **[!UICONTROL タイムゾーン]**&#x200B;と **[!UICONTROL 通貨]**&#x200B;を選択し、 **[!UICONTROL 「保存]**」をクリックします。
+1. Select your **[!UICONTROL Timezone]**, your **[!UICONTROL Currency]**, and click **[!UICONTROL Save]**.
 
 ## SDK のダウンロード {#section_044C17DF82BC4FD8A3E409C456CE9A46}
 
 モバイル SDK をダウンロードするには、以下のようにします。
 
-1. Mobile Servicesにログインし、次のいずれかの方法でアプリケーションを開きます。
+1. Mobile Servicesにログインし、次のいずれかの方法でアプリを開きます。
 
    * **[!UICONTROL アプリ一覧]ドロップダウンリストで、アプリを選択します。**
    * 右側のウィンドウで、アプリを見つけて開きます。
@@ -97,5 +97,5 @@ Adobe Mobile Services には、以下のいずれかの方法でログインで�
 
 >[!TIP]
 >
->アプリケーションの設定ファイルはSDKダウンロードに自動的に追加されるので、そのファイルを個別にダウンロードする必要はありません。ただし、SDK を既にダウンロードしており、更新された設定を取得したい場合は、設定ファイルをもう一度ダウンロードしてください。
+>アプリの設定ファイルはSDKのダウンロードに自動的に含まれるので、そのファイルを個別にダウンロードする必要はありません。 ただし、SDK を既にダウンロードしており、更新された設定を取得したい場合は、設定ファイルをもう一度ダウンロードしてください。
 
