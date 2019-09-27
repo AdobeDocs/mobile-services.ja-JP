@@ -2,10 +2,10 @@
 description: products 変数は、処理ルールを使用して設定することができません。モバイル SDK では、コンテキストデータパラメーター内で特殊な構文を使用して、products をサーバー呼び出しで直接設定する必要があります。
 seo-description: products 変数は、処理ルールを使用して設定することができません。モバイル SDK では、コンテキストデータパラメーター内で特殊な構文を使用して、products をサーバー呼び出しで直接設定する必要があります。
 seo-title: 製品変数
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: 製品変数
 topic: 開発者と導入
-uuid: 607983d6-48ac-4274- bfc8- b1ca4e5abc1b
+uuid: 607983d6-48ac-4274-bfc8-b1ca4e5dad1b
 translation-type: tm+mt
 source-git-commit: 7aff336586058302046a728a0b1b0ce12660c1ba
 
@@ -46,7 +46,7 @@ The *`products`* is set directly on the image request, and the other variables a
 
 ![](assets/products-procrules.png)
 
-処理ルールを使用して変数を *`products`* マップする必要はありません。これは、SDKによってイメージリクエストに直接設定されているからです。
+処理ルールを使用して変数をマッピ *`products`* ングする必要はありません。これは、SDKがイメージリクエストに直接設定するためです。
 
 ## Products variable with merchandising eVars and product-specific events {#section_685D53AD3D064F9A8E225F995A9BA545}
 
@@ -73,5 +73,5 @@ ADB.Analytics.trackState("Order Confirmation", cdata);
 
 >[!TIP]
 >
->*`&&products`* 変数を使用して製品固有のイベントをトリガーする場合、そのイベントを *`&&events`* 変数に設定する必要もあります。そうしないと、処理中にイベントが除外されます。
+>変数を使用して製品固有のイベントをトリガーする場合は、そのイベントを変数に設定する必要もあります。設定しない場 *`&&products`**`&&events`* 合は、処理中にそのイベントが除外されます。
 
