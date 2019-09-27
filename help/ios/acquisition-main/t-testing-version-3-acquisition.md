@@ -1,10 +1,10 @@
 ---
-description: デバイス指紋に基づいた V3 による獲得キャンペーンリンクのラウンドトリップに役立つ情報です。
-seo-description: デバイス指紋に基づいた V3 による獲得キャンペーンリンクのラウンドトリップに役立つ情報です。
+description: デバイスのフィンガープリントに基づいた V3 による獲得キャンペーンリンクのラウンドトリップに役立つ情報です。
+seo-description: デバイスのフィンガープリントに基づいた V3 による獲得キャンペーンリンクのラウンドトリップに役立つ情報です。
 seo-title: V3 による獲得のテスト
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: V3 による獲得のテスト
-uuid: 89137cf-4839-4b37-926e-303cf8e511a5
+uuid: 89137ccf-4839-4b37-926e-303cf8e511a5
 translation-type: tm+mt
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
@@ -13,16 +13,16 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 # Testing V3 acquisition{#testing-v-acquisition}
 
-デバイス指紋に基づいた V3 による獲得キャンペーンリンクのラウンドトリップに役立つ情報です。
+デバイスのフィンガープリントに基づいた V3 による獲得キャンペーンリンクのラウンドトリップに役立つ情報です。
 
 >[!IMPORTANT]
 >
->V3獲得は、Adobe Mobile Services UIのダウンロード計測用ビルダーで作成するダウンロード計測用リンクを指します。この機能を使用するには、iOS SDK バージョン 4.6.0 以降にアップグレードする必要があります。
+>  V3 の獲得とは、Adobe Mobile Services UI でダウンロード計測ビルダーを使用して作成した獲得リンクを指します。この機能を使用するには、iOS SDK バージョン 4.6.0 以降にアップグレードする必要があります。
 
 モバイルアプリがまだ App Store にない場合は、キャンペーンリンクの作成時に任意のモバイルアプリをリンク先として選択してください。これは、ダウンロード計測用リンクのクリック後に獲得サーバーによってリダイレクトされるアプリにのみ影響を与えます。リンクのテスト機能には影響を与えません。
 
-1. モバイルアプリ獲得の [前提条件タスクを完了](/help/ios/acquisition-main/acquisition.md)します。
-1. Navigate to the **[!UICONTROL Acquisition Builder]** in the Adobe Mobile Services UI and generate an acquisition campaign URL.
+1. [モバイルアプリ獲得](/help/ios/acquisition-main/acquisition.md)の前提条件タスクを完了します。
+1. Adobe Mobile Services UI で&#x200B;**[!UICONTROL 獲得ビルダー]に移動し、獲得キャンペーン URL を生成します。**
 
    以下に例を示します。
 
@@ -32,7 +32,7 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 
    ダウンロード計測用リンクで iOS アプリと Android アプリの両方を指す場合は、Apple Store をデフォルトのストアとして使用します。
-1. Open the generated link in a desktop browser and go to `https://c00.adobe.com/v3/<appid>/end`.
+1. 生成したリンクをデスクトップブラウザーで開き、`https://c00.adobe.com/v3/<appid>/end` に移動します。
 
    JSON 応答の `contextData` は次のようになります。
 
@@ -45,12 +45,12 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
    | 設定 | 値 |
    |--- |--- |
-   | acquisition | The server should be  `c00.adobe.com`. *`appid`* は、ダウンロード計測 *`appid`* 用リンクと同じにする必要があります。 |
+   | acquisition | The server should be  `c00.adobe.com`. *`appid`* should equal the *`appid`* in your acquisition link. |
    | analytics | `referrerTimeout` は 0 より大きい値です。 |
 
 
 1. （条件付き）アプリの設定ファイル内の `ssl` 設定が true の場合、HTTPS プロトコルを使用するようにダウンロード計測用リンクを更新します。
-1. アプリケーションをインストールするモバイルデバイスから生成されたリンクをクリックします。
+1. アプリのインストール先のモバイルデバイスから生成されたリンクをクリックします。
 
    アドビのサーバー（`c00.adobe.com`）がデバイス指紋を保存し、App Store にリダイレクトします。テストのためにアプリをダウンロードする必要はありません。
 1. 手順 6 で使用したのと同じモバイルデバイスから、アプリケーションを初めて起動します。
@@ -65,7 +65,7 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
    ログが上記のようにならない場合は、手順 4 および 5 を実行したことを確認してください。
 
-   以下に、考えられるエラーに関する情報を示します。
+   Here is some information about possible errors:
 
    * `Analytics - Unable to retrieve acquisition service response (<error message>)`ネットワークエラーが発生しました。
 
@@ -79,7 +79,7 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
    * `Analytics - Acquisition referrer data was not complete, ignoring`
 
-      `a.referrer.campaign.name``contextData`が含まれていません。
+      `a.referrer.campaign.name` がに含まれていな `contextData`い。
 
    * `Analytics - Acquisition referrer timed out`
 
@@ -93,11 +93,11 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
       * HTTP モニタリングツールを使用することによって、アプリから送信されるヒットを監視して、獲得アトリビューションを確認できます。
 
-         `/v3/<appid>/start` 1つのリクエストと、獲得サーバーに送信される `/v3/<appid>/end` リクエストが1つ表示されます。送信されたユーザーエージェントが変わると、アトリビューションが失敗することがあります。
+         `/v3/<appid>/start` リクエスト 1 つと `/v3/<appid>/end` リクエスト 1 つが獲得サーバーに送信されているはずです。送信されたユーザーエージェントが変わると、アトリビューションが失敗することがあります。
 
          >[!TIP]
          >
-         >ユーザーエージェントの値が `https://c00.adobe.com/v3/<appid>/start` 同じ `https://c00.adobe.com/v3/<appid>/end` であることを確認してください。
+         >Ensure that  and  have the same user-agent values.`https://c00.adobe.com/v3/<appid>/start``https://c00.adobe.com/v3/<appid>/end`
 
       * ダウンロード計測用リンクと SDK からのヒットは、同じ HTTP／HTTPS プロトコルを使用している必要があります。
 
