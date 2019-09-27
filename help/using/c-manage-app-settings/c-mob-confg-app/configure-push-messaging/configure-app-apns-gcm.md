@@ -1,12 +1,12 @@
 ---
-description: Apple Push Notification Service（APNS）またはFirebase Cloud Messaging（FCM）を使用するようにアプリを設定できます。
+description: Apple Push Notification Service(APNS)またはFirebase Cloud Messaging(FCM)を使用するようにアプリを設定できます。
 keywords: モバイル
-seo-description: Apple Push Notification Service（APNS）またはFirebase Cloud Messaging（FCM）を使用するようにアプリを設定できます。
-seo-title: APNSまたはFCMを使用するようにアプリを設定する
-solution: Marketing Cloud、Analytics
-title: APNSまたはFCMを使用するようにアプリを設定する
+seo-description: Apple Push Notification Service(APNS)またはFirebase Cloud Messaging(FCM)を使用するようにアプリを設定できます。
+seo-title: APNSまたはFCMを使用するためのアプリの設定
+solution: Marketing Cloud,Analytics
+title: Configure App to use APNS or FCM
 topic: 指標
-uuid: fa411f2a- ba47-4499- bbe5-1aedef6b49ad
+uuid: fa411f2a-ba47-4499-bbe5-1aedef6b49ad
 translation-type: tm+mt
 source-git-commit: 608384f1fee2a05699ff13fbd51c3cc43aeb693c
 
@@ -15,33 +15,33 @@ source-git-commit: 608384f1fee2a05699ff13fbd51c3cc43aeb693c
 
 # APNSまたはFCMを使用するようにアプリを設定する{#configure-app-to-use-apns-or-fcm}
 
-Apple Push Notification Service（APNS）またはFirebase Cloud Messaging（FCM）を使用するようにアプリを設定できます。
+Apple Push Notification Service(APNS)またはFirebase Cloud Messaging(FCM)を使用するようにアプリを設定できます。
 
 ## Android アプリ {#section_41D304102CDF4586911EC1413AD35A10}
 
-### アプリケーションでFCMが有効になっていない場合
+### アプリでFCMが有効になっていない場合
 
-このシナリオでFCMを使用するようにAndroidアプリを設定するには:
+To configure your Android app to use FCM in this scenario:
 
-1. [https://firebase.google.com/にアクセス](https://firebase.google.com/) し、Googleデベロッパー資格情報を使用してログインします。
+1. Go to [https://firebase.google.com/](https://firebase.google.com/) and log in with your Google Dev credentials.
 
-1. 「 **[!UICONTROL 開始」]** をクリックし、「プロジェクト **[!UICONTROL を追加」を選択]**&#x200B;します。
+1. 「はじめに **[!UICONTROL 」をクリックし、「プロジ]** ェクトを追加 ****」を選択します。
 
-1. プロジェクト名を入力し、FirebaseデータのGoogle Analyticsにオプトインする場合は、コントローラーコントローラーの用語を受け入れるチェックボックスをクリックします。
+1. プロジェクト名を入力し、Firebaseデータ用にGoogle Analyticsにオプトインする場合は、コントローラーコントローラーの条件に同意するチェックボックスをクリックします。
 
-1. 「 **[!UICONTROL プロジェクトを作成」]** をクリックし、プロジェクトが作成されるまで待ちます。
+1. Click Create project and wait for the project to be created.****
 
-1. 作成したプロジェクトをクリックし、作成したプロジェクトの **[!UICONTROL プロジェクト概要]** ページを表示します。Androidアイコンを使用してボタンをクリックすると、Androidアプリがプロジェクトに追加されます。
+1. Click on the created project and the Project Overview page for the created project should be shown. **** Click the button with the Android icon to add an Android app to the project.
 
-1. 必要に応じて、アプリパッケージ名、アプリケーションのニックネームおよび署名証明書を入力します。
+1. Enter the app package name, app nickname, and signing certificate if needed.
 
-1. セットアップウィザードで推奨される追加手順に従います。Firebaseサーバーとの通信をテストしてFirebaseセットアップを確認したら **[!UICONTROL 、プロジェクト概要]** ページに戻ります。
+1. Follow the additional steps suggested by the setup wizard. After verifying the Firebase setup by testing communication with the Firebase servers, return to the Project Overview page.****
 
-1. **[!UICONTROL プロジェクトの概要]** ボタンの右にある歯車アイコンをクリックし、 **[!UICONTROL 「プロジェクト設定]**」をクリックします。
+1. Click the gear icon to the right of the Project Overview button and click Project Settings.********
 
-1. **[!UICONTROL "Cloud Messaging"]** タブをクリックします。
+1. 「 **[!UICONTROL Cloud Messaging]** 」タブをクリックします。
 
-1. **[!UICONTROL レガシーサーバーキー]** および **[!UICONTROL Sender ID]** をコピーして、後で使用します。
+1. Copy the **[!UICONTROL Legacy server key]** and **[!UICONTROL Sender ID]** for later use.
 
    以下に例を示します。
 
@@ -53,19 +53,19 @@ Apple Push Notification Service（APNS）またはFirebase Cloud Messaging（FCM
    - Sender ID = 835015092250
    ```
 
-### アプリケーションでFCMが有効になっている場合
+### アプリでFCMが有効になっている場合
 
-このシナリオでFCMを使用するようにAndroidアプリを設定するには:
+To configure your Android app to use FCM in this scenario:
 
-1. [https://firebase.google.com/にアクセス](https://firebase.google.com/) し、Googleデベロッパー資格情報を使用してログインします。
+1. Go to [https://firebase.google.com/](https://firebase.google.com/) and log in with your Google Dev credentials.
 
-1. 「開始」をクリック ****&#x200B;します。これにより、プロジェクトのインデックスページが開きます。AndroidアプリにリンクされているFirebase有効プロジェクトを見つけて、プロジェクトカードをクリックします。
+1. 「はじ **[!UICONTROL めに]**」をクリック This will open the project index page. Find the Firebase enabled project which is linked to your Android app and click the project card.
 
-1. プロジェクトの **[!UICONTROL プロジェクト概要]** が読み込まれます。**[!UICONTROL プロジェクトの概要]** ボタンの右にある歯車アイコンをクリックし、 **[!UICONTROL 「プロジェクト設定]**」をクリックします。
+1. 次に、プ **[!UICONTROL ロジェクトのプロジェクト概要]** (Project Overview)を読み込みます。 「プロジェクトの概要」ボタンの右にある歯車アイコンをク **[!UICONTROL リックし、]** 「プロジェクト設定」を **[!UICONTROL クリックします]**。
 
-1. **[!UICONTROL "Cloud Messaging"]** タブをクリックします。
+1. 「 **[!UICONTROL Cloud Messaging]** 」タブをクリックします。
 
-1. **[!UICONTROL レガシーサーバーキー]** および **[!UICONTROL Sender ID]** をコピーして、後で使用します。
+1. Copy the **[!UICONTROL Legacy server key]** and **[!UICONTROL Sender ID]** for later use.
 
    以下に例を示します。
 
@@ -84,9 +84,9 @@ Apple Push Notification Service（APNS）またはFirebase Cloud Messaging（FCM
 iOS アプリで APNS を使用するように設定するには：
 
 1. [https://developer.apple.com/account](https://developer.apple.com/account) に移動して、[Apple Developer アカウント](https://developer.apple.com/account)にログインします。
-1. **[!UICONTROL "iOSアプリ]**»で、??«識別子??****
-1. プッシュ用にアプリIDを設定している場合は、手順11に進みます。
-1. **[!UICONTROL "+]** 」ボタンを押して、新しいアプリIDを作成します。
+1. Under **[!UICONTROL iOS Apps]**, select **[!UICONTROL Identifiers]**.
+1. プッシュ用にアプリIDが設定されている場合は、手順11に進みます。
+1. Press the **[!UICONTROL +]** button to create a new App ID.
 1. 「App ID Description」を入力します。
 1. 「App ID Suffix」を入力します。
 
@@ -102,25 +102,25 @@ iOS アプリで APNS を使用するように設定するには：
 1. 既にプッシュ証明書を持っている場合は、手順 15 にスキップします。
 1. 下の「**[!UICONTROL プッシュ通知]**」までスクロールし、適切な「**[!UICONTROL 証明書を作成...]**」ボタンをクリックします。
 
-   クリックするボタンは、開発版または本番環境用の証明書を作成しているかどうかによって異なります。
-1. AppleのWebサイトでCSRを作成し、CSRをアップロードして証明書を生成する手順について説明します。
+   クリックするボタンは、開発用の証明書を作成しているか実稼働用の証明書を作成しているかによって異なります。
+1. AppleのWebサイトでCSRを作成し、CSRをアップロードして、証明書を生成する手順に従います。
 1. 下の「**[!UICONTROL プッシュ通知]**」セクションまでスクロールし、先ほど作成した SSL 証明書をダウンロードします。
 1. ダウンロードした証明書をダブルクリックして、キーチェーンに追加します。
 
-### SSL証明書および秘密鍵
+### SSL証明書と秘密鍵
 
-SSL証明書および秘密鍵（APNS）を取得するには:
+SSL証明書と秘密鍵(APNS)を取得するには：
 
 1. **[!UICONTROL キーチェーンアクセス]**&#x200B;を開きます。
-1. **[!UICONTROL 「マイ証明書]** 」をクリックし、アプリケーションおよび環境の適切 **[!UICONTROL なiOSプッシュサービス証明書]** を見つけます。
+1. Click **[!UICONTROL My Certificates]** and find the appropriate **[!UICONTROL iOS Push Services Certificate]** for your app and environment.
 
    バンドル ID を照合し、開発用か実稼動用かを確認することで、適切な証明書を見つけることができます。
 
 1. 証明書を展開し、秘密鍵が含まれていることを確認します。
 1. Right-click the private key and select **[!UICONTROL Export "*`<name of key>`*]**.
-1. ダイアログボックスに必要な情報を入力し、新しい `.p12` ファイルを保存します。
+1. ダイアログボックスに必要な情報を入力し、新しいファイルを保存 `.p12` します。
 
    パスワードを入力する必要はありません。
 
-1. **[!UICONTROL 「秘密鍵]**」にファイルを `.p12` 入力します。
+1. In the **[!UICONTROL Private Key]**, type the `.p12` file.
 
