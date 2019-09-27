@@ -2,10 +2,10 @@
 description: Experience Cloud ソリューション用 Universal Windows Platform SDK 4.x を使用すると、ネイティブ Windows 10 アプリを測定したり、アプリ内からターゲットコンテンツを配信したり、Audience Manager でオーディエンスデータを活用および収集できます。
 seo-description: Experience Cloud ソリューション用 Universal Windows Platform SDK 4.x を使用すると、ネイティブ Windows 10 アプリを測定したり、アプリ内からターゲットコンテンツを配信したり、Audience Manager でオーディエンスデータを活用および収集できます。
 seo-title: Experience Cloud ソリューション用 Universal Windows Platform SDK 4.x
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: Experience Cloud ソリューション用 Universal Windows Platform SDK 4.x
 topic: 開発者と導入
-uuid: 23a5bc0a-54f0-42a7- af1e- c8cbb509dfce
+uuid: 23a5bc0a-54f0-42a7-af1e-c8cbb509dfce
 translation-type: tm+mt
 source-git-commit: 9e796f590cf7717592ff3f41fa61829599264a4f
 
