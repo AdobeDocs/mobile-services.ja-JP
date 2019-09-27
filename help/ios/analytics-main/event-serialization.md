@@ -2,7 +2,7 @@
 description: イベントのシリアル化は処理ルールでサポートされていません。Mobile SDK では、コンテキストデータパラメーターに特殊な構文を使用して、シリアル化されたイベントをサーバー呼び出しで直接設定する必要があります。
 seo-description: イベントのシリアル化は処理ルールでサポートされていません。Mobile SDK では、コンテキストデータパラメーターに特殊な構文を使用して、シリアル化されたイベントをサーバー呼び出しで直接設定する必要があります。
 seo-title: イベントのシリアル化
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: イベントのシリアル化
 topic: 開発者と導入
 uuid: 19a27df4-0998-403d-800c-26ff61149208
