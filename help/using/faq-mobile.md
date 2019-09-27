@@ -3,10 +3,10 @@ description: Adobe Mobile Services のよくある質問と回答、および一
 keywords: モバイル
 seo-description: Adobe Mobile Services のよくある質問と回答、および一般的な機能説明です。
 seo-title: よくある質問
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: よくある質問
 topic: 指標
-uuid: 62a9241c-2ada-483a- a594- b023916cb0b6
+uuid: 62a9241c-2ada-483a-a594-b023916cb0b6
 translation-type: tm+mt
 source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
@@ -29,24 +29,24 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
 ### SDK はどこからダウンロードできますか？
 
-個々のモバイルプラットフォームのSDKは、「アプリ設定 [を管理」](/help/using/c-manage-app-settings/c-manage-app-settings.md) セクションに移動してダウンロードできます。
+個々のモバイルプラットフォーム向けのSDKは、「アプリ設定」セクションにアクセスしてダ [ウンロードすることができます](/help/using/c-manage-app-settings/c-manage-app-settings.md) 。
 
 ### SDK の設定方法を教えてください。
 
-新しいアプリレポートスイートを作成したら、「アプリ設定を管理」に移動し、アプリの情報ページで必要なすべてのオプションを設定します。設定を保存したら、アプリ設定ページ下部から必要な SDK をダウンロードします。The SDK will come pre-configured with the options you have saved and can be found in the `ADBMobileConfig.json` file in the SDK package. If you change any SDK settings on the Manage App Settings page, make sure you re-download the SDK files or update your `ADBMobileConfig.json` file with the necessary changes.
+After you create a new app report suite, navigate to Manage App Settings and configure all of the required options on the app information page. 設定を保存したら、アプリ設定ページ下部から必要な SDK をダウンロードします。The SDK will come pre-configured with the options you have saved and can be found in the `ADBMobileConfig.json` file in the SDK package. If you change any SDK settings on the Manage App Settings page, make sure you re-download the SDK files or update your `ADBMobileConfig.json` file with the necessary changes.
 
 ### Adobe Mobile SDK は、iOS の IPv6 をサポートしますか？
 
-Adobe Mobile SDK は、標準的な iOS および Android ネットワークスタックを使用します。iOSの場合、SDKはIPv6に完全に準拠しているNSURLSession（iOSバージョン7以降）およびNSURLConnection（iOSバージョン7以降）を使用します。独自のネットワークスタックを構築または使用した開発者は、その他の緩和の考慮事項があるかどうかを確認できます。Appleからの追加情報を次に示します。
+Adobe Mobile SDK は、標準的な iOS および Android ネットワークスタックを使用します。For iOS, the SDK uses NSURLSession (iOS versions 7+) and NSURLConnection (iOS versions 7 and later) which are fully compliant with IPv6. 独自のネットワークスタックを構築または使用した開発者は、その他の以下の考慮事項があるかどうかを確認する必要があります。 Appleの追加情報を次に示します。
 
-*NSURLSessionやCFNetworkフレームワークなどの高レベルのネットワーキングAPIを使用してクライアントサイドのアプリケーションを記述し、名前で接続する場合、IPv6アドレスを使用するためにアプリケーションを変更する必要はありません。* 詳しくは、 [IPv6DNS64/NAT64ネットワークをサポート](https://developer.apple.com/library/content/documentation/NetworkingInternetWeb/Conceptual/NetworkingOverview/UnderstandingandPreparingfortheIPv6Transition/UnderstandingandPreparingfortheIPv6Transition.html#__/apple_ref/doc/uid/TP40010220-CH213-SW1)しています。
+*NSURLSessionやCFNetworkフレームワークなどの高度なネットワークAPIを使用してクライアント側アプリを作成し、名前で接続する場合は、アプリがIPv6アドレスを使用できるように、アプリを変更する必要はありません。* 詳細については、「IPv6 DNS64/NAT64 [ネットワークのサポート」を参照してください](https://developer.apple.com/library/content/documentation/NetworkingInternetWeb/Conceptual/NetworkingOverview/UnderstandingandPreparingfortheIPv6Transition/UnderstandingandPreparingfortheIPv6Transition.html#__/apple_ref/doc/uid/TP40010220-CH213-SW1)。
 
 
 ## Adobe Analytics {#section_78EC9D83791F477AAED678720CEBA9F6}
 
 ### ライフサイクル指標とは何ですか？
 
-ライフサイクル指標は、SDK が最初にアプリに実装される際に自動的に収集される、「そのまま使用できる」指標です。詳しくは [、ライフサイクル指標（Android）](/help/android/metrics.md) および [ライフサイクル指標（iOS）](/help/ios/metrics.md)を参照してください。
+ライフサイクル指標は、SDK が最初にアプリに実装される際に自動的に収集される、「そのまま使用できる」指標です。詳しくは、ライフサイクル指標(Android) [およびライフサイクル指標](/help/android/metrics.md) (iOS) [を参照してください](/help/ios/metrics.md)。
 
 ### 処理ルールをトラブルシューティングする方法を教えてください。
 
@@ -54,7 +54,7 @@ Adobe Mobile SDK は、標準的な iOS および Android ネットワークス�
 
 ### 分析データを複数のレポートスイートに送信できますか？
 
-はい。SDK は、複数の Adobe Analytics レポートスイートにデータを送信する機能を提供します。1 つのイメージリクエストを使用して複数のレポートスイートにデータを取り込むには、 ファイルの「**[!UICONTROL analytics]」セクションにある「****rsids[!UICONTROL 」フィールドに複数のレポートスイート ID を設定します（コンマ区切りで間にスペースを挟まない）。]**`ADBMobileConfig.json`詳しくは [、ADBMobile JSON Config](/help/ios/configuration/json-config/json-config.md)を参照してください。
+はい。SDK は、複数の Adobe Analytics レポートスイートにデータを送信する機能を提供します。1 つのイメージリクエストを使用して複数のレポートスイートにデータを取り込むには、 ファイルの「**[!UICONTROL analytics]」セクションにある「****rsids[!UICONTROL 」フィールドに複数のレポートスイート ID を設定します（コンマ区切りで間にスペースを挟まない）。]**`ADBMobileConfig.json`詳しくは、ADBMobile JSON Configを参 [照してください](/help/ios/configuration/json-config/json-config.md)。
 
 ### Mobile の訪問者数は起動回数とどのように異なりますか？
 
@@ -68,7 +68,7 @@ Adobe Mobile SDK は、標準的な iOS および Android ネットワークス�
 
 ### プッシュ通知のカスタムペイロードをサポートしますか？
 
-はい、JSON でコード化できるカスタムプッシュペイロードを提供しています。Android および iOS ペイロードは、それぞれ 4 KB および 2 KB の制限があります。これらのペイロードは、プッシュまたはローカル通知を通じてアプリに送信されます。詳しくは [、エクスペリエンス:プッシュメッセージ](/help/using/in-app-messaging/t-create-push-message/c-experience-push-message.md)を参照してください。
+はい、JSON でコード化できるカスタムプッシュペイロードを提供しています。Android および iOS ペイロードは、それぞれ 4 KB および 2 KB の制限があります。これらのペイロードは、プッシュまたはローカル通知を通じてアプリに送信されます。詳しくは、エクスペリエンスを参照し [てください。プッシュメッセージ](/help/using/in-app-messaging/t-create-push-message/c-experience-push-message.md)。
 
 ### アプリ内メッセージにはサイズ制限はありますか？
 
@@ -84,13 +84,13 @@ Adobe Mobile Services で作成された、公開されたアクティブなア�
 
 プッシュメッセージは、以前から存在する Adobe Analytics セグメントまたは既に収集された Analytics 履歴データを基に作成されたカスタムセグメントを使用して送信されます。詳しくは、 [エクスペリエンス：プッシュメッセージ](/help/using/in-app-messaging/t-create-push-message/c-experience-push-message.md).
 
-### アプリ内、プッシュ、またはマーケティングリンク名に入力したのはなぜですか。
+### 入力したアプリ内、プッシュ、またはマーケティングリンクの名前でエラーが発生するのはなぜですか。
 
-同じ親レポートスイートまたは VRS を使用する複数のアプリで、同じアプリ内メッセージ、プッシュメッセージまたはマーケティングリンク名を使用することはできません。この問題を解決するには、アプリ内メッセージ、プッシュメッセージまたはマーケティングリンクに別の名前を入力してください。
+同じ親レポートスイートまたは VRS を使用する複数のアプリで、同じアプリ内メッセージ、プッシュメッセージまたはマーケティングリンク名を使用することはできません。この問題を解決するには、アプリ内メッセージ、プッシュメッセージまたはマーケティングリンクに別の名前を入力します。
 
-## ロケーション {#section_01208FE3B7764E0DADDCB9AD9E1FCD87}
+## 場所 {#section_01208FE3B7764E0DADDCB9AD9E1FCD87}
 
-### 持つことのできる目標（POI）の数に制限はありますか?
+### 利息(POI)の上限はありますか。
 
 特別な制限はありませんが、理想的なパフォーマンスおよびユーザーのデバイスのメモリ制限のために、POI を作成または更新するのは、最大で 5,000 までにすることをお勧めします。
 
@@ -102,4 +102,4 @@ Adobe Mobile Services で作成された、公開されたアクティブなア�
 
 ### 新しいアプリユーザーを獲得しトラッキングするためのリンクを設定するにはどうしたらよいですか？
 
-Apple App StoreおよびGoogle Playからアプリをダウンロードするためのマーケティングリンクを作成できます。これらのリンクを使用すると、単なるダウンロード回数に加えて、このリンク経由でアプリをダウンロードした後のユーザー行動（ライフサイクル系指標や成功イベント）を長期で追えるようになります。詳しくは、 [マーケティングリンクビルダー](/help/using/acquisition-main/c-marketing-links-builder/c-marketing-links-builder.md).
+You can create Marketing Links that route users to download applications from the Apple App Store and Google Play. これらのリンクを使用すると、単なるダウンロード回数に加えて、このリンク経由でアプリをダウンロードした後のユーザー行動（ライフサイクル系指標や成功イベント）を長期で追えるようになります。詳しくは、 [マーケティングリンクビルダー](/help/using/acquisition-main/c-marketing-links-builder/c-marketing-links-builder.md).
