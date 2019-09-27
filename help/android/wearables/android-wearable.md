@@ -1,11 +1,11 @@
 ---
 description: Android SDK バージョン 4.5 から新しい Android 拡張機能が追加され、Android ウェアラブルアプリからデータを収集できるようになりました。
 seo-description: Android SDK バージョン 4.5 から新しい Android 拡張機能が追加され、Android ウェアラブルアプリからデータを収集できるようになりました。
-seo-title: Androidウェアラブルはじめに
-solution: Marketing Cloud、Analytics
-title: Androidウェアラブルはじめに
+seo-title: Android Wearablesはじめに
+solution: Marketing Cloud,Analytics
+title: Android Wearables  Getting Started
 topic: 開発者と導入
-uuid: bfe5d41e- b17c-4634-80ac-7a38671ecb81
+uuid: bfe5d41e-b17c-4634-80ac-7a38671ecb81
 translation-type: tm+mt
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
@@ -18,7 +18,7 @@ Android SDK バージョン 4.5 から新しい Android 拡張機能が追加さ
 
 ## Configuring the SDK for a handheld app (Android Studio) {#section_262237484EC44C58953891B105F0D000}
 
-SDKのプロジェクトへの読み込みについて詳しくは [、コアの実装とライフサイクル](/help/android/getting-started/dev-qs.md)を参照してください。
+For more information about importing the SDK into your project, see Core Implementation and Lifecycle.[](/help/android/getting-started/dev-qs.md)
 
 1. `ADBMobileConfig.json` ファイルをプロジェクトの assets フォルダーに追加します。
 1. `adobeMobileLibrary-*.jar` ファイルを libs フォルダーに追加するか、このファイルをプロジェクトで参照されるように設定します。
@@ -40,7 +40,7 @@ SDKのプロジェクトへの読み込みについて詳しくは [、コアの
    }
    ```
 
-1. `AndroidManifest.xml` ファイルに次のコードを追加します。
+1. Add the following code to the `AndroidManifest.xml` file:
 
    ```java
        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> 
@@ -88,7 +88,7 @@ SDKのプロジェクトへの読み込みについて詳しくは [、コアの
    }
    ```
 
-1. ファイル `WearListenerService` に追加 `AndroidManifest.xml` します。
+1. Add  to the  file:`WearListenerService``AndroidManifest.xml`
 
    ```java
    If you are using Google Play Services  < 8.2 
@@ -175,7 +175,7 @@ SDKのプロジェクトへの読み込みについて詳しくは [、コアの
    }
    ```
 
-1. ファイル `WearListenerService` に追加 `AndroidManifest.xml` します。
+1. Add  to the  file:`WearListenerService``AndroidManifest.xml`
 
    ```java
    If you are using Google Play Services  < 8.2 
