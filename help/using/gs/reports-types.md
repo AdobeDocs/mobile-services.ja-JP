@@ -3,10 +3,10 @@ description: レポートのカスタマイズは柔軟性が高いので、求�
 keywords: モバイル
 seo-description: レポートのカスタマイズは柔軟性が高いので、求めるデータを得るにはどのレポートタイプが最適なのか迷う場合があるかもしれません。
 seo-title: レポートタイプ
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: レポートタイプ
 topic: レポート, 指標
-uuid: 8747b11e-31b1-47bc- ad55- db5ab4ef7078
+uuid: 8747b11e-31b1-47bc-ad55-db5ab4ef7078
 translation-type: tm+mt
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
@@ -21,11 +21,11 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 * 指標
 
-   指標は、データを測定するときに使用されます。指標は、計数や加算が可能な数値であり、アプリ内で特定のアクションがおこなわれる頻度を確認するために使用されます。一般的な指標には、インストール数、起動回数、売上高、ライフタイム値、ログイン回数などがあります。例えば、アプリが起動されるたびに、_ launch_ valueは1ずつ増加します。
+   指標は、データを測定するときに使用されます。指標は、計数や加算が可能な数値であり、アプリ内で特定のアクションがおこなわれる頻度を確認するために使用されます。一般的な指標には、インストール数、起動回数、売上高、ライフタイム値、ログイン回数などがあります。例えば、アプリが起動されるたびに、 _launches_valueが1ずつ増えます。
 
 * ディメンション
 
-   ディメンションは、データの記述に使用されます。ディメンションは、文字列、または文字列のように動作する数値（郵便番号など）を使用して表され、データの整理やセグメント化に使用されます。一般的なディメンションの例には、OS バージョン、キャンペーン名、製品名、携帯電話会社などがあります。各ディメンションは、そのディメンションに関連付けられた多くの特定の値を持ちます。For example, the OS version dimension has values such as _iOS 7_ and _Android 4.1.2_.
+   ディメンションは、データの記述に使用されます。ディメンションは、文字列、または文字列のように機能する数値（郵便番号など）で表され、データの整理とセグメント化に使用されます。 一般的なディメンションの例には、OS バージョン、キャンペーン名、製品名、携帯電話会社などがあります。各ディメンションは、そのディメンションに関連付けられた多くの特定の値を持ちます。For example, the OS version dimension has values such as _iOS 7_ and _Android 4.1.2_.
 
 次に、Mobile UI で生成できるレポートのタイプを示します。
 
@@ -69,7 +69,7 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 1. in Manage App Settings, click **[!UICONTROL Usage]**.
 
-1. **[!UICONTROL 技術]** / **[!UICONTROL 技術分類]**&#x200B;をクリックします。
+1. Click **[!UICONTROL Technology]** &gt; **[!UICONTROL Technology Breakdown]**.
 1. In the title bar of the report, click **[!UICONTROL Customize]**, and click the information icon.
 
 ![](assets/report_technology.png)
