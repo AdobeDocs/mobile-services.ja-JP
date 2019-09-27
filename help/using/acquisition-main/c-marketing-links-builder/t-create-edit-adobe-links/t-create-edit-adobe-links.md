@@ -1,12 +1,12 @@
 ---
 description: マーケティングリンクを作成または編集して、モバイルアプリやWebサイトへのディープリンクを提供できます。
 keywords: モバイル
-seo-description: マーケティングリンクを作成または編集して、モバイルアプリやWebサイトへのディープリンクを提供できます。
+seo-description: You can create or edit Marketing Links to provide deep linking into your mobile app or your website.
 seo-title: マーケティングリンクの作成または編集
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: マーケティングリンクの作成または編集
 topic: 指標
-uuid: 305a8265-38de-4d19-8c79- b3912f5aae7c
+uuid: 305a8265-38de-4d19-8c79-b3912f5aae7c
 translation-type: tm+mt
 source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
@@ -15,7 +15,7 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
 # Create or edit marketing links{#create-or-edit-marketing-links}
 
-マーケティングリンクを作成または編集して、モバイルアプリやWebサイトへのディープリンクを提供できます。詳しくは [、AppleユニバーサルリンクおよびAndroidアプリリンク](/help/using/c-manage-app-settings/c-mob-confg-app/c-universal-app-links.md)を参照してください。
+マーケティングリンクを作成または編集して、モバイルアプリやWebサイトへのディープリンクを提供できます。 For more information, see Apple Universal Links and Android App Links.[](/help/using/c-manage-app-settings/c-mob-confg-app/c-universal-app-links.md)
 
 1. In your app, in the left navigation pane, expand **[!UICONTROL Acquisition]** and click **[!UICONTROL Marketing Link Builder]**.
 1. 次のどちらかのタスクを実行します。
@@ -31,43 +31,47 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
    * **[!UICONTROL 一意のトラッキングコード]**:
 
-      **（必須**）目的のトラッキングコードを指定するか、またはクリック![して、新しい](assets/icon_generate.png) トラッキングコードを作成します。トラッキングコードの使用を説明するレポートを表示できます。
+      (**Required**) Specify the desired tracking code or click (![generate icon](assets/icon_generate.png) to create a new tracking code. トラッキングコードの使用を説明するレポートを表示できます。
 
    * **[!UICONTROL トラッキングコンテキストデータを追加]**:
 
-      **（オプション**） **[!UICONTROL "+]** 」アイコンをクリックし、コンテキストデータを使用してキャンペーンを追跡するための関連情報を入力します。**[!UICONTROL カスタムコンテキストデータ]ドロップダウンリストで、プリセットタグまたはいずれかの独自のタグを選択します。**&#x200B;コンテキストデータは、マーケティングリンクがデプロイされたときにレポートに使用されます。
+      (**Optional**) Click the **[!UICONTROL +]** icon and type the relevant information to track your campaign using context data. **[!UICONTROL カスタムコンテキストデータ]ドロップダウンリストで、プリセットタグまたはいずれかの独自のタグを選択します。**&#x200B;コンテキストデータは、マーケティングリンクが導入されたときのレポートに使用されます。
 
       次のプリセットタグを使用できます。
 
-      * **カスタムコンテキストデータ**&#x200B;キーと値を指定します。カスタムコンテキストデータを追加する場合、処理ルールを作成する必要があります。詳しくは [、処理ルールの概要](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/processing-rules/processing-rules.html)を参照してください。
+      * **Custom Context Data**
+Specify the key and value. カスタムコンテキストデータを追加する場合、処理ルールを作成する必要があります。For more information, see Processing rules overview.[](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/processing-rules/processing-rules.html)
 
-      * **ソース**「ニュースレター」や「ホームページ」など、オリジナルリファラーを指定します。
+      * **ソース**「ニュースレター」や「ホームページ」など、元のリファラーを指定します。
 
-      * **Medium**「バナー」や「電子メール」など、マーケティングメディアを指定します。
+      * **Medium**
+Specify the marketing medium, such as "banner" or "email."
 
-      * **コンテンツ**&#x200B;リンクを持つ広告の名前またはIDを指定します。
+      * **Content**
+Specify the name or ID of the ad with the link.
 
-      * **キーワード**&#x200B;広告の有料キーワードまたはその他の検索用語を指定します。
+      * **Term
+Specify paid terms or other search terms for the ad.**
 1. 「**[!UICONTROL 保存]**」をクリックします。
 1. 次のフィールドに情報を入力します。
 
-   * **（必須）****[!UICONTROL フォールバックURL]**&#x200B;で、宛先が一致しない場合にユーザーが転送するURLを指定します（例えば、ユーザーがデスクトップにいる場合や、ターゲットルールに一致しない別のプラットフォームにいる場合）。
-   * **[!UICONTROL 「マーケティングリンクオプション]**»で、??«インタースティシャル??»または??«ユニバーサル&#x200B;********
+   * **（必須）** 「フォールバックURL ****」で、リンク先が一致しない場合にユーザーが送信されるURLを指定します（例えば、リンク先ルールに一致しないデスクトップまたは別のプラットフォーム上にいる場合）。
+   * In **[!UICONTROL Marketing Link Options]**, select **[!UICONTROL Interstitials]** or **[!UICONTROL Universal and App Links]**.
 
-      詳しくは [、インタースティシャル](/help/using/acquisition-main/c-marketing-links-builder/t-create-edit-adobe-links/t-interstitials.md) または [AppleユニバーサルリンクとAndroidアプリリンク](/help/using/c-manage-app-settings/c-mob-confg-app/c-universal-app-links.md)を参照してください。
+      For more information, see Interstitials or Apple Universal Links and Android App Links.[](/help/using/acquisition-main/c-marketing-links-builder/t-create-edit-adobe-links/t-interstitials.md)[](/help/using/c-manage-app-settings/c-mob-confg-app/c-universal-app-links.md)
 
-   * **（オプション）****[!UICONTROL 「ユニバーサル」または「アプリリンク]** 」が選択されている **[!UICONTROL 場合、]**&#x200B;ユーザーは、任意のクエリパラメーターを使用してドメインの後にURLパスを定義できます。詳しくは [、AppleユニバーサルリンクおよびAndroidアプリリンク](/help/using/c-manage-app-settings/c-mob-confg-app/c-universal-app-links.md)を参照してください。
+   * **（条件付き）** 「ユニバーサ **[!UICONTROL ルリンク」または「アプリリンク]******」が選択されている場合、「カスタムパス」で、ユーザーはクエリパラメーターを使用してドメインの後にURLパスを定義できます。 For more information, see Apple Universal Links and Android App Links.[](/help/using/c-manage-app-settings/c-mob-confg-app/c-universal-app-links.md)
 
 1. Click **[!UICONTROL Edit Deep Link Interstitial]** and configure the link.
 
-   **（オプション**）複数の宛先がある場合、モバイルアプリがインストールされているかどうかに応じて、ユーザーをルーティングできます。アプリがインストールされている場合、インタースティシャルランディングページが表示されます。
+   (**Optional**) When there are multiple destinations, users can be routed depending on whether they have a mobile app installed. アプリがインストールされている場合、インタースティシャルランディングページが表示されます。
 
    詳しくは、 [インタースティシャル](/help/using/acquisition-main/c-marketing-links-builder/t-create-edit-adobe-links/t-interstitials.md).
 
-1. **[!UICONTROL 「保存]** 」をクリックし、「 **[!UICONTROL 次へ]**」をクリックします。
+1. Click **[!UICONTROL Save]** and click **[!UICONTROL Next]**.
 1. リンク先ページで、リンクを設定します。
 
-   1. **[!UICONTROL デシジョンアイコン]** （![デシジョンアイコン](assets/icon_decision.png)）をクリックし、次のいずれかの決定場所を選択します。
+   1. Click the **[!UICONTROL Decision]** icon (![decision icon](assets/icon_decision.png)) and select one of the following decision locations:
 
       * **[!UICONTROL 決定を追加]**
       * **[!UICONTROL パスを追加]**
@@ -80,7 +84,7 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
       * **[!UICONTROL デバイスタイプ]**
 
          デバイスタイプには、デスクトップ、電子書籍リーダー、ゲームコンソール、携帯電話、セットトップボックスなどのデバイスが含まれます。
-   1. **[!UICONTROL 目的]** のアイコン（ ![正方形アイコン](assets/icon_square.png) ）をクリックし、次のいずれかの宛先タイプを選択します。
+   1. Click the **[!UICONTROL Destination]** icon ( ![square icon](assets/icon_square.png) ) and select one of the following destination types:
 
       * **[!UICONTROL App Store]**
       * **[!UICONTROL Web リンク]**
@@ -90,9 +94,9 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
       >
       >When you use the **[!UICONTROL Web Link]** destination type with a link to the app store, acquisition is not tracked. 獲得を計測するには、「**[!UICONTROL アプリストア]」をリンク先のタイプとして使用します。**
 
-      詳しくは、新しいリンク先の [作成](/help/using/acquisition-main/c-manage-link-destinations/t-create-new-app-deep-link-destination.md)を参照してください。
+      詳しくは、「新しいリンク先 [を作成する」を参照してください](/help/using/acquisition-main/c-manage-link-destinations/t-create-new-app-deep-link-destination.md)。
 
 
 
 
-1. マーケティングリンクを保存するには、 ![「省略記号»をクリック?してから??«保存??](assets/icon_elipses.png)****
+1. マーケティングリンクを保存するには、「省略」 ![をクリックし](assets/icon_elipses.png) 、「保 **[!UICONTROL 存」をクリックします]**。
