@@ -3,7 +3,7 @@ description: 'null'
 keywords: Unity
 seo-description: 'null'
 seo-title: 列挙型
-solution: Marketing Cloud，開発者
+solution: Marketing Cloud,Developer
 title: 列挙型
 uuid: 7109cd0b-554f-4c4a-9acc-4b60812fb747
 translation-type: tm+mt
