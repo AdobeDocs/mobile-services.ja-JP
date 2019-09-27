@@ -3,7 +3,7 @@ description: Android SDK を使用して、サードパーティのディファ�
 seo-description: Android SDK を使用して、サードパーティのディファードディープリンクの追跡を実装します。
 seo-title: サードパーティのディファードディープリンクの追跡
 title: サードパーティのディファードディープリンクの追跡
-uuid: 4c798e47-7988-4a06- a191-6c4d05f6ee61
+uuid: 4c798e47-7988-4a06-a191-6c4d05f6ee61
 translation-type: tm+mt
 source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
 
@@ -32,7 +32,7 @@ Adobe Mobile SDK によって Facebook ディープリンクのサポートを�
 
 * ディープリンクの設定
 
-   詳しくは、 [ディープリンク設定](https://developers.facebook.com/docs/app-ads/deep-linking#os)を参照してください。
+   詳しくは、ディープリンクの設 [定を参照してください](https://developers.facebook.com/docs/app-ads/deep-linking#os)。
 
 If the application is set up correctly, the `trackAdobeDeepLink()` API should enable collecting the deep link information from the Facebook acquisition campaign and send it to Adobe Mobile Service. 最初の起動時にインストールヒットが Adobe Mobile Service に送信されなかった場合、この情報はライフサイクルヒットに追加されます。それ以外の場合は、アドビディープリンクヒットとして送信されます。
 
@@ -53,7 +53,7 @@ If the application is set up correctly, the `trackAdobeDeepLink()` API should en
    アプリに Facebook gradle 依存関係を追加するには、[Android SDK スタートガイド](https://developers.facebook.com/docs/android/getting-started)の手順を実行します。
 
 1. *Android Studio のセットアップ*&#x200B;節の手順を実行して、Facebook SDK を初期化します。
-1. Call `trackAdobeDeepLink()` from the main activity.
+1. メインアクティビティから `trackAdobeDeepLink()` を呼び出します。
 
    ```java
    @Override 
