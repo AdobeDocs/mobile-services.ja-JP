@@ -3,10 +3,10 @@ description: ポストバックを使用すると、SDK によって収集され
 keywords: android;library;mobile;sdk
 seo-description: ポストバックを使用すると、SDK によって収集されたデータをサードパーティのサーバーに送信できます。アプリ内メッセージを表示するために使用しているのと同じトリガーおよび特性を活用して、カスタマイズしたデータをサードパーティのサーバーに送信するように SDK を設定できます。
 seo-title: ポストバック
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: ポストバックの概要
 topic: 開発者と導入
-uuid: 8bfd4374-2767-421d-891d- e1e9a99b6977
+uuid: 8bfd4374-2767-421d-891d-e1e9a9a99b6977
 translation-type: tm+mt
 source-git-commit: f26dcd5cf9b19de49c9d034c854d9738c7843fb2
 
@@ -33,7 +33,7 @@ Template expansions are available in the `templateurl` and `templatebody` proper
 
 | トークン名 | トークンの説明 |
 |--- |--- |
-| {%sdkver%} | SDKバージョンを返します。 |
+| {%sdkver%} | SDKのバージョンを返します。 |
 | {%cachebust%} | 1 ～ 100000000 の間の乱数に解決されます。 |
 | {%adid%} | Android 用の広告主 ID を返します。`submitAdvertisingIdentifierTask` を使用した場合にのみ機能します。 |
 | {%pushid%} | プッシュ識別子トークンを返します。`setPushIdentifier` を使用した場合にのみ機能します。 |
