@@ -1,11 +1,11 @@
 ---
 description: Universal Windows Platform SDK を Adobe Analytics で使用する際に役立つ情報です。
 seo-description: Universal Windows Platform SDK を Adobe Analytics で使用する際に役立つ情報です。
-seo-title: Analyticsのメソッド
-solution: Marketing Cloud、Analytics
-title: Analyticsのメソッド
+seo-title: Analyticsメソッド
+solution: Marketing Cloud,Analytics
+title: Analyticsメソッド
 topic: 開発者と導入
-uuid: cc299bb5- ec61-49bf-869a- f3c3bc83359f
+uuid: cc299bb5-ec61-49bf-869a-f3c3bc83359f
 translation-type: tm+mt
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
@@ -24,13 +24,13 @@ Universal Windows Platform SDK を Adobe Analytics で使用する際に役立�
 >
 >When you consume `winmd` methods from winJS (JavaScript), all methods automatically have their first letter lowercased.
 
-* **trackState（winJS:trackState）**
+* **TrackState (winJS: trackState)**
 
    オプションのコンテキストデータでアプリ状態を追跡します。状態とは、アプリで使用可能なビューのことで、「home dashboard」、「app settings」、「cart」などがあります。これらの状態は Web サイト上のページによく似ており、`TrackState` コールはページビュー数を増分します。`state` が空の場合は、レポートに「app name app version (build)」と表示されます。レポートにこの値がある場合、各 `state` 呼び出しで `TrackState` を設定していることを確認してください。
 
    >[!TIP]
    >
-   >これはページビュー数が増える唯一のトラッキング呼び出しです。
+   >This is the only tracking call that increments page views.
 
    * このメソッドの構文を次に示します。
 
@@ -45,7 +45,7 @@ Universal Windows Platform SDK を Adobe Analytics で使用する際に役立�
       ADB.Analytics.trackState("loginScreen", null);
       ```
 
-* **trackAction（WinJS:trackAction）**
+* **TrackAction (winJS:trackAction)**
 
    アプリのアクションを追跡します。アクションとは、アプリ内で測定対象となる重要な操作のことで、「logons」、「banner taps」、「feed subscriptions」などの指標があります。
 
@@ -62,7 +62,7 @@ Universal Windows Platform SDK を Adobe Analytics で使用する際に役立�
       ADB.Analytics.trackAction("ButtonClick",null); 
       ```
 
-* **getTrackingIdentifierAsync（winJS:getTrackingIdentifierAsync）**
+* **GetTrackingIdentifierAsync (winJS: getTrackingIdentifierAsync)**
 
    Analytics 用に自動的に生成された訪問者 ID を返します。これは、初回起動時に生成され、それ以降、保存および使用されるアプリ固有の一意の訪問者 ID です。この ID は、アプリがアップグレードされても保持されますが、アンインストール時には削除されます。
 
@@ -81,7 +81,7 @@ Universal Windows Platform SDK を Adobe Analytics で使用する際に役立�
       });
       ```
 
-* **trackLocation（winJS:trackLocation）**
+* **TrackLocation (winJS:trackLocation)**
 
    現在の XY 座標を送信します。また、現在位置が `ADBMobileConfig.json` ファイルで定義された目標地点内にあるかどうかを判定します。現在の座標が定義した目標地点内にある場合、コンテキストデータ変数に代入され、`trackLocation` 呼び出しで送信されます。
 
@@ -98,7 +98,7 @@ Universal Windows Platform SDK を Adobe Analytics で使用する際に役立�
       ADB.Analytics.trackLocation(47.60621,-122.33207,null);
       ```
 
-* **trackLifetimeValueIncrement（winJS:trackLifetimeValueIncrement）**
+* **TrackLifetime &#x200B; valueIncrease (winJS:trackLifetime &#x200B; valueIncrease)**
 
    ユーザーのライフタイム値に `amount` を加算します。
 
@@ -115,7 +115,7 @@ Universal Windows Platform SDK を Adobe Analytics で使用する際に役立�
       ADB.Analytics.trackLifetimeValueIncrease(10,null);
       ```
 
-* **trackTimedActionStart（WinJS:TrackTimedActionStart）**
+* **TrackTimed&#x200B;ActionStart (winJS: trackTimed&#x200B;ActionStart)**
 
    `action` という名前の時間計測アクションを開始します。既に開始しているアクションでこのメソッドを呼び出すと、以前の時間計測アクションが上書きされます。
 
@@ -136,7 +136,7 @@ Universal Windows Platform SDK を Adobe Analytics で使用する際に役立�
       ADB.Analytics.trackTimedActionStart("cartToCheckout",null); 
       ```
 
-* **trackTimedActionUpdate（WinJS:TrackTimedActionUpdate）**
+* **TrackTimed &#x200B; ActionUpdate (winJS:trackTimed &#x200B; actionUpdate)**
 
    `contextData` を渡して、特定の `action` に関連付けられているコンテキストデータを更新します。渡された `data` は、特定のアクションの既存のデータに追加され、同じキーが既に `action` に定義されている場合は、データを上書きします。
 
@@ -159,9 +159,9 @@ Universal Windows Platform SDK を Adobe Analytics で使用する際に役立�
       ADB.Analytics.trackTimedActionUpdate("cartToCheckout",contextData);
       ```
 
-* **trackTimedActionExistsAsync（WinJS:TrackTimedActionExistsAsync）**
+* **TrackTimedActionExistsAsync (winJS:trackTimedActionExistsAsync)**
 
-   指定された時間計測アクションが存在する場合はtrue、存在しない場合はfalseを返します。
+   指定された時間指定アクションが存在する場合はtrueを返し、存在しない場合はfalseを返します。
 
    * このメソッドの構文を次に示します。
 
@@ -177,7 +177,7 @@ Universal Windows Platform SDK を Adobe Analytics で使用する際に役立�
       });
       ```
 
-* **trackTimedActionEnd（WinJS:TrackTimedActionEnd）**
+* **TrackTimed &#x200B; ActionEnd (winJS:trackTimed &#x200B; actionEnd)**
 
    時間計測アクションを終了します。
 
@@ -194,7 +194,7 @@ Universal Windows Platform SDK を Adobe Analytics で使用する際に役立�
       ADB.Analytics.trackTimedActionEnd("cartToCheckout"); 
       ```
 
-* **clearTrackingQueue（winJS:ClearTrackingQueue）**
+* **ClearTrackingQueue (winJS:clearTrackingQueue)**
 
    Analytics 追跡キューに格納されているすべてのヒットをクリアします。
 
@@ -210,7 +210,7 @@ Universal Windows Platform SDK を Adobe Analytics で使用する際に役立�
       ADBMobile.Analytics.clearTrackingQueue();
       ```
 
-* **getQueueSizeAsync（winJS:getQueueSizeAsync）**
+* **GetQueueSizeAsync (winJS:getQueueSizeAsync)**
 
    現在 Analytics キューに格納されているヒットの数を返します。
 
