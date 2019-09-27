@@ -3,7 +3,7 @@ description: ポストバックを使用すると、Adobe Mobile によって収
 seo-description: ポストバックを使用すると、Adobe Mobile によって収集されたデータを別のサードパーティサーバーに送信できます。アプリ内メッセージを表示するために使用しているのと同じトリガーおよび特性を活用して、カスタマイズしたデータをサードパーティのサーバーに送信するように Mobile Services を設定できます。
 seo-title: ポストバックの設定
 title: ポストバックの設定
-uuid: a026575c-057b-4868- b6c8-9514cbc32b4d
+uuid: a026575c-057b-4868-b6c8-9514cbc32b4d
 translation-type: tm+mt
 source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
 
@@ -16,7 +16,7 @@ source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
 
 >[!IMPORTANT]
 >
->ポストバックを使用するには、4.6SDK以降をインストールする必要があります。詳しくは、「[Android - ポストバック](/help/android/analytics-main/postbacks/postbacks.md)」または「[iOS - ポストバック](/help/ios/analytics-main/postback/postback.md)」を参照してください。
+>ポストバックを使用するには、4.6 SDK以降をインストールする必要があります。 詳しくは、「[Android - ポストバック](/help/android/analytics-main/postbacks/postbacks.md)」または「[iOS - ポストバック](/help/ios/analytics-main/postback/postback.md)」を参照してください。
 
 1. 目的のアプリの名前をクリックして、そのアプリ設定ページに移動し、ページ右上端の「**ポストバックを管理**」リンクをクリックします。
 1. Click **[!UICONTROL Create Postback]**.
@@ -24,7 +24,7 @@ source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
 
    * **[!UICONTROL ポストバックのタイプ]**
 
-      **[!UICONTROL 「カスタム]**」を選択します。将来的にはテンプレートが使用可能になります。
+      Choose **[!UICONTROL Custom]**. 将来的にはテンプレートが使用可能になります。
 
    * **[!UICONTROL 名前]**
 
@@ -32,15 +32,15 @@ source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
 
    * **[!UICONTROL URL]**
 
-      有効なエンドポイントURLを指定します（GETリクエストの必要なクエリパラメーターを含む）。この URL は、データ送信先（広告サーバーまたは独自のエンドポイント）から取得します。`https://my.server.com/?user=bob&amp;zip=90210&amp;c16=4.6.0-iOS&amp;c27=cln,132`例えば、
+      有効なエンドポイントURLを指定します（GET要求に必要な場合は、適切なクエリパラメーターを指定します）。 この URL は、データ送信先（広告サーバーまたは独自のエンドポイント）から取得します。For example `https://my.server.com/?user=bob&amp;zip=90210&amp;c16=4.6.0-iOS&amp;c27=cln,132`.
 
    * **[!UICONTROL コンテキスト変数]**
 
-      URL の一部を強調表示し、ドロップダウンリストから目的のコンテキスト変数を選択します。また、コンテキスト変数をURLに挿入して、URLにヒットの値を持つすべてのテンプレート変数を置き換えることもできます。
+      URL の一部を強調表示し、ドロップダウンリストから目的のコンテキスト変数を選択します。また、URLにコンテキスト変数を挿入すると、URLによってすべてのテンプレート変数がヒットの値に置き換えられます。
 
    * **[!UICONTROL POST 本文を追加]**
 
-      例えば POST リクエストに対してなど、追加の投稿本文のコンテンツがあれば指定します。投稿本文テキストを指定する場合は、投稿本文のコンテンツタイプを指定します。例：`application/json`。
+      例えば POST リクエストに対してなど、追加の投稿本文のコンテンツがあれば指定します。If you specify post body text, specify the content type for the post body. 例：`application/json`。
 
    * **[!UICONTROL タイムアウト (秒単位)]**
 
