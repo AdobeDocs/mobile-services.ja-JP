@@ -2,10 +2,10 @@
 description: 'null'
 keywords: Unity
 seo-description: 'null'
-seo-title: プロジェクトの作成
+seo-title: プロジェクトの構築
 solution: Marketing Cloud，開発者
-title: プロジェクトの作成
-uuid: 5550a394-6f3f-4b87- b840-89621d8a0c1e
+title: プロジェクトの構築
+uuid: 5550a394-6f3f-4b87-b840-89621d8a0c1e
 translation-type: tm+mt
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
@@ -24,7 +24,8 @@ iOS 用にビルドする場合、Xcode プロジェクトが作成されます�
 
 1. In the **[!UICONTROL Build Phases]** tab of your project, add a link to the following libraries:
 
-   * `SystemConfiguration.framework`（このライブラリは既にリンクされている可能性があります）。
+   * `SystemConfiguration.framework`
+(This library might be linked already.)
 
    * `libsqlite3.0.dylib`
 
@@ -48,7 +49,7 @@ Android 用にビルドする場合、`apk` ファイルの正しい場所に既
 <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 ```
 
-アプリ内メッセージを使用している場合は、次のアクティビティおよび受信者を追加します。
+アプリ内メッセージを使用している場合は、次のアクティビティと受信者を追加します。
 
 ```java
 <activity android:name="com.adobe.mobile.MessageFullScreenActivity"  
@@ -56,7 +57,7 @@ android:theme="@android:style/Theme.Translucent.NoTitleBar" />
 <receiver android:name="com.adobe.mobile.MessageNotificationHandler" /> 
 ```
 
-獲得を使用している場合は、次の受信者を追加します。
+獲得を使用する場合は、次の受信者を追加します。
 
 ```java
 <receiver android:name="com.your.package.name.GPBroadcastReceiver" android:exported="true"> 
