@@ -2,10 +2,10 @@
 description: この情報は、GDPR のデータ削除要求に対処する場合に役立ちます。
 seo-description: この情報は、GDPR のデータ削除要求に対処する場合に役立ちます。
 seo-title: ユーザーのオプトステータスの設定
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: ユーザーのオプトステータスの設定
 topic: 開発者と導入
-uuid: f8a3e6be-44dd-494e-9cda- dbbac86d6772
+uuid: f8a3e6be-44dd-494e-9cda-dbbac86d6772
 translation-type: tm+mt
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
@@ -22,11 +22,11 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 次の設定を使用することで、Analytics、Target および Audience Manager のアクティビティがデバイスで許可されるかどうかを制御できます。
 
-* `privacyDefault` （ [ADBMobile JSON Config](/help/android/configuration/json-config/json-config.md)）
+* `privacyDefault` ( [ADBMobile JSON Config](/help/android/configuration/json-config/json-config.md))。
 
    この設定では初期設定を制御します。初期設定は、コード内で変更されるまで保持されます。
 
-* `Config.setPrivacyStatus` メソッドです。
+* メソ `Config.setPrivacyStatus` ッド。
 
    このメソッドを使用しておこなったプライバシー設定の変更は、もう一度プライバシー設定を変更するか、アプリをアンインストールしてインストールし直すまで有効なままです。メソッドについて詳しくは、 [設定メソッド](/help/android/configuration/methods.md).
 
@@ -48,9 +48,9 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
    * Value in the JSON config file: `optedout`
    * 値 `setPrivacyStatus`: `MOBILE_PRIVACY_STATUS_OPT_OUT`
 
-* **不明**
+* **Unknown**
 
-   * **Analytics**:オフライン追跡 **が有効**&#x200B;になっている場合、プライバシーステータスがオプトイン（ヒットが送信される）またはオプトアウト（ヒットが破棄される）に変わるまで、ヒットは保存されます。
+   * **Analytics: If offline tracking enabled, hits are saved until the privacy status changes to opt-in (hits are sent) or opt-out (hits are discarded).******
 
       オフライン追跡が<b>有効になっていない</b>場合、プライバシーステータスがオプトインに変更されるまで、ヒットは破棄されます。
    * **Target**：mbox リクエストが送信されます。
