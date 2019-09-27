@@ -2,10 +2,10 @@
 description: 以下の表に、iOS SDK と Adobe Mobile Services が使用する様々なアプリ識別子を示します。
 seo-description: 以下の表に、iOS SDK と Adobe Mobile Services が使用する様々なアプリ識別子を示します。
 seo-title: アプリ ID
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: アプリ ID
 topic: 開発者と導入
-uuid: 24ebc716-23c7-4ee8-8256- b534210367e0
+uuid: 24ebc716-23c7-4ee8-8256-b534210367e0
 translation-type: tm+mt
 source-git-commit: 0e22d5e080b680ff6b23462f1bc12f27d99e6d42
 
