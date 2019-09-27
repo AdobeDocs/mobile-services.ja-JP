@@ -3,10 +3,10 @@ description: ビーコン追跡では、iBeacon と Bluetooth Low Energy を使�
 keywords: android;library;mobile;sdk
 seo-description: ビーコン追跡では、iBeacon と Bluetooth Low Energy を使用して、マイクロ位置を測定し、ターゲットにすることができます。
 seo-title: ビーコン追跡
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: ビーコン追跡
 topic: 開発者と導入
-uuid: 16c1d267-85f4-4a6a- a6d3- d6ffb0f80b29
+uuid: 16c1d267-85f4-4a6a-a6d3-d6ffb0f80b29
 translation-type: tm+mt
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
@@ -19,7 +19,7 @@ source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 `trackBeacon` が呼び出されると、次のビーコンデータが Analytics と Target に送信されます。
 
-* `a.beacon.uuid` - ビーコンのproximityID
+* `a.beacon.uuid`  — ビーコンのProximityUUID
 * `a.beacon.major` - ビーコンのメジャー番号（ストア番号など）
 * `a.beacon.minor` - ビーコンのマイナー番号（ストア内の一意の番号など）
 * `a.beacon.prox` - 0 ～ 3 の値でユーザーとビーコンの距離を表します。
@@ -33,11 +33,11 @@ source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 このビーコンデータは、モバイルソリューションの変数にキャプチャされます。
 
-## ビーコンビーコン {#section_FC3F213545944A468B1E6D5D5C8E2F1F}
+## Track beacons {#section_FC3F213545944A468B1E6D5D5C8E2F1F}
 
 1. ライブラリをプロジェクトに追加し、ライフサイクルを実装します。
 
-   詳しくは、コア実装および *ライフサイクル* で [、"SDKおよび設定ファイルのIntelliJ IDEAまたはEclipseプロジェクトへの追加」を参照](/help/android/getting-started/dev-qs.md)してください。
+   For more information, see Add the SDK and Config File to your IntelliJ IDEA or Eclipse Project in Core implementation and lifecycle.**[](/help/android/getting-started/dev-qs.md)
 
 1. ライブラリをインポートします。
 
