@@ -3,10 +3,10 @@ description: この情報は、Android ライブラリを実装し、ライフ�
 keywords: android;library;mobile;sdk
 seo-description: この情報は、Android ライブラリを実装し、ライフサイクル指標（起動、アップグレード、セッション、アクションを実行したユーザーなど）を収集する場合に役立ちます。
 seo-title: コア実装とライフサイクル
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: コア実装とライフサイクル
 topic: 開発者と導入
-uuid: af4d11ac-8245-46a0-9b3a-4a0a0a cfbbb2
+uuid: af4d11ac-8245-46a0-9b3a-4a0a29cfbb2
 translation-type: tm+mt
 source-git-commit: c4da3599c858bfbccb7af954df75f94eb7d8e99a
 
@@ -21,16 +21,16 @@ source-git-commit: c4da3599c858bfbccb7af954df75f94eb7d8e99a
 
 >[!IMPORTANT]
 >
->SDKをダウンロードするには、Android2.2以降を使用する必要があります。
+>SDKをダウンロードするには、Android 2.2以降を使用する必要があります。
 
 1. 以下の節に示す手順を実行して、開発レポートスイートを設定し、事前に構成された設定ファイルをダウンロードします。
 
    * [レポートスイートの作成](/help/android/getting-started/requirements.md)
    * [SDK のダウンロード](/help/android/getting-started/requirements.md)
 
-1. ファイルを `[Your_App_Name_]AdobeMobileLibrary-4.*-Android.zip` ダウンロードして解凍し、次のソフトウェアコンポーネントが存在することを確認します。
+1. ファイルをダウンロードして解凍し `[Your_App_Name_]AdobeMobileLibrary-4.*-Android.zip` 、次のソフトウェアコンポーネントが存在することを確認します。
 
-   * `adobeMobileLibrary.jar`は、Androidデバイスおよびシミュレーターで使用されるライブラリです。
+   * `adobeMobileLibrary.jar`Androidデバイスおよびシミュレーターで使用されるライブラリです。
 
    * `ADBMobileConfig.json`：アプリ用にカスタマイズされた SDK 設定ファイル。
    >[!IMPORTANT]
@@ -47,8 +47,8 @@ SDK と設定ファイルをプロジェクトに追加するには、以下の�
 
 1. プロジェクトナビゲーションパネルで、プロジェクトを右クリックします。
 1. Select **[!UICONTROL Open Module Settings]**.
-1. **[!UICONTROL 「プロジェクト設定]**»で、??«ライブラリ??****
-1. **[!UICONTROL "+]** 」アイコンをクリックして新しいライブラリを追加します。
+1. Under **[!UICONTROL Project Settings]**, select **[!UICONTROL Libraries]**.
+1. Click the **[!UICONTROL +]** icon to add a new library.
 1. 「**[!UICONTROL Java]**」を選択し、`adobeMobileLibrary.jar` ファイルに移動します。
 1. モバイルライブラリを使用する予定のモジュールを選択します。
 1. 「**[!UICONTROL 適用]**」をクリックしてから「**[!UICONTROL OK]」をクリックして、モジュール設定ウィンドウを閉じます。**
@@ -60,7 +60,7 @@ SDK と設定ファイルをプロジェクトに追加するには、以下の�
 1. Add the `ADBMobileConfig.json` file to the `assets` folder in your project.
 1. **[!UICONTROL Eclipse IDE]**&#x200B;で、プロジェクト名を右クリックします。
 1. Click  **[!UICONTROL Build Path]** &gt; **[!UICONTROL Add External Archives]**.
-1. 選択 `adobeMobileLibrary.jar`.
+1. Select `adobeMobileLibrary.jar`.
 1. Click **[!UICONTROL Open]**.
 1. Right-click the project again and select **[!UICONTROL Build Path]** &gt; **[!UICONTROL Configure Build Path]**.
 1. 「**[!UICONTROL Order and Export（並べ替えとエクスポート）]**」タブで、**`adobeMobileLibrary.jar`が選択されていることを確認します。**
@@ -81,7 +81,7 @@ AppMeasurement ライブラリでは、データの送信とオフラインの�
 
 ## Set the application context {#set-application-context}
 
-メインアクティビティの `onCreate` メソッドに次のコードを追加する必要があります。
+メインアクティビティのメソッドに次のコ `onCreate` ードを追加する必要があります。
 
 ```java
    @Override
@@ -125,9 +125,9 @@ AppMeasurement ライブラリでは、データの送信とオフラインの�
 
 >[!IMPORTANT]
 >
->すべてのアクティビティにこれらの呼び出しを追加して、正確なクラッシュレポートを確認する必要があります。詳しくは、アプリのクラッシュ [の追跡](/help/android/analytics-main/crashes.md)を参照してください。
+>正確なクラッシュレポートを確実に作成するには、これらの呼び出しをすべてのアクティビティに追加する必要があります。 詳しくは、「アプリのクラッシュを追 [跡」を参照してください](/help/android/analytics-main/crashes.md)。
 
-## ライフサイクル呼び出しに追加データを含める
+## ライフサイクル呼び出しに追加のデータを含める
 
 追加のデータをライフサイクル指標呼び出しで含めるには、コンテキストデータを含む追加のパラメーターを `collectLifecycleData` に渡します。
 
