@@ -2,10 +2,10 @@
 description: マーチャンダイジング eVar および製品固有のイベントを持つ products 変数の例を以下に示します。
 seo-description: マーチャンダイジング eVar および製品固有のイベントを持つ products 変数の例を以下に示します。
 seo-title: マーチャンダイジング eVar および製品固有のイベントを持つ products 変数
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: マーチャンダイジング eVar および製品固有のイベントを持つ products 変数
 topic: 開発者と導入
-uuid: f913211e-97ad-4237- bfe4-7sed01295cabf
+uuid: f913211e-97ad-4237-bfe4-7ded01295caf
 translation-type: tm+mt
 source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
 
@@ -36,5 +36,5 @@ NSMutableDictionary *contextData = [NSMutableDictionary dictionary];
 
 >[!TIP]
 >
->変数を *`&&products`* 使用して製品固有のイベントをトリガーする場合は、 *`&&events`* 変数にそのイベントも設定する必要があります。設定しなかった場合、そのイベントは処理中に除外されます。
+>変数を使用して製品固有のイベントをトリガーする場合は、 *`&&products`* そのイベントを変数に設定する必要もあり *`&&events`* ます。 設定しなかった場合、そのイベントは処理中に除外されます。
 
