@@ -1,11 +1,11 @@
 ---
 description: この情報は、クラッシュの追跡方法と、誤ったクラッシュを処理するためのベストプラクティスを理解する場合に役立ちます。
 seo-description: この情報は、クラッシュの追跡方法と、誤ったクラッシュを処理するためのベストプラクティスを理解する場合に役立ちます。
-seo-title: アプリのクラッシュの追跡
-solution: Marketing Cloud、Analytics
+seo-title: アプリのクラッシュを追跡
+solution: Marketing Cloud,Analytics
 title: アプリのクラッシュの追跡
 topic: 開発者と導入
-uuid: 4f81988b-198a-4ba9- ad53-78af90e43856
+uuid: 4f81988b-198a-4ba9-ad53-78af90e43856
 translation-type: tm+mt
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
@@ -18,7 +18,7 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 >[!IMPORTANT]
 >
->iOS SDKバージョン4.8.6にアップグレードする必要があります。これには、誤ったクラッシュが報告されないようにする重要な変更が含まれています。
+>iOS SDKバージョン4.8.6にアップグレードする必要があります。このバージョンには、誤ったクラッシュが報告されるのを防ぐ重要な変更が含まれています。
 
 ## クラッシュがレポートされるタイミング
 
@@ -44,13 +44,13 @@ Apteligent（旧 Crittercism）などの企業が提供するクラッシュレ�
 
    >[!TIP]
    >
-   >アプリケーションをバックグラウンドでバックグラウンドに切り替えてからXcodeから再度起動するまで、このシナリオでクラッシュを避けることができます。
+   >このシナリオでのクラッシュを回避するには、Xcodeからアプリを再起動する前にアプリをバックグラウンドに戻します。
 
 * If your app is in the background and sends Analytics hits through a call other than `trackActionFromBackground`, `trackLocation`, or `trackBeacon`, and the app is terminated (manually or by the OS) while in the background, and the next launch will be a crash.
 
    >[!TIP]
    >
-   >`lifecycleTimeout` しきい値を超えて発生するバックグラウンドアクティビティも、追加のfalse起動になります。
+   >Background activity that occurs beyond the `lifecycleTimeout` threshold might also result in an additional false launch.
 
 * アプリがバックグラウンドでの取得、ロケーションの更新などの結果としてバックグラウンドで起動され、フォアグラウンドになることなく OS によって終了された場合、（バックグラウンドまたはフォアグラウンドでの）次回の起動はクラッシュになります。
 * アプリがバックグラウンドになっているときに、プログラムによってアドビの一時停止フラグを `NSUserDefaults` から削除した場合、次回起動または再開によってクラッシュが発生します。
@@ -66,5 +66,5 @@ Apteligent（旧 Crittercism）などの企業が提供するクラッシュレ�
 * 実稼働以外のレポートスイートに対して開発を実行すると、#1 の偽クラッシュが発生しなくなります。
 * Adobe Mobile SDK が `NSUserDefaults` に設定する値を削除または変更しないでください。
 
-   これらの値がSDK外で変更された場合、レポートされるデータは無効になります。
+   これらの値がSDK以外で変更されると、レポートされるデータは無効になります。
 
