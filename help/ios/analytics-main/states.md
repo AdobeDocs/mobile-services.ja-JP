@@ -2,10 +2,10 @@
 description: 状態とは、アプリケーションの様々な画面またはビューのことです。アプリケーションで新しい状態が表示されるたびに（ユーザーがホームページからニュースフィードに移動する場合など）、trackState コールを送信する必要があります。iOS の場合、一般的に、状態は各ビューの viewDidLoad メソッドで追跡されます。
 seo-description: 状態とは、アプリケーションの様々な画面またはビューのことです。アプリケーションで新しい状態が表示されるたびに（ユーザーがホームページからニュースフィードに移動する場合など）、trackState コールを送信する必要があります。iOS の場合、一般的に、状態は各ビューの viewDidLoad メソッドで追跡されます。
 seo-title: アプリの状態の追跡
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: アプリの状態の追跡
 topic: 開発者と導入
-uuid: 12cca4eb-1f15-4cec- a58f-76b69eaff99d
+uuid: 12cca4eb-1f15-4cec-a58f-76b69eaff99d
 translation-type: tm+mt
 source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
@@ -24,7 +24,7 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
 1. ライブラリをプロジェクトに追加し、ライフサイクルを実装します。
 
-   詳しくは、コア実装および *ライフサイクル* で [プロジェクトにSDKおよび設定ファイルを追加を参照](/help/ios/getting-started/dev-qs.md)してください。
+   詳しくは、コア実装とラ *イフサイクルでのプロジェクトへのSDKと設定ファイルの追加* ( [英語のみ)を参照してください](/help/ios/getting-started/dev-qs.md)。
 1. ライブラリをインポートします。
 
    ```objective-c
@@ -42,7 +42,7 @@ In Adobe Mobile services, the **[!UICONTROL State Name]** is reported in the *`V
 
 ## Sending additional data {#section_CFDB4F944496401786A145C209AB387C}
 
-**[!UICONTROL State Name]**&#x200B;に加えて、各trackアクション呼び出しで追加のコンテキストデータを送信できます。
+In addition to the **[!UICONTROL State Name]**, you can send additional context data with each track action call:
 
 ```objective-c
 NSMutableDictionary *contextData = [NSMutableDictionary dictionary]; 
