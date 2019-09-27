@@ -2,22 +2,22 @@
 description: Android ライブラリによって提供される Adobe Target メソッドのリストを示します。
 keywords: android;library;mobile;sdk
 seo-description: Android ライブラリによって提供される Adobe Target メソッドのリストを示します。
-seo-title: AndroidのTargetメソッド
-solution: Marketing Cloud、Analytics
-title: AndroidのTargetメソッド
+seo-title: Target methods for Android
+solution: Marketing Cloud,Analytics
+title: Target methods for Android
 topic: 開発者と導入
-uuid: 8e9808b2- ba80-4646- ba05-8e62d4fde065
+uuid: 8e9808b2-ba80-4646-ba05-8e62d4fde065
 translation-type: tm+mt
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 ---
 
 
-# AndroidのTargetメソッド{#target-methods}
+# Target methods for Android{#target-methods}
 
 Android ライブラリによって提供される Adobe Target メソッドのリストを示します。
 
-SDKは、現在、Analytics、Target、Audience Manager、Adobe Experience Platform IDサービスなど、複数のAdobe Experience Cloudソリューションをサポートしています。Methods are prefixed according to the solution. For example, Experience Cloud ID methods are prefixed with `target`.
+The SDK currently supports multiple Adobe Experience Cloud Solutions, including Analytics, Target, Audience Manager, and the Adobe Experience Platform Identity Service]. Methods are prefixed according to the solution. For example, Experience Cloud ID methods are prefixed with `target`.
 
 >[!TIP]
 >
@@ -25,7 +25,7 @@ SDKは、現在、Analytics、Target、Audience Manager、Adobe Experience Platf
 
 ## Class reference : TargetLocationRequest {#section_A8CC898922164E819EC730DC92A6742B}
 
-**プロパティ：**
+**プロパティ:**
 
 ```java
 public String name; 
@@ -37,7 +37,7 @@ public HashMap<String, Object> parameters;
 
 >[!TIP]
 >
->次の定数は、カスタムパラメーターにキーを設定するときに使いやすくするためのものです。
+>以下の定数は、カスタムパラメーターのキーを設定する際の使いやすさを考慮したものです。
 
 ```java
 public static final String TARGET_PARAMETER_ORDER_ID   = "orderId"; 
@@ -122,37 +122,37 @@ public static final String TARGET_PARAMETER_MBOX_HOST           = "mboxHost";
 
          取得する Target の mbox／ロケーションの名前。
 
-         * **タイプ:** 文字列
+         * **** タイプ：文字列
       * **defaultContent**
 
          Target サーバーに到達できない場合、またはユーザーがキャンペーンの対象にならない場合にコールバックで返される値。
 
-         * **タイプ:** 文字列
+         * **** タイプ：文字列
       * **profileParameters**
 
          この辞書の値は、Target へのリクエストの「profileParameters」オブジェクトに格納されます。
 
-         * **タイプ:** マップ `<String, Object>`
+         * **** タイプ：マップ `<String, Object>`
       * **orderParameters**
 
          この辞書の値は、Target へのリクエストの「order」オブジェクトに格納されます。
 
-         * **タイプ:** マップ `<String, Object>`
+         * **** タイプ：マップ `<String, Object>`
       * **mboxParameters**
 
-         このディクショナリの値は、Targetにリクエストされます。
+         このディクショナリの値は、Targetへのリクエストに含まれます。
 
-         * **タイプ:** マップ `<String, Object>`
+         * **** タイプ：マップ `<String, Object>`
       * **requestLocationParameters**
 
          この辞書の値は、Target へのリクエストの「requestLocation」オブジェクトに格納されます。
 
-         * **タイプ:** マップ `<String, Object>`
+         * **** タイプ：マップ `<String, Object>`
       * **callback**
 
          このメソッドは、Target サーバーからのオファーのコンテンツで呼び出されます。Target サーバーに到達できない場合、またはユーザーがキャンペーンの対象にならない場合、defaultContent が返されます。
 
-         * **タイプ:** targetCallback `<String>`
+         * **Type:** TargetCallback `<String>`
    * このメソッドのサンプルコードを次に示します。
 
       ```java
