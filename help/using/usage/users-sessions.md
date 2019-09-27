@@ -2,22 +2,22 @@
 description: ユーザーとセッションレポートには、選択した期間の一意の訪問者に関する指標が表示されます。
 keywords: モバイル
 seo-description: ユーザーとセッションレポートには、選択した期間の一意の訪問者に関する指標が表示されます。
-seo-title: ユーザーおよびセッションレポート
-solution: Marketing Cloud、Analytics
-title: ユーザーおよびセッションレポート
+seo-title: ユーザーとセッションレポート
+solution: Marketing Cloud,Analytics
+title: ユーザーとセッションレポート
 topic: レポート, 指標
-uuid: 6d70d7f6- de81-4307- a4f3-14f18fc3c9b3
+uuid: 6d70d7f6-de81-4307-a4f3-14f18fc3c9b3
 translation-type: tm+mt
 source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
 ---
 
 
-# ユーザーおよびセッションレポート{#users-and-sessions}
+# ユーザーとセッションレポート{#users-and-sessions}
 
 ユーザーとセッションレポートには、選択した期間の一意の訪問者に関する指標が表示されます。
 
-![ユーザーおよびセッションレポート](assets/users_sessions.png)
+![ユーザーとセッションレポート](assets/users_sessions.png)
 
 このレポートでは、次のオプションを設定できます。
 
@@ -31,8 +31,8 @@ source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
 * **[!UICONTROL フィルター]**
 
-   「**[!UICONTROL フィルター]」をクリックし、様々なレポートにわたるフィルターを作成して、すべてのモバイルレポートにおけるセグメントのパフォーマンスを確認します。**&#x200B;共通フィルターを定義すると、パス（画面遷移）レポート以外のすべてのレポートに適用できます。詳しくは、共通フィルター [の追加](/help/using/usage/reports-customize/t-sticky-filter.md)を参照してください。
+   「**[!UICONTROL フィルター]」をクリックし、様々なレポートにわたるフィルターを作成して、すべてのモバイルレポートにおけるセグメントのパフォーマンスを確認します。**&#x200B;共通フィルターを定義すると、パス（画面遷移）レポート以外のすべてのレポートに適用できます。詳しくは、共通フィルターの追 [加を参照してください](/help/using/usage/reports-customize/t-sticky-filter.md)。
 
 * **[!UICONTROL ダウンロード]**
 
-   **[!UICONTROL «PDF]** »また **[!UICONTROL は«CSV]** »をクリックして、ドキュメントをダウンロードまたは開き、Mobile Servicesにアクセスできない、またはプレゼンテーションでファイルを使用するユーザーと共有します。
+   Click **[!UICONTROL PDF]** or **[!UICONTROL CSV]** to download or open documents and share with users who do not have access to Mobile Services or to use the file in presentations.
