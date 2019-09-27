@@ -3,7 +3,7 @@ description: Adobe Target のプリフェッチ機能では、サーバーから
 seo-description: Adobe Target のプリフェッチ機能では、サーバーからの応答をキャッシュすることで、Android Mobile SDK を使用して可能な限り少ない回数でオファーコンテンツを取得できます。
 seo-title: Android でのオファーコンテンツのプリフェッチ
 title: Android でのオファーコンテンツのプリフェッチ
-uuid: 063451b8- e191-4d58-8ed8-1723e310ad1a
+uuid: 063451b8-e191-4d58-8ed8-1723e310ad1a
 translation-type: tm+mt
 source-git-commit: fa7375ac8a1345d81748bcf635791c46d3943fed
 
@@ -16,7 +16,7 @@ Adobe Target のプリフェッチ機能では、サーバーからの応答を�
 
 >[!IMPORTANT]
 >
->Android用のモバイルSDKのプリフェッチ機能は、Adobe Targetの自動ターゲット、自動割り当ておよび自動パーソナライゼーションアクティビティタイプではサポートされていません。
+>Android用のモバイルSDKのプリフェッチ機能は、Adobe targetの自動ターゲット、自動配分、自動パーソナライゼーションアクティビティタイプではサポートされていません。
 
 このプロセスにより、読み込み時間が短縮され、複数のネットワーク呼び出しが回避されるほか、モバイルアプリユーザーがどの mbox を訪問したかを Adobe Target に通知することができます。プリフェッチ呼び出し中にすべてのコンテンツが取得され、キャッシュされます。このコンテンツは、指定された mbox 名のキャッシュされたコンテンツを含む今後のすべての呼び出しに対してキャッシュから取得されます。
 
@@ -76,7 +76,7 @@ if (MobileConfig.getInstance().mobileUsingTarget()){
 
    >[!IMPORTANT]
    >
-   >要求された場所のコンテンツが既にキャッシュされている場合、指定されたコールバックで即座に返されます。コンテンツがキャッシュされていない場合は、SDK は Target サーバーにネットワーク要求を送信してコンテンツを取得します。
+   >要求された場所のコンテンツが既にキャッシュされている場合、指定されたコールバックで直ちに返されます。 コンテンツがキャッシュされていない場合は、SDK は Target サーバーにネットワーク要求を送信してコンテンツを取得します。
 
    * このメソッドの構文を次に示します。
 
@@ -104,7 +104,7 @@ if (MobileConfig.getInstance().mobileUsingTarget()){
       public static void clearPrefetchCache();
       ```
 
-   * このメソッドのパラメーターはありません。
+   * このメソッドにはパラメーターがありません。
 
 * **createTargetRequestObject**
 
@@ -140,7 +140,7 @@ if (MobileConfig.getInstance().mobileUsingTarget()){
 
 以下に、Android でのプリフェッチをサポートするパブリッククラスを示します。
 
-### クラスリファレンス:targetPrefsオブジェクト
+### クラス参照：TargetPrefetchObject
 
 mbox 名と、mbox のプリフェッチで使用されるパラメーターをカプセル化します。
 
@@ -166,7 +166,7 @@ mbox 名と、mbox のプリフェッチで使用されるパラメーターを�
    * **タイプ**:マップ `<String, Object>`
 
 
-### クラスリファレンス:targetRequestObject
+### クラス参照：TargetRequestObject
 
 このクラスは、mbox 名、デフォルトコンテンツ、mbox パラメーターおよび Target ロケーションの要求に使用されるリターンコールバックをカプセル化します。
 
@@ -180,7 +180,7 @@ mbox 名と、mbox のプリフェッチで使用されるパラメーターを�
 
    この `mboxParameters` の `TargetRequestObject` として添付されるキー値のペアのコレクション。
 
-   * **タイプ:マップ`<String, Object>`**
+   * **タイプ：マップ`<String, Object>`**
 
 * **`orderParameters`**
 
@@ -204,7 +204,7 @@ mbox 名と、mbox のプリフェッチで使用されるパラメーターを�
 
    指定された `TargetRequestObject` のコンテンツが使用可能な場合に呼び出される関数ポインター。
 
-   * **タイプ**:Target. targetCallback`<String>`
+   * **タイプ**:Target.TargetCallback`<String>`
 
 
 ## Code sample {#section_BF7F49763D254371B4656E17953D520C}
