@@ -2,10 +2,10 @@
 description: アクションは、測定する Android アプリ内で発生するイベントです。
 seo-description: アクションは、測定する Android アプリ内で発生するイベントです。
 seo-title: アプリのアクションの追跡
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: アプリのアクションの追跡
 topic: 開発者と導入
-uuid: fe01c1df- f6bb-4b32- b3ef-959d2c724af6
+uuid: fe01c1df-f6bb-4b32-b3ef-959d2c724af6
 translation-type: tm+mt
 source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
@@ -22,7 +22,7 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
 1. ライブラリをプロジェクトに追加し、ライフサイクルを実装します。
 
-   詳しくは、コア実装および *ライフサイクル* で [、"SDKおよび設定ファイルのIntelliJ IDEAまたはEclipseプロジェクトへの追加」を参照](/help/android/getting-started/dev-qs.md)してください。
+   詳しくは、 *Core実装およびライフサイクルのIntelliJ IDEAまたはEclipse ProjectへのSDKと設定ファイルの追加*[を参照してください](/help/android/getting-started/dev-qs.md)。
 
 1. ライブラリをインポートします。
 
