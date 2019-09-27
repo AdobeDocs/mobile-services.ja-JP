@@ -3,7 +3,7 @@ description: ロケーション概要レポートでは、アプリが使用さ�
 keywords: モバイル
 seo-description: ロケーション概要レポートでは、アプリが使用されている様々な国、地域、目標地点を確認できます。
 seo-title: 概要（ロケーション）
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: 概要（ロケーション）
 topic: レポート, 指標
 uuid: a701abc3-001b-4015-843f-5fb2c6c80d17
@@ -15,11 +15,11 @@ source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
 
 # 概要（ロケーション）{#overview-location}
 
-**[!UICONTROL ロケーション概要]** レポートでは、アプリが使用されている様々な国、地域、目標地点（POI）を確認できます。
+The **[!UICONTROL Location Overview]** report lets you see the different countries, regions, and points of interest (POI) where your app is being used.
 
 このレポートには、既存のデータのサンバーストチャートが表示されます。このレポートを使用して、ターゲティングすべきオーディエンスセグメント（訪問者の集まり）を見つけることができます。オーディエンスを作成して管理することは、セグメントを作成して使用することと似ていますが、例外は、オーディエンスを Experience Cloud で使用できるようになることです。
 
-以下に、このレポートに関する追加情報を示します。
+このレポートに関する追加情報を次に示します。
 
 ## Navigation and usage {#section_4A88C3849B5847BF8CF433CCFD99FDC3}
 
@@ -27,7 +27,7 @@ source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
 
 >[!TIP]
 >
->この情報に加えて、サンバーストグラフの操作方法についての製品内チュートリアルを参照できます。チュートリアルを起動するには、レポートのタイトルバーの「**[!UICONTROL ロケーション分類]**」をクリックして、**i]アイコンをクリックします。[!UICONTROL **
+>この情報に加えて、サンバーストグラフの操作方法を説明する製品内チュートリアルも表示できます。 チュートリアルを起動するには、レポートのタイトルバーの「**[!UICONTROL ロケーション分類]**」をクリックして、**i]アイコンをクリックします。[!UICONTROL **
 
 ![](assets/location.png)
 
@@ -59,7 +59,7 @@ Here is the visualization when you select **[!UICONTROL Points of Interest]**:
 
 >[!TIP]
 >
->サンバーストに追加するリングが増えると、処理にかかる時間が長くなります。
+>サンバーストに追加するリングの数が多いほど、処理に時間がかかります。
 
 分類および二次指標を追加するには、レポートのタイトルバーの「**[!UICONTROL ロケーション分類]**」をクリックし、「**カスタマイズ]」をクリックして、右側のパネルを開きます。[!UICONTROL **
 
