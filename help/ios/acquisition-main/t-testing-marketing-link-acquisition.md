@@ -1,12 +1,12 @@
 ---
-description: 次の手順では、デバイスのフィンガープリントに基づくマーケティングリンクを使用して獲得キャンペーンをラウンドトリップできます。
+description: 以下の手順は、デバイスの指紋に基づくマーケティングリンクを使用して、獲得キャンペーンをラウンドトリップする場合に役立ちます。
 keywords: android;library;mobile;sdk
-seo-description: 次の手順では、デバイスのフィンガープリントに基づくマーケティングリンクを使用して獲得キャンペーンをラウンドトリップできます。
+seo-description: 以下の手順は、デバイスの指紋に基づくマーケティングリンクを使用して、獲得キャンペーンをラウンドトリップする場合に役立ちます。
 seo-title: マーケティングリンク獲得のテスト
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: マーケティングリンク獲得のテスト
 topic: 開発者と導入
-uuid: 69503e01-182d-44c6- b0fb- e1c012ffa3bd
+uuid: 69503e01-182d-44c6-b0fb-e1c012ffa3bd
 translation-type: tm+mt
 source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
@@ -15,9 +15,9 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
 # Testing Marketing Link acquisition {#testing-marketing-link-acquisition}
 
-次の手順では、デバイスのフィンガープリントに基づくマーケティングリンクを使用して獲得キャンペーンをラウンドトリップできます。
+The following instructions help you roundtrip an acquisition campaign with a Marketing Link that is based on a device fingerprint.
 
-1. モバイルアプリ獲得の [前提条件タスクを完了](/help/ios/acquisition-main/acquisition.md)します。
+1. [モバイルアプリ獲得](/help/ios/acquisition-main/acquisition.md)の前提条件タスクを完了します。
 1. In the Adobe Mobile Services UI, click **[!UICONTROL Marketing Links Builder]** and generate an acquisition Marketing Link URL that sets the App Store as the destination for iOS devices.
 
    以下に例を示します。
@@ -42,7 +42,7 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
    | 設定 | 値 |
    |--- |--- |
-   | acquisition | The server should be  `c00.adobe.com`. `appid` は、ダウンロード計測 *`appid`* 用リンクと同じにする必要があります。 |
+   | acquisition | The server should be  `c00.adobe.com`. `appid` should equal the  *`appid`* in your acquisition link. |
    | analytics | `referrerTimeout` は 0 より大きい値です。 |
 
 1. （条件付き）アプリの設定ファイル内の SSL 設定が `false` の場合、HTTPS の代わりに HTTP プロトコルを使用するようにダウンロード計測用リンクを更新します。
@@ -59,9 +59,9 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
    `"Analytics - Trying to fetch referrer data from <acquisition end url>"`
    `"Analytics - Received Referrer Data(<Json Object>)"`
 
-   これらのログが表示されない場合は、手順4と5が完了していることを確認してください。
+   これらのログが表示されない場合は、手順4と5が完了していることを確認します。
 
-   以下に、考えられるエラーに関する情報を示します。
+   考えられるエラーに関する情報を次に示します。
 
    *  を使用します`Analytics - Unable to retrieve acquisition service response (<error message>)`。
 
@@ -77,7 +77,7 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
    * `Analytics - Acquisition referrer data was not complete, ignoring`
 
-      `a.referrer.campaign.name``contextData`が含まれていません。
+      `a.referrer.campaign.name` is not included in `contextData`.
 
    * `Analytics - Acquisition referrer timed out`
 
@@ -91,16 +91,16 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
 * HTTP モニタリングツールを使用することによって、アプリから送信されるヒットを監視して、獲得アトリビューションを確認できます。
 
-   `/v3/<appid>/start` 1つのリクエストと、獲得サーバーに送信される `/v3/<appid>/end` リクエストが1つ表示されます。
+   `/v3/<appid>/start` リクエスト 1 つと `/v3/<appid>/end` リクエスト 1 つが獲得サーバーに送信されているはずです。
 
 * 送信されたユーザーエージェントが変わると、アトリビューションが失敗することがあります。
 
-   ユーザーエージェントの値が `https://c00.adobe.com/v3/<appid>/start` 同じ `https://c00.adobe.com/v3/<appid>/end` であることを確認してください。
+   Ensure that  and  have the same user-agent values.`https://c00.adobe.com/v3/<appid>/start``https://c00.adobe.com/v3/<appid>/end`
 
 * ダウンロード計測用リンクと SDK からのヒットは、同じ HTTP／HTTPS プロトコルを使用している必要があります。
 
-   リンクとヒットが異なるプロトコルを使用している場合、例えばリンクがHTTPを使用し、SDKがHTTPSを使用している場合、要求ごとに一部の通信事業者でIPアドレスが異なる可能性があります。このため、アトリビューションが失敗する可能性があります。
+   リンクとヒットが異なるプロトコルを使用している場合（例えば、リンクがHTTPを使用し、SDKがHTTPSを使用する場合）、IPアドレスはリクエストごとに通信事業者によって異なる場合があります。 このため、アトリビューションが失敗する可能性があります。
 
-* マーケティングリンクは、有効期限が10分のサーバー側でキャッシュされます。
+* マーケティングリンクは、10分の有効期限が設定されたサーバー側でキャッシュされます。
 
-   マーケティングリンクを変更する場合は、リンクを使用する前に10分程度待ってください。
+   マーケティングリンクに変更を加える場合は、リンクを使用する前に約10分待つ必要があります。
