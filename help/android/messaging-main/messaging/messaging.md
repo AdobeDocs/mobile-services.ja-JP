@@ -2,7 +2,7 @@
 description: 分析データまたはイベントからトリガーされるアプリ内メッセージを配信できます。実装後、メッセージはアプリに動的に配信され、コードを更新する必要はありません。
 seo-description: 分析データまたはイベントからトリガーされるアプリ内メッセージを配信できます。実装後、メッセージはアプリに動的に配信され、コードを更新する必要はありません。
 seo-title: アプリ内メッセージ
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: アプリ内メッセージ
 topic: 開発者と導入
 uuid: 351ee3d2-80b9-4f2d-9696-21f274d89f5a
@@ -41,7 +41,7 @@ Adobe Experience Platform Mobile SDK に関する情報やドキュメントを�
 
 1. ライブラリをプロジェクトに追加し、ライフサイクルを実装します。
 
-   詳しくは、コア実装および *ライフサイクル* で [、"SDKおよび設定ファイルのIntelliJ IDEAまたはEclipseプロジェクトへの追加」を参照](/help/android/getting-started/dev-qs.md)してください。
+   詳しくは、 *Core実装およびライフサイクルのIntelliJ IDEAまたはEclipse ProjectへのSDKと設定ファイルの追加*[を参照してください](/help/android/getting-started/dev-qs.md)。
 
 1. Update the `AndroidManifest.xml` file to declare the full screen activity and enable the Message Notification Handler:
 
@@ -82,11 +82,11 @@ Adobe Experience Platform Mobile SDK に関する情報やドキュメントを�
    }
    ```
 
-1. `ADBMobileConfig.json` アプリ内メッセージに必要な設定がファイルに含まれていることを確認します。
+1. Verify that the `ADBMobileConfig.json` file contains the required settings for in-app messaging.
 
    >[!IMPORTANT]
    >
-   >`messages` または `remotes` 必須です。
+   >`messages` または `remotes` が必要です。
 
    起動時にアプリ内メッセージを動的に更新するには、`remotes` オブジェクトが存在し、正しく設定されている必要があります。
 
@@ -122,15 +122,15 @@ Android Mobile SDK はアプリ内メッセージに関する次の指標を追�
 * 全画面および警告方式のアプリ内メッセージの場合：
 
    * **インプレッション**：ユーザーがアプリ内メッセージをトリガーしたとき。
-   * **クリックスルー**:ユーザーが **[!UICONTROL クリックスルー]**&#x200B;を押すと、
-   * **キャンセル**:ユーザーが **[!UICONTROL 「キャンセル]**」を押すと、
+   * **Click throughs: when user presses Click through.******
+   * **キャンセル**:ユーザーが「キャンセル」を **[!UICONTROL 押したとき]**。
 
 * カスタムの全画面アプリ内メッセージの場合は、メッセージ内の HTML コンテンツに次のボタンに関する SDK 追跡を通知する正しいコードが含まれている必要があります。
 
-   * **クリックスルー** （リダイレクト）の例:
+   * **クリックスルー** （リダイレクト）のトラッキング例：
 
       `adbinapp://confirm/?url=https://www.yoursite.com`
-   * **キャンセル** （閉じる）の例:
+   * **Cancel** (close)サンプルトラッキング：
 
       `adbinapp://cancel`
 
@@ -140,7 +140,7 @@ Android Mobile SDK はアプリ内メッセージに関する次の指標を追�
 
 >[!IMPORTANT]
 >
->フォールバック画像アセット名は、Adobe Mobileサービスでメッセージを設定するときに指定され、指定したリソースが使用可能であることを確認する必要があります。
+>フォールバック画像アセット名は、Adobe Mobile Servicesでメッセージを設定する際に指定します。また、指定したリソースが使用可能であることを確認する必要があります。
 
 ## Configuring notification icons {#section_DDA28BDBCBB748BCBECF3AB50A177D48}
 
@@ -164,7 +164,7 @@ Android Mobile SDK はアプリ内メッセージに関する次の指標を追�
 
 * **Config.setLargeIconResourceId(int resourceId)**
 
-   SDK で作成される通知に使用される大きいアイコンを設定します。このアイコンは、ユーザーが通知センターで通知を完了したときに表示されるプライマリ画像です。
+   SDK で作成される通知に使用される大きいアイコンを設定します。このアイコンは、ユーザーが通知センターで通知を完了したときに表示されるプライマリイメージです。
 
    * このメソッドの構文を次に示します。
 
