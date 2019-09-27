@@ -3,10 +3,10 @@ description: 技術レポートでは、アプリが使用されている様々�
 keywords: モバイル
 seo-description: 技術レポートでは、アプリが使用されている様々なデバイスタイプ、オペレーティングシステム、オペレーティングシステムのバージョンおよび携帯電話会社を確認できます。
 seo-title: 技術レポート
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: 技術レポート
 topic: レポート, 指標
-uuid: 4b7322c4-8920-43cd- bb72-5a5bd515ae84
+uuid: 4b7322c4-8920-43cd-bb72-5a5bd515ae84
 translation-type: tm+mt
 source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
@@ -25,7 +25,7 @@ source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
 >[!TIP]
 >
->この情報に加えて、サンバーストグラフの操作方法についての製品内チュートリアルを参照できます。To start the tutorial, click **[!UICONTROL Technology Breakdown]** in the title bar of the report, click **[!UICONTROL Customize]**, and click the **[!UICONTROL i]** icon.
+>この情報に加えて、サンバーストグラフの操作方法を説明する製品内チュートリアルも表示できます。 To start the tutorial, click **[!UICONTROL Technology Breakdown]** in the title bar of the report, click **[!UICONTROL Customize]**, and click the **[!UICONTROL i]** icon.
 
 ![](assets/report_technology.png)
 
@@ -51,7 +51,7 @@ source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
 >[!TIP]
 >
->**[!UICONTROL 通信事業]** 者レポートでは、Wi- Fiユーザーはとしてレポート `none`されます。
+>通信事業者 **[!UICONTROL レポートで]** 、Wi-Fiユーザーは、としてレポートされま `none`す。
 
 
 ## 分類と指標の追加 {#section_15833511E82648869E7B1EFC24EF7B82}
@@ -60,7 +60,7 @@ source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
 >[!IMPORTANT]
 >
->サンバーストに追加するリングが増えると、処理にかかる時間が長くなります。
+>サンバーストに追加するリングの数が多いほど、処理に時間がかかります。
 
 To add breakdowns and secondary metrics, click **[!UICONTROL Technology Breakdown]** in the title bar of the report and click **[!UICONTROL Customize]**.
 
