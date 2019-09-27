@@ -2,10 +2,10 @@
 description: ビデオ分析に役立つ情報です。
 seo-description: ビデオ分析に役立つ情報です。
 seo-title: ビデオ分析
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: ビデオ分析
 topic: 開発者と導入
-uuid: f45cd3b- cd2e-4fba- a3b2- c243640ecfa4
+uuid: f45dac3b-cd2e-4fba-a3b2-c243640ecfa4
 translation-type: tm+mt
 source-git-commit: 1c0b7dadc28f772e903baa8605016e70f05081d7
 
@@ -18,15 +18,15 @@ source-git-commit: 1c0b7dadc28f772e903baa8605016e70f05081d7
 
 Video measurement is described in detail in the [Measuring video and audio in Adobe Analytics](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html) guide. ビデオ測定の一般的なプロセスは、AppMeasurement のすべてのプラットフォームでほぼ同一です。このクイックスタートでは、開発者のタスクに関する基本的な概要とコード例を示します。
 
-次の表に、Analytics に送信されるメディアデータのリストを示します。処理ルールを使用して、コンテキストデータをAnalytics変数にマッピングします。
+次の表に、Analytics に送信されるメディアデータのリストを示します。処理ルールを使用して、コンテキストデータをAnalytics変数にマップします。
 
 * **a.media.name**
 
-   **（必須**）訪問者がビデオを何らかの方法で表示したときに、実装で指定されたビデオの名前を収集します。この変数の分類を追加できます。
+   (**Required**) Collects the name of the video, as specified in the implementation, when a visitor views the video in some way.You can add classifications for this variable.
 
    （**オプション**）カスタムインサイト変数は、ビデオパス情報を提供します。
 
-   * 変数タイプ:eVar
+   * 変数型：eVar
    * デフォルトの有効期限：訪問
    * カスタムインサイト（s.prop、ビデオパスに使用）
 
@@ -35,7 +35,7 @@ Video measurement is described in detail in the [Measuring video and audio in Ad
    （**オプション**）ビデオパス情報を提供します。この変数に対して、ClientCare でパスを有効にする必要があります。
 
    * イベントタイプ：カスタムインサイト（s.prop）。
-   * 変数タイプ:カスタムインサイト（s. prop）
+   * 変数型：カスタムインサイト(s.prop)
 
 * **a.media.segment**
 
@@ -45,7 +45,7 @@ Video measurement is described in detail in the [Measuring video and audio in Ad
 
    デフォルトのビデオデータ収集方法では、ビデオの開始（再生）時、セグメントの開始時およびビデオの終了（停止）時にデータが収集されます。Analytics は、訪問者が視聴を開始したときに最初のセグメントビューをセグメントの先頭としてカウントします。後続のセグメントビューは、セグメントの開始としてカウントされます。
 
-   * 変数タイプ:eVar
+   * 変数型：eVar
    * デフォルトの有効期限：ページビュー
 
 * **a.contentType**
@@ -54,35 +54,35 @@ Video measurement is described in detail in the [Measuring video and audio in Ad
 
    ビデオ測定の見地からすると、コンテンツタイプを使用することによってビデオ訪問者を識別でき、その結果、ビデオのコンバージョン率を計算できます。
 
-   * 変数タイプ:eVar
+   * 変数型：eVar
    * デフォルトの有効期限：ページビュー
 
 * **a.media.timePlayed**
 
    前回のデータ収集プロセス（イメージリクエスト）以降のビデオ視聴秒数をカウントします。
 
-   * 変数タイプ:イベント
+   * 変数型：イベント
    * タイプ：カウンター
 
 * **a.media.view**
 
    訪問者がビデオの一部を視聴したことを示します。ただし、訪問者がビデオを視聴した時間や視聴した部分に関する情報は提供されません。
 
-   * 変数タイプ:イベント
+   * 変数型：イベント
    * タイプ：カウンター
 
 * **a.media.segmentView**
 
    訪問者がビデオセグメントの一部を視聴したことを示します。ただし、訪問者がビデオを視聴した時間や視聴した部分に関する情報は提供されません。
 
-   * 変数タイプ:イベント
+   * 変数型：イベント
    * タイプ：カウンター
 
 * **a .media.complete**
 
    ユーザーがビデオを最後まで視聴したことを示します。デフォルトでは、完了イベントはビデオが終了する 1 秒前に測定されます。導入時に、表示完了と見なすビデオの終わりからの秒数を指定できます。終わりが定義されないライブビデオやその他のストリーミングの場合は、完了を測定するためのカスタムポイントを指定できます。例えば、表示開始から特定の時間が経過したポイントなどです。
 
-   * 変数タイプ:イベント
+   * 変数型：イベント
    * タイプ：カウンター
 
 ## Configure media settings {#section_929945D4183C428AAF3B983EFD3E2500}
@@ -124,7 +124,7 @@ property bool isMediaAd;
 
 ### Media measurement class and method reference {#section_50DF9359A7B14DF092634C8E913C77FE}
 
-* **settingWith（winJS:settingWith**
+* **SettingsWith (winJS:settingsWith)**
 
    指定したパラメーターと共に `MediaSettings` オブジェクトを返します。
 
@@ -140,7 +140,7 @@ property bool isMediaAd;
       var  mySettings  =  ADB.Media.settingsWith("name", 10,  "playerName", "playerId"); 
       ```
 
-* **AdSettingsWith（winJS:AdSettingsWith**
+* **AdSettingsWith (winJS:adSettingsWith)**
 
    広告ビデオの追跡に使用する `MediaSettings` オブジェクトを返します。
 
@@ -156,7 +156,7 @@ property bool isMediaAd;
       var  myAdSettings = ADB.Media.adSettingsWith("name", 10,  "playerName", "parentName", "parentPod", 5, "myCPM");
       ```
 
-* **開く（WinJS:open）**
+* **開く(winJS:開く)**
 
    Tracks a media open using the settings defined in `settings`.
 
@@ -172,7 +172,7 @@ property bool isMediaAd;
       ADB.Media.open(mySettings);
       ```
 
-* **閉じる（WinJS:close）**
+* **閉じる(winJS:終了)**
 
    Tracks a media close for the media item named *`name`*.
 
@@ -188,7 +188,7 @@ property bool isMediaAd;
       ADB.Media.close("mediaName"); 
       ```
 
-* **再生（WinJS:play）**
+* **再生(winJS:再生)**
 
    指定された *offset`name`（秒）で指定された*** のメディアアイテムの再生を追跡します。
 
@@ -204,7 +204,7 @@ property bool isMediaAd;
       ADB.Media.play("mediaName",  0);
       ```
 
-* **Complete（WinJS:complete）**
+* **完了(winJS:完了)**
 
    指定された&#x200B;*オフセット*&#x200B;でメディアアイテムが再生完了されたことを手動で記録します。
 
@@ -220,7 +220,7 @@ property bool isMediaAd;
       ADB.Media.complete("mediaName", 8);
       ```
 
-* **停止（WinJS:stop）**
+* **停止(winJS:停止)**
 
    指定された *offset* でビデオが停止または一時停止されたことを記録します。
 
@@ -236,7 +236,7 @@ property bool isMediaAd;
       ADB.Media.stop("mediaName",  4);
       ```
 
-* **クリック（WinJS:クリック）**
+* **(winJS:クリック)**
 
    メディアアイテムがクリックされたことを記録します。
 
@@ -252,7 +252,7 @@ property bool isMediaAd;
       ADB.Media.click("mediaName",  3); 
       ```
 
-* **Track（WinJS:track）**
+* **追跡(winJS:トラック)**
 
    現在のメディア状態をトラックアクション呼び出し（ページビューがカウントされない方式）で送信します。
 
