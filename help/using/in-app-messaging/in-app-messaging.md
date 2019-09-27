@@ -3,7 +3,7 @@ description: アプリ内メッセージおよびプッシュメッセージを�
 keywords: モバイル
 seo-description: アプリ内メッセージおよびプッシュメッセージを作成、管理およびレポートします。
 seo-title: メッセージ
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: メッセージ
 topic: 指標
 uuid: e32d3e35-2d09-4ddf-8919-75dc895abcb3
@@ -15,7 +15,7 @@ source-git-commit: 3b744229b3fc288363be74c3c4adcd71ecc4fad4
 
 # メッセージ {#messaging}
 
-アプリ内メッセージおよびプッシュメッセージを作成、管理およびレポートできます。
+アプリ内メッセージとプッシュメッセージを作成、管理およびレポートできます。
 
 ## Adobe Experience Cloud SDK の新規リリース
 
@@ -41,12 +41,12 @@ Adobe Experience Platform Mobile SDK に関する情報やドキュメントを�
 * ネイティブアラート
 * ローカル通知
 
-アプリ内メッセージの機能を理解するために、以下の点について説明します。
+アプリ内メッセージのしくみを理解するために、追加情報を次に示します。
 
-* アプリ内メッセージにはSDKバージョン4.2以降が必要です。
-* モバイルアプリ管理者権限を持つユーザーを指定する必要があります。
+* In-app messages require SDK version 4.2 or later.
+* You must specify who has Mobile App Admin rights.
 
-   これらの権限により、ダウンロード計測用リンクおよびアプリ内メッセージにアクセスできます。詳しくは [、ロールと権限](/help/using/gs/c-mob-roles-and-permissions.md)を参照してください。
+   These rights enable access to acquisition links and in-app messages. For more information, see Roles and permissions.[](/help/using/gs/c-mob-roles-and-permissions.md)
 * メッセージが承認されると、自動的にアプリに発行されます。
 * メッセージパラメーター（traits、trigger、schedule など）の条件が一致すると、メッセージが表示されます。
 * メッセージは、リモートの HTML や画像を URL で指定できます。
@@ -59,4 +59,4 @@ Adobe Experience Platform Mobile SDK に関する情報やドキュメントを�
 
 プッシュメッセージは、通知の受信を希望するユーザーに送信されます。これらのプッシュメッセージは、Analytics のセグメントまたはカスタムセグメントのユーザーに向けてターゲット設定できます。プッシュメッセージを使用すると、アプリを使用していない状態でも表示されるので、積極的にアプリを利用していないユーザーにアプリの利用を働きかけたり、特定の時間や場所に限定した情報を伝えることができます。
 
-プッシュメッセージを設定する前に、プッシュメッセージを有効にする [ための前提条件を参照](/help/using/c-manage-app-settings/c-mob-confg-app/configure-push-messaging/prerequisites-push-messaging.md)してください。これらのタスクを実行した後、アプリの設定でプッシュメッセージを設定する必要があります。詳しくは、[プッシュメッセージ](/help/using/c-manage-app-settings/c-mob-confg-app/configure-push-messaging/configure-push-messaging.md)を設定します。
+プッシュメッセージを設定する前に、プッシュメッセージを有効にす [るための前提条件を参照してくださ](/help/using/c-manage-app-settings/c-mob-confg-app/configure-push-messaging/prerequisites-push-messaging.md)い。 これらのタスクを実行した後、アプリの設定でプッシュメッセージを設定する必要があります。詳しくは、 [Configure push messaging](/help/using/c-manage-app-settings/c-mob-confg-app/configure-push-messaging/configure-push-messaging.md).
