@@ -1,18 +1,18 @@
 ---
 description: ここでは、以前の Windows Mobile SDK の 3.x バージョンから Experience Cloud ソリューション用 Windows 8.1 ユニバーサルアプリストア 4.x SDK に移行する方法について説明します。
 seo-description: ここでは、以前の Windows Mobile SDK の 3.x バージョンから Experience Cloud ソリューション用 Windows 8.1 ユニバーサルアプリストア 4.x SDK に移行する方法について説明します。
-seo-title: 4. x SDKへの移行
-solution: Marketing Cloud、Analytics
-title: 4. x SDKへの移行
+seo-title: Migrate to the 4.x SDKs
+solution: Marketing Cloud,Analytics
+title: Migrate to the 4.x SDKs
 topic: 開発者と導入
-uuid: e0fe3b7b- cda5-4a91-834c-2c7e17a501a3
+uuid: e0fe3b7b-cda5-4a91-834c-2c7e17a501a3
 translation-type: tm+mt
 source-git-commit: 68bc21f1c6dba2faeed332495592114af90c8f61
 
 ---
 
 
-# 4. x SDKへの移行 {#migrate-to-the-x-sdks}
+# 4.x SDKへの移行 {#migrate-to-the-x-sdks}
 
 ここでは、以前の Windows Mobile SDK の 3.x バージョンから Experience Cloud ソリューション用 Windows 8.1 ユニバーサルアプリストア 4.x SDK に移行する方法について説明します。
 
@@ -22,7 +22,7 @@ source-git-commit: 68bc21f1c6dba2faeed332495592114af90c8f61
 
 ## Remove unused properties {#section_145222EAA20F4CC2977DD883FDDBBFC5}
 
-ダウンロードファイルには新しい `ADBMobileConfig.json` ファイルが含まれています。このファイルには、アプリケーション固有のグローバル設定が含まれており、以前のバージョンで使用されていた設定変数の大部分が置き換えられます。`ADBMobileConfig.json` ファイルの例を次に示します。
+ダウンロードファイルには新しい `ADBMobileConfig.json` ファイルが含まれています。このファイルには、アプリケーション固有のグローバル設定が含まれ、以前のバージョンで使用されていた設定変数のほとんどが置き換えられます。 `ADBMobileConfig.json` ファイルの例を次に示します。
 
 ```js
 { 
@@ -52,9 +52,9 @@ source-git-commit: 68bc21f1c6dba2faeed332495592114af90c8f61
 
 次の表に、設定ファイルに移動する必要がある設定変数を示します。最初の列の変数に設定されている値を 2 番目の列の変数に移動し、古い設定変数をコードから削除します。
 
-## 3. xからの移行
+## 3.xからの移行
 
-| 設定変数／メソッド | `ADBMobileConfig.json` ファイル内の変数。 |
+| 設定変数／メソッド | Variable in the `ADBMobileConfig.json` file. |
 |--- |--- |
 | offlineTrackingEnabled | "offlineEnabled" |
 | reportSuiteIDs | "rsids" |
@@ -78,7 +78,7 @@ source-git-commit: 68bc21f1c6dba2faeed332495592114af90c8f61
 
 ## event、prop、eVar
 
-[SDKメソッド](/help/windows-appstore/c-configuration/methods.md)を見ている場合は、イベント、eVar、prop、heies、およびリストを設定することをお勧めします。バージョン 4 では、これらの種類の変数をアプリケーション内で直接割り当てられなくなっています。代わりに、SDK は、コンテキストデータと処理ルールを使用して、レポート用にアプリデータを Analytics 変数にマップします。
+[SDKのメソッドを見た場合](/help/windows-appstore/c-configuration/methods.md)、イベント、eVar、prop、相続人、リストを設定する場所が不思議になることがあります。 バージョン 4 では、これらの種類の変数をアプリケーション内で直接割り当てられなくなっています。代わりに、SDK は、コンテキストデータと処理ルールを使用して、レポート用にアプリデータを Analytics 変数にマップします。
 
 処理ルールには次の利点があります。
 
@@ -96,11 +96,11 @@ For more information, see *Processing Rules* in [Analytics](/help/windows-appsto
 
 これを簡単におこなえるように、`TrackState` または `TrackAction` 呼び出しで送信されるデータは `data` パラメーターのペイロードのみになっています。
 
-### トラッキングコールの置換
+### トラッキングコールの置き換え
 
 コード全体で、次のメソッドを `trackState` または `trackAction` の呼び出しで置き換えます。
 
-### 3. xからの移行
+### 3.xからの移行
 
 * `TrackAppState` (TrackState)
 * `TrackEvents` (TrackAction)
@@ -109,15 +109,15 @@ For more information, see *Processing Rules* in [Analytics](/help/windows-appsto
 
 ## Custom visitor ID {#section_2CF930C13BA64F04959846E578B608F3}
 
-`visitorID` 変数を呼び出しに置き換え `setUserIdentifier`ます。
+Replace the `visitorID` variable with a call to `setUserIdentifier`.
 
 ## Offline tracking {#section_5D4CD8CD1BE041A79A8657E31C0D24C6}
 
-`ADBMobileConfig.json` ファイル内でオフライン追跡が有効になります。その他すべてのオフライン設定は自動的に実行されます。
+ファイル内でオフライン追跡が有効になっ `ADBMobileConfig.json` ています。 その他すべてのオフライン設定は自動的に行われます。
 
 コード全体で次のメソッドの呼び出しを削除します。
 
-### 3. xからの移行
+### 3.xからの移行
 
 * `SetOnline`
 * `SetOffline`
