@@ -5,7 +5,7 @@ seo-description: このプラグインを使用すると、Unity プロジェク
 seo-title: iOS および Android 4.x SDK 用 Unity プラグイン
 solution: Marketing Cloud，開発者
 title: iOS および Android 4.x SDK 用 Unity プラグイン
-uuid: 83289a73-982d-4472- a8c8-00b562dc80f5
+uuid: 83289a73-982d-4472-a8c8-00b562dc80f5
 translation-type: tm+mt
 source-git-commit: 5fbba02eb61679344f638b6465e47b0d9ae5a988
 
@@ -22,7 +22,7 @@ source-git-commit: 5fbba02eb61679344f638b6465e47b0d9ae5a988
 
 GitHub または Developer Connection から [ADBMobile.unitypackage](https://github.com/Adobe-Marketing-Cloud/mobile-services/releases) ファイルをダウンロードします。
 
-`ADBMobile.unitypackage` ファイルの内容を次に示します。
+ファイルの内容を次に示し `ADBMobile.unitypackage` ます。
 
 * Assets（ルート）
 
@@ -63,6 +63,6 @@ GitHub または Developer Connection から [ADBMobile.unitypackage](https://gi
 ## ADBMobile プラグインの Unity プロジェクトへの読み込み {#section_35FB6DAE49FB4FA1ACB749A1F9480FE0}
 
 1. Unity プロジェクトを開きます。
-1. **[!UICONTROL ADBMobile. unitypackage]**&#x200B;をダブルクリックします。
+1. Double-click **[!UICONTROL ADBMobile.unitypackage]**.
 1. 読み込むフォルダーを選択します。
 
