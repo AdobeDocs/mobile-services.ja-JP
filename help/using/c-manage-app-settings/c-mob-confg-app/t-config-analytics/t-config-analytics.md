@@ -3,10 +3,10 @@ description: 新しいアプリの作成中または既存のアプリの編集�
 keywords: モバイル
 seo-description: 新しいアプリの作成中または既存のアプリの編集中に、アプリ設定ページで Analytics SDK の設定をおこなうことができます。
 seo-title: Analytics SDK の設定
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: Analytics SDK の設定
 topic: 指標
-uuid: fd3a21d2-6560-4e96-92fe- b99cac5e834
+uuid: fd3a21d2-6560-4e96-92fe-b99caac5e834
 translation-type: tm+mt
 source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
 
@@ -25,7 +25,7 @@ Type information in the following fields under **[!UICONTROL SDK Analytics Optio
 
 * **[!UICONTROL セッションのヒットの日付を遡る]**
 
-   Adobe SDKがセッション情報のヒットを遡る機能を有効または無効にします。現在、セッション情報のヒットはクラッシュ回数とセッションの長さで構成されています。このオプションを有効にすると、Adobe SDK は前回のセッションの最終ヒットの 1 秒後までセッション情報のヒットの日付を遡ります。これによって、クラッシュ回数とセッションのデータが、クラッシュが発生した正しい日付に関連付けられます。アプリケーションを新しく起動するたびに、1 つのヒットの日付を遡ります。このオプションを無効にすると、Adobe SDK はセッション情報を現在のライクサイクルに添付します。
+   Adobe SDKがセッション情報のヒットの日付を遡る機能を有効または無効にします。 現在、セッション情報のヒットはクラッシュ回数とセッションの長さで構成されています。このオプションを有効にすると、Adobe SDK は前回のセッションの最終ヒットの 1 秒後までセッション情報のヒットの日付を遡ります。これによって、クラッシュ回数とセッションのデータが、クラッシュが発生した正しい日付に関連付けられます。アプリケーションを新しく起動するたびに、1 つのヒットの日付を遡ります。このオプションを無効にすると、Adobe SDK はセッション情報を現在のライクサイクルに添付します。
 
 * **[!UICONTROL プライバシー]**
 
