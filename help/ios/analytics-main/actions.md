@@ -2,10 +2,10 @@
 description: アクションは、測定するアプリ内で発生するイベントです。各アクションは、イベントが発生するたびに増分される、1 つ以上の対応する指標を持ちます。例えば、新規サブスクリプション、記事の表示またはレベルの完了を追跡できます。これらのイベントに対応する指標は、購読数、読まれた記事の数、完了したレベルの数として設定されます。
 seo-description: アクションは、測定するアプリ内で発生するイベントです。各アクションは、イベントが発生するたびに増分される、1 つ以上の対応する指標を持ちます。例えば、新規サブスクリプション、記事の表示またはレベルの完了を追跡できます。これらのイベントに対応する指標は、購読数、読まれた記事の数、完了したレベルの数として設定されます。
 seo-title: アプリのアクションの追跡
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: アプリのアクションの追跡
 topic: 開発者と導入
-uuid: 62017be1-5395-4d16- bde3-4c40a2c012d4
+uuid: 62017be1-5395-4d16-bde3-4c40a2c012d4
 translation-type: tm+mt
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
@@ -22,7 +22,7 @@ source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 1. ライブラリをプロジェクトに追加し、ライフサイクルを実装します。
 
-   詳しくは、コア実装および *ライフサイクル* で [プロジェクトにSDKおよび設定ファイルを追加を参照](/help/ios/getting-started/dev-qs.md)してください。
+   For more information, see Add the SDK and Config File to your Project in Core Implementation and Lifecycle.**[](/help/ios/getting-started/dev-qs.md)
 1. ライブラリをインポートします。
 
    ```objective-c
@@ -62,7 +62,7 @@ NSMutableDictionary *contextData = [NSMutableDictionary dictionary];
 [ADBMobile trackAction:@"myapp.SocialShare" data:contextData];
 ```
 
-コンテキストデータ値は、カスタム変数にマップする必要があります。
+Context data values must be mapped to custom variables:
 
 ![](assets/map-variable-context-action.png)
 
