@@ -2,10 +2,10 @@
 description: この情報は、クラッシュの追跡方法と、誤ったクラッシュを処理するためのベストプラクティスを理解する場合に役立ちます。
 seo-description: この情報は、クラッシュの追跡方法と、誤ったクラッシュを処理するためのベストプラクティスを理解する場合に役立ちます。
 seo-title: アプリのクラッシュの追跡
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: アプリのクラッシュの追跡
 topic: 開発者と導入
-uuid: 3ab98c14- ccdf-4060- ad88- ec07c1c6bf07
+uuid: 3ab98c14-ccdf-4060-ad88-ec07c1c6bf07
 translation-type: tm+mt
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
@@ -18,9 +18,9 @@ source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 >[!TIP]
 >
->アプリのクラッシュは、ライフサイクル指標の一部として追跡されます。クラッシュを追跡するには、プロジェクトにライブラリを追加して、ライフサイクルを実装します。詳しくは、コア実装および *ライフサイクル* で [、"SDKおよび設定ファイルのIntelliJ IDEAまたはEclipseプロジェクトへの追加」を参照](/help/android/getting-started/dev-qs.md)してください。
+>アプリのクラッシュは、ライフサイクル指標の一部として追跡されます。 クラッシュを追跡する前に、プロジェクトにライブラリを追加し、ライフサイクルを実装します。 詳しくは、 *Core実装およびライフサイクルのIntelliJ IDEAまたはEclipse ProjectへのSDKと設定ファイルの追加*[を参照してください](/help/android/getting-started/dev-qs.md)。
 
-ライフサイクル指標を実装すると、各アクティビティの `Config.collectLifecycleData` メソッドで `OnResume` が呼び出されます。`onPause` メソッドで、呼び出しが `Config.pauseCollectingLifeCycleData`おこなわれます。
+ライフサイクル指標を実装すると、各アクティビティの `Config.collectLifecycleData` メソッドで `OnResume` が呼び出されます。In the `onPause` method, a call is made to `Config.pauseCollectingLifeCycleData`.
 
 `pauseCollectingLifeCycleData` の内部では、正常終了を示すフラグが設定されます。アプリが再起動または再開されると、`collectLifecycleData` がこのフラグをチェックします。アプリがフラグステータスのとおり正常に終了しなかった場合は、次の呼び出しで `a.CrashEvent` コンテキストデータが送信され、クラッシュイベントがレポートされます。
 
@@ -38,7 +38,7 @@ Android アクティビティのライフサイクルについて詳しくは、
 
    >[!TIP]
    >
-   >アプリケーションをバックグラウンドでバックグラウンドに切り替えてからIDEから再度起動すると、このクラッシュを回避できます。
+   >IDEから再起動する前にアプリケーションをバックグラウンドに戻すと、このクラッシュを回避できます。
 
 1. If the last foreground Activity of your app is backgrounded and does not call `Config.pauseCollectingLifecycleData();` in `onPause`, and your app is manually closed or killed by the OS, the next launch results in a crash.
 
@@ -48,9 +48,9 @@ Android アクティビティのライフサイクルについて詳しくは、
 
 >[!IMPORTANT]
 >
->コードを含むアクティビティを含むライフサイクルイベントに依存する必要があります。これはフラグメントの親ビューで処理されます。
+>含まれるアクティビティでコードを実行できるライフサイクルイベントを利用する必要があります。 これはフラグメントの親ビューで処理されます。
 
-## （オプション）アクティビティライフサイクルコールバックの実装
+## （オプション）アクティビティのライフサイクルコールバックの実装
 
 API レベル 14 以降、Android では、アクティビティに対するグローバルライフサイクルコールバックが許可されます。For more information, see [Application](https://developer.android.com/reference/android/app/Application).
 
