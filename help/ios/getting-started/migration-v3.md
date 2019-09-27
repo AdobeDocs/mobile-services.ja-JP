@@ -1,11 +1,11 @@
 ---
 description: iOS ライブラリのバージョン 3.x または 2.x からバージョン 4.x への移行に役立つ情報です。
 seo-description: iOS ライブラリのバージョン 3.x または 2.x からバージョン 4.x への移行に役立つ情報です。
-seo-title: 4. x iOSライブラリへの移行
-solution: Marketing Cloud、Analytics
-title: 4. x iOSライブラリへの移行
+seo-title: 4.x iOSライブラリへの移行
+solution: Marketing Cloud,Analytics
+title: Migrating to the 4.x iOS library
 topic: 開発者と導入
-uuid: 5668972b- f355-4e03-9df0-8c82ddf6809b
+uuid: 5668972b-f355-4e03-9df0-8c82ddf6809b
 translation-type: tm+mt
 source-git-commit: 68bc21f1c6dba2faeed332495592114af90c8f61
 
@@ -20,7 +20,7 @@ iOS ライブラリのバージョン 3.x または 2.x からバージョン 4.
 >
 >The SDK uses `NSUserDefaults` to store data that is needed to calculate unique users, lifecycle metrics, and other data related to core SDK functionality.  If you modify or remove the values in `NSUserDefaults` that are expected by the SDK, unexpected behavior might result in the form of data inconsistencies.
 
-iOS SDKライブラリのバージョン4. xでは、パブリックメソッドは1つのヘッダーに統合されています。また、機能はクラスレベルメソッドからアクセスできるようになったため、ポインター、インスタンス、またはシングルトンを追跡する必要はありません。
+In the version 4.x of the iOS SDK library, the public methods are consolidated into one header. Also, the functionality is now accessible through class level methods, so you do not have to keep track of pointers, instances, or singletons.
 
 ## Events, props, and eVars {#section_76EA6F5611184C5CAE6E62956D84D7B6}
 
@@ -76,7 +76,7 @@ iOS SDKライブラリのバージョン4. xでは、パブリックメソッド
 1. 先頭列の変数に設定されている値を 2 番目の列の変数に移動します。
 1. コードから古い設定変数を削除します。
 
-### 移行情報
+### Migration information
 
 次の表に、設定ファイルに移動する必要がある設定変数を示します。
 
@@ -84,7 +84,7 @@ iOS SDKライブラリのバージョン4. xでは、パブリックメソッド
 
 先頭列の値を 2 番目の列の変数に移動します。
 
-| 設定変数 | `ADBMobileConfig.json` ファイル内の変数 |
+| 設定変数 | Variable in the `ADBMobileConfig.json` file |
 |--- |--- |
 | offlineTrackingEnabled | "offlineEnabled" |
 | offlineHitLimit | "batchLimit" |
@@ -101,12 +101,12 @@ iOS SDKライブラリのバージョン4. xでは、パブリックメソッド
 
 先頭列の値を 2 番目の列の変数に移動します。
 
-| 設定変数 | `ADBMobileConfig.json` ファイル内の変数 |
+| 設定変数 | Variable in the `ADBMobileConfig.json` file |
 |--- |--- |
 | trackOffline | "offlineEnabled" |
 | offlineLimit | "batchLimit" |
 | account | "rsids" |
-| trackingServer | "server"の場合は、プレフィックスを `"https://"` 削除します。プロトコルプレフィックスは、"ssl" 設定に基づいて自動的に追加されます。 |
+| trackingServer | "server", remove the  prefix. `"https://"`プロトコルプレフィックスは、"ssl" 設定に基づいて自動的に追加されます。 |
 | trackingServerSecure | 削除します。安全な接続をおこなうには、"server" を定義し、"ssl" を有効にします。 |
 | charSet | "charset" |
 | currencyCode | "currency" |
@@ -119,18 +119,18 @@ iOS SDKライブラリのバージョン4. xでは、パブリックメソッド
 | dynamicVariablePrefix | 削除します。使用されなくなりました。 |
 | visitorNamespace | 削除します。使用されなくなりました。 |
 | usePlugins | 削除します。使用されなくなりました。 |
-| useBestPracticesチャーン測定（getChurnInstance）へのすべての呼び出し | 削除し、ライフサイクル指標に置き換えます。詳しくは、[ライフサイクル指標](//help/ios/metrics.md)を参照してください。 |
+| useBestPracticesチャーン測定（getChurnInstance）へのすべての呼び出し | Remove, replaced by lifecycle metrics. 詳しくは、[ライフサイクル指標](//help/ios/metrics.md)を参照してください。 |
 
 
 ## Update track calls and tracking variables {#section_96E7D9B3CDAC444789503B7E7F139AB9}
 
 バージョン 4 の SDK では、Web に焦点を当てた `track` 呼び出しと `trackLink` 呼び出しを使用する代わりに、次のメソッドを使用します。
 
-* `trackState:data:` 状態は、アプリで使用可能なビュー（など `home dashboard``app settings``cart`）です。
+* `trackState:data:` 状態とは、、など、アプリで使用できる `home dashboard`ビ `app settings`ュ `cart`ーです。
 
    これらの状態は Web サイト上のページによく似ており、`trackState` コールはページビュー数を増分します。
 
-* `trackAction:data:` アクション（ `logons``banner taps``feed subscriptions`例えば、アプリで発生し、測定したい指標など）を実行します。
+* `trackAction:data:` アクション(、 `logons`、 `banner taps`など) `feed subscriptions`と、アプリで発生し、測定する他の指標。
 
 どちらのメソッドも `data` パラメーターを使用しますが、これは、コンテキストデータとして送信される名前と値のペアを含む `NSDictionary` です。
 
@@ -148,11 +148,11 @@ iOS SDKライブラリのバージョン4. xでは、パブリックメソッド
 
 代わりに、変数に直接割り当てた値を `data``NSDictionary`   に追加する必要があります。This means that calls to `setProp`, `setEvar`, and assignments to persistent context data should all be removed and the values be added to the `data` parameter.
 
-### appSection/Server、geoZip、トランザクションID、キャンペーン、その他の標準変数
+### AppSection/Server、GeoZip、トランザクションID、Campaign、その他の標準変数
 
 上記の変数など、測定オブジェクトに設定していたデータを代わりに `data``NSDictionary`   に追加する必要があります。`trackState` または `trackAction` 呼び出しで送信されるデータは、`data` パラメーターのペイロードのみです。
 
-### トラッキングコールの置換
+### Replace tracking calls
 
 コードで、次のメソッドを `trackState` または `trackAction` の呼び出しで置き換えます。
 
@@ -171,7 +171,7 @@ iOS SDKライブラリのバージョン4. xでは、パブリックメソッド
 
 ## Custom visitor ID {#section_2CF930C13BA64F04959846E578B608F3}
 
-`visitorID` 変数を呼び出しに置き換え `setUserIdentifier:`ます。
+Replace the `visitorID` variable with a call to `setUserIdentifier:`.
 
 ## Offline tracking {#section_5D4CD8CD1BE041A79A8657E31C0D24C6}
 
