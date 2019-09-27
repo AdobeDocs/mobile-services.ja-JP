@@ -3,7 +3,7 @@ description: Adobe SDK を使用して、個人識別情報（PII）を収集し
 seo-description: Adobe SDK を使用して、個人識別情報（PII）を収集し、サードパーティのエンドポイントに送信することができます。
 seo-title: PII ポストバック
 title: PII ポストバック
-uuid: 8d1f1fb8-6842-478b- a164- e7f727755bd9
+uuid: 8d1f1fb8-6842-478b-a164-e7f727755bd9
 translation-type: tm+mt
 source-git-commit: 70ac08c74e11a68d94d3f10ed6d7fc133d34149d
 
@@ -18,13 +18,13 @@ Adobe SDK を使用して PII を収集する場合は、追跡 PII 呼び出し
 
 >[!TIP]
 >
->PIIポストバックタイプを使用するには、HTTPSをサポートするエンドポイントが必要です。
+>An endpoint that supports HTTPS is required to use the PII postback type.
 
 ## Tracking PII postbacks {#section_36B967B888CF467EACCDEF61DFA0B12B}
 
-1. [プロジェクトにライブラリを追加し、ライフサイクルを実装します。
+1. [ライブラリをプロジェクトに追加し、ライフサイクルを実装します。
 
-   詳しくは、コア実装および *ライフサイクル* で [、"SDKおよび設定ファイルのIntelliJ IDEAまたはEclipseプロジェクトへの追加」を参照](/help/android/getting-started/dev-qs.md)してください。
+   詳しくは、 *Core実装およびライフサイクルのIntelliJ IDEAまたはEclipse ProjectへのSDKと設定ファイルの追加*[を参照してください](/help/android/getting-started/dev-qs.md)。
 
 1. ライブラリをインポートします。
 
