@@ -1,11 +1,11 @@
 ---
 description: iOS ライブラリが提供する Adobe Analytics メソッドの一覧を以下に示します。
 seo-description: iOS ライブラリが提供する Adobe Analytics メソッドの一覧を以下に示します。
-seo-title: Analyticsのメソッド
-solution: Marketing Cloud、Analytics
-title: Analyticsのメソッド
+seo-title: Analyticsメソッド
+solution: Marketing Cloud,Analytics
+title: Analytics methods
 topic: 開発者と導入
-uuid: d49fe6de- cb32-4b96-9891- c567310e59a6
+uuid: d49fe6de-cb32-4b96-9891-c567310e59a6
 translation-type: tm+mt
 source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
@@ -16,7 +16,7 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
 iOS ライブラリが提供する Adobe Analytics メソッドの一覧を以下に示します。
 
-SDKは、現在、Analytics、Target、Audience Manager、Adobe Experience Platform IDサービスを含む複数のAdobe Experience Cloudソリューションをサポートしています。Methods are prefixed according to the solution. Experience Cloud ID methods are prefixed with `track`.
+SDKは、現在、Analytics、Target、Audience Manager、Adobe Experience Platform IDサービスを含む、複数のAdobe Experience cloudソリューションをサポートしています。 Methods are prefixed according to the solution. Experience Cloud ID methods are prefixed with `track`.
 
 これらの各メソッドを使用して、Adobe Analytics レポートスイートにデータを送信します。
 
@@ -26,7 +26,7 @@ SDKは、現在、Analytics、Target、Audience Manager、Adobe Experience Platf
 
    >[!TIP]
    >
-   >これはページビュー数が増える唯一のトラッキング呼び出しです。
+   >これは、ページビュー数を増やす唯一のトラッキングコールです。
 
    * このメソッドの構文を次に示します。
 
@@ -86,7 +86,7 @@ SDKは、現在、Analytics、Target、Audience Manager、Adobe Experience Platf
 
    >[!TIP]
    >
-   >このメソッドは、アプリケーションがバックグラウンドにある間に実行されるコードでのみ呼び出す必要があります。
+   >This method should only be called in code that runs while your app is in the background.
 
    * このメソッドの構文を次に示します。
 
@@ -222,7 +222,7 @@ SDKは、現在、Analytics、Target、Audience Manager、Adobe Experience Platf
 
    >[!TIP]
    >
-   >If you provide `block`, you must return `YES` to send a hit. `nil` forで渡すと最終ヒットが `block` 送信されます。
+   >If you provide `block`, you must return `YES` to send a hit. Passing in `nil` for `block` sends the final hit.
 
    * このメソッドの構文を次に示します。
 
@@ -263,7 +263,7 @@ SDKは、現在、Analytics、Target、Audience Manager、Adobe Experience Platf
 
 * **trackingSendQueuedHits**
 
-   SDK4.1が必要です。現在キューに格納されているヒット数に関係なく、ライブラリは、オフラインキュー内のすべてのヒットを強制的に送信します。
+   Requires SDK 4.1. Regardless of how many hits are currently queued, forces the library to send all hits in the offline queue.
 
    * このメソッドの構文を次に示します。
 
@@ -299,7 +299,7 @@ SDKは、現在、Analytics、Target、Audience Manager、Adobe Experience Platf
 
    >[!CAUTION]
    >
-   >キューを手動でクリアするときは、注意が必要です。このプロセスを元に戻すことはできません。
+   >キューを手動でクリアする場合は注意が必要です。 このプロセスを元に戻すことはできません。
 
    * このメソッドの構文を次に示します。
 
@@ -321,7 +321,7 @@ SDKは、現在、Analytics、Target、Audience Manager、Adobe Experience Platf
 
    >[!IMPORTANT]
    >
-   >このメソッドはページビュー数を増分しません。
+   >このメソッドでは、ページビュー数は増分されません。
 
    * このメソッドの構文を次に示します。
 
