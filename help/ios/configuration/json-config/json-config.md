@@ -1,11 +1,11 @@
 ---
 description: この情報は、ADBMobile.json 設定ファイルを使用する場合に役立ちます。
 seo-description: この情報は、ADBMobile.json 設定ファイルを使用する場合に役立ちます。
-seo-title: ADBMobile JSON config
-solution: Marketing Cloud、Analytics
+seo-title: ADBMobile JSON設定
+solution: Marketing Cloud,Analytics
 title: ADBMobile JSON config
 topic: 開発者と導入
-uuid: d9708d59- e30a-4f6c- ab1b- d9499855d0c2
+uuid: d9708d59-e30a-4f6c-ab1b-d9499855d0c2
 translation-type: tm+mt
 source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
 
@@ -24,7 +24,7 @@ source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
 >
 >**iOS** では、バンドル内でアクセス可能な任意の場所に `ADBMobileConfig.json` ファイルを配置できます。
 
-* **獲得**
+* **acquisition**
 
    モバイルアプリの獲得を有効にします。
 
@@ -57,7 +57,7 @@ source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
    * 最小 SDK バージョン：4.6
    >[!IMPORTANT]
    >
-   >バックグラウンドセッションのヒット情報は、セッション情報サーバ呼び出しで送信され、追加のサーバーコールが適用される場合があります。
+   >日付を遡ったセッションヒット情報は、セッション情報サーバーコールで送信され、追加のサーバーコールが適用される場合があります。
 
 
 * **batchLimit**
@@ -65,7 +65,7 @@ source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
    連続する呼び出しで送信されるヒット数のしきい値。例えば、この `batchLimit` を 10 に設定した場合は、ヒットが 10 個たまるまでヒットをキューに格納していきます。10 番目のヒットが格納されると、10 個のヒットすべてが連続して送信されます。
 
    * Default value is `0`, which means that batching is not enabled.
-   * 必要 `offlineEnabled = true`です。
+   * が必要で `offlineEnabled = true`す。
    * 最小 SDK バージョン：4.1
 
 * **charset**
@@ -80,7 +80,7 @@ source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
 
    >[!IMPORTANT]
    >
-   >この変数は、Targetで必須です。
+   >This variable is required by Target.
 
    * 最小 SDK バージョン：4.0
 
@@ -95,7 +95,7 @@ source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
    追加情報を以下に示します。
 
    * 最小 SDK バージョン：4.16.1
-   * `marketingCloud` オブジェクトのブールプロパティ。このプロパティを設定すると、デバイスがExperience `true`CloudのDevice Co- opをオプトアウトする原因となります。
+   * The Boolean property of the `marketingCloud` object that, when set to `true`, causes the device to be opted-out of the Experience Cloud's Device Co-Op.
    * Default value is `false`.
    * この設定は、Device Co-op をプロビジョニングしたユーザー&#x200B;**にのみ**&#x200B;適用されます。
 
@@ -125,7 +125,7 @@ source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
 
    有効にした場合、ヒットはデバイスがオフラインのときにキューに格納され、後でデバイスがオンラインになったときに送信されます。オフライン追跡を使用するには、レポートスイートでタイムスタンプを有効にする必要があります。デフォルト値は `false` です。
 
-   以下に、重要な情報を示します。
+   次に、重要な情報を示します。
 
    * レポートスイートでタイムスタンプが有効になっている場合、`offlineEnabled` 設定プロパティを&#x200B;*必ず* true に設定してください。
    * If your report suite is not timestamp enabled, your `offlineEnabled` configuration property *must* be false.
@@ -136,7 +136,7 @@ source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
 
 * **org**
 
-   Adobe Experience Platform IDサービスのExperience Cloud組織IDを指定します。
+   Specifies the Experience Cloud org ID for the Adobe Experience Platform Identity Service.
 
    * 最小 SDK バージョン：4.3
 
@@ -145,7 +145,6 @@ source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
    各 POI 配列は、対象の地点の POI 名、緯度、経度、半径（メートル単位）を保持します。POI 名には任意の文字列を使用できます。`trackLocation` コールの送信時、現在の座標が定義した目標地点内にある場合は、コンテキストデータ変数に代入され、`trackLocation` コールで送信されます。
 
    * 最小 SDK バージョン：4.0
-
    ```js
    "poi" [ 
            ["sanfrancisco",37.757144,-122.44812,7000]
@@ -161,7 +160,7 @@ source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
    “analytics.poi”: “`https://assets.adobedtm.com/…/yourfile.json`”,
    ```
 
-   これを設定しない場合は、`ADBMobile.json` ファイルを更新してこの行を含める必要があります。更新された設定ファイルをダウンロードするには、開始 [する前](/help/ios/getting-started/requirements.md)にを参照してください。
+   これを設定しない場合は、`ADBMobile.json` ファイルを更新してこの行を含める必要があります。To download an updated configuration file, see Before you start.[](/help/ios/getting-started/requirements.md)
 
 * **postback**
 
@@ -197,7 +196,7 @@ source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
 
    >[!IMPORTANT]
    >
-   >この変数は、獲得で必要です。If the variable is set to `0`, or is not included, the SDK does not wait for acquisition data, and acquisition metrics are not tracked.
+   >This variable is required by Acquisition. If the variable is set to `0`, or is not included, the SDK does not wait for acquisition data, and acquisition metrics are not tracked.
 
    * 最小 SDK バージョン：4.1
 
@@ -225,7 +224,7 @@ source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
 
    >[!IMPORTANT]
    >
-   >この変数は、Analyticsで必要です。
+   >This variable is required by Analytics.
 
    * 最小 SDK バージョン：4.0
 
@@ -239,7 +238,7 @@ source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
 
    >[!IMPORTANT]
    >
-   >この変数は、AnalyticsまたはAudience Managementで必須です。
+   >この変数は、AnalyticsまたはAudience Managementで必要です。
 
    * 最小 SDK バージョン：4.0
 
