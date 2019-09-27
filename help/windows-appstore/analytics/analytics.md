@@ -2,10 +2,10 @@
 description: 'null'
 seo-description: 'null'
 seo-title: Analytics
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: Analytics
 topic: 開発者と導入
-uuid: fa0ef6c4- c04d-4695-9eb4- ada4e9920e6c
+uuid: fa0ef6c4-c04d-4695-9eb4-ada4e9920e6c
 translation-type: tm+mt
 source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
@@ -14,17 +14,17 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
 # Analytics {#analytics}
 
-プロジェクトにライブラリを追加すると、Analyticsメソッドの任意の呼び出しをアプリ内の任意の場所に行うことができます。
+After you add the library to your project, you can make any of the Analytics method calls anywhere in your app.
 
 >[!TIP]
 >
->クラスに必ず読み込み `ADBMobile.h` ます。
+>必ずクラスにインポート `ADBMobile.h` してください。
 
 ## Enable mobile application reports in Analytics {#section_F2F9234009184F20BA36B5CDE872B424}
 
 コードを追加する前に、次の手順を完了してモバイルアプリケーションのライフサイクル追跡を有効にするよう Analytics 管理者に依頼してください。この手順を完了すると、開発を開始する際にレポートスイートで指標を収集できるようになります。
 
-1. **[!UICONTROL 管理ツール]** / **[!UICONTROL レポートスイート]** を開き、モバイルレポートスイートを選択します。
+1. Open **[!UICONTROL Admin Tools]** &gt; **[!UICONTROL Report Suites]** and select your mobile report suite(s).
 1. Click **[!UICONTROL Edit Settings]** &gt; **[!UICONTROL Mobile Management]** &gt; **[!UICONTROL Mobile Application Reporting]**.
 
    ![](assets/mobile-settings.png)
@@ -48,7 +48,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 ライフサイクル指標をアプリケーションで収集するには、次の例のように、アプリケーションがアクティベートされる部分に呼び出しを追加します。
 
 
-### winJS（default. js）
+### default.jsのWinJS
 
 
 ```js
@@ -64,7 +64,7 @@ app.oncheckpoint = function (args) {
 }
 ```
 
-### C#（App. xaml. cs）
+### App.xaml.csのC#
 
 ```js
 public App() 
@@ -93,7 +93,7 @@ private void OnSuspending(object sender, SuspendingEventArgs e)
 }
 ```
 
-### App. xaml. cppのC/CX
+### App.xaml.cppのC/CX
 
 ```js
 App::App() 
@@ -128,7 +128,7 @@ If `CollectLifecycleData()` is called twice in the same session, then your appli
 ## Events, props, and eVars {#section_76EA6F5611184C5CAE6E62956D84D7B6}
 
 
-[ADBMobileクラスとメソッドリファレンス](/help/windows-appstore/c-configuration/methods.md)を確認した場合は、イベント、eVar、prop、heiies、およびリストを設定することをお勧めします。バージョン 4 では、これらの種類の変数をアプリケーション内で直接割り当てられなくなっています。代わりに、SDK は、コンテキストデータと処理ルールを使用して、レポート用にアプリデータを Analytics 変数にマップします。
+If you've looked at the ADBMobile Class and Method Reference, you are probably wondering where to set events, eVars, props, heirs, and lists. [](/help/windows-appstore/c-configuration/methods.md)バージョン 4 では、これらの種類の変数をアプリケーション内で直接割り当てられなくなっています。代わりに、SDK は、コンテキストデータと処理ルールを使用して、レポート用にアプリデータを Analytics 変数にマップします。
 
 処理ルールには次の利点があります。
 
@@ -147,7 +147,7 @@ If `CollectLifecycleData()` is called twice in the same session, then your appli
 
 [処理ルールの概要](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/processing-rules/processing-rules.html)
 
-[処理ルールを使用する権限があります](https://helpx.adobe.com/analytics/kb/processing-rules-authorization.html)
+[Become authorized to use processing rules](https://helpx.adobe.com/analytics/kb/processing-rules-authorization.html)
 
 「名前空間」を使用してコンテキストデータ変数をグループ化することをお勧めします。これにより論理的な順序を維持できます。例えば、ある製品に関する情報を収集する場合、以下の変数を定義できます。
 
@@ -185,19 +185,19 @@ If `CollectLifecycleData()` is called twice in the same session, then your appli
 
 >[!NOTE]
 >
->アドビが名前空間を予約 `a.`します。このわずかな制約以外で、競合を回避するために必要なのは、コンテキストデータ変数をログイン会社内で一意にすることだけです。
+>アドビは名前空間を予約しま `a.`す。 このわずかな制約以外で、競合を回避するために必要なのは、コンテキストデータ変数をログイン会社内で一意にすることだけです。
 
 ## Products variable {#section_AFBA36F3718C44D29AF81B9E1056A1B4}
 
-モバイルSDK *`products`* で設定するには、特別な構文を使用する必要があります。[製品変数](/help/windows-appstore/analytics/products/products.md)を参照してください。
+モバイルSDK *`products`* に設定するには、特別な構文を使用する必要があります。 「 [Products Variable](/help/windows-appstore/analytics/products/products.md)」を参照。
 
 ## (Optional) Enable offline tracking {#section_955B2A03EB854742BDFC4A0A3C287009}
 
-To store hits when the device is offline, you can enable offline tracking in the [ADBMobileConfig.json config](/help/windows-appstore/c-configuration/methods.md). オフライン追跡を有効にする前に、設定ファイルリファレンスに記載されているタイムスタンプ要件に注意してください。
+To store hits when the device is offline, you can enable offline tracking in the [ADBMobileConfig.json config](/help/windows-appstore/c-configuration/methods.md). オフライン追跡を有効にする前に、設定ファイルの参照で説明されているタイムスタンプ要件に注意してください。
 
 ## Geo-location and points of interest {#section_BAD34A8DD013454DB355121316BD7FD4}
 
-位置情報は位置データ（緯度と経度）に加え、事前定義された目標点を測定する場合に役立ちます。`TrackLocation` 各呼び出しが送信されます。
+位置情報は位置データ（緯度と経度）に加え、事前定義された目標点を測定する場合に役立ちます。Each `TrackLocation` call sends:
 
 * 緯度／経度および POI（`ADBMobileConfig.json` 設定ファイルで定義されている POI 内の場合）。これらの情報は、自動レポート作成のためにモバイルソリューション変数に渡されます。
 * コンテキストデータとして渡される中心からの距離と精度。これらの情報を収集するには、処理ルールを使用します。
