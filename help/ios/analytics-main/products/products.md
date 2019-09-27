@@ -2,10 +2,10 @@
 description: products 変数は、処理ルールを使用して設定することができません。iOS 4.x SDK では、コンテキストデータパラメーターに特別な構文を使用して、サーバーコールに直接 products を設定する必要があります。
 seo-description: products 変数は、処理ルールを使用して設定することができません。iOS 4.x SDK では、コンテキストデータパラメーターに特別な構文を使用して、サーバーコールに直接 products を設定する必要があります。
 seo-title: products 変数
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: products 変数
 topic: 開発者と導入
-uuid: 6ece4d27- ef86-435c- a6f7- bd76be1c95ca
+uuid: 6ece4d27-ef86-435c-a6f7-bd76be1c95ca
 translation-type: tm+mt
 source-git-commit: 7aff336586058302046a728a0b1b0ce12660c1ba
 
@@ -41,8 +41,8 @@ NSMutableDictionary *contextData = [NSMutableDictionary dictionary];
 [ADBMobile trackState:@"Order Confirmation" data:contextData]; 
 ```
 
-*`products`* がイメージリクエストに直接設定され、その他の変数がコンテキストデータとして設定されます。すべてのコンテキストデータ変数は、処理ルールを使用してマッピングする必要があります。
+*`products`* がイメージリクエストに直接設定され、その他の変数がコンテキストデータとして設定されます。 すべてのコンテキストデータ変数は、処理ルールを使用してマッピングする必要があります。
 
 ![](assets/map-products.png)
 
-例えば、*`products`*&#x200B;変数をマッピングする必要はありません。画像リクエストに直接設定されるからです。
+Folio Builder *`products`*&#x200B;変数をマッピングする必要はありません。画像リクエストに直接設定されるからです。
