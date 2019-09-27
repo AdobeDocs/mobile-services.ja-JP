@@ -3,10 +3,10 @@ description: モバイルアプリをインストールしている（アプリ�
 keywords: モバイル
 seo-description: モバイルアプリをインストールしている（アプリのディープリンク）か、していない（Web サイトまたはアプリストア）かに応じてユーザーをリンク先にルーティングできます。
 seo-title: インタースティシャル
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: インタースティシャル
 topic: 指標
-uuid: 7dce8ab2-2a5d-4384- ac1e- e31dfaa33654
+uuid: 7dce8ab2-2a5d-4384-ac1e-e31dfaa33654
 translation-type: tm+mt
 source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
@@ -17,11 +17,11 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
 モバイルアプリをインストールしている（アプリのディープリンク）か、していない（Web サイトまたはアプリストア）かに応じてユーザーをリンク先にルーティングできます。ユーザーにルーティングの選択肢を残すことをお勧めします。マーケターは、利用可能なランディングページのリンク先を示すインタースティシャルページを設定することで、ユーザーに選択肢を提供できます。
 
-インタースティシャルを設定するにはマーケティングリンクの作成:
+インタースティシャルを設定するには、 マーケティングリンクの作成：
 
 1. Click **[!UICONTROL Edit Deep Link Interstitial]**.
 
-   ![ディープリンクのインタースティシャル](assets/interstitial2.png)
+   ![ディープリンクインタースティシャル](assets/interstitial2.png)
 
 1. 次のフィールドに情報を入力します。
 
@@ -29,7 +29,7 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
       カスタムインタースティシャル HTML ページを選択します。
 
-      カスタムインタースティシャルを使用することで、マーケティング担当者は、カスタムHTML/CSS/JSを使用してインタースティシャルランディングページをカスタマイズし、ページのブランド化を行うことができます。
+      カスタムインタースティシャルを使用することで、マーケターはインタースティシャルランディングページをカスタムHTML/CSS/JSでカスタマイズし、ページのブランディングを可能にします。
 
       次に、HTML ページの要件を示します。
 
@@ -37,7 +37,7 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
       * Must contain the `%%DEST%%` and `%%FALLBACK%%` placeholders.
       * The uploaded HTML will be served in an `<iframe>`.
 
-         リンクターゲットが親ウィンドウを指していることを確認する必要があります。`<base target="_parent" />` 個別 `<head>` に、または個別にターゲットプロパティを指定 `<a/>` することもできます。
+         リンクターゲットが親ウィンドウを指していることを確認する必要があります。You can include `<base target="_parent" />` in `<head>` or specify a target property for each `<a/>` individually.
 
          >[!TIP]
          >
@@ -61,7 +61,7 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
       このフィールドは、ディープリンクに失敗した場合、テキストボタンを更新します。別のオプションへのフォールバックを許可する前に、ユーザーのディープリンクへの転送が試行されます。例えば、フォールバックがアプリをダウンロードしてインストールするためのアプリストアへのものである場合や、ユーザーを会社の Web サイトに転送する場合があります。代替テキストを使用すると、ユーザーは、ディープリンクが失敗した場合に、その他のオプションが利用できることを知ることができます。
 
 
-1. **（オプション**）画像の上にあるアイコンをクリックして、回転した場合と異なるデバイスでのインタースティシャルの外観を確認します。
+1. (**Optional**) Click the icons above the image to see how the interstitial looks rotated and on different devices.
 
    Mobile Services の外部で画像を変更または編集すると、異なる状況で画像が適切に表示されることを確認できます。
 1. 「**[!UICONTROL 保存]**」をクリックします。
