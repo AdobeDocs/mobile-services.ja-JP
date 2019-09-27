@@ -3,10 +3,10 @@ description: アプリケーションでプッシュメッセージを設定す�
 keywords: モバイル
 seo-description: アプリケーションでプッシュメッセージを設定する前に、いくつかのタスクを完了する必要があります。
 seo-title: プッシュメッセージを有効にするための前提条件
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: プッシュメッセージを有効にするための前提条件
 topic: 指標
-uuid: 194e6e07- b794-4152- a838- a4125c3292d4
+uuid: 194e6e07-b794-4152-a838-a4125c3292d4
 translation-type: tm+mt
 source-git-commit: 92b1e430293fbded666e8af3f01393898c0e5811
 
@@ -17,17 +17,17 @@ source-git-commit: 92b1e430293fbded666e8af3f01393898c0e5811
 
 アプリケーションでプッシュメッセージを設定する前に、これらのタスクを完了する必要があります。
 
-## 貴社のExperience Cloudの有効化
+## Enable the Experience Cloud for your company
 
-Adobe Analytics を使用する会社では、Experience Cloud を有効にする必要があります。アドビアカウント担当者のステータスを確認できます。
+Adobe Analytics を使用する会社では、Experience Cloud を有効にする必要があります。アドビのアカウント担当者のステータスを確認できます。
 
-## Mobile SDKのインストールと設定
+## Install and configure the Mobile SDK
 
 * **Mobile SDK のインストール**
 
-   プッシュメッセージを設定するには、Mobile SDKのバージョン4.6以降をダウンロードしてインストールする必要があります。For more information, see [Download the SDKs](/help/using/c-manage-app-settings/c-mob-confg-app/t-config-analytics/download-sdk.md).
+   プッシュメッセージを設定するには、Mobile SDKのバージョン4.6以降をダウンロードしてインストールする必要があります。 For more information, see [Download the SDKs](/help/using/c-manage-app-settings/c-mob-confg-app/t-config-analytics/download-sdk.md).
 
-* **プッシュサービスの設定**
+* **Configure push services**
 
    Mobile SDK でプッシュサービスを設定する必要があります。詳しくは、以下のコンテンツを参照してください。
 
@@ -38,7 +38,7 @@ Adobe Analytics を使用する会社では、Experience Cloud を有効にす�
 
 >[!IMPORTANT]
 >
->ユーザーがプッシュサービス機能を使用するには、Adobe IDを使用してMobileコアサービスにログインする必要があります。また、AnalyticsアカウントはAdobe IDにリンクされている必要があります。ユーザーが既存の Adobe Analytics アカウントを使用してログインした場合、プッシュサービス機能は利用できません。
+>ユーザーがプッシュサービス機能を使用するには、Adobe IDを使用してMobileコアサービスにログインする必要があり、AnalyticsアカウントがAdobe IDにリンクされている必要があります。 ユーザーが既存の Adobe Analytics アカウントを使用してログインした場合、プッシュサービス機能は利用できません。
 
 ユーザーが Adobe ID を持っていない場合は、次の手順に従います。
 
@@ -50,7 +50,7 @@ Adobe Analytics を使用する会社では、Experience Cloud を有効にす�
 
 1. (**Users**) Log in to Mobile using their Adobe ID.
 
-## Experience Cloudでのユーザーのアカウントのリンク
+## Experience cloudでのユーザーのアカウントのリンク
 
 各ユーザーは、Experience Cloud 組織から Analytics ソリューションアカウントをリンクする必要があります。
 
@@ -66,11 +66,11 @@ Adobe Analytics を使用する会社では、Experience Cloud を有効にす�
 
 詳しくは、[アカウントのリンクのトラブルシューティング](https://marketing.adobe.com/resources/help/en_US/mcloud/organizations.html)を参照してください。
 
-## MobileユーザーインターフェイスでのプッシュサービスおよびSDK IDサービスの設定
+## モバイルユーザーインターフェイスでのプッシュサービスとSDK IDサービスの設定
 
-アプリに対して ID サービスを有効にする前は、「**[!UICONTROL プッシュサービス]」セクションが無効になっています。**&#x200B;ただし、IDサービスを有効にすると、「プッシュサービス」セクションが有効になります。プッシュサービスの有効化について詳しくは、"SDK IDサービスの設定」を参照 [](/help/using/c-manage-app-settings/c-mob-confg-app/t-config-visitor.md)してください。
+アプリに対して ID サービスを有効にする前は、「**[!UICONTROL プッシュサービス]」セクションが無効になっています。**&#x200B;ただし、IDサービスを有効にした後は、「プッシュサービス」セクションが有効になります。 プッシュサービスの有効化について詳しくは、SDK IDサービスの設 [定を参照してください](/help/using/c-manage-app-settings/c-mob-confg-app/t-config-visitor.md)。
 
->[!IMPORTANT]:変更内容を保存してプッシュサービスを更新するには **[!UICONTROL 、「保存」]** をクリックする必要があります。
+>[!IMPORTANT]:「保存」をクリックし **[!UICONTROL て]** 、変更を保存し、プッシュサービスを更新する必要があります。
 >
 >各レポートスイートでは、Apple 用に 1 つのアプリ、Google 用に 1 つのアプリを設定できます。追加のアプリが必要な場合（例えば、実稼動環境用と開発環境用にアプリが必要な場合）、各間教養に新しいアプリストアアプリと新しいレポートスイートを設定する必要があります。
 
