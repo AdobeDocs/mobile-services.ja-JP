@@ -2,10 +2,10 @@
 description: Android にライフサイクル指標を実装するための情報です。iOS では、ライフサイクル指標は自動的に収集されます。
 keywords: Xamarin
 seo-description: Android にライフサイクル指標を実装するための情報です。iOS では、ライフサイクル指標は自動的に収集されます。
-seo-title: ライフサイクルの実装
+seo-title: Implement lifecycle
 solution: Marketing Cloud，開発者
 title: ライフサイクルの実装
-uuid: 6dccc12e-8b57-4231-9c74- d47bc0ac93ba
+uuid: 6dccc12e-8b57-4231-9c74-d47bc0ac93ba
 translation-type: tm+mt
 source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
@@ -14,7 +14,7 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
 # Implement lifecycle {#implement-lifecycle}
 
-この情報は、Android用のライフサイクル指標を実装するのに役立ちます。
+この情報は、Android用のライフサイクル指標の実装に役立ちます。
 
 >[!TIP]
 >
@@ -24,7 +24,7 @@ For the metrics and dimensions that can be measured automatically by the mobile 
 
 ## iOS
 
-iOSでは、ライフサイクル指標は自動的に収集されます。
+iOSでは、ライフサイクル指標が自動的に収集されます。
 
 ## Android
 
