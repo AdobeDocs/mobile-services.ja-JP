@@ -1,11 +1,11 @@
 ---
 description: 時間計測アクションを使用すると、アクションの開始から終了までのアプリ内時間と合計時間を測定できます。SDK は、アクションが完了するまでにかかる各セッションの時間と全セッションの合計時間を計算します。時間計測アクションを使用して、セグメントを定義し、購入までの時間、パスレベル、チェックアウトフローなどを比較することができます。
 seo-description: 時間計測アクションを使用すると、アクションの開始から終了までのアプリ内時間と合計時間を測定できます。SDK は、アクションが完了するまでにかかる各セッションの時間と全セッションの合計時間を計算します。時間計測アクションを使用して、セグメントを定義し、購入までの時間、パスレベル、チェックアウトフローなどを比較することができます。
-seo-title: 時間指定アクション
-solution: Marketing Cloud、Analytics
-title: 時間指定アクション
+seo-title: Timed actions
+solution: Marketing Cloud,Analytics
+title: 時間計測アクション
 topic: 開発者と導入
-uuid: dbcbac5a-6345-49f6- b050-0db05292f005
+uuid: dbcbac5a-6345-49f6-b050-0db05292f005
 translation-type: tm+mt
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
@@ -31,7 +31,7 @@ source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 1. ライブラリをプロジェクトに追加し、ライフサイクルを実装します。
 
-   詳しくは、コア実装および *ライフサイクル* で [プロジェクトにSDKおよび設定ファイルを追加を参照](/help/ios/getting-started/dev-qs.md)してください。
+   For more information, see Add the SDK and Config File to your Project in Core Implementation and Lifecycle.**[](/help/ios/getting-started/dev-qs.md)
 1. ライブラリをインポートします。
 
    ```objective-c
@@ -70,7 +70,7 @@ source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
                              data:@{@"myapp.ImageLiked" : imageName}];
 ```
 
-コンテキストデータ値は、カスタム変数にマップする必要があります。
+Context data values must be mapped to custom variables:
 
 ![](assets/map-variable-context-ltv.png)
 
