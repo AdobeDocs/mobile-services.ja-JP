@@ -3,10 +3,10 @@ description: パス分析に基づくアクションパスレポートには、�
 keywords: モバイル
 seo-description: パス分析に基づくアクションパスレポートには、アプリ内の状態間の移行時にたどったパスを表す遷移チャートが表示されます。
 seo-title: アクションパスレポート
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: アクションパスレポート
 topic: レポート, 指標
-uuid: a21e5d9e- fd57-4178-9d64-87181b7f988b
+uuid: a21e5d9e-fd57-4178-9d64-87181b7f988b
 translation-type: tm+mt
 source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
@@ -21,7 +21,7 @@ source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
 >[!TIP]
 >
->ファネルレポートを使用すると、ナビゲーションとアクションを1つのレポートで組み合わせることができます。For more information, see [Funnel](/help/using/usage/reports-funnel.md).
+>ファネルレポートを使用すると、ナビゲーションとアクションを1つのレポートで組み合わせることができます。 For more information, see [Funnel](/help/using/usage/reports-funnel.md).
 
 ![](assets/action_paths.png)
 
@@ -40,7 +40,7 @@ To expand, click the **[!UICONTROL +]** icon. このオプションには、ノ�
 
 状態の展開は、ファネルと似ています。
 
-![アクションパスの拡大](assets/action_paths_expand.png)
+![action path expand](assets/action_paths_expand.png)
 
 To isolate the node and show paths that come into, and go out of the selected node, click the  ![focus icon](assets/icon_focus.png) icon. 次の図では、ユーザーが写真を選択する&#x200B;**前に**&#x200B;次のパスが完了します。
 
@@ -56,11 +56,11 @@ To isolate the node and show paths that come into, and go out of the selected no
 * 項目のドラッグ
 * 項目の拡大／縮小
 
-![アクションパスのフォーカス](assets/action_paths_focus.png)
+![アクションパスフォーカス](assets/action_paths_focus.png)
 
 複数のノードを再スタートまたは展開することで、ユーザーがアプリ内でたどったパスを詳細に把握できます。以下に例を示します。
 
-![action path multi](assets/action_paths_mult.png)
+![アクションパスマルチ](assets/action_paths_mult.png)
 
 このレポートでは、次のオプションを設定できます。
 
@@ -74,8 +74,8 @@ To isolate the node and show paths that come into, and go out of the selected no
 
 * **[!UICONTROL フィルター]**
 
-   「**[!UICONTROL フィルター]」をクリックし、様々なレポートにわたるフィルターを作成して、すべてのモバイルレポートにおけるセグメントのパフォーマンスを確認します。**&#x200B;共通フィルターを定義すると、パス（画面遷移）レポート以外のすべてのレポートに適用できます。詳しくは、共通フィルター [の追加](/help/using/usage/reports-customize/t-sticky-filter.md)を参照してください。
+   「**[!UICONTROL フィルター]」をクリックし、様々なレポートにわたるフィルターを作成して、すべてのモバイルレポートにおけるセグメントのパフォーマンスを確認します。**&#x200B;共通フィルターを定義すると、パス（画面遷移）レポート以外のすべてのレポートに適用できます。For more information, see [Add a sticky filter](/help/using/usage/reports-customize/t-sticky-filter.md).
 
 * **[!UICONTROL ダウンロード]**
 
-   **[!UICONTROL «PDF]** »また **[!UICONTROL は«CSV]** »をクリックして、ドキュメントをダウンロードまたは開き、Mobile Servicesにアクセスできない、またはプレゼンテーションでファイルを使用するユーザーと共有します。
+   Click **[!UICONTROL PDF]** or **[!UICONTROL CSV]** to download or open documents and share with users who do not have access to Mobile Services or to use the file in presentations.
