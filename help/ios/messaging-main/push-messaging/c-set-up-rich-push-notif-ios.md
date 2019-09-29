@@ -3,7 +3,7 @@ description: 画像ファイルを Apple の通知に添付することができ
 seo-description: 画像ファイルを Apple の通知に添付することができます。視覚的なコンポーネントを追加することによって、ユーザーのプッシュ通知とのエンゲージメントを大幅に向上させることができます。
 seo-title: リッチプッシュ通知の受信
 title: リッチプッシュ通知の受信
-uuid: 0dbda409- cf49-4eb8-90ee- baf27911dc07
+uuid: 0dbda409-cf49-4eb8-90ee-baf27911dc07
 translation-type: tm+mt
 source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
 
@@ -16,12 +16,12 @@ source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
 
 リッチプッシュ通知を iOS アプリで受信するには：
 
-1. アプリのプッシュメッセージを実装するには、 [プッシュメッセージ](/help/ios/messaging-main/push-messaging/push-messaging.md).
+1. Implement push messaging for the app by completing the steps in [プッシュメッセージ](/help/ios/messaging-main/push-messaging/push-messaging.md).
 1. テキストのプッシュメッセージをアプリに送信できることを確認します。
 1. 以下の手順を実行して、Notification Service Extension を追加します。
 
    1. In your Xcode project, select  **[!UICONTROL File]** &gt; **[!UICONTROL New]** &gt; **[!UICONTROL Target]**.
-   1. **[!UICONTROL 「通知サービス拡張]**」を選択します。
+   1. Select **[!UICONTROL Notification Service Extension]**.
    1. `NotificationService.m` ファイルが存在することを確認します。
 
 1. `NotificationService.m` ファイルを開き、以下の Delegate メソッドが存在することを確認します。
@@ -35,7 +35,7 @@ source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
       (void)didReceiveNotificationRequest:(UNNotificationRequest *)request withContentHandler:(void (^)(UNNotificationContent *contentToDeliver))contentHandler;
       ```
 
-      この方法では、キーを `userInfo``attachment-url` 使用してメディアURLを取得できます。ローカルディレクトリにファイルをダウンロードした後、ローカルパスを追加 `bestAttemptContent.attachments`します。
+      In this method, you can get the Media URL from  by using the  key. `userInfo``attachment-url`After you download the file to a local directory, add the local path to .`bestAttemptContent.attachments`
 
       このメソッドのコード例を以下に示します。
 
