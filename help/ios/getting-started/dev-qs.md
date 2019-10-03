@@ -7,7 +7,7 @@ title: コア実装とライフサイクル
 topic: 開発者と導入
 uuid: 96d06325-e424-4770-8659-4b5431318ee3
 translation-type: tm+mt
-source-git-commit: be980e0e639d5b0df3f1b6a6f91f3ad0a5efe8d7
+source-git-commit: 4db9781e6e1e75a04d9715a41c5a32c10ede1bf4
 
 ---
 
@@ -78,6 +78,7 @@ SDK をダウンロードするには
       * `WebKit.framework`
       * `libsqlite3.0.tbd`
       * `AdobeMobileLibrary.a`
+      * `CoreLocation.framework` （オプション、ただし地域追跡機能に必要）
    * **iOS エクステンションのターゲット**
 
       * `SystemConfiguration.framework`
