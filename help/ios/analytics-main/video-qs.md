@@ -7,7 +7,7 @@ title: ビデオ分析
 topic: 開発者と導入
 uuid: d75fa415-78f6-4f50-a563-76949f040138
 translation-type: tm+mt
-source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
+source-git-commit: 1c387b063eedb41a52e044dc824df6a51f173ad2
 
 ---
 
@@ -32,7 +32,7 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
    （オプション）カスタムインサイト変数は、ビデオパス情報を提供します。
 
-   * Variable type: eVar
+   * 変数型：eVar
    * デフォルトの有効期限：訪問
    * カスタムインサイト（s.prop、ビデオパスに使用）
 
@@ -62,21 +62,21 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
    訪問者によって閲覧されたコンテンツのタイプに関するデータを収集します。ビデオ指標によって送信されるヒットには、`video` というコンテンツタイプが割り当てられます。この変数は、ビデオ追跡専用に予約する必要はありません。同じ変数を使用する他のコンテンツレポートのコンテンツタイプを使用することにより、異なるコンテンツのタイプでの訪問者の分布を分析できます。例えば、この変数を使用する「記事」や「製品ページ」などの値を使用して、他のコンテンツタイプにタグを付けることができます。ビデオ指標の見地からすると、コンテンツタイプを使用することで、ビデオ訪問者を識別して、ビデオのコンバージョン率を計算できます。
 
-   * Variable type: eVar
+   * 変数型：eVar
    * デフォルトの有効期限：ページビュー
 
 * **a.media.timePlayed**
 
    前回のデータ収集プロセス（イメージリクエスト）以降のビデオ視聴秒数をカウントします。
 
-   * Variable type: Event
+   * 変数型：イベント
    * タイプ：カウンター
 
 * **a.media.view**
 
    訪問者がビデオの一部を視聴したことを示します。ただし、訪問者がビデオを視聴した時間や視聴した部分に関する情報は提供されません。
 
-   * Variable type: Event
+   * 変数型：イベント
    * タイプ：カウンター
 
 * **a.media.segmentView**
@@ -90,7 +90,7 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
    ユーザーがビデオを最後まで視聴したことを示します。デフォルトでは、完了イベントはビデオが終了する 1 秒前に測定されます。導入時に、表示完了と見なすビデオの終わりからの秒数を指定できます。終わりが定義されていないライブビデオや他のストリームの場合、完了を測定するカスタムポイント（一定時間の視聴後など）を指定できます。
 
-   * Variable type: Event
+   * 変数型：イベント
    * タイプ：カウンター
 
 ## Configure media settings {#section_929945D4183C428AAF3B983EFD3E2500}
@@ -116,7 +116,7 @@ mediaSettings.trackSeconds = 30; // sends a hit every 30 seconds
 [ADBMobile mediaOpenWithSettings:mediaSettings callback:nil]; 
  
 // You are now ready to play the video, for example, [movieViewController.moviePlayer play]; 
-// Note the the mediaPlay, mediaStop and mediaClose methods are called in the 
+// Note the mediaPlay, mediaStop and mediaClose methods are called in the 
 // event handlers described in the next section
 ```
 
