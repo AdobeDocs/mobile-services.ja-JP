@@ -8,14 +8,14 @@ title: ライフサイクル指標
 topic: 開発者と導入
 uuid: a8f3ebac-be3b-4948-82bb-105d46cff6d
 translation-type: tm+mt
-source-git-commit: b690ec677cf5aedfb2673b707f82716af1851124
+source-git-commit: 1c387b063eedb41a52e044dc824df6a51f173ad2
 
 ---
 
 
 # Lifecycle metrics{#lifecycle-metrics}
 
-This section provides information about the metrics and dimensions that can be measured automatically by the mobile library, after lifecycle is implemented, and a link to troubleshoot Lifecycle data. トラブルシューティングの詳細については、「ライフサイクルデータのトラブルシ [ューティング」を参照してくださ](https://helpx.adobe.com/analytics/kb/troubleshoot-lifecycle-data.html)い。
+ここでは、ライフサイクルの導入後、モバイルライブラリによって自動的に測定される指標とディメンション、およびライフサイクルデータのトラブルシューティングへのリンクについて説明します。 トラブルシューティングの詳細については、「ライフサイクルデータのトラブルシ [ューティング」を参照してくださ](https://helpx.adobe.com/analytics/kb/troubleshoot-lifecycle-data.html)い。
 
 ## 新しいAdobe Experience Platform Mobile SDKリリース
 
@@ -24,7 +24,7 @@ Adobe Experience Platform Mobile SDK に関する情報やドキュメントを�
 2018 年 9 月に、SDK の新しいメジャーバージョンをリリースしました。これらの新しい Adobe Experience Platform Mobile SDK は、[Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) から設定できます。
 
 * 開始するには、Adobe Experience Platform Launchに移動します。
-* Experience Platform SDK リポジトリの内容については、[Github：Adobe Experience Platform SDKs](https://github.com/Adobe-Marketing-Cloud/acp-sdks) を参照してください。
+* Experience Platform SDK リポジトリの内容については、[Github: Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks) を参照してください。
 
 ## Lifecycle metrics and dimensions {#section_78F036C4296F4BA3A47C2044F79C86C1}
 
@@ -65,7 +65,7 @@ Analyticsの場合、各ライフサイクル追跡呼び出しで送信され�
 
    >[!IMPORTANT]
    >
-   >This metric is not automatically stored in an Analytics metric. この指標を取得するためのカスタムイベントを設定する処理ルールを作成する必要があります。
+   >この指標は、Analytics指標に自動的には保存されません。 この指標を取得するためのカスタムイベントを設定する処理ルールを作成する必要があります。
 
    * Analytics コンテキストデータ／Target パラメーター: `a.MonthlyEngUserEvent`
    * Audience Manager のシグナル: `c_a_MonthlyEngUserEvent`
@@ -149,7 +149,7 @@ Analyticsの場合、各ライフサイクル追跡呼び出しで送信され�
 
 * **オペレーティングシステムのバージョン**
 
-   The OS version.
+   OSのバージョン。
 
    * Analytics コンテキストデータ／Target パラメーター: `a.OSVersion`
    * Audience Manager: `c_a_OSVersion`
@@ -212,21 +212,21 @@ Analyticsの場合、各ライフサイクル追跡呼び出しで送信され�
    Populated by `trackTimedAction` methods.
 
    * Analytics コンテキストデータ／Target パラメーター: `a.action.time.total`
-   * Audience Manager Trait: `c_a_action_time_total`
+   * Audience Managerの特性： `c_a_action_time_total`
 
 * **アプリでのアクション時間**
 
    Populated by `trackTimedAction` methods.
 
    * Analytics コンテキストデータ／Target パラメーター: `a.action.time.inapp`
-   * Audience Manager Trait: `c_a_action_time_inapp`
+   * Audience Managerの特性： `c_a_action_time_inapp`
 
 * **ライフタイム値（イベント）**
 
    Populated by `trackLifetimeValue` methods.
 
    * Analytics コンテキストデータ／Target パラメーター: `a.ltv.amount`
-   * Audience Manager Trait: `c_a_ltv_amount`
+   * Audience Managerの特性： `c_a_ltv_amount`
 
 ### ディメンション
 
@@ -238,7 +238,7 @@ Analyticsの場合、各ライフサイクル追跡呼び出しで送信され�
 
       * `a.loc.lat.a`
       * `a.loc.lon.a`
-   * Audience Manager Traits:
+   * Audience Managerの特徴：
 
       * `c_a_loc_lat_a`
       * `c_a_loc_lon_a`
@@ -248,11 +248,11 @@ Analyticsの場合、各ライフサイクル追跡呼び出しで送信され�
 
    trackLocation メソッドによって設定されます。
 
-   * Analytics Context Data/Target Parameters:
+   * Analyticsコンテキストデータ/Targetパラメーター：
 
       * `a.loc.lat.b`
       * `a.loc.lon.b`
-   * Audience Manager Traits:
+   * Audience Managerの特徴：
 
       * `c_a_loc_lat_b`
       * `c_a_loc_lon_b`
@@ -266,7 +266,7 @@ Analyticsの場合、各ライフサイクル追跡呼び出しで送信され�
 
       * `a.loc.lat.c`
       * `a.loc.lon.c`
-   * Audience Manager Traits:
+   * Audience Managerの特徴：
 
       * `c_a_loc_lat_c`
       * `c_a_loc_lon_c`
@@ -277,30 +277,30 @@ Analyticsの場合、各ライフサイクル追跡呼び出しで送信され�
    デバイスが定義された POI 内にある場合に trackLocation メソッドによって設定されます。
 
    * Analytics Context Data/Target Parameters: `a.loc.poi`
-   * Audience Manager Trait: `c_a_loc_poi`
+   * Audience Managerの特性： `c_a_loc_poi`
 
 * **目標地点の中心までの距離**
 
    デバイスが定義された POI 内にある場合に trackLocation メソッドによって設定されます。
 
    * Analytics Context Data/Target Parameters: `a.loc.dist`
-   * Audience Manager Trait: `c_a_loc_dist`
+   * Audience Managerの特性： `c_a_loc_dist`
 
 * **ライフタイム値（コンバージョン変数）**
 
    trackLifetimeValue メソッドによって設定されます。
 
    * Analytics Context Data/Target Parameters: `a.ltv.amount`
-   * Audience Manager Trait: `c_a_ltv_amount`
+   * Audience Managerの特性： `c_a_ltv_amount`
 
 * **トラッキングコード**
 
    モバイルアプリの獲得によって設定され、Adobe Mobile Services によって自動的に生成されます。
 
    * Analytics Context Data/Target Parameters: `a.referrer.campaign.trackingcode`
-   * Audience Manager Trait: `c_a_referrer_campaign_trackingcode`
+   * Audience Managerの特性： `c_a_referrer_campaign_trackingcode`
 
-* ** Campaign
+* **Campaign**
 
    キャンペーンの名前。キャンペーン変数にも格納されます。モバイルアプリケーションの獲得によって設定されます。
 
@@ -312,25 +312,25 @@ Analyticsの場合、各ライフサイクル追跡呼び出しで送信され�
    リンクを表示するコンテンツの名前または ID。モバイルアプリの獲得によって設定されます。
 
    * Analytics Context Data/Target Parameters: `a.referrer.campaign.content`
-   * Audience Manager Trait: `c_a_referrer_campaign_content`
+   * Audience Managerの特性： `c_a_referrer_campaign_content`
 
 * **キャンペーンのメディア**
 
    バナーまたは電子メールなどのマーケティングメディア。モバイルアプリケーションの獲得によって設定されます。
 
    * Analytics Context Data/Target Parameters: `a.referrer.campaign.medium`
-   * Audience Manager Trait: `c_a_referrer_campaign_medium`
+   * Audience Managerの特性： `c_a_referrer_campaign_medium`
 
 * **キャンペーンのソース**
 
    ニュースレターやソーシャルメディアネットワークなどのオリジナルリファラー。モバイルアプリケーションの獲得によって設定されます。
 
    * Analytics Context Data/Target Parameters: `a.referrer.campaign.source`
-   * Audience Manager Trait: `c_a_referrer_campaign_source`
+   * Audience Managerの特性： `c_a_referrer_campaign_source`
 
 * **キャンペーンのキーワード**
 
    この獲得で追跡する有料検索キーワードまたはその他の用語。モバイルアプリの獲得によって設定されます。
 
    * Analytics Context Data/Target Parameters: `a.referrer.campaign.term`
-   * Audience Manager Trait: `c_a_referrer_campaign_term`
+   * Audience Managerの特性： `c_a_referrer_campaign_term`
