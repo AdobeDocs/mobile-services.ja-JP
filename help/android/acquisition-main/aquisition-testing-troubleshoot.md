@@ -1,25 +1,25 @@
 ---
-description: The following information helps you troubleshoot Acquisition testing issues.
-keywords: android;Acquisition;testing
-seo-description: The following information helps you troubleshoot Acquisition testing issues.
-seo-title: Troubleshooting Acquisition testing
+description: 次の情報は、獲得テストの問題のトラブルシューティングに役立ちます。
+keywords: android；獲得；テスト
+seo-description: 次の情報は、獲得テストの問題のトラブルシューティングに役立ちます。
+seo-title: 獲得テストのトラブルシューティング
 solution: Marketing Cloud,Analytics
-title: Troubleshooting Acquisition testing
+title: 獲得テストのトラブルシューティング
 translation-type: tm+mt
-source-git-commit: da8798d7ee1f05dcade31cced5404d78c9cf360a
+source-git-commit: 1c387b063eedb41a52e044dc824df6a51f173ad2
 
 ---
 
 
-# Troubleshooting Acquisition testing {#aquistion-testing-troubleshooting}
+# 獲得テストのトラブルシューティング {#aquistion-testing-troubleshooting}
 
-Here are some issues you might face when testing Acquisition and some possible solutions:
+獲得をテストする際に直面する可能性のある問題と、考えられる解決策を以下に示します。
 
 * 特に指定しない場合、ADBMobileConfig.jsonファイルはassetsフォルダーに配置する必要があります。
 
 * 名前は大文字と小文字が区別されるので、小文字で名前を付けないでください。
 
-   You need to ensure that  is called from the main activity. `Config.setContext(this.getApplicationContext())`詳しくは、設定方法を参照 [してください](https://docs.adobe.com/content/help/en/mobile-services/android/configuration-android/methods.html)。
+   がメインアクティビティから呼び `Config.setContext(this.getApplicationContext())` 出されていることを確認する必要があります。 詳しくは、設定方法を参照 [してください](https://docs.adobe.com/content/help/en/mobile-services/android/configuration-android/methods.html)。
 
 * 提供されたAndroidManifest.xmlファイルには、いくつかのユーザー権限がないので、データを送信し、オフライントラッキングコールを記録するために必要です。
 
