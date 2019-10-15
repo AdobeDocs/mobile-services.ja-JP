@@ -8,7 +8,7 @@ title: PhoneGapプラグインの概要
 topic: 開発者と導入
 uuid: c5c32357-d8df-458a-b0e8-e0c56040241d
 translation-type: tm+mt
-source-git-commit: b690ec677cf5aedfb2673b707f82716af1851124
+source-git-commit: 1c387b063eedb41a52e044dc824df6a51f173ad2
 
 ---
 
@@ -24,7 +24,7 @@ Adobe Experience Platform Mobile SDK に関する情報やドキュメントを�
 2018 年 9 月に、SDK の新しいメジャーバージョンをリリースしました。これらの新しい Adobe Experience Platform Mobile SDK は、[Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) から設定できます。
 
 * 開始するには、Adobe Experience Platform Launchに移動します。
-* Experience Platform SDK リポジトリの内容については、[Github：Adobe Experience Platform SDKs](https://github.com/Adobe-Marketing-Cloud/acp-sdks) を参照してください。
+* Experience Platform SDK リポジトリの内容については、[Github: Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks) を参照してください。
 
 
 ## npm を使用したプラグインのインストール {#section_43229E57C16944C0B51531CB92089189}
@@ -64,7 +64,7 @@ cordova plugin add adobe-mobile-services
 ## AppMeasurementライブラリを含める
 
 1. To download the AppMeasurement library, see [Get the SDK](/help/android/getting-started/dev-qs.md).
-1. ファイルをフォル `adobeMobileLibrary.jar` ダーにドラッグ `src` します。
+1. ファイルをフォ `adobeMobileLibrary.jar` ルダーにドラッグ `src` します。
 
    To move this file, click **[!UICONTROL OK]**.
 
