@@ -2,22 +2,22 @@
 description: 新しいアプリの作成中または既存のアプリの編集中に、アプリ設定ページで Analytics SDK の設定をおこなうことができます。
 keywords: モバイル
 seo-description: 新しいアプリの作成中または既存のアプリの編集中に、アプリ設定ページで Analytics SDK の設定をおこなうことができます。
-seo-title: Analytics SDK の設定
-solution: Marketing Cloud,Analytics
-title: Analytics SDK の設定
+seo-title: SDK Analytics オプションの設定
+solution: Experience Cloud,Analytics
+title: SDK Analytics オプションの設定
 topic: 指標
 uuid: fd3a21d2-6560-4e96-92fe-b99caac5e834
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
 
 ---
 
 
-# Configure SDK Analytics options {#configure-sdk-analytics-options}
+# SDK Analytics オプションの設定 {#configure-sdk-analytics-options}
 
 新しいアプリの作成中または既存のアプリの編集中に、アプリ設定ページで Analytics SDK の設定をおこなうことができます。
 
-Type information in the following fields under **[!UICONTROL SDK Analytics Options]**:
+**[!UICONTROL Analytics SDK の設定]** の次のフィールドに情報を入力します。
 
 * **[!UICONTROL HTTPS を使用]**
 
@@ -25,7 +25,7 @@ Type information in the following fields under **[!UICONTROL SDK Analytics Optio
 
 * **[!UICONTROL セッションのヒットの日付を遡る]**
 
-   Adobe SDKがセッション情報のヒットの日付を遡る機能を有効または無効にします。 現在、セッション情報のヒットはクラッシュ回数とセッションの長さで構成されています。このオプションを有効にすると、Adobe SDK は前回のセッションの最終ヒットの 1 秒後までセッション情報のヒットの日付を遡ります。これによって、クラッシュ回数とセッションのデータが、クラッシュが発生した正しい日付に関連付けられます。アプリケーションを新しく起動するたびに、1 つのヒットの日付を遡ります。このオプションを無効にすると、Adobe SDK はセッション情報を現在のライクサイクルに添付します。
+   Adobe SDK がセッション情報のヒットの日付を遡る機能を有効または無効にします。現在、セッション情報のヒットはクラッシュ回数とセッションの長さで構成されています。このオプションを有効にすると、Adobe SDK は前回のセッションの最終ヒットの 1 秒後までセッション情報のヒットの日付を遡ります。これによって、クラッシュ回数とセッションのデータが、クラッシュが発生した正しい日付に関連付けられます。アプリケーションを新しく起動するたびに、1 つのヒットの日付を遡ります。このオプションを無効にすると、Adobe SDK はセッション情報を現在のライクサイクルに添付します。
 
 * **[!UICONTROL プライバシー]**
 
@@ -48,6 +48,6 @@ Type information in the following fields under **[!UICONTROL SDK Analytics Optio
 
 * **[!UICONTROL さらに詳細を表示]**
 
-   「**[!UICONTROL さらに詳細を表示]」リンクをクリックすると、レポートスイート ID とトラッキングサーバー、オフライン追跡の有効／無効、使用されている文字エンコーディングモデル（UTF-8 など）が表示されます。**
+   **[!UICONTROL さらに詳細を表示]** リンクをクリックすると、レポートスイート ID とトラッキングサーバー、オフライン追跡の有効／無効、使用されている文字エンコーディングモデル（UTF-8 など）が表示されます。
 
    オフライン追跡が有効の場合、オフライン時にデバイスによって生成されたデータにはタイムスタンプが付き、後で送信されます。このオプションが無効の場合、オフラインデータは破棄されます。
