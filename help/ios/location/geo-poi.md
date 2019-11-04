@@ -1,18 +1,18 @@
 ---
 description: 位置情報を利用すると、緯度と経度およびアプリ内にあらかじめ定義されている目標地点を用いてロケーションデータを測定することができます。
 seo-description: 位置情報を利用すると、緯度と経度およびアプリ内にあらかじめ定義されている目標地点を用いてロケーションデータを測定することができます。
-seo-title: 地域と目標地点
-solution: Marketing Cloud,Analytics
-title: Geo-Location and points of interest
+seo-title: 位置情報と目標地点
+solution: Experience Cloud,Analytics
+title: 位置情報と目標地点
 topic: 開発者と導入
-uuid: c800ec85-a33f-425d-b28f-bf8229ae8
-translation-type: tm+mt
+uuid: c800ec85-a33f-425d-b28f-bfe8bf229ae8
+translation-type: ht
 source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
 ---
 
 
-# Geo-location and points of interest {#geo-location-and-points-of-interest}
+# 位置情報と目標地点{#geo-location-and-points-of-interest}
 
 位置情報を利用すると、緯度と経度およびアプリ内にあらかじめ定義されている目標地点を用いてロケーションデータを測定することができます。
 
@@ -24,25 +24,25 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
 * コンテキストデータとして渡された中心からの距離と精度。
 
-   これらの変数は、自動ではキャプチャされません。You must map these context data variables by using the instructions in *Sending Additional Data* section below.
+   これらの変数は、自動ではキャプチャされません。これらのコンテキストデータ変数は、以下の「*追加データの送信*」の節の手順に従ってマップする必要があります。
 
 ## POI の動的更新 {#section_3747B310DD5147E2AAE915E762997712}
 
-バージョン 4.2 以降、POI は Adobe Mobile インターフェイスで定義され、アプリ設定ファイルに動的に同期されます。This synchronization requires an `analytics.poi` setting in the `ADBMobile.json` file:
+バージョン 4.2 以降、POI は Adobe Mobile インターフェイスで定義され、アプリ設定ファイルに動的に同期されます。この同期をおこなうには、`ADBMobile.json` ファイルの `analytics.poi` 設定が必要です。
 
 ```js
 “analytics.poi”: “https://assets.adobedtm.com/…/yourfile.json”,
 ```
 
-詳しくは、ADBMobile JSON Configを参 [照してください](/help/ios/configuration/json-config/json-config.md)。
+詳しくは、「[ADBMobile JSON の設定](/help/ios/configuration/json-config/json-config.md)」を参照してください。
 
-この設定がない場合は、更新されたバージョンの `ADBMobile.json` ファイルをダウンロードして、アプリに追加する必要があります。詳しい情報と手順については、『開始する前に *SDKとテストツールをダウンロードする* 』を参 [照してください](/help/ios/getting-started/requirements.md)。
+この設定がない場合は、更新されたバージョンの `ADBMobile.json` ファイルをダウンロードして、アプリに追加する必要があります。詳しい情報と手順については、「[事前準備](/help/ios/getting-started/requirements.md)」の「*SDK およびテストツールのダウウンロード*」を参照してください。
 
-## 地域とPOIの追跡 {#section_B1616E400A7548F9A672F97FEC75AE27}
+## 位置情報と POI の追跡 {#section_B1616E400A7548F9A672F97FEC75AE27}
 
 1. ライブラリをプロジェクトに追加し、ライフサイクルを実装します。
 
-   詳しくは、コア実装とラ *イフサイクルでのプロジェクトへのSDKと設定ファイルの追加* ( [英語のみ)を参照してください](/help/ios/getting-started/dev-qs.md)。
+   詳しくは、[コア実装とライフサイクル](/help/ios/getting-started/dev-qs.md)の「*プロジェクトへの SDK と設定ファイルの追加*」を参照してください。
 1. ライブラリをインポートします。
 
    ```objective-c
@@ -58,13 +58,13 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
    >[!TIP]
    >
-   >いつでも電話 `trackLocation` できます。
+   >いつでも `trackLocation` を呼び出すことができます。
 
-   呼び出しに渡す場所を指定するには、「 `trackLocation` Getting the User’s Location [」を使用します](https://developer.apple.com/Library/ios/documentation/UserExperience/Conceptual/LocationAwarenessPG/CoreLocation/CoreLocation.html)。
+   `trackLocation` 呼び出しに渡されるロケーションを判断するには、「[Getting the User’s Location（ユーザーのロケーションを取得する）](https://developer.apple.com/Library/ios/documentation/UserExperience/Conceptual/LocationAwarenessPG/CoreLocation/CoreLocation.html)」を参照してください。
 
 さらに、ロケーションが定義済みの POI 半径内にあると判断された場合は、`a.loc.poi` コンテキストデータ変数が `trackLocation` ヒットとともに送信され、ロケーションレポートに POI としてレポートされます。`a.loc.dist` コンテキスト変数も、定義された座標からの距離（メートル単位）と共に送信されます。
 
-## Send additional data {#section_3EBE813E54A24F6FB669B2478B5661F9}
+## 追加データの送信 {#section_3EBE813E54A24F6FB669B2478B5661F9}
 
 位置データに加えて、各位置追跡呼び出しで追加のコンテキストデータを送信することができます。
 
@@ -74,11 +74,11 @@ NSMutableDictionary *contextData = [NSMutableDictionary dictionary];
 [ADBMobile trackLocation: currentLocation data:contextData];
 ```
 
-Context data values must be mapped to custom variables:
+コンテキストデータ値は、カスタム変数にマッピングする必要があります。
 
 ![](assets/map-location-context-data.png)
 
-## Location context data {#section_FFB71E6653F9410A89CC6ACC0C9164A9}
+## 位置コンテキストデータ {#section_FFB71E6653F9410A89CC6ACC0C9164A9}
 
 緯度と経度はそれぞれ 3 種類のコンテキストデータパラメーターを使用して送信されます。各パラメーターは、6 つのコンテキストデータパラメーターの合計に対して、様々な精度を表します。
 
@@ -97,7 +97,7 @@ Context data values must be mapped to custom variables:
 
 次の情報に留意してください。
 
-* A `trackLocation` request sends in the equivalent of a `trackAction` call.
+* `trackLocation` リクエストは、`trackAction` 呼び出しに相当するものを送信します。
 
 * POI は、通常の `trackAction` 呼び出しおよび `trackState` 呼び出しの一部としては送信されないので、POI を追跡するには `trackLocation` 呼び出しを使用する必要があります。
 
@@ -110,7 +110,7 @@ Context data values must be mapped to custom variables:
    以前送信したこれまでの `trackLocation` 呼び出しに対し、POI は適用されません。
 * `trackLocation` 呼び出しでは、`trackAction` 呼び出しと同様の追加コンテキストデータの送信がサポートされます。
 
-* 2 つの POI の直径が重複する場合、現在の位置を含む最初の POI が使用されます。
+* 2 つの POI の直径が重なっている場合は、現在のロケーションを含む最初の POI が使用されます。
 
    POI が重複している場合は、粒度の大きい順に POI のリストを並べ替えて、粒度の最も大きい POI がレポートされるようにする必要があります。
 
