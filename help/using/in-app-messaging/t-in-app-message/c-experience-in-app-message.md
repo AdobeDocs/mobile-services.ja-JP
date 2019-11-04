@@ -2,27 +2,26 @@
 description: タイプ（フルスクリーン、アラートまたは通知）および表示、テキストおよびボタンオプションを含む、アプリ内メッセージのエクスペリエンスオプションを設定します。
 keywords: モバイル
 seo-description: タイプ（フルスクリーン、アラートまたは通知）および表示、テキストおよびボタンオプションを含む、アプリ内メッセージのエクスペリエンスオプションを設定します。
-seo-title: アプリ内メッセージのエクスペリエンス
-solution: Marketing Cloud,Analytics
-title: アプリ内メッセージのエクスペリエンス
+seo-title: エクスペリエンス：アプリ内メッセージ
+solution: Experience Cloud,Analytics
+title: エクスペリエンス：アプリ内メッセージ
 topic: 指標
 uuid: 4c6d6756-47fb-4f1b-8338-0b0c9b0fceb0
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
 ---
 
 
-# Experience: in-app message {#experience-in-app-message}
+# エクスペリエンス：アプリ内メッセージ{#experience-in-app-message}
 
 タイプ（フルスクリーン、アラートまたは通知）および表示、テキストおよびボタンオプションを含む、アプリ内メッセージのエクスペリエンスオプションを設定します。
 
-1. In your app, click **[!UICONTROL Messaging]** &gt; **[!UICONTROL Manage Messages]** &gt; **[!UICONTROL Create Message]** &gt; **[!UICONTROL Create In-App]**.
+1. アプリで、**[!UICONTROL メッセージング]**／**[!UICONTROL メッセージを管理]**／**[!UICONTROL メッセージを作成]**／**[!UICONTROL アプリ内を作成]**&#x200B;をクリックします。
 1. エクスペリエンスページで、メッセージの名前を入力します。
-1. 「**[!UICONTROL タイプ]」セクションのフィールドに入力します。**
+1. **[!UICONTROL タイプ]** セクションのフィールドに入力します。
 
-   * **[!UICONTROL Type]**
-Select the message type for your in-app message campaign:
+   * **[!UICONTROL タイプ]**：アプリ内メッセージキャンペーンのメッセージタイプを選択します。
 
       * **[!UICONTROL フルスクリーン]**
       * **[!UICONTROL アラート]**
@@ -33,21 +32,21 @@ Select the message type for your in-app message campaign:
 
       >[!TIP]
       >
-      >This option is displayed only when you select the **[!UICONTROL Full Screen]** message type.
+      >**[!UICONTROL フルスクリーン]** メッセージタイプを選択した場合のみ、このオプションが表示されます。
 
    * **[!UICONTROL カスタム]**
 
       カスタム HTML コンテンツを読み込みます（全画面表示のみ）。クリックスルーリンクおよびキャンセルリンクを設置する必要があります。
 
-      1. 「**[!UICONTROL 参照]」をクリックして HTML ファイルをダウンロードするか、HTML ドキュメントをウィンドウにドラッグします。**
-      1. 「**[!UICONTROL 例をダウンロード]」をクリックすると、サンプルのカスタム HTML コンテンツが表示されます。**
+      1. **[!UICONTROL 参照]** をクリックして HTML ファイルをダウンロードするか、HTML ドキュメントをウィンドウにドラッグします。
+      1. **[!UICONTROL 例をダウンロード]** をクリックすると、サンプルのカスタム HTML コンテンツが表示されます。
       >[!TIP]
       >
-      >This option is displayed only when you select the **[!Full Screen]** message type.
+      >**[!Fフルスクリーン]** メッセージタイプを選択した場合のみ、このオプションが表示されます。
 
 
 
-1. 「**[!UICONTROL 表示]」セクションのフィールドに入力します。**
+1. **[!UICONTROL 表示]** セクションのフィールドに入力します。
 
    * **[!UICONTROL テーマ]**
    メッセージのテーマを選択します。
@@ -58,14 +57,14 @@ Select the message type for your in-app message campaign:
 
    * **[!UICONTROL 画像 URL]**
 
-      画像の URL。If you have sizing issues when using the full-screen template, see *My image does not fit exactly into the space provided by the template* in [Troubleshooting in-app messaging](/help/using/in-app-messaging/t-in-app-message/in-apps-ts.md).
+      画像の URL。フルスクリーンテンプレートを使用する際にサイズ変更の問題がある場合は、[アプリ内メッセージのトラブルシューティング](/help/using/in-app-messaging/t-in-app-message/in-apps-ts.md)の「*画像がテンプレートのスペースに収まらない*」を参照してください。
 
    * **[!UICONTROL バンドルされている画像]**
 
-      アプリコードバンドル内の画像へのパス。このオプションは、画像がない場合、または画像が使用できない場合に使用されます。例えば、デバイスがオフラインの場合は、画像は使用できない可能性があります。If you have sizing issues when using the full-screen template, see *My image does not fit exactly into the space provided by the template* in [Troubleshooting in-app messaging](/help/using/in-app-messaging/t-in-app-message/in-apps-ts.md).
+      アプリコードバンドル内の画像へのパス。このオプションは、画像がない場合、または画像が使用できない場合に使用されます。例えば、デバイスがオフラインの場合は、画像は使用できない可能性があります。フルスクリーンテンプレートを使用する際にサイズ変更の問題がある場合は、[アプリ内メッセージのトラブルシューティング](/help/using/in-app-messaging/t-in-app-message/in-apps-ts.md)の「*画像がテンプレートのスペースに収まらない*」を参照してください。
 
 
-1. 「**[!UICONTROL テキスト]」セクションのフィールドに入力します。**
+1. **[!UICONTROL テキスト]** セクションのフィールドに入力します。
 
    * **[!UICONTROL ヘッダー]**
 
@@ -75,11 +74,11 @@ Select the message type for your in-app message campaign:
 
       メッセージのコンテンツ用のテキストを入力します。
 
-1. 「**[!UICONTROL ボタン]」セクションのフィールドに入力します。**
+1. **[!UICONTROL ボタン]** セクションのフィールドに入力します。
 
    * **[!UICONTROL クリックスルーボタン]**
 
-      **[!UICONTROL クリックスルー]ボタンのラベル。**&#x200B;このボタンをタップすると、成功したクリックスルーと見なされます。 ユーザーがリダイレクト先にリダイレクトされます。
+      **[!UICONTROL クリックスルー]**&#x200B;ボタンのラベル。このボタンをタップすると、成功したクリックスルーとしてカウントされます。ユーザーは、宛先にリダイレクトされます。
 
    * **[!UICONTROL 送信先]**
 
@@ -87,41 +86,41 @@ Select the message type for your in-app message campaign:
 
       この URL には、次の情報を含めることができます。
 
-      * `{userId}`, which is replaced with the user identifier or is blank when the user identifier is not set.
-      * `{trackingId}`に置き換えられます( *s_vi* cookie)。
-      * `{messageId}`に置き換えられます。
-      * `{lifetimeValue}`に置き換えられます。
-      Here is an example of tracking the user ID: `https://www.mysite.com?uid={userId}`.
+      * `{userId}`：ユーザー ID に置き換えられます。ユーザー ID が設定されていない場合は、空白になります。
+      * `{trackingId}`：aid（*s_vi* cookie と相関関係にある）に置き換えられます。
+      * `{messageId}`：アプリ内メッセージの一意の ID に置き換えられます。
+      * `{lifetimeValue}`：ライフタイム値に置き換えられます。ライフタイム値がない場合は、0 になります。
+      次に、ユーザー ID `https://www.mysite.com?uid={userId}` の追跡の例を示します。
 
-      If the click-through URL uses `https://` or `https://`, the URL opens in the device browser outside the app. それ以外の場合、各プラットフォームでは、スキームがサポートされます。スキームを使用すると、アプリがカスタムスキームをサポートするように開発されている場合に、アプリを開いたり参照したりできます。
+      クリックスルー URL で `https://` または `https://` が使用されている場合、この URL は、アプリ外部で、デバイスのブラウザーを使用して開かれます。それ以外の場合、各プラットフォームでは、スキームがサポートされます。スキームを使用すると、アプリがカスタムスキームをサポートするように開発されている場合に、アプリを開いたり参照したりできます。
 
       >[!TIP]
       >
-      >When you use the **[!UICONTROL Web Link]** or **[!UICONTROL Custom Link]** destination types, the destination type is not tracked. 「**[!UICONTROL ディープリンク]」のみが追跡されます。** For more information, see [Destinations](/help/using/acquisition-main/c-create-destinations.md).
+      >宛先のタイプに **[!UICONTROL Web リンク]** または **[!UICONTROL カスタムリンク]** を使用すると、宛先のタイプは追跡されません。**[!UICONTROL ディープリンク]** のみが追跡されます。詳しくは、「[宛先](/help/using/acquisition-main/c-create-destinations.md)」を参照してください。
 
 
 1. （オプション）次のアイコンをクリックして、メッセージのレイアウトをプレビューします。
 
-   * **[!UICONTROL [概要]** ]を選択すると、プレビューペインが非表示になります。
+   * **[!UICONTROL 要]** を選択すると、プレビューパネルが非表示になります。
 
-      Click ![preview](assets/icon_preview.png) to redisplay the preview pane.
+      プレビューパネルを再表示するには、「![プレビュー](assets/icon_preview.png)」をクリックします。
 
-   * **[!UICONTROL 方向の変更]**
+   * **[!UICONTROL 向きを変更]**
 
-      To change the orientation of the preview from portrait to landscape mode, click ![orientation](assets/icon_orientation.png). 腕時計の場合、方向が丸い面から四角い面に変わります。
+      プレビューの向きを縦から横に変更するには、「![向き](assets/icon_orientation.png)」をクリックします。腕時計の場合、丸い盤面から四角い盤面に向きが変わります。
 
    * **[!UICONTROL ユーザーの腕時計でのプレビュー]**
 
-      メッセージがユーザーの腕時計に表示される状態をプレビューするには、監視アイコンをク ![リックしま](assets/icon_watch.png)す。
+      メッセージがユーザーの腕時計に表示される状態をプレビューするには、![ウォッチアイコン](assets/icon_watch.png)をクリックします。
 
    * **[!UICONTROL ユーザーの携帯電話でのプレビュー]**
 
-      ユーザーの携帯電話に表示されるメッセージをプレビューするには、電話アイコンをク ![リックしま](assets/icon_phone.png)す。
+      ユーザーの携帯電話に表示されるメッセージをプレビューするには、![電話アイコン](assets/icon_phone.png)をクリックします。
 
    * **[!UICONTROL ユーザーのタブレットでのプレビュー]**
 
-      ユーザーのタブレットでメッセージをプレビューするには、タブレットアイコンをク ![リックしま](assets/icon_tablet.png)す。
+      ユーザーのタブレットでメッセージをプレビューするには、![タブレットアイコン](assets/icon_tablet.png)をクリックします。
 
       プレビューパネルの下部に、前の手順で選択したオーディエンスの説明を表示できます。前の手順で選択したオーディエンスの説明もプレビューパネルの下部に表示されます。
 
-1. スケジュール [オプションを設定](/help/using/in-app-messaging/t-in-app-message/c-schedule-in-app-message.md)。
+1. [スケジュールオプション](/help/using/in-app-messaging/t-in-app-message/c-schedule-in-app-message.md)を設定します。
