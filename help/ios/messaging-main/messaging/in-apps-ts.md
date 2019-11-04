@@ -3,17 +3,17 @@ description: この情報は、アプリ内メッセージのトラブルシュ�
 keywords: モバイル
 seo-description: この情報は、アプリ内メッセージのトラブルシューティングに役立ちます。
 seo-title: アプリ内メッセージのトラブルシューティング
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: アプリ内メッセージのトラブルシューティング
 topic: 指標
 uuid: 58533aa3-2eb2-4597-8525-77e4e5975e56
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1154bab39b5215e00d47ad8e66caeec15e4e98de
 
 ---
 
 
-# Troubleshooting in-app messaging{#troubleshooting-in-app-messaging}
+# アプリ内メッセージのトラブルシューティング{#troubleshooting-in-app-messaging}
 
 この情報は、アプリ内メッセージのトラブルシューティングに役立ちます。
 
@@ -29,19 +29,19 @@ SDK のバージョンが 4.2 以上で、正しく設定されていること�
 
 ## Android でローカルの通知メッセージが動作しません。
 
-マニフェストにローカルの通知ブロードキャスト受信者が宣言されていることを確認します。For more information, see step 2 in [Enabling In-App Messages](/help/android/messaging-main/messaging/messaging.md).
+マニフェストにローカルの通知ブロードキャスト受信者が宣言されていることを確認します。詳しくは、「[アプリ内メッセージの有効化](/help/android/messaging-main/messaging/messaging.md)」の手順 2 を参照してください。
 
 ## メッセージが発行されているか確認したい場合
 
 「アプリ内メッセージを管理」ページのリストビューをクリックして、「状態」列で発行されているかどうか確認します。
 
-## 「オーディエン *ス」タブで、一度表示*、常 *に表示*、オフ ** ライン設定を表示するを確認します。
+## 「オーディエンス」タブの「*1 回のみ表示*」、*常に表示*」、「*オフラインで表示*」設定を確認します。
 
-これらの設定が正しく行われていることを確認します。「**[!UICONTROL 閲覧者]**」タブで、メッセージの表示頻度を指定するための「**トリガー[!UICONTROL 」オプションを確認します。]**
+これらの設定が正しく行われていることを確認します。**[!UICONTROL 閲覧者]**&#x200B;タブで、メッセージの表示頻度を指定するための&#x200B;**[!UICONTROL トリガー]**&#x200B;オプションを確認します。
 
 ## 起動イベントをトリガーとして使用する場合
 
-起動イベントは、新規セッションでのみ実行されます。For more information about when a session begins, see the `lifecycleTimeout` row in the JSON Config file. For more information, see  ADBMobile JSON Config.[](/help/ios/configuration/json-config/json-config.md)
+起動イベントは、新規セッションでのみ実行されます。セッションが開始されるタイミングについて詳しくは、JSON 設定ファイルの `lifecycleTimeout` の行を参照してください。詳しくは、「[ADBMobile JSON の設定](/help/ios/configuration/json-config/json-config.md)」を参照してください。
 
 ## メッセージをリモートで更新しましたが、アプリで古いメッセージが表示されています。
 
@@ -53,7 +53,7 @@ SDK のバージョンが 4.2 以上で、正しく設定されていること�
 
 * 設定は、新たに起動したときにのみ更新されます。ライフサイクルセッションのタイムアウト時間中にアプリを再起動した場合は、新しい設定がダウンロードされていない可能性があります。
 
-   詳しくは、 [ライフサイクル指標](/help/ios/metrics.md).
+   詳しくは、「[ライフサイクル指標](/help/ios/metrics.md)」を参照してください。
 
 ## 画像がテンプレートに用意されている領域にぴったりと収まりません。
 
@@ -63,13 +63,13 @@ SDK のバージョンが 4.2 以上で、正しく設定されていること�
 
 それぞれの向きの正確な配置およびサイズ指定ルールを次に示します。
 
-* **縦**:
+* **縦**：
    * 高さ 195 px（携帯電話の場合）
    * 高さ 529 px（タブレットの場合）
    * 画像の幅がデバイスの幅より小さい場合は中央に表示されます。
    * 画像の幅がデバイスの幅より大きい場合はトリミングされます。
 
-* **横**:
+* **横**：
    * 画像は、デバイスの高さの 100％に拡大または縮小されます。
    * 幅はデバイスの 75％で、右側がフェードアウトします。
 
@@ -79,7 +79,7 @@ SDK のバージョンが 4.2 以上で、正しく設定されていること�
 
 iPhone X でアプリ内メッセージを全画面モードで表示するには：
 
-1. Add `viewport-fit=cover` in the meta tag.
+1. メタタグに `viewport-fit=cover` を追加します。
 
    ```html
    <meta name="viewport" content="viewport-fit=cover">
