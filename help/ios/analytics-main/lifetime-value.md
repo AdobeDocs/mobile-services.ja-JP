@@ -1,28 +1,28 @@
 ---
 description: ライフタイム値を使用して、各ユーザーのライフタイム値を測定し、ターゲットを設定できます。
 seo-description: ライフタイム値を使用して、各ユーザーのライフタイム値を測定し、ターゲットを設定できます。
-seo-title: Visitor lifetime value
-solution: Marketing Cloud,Analytics
-title: 訪問者の全期間値
+seo-title: 訪問者のライフタイム値
+solution: Experience Cloud,Analytics
+title: 訪問者のライフタイム値
 topic: 開発者と導入
 uuid: d830d18b-4313-43bb-8d75-3789869d0f1d
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 ---
 
 
-# Visitor lifetime value {#visitor-lifetime-value}
+# 訪問者のライフタイム値 {#visitor-lifetime-value}
 
 ライフタイム値を使用して、各ユーザーのライフタイム値を測定し、ターゲットを設定できます。
 
 `trackLifetimeValueIncrease` で値を送信するたびに、その値が既存の値に追加されます。ライフタイム値はデバイス上に保存され、`lifetimeValue` を呼び出していつでも取得することができます。この値を使用して、全期間の購入、広告ビュー、ビデオ完了、ソーシャル共有、写真のアップロードなどを保存できます。
 
-## Track the visitor lifetime value {#section_390943A49AF841F2941E65D6DF2B3F5A}
+## 訪問者のライフタイム値の追跡 {#section_390943A49AF841F2941E65D6DF2B3F5A}
 
 1. ライブラリをプロジェクトに追加し、ライフサイクルを実装します。
 
-   For more information, see Add the SDK and Config File to your Project in Core Implementation and Lifecycle.**[](/help/ios/getting-started/dev-qs.md)
+   詳しくは、[コア実装とライフサイクル](/help/ios/getting-started/dev-qs.md)の「*プロジェクトへの SDK と設定ファイルの追加*」を参照してください。
 1. ライブラリをインポートします。
 
    ```objective-c
@@ -35,7 +35,7 @@ source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
    [ADBMobile trackLifetimeValueIncrease:increaseAmount data:nil];
    ```
 
-## Send additional data {#section_3EBE813E54A24F6FB669B2478B5661F9}
+## 追加データの送信 {#section_3EBE813E54A24F6FB669B2478B5661F9}
 
 ライフタイム値に加え、各 trackAction コールとともに追加のコンテキストデータを送信できます。
 
@@ -45,7 +45,7 @@ NSMutableDictionary *contextData = [NSMutableDictionary dictionary];
 [ADBMobile trackLifetimeValueIncrease:increaseAmount data:contextData];
 ```
 
-Context data values must be mapped to custom variables:
+コンテキストデータ値は、カスタム変数にマッピングする必要があります。
 
 ![](assets/map-variable-context-ltv.png)
 
