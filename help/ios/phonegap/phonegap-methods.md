@@ -3,35 +3,35 @@ description: iOS PhoneGap プラグインメソッドを使用して、様々な
 keywords: phonegap
 seo-description: iOS PhoneGap プラグインメソッドを使用して、様々なタスクを完了できます。
 seo-title: PhoneGap プラグインのメソッド
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: PhoneGap プラグインのメソッド
 topic: 開発者と導入
 uuid: bd830fe5-804a-4d0a-bbb6-99a6d8da6a03
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
 ---
 
 
-# PhoneGap plug-in methods {#phonegap-plug-in-methods}
+# PhoneGap プラグインのメソッド {#phonegap-plug-in-methods}
 
 iOS PhoneGap プラグインメソッドを使用して、様々なタスクを完了できます。
 
-In `html` files where you want to use tracking, add the following to the `<head>` tag:
+トラッキングを使用する `html` ファイル内で、以下を `<head>` タグに追加します。
 
 ```html
 <script type="text/javascript" charset="utf-8" src="ADB_Helper.js"></script>
 ```
 
-## Configuration methods {#section_CC429F68292D4601AEEF0A91445E1185}
+## 設定メソッド{#section_CC429F68292D4601AEEF0A91445E1185}
 
 * **getPrivacyStatus**
 
    現在のユーザーのプライバシーステータスを返します。利用可能なステータスは次のとおりです。
 
    * `ADB.optedIn`：ヒットは即座に送信されます。
-   * `ADB.optedOut`に設定され、ヒットが破棄されます。
-   * `ADB.optUnknown`レポートスイートのタイムスタンプが有効になっている場合、プライバシーステータスがオプトイン（ヒットが送信される）またはオプトアウト（ヒットが破棄される）に変更されるまで、ヒットは保存されます。****&#x200B;レポートスイートのタイムスタンプが&#x200B;**有効になっていない**&#x200B;場合、プライバシーステータスがオプトインに変更されるまで、ヒットは破棄されます。\
+   * `ADB.optedOut`：ヒットは破棄されます。
+   * `ADB.optUnknown`レポートスイートのタイムスタンプが有効に&#x200B;**なっている**&#x200B;場合、プライバシーステータスがオプトイン（ヒットが送信される）またはオプトアウト（ヒットが破棄される）に変更されるまで、ヒットは保存されます。レポートスイートのタイムスタンプが&#x200B;**有効になっていない**&#x200B;場合、プライバシーステータスがオプトインに変更されるまで、ヒットは破棄されます。\
       デフォルト値は `ADBMobileConfig.json` ファイルに設定します。
 
       * このメソッドのコードサンプルを次に示します。
@@ -44,8 +44,8 @@ In `html` files where you want to use tracking, add the following to the `<head>
 
    現在のユーザーのプライバシーステータスを `status` に設定します。次のいずれかのステータスを設定できます。
    * `ADB.optedIn`：ヒットは即座に送信されます。
-   * `ADB.optedOut`, where hits are discarded.
-   * `ADB.optUnknown`  — レポートスイートでタイムスタ **ンプが有効な場合** 、プライバシーステータスがオプトイン（ヒットが送信される）またはオプトアウト（ヒットが破棄される）に変わるまで、ヒットは保存されます。
+   * `ADB.optedOut`：ヒットは破棄されます。
+   * `ADB.optUnknown`：レポートスイートのタイムスタンプが&#x200B;**有効になっている**&#x200B;場合、プライバシーステータスがオプトイン（ヒットが送信される）またはオプトアウト（ヒットが破棄される）に変更されるまで、ヒットは保存されます。
 
       レポートスイートのタイムスタンプが&#x200B;**有効になっていない**&#x200B;場合、プライバシーステータスがオプトインに変更されるまで、ヒットは破棄されます。
 
@@ -67,7 +67,7 @@ In `html` files where you want to use tracking, add the following to the `<head>
 
 * **setDebugLogging**
 
-   Enables (`true`) or disables (`false`) viewing debug information. デフォルトでは、この変数は `false` です。
+   デバッグ情報を表示する設定を、有効（`true`）または無効（`false`）にします。デフォルトでは、この変数は `false` です。
 
    * このメソッドのコードサンプルを次に示します。
 
@@ -91,7 +91,7 @@ In `html` files where you want to use tracking, add the following to the `<head>
 
    >[!TIP]
    >
-   >If your app upgrades from the Experience Cloud 3.x to 4.x SDK, the previous visitor ID (custom or automatically generated) is retrieved and stored as the custom user identifier (see `getUserIdentifier` below). これにより、SDK をアップグレードしても訪問者データが保持されます。For new installations on the 4.x SDK, the user identifier is `null`, and tracking identifier is used.
+   >アプリを Experience Cloud 3.x から 4.x SDK にアップグレードした場合、以前の訪問者 ID（カスタムまたは自動生成）が取得され、カスタムユーザー識別子として保存されます（以下の `getUserIdentifier` 行を参照してください）。これにより、SDK をアップグレードしても訪問者データは保存されます。4.x SDK を新規インストールした場合、ユーザー識別子は `null` なので、トラッキング識別子が使用されます。
 
    * このメソッドのコードサンプルを次に示します。
 
@@ -141,7 +141,7 @@ In `html` files where you want to use tracking, add the following to the `<head>
 
    >[!IMPORTANT]
    >
-   >Calling `keepLifecycleSessionAlive` prevents your app from launching a new session the next time it is resumed from background. このメソッドは、アプリがバックグラウンドで通知を登録する場合にのみ使用してください。
+   >`keepLifecycleSessionAlive` を呼び出すと、アプリを次回バックグラウンドから再開するときに新しいセッションを開始できなくなります。このメソッドは、アプリがバックグラウンドで通知を登録する場合にのみ使用してください。
 
    * このメソッドのコードサンプルを次に示します。
 
@@ -199,7 +199,7 @@ In `html` files where you want to use tracking, add the following to the `<head>
 
 * **collectLifecycleData**
 
-   SDK のすべてのソリューションで使用するライフサイクルデータを収集するように SDK に指示します。For more information, see [Lifecycle metrics](/help/ios/metrics.md).
+   SDK のすべてのソリューションで使用するライフサイクルデータを収集するように SDK に指示します。詳しくは、「[ライフサイクル指標](/help/ios/metrics.md)」を参照してください。
 
    * このメソッドのコードサンプルを次に示します。
 
@@ -208,7 +208,7 @@ In `html` files where you want to use tracking, add the following to the `<head>
       ```
 
 
-## PII methods {#section_DB27270D2CEB4D369E0090FD9D1A7F81}
+## PII メソッド {#section_DB27270D2CEB4D369E0090FD9D1A7F81}
 
 * **collectPII**
 
@@ -226,7 +226,7 @@ In `html` files where you want to use tracking, add the following to the `<head>
       ADB.collectPII({'k1':'v1','k2':'v2','k3':'v3'}, function (value) { alert('success'); },function (value) { alert('fail'); });
       ```
 
-## Tracking methods {#section_7946BB753A4446FE8A3ED728AEF97D04}
+## トラッキングメソッド {#section_7946BB753A4446FE8A3ED728AEF97D04}
 
 * **trackAdobeDeepLink**
 
@@ -234,7 +234,7 @@ In `html` files where you want to use tracking, add the following to the `<head>
 
    >[!TIP]
    >
-   >ライフサイクル呼び出しが起動イベントの場合、Adobe linkデータが追加され、それ以外の場合は、追加の呼び出しが送信されます。
+   >ライフサイクル呼び出しが起動イベントの場合は、アドビリンクデータが追加されます。それ以外の場合は、追加の呼び出しが送信されます。
 
    * このメソッドの構文を次に示します。
 
@@ -282,7 +282,7 @@ In `html` files where you want to use tracking, add the following to the `<head>
 
 * **trackState**
 
-   オプションのコンテキストデータを使用してアプリの状態を追跡します。States are the views that are available in your app, such as `home dashboard`, `app settings`, `cart`, and so on. これらの状態は Web サイト上のページによく似ており、`trackState` コールはページビュー数を増分します。cDataは、コンテキストデータで送信するキーと値のペアを持つJSONオブジェクトです。
+   オプションのコンテキストデータを使用してアプリの状態を追跡します。状態とは、アプリで使用可能なビューのことで、`home dashboard`、`app settings`、`cart` などがあります。これらの状態は Web サイト上のページによく似ており、`trackState` コールはページビュー数を増分します。cData は、コンテキストデータで送信されるキーと値のペアを持つ JSON オブジェクトです。
 
    * このメソッドの構文を次に示します。
 
@@ -290,7 +290,7 @@ In `html` files where you want to use tracking, add the following to the `<head>
       ADB.trackState(stringstateName[,JSONcData]); 
       ```
 
-   * このメソッドのコード例を次に示します。
+   * このメソッドのコードサンプルを次に示します。
 
       ```javascript
       ADB.trackState("loginpage");
@@ -302,7 +302,7 @@ In `html` files where you want to use tracking, add the following to the `<head>
 
 * **trackAction**
 
-   アプリのアクションを追跡します。Actions are the things that happen in your app that you want to measure, include `logins`, `banner taps`, `feed subscriptions` and other metrics.
+   アプリのアクションを追跡します。アクションとは、アプリ内で計測に価する重要な操作のことで、`feed subscriptions`、`logins`、`banner taps` などの指標があります。
 
    * このメソッドの構文を次に示します。
 
@@ -310,7 +310,7 @@ In `html` files where you want to use tracking, add the following to the `<head>
       ADB.trackAction(stringaction[,JSONcData]);
       ```
 
-   * このメソッドのコード例を次に示します。
+   * このメソッドのコードサンプルを次に示します。
 
       ```javascript
       ADB.trackAction("login");
@@ -330,7 +330,7 @@ In `html` files where you want to use tracking, add the following to the `<head>
       ADB.trackActionFromBackground(stringaction[,JSONcData]); 
       ```
 
-   * Here are the code samples for this method:
+   * このメソッドのコードサンプルを次に示します。
 
       ```javascript
       ADB.trackActionFromBackground("login");
@@ -342,7 +342,7 @@ In `html` files where you want to use tracking, add the following to the `<head>
 
 * **trackLocation**
 
-   現在のx座標とy座標を送信します。 Also uses the points of interest that were defined in the `ADBMobileConfig.json` file to determine if the location provided as a parameter is within any of your POIs. 現在の座標が定義した目標地点内にある場合、コンテキストデータ変数に代入され、`trackLocation` 呼び出しで送信されます。
+   現在の X 座標と Y 座標を送信します。また、現在位置が `ADBMobileConfig.json` ファイルで定義された目標地点内にあるかどうかを判定します。現在の座標が定義した目標地点内にある場合、コンテキストデータ変数に代入され、`trackLocation` 呼び出しで送信されます。
 
    * このメソッドの構文を次に示します。
 
@@ -588,7 +588,7 @@ In `html` files where you want to use tracking, add the following to the `<head>
       ADB.targetThirdPartyID(function(value){alert(value);},function(value){alert('fail');}); 
       ```
 
-## Acquisition methods {#section_EDEA25C4B2884487827069E9257A0BA6}
+## 獲得メソッド{#section_EDEA25C4B2884487827069E9257A0BA6}
 
 * **acquisitionCampaignStartForApp**
 
@@ -607,11 +607,11 @@ In `html` files where you want to use tracking, add the following to the `<head>
       ```
 
 
-## Advertising identifier {#section_194607D101B047A19C51B19E176E1500}
+## 広告識別子 {#section_194607D101B047A19C51B19E176E1500}
 
-In the `AppDelegate` generated by Cordova, call `[ADBMobile setAdvertisingIdentifier:]` in the `application:didFinishLaunchingWithOptions:` delegate method. 詳しくは、「設定方法」を参 [照してください](/help/ios/configuration/sdk-methods.md)。
+Cordova が生成した `AppDelegate` では、`application:didFinishLaunchingWithOptions:` delegate メソッド内で `[ADBMobile setAdvertisingIdentifier:]` を呼び出します。詳しくは、「[設定メソッド](/help/ios/configuration/sdk-methods.md)」を参照してください。
 
-## Audience Manager methods {#section_1FD12B29A0AF41D3BEACBB3D624EA0E4}
+## Audience Manager メソッド{#section_1FD12B29A0AF41D3BEACBB3D624EA0E4}
 
 * **audienceGetVisitorProfile**
 
@@ -671,7 +671,7 @@ In the `AppDelegate` generated by Cordova, call `[ADBMobile setAdvertisingIdenti
       ADB.audienceSetDpidAndDpuuid(dpid,dpuuid,success,fail);
       ```
 
-   * このメソッドのコード例を次に示します。
+   * このメソッドのコードサンプルを次に示します。
 
       ```java
       ADB.audienceSetDpidAndDpuuid(‘dpid’,‘dpuuid’,function(){…},function(){…});
@@ -691,7 +691,7 @@ In the `AppDelegate` generated by Cordova, call `[ADBMobile setAdvertisingIdenti
       ADB.audienceSignalWithData(success,fail,data);
       ```
 
-   * Here are the code samples for this method:
+   * このメソッドのコードサンプルを次に示します。
 
       ```java
       ADB.audienceSignalWithData(function(){},function(){},{‘key1’:’value1’,‘key2’:‘value2’});
@@ -711,7 +711,7 @@ In the `AppDelegate` generated by Cordova, call `[ADBMobile setAdvertisingIdenti
       ADB.audienceReset(); 
       ```
 
-## ID Service methods {#section_840B4FAEA55B466F9754148ABA15EBDA}
+## ID サービスメソッド {#section_840B4FAEA55B466F9754148ABA15EBDA}
 
 * **visitorGetMarketingCloudId**
 
@@ -739,7 +739,7 @@ In the `AppDelegate` generated by Cordova, call `[ADBMobile setAdvertisingIdenti
       ADB.visitorSyncIdentifiers(identifiers,success,fail);
       ```
 
-   * このメソッドのコード例を次に示します。
+   * このメソッドのコードサンプルを次に示します。
 
       ```java
       ADB.visitorSyncIdentifiers({‘key_id_1’:’value_id_1’},function(){…},function(){…})) 
@@ -799,7 +799,7 @@ In the `AppDelegate` generated by Cordova, call `[ADBMobile setAdvertisingIdenti
 
 * **visitorGetIDs**
 
-   Returns all `visitorIDs` that have been synced.
+   同期されたすべての `visitorIDs` を返します。
 
    * このメソッドの構文を次に示します。
 
