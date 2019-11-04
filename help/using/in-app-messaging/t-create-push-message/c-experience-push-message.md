@@ -2,27 +2,27 @@
 description: 名前、メッセージテキストおよび宛先オプションを含む、プッシュメッセージおよびリッチプッシュメッセージのエクスペリエンスオプションを設定できます。また、iOS デバイスのペイロードオプションおよびカスタムオプションを含む、高度なオプションも設定できます。
 keywords: モバイル
 seo-description: 名前、メッセージテキストおよび宛先オプションを含む、プッシュメッセージおよびリッチプッシュメッセージのエクスペリエンスオプションを設定できます。また、iOS デバイスのペイロードオプションおよびカスタムオプションを含む、高度なオプションも設定できます。
-seo-title: エクスペリエンスのプッシュメッセージ
-solution: Marketing Cloud,Analytics
-title: エクスペリエンスのプッシュメッセージ
+seo-title: エクスペリエンス：プッシュメッセージ
+solution: Experience Cloud,Analytics
+title: エクスペリエンス：プッシュメッセージ
 topic: 指標
 uuid: 1a8baf3e-9fea-452c-b0fc-4ba8ac270861
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
 ---
 
 
-# Experience: push message {#experience-push-message}
+# エクスペリエンス：プッシュメッセージ{#experience-push-message}
 
 名前、メッセージテキストおよび宛先オプションを含む、プッシュメッセージおよびリッチプッシュメッセージのエクスペリエンスオプションを設定できます。また、iOS デバイスのペイロードオプションおよびカスタムオプションを含む、高度なオプションも設定できます。
 
-1. On the Audience page for a new push message, click Experience.****
+1. 新しいプッシュメッセージのオーディエンスページで、**[!UICONTROL エクスペリエンス]** をクリックします。
 
    ![エクスペリエンスのプッシュメッセージ画面](assets/experience-push-message.png)
 
 1. このメッセージの名前を入力します。
-1. 次のフィールドの「**[!UICONTROL メッセージ]」セクションに情報を入力します。**
+1. 次のフィールドの **[!UICONTROL メッセージ]** セクションに情報を入力します。
 
    * **[!UICONTROL コンテンツ]**
 
@@ -30,7 +30,7 @@ source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
    * **[!UICONTROL メディア URL]**
 
-      プッシュ通知メッセージで使用するメディアファイルの URL を入力します。For requirements to use rich push notifications, see Requirements for Rich Push Notifications below.**
+      プッシュ通知メッセージで使用するメディアファイルの URL を入力します。リッチプッシュ通知を使用する場合の要件については、以下の「*リッチプッシュ通知の要件*」を参照してください。
 
       >[!IMPORTANT]
       >
@@ -41,15 +41,15 @@ source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
    * **[!UICONTROL 送信先]**
 
-      メッセージをクリックスルーしたら、ユーザーを送る特定の宛先（Web、ディープまたはハイブリッドリンク）を選択します。For more information, see [Destinations](/help/using/acquisition-main/c-create-destinations.md).
+      メッセージをクリックスルーしたら、ユーザーを送る特定の宛先（Web、ディープまたはハイブリッドリンク）を選択します。詳しくは、「[宛先](/help/using/acquisition-main/c-create-destinations.md)」を参照してください。
 
       >[!TIP]
       >
-      >When you use the * **[!UICONTROL Web Link]** or **[!UICONTROL Custom Link]** destination types, the destination type is not tracked. 「**[!UICONTROL ディープリンク]」のみが追跡されます。**
+      >宛先のタイプに **[!UICONTROL Web リンク]** または **[!UICONTROL カスタムリンク]** を使用すると、宛先のタイプは追跡されません。**[!UICONTROL ディープリンク]** のみが追跡されます。
 
 ## リッチプッシュ通知の要件
 
-リッチプッシュ通知を送信する場合の要件を次に示します。
+リッチプッシュ通知を送信するための要件を次に示します。
 
 * **サポートされているバージョン**
 
@@ -60,7 +60,7 @@ source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
       >[!IMPORTANT]
       >
       >次の情報に留意してください。
-      >* 以前のバージョンに送信されたリッチプッシュメッセージは引き続き送信されますが、テキストのみが表示されます。
+      >* 以前のバージョンに送信されたリッチプッシュメッセージは、依然として送信されますが、テキストのみが表示されます。
       >* 現時点では、視聴のサポートはありません。
 
 
@@ -71,20 +71,20 @@ source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
    * アニメーション（iOS のみ）：GIF
    * ビデオ（iOS のみ）：MP4
 
-* **URL形式**
+* **URL 形式**
    * HTTPS のみ
 
 * **サイズ調整**
-   * Images must be in a 2:1 format, or they will be cropped.
+   * 画像は、2：1 の形式である必要があります。そうしないと、切り抜かれます。
 
 リッチプッシュ通知の設定について詳しくは、次のコンテンツを参照してください。
 
-* [Androidでのプッシュ通知の受信](/help/android/messaging-main/push-messaging/c-set-up-rich-push-notif-android.md)
-* [iOSでのリッチプッシュ通知の受信](/help/ios/messaging-main/push-messaging/c-set-up-rich-push-notif-ios.md)
+* [プッシュ通知の受信（Android）](/help/android/messaging-main/push-messaging/c-set-up-rich-push-notif-android.md)
+* [リッチプッシュ通知の受信（iOS）](/help/ios/messaging-main/push-messaging/c-set-up-rich-push-notif-ios.md)
 
-To configure a push message on the Experience page:
+エクスペリエンスページでプッシュメッセージを設定するには、次の手順を実行します。
 
-1. (**Optional**) Click the **[!UICONTROL Show Advanced Options]** link to configure additional options:
+1. （**オプション**）**[!UICONTROL アドバンスオプションを表示する]** リンクをクリックして、その他のオプションを設定します。
 
    * **[!UICONTROL ペイロード：データ]**
 
@@ -100,36 +100,36 @@ To configure a push message on the Experience page:
 
    * **[!UICONTROL Apple オプション：利用可能なコンテンツ]**
 
-      このオプションを選択して、メッセージが届くと、iOS はバックグラウンドでアプリを起動し、アプリがメッセージのペイロードに基づいてコードを実行できるようにします。For more information, see [Apple Push Notification Service](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html#//apple_ref/doc/uid/TP40008194-CH8-SW1) in the *iOS Developer Library*.
+      このオプションを選択して、メッセージが届くと、iOS はバックグラウンドでアプリを起動し、アプリがメッセージのペイロードに基づいてコードを実行できるようにします。詳しくは、[iOS Developer Library](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html#//apple_ref/doc/uid/TP40008194-CH8-SW1) の *Apple Push Notification Service* を参照してください。
 
 1. （オプション）次のアイコンをクリックして、メッセージのレイアウトをプレビューします。
 
-   * **[!UICONTROL x概要}**
+   * **[!UICONTROL x 概要}**
 
-      Hides the preview pane. 「プレビュ ![ー](assets/icon_preview.png) 」をクリックして、プレビューパネルを再度表示します。
+      プレビューパネルを非表示にします。プレビューパネルをもう一度表示するには、「![プレビュー](assets/icon_preview.png)」をクリックします。
 
-   * **[!UICONTROL 方向の変更]**
+   * **[!UICONTROL 向きを変更]**
 
-      To change the orientation of the preview from portrait to landscape mode, click ![orientation](assets/icon_orientation.png). 腕時計の場合、丸い盤面から四角い盤面に向きが変わります。
+      プレビューの向きを縦から横に変更するには、「![向き](assets/icon_orientation.png)」をクリックします。腕時計の場合、丸い盤面から四角い盤面に向きが変わります。
 
    * **[!UICONTROL ユーザーの腕時計でのプレビュー]**
 
-      ユーザーの腕時計に表示されるメッセージをプレビューするには、ウォッチアイコンをク ![リックしま](assets/icon_watch.png)す。
+      メッセージがユーザーの腕時計に表示される状態をプレビューするには、![ウォッチアイコン](assets/icon_watch.png)をクリックします。
 
    * **[!UICONTROL ユーザーの携帯電話でのプレビュー]**
 
-      ユーザーの携帯電話に表示されるメッセージをプレビューするには、電話アイコンをクリ ![ックします](assets/icon_phone.png)。
+      ユーザーの携帯電話に表示されるメッセージをプレビューするには、![電話アイコン](assets/icon_phone.png)をクリックします。
 
    * **[!UICONTROL ユーザーのタブレットでのプレビュー]**
 
-      ユーザーのタブレットでメッセージをプレビューするには、タブレットアイコンをク ![リックしま](assets/icon_tablet.png)す。
+      ユーザーのタブレットでメッセージをプレビューするには、![タブレットアイコン](assets/icon_tablet.png)をクリックします。
    プレビューパネルの下部に、前の手順で選択したオーディエンスの説明を表示できます。
 
-1. (**Optional**) Click **[!UICONTROL Test]** to push your message to specified devices for testing purposes.
+1. **（オプション）****[!UICONTROL テスト]** をクリックして、指定したデバイスにテスト用のメッセージをプッシュします。
 1. サービスを選択して、メッセージをプッシュする少なくとも 1 つのデバイスのプッシュトークンを入力します。
 
    複数のデバイスにメッセージをプッシュするには、コンマ区切りリストでトークンを指定します。
 
-1. Configure メッセージのスケジュールオプション。
+1. メッセージのスケジュールオプションを設定します。
 
-   詳しくは、スケジュールを参照して [ください。プッシュメッセージ](/help/using/in-app-messaging/t-create-push-message/c-schedule-push-message.md)。
+   詳しくは、「[スケジュール：プッシュメッセージ](/help/using/in-app-messaging/t-create-push-message/c-schedule-push-message.md)」を参照してください。
