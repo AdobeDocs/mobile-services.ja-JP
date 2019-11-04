@@ -2,38 +2,38 @@
 description: iOS エクステンションを使用して、Apple Watch アプリ（WatchOS 1）、Today ウィジェット、Photo Editing ウィジェットおよびその他の iOS エクステンションアプリから使用状況データを収集できます。
 seo-description: iOS エクステンションを使用して、Apple Watch アプリ（WatchOS 1）、Today ウィジェット、Photo Editing ウィジェットおよびその他の iOS エクステンションアプリから使用状況データを収集できます。
 seo-title: iOS エクステンション実装
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: iOS エクステンション実装
 topic: 開発者と導入
 uuid: 8afc03fe-403e-4643-ada1-30e403ede238
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 718e336b9002fe3d5282697d4302d12a89297181
 
 ---
 
 
-# iOS extension implementation {#ios-extension-implementation}
+# iOS エクステンション実装 {#ios-extension-implementation}
 
 iOS エクステンションを使用して、Apple Watch アプリ（WatchOS 1）、Today ウィジェット、Photo Editing ウィジェットおよびその他の iOS エクステンションアプリから使用状況データを収集できます。
 
-## New Adobe Experience Platform Mobile SDK Release
+## 新しい Adobe Experience Platform Mobile SDK リリース
 
 Adobe Experience Platform Mobile SDK に関する情報やドキュメントをお探しの場合、最新のドキュメントについては、[こちら](https://aep-sdks.gitbook.io/docs/)をクリックしてください。
 
-2018 年 9 月に、SDK の新しいメジャーバージョンをリリースしました。これらの新しい Adobe Experience Platform Mobile SDK は、[Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) から設定できます。
+2018 年 9 月に、SDK の新しいメジャーバージョンをリリースしました。これらの新しい Adobe Experience Platform Mobile SDK は、[Experience Platform Launch](https://www.adobe.com/jp/experience-platform/launch.html) から設定できます。
 
-* To get started, go to Adobe Experience Platform Launch.
-* Experience Platform SDK リポジトリの内容については、[Github：Adobe Experience Platform SDKs](https://github.com/Adobe-Marketing-Cloud/acp-sdks) を参照してください。
+* 開始するには、Adobe Experience Platform Launch に移動します。
+* Experience Platform SDK リポジトリの内容については、[Github: Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks) を参照してください。
 
-## Recommendations for using the iOS SDK instead of your wrapper {#section_97577331FD9E4FFBBE05D402C67AEE69}
+## 独自のラッパーに代わる iOS SDK の使用に関する推奨事項 {#section_97577331FD9E4FFBBE05D402C67AEE69}
 
 >[!IMPORTANT]
 >
->ラッパーではなくiOS SDKを使用することを強くお勧めします。
+>独自のラッパーではなく、iOS SDK を使用することをお勧めします。
 
 Apple は、本体アプリにリクエストを送信し、応答を受信することによって Watch アプリと本体アプリとの通信を可能にする API のセットを提供しています。Watch アプリから本体アプリに辞書としてトラッキングデータを送信し、本体アプリに対してトラッキングメソッドを呼び出してデータを送信することは可能ですが、この方法には限界があります。
 
-In most cases when a user is using the Watch app, the containing app is running in the background, and it is only safe to call `TrackActionInBackground`, `TrackLocation`, and `TrackBeacon`. 他のトラッキングメソッドはライフサイクルデータに干渉するので、Watch アプリからデータを送信する際には使用できません。
+ほとんどの場合、Watch アプリの使用時には本体アプリがバックグラウンドで実行されているので、安全に呼び出せるメソッドは `TrackLocation`、`TrackActionInBackground`、`TrackBeacon` の 3 つのみとなります。他のトラッキングメソッドはライフサイクルデータに干渉するので、Watch アプリからデータを送信する際には使用できません。
 
 Watch アプリ向けの SDK には、アプリ内メッセージ以外のすべてのモバイル機能が含まれています。そのため、上記の 3 つのトラッキングメソッドで必要なデータを収集できる場合であっても、iOS SDK を使用してください。
 
@@ -41,7 +41,7 @@ Watch アプリ向けの SDK には、アプリ内メッセージ以外のすべ
 
 >[!IMPORTANT]
 >
->少なくとも次のターゲットを持つプロジェクトがあることを確認します。
+>少なくとも以下のターゲットを持つプロジェクトがあることを確認します。
 >
 >* アプリを収容する 1 つのターゲット。
 >* エクステンション用の 1 つのターゲット。
@@ -49,21 +49,21 @@ Watch アプリ向けの SDK には、アプリ内メッセージ以外のすべ
 
 
 
-WatchKit アプリを使用する場合は、3 つ目のターゲットが必要です。For more information on developing for Apple Watch, see Developing for Apple Watch.[](https://developer.apple.com/library/ios/documentation/General/Conceptual/WatchKitProgrammingGuide/index.html#//apple_ref/doc/uid/TP40014969-CH8-SW1)
+WatchKit アプリを使用する場合は、3 つ目のターゲットが必要です。Apple Watch 用の開発について詳しくは、「[Apple Watch 用の開発](https://developer.apple.com/library/ios/documentation/General/Conceptual/WatchKitProgrammingGuide/index.html#//apple_ref/doc/uid/TP40014969-CH8-SW1)」を参照してください。
 
-## Configure the containing app {#section_0BAB0842E4C04A62B5E03DFC4BA77851}
+## 含まれるアプリの設定 {#section_0BAB0842E4C04A62B5E03DFC4BA77851}
 
 次の手順を Xcode プロジェクトで実行します。
 
 1. AdobeMobileLibrary フォルダーをプロジェクトにドラッグします。
-1. Ensure that the `ADBMobileConfig.json` file is a member of the containing app's target.
-1. 本体アプリのターゲットの「**[!UICONTROL Build Phases]**」タブで、「**Link Binary with Libraries]」セクションを展開して、以下のライブラリを追加します。[!UICONTROL **
+1. `ADBMobileConfig.json` ファイルが本体アプリのターゲットのメンバーであることを確認します。
+1. 本体アプリのターゲットの&#x200B;**[!UICONTROL Build Phases]**&#x200B;タブで、**[!UICONTROL Link Binary with Libraries]**&#x200B;セクションを展開して、以下のライブラリを追加します。
 
    * `AdobeMobileLibrary.a`
    * `libsqlite3.dylib`
    * `SystemConfiguration.framework`
 
-1. Open the **[!UICONTROL Capabilities]** tab of the containing app's target, enable **[!UICONTROL App Groups]**, and add a new app group (for example, `group.com.adobe.testAp`).
+1. 本体アプリのターゲットの&#x200B;**[!UICONTROL Capabilities]**&#x200B;タブを開き、**[!UICONTROL App Groups]**&#x200B;を有効にして、新しいアプリグループ（例：`group.com.adobe.testAp`）を追加します。
 
 1. AppDelegate で、Adobe Mobile ライブラリとやり取りをおこなう前に、アプリグループを `application:didFinishLaunchingWithOptions` に設定します。
 
@@ -76,16 +76,16 @@ WatchKit アプリを使用する場合は、3 つ目のターゲットが必要
 
 ##  拡張機能の設定{#section_28C994B7892340AC8D1F07AF26FF3946}
 
-1. Ensure that the `ADBMobileConfig.json` file is a member of the extension's target.
-1. エクステンションのターゲットの「**[!UICONTROL Build Phases]**」タブで、「**Link Binary with Libraries]」セクションを展開して、以下のライブラリを追加します。[!UICONTROL **
+1. `ADBMobileConfig.json` ファイルがエクステンションのターゲットのメンバーであることを確認します。
+1. エクステンションのターゲットの&#x200B;**[!UICONTROL Build Phases]**&#x200B;タブで、**[!UICONTROL Link Binary with Libraries]**&#x200B;セクションを展開して、以下のライブラリを追加します。
 
    * `AdobeMobileLibrary_Extension.a`
    * `libsqlite3.dylib`
    * `SystemConfiguration.framework`
 
-1. Open the **[!UICONTROL Capabilities]** tab of the extension's target, enable **[!UICONTROL App Groups]**, and select the app group that you added in step 4 of *Configuring the Containing App* above.
+1. エクステンションのターゲットの&#x200B;**[!UICONTROL Capabilities]**&#x200B;タブを開き、**[!UICONTROL App Groups]**&#x200B;を有効にして、上記の「*本体アプリの設定*」の手順 4 で追加したアプリグループを選択します。
 
-1. In your InterfaceController, set the app group in `awakeWithContext:` before making any other interactions with the Adobe Mobile library:
+1. InterfaceController で、Adobe Mobile ライブラリとその他のやり取りをおこなう前に、アプリグループを `awakeWithContext:` に設定します。
 
    ```objective-c
    [ADBMobile 
@@ -94,9 +94,9 @@ WatchKit アプリを使用する場合は、3 つ目のターゲットが必要
 
 1. アプリが予期せぬエラーなくビルドされることを確認します。
 
-## Additional notes {#section_21497E81231549CB9F164DEECFF5BA0D}
+## 追加情報 {#section_21497E81231549CB9F164DEECFF5BA0D}
 
-覚えておく必要がある情報を以下に示します。
+以下の情報を覚えておいてください。
 
 * データの取得元が本体アプリかエクステンションかを示すためのコンテキストデータ値 `a.RunMode` が追加されました。
 
