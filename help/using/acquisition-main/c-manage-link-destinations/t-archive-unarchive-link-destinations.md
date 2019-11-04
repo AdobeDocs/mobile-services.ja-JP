@@ -3,24 +3,24 @@ description: リンク先ページを使用して、既存の宛先を編集、�
 keywords: モバイル
 seo-description: リンク先ページを使用して、既存の宛先を編集、アーカイブ／アーカイブ解除または削除できます。
 seo-title: リンク先を管理
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: リンク先を管理
 topic: 指標
 uuid: 3a38d40d-b4c7-4f9f-aa6e-979613faaba2
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
 ---
 
 
-# Manage link destinations{#manage-link-destinations}
+# リンク先を管理{#manage-link-destinations}
 
 リンク先ページを使用して、既存の宛先を編集、アーカイブ／アーカイブ解除または削除できます。
 
 リンク先を管理ページを表示するには：
 
-1. In the Mobile Services UI, click **[!UICONTROL Manage Apps]**.
-1. On your app's App Information page, click Manage Link Destinations.****
+1. Mobile Services UI で、**[!UICONTROL アプリ設定]** をクリックします。
+1. アプリの情報ページで、**[!UICONTROL リンク先を管理]** をクリックします。
 
    ![リンク先](assets/link_destinations_list.png)
 
@@ -28,17 +28,17 @@ source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
    * **Edit**
 
-      既存のリンク先を編集するには、リストで名前をクリックして、関連するフィールドを編集します。詳しくは、 Create a new link destination.[](/help/using/acquisition-main/c-manage-link-destinations/t-create-new-app-deep-link-destination.md)
+      既存のリンク先を編集するには、リストで名前をクリックして、関連するフィールドを編集します。詳しくは、「[新しいリンク先を作成する](/help/using/acquisition-main/c-manage-link-destinations/t-create-new-app-deep-link-destination.md)」を参照してください。
 
       >[!IMPORTANT]
       >
-      >It might take up to 15 minutes for these changes to take effect.
+      >これらの変更が有効になるまでに最長 15 分かかる場合があります。
 
    * **Archive**
 
-      You can archive link destinations that you want to retain, but you want to remove from the **[!UICONTROL Link Destinations]** list.
+      将来の使用のために保持しておきたいが、**[!UICONTROL リンク先]**&#x200B;リストからは削除したい既存のリンク先をアーカイブします。
 
-      To archive link destinations, select one or more check boxes next to the link names and click **[!UICONTROL Archive Selected]**. リンク先はアーカイブされ、いつでもアーカイブを解除できるので、操作を確認する必要はありません。
+      リンク先をアーカイブするには、りんく名の横にある 1 つまたは複数のチェックボックスを選択して、**[!UICONTROL 選択項目をアーカイブ]** をクリックします。リンク先はアーカイブされ、いつでもアーカイブを解除できるので、操作を確認する必要はありません。
 
    * **アーカイブ解除**
 
@@ -46,18 +46,18 @@ source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
       リンク先のアーカイブを解除するには：
 
-      1. click **[!UICONTROL View Archive]**.
-      1. Select one or more check boxes next to the link names that you want to unarchive.
-      1. 「選択項目の **[!UICONTROL アーカイブ解除」をクリックしま]**&#x200B;す。
-      「**[!UICONTROL アーカイブを表示]」オプションは、以前リンク先をアーカイブした場合にのみ表示されます。**
+      1. **[!UICONTROL アーカイブを表示]** をクリックします。
+      1. アーカイブを解除したいリンク名の横にある 1 つ以上のチェックボックスをオンにします。
+      1. **[!UICONTROL 選択項目のアーカイブ解除]** をクリックします。
+      **[!UICONTROL アーカイブを表示]** オプションは、以前リンク先をアーカイブした場合にのみ表示されます。
 
    * **Delete**
 
-      To delete a link destination, select one or more check boxes next to the links you want to delete, click **[!UICONTROL Delete Selected]**, and click **[!UICONTROL Delete]** to confirm your action.
+      リンク先を削除するには、削除したいリンクの横にある 1 つまたは複数のチェックボックスを選択して、**[!UICONTROL 選択項目を削除]** をクリックし、**[!UICONTROL 削除]** をクリックして操作を確認します。
 
       >[!IMPORTANT]
       >
-      >リンク先の削除は恒久的 **です**。 リンク先を削除してもよいか不確かな場合は、アーカイブオプションを使用します。
+      >リンク先の削除は&#x200B;**恒久的**&#x200B;です。リンク先を削除してもよいか不確かな場合は、アーカイブオプションを使用します。
 
 
 
