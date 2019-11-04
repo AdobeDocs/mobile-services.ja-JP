@@ -1,23 +1,23 @@
 ---
 description: Android ライブラリによって提供される Audience Manager メソッドのリストを示します。
-keywords: android;library;mobile;sdk
+keywords: Android, ライブラリ, モバイル, SDK
 seo-description: Android ライブラリによって提供される Audience Manager メソッドのリストを示します。
-seo-title: Audience Managerのメソッド
-solution: Marketing Cloud,Analytics
-title: Audience Manager methods
+seo-title: Audience Manager メソッド
+solution: Experience Cloud,Analytics
+title: Audience Manager メソッド
 topic: 開発者と導入
 uuid: 2f6e4664-1306-41d4-9fa7-e3a99f1df4ab
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
 ---
 
 
-# Audience Manager methods{#audience-manager-methods}
+# Audience Manager メソッド{#audience-manager-methods}
 
 Android ライブラリによって提供される Audience Manager メソッドのリストを示します。
 
-The SDK currently supports multiple Adobe Experience Cloud Solutions, including Analytics, Target, Audience Manager, and the Adobe Experience Platform Identity Service. Methods are prefixed according to the solution. For example, Experience Cloud ID methods are prefixed with `audience manager`.
+SDK は現在、Analytics、Target、Audience Manager、Adobe Experience Platform ID サービスなど、複数の Adobe Experience Cloud ソリューションをサポートしています。これらのメソッドには、ソリューションに応じたプレフィックスが付けられています。例えば、Experience Cloud ID メソッドのプレフィックスは、`audience manager` です。
 
 Audience Manager が JSON ファイルに設定されている場合、ライフサイクル指標を含むシグナルがライフサイクルヒットと共に送信されます。
 
@@ -73,7 +73,7 @@ Audience Manager が JSON ファイルに設定されている場合、ライフ
 
    DPID と DPUUID を設定します。これらの値は各シグナルと共に送信されます。
 
-   If the DPUUID value that is passed to this method contains characters that are not URL-safe, customers must encode the parameter before passing it to the SDK.
+   このメソッドに渡される DPUUID 値に URL セーフでない文字が含まれている場合、SDK に渡す前に、ユーザーはパラメーターをエンコードする必要があります。
 
    * このメソッドの構文を次に示します。
 
