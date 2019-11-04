@@ -4,7 +4,7 @@ seo-description: Adobe Target のプリフェッチ機能では、iOS Mobile SDK
 seo-title: iOS でのオファーコンテンツのプリフェッチ
 title: iOS でのオファーコンテンツのプリフェッチ
 uuid: fef58042-65e2-4579-b8f1-d21554d2af57
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: fa7375ac8a1345d81748bcf635791c46d3943fed
 
 ---
@@ -16,17 +16,17 @@ Adobe Target のプリフェッチ機能では、iOS Mobile SDK がサーバー�
 
 >[!IMPORTANT]
 >
->Prefetch functionality in the Mobile SDKs for iOS is not supported for Auto Target, Auto Allocate, and Automated Personalization activity types in Adobe Target.
+>iOS 用のモバイル SDK のプリフェッチ機能は、Adobe Target の自動ターゲット、自動配分、自動パーソナライゼーションアクティビティタイプではサポートされていません。
 
 このプロセスにより、読み込み時間が短縮され、複数のネットワーク呼び出しが回避されるほか、モバイルアプリユーザーがどの mbox を訪問したかを Adobe Target に通知することができます。プリフェッチ呼び出し中にすべてのコンテンツが取得され、キャッシュされます。このコンテンツは、指定された mbox 名のキャッシュされたコンテンツを含む今後のすべての呼び出しに対してキャッシュから取得されます。
 
-プリフェッチコンテンツは、起動間で保持されません。The prefetch content is cached as long as the application lives or until the `clearPrefetchCache()` method is called.
+プリフェッチコンテンツは、起動間で保持されません。プリフェッチコンテンツは、アプリケーションが存続するか、`clearPrefetchCache()` メソッドが呼び出されるまでキャッシュに保持されます。
 
 >[!IMPORTANT]
 >
->Target prefetch APIs have been available since SDK version 4.14.0. For more information about parameter limitations, see [Batch Input Parameters](https://developers.adobetarget.com/api/#batch-input-parameters).
+>Target Prefetch API は、SDK バージョン 4.14.0 以降で使用できます。パラメーターの制限について詳しくは、「[バッチ入力パラメーター](https://developers.adobetarget.com/api/#batch-input-parameters)」を参照してください。
 
-SDK バージョン 4.14 以降で、`environmentId``ADBMobileConfig.json` が指定されている場合、v2 バッチ mbox TnT 呼び出しを開始すると、 ファイルから environmentId を取得します。このファイルで `environmentId` が指定されていない場合、TNT バッチ mbox 呼び出しで環境パラメーターは送信されず、オファーはデフォルト環境に配信されます。
+SDK バージョン 4.14 以降で、`environmentId` が指定されている場合、v2 バッチ mbox TnT 呼び出しを開始すると、`ADBMobileConfig.json` ファイルから environmentId を取得します。このファイルで `environmentId` が指定されていない場合、TNT バッチ mbox 呼び出しで環境パラメーターは送信されず、オファーはデフォルト環境に配信されます。
 
 以下に例を示します。
 
@@ -39,7 +39,7 @@ if (MobileConfig.getInstance().mobileUsingTarget()){
         }
 ```
 
-## Prefetch methods {#section_05967F1F3A554B0FBC2C08A954554BDE}
+## プリフェッチメソッド {#section_05967F1F3A554B0FBC2C08A954554BDE}
 
 iOS でのプリフェッチに使用できるメソッドを以下に示します。
 
@@ -55,7 +55,7 @@ iOS でのプリフェッチに使用できるメソッドを以下に示しま�
                             callback:(nullable void(^)(BOOL success))callback;
       ```
 
-   * Here are the parameters for this method:
+   * このメソッドのパラメーターを次に示します。
 
       * **`targetPrefetchArray`**
 
@@ -67,15 +67,15 @@ iOS でのプリフェッチに使用できるメソッドを以下に示しま�
 
       * **`callback`**
 
-         プリフェッチの完了時に呼び出されます。Returns `true` if the prefetch was successful and `false` if the prefetch was unsuccesful.
+         プリフェッチの完了時に呼び出されます。プリフェッチが成功した場合は `true`、失敗した場合は `false` を返します。
 
 * **targetLoadRequests**
 
-   リクエスト配列に指定された複数の mbox の場所に対してバッチリクエストを実行します。Each object in the array contains a callback function, which will be invoked when content is available for its given mbox location.
+   リクエスト配列に指定された複数の mbox の場所に対してバッチリクエストを実行します。配列内の各オブジェクトにコールバック関数が含まれ、指定された mbox のロケーションに対してコンテンツが使用可能になると呼び出されます。
 
    >[!IMPORTANT]
    >
-   >要求された場所のコンテンツが既にキャッシュされている場合、指定されたコールバックで直ちに返されます。 コンテンツがキャッシュされていない場合は、SDK は Target サーバーにネットワーク要求を送信してコンテンツを取得します。
+   >要求されたロケーションのコンテンツが既にキャッシュされている場合は、指定されたコールバックで即座に返されます。コンテンツがキャッシュされていない場合は、SDK は Target サーバーにネットワーク要求を送信してコンテンツを取得します。
 
    * このメソッドの構文を次に示します。
 
@@ -132,7 +132,7 @@ iOS でのプリフェッチに使用できるメソッドを以下に示しま�
       mboxParameters:(nullableNSDictionary *)mboxParameters;
       ```
 
-## Public classes {#section_A273E53F069E4327BBC8CE4910B37888}
+## パブリッククラス {#section_A273E53F069E4327BBC8CE4910B37888}
 
 iOS でプリフェッチをサポートするパブリッククラスを以下に示します。
 
@@ -142,7 +142,7 @@ mbox 名と、mbox のプリフェッチで使用されるパラメーターを�
 
 * **`name`**
 
-   取得する場所/mboxの名前。
+   取得するロケーション／mbox の名前。
 
    * **型：** NSString*
 
@@ -192,7 +192,7 @@ mbox 名と、mbox のプリフェッチで使用されるパラメーターを�
 
    * **型：** Function
 
-## Code sample {#section_BF7F49763D254371B4656E17953D520C}
+## コードサンプル {#section_BF7F49763D254371B4656E17953D520C}
 
 iOS SDK を使用したコンテンツのプリフェッチ方法の例を以下に示します。
 
