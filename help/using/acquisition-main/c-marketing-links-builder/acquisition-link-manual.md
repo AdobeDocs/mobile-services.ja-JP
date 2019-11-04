@@ -1,27 +1,27 @@
 ---
-description: URLパラメーターを手動で設定することで、新しいモバイルアプリユーザーをその場で取得するマーケティングリンクを作成できます。
+description: URL パラメーターを手作業で設定することで、新しいモバイルアプリユーザーをその場で獲得するためのマーケティングリンクを作成できます。
 keywords: モバイル
-seo-description: URLパラメーターを手動で設定することで、新しいモバイルアプリユーザーをその場で取得するマーケティングリンクを作成できます。
+seo-description: URL パラメーターを手作業で設定することで、新しいモバイルアプリユーザーをその場で獲得するためのマーケティングリンクを作成できます。
 seo-title: ダウンロード計測用リンクの手動作成
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: ダウンロード計測用リンクの手動作成
 topic: 指標
 uuid: d7709203-f793-4982-adaa-9c3c914aca2b
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 54e3b2d673356a616987537d20758bef8b044db4
 
 ---
 
 
-# Manually create Acquisition links {#create-acquisition-link-manually}
+# ダウンロード計測用リンクの手動作成 {#create-acquisition-link-manually}
 
-URLパラメーターを手動で設定することで、新しいモバイルアプリユーザーをその場で取得するマーケティングリンクを作成できます。
+URL パラメーターを手作業で設定することで、新しいモバイルアプリユーザーをその場で獲得するためのマーケティングリンクを作成できます。
 
 >[!IMPORTANT]
 >
->この機能を使用するには、SDKバージョン4.6以降が必要です。 詳しくは、獲得の前提条件を参 [照してください](/help/using/acquisition-main/c-acquisition-prerequisites.md)。
+>この機能には、SDK バージョン 4.6 以降が必要です。詳しくは、「[獲得の前提条件](/help/using/acquisition-main/c-acquisition-prerequisites.md)」を参照してください。
 
-The following diagram illustrates the components of a manually built tracking link and displays the different URL parameters that you must properly configure when manually creating acquisition links.
+次の図は、手動で作成したトラッキングリンクのコンポーネント、およびダウンロード計測用リンクを手作業で作成する場合に適切に設定する必要がある様々な URL パラメーターの例を示しています。
 
 ![](assets/acquisition_url.png)
 
@@ -33,74 +33,74 @@ The following diagram illustrates the components of a manually built tracking li
 
 >[!TIP]
 >
->使用しているAndroid SDKのバージョンは、このプロセスには影響しません。
+>使用している Android SDK のバージョンは、これには影響しません。
 
 iOS の場合、次の正しいプロトコルを使用していることを確認します。
 
-* Use **HTTP** if you are using the iOS SDKs before version 4.7.0, or if you are using iOS SDK 4.7.0 or later, and if **[!UICONTROL Use HTTPS]** is **not** selected on the Manage App Settings page.
-* Use **HTTPS** if you are using iOS SDK 4.7.0 or later and **[!UICONTROL Use HTTPS]** **is** selected on the Manage App Settings page.
+* バージョン 4.7.0 より前の iOS SDK を使用している場合、または iOS SDK 4.7.0 以降を使用していて、アプリ設定ページで **[!UICONTROL HTTPS を使用]** が選択されて&#x200B;**いない**&#x200B;場合は、**HTTP** を選択します。
+* iOS SDK 4.7.0 以降を使用していて、アプリ設定ページで **[!UICONTROL HTTPS を使用]** が選択されて&#x200B;**いる**&#x200B;場合は、**HTTPS** を使用します。
 
 ここでは、次の条件が当てはまります。
 
-* `{mobile-services-app-hash}` matches the application identifier in the configuration `acquisition:appid ` file.
+* `{mobile-services-app-hash}`は、構成 `acquisition:appid ` ファイル内でのアプリケーション識別子を照合します。
 
-   You can locate `{mobile-services-app-hash}` in the Manage App Settings page under Acquisition SDK Options in the Tracking ID field.
+   `{mobile-services-app-hash}` は、アプリ設定ページ、「SDK の獲得オプション」の「トラッキング ID」フィールドにあります。
 
    ![](assets/tracking-id.png)
 
-* `{parameters}` は、標準的な特定の名前を持つURLクエリパラメーターのリストです。
+* `{parameters}` は、具体的な名前を指定した標準 URL クエリーパラメーターのリストです。
 
 次にパラメーターのリストを示します。
 
 * **`a_g_id`**
 
-   Google Play ストアのアプリ識別子.
+   Google Play ストアのアプリ識別子。
 
-   * サンプル値： `com.adobe.beardcons`
+   * サンプル値：`com.adobe.beardcons`
 
 * **`a_g_lo`**
 
-   Google Play ストアのロケールの上書き.
+   Google Play ストアのロケールの上書き。
 
-   * サンプル値： `ko`
+   * サンプル値：`ko`
 
 * **`a_i_id`**
 
-   iTunes Store のアプリ識別子.
+   iTunes Store のアプリ識別子。
 
-   * サンプル値： `835196493`
+   * サンプル値：`835196493`
 
 * **`a_i_lo`**
 
-   iTunes Store のロケールの上書き.
+   iTunes Store のロケールの上書き。
 
-   * サンプル値： `jp`
+   * サンプル値：`jp`
 
 * **`a_dd`**
 
-   自動リダイレクトのデフォルトのストア.
+   自動リダイレクトのデフォルトのストア。
 
-   * サンプル値： `i | g`
+   * サンプル値：`i | g`
 
 * **`a_cid`**
 
-   カスタムIDの上書き（通常、iOSの場合はIDFA、Androidの場合はADID）。
+   カスタムの ID の上書き（通常、iOS では IDFA、Android では ADID）。
 
-   * Sample value: `Any String < 255 characters (UTF-8 encoded)`
+   * サンプル値：`Any String < 255 characters (UTF-8 encoded)`
 
 * **`ctx*`**
 
-   Keys prefixed with `ctx` will be in the context data of the resulting launch hit.
+   プレフィックス `ctx` が付加されているキーは、結果として生成される起動ヒットのコンテキストデータとなります。
 
-   * Sample value: `ctxmy.custom.key=myValue`
+   * サンプル値：`ctxmy.custom.key=myValue`
 
 * **`ctxa.referrer.campaign.name`**
 
-   獲得キャンペーン名.
+   獲得キャンペーン名。
 
    このパラメーターは、様々なダウンロード計測用リンクのパフォーマンスを比較する場合のレポートに必要です。
 
-   * サンプル値：2015年サミット会議
+   * サンプル値：2015 年サミット会議
 
 * **`ctxa.referrer.campaign.trackingcode`**
 
@@ -108,7 +108,7 @@ iOS の場合、次の正しいプロトコルを使用していることを確�
 
    このパラメーターは、様々なダウンロード計測用リンクのパフォーマンスを比較する場合のレポートに必要です。
 
-   * サンプル値： `lexsxouj`
+   * サンプル値：`lexsxouj`
 
 * **`ctxa.referrer.campaign.source`**
 
@@ -126,21 +126,21 @@ iOS の場合、次の正しいプロトコルを使用していることを確�
 
    コンテンツ
 
-   * Sample value: Image # 325689
+   * サンプル値：画像# 325689
 
 * **`ctxa.referrer.campaign.term`**
 
    用語
 
-   * サンプル値：ハイキング+ブーツ
+   * サンプル値：ハイキング + ブーツ
 
 
-When you manually create acquisition links, remember the following information:
+ダウンロード計測用リンクを手動で作成する場合は、次の情報に注意してください。
 
 * この表に記載されていないすべてのパラメーターは、アプリストアのリダイレクトの一部として渡されます。
-* 少なくとも1つのストアIDが指定されている場合、リンクは機能しませんが、すべてのパラメーターは技術的にはオプションです。
+* すべてのパラメーターは、技術的にはオプションです。ただし、少なくとも 1 つのストア ID が指定されていない場合、リンクは機能しなくなります。
 
-   An example of a store ID is `a_g_id`/ `a_i_id`.
+   ストア ID の例として、`a_i_id`／`a_g_id` があります。
 
 * 宛先のストアを自動的に判定できず、デフォルトも指定されていない場合は、404 エラーが返されます。
 
