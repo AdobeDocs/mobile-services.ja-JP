@@ -1,36 +1,36 @@
 ---
 description: この情報は、Mobile Services SDK および Mobile Services 実装を支援するツールをダウンロードする際に役立ちます。
-keywords: モバイル；android;ios;sdk
+keywords: モバイル;android;ios;sdk
 seo-description: この情報は、Mobile Services SDK および Mobile Services 実装を支援するツールをダウンロードする際に役立ちます。
 seo-title: Mobile SDK およびツールのダウンロード
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Mobile SDK およびツールのダウンロード
 topic: 開発者と実装, 指標
 uuid: 4af757f7-4e4d-4939-9b6a-49a29c220192
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
 
 ---
 
 
-# Download mobile SDKs and tools{#download-mobile-sdks-and-tools}
+# Mobile SDK およびツールのダウンロード{#download-mobile-sdks-and-tools}
 
-This information helps you download the Mobile Services SDKs and tools.
+この情報は、Mobile Services SDK およびツールのダウンロードに役立ちます。
 
-## App SDK downloads {#section_F647A95C96B0439BA276781E0C97C689}
+## アプリの SDK をダウンロード {#section_F647A95C96B0439BA276781E0C97C689}
 
 アプリ設定の管理画面で指定された内容が反映された `ADBMobileConfig.json` ファイルをダウンロードできます。この設定ファイルには、管理画面上で選択したレポートスイート ID、トラッキングサーバー、HTTPS、デフォルトのプライバシー設定、セッションタイムアウト時間などがあらかじめ指定されています。
 
 >[!TIP]
 >
->If you download the mobile SDK, the customized `ADBMobileConfig.json` file is automatically included.
+>Mobile SDK をダウンロードすると、カスタマイズされた `ADBMobileConfig.json` ファイルも自動的に含まれます。
 
-## Native libraries {#section_C2ADC3068D9F4EAEBE5B266852738C90}
+## ネイティブライブラリ {#section_C2ADC3068D9F4EAEBE5B266852738C90}
 
-設定ファイルの事前入力バージョンを含むカスタマイズ済みパッケージをダウンロードできるように、Adobe mobileサービスでアプリを設定します。
+事前入力された設定ファイルを含むカスタマイズ済みパッケージをダウンロードできるように、Adobe Mobile Services のアプリを設定します。
 
-* [iOS instructions](/help/ios/getting-started/requirements.md)
-* [Android instructions](/help/android/getting-started/requirements.md)
+* [iOS の手順](/help/ios/getting-started/requirements.md)
+* [Android の手順](/help/android/getting-started/requirements.md)
 
-To see the documentation for native libraries including Windows Phone 8, Blackberry, Xamarin, and others, see the SDK Documentation section in Adobe Mobile Services.**[](/help/using/home.md)
+Windows Phone 8、Blackberry、Xamarin などのネイティブライブラリのドキュメントを確認するには、[Adobe Mobile Services](/help/using/home.md)　の「*SDK ドキュメント*」の節を参照してください。.
 
