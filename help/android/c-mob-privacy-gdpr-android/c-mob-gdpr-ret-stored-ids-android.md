@@ -1,28 +1,28 @@
 ---
 description: この情報は、GDPR のデータアクセス要求に関連してローカルに保存されている SDK ID を Android アプリから取得する場合に役立ちます。
 seo-description: この情報は、GDPR のデータアクセス要求に関連してローカルに保存されている SDK ID を Android アプリから取得する場合に役立ちます。
-seo-title: Retrieving stored identifiers
-title: 保存された識別子の取得
+seo-title: 保存されている ID の取得
+title: 保存されている ID の取得
 uuid: 6fd3d202-b0a1-4c80-96f4-369fc24ac0a3
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 ---
 
 
-# Retrieving stored identifiers{#retrieving-stored-identifiers}
+# 保存されている ID の取得{#retrieving-stored-identifiers}
 
 この情報は、GDPR のデータアクセス要求に関連してローカルに保存されている SDK ID を Android アプリから取得する場合に役立ちます。
 
 >[!IMPORTANT]
 >
->The `getAllIdentifiersAsync` method retrieves identities stored in the SDK. このメソッドは、ユーザーがオプトアウトする&#x200B;**前**&#x200B;に呼び出す必要があります。
+>SDK に保存されている ID を取得するには `getAllIdentifiersAsync` メソッドを使用します。このメソッドは、ユーザーがオプトアウトする&#x200B;**前**&#x200B;に呼び出す必要があります。
 
 （存在する場合）SDK ID はローカルに保存され、JSON 文字列で返されます。この文字列には次の情報が含まれている可能性があります。
 
 * 会社コンテキスト - IMS 組織 ID
 * ユーザー ID
-* Experience Cloud ID（MID）、旧称 Marketing Cloud ID
+* Experience Cloud ID（MID）、旧称 Experience Cloud ID
 * 統合コード（ADID、プッシュ ID）
 * データソース ID（DPID、DPUUID）
 * Analytics ID（AVID、AID、VID、関連する RSID）
