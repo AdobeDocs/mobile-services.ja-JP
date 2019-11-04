@@ -2,25 +2,25 @@
 description: 表示、トリガーおよび特徴オプションを含む、アプリ内メッセージのオーディエンスオプションを設定できます。
 keywords: モバイル
 seo-description: 表示、トリガーおよび特徴オプションを含む、アプリ内メッセージのオーディエンスオプションを設定できます。
-seo-title: オーディエンスのアプリ内メッセージ
-solution: Marketing Cloud,Analytics
-title: オーディエンスのアプリ内メッセージ
+seo-title: オーディエンス：アプリ内メッセージ
+solution: Experience Cloud,Analytics
+title: オーディエンス：アプリ内メッセージ
 topic: 指標
 uuid: 6c815d4c-7626-4cf4-9158-3f059c79317a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
 
 ---
 
 
-# Audience: in-app message {#audience-in-app-message}
+# オーディエンス：アプリ内メッセージ{#audience-in-app-message}
 
 表示、トリガーおよび特徴オプションを含む、アプリ内メッセージのオーディエンスオプションを設定できます。
 
-1. In your app, click **[!UICONTROL Messaging]** &gt; **[!UICONTROL Manage Messages]** &gt; **[!UICONTROL Create Message]** &gt; **[!UICONTROL Create In-App]**.
+1. アプリで、**[!UICONTROL メッセージング]**／**[!UICONTROL メッセージを管理]**／**[!UICONTROL メッセージを作成]**／**[!UICONTROL アプリ内を作成]**&#x200B;をクリックします。
 1. オーディエンスページで、次のフィールドに情報を入力します。
 
-   * **[!UICONTROL View]**
+   * **[!UICONTROL 表示]**
 
       メッセージの表示をトリガーするオプションを選択します。
 
@@ -34,27 +34,27 @@ source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
 
       * **[!UICONTROL クリックスルーまで]**
 
-         このオプションは、ユーザーがクリックスルーするまで、トリガーが発生するたびにメッセージが表示されることを意味します。このトリガーは、フルスクリーンおよびアラートメッセージに適用されます。ほとんどのメッセージは、リダイレクトが必要であるか、またはインターネットからのリソースを使用するので、オフラインの場合に表示されません。ネットワーク接続に関係なく常にメッセージを表示するには、「**[!UICONTROL オフラインを表示]」チェックボックスを選択します。**
+         このオプションは、ユーザーがクリックスルーするまで、トリガーが発生するたびにメッセージが表示されることを意味します。このトリガーは、フルスクリーンおよびアラートメッセージに適用されます。ほとんどのメッセージは、リダイレクトが必要であるか、またはインターネットからのリソースを使用するので、オフラインの場合に表示されません。ネットワーク接続に関係なく常にメッセージを表示するには、**[!UICONTROL オフラインを表示]** チェックボックスを選択します。
    * **[!UICONTROL トリガー]**
 
-      ドロップダウンリストからオプションを選択して、条件を選択します。例えば、最初のドロップダウンリストで「**[!UICONTROL 起動済み]**」を選択し、2 番目のドロップダウンリストで「**存在する]」を選択します。[!UICONTROL **&#x200B;トリガー条件に適合し、メッセージを表示するヒットに含まれている必要があるカスタムのコンテキストデータを指定することもできます。
+      ドロップダウンリストからオプションを選択して、条件を選択します。例えば、最初のドロップダウンリストで **[!UICONTROL 起動済み]** を選択し、2 番目のドロップダウンリストで **[!UICONTROL 存在する]** を選択します。トリガー条件に適合し、メッセージを表示するヒットに含まれている必要があるカスタムのコンテキストデータを指定することもできます。
 
       >[!IMPORTANT]
       >
-      >複数のトリガーを選択した場合、メッセージを表示するには、すべてのトリガーが同じヒットで発生する必要があります。
+      >複数のトリガーを選択する場合、すべてのトリガーは、メッセージを表示するために、同じヒットで発生する必要があります。
 
-   * **[!UICONTROL Traits
-You can determine who should see the in-app message when it is triggered and filter (segment) the audience to hits that have specified data.]**&#x200B;例えば、目標地点にデンバーが含まれるというルールを定義できます。このフィルターを使用すると、トリガーの時点で目標地点のいずれかの名前に「デンバー」が含まれている顧客にメッセージを表示できます。
+   * **[!UICONTROL 特性]**
+オーディエンスをフィルタリング（セグメント化）して指定したデータを持つヒットに絞り込む際に、どのユーザーにアプリ内メッセージを表示するかを決定できます。例えば、目標地点にデンバーが含まれるというルールを定義できます。このフィルターを使用すると、トリガーの時点で目標地点のいずれかの名前に「デンバー」が含まれている顧客にメッセージを表示できます。
 
 
 
-## Additional information about traits and triggers {#section_48C39EFB8CAA4F62B994FCC91DF588E6}
+## 特性およびトリガーに関する追加情報 {#section_48C39EFB8CAA4F62B994FCC91DF588E6}
 
 >[!IMPORTANT]
 >
->トリガーと特性は、アプリからAnalyticsに渡されるデータを使用します。 値はコンテキストデータ、マップされた変数、および指標として渡されます。変数はテキストベースの値であり、指標は数値です。
+>トリガーと特性は、アプリケーションから Analytics に渡されたデータを使用します。値はコンテキストデータ、マップされた変数、および指標として渡されます。変数はテキストベースの値であり、指標は数値です。
 
-To see the mapping of these key value pairs in the Mobile Services UI and validate the value for your trigger, click **[!UICONTROL Manage App Settings]** &gt;  **[!UICONTROL Manage Variables &amp; Metrics]** &gt;, which displays the following tabs:
+Mobile Services UI でこれらのキー値ペアのマッピングを表示して、トリガーの値を検証するには、**[!UICONTROL アプリ設定]**／**[!UICONTROL 変数と指標の設定]**&#x200B;をクリックします。以下のタブが表示されます。
 
 * **[!UICONTROL 標準変数および指標]**
 * **[!UICONTROL カスタム変数]**
@@ -62,32 +62,32 @@ To see the mapping of these key value pairs in the Mobile Services UI and valida
 
 マッピングを検証したら、適切に一致するものまたは論理演算子を選択してメッセージのオーディエンスを設定します。
 
-### Selecting metrics and variables {#example_AB126F03BD1C4094B791E230B3DB1189}
+### 指標と変数の選択 {#example_AB126F03BD1C4094B791E230B3DB1189}
 
-![トリガオプション](assets/custom_trigger_matcher_options.png)
+![トリガーオプション](assets/custom_trigger_matcher_options.png)
 
-次のシナリオは、指標と変数のどちらをトリガーとして選択するかを決定する際に役立ちます。
+以下のシナリオを参考にして、指標と変数のどちらかをトリガーとして選択します。
 
 ### 指標
 
 指標は数値であり、例は購入の回数です。
 
-1. Click **[!UICONTROL Manage Messages]** &gt; **[!UICONTROL Create Message]**.
-1. **[!UICONTROL 「オーディエンス」]**&#x200B;タブの&#x200B;**「トリガー」[!UICONTROL セクションで以下の手順を実行します。]**
+1. **[!UICONTROL メッセージを管理]**／**[!UICONTROL メッセージを作成]**&#x200B;をクリックします。
+1. **[!UICONTROL オーディエンス]**&#x200B;タブの&#x200B;**[!UICONTROL トリガー]**&#x200B;セクションで以下の手順を実行します。
 
-   1. Select a standard event such as **[!UICONTROL Launched]** and select **[!UICONTROL exists]**.
+   1. **[!UICONTROL 起動済み]** などの標準イベントを選択し、**[!UICONTROL 存在する]** を選択します。
    1. カスタムのデータポイントであり、指標にマッピングされている 2 番目のトリガーを選択します。
-   1. Under **[!UICONTROL Number]**, select a matcher option.
+   1. **[!UICONTROL 数値]** の下で、一致するもののオプションを選択します。
 
 ### 変数
 
 変数はテキスト文字列からなる一意の識別子であり、例には国、空港などがあります。
 
-1. Click **[!UICONTROL Manage Messages]** &gt; **[!UICONTROL Create Message]**.
-1. **[!UICONTROL 「オーディエンス」]**&#x200B;タブの&#x200B;**「トリガー」[!UICONTROL セクションで以下の手順を実行します。]**
+1. **[!UICONTROL メッセージを管理]**／**[!UICONTROL メッセージを作成]**&#x200B;をクリックします。
+1. **[!UICONTROL オーディエンス]**&#x200B;タブの&#x200B;**[!UICONTROL トリガー]**&#x200B;セクションで以下の手順を実行します。
 
-   1. Select a standard event such as **[!UICONTROL Launched]** and select **[!UICONTROL exists]**.
+   1. **[!UICONTROL 起動済み]** などの標準イベントを選択し、**[!UICONTROL 存在する**] を選択します。
    1. カスタムのデータポイントであり、変数にマッピングされている 2 番目のトリガーを選択します。
-   1. Under **[!UICONTROL Text]**, select a matcher option.
+   1. **[!UICONTROL テキスト]** の下で、一致するもののオプションを選択します。
 
-For more information about context data, variables, and metrics, see [Managing your app](/help/using/manage-apps/manage-apps.md).
+コンテキストデータ、変数、指標について詳しくは、「[アプリの管理](/help/using/manage-apps/manage-apps.md)」を参照してください。
