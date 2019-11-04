@@ -1,35 +1,35 @@
 ---
 description: Android ライブラリによって提供される Adobe Analytics メソッドのリストを示します。
-keywords: android;library;mobile;sdk
+keywords: Android, ライブラリ, モバイル, SDK
 seo-description: Android ライブラリによって提供される Adobe Analytics メソッドのリストを示します。
 seo-title: Analytics メソッド
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Analytics メソッド
 topic: 開発者と導入
 uuid: ac7c640e-9dcc-4724-b561-019cc025d5a7
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 ---
 
 
-# Analytics methods {#analytics-methods}
+# Analytics メソッド{#analytics-methods}
 
 Android ライブラリによって提供される Adobe Analytics メソッドのリストを示します。
 
-SDKは、現在、Analytics]、Target]、Audience Manager]およびAdobe Experience Platform Identity Service]を含む、複数のAdobe Experience cloudソリューションをサポートしています。 これらのメソッドには、ソリューションに応じたプレフィックスが付けられています。例えば、Experience Cloud ID メソッドのプレフィックスは、`analytics` です。
+SDK は現在、Analytics、Target、Audience Manager、Adobe Experience Platform ID サービスなど、複数の Adobe Experience Cloud ソリューションをサポートしています。これらのメソッドには、ソリューションに応じたプレフィックスが付けられています。例えば、Experience Cloud ID メソッドのプレフィックスは、`analytics` です。
 
 次の各メソッドを使用して、Adobe Analytics レポートスイートにデータを送信します。
 
 * **trackState**
 
-   オプションのコンテキストデータを使用してアプリの状態を追跡します。States are the views that are available in your app, such as `home dashboard`, `app settings`, `cart`, and so on. これらの状態は Web サイト上のページによく似ており、`trackState` コールはページビュー数を増分します。
+   オプションのコンテキストデータを使用してアプリの状態を追跡します。状態とは、アプリで使用可能なビューのことで、`home dashboard`、`app settings`、`cart` などがあります。これらの状態は Web サイト上のページによく似ており、`trackState` コールはページビュー数を増分します。
 
-   If `state` is empty, `app name app version (build)` is displayed in reports. レポートにこの値がある場合、各 `state` 呼び出しで `trackState` を設定していることを確認してください。
+   `state` が空の場合、`app name app version (build)` がレポートに表示されます。レポートにこの値がある場合、各 `state` 呼び出しで `trackState` を設定していることを確認してください。
 
    >[!TIP]
    >
-   >This is the only tracking call that increments page views.
+   >これは、ページビュー数を増分する唯一のトラッキングコールです。
 
    * このメソッドの構文を次に示します。
 
@@ -43,9 +43,9 @@ SDKは、現在、Analytics]、Target]、Audience Manager]およびAdobe Experie
       Analytics.trackState("loginScreen",null);
       ```
 
-* **trackActionアプリ**&#x200B;内のアクションを追跡します。
+* **trackAction**：アプリのアクションを追跡します。
 
-   Actions that you want to measure, such as `logons`, `banner taps`, `feed subscriptions`, and other metrics, that occur in your app.
+   アプリ内で発生する `logons`、`banner taps`、`feed subscriptions` などのアクションと、その他の指標を測定します。
 
    * このメソッドの構文を次に示します。
 
@@ -59,7 +59,7 @@ SDKは、現在、Analytics]、Target]、Audience Manager]およびAdobe Experie
       Analytics.trackAction("heroBannerTouched",null);
       ```
 
-* **getTrackingIdentifier** Analyticsで自動的に生成された訪問者識別子を返します。
+* **getTrackingIdentifier**：Analytics 用に自動的に生成された訪問者識別子を返します。
 
    これは、初回起動時に生成され、それ以降、保存および使用されるアプリ固有の一意の訪問者 ID です。ID は、アプリをアップグレードしても保持され、アプリをアンインストールすると削除されます。
 
@@ -77,7 +77,7 @@ SDKは、現在、Analytics]、Target]、Audience Manager]およびAdobe Experie
 
 * **trackLocation**
 
-   現在の緯度、経度、位置を、定義した目標地点に送信します。 詳しくは、地域と目 [標地点を参照してください](/help/android/location/geo-poi.md)。
+   現在の緯度と経度、および定義済みの目標地点の場所を送信します。詳しくは、「[位置情報と目標地点](/help/android/location/geo-poi.md)」を参照してください。
 
    * このメソッドの構文を次に示します。
 
@@ -143,7 +143,7 @@ SDKは、現在、Analytics]、Target]、Audience Manager]およびAdobe Experie
       public static void trackTimedActionUpdate(Stringaction,Map <String,Object> contextData); 
       ```
 
-   * Here is a code sample for this method:
+   * このメソッドのコードサンプルを次に示します。
 
       ```java
       HashMap cdata = new HashMap<String Object> (); 
@@ -157,7 +157,7 @@ SDKは、現在、Analytics]、Target]、Audience Manager]およびAdobe Experie
 
    >[!TIP]
    >
-   >If you provide `block`, you must return `true` to send a hit. Passing `null` for `block` sends the final hit.
+   >`block` を指定する場合、ヒットを送信するには `true` を返す必要があります。`block` に `null` を渡すと、最終ヒットが送信されます。
 
    * このメソッドの構文を次に示します。
 
@@ -181,7 +181,7 @@ SDKは、現在、Analytics]、Target]、Audience Manager]およびAdobe Experie
 
 * **sendQueuedHits**
 
-   **SDK 4.1 が必要.**
+   **SDK 4.1 が必要です。**
 
    現在キューに格納されているヒット数にかかわらず、このメソッドは、オフラインキュー内のすべてのヒットを送信することをライブラリに強制します。
 
