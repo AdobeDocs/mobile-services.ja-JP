@@ -1,28 +1,28 @@
 ---
 description: iOS ライブラリのバージョン 3.x または 2.x からバージョン 4.x への移行に役立つ情報です。
 seo-description: iOS ライブラリのバージョン 3.x または 2.x からバージョン 4.x への移行に役立つ情報です。
-seo-title: 4.x iOSライブラリへの移行
-solution: Marketing Cloud,Analytics
-title: Migrating to the 4.x iOS library
+seo-title: 4.x iOS ライブラリへの移行
+solution: Experience Cloud,Analytics
+title: 4.x iOS ライブラリへの移行
 topic: 開発者と導入
 uuid: 5668972b-f355-4e03-9df0-8c82ddf6809b
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 68bc21f1c6dba2faeed332495592114af90c8f61
 
 ---
 
 
-# Migrating to the 4.x iOS library{#migrating-to-the-x-ios-library}
+# 4.x iOS ライブラリへの移行{#migrating-to-the-x-ios-library}
 
 iOS ライブラリのバージョン 3.x または 2.x からバージョン 4.x への移行に役立つ情報です。
 
 >[!IMPORTANT]
 >
->The SDK uses `NSUserDefaults` to store data that is needed to calculate unique users, lifecycle metrics, and other data related to core SDK functionality.  If you modify or remove the values in `NSUserDefaults` that are expected by the SDK, unexpected behavior might result in the form of data inconsistencies.
+>SDK では、個別ユーザー数の計算に必要なデータ、ライフサイクル指標、SDK の中心機能に関連するその他のデータを保存するために、`NSUserDefaults` が使用されます。SDK で想定されている `NSUserDefaults` の値を変更または削除すると予期しない動作が発生し、データの不整合が生じる可能性があります。
 
-In the version 4.x of the iOS SDK library, the public methods are consolidated into one header. Also, the functionality is now accessible through class level methods, so you do not have to keep track of pointers, instances, or singletons.
+バージョン 4.x の iOS SDK ライブラリでは、パブリックメソッドが 1 つのヘッダーに統合されています。また、クラスレベルのメソッドから機能にアクセスできるようになり、ポインター、インスタンスまたはシングルトンを追跡する必要がなくなりました。
 
-## Events, props, and eVars {#section_76EA6F5611184C5CAE6E62956D84D7B6}
+## event、prop、eVar {#section_76EA6F5611184C5CAE6E62956D84D7B6}
 
 バージョン 4 では、event、eVar、prop、継承、リストなどの変数をアプリ内で直接割り当てることができなくなりました。代わりに、SDK は、コンテキストデータと処理ルールを使用して、レポート用にアプリデータを Analytics 変数にマップします。
 
@@ -36,9 +36,9 @@ In the version 4.x of the iOS SDK library, the public methods are consolidated i
 
 >[!TIP]
 >
->Values that you were assigning directly to variables should now be added to the `data` NSDictionary.
+>変数に直接割り当てていた値は、`data` NSDictionary に追加することが必要になりました。
 
-## Remove unused properties {#section_145222EAA20F4CC2977DD883FDDBBFC5}
+## 使用されないプロパティの削除 {#section_145222EAA20F4CC2977DD883FDDBBFC5}
 
 新しい `ADBMobileConfig.json` ファイルには、アプリケーション固有のグローバル設定が含まれています。以前のバージョンで使用されていた設定変数のほとんどは置き換えられています。`ADBMobileConfig.json` ファイルの例を次に示します。
 
@@ -76,7 +76,7 @@ In the version 4.x of the iOS SDK library, the public methods are consolidated i
 1. 先頭列の変数に設定されている値を 2 番目の列の変数に移動します。
 1. コードから古い設定変数を削除します。
 
-### Migration information
+### 移行情報
 
 次の表に、設定ファイルに移動する必要がある設定変数を示します。
 
@@ -84,7 +84,7 @@ In the version 4.x of the iOS SDK library, the public methods are consolidated i
 
 先頭列の値を 2 番目の列の変数に移動します。
 
-| 設定変数 | Variable in the `ADBMobileConfig.json` file |
+| 設定変数 | `ADBMobileConfig.json` ファイル内の変数 |
 |--- |--- |
 | offlineTrackingEnabled | "offlineEnabled" |
 | offlineHitLimit | "batchLimit" |
@@ -101,12 +101,12 @@ In the version 4.x of the iOS SDK library, the public methods are consolidated i
 
 先頭列の値を 2 番目の列の変数に移動します。
 
-| 設定変数 | Variable in the `ADBMobileConfig.json` file |
+| 設定変数 | `ADBMobileConfig.json` ファイル内の変数 |
 |--- |--- |
 | trackOffline | "offlineEnabled" |
 | offlineLimit | "batchLimit" |
 | account | "rsids" |
-| trackingServer | "server", remove the  prefix. `"https://"`プロトコルプレフィックスは、"ssl" 設定に基づいて自動的に追加されます。 |
+| trackingServer | "server"、`"https://"` プレフィックスを削除します。プロトコルプレフィックスは、"ssl" 設定に基づいて自動的に追加されます。 |
 | trackingServerSecure | 削除します。安全な接続をおこなうには、"server" を定義し、"ssl" を有効にします。 |
 | charSet | "charset" |
 | currencyCode | "currency" |
@@ -119,22 +119,22 @@ In the version 4.x of the iOS SDK library, the public methods are consolidated i
 | dynamicVariablePrefix | 削除します。使用されなくなりました。 |
 | visitorNamespace | 削除します。使用されなくなりました。 |
 | usePlugins | 削除します。使用されなくなりました。 |
-| useBestPracticesチャーン測定（getChurnInstance）へのすべての呼び出し | Remove, replaced by lifecycle metrics. 詳しくは、[ライフサイクル指標](//help/ios/metrics.md)を参照してください。 |
+| useBestPractices  チャーン測定（getChurnInstance）へのすべての呼び出し | 削除します。ライフサイクル指標に置き換えられました。詳しくは、「[ライフサイクル指標](//help/ios/metrics.md)」を参照してください。 |
 
 
-## Update track calls and tracking variables {#section_96E7D9B3CDAC444789503B7E7F139AB9}
+## トラッキングコールとトラッキング変数の更新 {#section_96E7D9B3CDAC444789503B7E7F139AB9}
 
 バージョン 4 の SDK では、Web に焦点を当てた `track` 呼び出しと `trackLink` 呼び出しを使用する代わりに、次のメソッドを使用します。
 
-* `trackState:data:` 状態とは、、など、アプリで使用できる `home dashboard`ビ `app settings`ュ `cart`ーです。
+* `trackState:data:`状態とは、アプリで使用可能なビューのことで、`home dashboard`、`app settings`、`cart` などがあります。
 
    これらの状態は Web サイト上のページによく似ており、`trackState` コールはページビュー数を増分します。
 
-* `trackAction:data:` アクション(、 `logons`、 `banner taps`など) `feed subscriptions`と、アプリで発生し、測定する他の指標。
+* `trackAction:data:`：アプリ内で発生する `logons`、`banner taps`、`feed subscriptions` などのアクションと、その他の指標を測定します。
 
 どちらのメソッドも `data` パラメーターを使用しますが、これは、コンテキストデータとして送信される名前と値のペアを含む `NSDictionary` です。
 
-### イベント、prop、eVar
+### event、prop、eVar
 
 バージョン 4 では、event、eVar、prop、継承、リストなどの変数をアプリ内で直接割り当てることができなくなりました。SDK は、コンテキストデータと処理ルールを使用して、レポート用にアプリデータを Analytics 変数にマップするようになりました。
 
@@ -146,13 +146,13 @@ In the version 4.x of the iOS SDK library, the public methods are consolidated i
 
    これらの値は、処理ルールを使用してマッピングするまではレポートに表示されません。詳しくは、[処理ルールとコンテキストデータ](/help/ios/getting-started/proc-rules.md)を参照してください。
 
-代わりに、変数に直接割り当てた値を `data``NSDictionary`   に追加する必要があります。This means that calls to `setProp`, `setEvar`, and assignments to persistent context data should all be removed and the values be added to the `data` parameter.
+代わりに、変数に直接割り当てた値を `data` `NSDictionary` に追加する必要があります。つまり、`setProp` および `setEvar` への呼び出しと、持続コンテキストデータへの割り当てをすべて削除して、値を `data` パラメーターに追加する必要があります。
 
-### AppSection/Server、GeoZip、トランザクションID、Campaign、その他の標準変数
+### AppSection／server、GeoZip、トランザクション ID、Campaign、その他の標準的な変数
 
-上記の変数など、測定オブジェクトに設定していたデータを代わりに `data``NSDictionary`   に追加する必要があります。`trackState` または `trackAction` 呼び出しで送信されるデータは、`data` パラメーターのペイロードのみです。
+上記の変数など、測定オブジェクトに設定していたデータを代わりに `data` `NSDictionary` に追加する必要があります。`trackState` または `trackAction` 呼び出しで送信されるデータは、`data` パラメーターのペイロードのみです。
 
-### Replace tracking calls
+### トラッキングコールの置き換え
 
 コードで、次のメソッドを `trackState` または `trackAction` の呼び出しで置き換えます。
 
@@ -169,13 +169,13 @@ In the version 4.x of the iOS SDK library, the public methods are consolidated i
 * `track (trackState)`
 * `trackLink (trackAction)`
 
-## Custom visitor ID {#section_2CF930C13BA64F04959846E578B608F3}
+## カスタム訪問者 ID {#section_2CF930C13BA64F04959846E578B608F3}
 
-Replace the `visitorID` variable with a call to `setUserIdentifier:`.
+`visitorID` 変数を `setUserIdentifier:` の呼び出しで置き換えます。
 
-## Offline tracking {#section_5D4CD8CD1BE041A79A8657E31C0D24C6}
+## オフライン追跡 {#section_5D4CD8CD1BE041A79A8657E31C0D24C6}
 
-Offline tracking is enabled in the `ADBMobileConfig.json` file, and all other offline configuration is done automatically.
+オフライン追跡は `ADBMobileConfig.json` で有効に設定されます。他のすべてのオフライン設定は自動的におこなわれます。
 
 コード内の次のメソッドの呼び出しを削除します。
 
@@ -189,9 +189,9 @@ Offline tracking is enabled in the `ADBMobileConfig.json` file, and all other of
 * `forceOffline`
 * `forceOnline`
 
-## Products variable {#section_AFBA36F3718C44D29AF81B9E1056A1B4}
+## products 変数{#section_AFBA36F3718C44D29AF81B9E1056A1B4}
 
- 変数は処理ルールでは使用できないので、以下の構文を使用して `products`products を設定することができます。
+ 変数は処理ルールでは使用できないので、以下の構文を使用して `products` を設定することができます。
 
 ```objective-c
 //create a processing rule to set the corresponding product event. 
