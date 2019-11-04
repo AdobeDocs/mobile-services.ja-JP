@@ -1,13 +1,13 @@
 ---
 description: ビーコン追跡では、iBeacon と Bluetooth Low Energy を使用して、マイクロ位置を測定し、ターゲットにすることができます。
-keywords: android;library;mobile;sdk
+keywords: Android, ライブラリ, モバイル, SDK
 seo-description: ビーコン追跡では、iBeacon と Bluetooth Low Energy を使用して、マイクロ位置を測定し、ターゲットにすることができます。
 seo-title: ビーコン追跡
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: ビーコン追跡
 topic: 開発者と導入
 uuid: 16c1d267-85f4-4a6a-a6d3-d6ffb0f80b29
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 ---
@@ -19,7 +19,7 @@ source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 `trackBeacon` が呼び出されると、次のビーコンデータが Analytics と Target に送信されます。
 
-* `a.beacon.uuid`  — ビーコンのProximityUUID
+* `a.beacon.uuid` - ビーコンの ProximityUUID
 * `a.beacon.major` - ビーコンのメジャー番号（ストア番号など）
 * `a.beacon.minor` - ビーコンのマイナー番号（ストア内の一意の番号など）
 * `a.beacon.prox` - 0 ～ 3 の値でユーザーとビーコンの距離を表します。
@@ -33,11 +33,11 @@ source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 このビーコンデータは、モバイルソリューションの変数にキャプチャされます。
 
-## Track beacons {#section_FC3F213545944A468B1E6D5D5C8E2F1F}
+## ビーコンの追跡 {#section_FC3F213545944A468B1E6D5D5C8E2F1F}
 
 1. ライブラリをプロジェクトに追加し、ライフサイクルを実装します。
 
-   For more information, see Add the SDK and Config File to your IntelliJ IDEA or Eclipse Project in Core implementation and lifecycle.**[](/help/android/getting-started/dev-qs.md)
+   詳しくは、[コア実装とライフサイクル](/help/android/getting-started/dev-qs.md)の「*IntelliJ IDEA または Eclipse プロジェクトへの SDK と設定ファイルの追加*」を参照してください。
 
 1. ライブラリをインポートします。
 
@@ -67,7 +67,7 @@ source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
    Analytics.clearBeacon();
    ```
 
-## Send additional data {#section_3EBE813E54A24F6FB669B2478B5661F9}
+## 追加データの送信 {#section_3EBE813E54A24F6FB669B2478B5661F9}
 
 ビーコンデータに加えて、各 `trackBeacon` 呼び出しで追加のコンテキストデータを送信することができます。
 
@@ -77,7 +77,7 @@ cdata.put("myapp.ImageLiked", imageName);
 Analytics.trackBeacon(beaconUUID, major, minor, proximity, cdata);
 ```
 
-コンテキストデータ値は、Adobe Mobileサービスのカスタム変数にマップする必要があります。
+コンテキストデータ値は、Adobe Mobile Services でカスタム変数にマップする必要があります。
 
 ![](assets/map-variable-context-ltv.png)
 
