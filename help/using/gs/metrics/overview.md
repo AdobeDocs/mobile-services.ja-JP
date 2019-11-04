@@ -3,23 +3,23 @@ description: 最近表示したアプリの主要パフォーマンス指標を�
 keywords: モバイル
 seo-description: 最近表示したアプリの主要パフォーマンス指標を表示できます。デフォルトでは、最大 12 個のアプリを表示できます。概要ページで、日付範囲を変更し、フィルターを作成して、データをセグメント化したり、アプリを編集したりできます。
 seo-title: モバイル指標の表示
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: モバイル指標の表示
 topic: 指標
 uuid: 57db0b77-6b0a-4a0c-9aad-0731275233fd
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
 
 ---
 
 
-# Display mobile metrics {#display-mobile-metrics}
+# モバイル指標の表示{#display-mobile-metrics}
 
 最近表示したアプリの主要パフォーマンス指標を表示できます。デフォルトでは、最大 12 個のアプリを表示できます。概要ページで、日付範囲を変更し、フィルターを作成して、データをセグメント化したり、アプリを編集したりできます。
 
-各アプリに対して表示される指標は、アプリを作成した際に選択した主要指標を反映しています。詳しくは、 [新しいアプリの追加](/help/using/manage-apps/t-new-app.md).
+各アプリに対して表示される指標は、アプリを作成した際に選択した主要指標を反映しています。詳しくは、[新しいアプリの追加](/help/using/manage-apps/t-new-app.md)を参照してください。
 
-If the app you want to view is not displayed, search for it by typing the app's name or by clicking the drop-down list in **[!UICONTROL All Apps]**.
+表示したいアプリが表示されない場合、アプリの名前を入力するか、**[!UICONTROL アプリ一覧]**&#x200B;のドロップダウンリストをクリックすることで、アプリを検索します。
 
 概要ページでは、以下のタスクを実行できます。
 
@@ -27,7 +27,7 @@ If the app you want to view is not displayed, search for it by typing the app's 
 
    主要指標では直近の 30 日間のデータが表示されます。右上にあるカレンダーアイコンをクリックして、これを変更できます。日付範囲またはあらかじめ設定されている期間をドロップダウンリストから選択できます。
 
-* **データのフィルタ**
+* **データのフィルタリング**
 
    ユーザーフィルターを設定して、各アプリのデータをセグメント化できます。
 
@@ -35,31 +35,31 @@ If the app you want to view is not displayed, search for it by typing the app's 
 
    フィルターを作成するには：
 
-   1. 「**[!UICONTROL フィルター]**」アイコンをクリックして、**共通フィルター[!UICONTROL ダイアログボックスを表示します。]**
-   1. Click **[!UICONTROL Add Rule]**, select an option from the drop-down list, and type the necessary information.
+   1. **[!UICONTROL フィルター]** アイコンをクリックして、**[!UICONTROL 共通フィルター]**&#x200B;ダイアログボックスを表示します。
+   1. **[!UICONTROL ルールを追加]** をクリックし、ドロップダウンリストからオプションを選択して、必要な情報を入力します。
 
-      例えば、「 **[!UICONTROL App Version]** 」を選択し、バージョンを `4.5` 入力します。 You could select **[!UICONTROL Device Type]** and type `Android`.
+      例えば、**[!UICONTROL アプリのバージョン]**  を選択し、バージョンに `4.5` と入力します。**[!UICONTROL デバイスタイプ]** を選択して、`Android` と入力します。
 
       >[!TIP]
       >
-      >You can create complex filters by using *AND* and *OR* statements.
+      >*AND* および *OR* ステートメントを使用して、複雑なフィルターを作成できます。
 
-   1. Click **[!UICONTROL Update]**.
+   1. **[!UICONTROL 更新]** をクリックします。
    >[!TIP]
    >
-   >A blue bubble displays next to the **[!UICONTROL Filter]** icon to indicate the number of active filters.
+   >**[!UICONTROL フィルター]** アイコンの横に、アクティブなフィルターの数を示す青い吹き出しが表示されます。
 
-   To cancel filters, click the **[!UICONTROL Filter]** icon, and click **[!UICONTROL Cancel]**.
+   フィルターをキャンセルするには、**[!UICONTROL フィルター]** アイコンをクリックして、**[!UICONTROL キャンセル]** をクリックします。
 
 * **主要業績評価指標の表示**
 
-   アプリの名前をクリックして、主要業績評価指標の詳細を表示します。グラフの線は色分けされ、データポイントにマウスポインターを置くと、特定の日付の統計を表示できます。ドリルダウンするには、「主要業績評価指標」の **** 横にある「&gt;」アイコ **[!UICONTROL ンをクリックします]**。 The lines on the chart are color coded, and you can mouse over any data point to see statistics for specific dates. 表の列ヘッダーをクリックすると、昇順または降順にデータを並べ替えることができます。
+   アプリの名前をクリックして、主要業績評価指標の詳細を表示します。グラフの線は色分けされ、データポイントにマウスポインターを置くと、特定の日付の統計を表示できます。ドリルダウンするには、**[!UICONTROL 主要業績指標]**&#x200B;の隣にある&#x200B;****「&gt;」アイコンをクリックします。グラフの線は色分けされ、データポイントにマウスポインターを置くと、特定の日付の統計を表示できます。表の列ヘッダーをクリックすると、昇順または降順にデータを並べ替えることができます。
 
-## Edit an app's settings {#section_C1CF227A2E534A798F0073E43AD6A2D1}
+## アプリの設定の編集 {#section_C1CF227A2E534A798F0073E43AD6A2D1}
 
 1. アプリのタイルにある歯車アイコンをクリックして、アプリ情報ページを開きます。
 1. アプリの設定を編集します。
 
-   各設定について詳しくは、 [アプリの設定](/help/using/c-manage-app-settings/c-mob-confg-app/c-mob-confg-app.md).
+   各設定について詳しくは、[アプリの設定](/help/using/c-manage-app-settings/c-mob-confg-app/c-mob-confg-app.md)を参照してください。
 
-1. 「**[!UICONTROL 保存]**」をクリックします。
+1. **[!UICONTROL 保存]**&#x200B;をクリックします。
