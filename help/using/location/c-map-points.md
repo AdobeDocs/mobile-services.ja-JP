@@ -3,11 +3,11 @@ description: 目標地点およびその他のデータのマーカーを示す�
 keywords: モバイル
 seo-description: 目標地点およびその他のデータのマーカーを示すインタラクティブマップを表示できます。
 seo-title: マップ
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: マップ
 topic: 指標
 uuid: 3c271738-eb8d-4c26-baaf-54b247bfc4da
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
 ---
@@ -15,26 +15,26 @@ source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
 # マップ {#map}
 
-You can view an interactive map that displays your POI and other data markers.
+目標地点およびその他のデータのマーカーを示すインタラクティブマップを表示できます。
 
 ![](assets/map.png)
 
-次に、覚えておくべき重要な情報を示します。
+覚えておく必要がある重要な情報を以下に示します。
 
-* You can increase or decrease the size of the map.
+* マップのサイズは増減できます。
 
    この機能は、例えば 2 つの目標地点が近い場合などに役立ちます。マップを拡大すると、マップを詳しく見ることができます。
 * 目標地点は青色で表示されます。
 
    その他のデータのマーカー（起動など）は、黒色で表示されます。マーカーをクリックすると、詳細を表示できます。
 
-Click ![layers](assets/map_layers.png) to select the following options:
+![レイヤーす。](assets/map_layers.png)をクリックして、次のオプションを選択します。
 
 * **[!UICONTROL マップ]**
 
    単一のマップを表示します。
 
-* **[!UICONTROL Satelliteマッ]**&#x200B;プをサテライトモードで表示します。
+* **[!UICONTROL サテライト]**：マップをサテライトモードで表示します。
 
 * **[!UICONTROL データのマーカー]**
 
@@ -52,16 +52,16 @@ Click ![layers](assets/map_layers.png) to select the following options:
 
 * **[!UICONTROL 期間]**
 
-   **[!UICONTROL カレンダー]アイコンをクリックしてカスタムの期間を選択するか、またはドロップダウンリストからあらかじめ設定されている期間を選択します。**
+   **[!UICONTROL カレンダー]**&#x200B;アイコンをクリックしてカスタムの期間を選択するか、またはドロップダウンリストからあらかじめ設定されている期間を選択します。
 
 * **[!UICONTROL カスタマイズ]**
 
-   Customize your reports by changing the **[!UICONTROL Show By]** options, adding metrics and filters, and adding additional series (metrics), and more. For more information, see [Customize reports](/help/using/usage/reports-customize/t-reports-customize.md).
+   **[!UICONTROL 表示方法]** オプションを変更したり、指標およびフィルターを追加したり、追加のシリーズ（指標）を追加したりして、レポートをカスタマイズします。詳しくは、「[レポートのカスタマイズ](/help/using/usage/reports-customize/t-reports-customize.md)」を参照してください。
 
 * **[!UICONTROL フィルター]**
 
-   「**[!UICONTROL フィルター]」をクリックし、様々なレポートにわたるフィルターを作成して、すべてのモバイルレポートにおけるセグメントのパフォーマンスを確認します。**&#x200B;共通フィルターを定義すると、パス（画面遷移）レポート以外のすべてのレポートに適用できます。For more information, see [Add a sticky filter](/help/using/usage/reports-customize/t-sticky-filter.md).
+   **[!UICONTROL フィルター]** をクリックし、様々なレポートにわたるフィルターを作成して、すべてのモバイルレポートにおけるセグメントのパフォーマンスを確認します。共通フィルターを定義すると、パス（画面遷移）レポート以外のすべてのレポートに適用できます。詳しくは、「[共通フィルターの追加](/help/using/usage/reports-customize/t-sticky-filter.md)」を参照してください。
 
 * **[!UICONTROL ダウンロード]**
 
-   Click **[!UICONTROL PDF]** or **[!UICONTROL CSV]** to download or open documents and share with users who do not have access to Mobile Services or to use the file in presentations.
+   **[!UICONTROL PDF]** または **[!UICONTROL CSV]** をクリックして、ドキュメントをダウンロードするか開いて Mobile Services へのアクセス権を持たないユーザーと共有したり、プレゼンテーションで使用したりします。
