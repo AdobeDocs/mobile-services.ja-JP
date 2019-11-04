@@ -4,34 +4,34 @@ seo-description: iOS SDK を使用して、サードパーティのディファ�
 seo-title: サードパーティのディファードディープリンクの追跡
 title: サードパーティのディファードディープリンクの追跡
 uuid: 5525b609-e926-44b9-b0f5-38e9dd7c9761
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 4b5be6c51c716114e597a80d475f838e23abb1b1
 
 ---
 
 
-# Tracking third-party deferred deep links {#tracking-third-party-deferred-deep-links}
+# サードパーティのディファードディープリンクの追跡{#tracking-third-party-deferred-deep-links}
 
 iOS SDK を使用して、サードパーティのディファードディープリンクの追跡を実装します。
 
-## Classic Adobe Mobile SDK deep linking {#section_D114FA1EB9664EAA82E036A990694B26}
+## 従来の Adobe Mobile SDK ディープリンク {#section_D114FA1EB9664EAA82E036A990694B26}
 
-The Adobe Mobile SDK currently supports deep linking where the app developer is expected to call the `trackAdobeDeepLink` API and pass the deep linking URL, which is the fingerprinter URL that is generated in Adobe Mobile Services during configuration. SDK はフィンガープリンターに Ping を発行して、獲得データを取得し、ライフサイクルの一部としてインストール／起動分析コールのコンテキストデータに追加します。また、SDKは、ディープリンクURLパラメーターからのディープリンクデータも追加します。 ディープリンクについて詳しくは、[ディープリンクの追跡](/help/ios/acquisition-main/tracking-deep-links/tracking-deep-links.md)を参照してください。
+現在、Adobe Mobile SDK がサポートしているディープリンクでは、アプリ開発者が `trackAdobeDeepLink` API を呼び出し、ディープリンクの URL（設定時に Adobe Mobile Services で生成されるフィンガープリンター URL）を渡すことが求められます。SDK はフィンガープリンターに Ping を発行して、獲得データを取得し、ライフサイクルの一部としてインストール／起動分析コールのコンテキストデータに追加します。さらに、SDK は、ディープリンク URL のパラメーターからのディープリンクデータも追加します。ディープリンクについて詳しくは、[ディープリンクの追跡](/help/ios/acquisition-main/tracking-deep-links/tracking-deep-links.md)を参照してください。
 
-## Facebook deep linking {#section_6A9DACB54A2F4CDEBE9C744DEFADFDED}
+## Facebook ディープリンク {#section_6A9DACB54A2F4CDEBE9C744DEFADFDED}
 
 広告作成者は、Facebook 上に広告をディープリンクとして作成することができます。ユーザーが Facebook 上の広告をクリックすると、アプリ内で興味を持った情報に直接移動します。ディープリンクはフィンガープリンターの URL **ではありません**。ただし、広告の設定時にサードパーティのディープリンク URL を指定するオプションがあります。Experience Cloud Mobile SDK および Services を使用しているアプリ開発者は、このフィールドに Mobile Services によって設定されたフィンガープリンターの URL を入力する必要があります。すべてが正しく設定されている場合、Facebook SDK は、アプリがインストールまたは起動されたときにこの URL をアプリケーションに渡します。
 
-## SDK の設定 {#section_834CD3109175432B8173ECB6EA7DE315}
+## SDK の設定{#section_834CD3109175432B8173ECB6EA7DE315}
 
-1. Facebook SDKを設定します。
+1. Facebook SDK を設定します。
 
-   詳しくは、次を参照してください。
+   詳しくは、以下を参照してください。
 
    * [iOS 向け Facebook SDK の概要](https://developers.facebook.com/docs/ios/getting-started)
    * [ディープリンクの設定](https://developers.facebook.com/docs/app-ads/deep-linking#os)
 
-1. SDKを設定するには、SDKを呼び出し `trackAdobeDeepLink` てURLをSDKに渡します。
+1. SDK を設定するには、`trackAdobeDeepLink` を呼び出して URL を SDK に渡します。
 
    ```objective-c
    - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation 
@@ -43,7 +43,7 @@ The Adobe Mobile SDK currently supports deep linking where the app developer is 
 
    >[!TIP]
    >
-   >Ensure that the deep link URL has a key with the name `a.deeplink.id`. URL に `a.deeplink.id` パラメーターがない場合、コンテキストデータに URL パラメーターは追加されません。
+   >ディープリンク URL に `a.deeplink.id` という名前のキーがあることを確認してください。URL に `a.deeplink.id` パラメーターがない場合、コンテキストデータに URL パラメーターは追加されません。
 
 アプリケーションが上記のように設定されている場合、現在の AMSDK バージョンは正常に機能し、ディープリンクデータがインストール／起動分析コールに正しく追加されます。
 
@@ -67,11 +67,11 @@ The Adobe Mobile SDK currently supports deep linking where the app developer is 
 
 1. Facebook SDK をリンクします。
 
-   ![Facebookアセット](assets/link-fb-sdk.jpg)
+   ![Facebook アセット](assets/link-fb-sdk.jpg)
 
-1. Edit `AppDelegate`.
+1. `AppDelegate` を編集します。
 
-   1. ヘッダーをインポートします。
+   1. ヘッダーを読み込みます。
 
       ```objective-c
       /************************************************************************* 
@@ -100,7 +100,7 @@ The Adobe Mobile SDK currently supports deep linking where the app developer is 
       @import Bolts;
       ```
 
-   1. 遅延ディープリンクのハンドルを追加します。
+   1. ディファードディープリンクにハンドルを追加します。
 
       ```objective-c
       - (BOOL) application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions { 
@@ -129,7 +129,7 @@ The Adobe Mobile SDK currently supports deep linking where the app developer is 
       }
       ```
 
-   1. Call the `trackAdobeDeepLink` API and pass the deep link URL to the SDK.
+   1. `trackAdobeDeepLink` API を呼び出してディープリンク URL を SDK に渡します。
 
       ```objective-c
       - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString *, id> *)options { 
