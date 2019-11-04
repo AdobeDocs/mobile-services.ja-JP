@@ -2,11 +2,11 @@
 description: iOS アプリでアプリ内メッセージを使用するのに役立つ情報です。
 seo-description: iOS アプリでアプリ内メッセージを使用するのに役立つ情報です。
 seo-title: アプリ内メッセージ
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: アプリ内メッセージ
 topic: 開発者と導入
 uuid: 21fa6a94-bb7f-4c78-843b-a50f1974db22
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
 ---
@@ -25,13 +25,13 @@ iOS アプリでアプリ内メッセージを使用するのに役立つ情報�
 
    >[!TIP]
    >
-   >メッセージが定義されていない場合でも、この手順を実行できます。 定義したメッセージは、アプリに動的に配信され、アプリストアの更新なしに表示されます。
+   >メッセージを定義していない場合でも、これらの手順を実行できます。定義したメッセージは、アプリに動的に配信され、アプリストアの更新なしで表示されます。
 
-## Enabling in-app messages {#section_79F984271C3B4366B7B04F864F4FF8C2}
+## アプリ内メッセージの有効化 {#section_79F984271C3B4366B7B04F864F4FF8C2}
 
 1. ライブラリをプロジェクトに追加し、ライフサイクルを実装します。
 
-   詳しくは、コア実装とラ *イフサイクルでのプロジェクトへのSDKと設定ファイルの追加* ( [英語のみ)を参照してください](/help/ios/getting-started/requirements.md)。
+   詳しくは、[コア実装とライフサイクル](/help/ios/getting-started/requirements.md)の「*プロジェクトへの SDK と設定ファイルの追加*」を参照してください。
 
 1. ライブラリをインポートします。
 
@@ -39,7 +39,7 @@ iOS アプリでアプリ内メッセージを使用するのに役立つ情報�
    #import "ADBMobile.h"
    ```
 
-1. Verify that the `ADBMobileConfig.json` file contains the required settings for In-App messaging.
+1. アプリ内メッセージに必要な設定が `ADBMobileConfig.json` ファイルに含まれていることを確認します。
 1. アプリ内メッセージを起動時に動的に更新するには、`remotes` オブジェクトが存在し、正しく設定されている必要があります。
 
    ```js
@@ -69,22 +69,22 @@ iOS アプリでアプリ内メッセージを使用するのに役立つ情報�
    >
    >`messages` または `remotes` が必要です。
 
-   If these objects are not configured, download an updated `ADBMobileConfig.json` file from Adobe Mobile services. 詳しくは、コア実装とライフサ [イクルを参照してください](/help/ios/getting-started/requirements.md)。
+   これらのオブジェクトが設定されていない場合は、更新された `ADBMobileConfig.json` ファイルを Adobe Mobile Services からダウンロードしてください。詳しくは、「[コア実装とライフサイクルい](/help/ios/getting-started/requirements.md)」を参照してくださ。
 
-## Tracking in-app messages {#section_B85CDF6929564AAEA79338B55E5CB1E8}
+## アプリ内メッセージの追跡 {#section_B85CDF6929564AAEA79338B55E5CB1E8}
 
 iOS Mobile Services SDK はアプリ内メッセージに関する次の指標を追跡します。
 
 * 全画面および警告方式のアプリ内メッセージの場合：
 
-   * **[!UICONTROL インプレッション]**:ユーザーがアプリ内メッセージをトリガーしたとき。
-   * **[!UICONTROL Click throughs]**: when the user pushes the **[!UICONTROL Click-through]** button.
-   * **[!UICONTROL Cancels]**: when the user pushes the **[!UICONTROL Cancel]** button.
+   * **[!UICONTROL インプレッション]**：ユーザーがアプリ内メッセージをトリガーしたとき。
+   * **[!UICONTROL クリックスルー]**：ユーザーが&#x200B;**[!UICONTROL クリックスルー]**&#x200B;ボタンを押したとき。
+   * **[!UICONTROL キャンセル]**：ユーザーが&#x200B;**[!UICONTROL キャンセル]**&#x200B;ボタンを押したとき。
 
 * カスタムの全画面アプリ内メッセージの場合は、メッセージ内の HTML コンテンツに次のボタンに関する SDK 追跡を通知する正しいコードが含まれている必要があります。
 
-   * **[!UICONTROL クリックスルー]** （リダイレクト）のトラッキング例： `adbinapp://confirm/?url=https://www.yoursite.com`
-   * **[!UICONTROL Cancel (close) example tracking:]**`adbinapp://cancel`
+   * **[!UICONTROL クリックスルー]** （リダイレクト）のトラッキング例：`adbinapp://confirm/?url=https://www.yoursite.com`
+   * **[!UICONTROL キャンセル]**（終了）追跡の例：`adbinapp://cancel`
 
 * ローカル（リモート）通知の場合：
 
@@ -105,7 +105,7 @@ iOS Mobile Services SDK はアプリ内メッセージに関する次の指標�
    }
    ```
 
-## Local fallback image {#section_DEACC1CE549B4573B556A44A52409941}
+## ローカルフォールバック画像 {#section_DEACC1CE549B4573B556A44A52409941}
 
 Adobe Mobile Services で全画面表示メッセージを作成する際、オプションでフォールバック画像を指定できます。メッセージが Web から目的の画像を取得できない場合、SDK はアプリケーションバンドルから同じ名前の画像を読み込もうとします。この機能により、ユーザーがオフラインだったり、既定の画像に到達できなくても、オリジナルの形でメッセージを表示できます。
 
@@ -113,5 +113,5 @@ Adobe Mobile Services で全画面表示メッセージを作成する際、オ�
 
 >[!IMPORTANT]
 >
->You need to ensure that the specified resource is available.
+>指定したリソースが使用可能であることを確認する必要があります。
 
