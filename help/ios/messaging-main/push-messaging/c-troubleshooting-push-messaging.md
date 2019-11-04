@@ -3,17 +3,17 @@ description: この情報は、プッシュメッセージのトラブルシュ�
 keywords: モバイル
 seo-description: この情報は、プッシュメッセージのトラブルシューティングに役立ちます。
 seo-title: プッシュメッセージのトラブルシューティング
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: プッシュメッセージのトラブルシューティング
 topic: 指標
 uuid: 87d7dcb6-82a8-46e3-a6ed-7f895a22f2af
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 ---
 
 
-# Troubleshooting push messaging {#troubleshooting-push-messaging}
+# プッシュメッセージのトラブルシューティング{#troubleshooting-push-messaging}
 
 この情報は、プッシュメッセージのトラブルシューティングに役立ちます。
 
@@ -33,7 +33,7 @@ Mobile Services のプッシュメッセージは、次のタイプの遅延を�
 
    >[!TIP]
    >
-   >プッシュサービスは、メッセージが送信されることを保証しません。 サービスの信頼性について詳しくは、適切なドキュメントを参照してください。
+   >プッシュサービスでは、メッセージが送信されることは保証されません。サービスの信頼性について詳しくは、適切なドキュメントを参照してください。
    >
    >* **APNS**：[サービス品質](https://developer.apple.com/documentation/usernotifications)
       >
@@ -45,13 +45,13 @@ Mobile Services のプッシュメッセージは、次のタイプの遅延を�
 
 プッシュメッセージの送信には、有効なプッシュサービス証明書が必要です。証明書の有効期限が近づいたり、有効期限が切れたりすると、Mobile Services が通知を発行します。この通知を受信したら、以下の手順を実行して、証明書を更新してください。
 
-1. Click **[!UICONTROL Manage App Settings]**.
-2. To delete the current certificate, scroll to **[!UICONTROL Push Services]** and click **[!UICONTROL Delete]**.
+1. **[!UICONTROL アプリ設定]**&#x200B;をクリックします。
+2. 現在の証明書を削除するには、**[!UICONTROL プッシュサービス]**&#x200B;までスクロールして、**[!UICONTROL 削除]**&#x200B;をクリックします。
 3. 新しい証明書を設定してテストします。
 
    詳しくは、[プッシュメッセージ有効化の前提条件](/help/using/c-manage-app-settings/c-mob-confg-app/configure-push-messaging/prerequisites-push-messaging.md)を参照してください。
 
-4. 「**[!UICONTROL 保存]**」をクリックします。
+4. **[!UICONTROL 保存]**&#x200B;をクリックします。
 
 ## iOS シミュレーターでプッシュメッセージが表示されないのはなぜですか？
 
