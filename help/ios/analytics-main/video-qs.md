@@ -2,11 +2,11 @@
 description: マイルストーンビデオ測定を使用した iOS でのビデオ測定に関する情報を以下に示します。
 seo-description: マイルストーンビデオ測定を使用した iOS でのビデオ測定に関する情報を以下に示します。
 seo-title: ビデオ分析
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: ビデオ分析
 topic: 開発者と導入
 uuid: d75fa415-78f6-4f50-a563-76949f040138
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1c387b063eedb41a52e044dc824df6a51f173ad2
 
 ---
@@ -18,13 +18,13 @@ source-git-commit: 1c387b063eedb41a52e044dc824df6a51f173ad2
 
 >[!TIP]
 >
->ビデオの再生中に、頻繁な「ハートビート」コールが送信され、再生時間を測定します。これらのハートビート呼び出しは、10 秒ごとに送信されるので、ビデオエンゲージメント指標やビデオフォールアウトレポートがより正確になります。詳しくは、Adobe Analyticsでのオーデ [ィオとビデオの測定を参照してください](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html)。
+>ビデオの再生中に、頻繁な「ハートビート」コールが送信され、再生時間を測定します。これらのハートビート呼び出しは、10 秒ごとに送信されるので、ビデオエンゲージメント指標やビデオフォールアウトレポートがより正確になります。詳しくは、「[Adobe Analytics でのオーディオとビデオの測定](https://docs.adobe.com/content/help/ja-JP/media-analytics/using/media-overview.html)」を参照してください。
 
 ビデオ測定の一般的なプロセスは、すべてのプラットフォームでほぼ同一です。このコンテンツでは、開発者のタスクに関する基本的な概要とコードサンプルを示します。
 
-## Map player events to Analytics variables {#section_E84987F878AB4A3A83AE700FEC4C9D4D}
+## プレーヤーイベントの Analytics 変数へのマッピング {#section_E84987F878AB4A3A83AE700FEC4C9D4D}
 
-次の表に、Analytics に送信されるメディアデータのリストを示します。処理ルールを使用して、コンテキストデータをAnalytics変数にマップします。
+次の表に、Analytics に送信されるメディアデータのリストを示します。処理ルールを使用して、コンテキストデータを Analytics 変数にマッピングします。
 
 * **a.media.name**
 
@@ -40,12 +40,12 @@ source-git-commit: 1c387b063eedb41a52e044dc824df6a51f173ad2
 
    （オプション）ビデオパス情報を提供します。この変数に対して、カスタマーケアでパスを有効にする必要があります。
 
-   * 変数型：カスタムインサイト(s.prop)
+   * 変数タイプ：カスタムインサイト（s.prop）
    * イベントタイプ：カスタムインサイト（s.prop）
 
 * **a.media.segment**
 
-   （必須）セグメント名や、ビデオ内でのセグメントの発生順序を含め、ビデオセグメントデータを収集します。この変数を入力するには、プレーヤーイベントを自動的に追跡する場合に `segmentByMilestones` 変数を有効にするか、プレーヤーイベントを手動で追跡する場合にカスタムセグメント名を設定します。For example, when a visitor views the first segment in a video, SiteCatalyst might collect the following in the `1:M:0-25` Segments evar.
+   （必須）セグメント名や、ビデオ内でのセグメントの発生順序を含め、ビデオセグメントデータを収集します。この変数を入力するには、プレーヤーイベントを自動的に追跡する場合に `segmentByMilestones` 変数を有効にするか、プレーヤーイベントを手動で追跡する場合にカスタムセグメント名を設定します。例えば、訪問者がビデオの最初のセグメントを表示すると、SiteCatalyst によって `1:M:0-25` Segments eVar に次の情報が収集されます。
 
    デフォルトのビデオデータ収集メソッドでは、次の時点のデータが収集されます。
 
@@ -93,7 +93,7 @@ source-git-commit: 1c387b063eedb41a52e044dc824df6a51f173ad2
    * 変数型：イベント
    * タイプ：カウンター
 
-## Configure media settings {#section_929945D4183C428AAF3B983EFD3E2500}
+## メディア設定の指定 {#section_929945D4183C428AAF3B983EFD3E2500}
 
 ビデオの追跡に使用する設定で `ADBMediaSettings` オブジェクトを指定します。
 
@@ -120,9 +120,9 @@ mediaSettings.trackSeconds = 30; // sends a hit every 30 seconds
 // event handlers described in the next section
 ```
 
-## Track player events {#section_C7F43AECBC0D425390F7FCDF3035B65D}
+## プレーヤーイベントの追跡 {#section_C7F43AECBC0D425390F7FCDF3035B65D}
 
-To measure video playback, The `mediaPlay`, `mediaStop`, and `mediaClose` methods need to be called at the appropriate times. 例えば、プレーヤーが一時停止した場合は `mediaStop` が呼び出され、再生が開始または再開された場合は `mediaPlay` が呼び出されます。
+ビデオの再生を測定するには、`mediaPlay`、`mediaStop` および `mediaClose` メソッドを適切なときに呼び出す必要があります。例えば、プレーヤーが一時停止した場合は `mediaStop` が呼び出され、再生が開始または再開された場合は `mediaPlay` が呼び出されます。
 
 以下の例は、通知の設定と、ビデオを測定するメディアメソッドの呼び出しを示したものです。
 
@@ -220,7 +220,7 @@ NSUInteger segmentNum
 NSUInteger eventType
 ```
 
-## Media measurement class and method reference {#section_50DF9359A7B14DF092634C8E913C77FE}
+## メディア測定クラスとメソッドのリファレンス {#section_50DF9359A7B14DF092634C8E913C77FE}
 
 * **mediaCreateSettings&#x200B;WithName:&#x200B;length:&#x200B;playerName:&#x200B;playerID:**
 
