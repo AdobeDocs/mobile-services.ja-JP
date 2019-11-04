@@ -3,48 +3,48 @@ description: アプリ内およびプッシュメッセージのメッセージ�
 keywords: モバイル
 seo-description: アプリ内およびプッシュメッセージのメッセージレポートを表示できます。
 seo-title: メッセージレポートの表示
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: メッセージレポートの表示
 topic: 指標
 uuid: 0ac73a81-388f-4dfd-84d5-21b8db4b8c83
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 44f531ad140827d563255fad197811185c5337c9
 
 ---
 
 
-# View message reports{#view-message-reports}
+# メッセージレポートの表示{#view-message-reports}
 
 アプリ内およびプッシュメッセージのメッセージレポートを表示できます。
 
-1. Click ![report icon](assets/icon_report.png) in the **[!UICONTROL Report]** column for a message.
-1. (**Optional**) Create a sticky filter for the report or change the time period by clicking the **[!UICONTROL Calendar]** icon.
+1. メッセージの **[!UICONTROL レポート]** 列の![レポートアイコン](assets/icon_report.png)をクリックします。
+1. （**オプション**）共通フィルターを作成するか、**[!UICONTROL カレンダー]**&#x200B;アイコンをクリックして期間を変更します。
 
-   For more information about creating a sticky filter, see Add a sticky filter.[](/help/using/usage/reports-customize/t-sticky-filter.md)
+   共通フィルターの作成について詳しくは、「[共通フィルターの追加](/help/using/usage/reports-customize/t-sticky-filter.md)」を参照してください。
 
 >[!TIP]
 >
->表示しているメッセージのタイプによっては、レポートが異なる場合があります。
+>表示するメッセージのタイプによって、レポートは異なることがあります。
 
-## In-app messages {#section_90B79BA58E8141F78538C187EB1BF8C7}
+## アプリ内メッセージ{#section_90B79BA58E8141F78538C187EB1BF8C7}
 
 アプリ内メッセージに関するレポートを表示する場合、レポートは次の図のようになります。
 
-![report message](assets/report_message.png)
+![レポートメッセージ](assets/report_message.png)
 
-### In-app message metrics
+### アプリ内メッセージ指標
 
-Here is a list of the metrics that are available for in-app messages:
+アプリ内メッセージで使用できる指標の一覧を次に示します。
 
-* **[!UICONTROL インプレッション]**（メッセージがトリガーされたとき）。
+* **[!UICONTROL インプレッション]**：メッセージがトリガーされたとき。
 
-* **[!UICONTROL クリックスルー]**、ユーザーが警告メッセージまたはフルスクリーンメッセージの「 **[!UICONTROL Click Through]** 」ボタンを押したとき、およびユーザーがローカル通知からアプリを開いたとき。
+* **[!UICONTROL クリックスルー]**：ユーザーがアラートまたはフルスクリーンメッセージの **[!UICONTROL クリックスルー]** ボタンを押したとき、およびユーザーがローカル通知からアプリを開いたとき。
 
-* **[!UICONTROL キャンセル]**(ユーザーがアラートまたはフ **[!UICONTROL ルスクリーンメッセージの「キャンセル]** 」ボタンを押したとき)。
+* **[!UICONTROL キャンセル]**：ユーザーがアラートまたはフルスクリーンメッセージの **[!UICONTROL キャンセル]** ボタンを押したとき。
 
-* **[!UICONTROL アクション率]**（Adobe Analyticsから計算された指標）は、クリックスルー数をインプレッション数で割った結果です。
+* **[!UICONTROL エンゲージメント率]**：Adobe Analytics の計算指標で、クリックスルー数をインプレッション数で割った結果です。
 
-## Push messages {#section_BEAFD858CA194185B6F88903446058E9}
+## プッシュメッセージ {#section_BEAFD858CA194185B6F88903446058E9}
 
 プッシュメッセージに関するレポートを表示する場合、レポートは次の図のようになります。
 
@@ -54,7 +54,7 @@ Here is a list of the metrics that are available for in-app messages:
 
 ### プッシュメッセージ指標
 
-Here is a list of the metrics that are available for push messages:
+プッシュメッセージで使用できる指標の一覧を次に示します。
 
 * **[!UICONTROL 時間]**
 
@@ -62,24 +62,24 @@ Here is a list of the metrics that are available for push messages:
 
 * **[!UICONTROL ステータス]**
 
-   メッセージのステータスと使用可能なステータスは次のとおりです。
+   メッセージのステータス、および利用可能なステータスは次のとおりです。
 
-   * **[!UICONTROL Cancelled]**
-   * **[!UICONTROL Scheduled]**
+   * **[!UICONTROL キャンセル済み]**
+   * **[!UICONTROL スケジュール済み]**
    * **[!UICONTROL 実行中]**
    * **[!UICONTROL 実行済み]**
 
-* **[!UICONTROL Published]**
+* **[!UICONTROL 発行済み]**
 
-   ユーザーデバイスにメッセージを送信するためにApple Push Notification Service/Firebase Cloud Messaging(APNS/FCM)に正常に送信されたデバイストークンの数です。
+   ユーザーのデバイスにメッセージを送信するために Apple Push Notification Service／Firebase Cloud Messaging（APNS／FCM）に正常に送信されたデバイストークンの数。
 
 * **[!UICONTROL 失敗]**
 
-   The number of device tokens not successfully sent to APNS/FCM. エラーが発生する原因として考えられるものは次のとおりです。
+   APNS／FCM に正常に送信されたデバイストークンの数。考えられる失敗の理由をいくつか紹介します。
 
    * 無効な pushID
 
-   * プッシュ先として指定されたプッシュプラットフォーム（APNS、FCMなど）は、ジョブのアプリケーションには存在しません。 （例えば、プラットフォームが iOS プッシュトークンを収集したが、APNS サービスが設定されていない。）
+   * プッシュ対象として指定されたプッシュプラットフォーム（APNS、FCM など）がジョブのアプリケーションに存在しない。（例えば、プラットフォームが iOS プッシュトークンを収集したが、APNS サービスが設定されていない。）
 
    * メッセージが失敗した原因としては、プッシュサービスが正しく設定されていなかったか、Mobile Services システムがダウンしていることが考えられます。
    >[!IMPORTANT]
@@ -88,4 +88,4 @@ Here is a list of the metrics that are available for push messages:
 
 * **[!UICONTROL ブラックリストへの登録]**
 
-   APNSまたはFCMに送信できなくなったデバイストークンの数。 これは、通常、アプリがデバイスからアンインストールされていることや、ユーザーがメッセージを受信するためのオプトイン設定を変更したことを意味します。Android と iOS では、トークンがブラックリストに記載されているものとしてカウントされるタイミングが異なります。Android トークンは、ブラックリストのカウントに即座に表示されます。iOS トークンは、最初は公開されたものとして表示され、APNS からのフィードバックに基づいて、後続のメッセージでブラックリストとして表示されます。
+   APNS または FCM に送信された、有効でなくなったデバイストークンの数。これは、通常、アプリがデバイスからアンインストールされていることや、ユーザーがメッセージを受信するためのオプトイン設定を変更したことを意味します。Android と iOS では、トークンがブラックリストに記載されているものとしてカウントされるタイミングが異なります。Android トークンは、ブラックリストのカウントに即座に表示されます。iOS トークンは、最初は公開されたものとして表示され、APNS からのフィードバックに基づいて、後続のメッセージでブラックリストとして表示されます。
