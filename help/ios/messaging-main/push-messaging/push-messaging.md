@@ -1,50 +1,49 @@
 ---
 description: Adobe Mobile および Adobe Mobile SDK を使用すると、ユーザーにプッシュメッセージを送信できます。また、プッシュメッセージをクリックスルーした結果、アプリを開いたユーザーを簡単にレポートできます。
 seo-description: Adobe Mobile および Adobe Mobile SDK を使用すると、ユーザーにプッシュメッセージを送信できます。また、プッシュメッセージをクリックスルーした結果、アプリを開いたユーザーを簡単にレポートできます。
-seo-title: Push messaging
-solution: Marketing Cloud,Analytics
-title: Push messaging
+seo-title: プッシュメッセージ
+solution: Experience Cloud,Analytics
+title: プッシュメッセージ
 topic: 開発者と導入
 uuid: 2e2d8175-d7d0-4b6b-a14e-d419da1f9615
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
 ---
 
 
-# Push messaging {#push-messaging}
+# プッシュメッセージ{#push-messaging}
 
 Adobe Mobile および Adobe Mobile SDK を使用すると、ユーザーにプッシュメッセージを送信できます。また、プッシュメッセージをクリックスルーした結果、アプリを開いたユーザーを簡単にレポートできます。
 
 >[!IMPORTANT]
 >
->このトピックの情報は、導入の可能性を示すものです。 Apple の iOS ドキュメントを参照して、アプリに最適な実装を特定することを強くお勧めします。実装は、使用しているフレームワークと、アプリのターゲットとするiOSのバージョンによって決定する必要があります。
+>このトピック内の情報では、考えられる実装を提案しています。Apple の iOS ドキュメントを参照して、アプリに最適な実装を特定することを強くお勧めします。実装は、使用しているフレームワークおよびアプリのターゲットとなる iOS のバージョンによって特定する必要があります。
 
 プッシュメッセージを使用するには、SDK バージョン 4.6 以降が&#x200B;**必要**&#x200B;です。
 
 >[!IMPORTANT]
 >
->アプリ内でExperience Cloud IDを手動で設定しないでください。 手動で設定すると、新しい一意のユーザーが作成されます。このユーザーは、オプトインステータスが原因でプッシュメッセージを受信しません。例えば、プッシュメッセージの受信をオプトインしているユーザーがアプリにログインするとします。ログイン後、アプリ内で ID を手動で設定すると、プッシュメッセージの受信をオプトインしていない新しい一意のユーザーが作成されます。この新しいユーザーは、プッシュメッセージを受信しません。
+>アプリ内部の Experience Cloud ID を手動で設定しないでください。手動で設定すると、新しい一意のユーザーが作成されます。このユーザーは、オプトインステータスが原因でプッシュメッセージを受信しません。例えば、プッシュメッセージの受信をオプトインしているユーザーがアプリにログインするとします。ログイン後、アプリ内で ID を手動で設定すると、プッシュメッセージの受信をオプトインしていない新しい一意のユーザーが作成されます。この新しいユーザーは、プッシュメッセージを受信しません。
 
 ## 前提条件 {#section_06655ABE973743DC965897B229A2118D}
 
-* プロジェクトにライブラリを追加し、ライフサイクル指標を実装します。
+* ライブラリをプロジェクトに追加し、ライフサイクル指標を実装します。
 
-   For more information, see [Lifecycle metrics](/help/ios/metrics.md).
+   詳しくは、「[ライフサイクル指標](/help/ios/metrics.md)」を参照してください。
 
 
-* IDサービスに対してSDKが有効になっている必要があります。
-For more information, see Configure SDK ID Service Options.[](/help/using/c-manage-app-settings/c-mob-confg-app/t-config-visitor.md)
+* SDK を ID サービスに対して有効化する必要があります。詳しくは、「[SDK ID サービスオプションの設定](/help/using/c-manage-app-settings/c-mob-confg-app/t-config-visitor.md)」を参照してください。
 
 >[!IMPORTANT]
 >
->Moving your app to a new report suite is not supported. 新しいレポートスイートに移行すると、プッシュ設定が破損し、メッセージが送信されない可能性があります。
+>新しいレポートスイートへのアプリの移行はサポートされていません。新しいレポートスイートに移行すると、プッシュ設定が破損し、メッセージが送信されない可能性があります。
 
-## Enabling push messaging {#section_CBD63C5B11FE4424BC2BF552C23F2BD9}
+## プッシュメッセージの有効化 {#section_CBD63C5B11FE4424BC2BF552C23F2BD9}
 
-1. Verify that the `ADBMobileConfig.json` file contains the required settings for push messaging.
+1. プッシュメッセージに必要な設定が `ADBMobileConfig.json` ファイルに含まれていることを確認します。
 
-   The `"marketingCloud"` object must have its `"org"` property configured for push messaging.
+   `"marketingCloud"` オブジェクトの `"org"` プロパティをプッシュメッセージ用に設定する必要があります。
 
    ```objective-c
    "marketingCloud": { 
@@ -58,9 +57,9 @@ For more information, see Configure SDK ID Service Options.[](/help/using/c-mana
    #import "ADBMobile.h"
    ```
 
-1. To determine the settings for which your app needs to ask for permission, review Configuring Remote Notification Support.[](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/HandlingRemoteNotifications.html#//apple_ref/doc/uid/TP40008194-CH6-SW1)
+1. アプリケーションが権限を要求する必要がある設定を決定するには、「[Configuring Remote Notification Support（リモート通知サポートの設定）](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/HandlingRemoteNotifications.html#//apple_ref/doc/uid/TP40008194-CH6-SW1)」を参照してください。
 
-   アラート、バッジ、サウンド、リモート通知を使用する権限を要求する導入例を次に示します。
+   アラート、バッジ、サウンドおよびリモートの通知を使用する権限をリクエストする実装として考えられる例を以下に示します。
 
    ```objective-c
    // iOS 10 and newer 
@@ -94,7 +93,7 @@ For more information, see Configure SDK ID Service Options.[](/help/using/c-mana
    }
    ```
 
-1. The push token must be passed to the SDK using the `setPushIdentifier:` method in ADBMobile class.
+1. ADBMobile クラスの `setPushIdentifier:` メソッドを使用して、プッシュトークンを SDK に渡す必要があります。
 
    ```objective-c
    - (void) application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken { 
@@ -104,7 +103,7 @@ For more information, see Configure SDK ID Service Options.[](/help/using/c-mana
    }
    ```
 
-1. お使いの環境に適した実装を判断するには、UserNotificationsに移動し [ます](https://developer.apple.com/documentation/usernotifications)。
+1. 自社の環境に適した実装を判断するには、[UserNotifications](https://developer.apple.com/documentation/usernotifications) に移動します。
 
    この手順を使用すると、ユーザーがプッシュメッセージのクリックスルーを使用してアプリを開くときに `userInfo` 辞書を SDK に渡すことによってプッシュレポートを有効にできます。
 
@@ -138,7 +137,7 @@ For more information, see Configure SDK ID Service Options.[](/help/using/c-mana
    }
    ```
 
-1. To keep your estimated push audience accurate, notify the SDK when a user manually disables push messaging for your app by calling `[ADBMobile setPushIdentifier: nil]` in the `applicationDidBecomeActive:` method in your `AppDelegate`.
+1. 推定されるプッシュオーディエンスを正確に保つために、アプリのプッシュメッセージをユーザーが手動で無効にしたときは、`AppDelegate` の`applicationDidBecomeActive:` メソッドで `[ADBMobile setPushIdentifier: nil]` を呼び出すことによって、SDK に通知します。
 
    ```objective-c
    // device running < iOS 7 
