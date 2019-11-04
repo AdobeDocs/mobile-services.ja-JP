@@ -2,17 +2,17 @@
 description: Adobe Mobile および Adobe Mobile SDK を使用すると、ユーザーにプッシュメッセージを送信できます。SDK を使用して、プッシュメッセージをクリックした後にアプリを開いたユーザーを簡単にレポートすることもできます。
 seo-description: Adobe Mobile および Adobe Mobile SDK を使用すると、ユーザーにプッシュメッセージを送信できます。SDK を使用して、プッシュメッセージをクリックした後にアプリを開いたユーザーを簡単にレポートすることもできます。
 seo-title: プッシュメッセージ
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: プッシュメッセージ
 topic: 開発者と導入
 uuid: 729d4010-3733-4dff-b188-ad45bd3e7cc4
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 17cb91a28966cf32f955a2cb724e89ab228de5b8
 
 ---
 
 
-# Push messaging {#push-messaging}
+# プッシュメッセージ{#push-messaging}
 
 Adobe Mobile および Adobe Mobile SDK を使用すると、ユーザーにプッシュメッセージを送信できます。SDK を使用して、プッシュメッセージをクリックした後にアプリを開いたユーザーを簡単にレポートすることもできます。
 
@@ -20,19 +20,19 @@ Adobe Mobile および Adobe Mobile SDK を使用すると、ユーザーにプ�
 
 >[!IMPORTANT]
 >
->アプリ内でExperience Cloud IDを手動で設定しないでください。 手動で設定すると、新しい一意のユーザーが作成されます。このユーザーは、オプトインステータスが原因でプッシュメッセージを受信しません。例えば、プッシュメッセージを受信するためにオプトインしているユーザーがアプリにログインしたとします。ログイン後、アプリ内で ID を手動で設定すると、プッシュメッセージの受信をオプトインしていない新しい一意のユーザーが作成されます。この新しいユーザーは、プッシュメッセージを受信しません。
+>アプリ内部の Experience Cloud ID を手動で設定しないでください。手動で設定すると、新しい一意のユーザーが作成されます。このユーザーは、オプトインステータスが原因でプッシュメッセージを受信しません。例えば、プッシュメッセージを受信するためにオプトインしているユーザーがアプリにログインしたとします。ログイン後、アプリ内で ID を手動で設定すると、プッシュメッセージの受信をオプトインしていない新しい一意のユーザーが作成されます。この新しいユーザーは、プッシュメッセージを受信しません。
 >
->アプリを新しいレポートスイートに移動することはサポートされていません。 新しいレポートスイートに移行すると、プッシュ設定が破損し、メッセージが送信されない可能性があります。
+>新しいレポートスイートへのアプリの移行はサポートされていません。新しいレポートスイートに移行すると、プッシュ設定が破損し、メッセージが送信されない可能性があります。
 
-## Enable push messaging {#section_CBD63C5B11FE4424BC2BF552C23F2BD9}
+## プッシュメッセージの有効化 {#section_CBD63C5B11FE4424BC2BF552C23F2BD9}
 
 >[!TIP]
 >
->アプリでFirebase Cloud Messaging(FCM)を使用したメッセージングを使用するように設定済みの場合は、次の手順の一部が既に完了している可能性があります。
+>Google Cloud Messaging（FSM）経由でメッセージを使用するようアプリを既に設定している場合、次の手順の一部が既に完了していることがあります。
 
-1. Verify that the `ADBMobileConfig.json` file contains the required settings for push messaging.
+1. プッシュメッセージに必要な設定が `ADBMobileConfig.json` ファイルに含まれていることを確認します。
 
-   The `"marketingCloud"` object must have its `"org"` property configured for push messaging.
+   `"marketingCloud"` オブジェクトの `"org"` プロパティをプッシュメッセージ用に設定する必要があります。
 
    ```js
    "marketingCloud": { 
@@ -47,7 +47,7 @@ Adobe Mobile および Adobe Mobile SDK を使用すると、ユーザーにプ�
    String token = FirebaseInstanceId.getInstance().getToken();
    ```
 
-1. The registration ID/token must be passed to the SDK by using the `Config.setPushIdentifier(final String registrationId)` method.
+1. 登録 ID／トークンは、`Config.setPushIdentifier(final String registrationId)` メソッドを使用して SDK に渡す必要があります。
 
    ```js
    Config.setPushIdentifier(token); // token was obtained in step 2
@@ -57,7 +57,7 @@ Adobe Mobile および Adobe Mobile SDK を使用すると、ユーザーにプ�
 
    プッシュクリックスルーレポートを有効にするための要件を次に示します。
 
-   * In your implementation of `FireBaseMessageService`, the Bundle object that contains the message data, which is passed into the `onMessageReceived` method with the RemoteMessage object, must be added to the Intent that is used to open the target activity on a click-through. これは、この方法を使用して実行で `putExtras` きます。 For more information, see [putExtras](https://developer.android.com/reference/android/content/Intent.html#putExtras(android.os.Bundle))).
+   * `FireBaseMessageService` の実装で、（RemoteMessage オブジェクトで `onMessageReceived` メソッドに渡される）メッセージデータが含まれたバンドルオブジェクトを、クリックスルーでターゲットアクティビティを開くために使用されるインテントに追加する必要があります。これには、`putExtras` メソッドを使用します。詳しくは、「[putExtras](https://developer.android.com/reference/android/content/Intent.html#putExtras(android.os.Bundle))」を参照してください。
    ```java
    Intent intent = new Intent(this, MainActivity.class);
       intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
@@ -69,9 +69,6 @@ Adobe Mobile および Adobe Mobile SDK を使用すると、ユーザーにプ�
 
       次の情報に留意してください。
 
-      * またはを使 `Config.collectLifecycleData(this)` 用しま `Config.collectLifecycleData(this, contextData)`す。
+      * `Config.collectLifecycleData(this)` または `Config.collectLifecycleData(this, contextData)` を使用する。
 
-      * Do **not** use `Config.collectLifecycleData()`.
-
-
-
+      * `Config.collectLifecycleData()` は使用&#x2
