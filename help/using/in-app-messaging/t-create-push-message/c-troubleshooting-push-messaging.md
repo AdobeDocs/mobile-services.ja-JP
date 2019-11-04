@@ -3,17 +3,17 @@ description: この情報は、プッシュメッセージのトラブルシュ�
 keywords: モバイル
 seo-description: この情報は、プッシュメッセージのトラブルシューティングに役立ちます。
 seo-title: プッシュメッセージのトラブルシューティング
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: プッシュメッセージのトラブルシューティング
 topic: 指標
 uuid: c7be4ab7-0cfe-4296-84a8-01412f4fd93f
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
 ---
 
 
-# Troubleshooting push messaging{#troubleshooting-push-messaging}
+# プッシュメッセージのトラブルシューティング{#troubleshooting-push-messaging}
 
 この情報は、プッシュメッセージのトラブルシューティングに役立ちます。
 
@@ -21,7 +21,7 @@ source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
 Mobile Services のプッシュメッセージは、次のタイプの遅延を伴うことがあります。
 
-* **Analyticsのヒットを待機中**
+* **Analytics のヒットの待機**
 
    どのレポートスイートにも、受信する Analytics のヒットをいつ処理するかを決定する設定があります。デフォルトは、1 時間ごとです。
 
@@ -29,16 +29,16 @@ Mobile Services のプッシュメッセージは、次のタイプの遅延を�
 
 * **プッシュサービスの待機**
 
-   プッシュサービス（APNS または GCM）は、メッセージを直ちに送信できないことがあります。めったに起こりませんが、5 ～ 10 分の待ち時間が生じます。プッシュメッセージの&#x200B;**[!UICONTROL レポート]**&#x200B;ビューを見て、**[!UICONTROL メッセージ履歴]テーブルにあるメッセージを探し、**&#x200B;発行数]を確認することで、プッシュメッセージがプッシュサービスに送信されたことを確認できます。**[!UICONTROL **
+   プッシュサービス（APNS または GCM）は、メッセージを直ちに送信できないことがあります。めったに起こりませんが、5 ～ 10 分の待ち時間が生じます。プッシュメッセージの&#x200B;**[!UICONTROL レポート]**&#x200B;ビューを見て、**[!UICONTROL メッセージ履歴]**&#x200B;テーブルにあるメッセージを探し、**[!UICONTROL 発行数]**&#x200B;を確認することで、プッシュメッセージがプッシュサービスに送信されたことを確認できます。
 
    >[!TIP]
    >
-   >This count is the number of successful sends to the Push Service(s). プッシュサービスでは、メッセージが送信されることは保証されません。
+   >この数は、成功したプッシュサービスへの送信件数です。プッシュサービスでは、メッセージが送信されることは保証されません。
 
    サービスの信頼性について詳しくは、次を参照してください。
 
    * [サービス品質](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html#//apple_ref/doc/uid/TP40008194-CH8-SW5l)
-   * [メッセージの有効期間](https://developers.google.com/cloud-messaging/concept-options#lifetime)。
+   * [メッセージの有効期間](https://developers.google.com/cloud-messaging/concept-options#lifetime)
 
 ## Android GCM API キーが無効である理由
 
@@ -70,7 +70,7 @@ Mobile Services のプッシュメッセージは、次のタイプの遅延を�
    canonical_ids":0,"results":[{"error":"InvalidRegistration"}]}
    ```
 
-   You can also check the validity of a registration token by replacing `"ABC"` with the token.
+   また、「`"ABC"`」をトークンと置き換えることで、登録トークンの有効性をチェックできます。
 
 ## APNS 証明書が機能しない理由
 
@@ -78,11 +78,11 @@ Mobile Services のプッシュメッセージは、次のタイプの遅延を�
 
 * 実稼動証明書ではなく、サンドボックス証明書を使用している可能性があります。
 * サポートされていない新しい実稼動／サンドボックス証明書を使用している可能性があります。
-* You are using `.p8` file instead of a `.p12` file.
+* `.p8` ファイルではなく、`.p12` ファイルを使用しています。
 
 ## プッシュメッセージの失敗の解決
 
-**An example**
+**例**
 
 次の例は、VRS 使用時のプッシュエラーを解決する方法を示しています。
 
@@ -91,16 +91,16 @@ Mobile Services のプッシュメッセージは、次のタイプの遅延を�
 * アプリ名：PhotoShop_app_iOS
    * Parent RSID：AllAdobe PhotoShop_apps
    * VRSID：PhotoShop_iOS_app_SF
-   * VRSID Definition Segment: `a.appid contains “PhotoShop_iOS_app_SF”`
+   * VRSID 定義セグメント：`a.appid contains “PhotoShop_iOS_app_SF”`
 * アプリ名：PhotoShop_app_iOS
    * Parent RSID：AllAdobe PhotoShop_apps
-   * RSID:PhotoShop_iOS_app_LA
-   * VRSID Definition Segment: `a.os contains “iOS”`
+   * RSID：PhotoShop_iOS_app_LA
+   * VRSID 定義セグメント：`a.os contains “iOS”`
 
-In this example, if a Photoshop employee sends a push to the *PhotoShop_iOS_app_SF* app, all *PhotoShop_iOS_app_SF app* users receive the push message as expected. But, if the employee sends a message to the *PhotoShop_iOS_app_LA* app, because its VRSID Definition Segment is incorrect (`iOS` instead of `a.os contains "PhotoShop_iOS_app_LA"`), the message is sent to **all** iOS users in *AllAdobe PhotoShop_apps*. Although the message still goes to *PhotoShop_iOS_app_LA* users, the message also blacklists the push IDs for *PhotoShop_iOS_app_SF* users because the *PhotoShop_iOS_app_SF* app has a different certificate. If the segment had been defined as `a.os contains “PhotoShop_iOS_app_LA”`, the push message would have been sent to only *PhotoShop_iOS_app_LA* users.
+この例では、Photoshop ユーザーが *PhotoShop_iOS_app_SF* アプリにプッシュを送信すると、すべての *PhotoShop_iOS_app_SF*&#x200B;アプリユーザーが期待どおりにプッシュメッセージを受け取ります。しかし、ユーザーが *PhotoShop_iOS_app_LA*&#x200B;アプリにメッセージを送信すると、その VRSID 定義セグメントが正しくない（`a.os contains "PhotoShop_iOS_app_LA"` ではなく `iOS` となっている）ので、*AllAdobe PhotoShop_apps* の&#x200B;**すべての** iOS ユーザーにメッセージが送信されます。メッセージは依然として *PhotoShop_iOS_app_LA* ユーザーに届きますが、*PhotoShop_iOS_app_SF* アプリの証明書が異なるので、メッセージは&#x200B;*PhotoShop_iOS_app_SF* ユーザーのプッシュ ID をブラックリストに記載します。セグメントが `a.os contains “PhotoShop_iOS_app_LA”` と定義されていた場合、プッシュメッセージは&#x200B;*PhotoShop_iOS_app_LA*&#x200B;ユーザーにのみ送信されていました。
 
-If passed with the *PhotoShop_IOS_app_LA* push certificate, the push identifiers for the *PhotoShop_iOS_app_SF* come back as `invalid`.
+*PhotoShop_IOS_app_LA* プッシュ証明書を使用して渡された場合、*PhotoShop_iOS_app_SF* のプッシュ ID は `invalid` として復活します。
 
 >[!CAUTION]
 >
->After you create a push message for an app that is using a VRS and click **[!UICONTROL Save &amp; Send]**, an alert appears that reminds you ensure that each app that is listed **must** have a valid certificate. 各アプリに有効な証明書が&#x200B;**ない**&#x200B;場合、オーディエンスセグメントは無期限にブラックリストに記載され、今後、影響を受けるユーザーにプッシュメッセージを送信できなくなる可能性があります。オーディエンスセグメントについて詳しくは、オーディエンスを参照し [てください。プッシュメッセージのオーディエンスオプションを定義し、設定します](/help/using/in-app-messaging/t-create-push-message/c-audience-push-message.md)。
+>VRS を使用しているアプリ用にプッシュメッセージを作成して **[!UICONTROL 保存して送信]** をクリックすると、リストされている各アプリに有効な証明書がある&#x200B;**必要がある**&#x200B;ことを確認するアラートが表示されます。各アプリに有効な証明書が&#x200B;**ない**&#x200B;場合、オーディエンスセグメントは無期限にブラックリストに記載され、今後、影響を受けるユーザーにプッシュメッセージを送信できなくなる可能性があります。オーディエンスセグメントについて詳しくは、「[オーディエンス：プッシュメッセージ用のオーディエンスオプションの定義および設定](/help/using/in-app-messaging/t-create-push-message/c-audience-push-message.md)」を参照してください。
