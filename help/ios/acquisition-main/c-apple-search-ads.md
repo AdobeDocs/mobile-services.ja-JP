@@ -2,11 +2,11 @@
 description: Adobe SDK は、Apple Search Ads アプリのアトリビューション API を利用して、開発者とマーケターが Apple App Store の Search Ads キャンペーンからのアプリのダウンロード数を追跡し、アトリビューションをおこなえるようにします。
 seo-description: Adobe SDK は、Apple Search Ads アプリのアトリビューション API を利用して、開発者とマーケターが Apple App Store の Search Ads キャンペーンからのアプリのダウンロード数を追跡し、アトリビューションをおこなえるようにします。
 seo-title: Apple Search Ads
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Apple Search Ads
 topic: 開発者と導入
 uuid: 790080e8-067e-4bfd-a169-0027db4fdff3
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ebcc04ab3e80aafb9d9ec2e1fbc809c743554cb7
 
 ---
@@ -14,7 +14,7 @@ source-git-commit: ebcc04ab3e80aafb9d9ec2e1fbc809c743554cb7
 
 # Apple Search Ads {#apple-search-ads}
 
-Adobe SDK は、Apple Search Ads アプリのアトリビューション API を利用して、開発者とマーケターが Apple App Store の Search Ads キャンペーンからのアプリのダウンロード数を追跡し、アトリビューションをおこなえるようにします。Search Ads キャンペーンについて詳しくは、[Apple Search Ads](https://searchads.apple.com) / を参照してください。
+Adobe SDK は、Apple Search Ads アプリのアトリビューション API を利用して、開発者とマーケターが Apple App Store の Search Ads キャンペーンからのアプリのダウンロード数を追跡し、アトリビューションをおこなえるようにします。Search Ads キャンペーンについて詳しくは、[Apple Search Ads](https://searchads.apple.com/jp/) / を参照してください。
 
 ## メリット {#section_CEA30C652AC8470784B8054E299B80FA}
 
@@ -23,25 +23,25 @@ Apple Ads を使用する利点には以下のものがあります。
 * 数行のコードをアプリに追加することによって、Search Ads によるアプリダウンロードキャンペーンの効果を簡単に測定できる。
 * 開発者が、ダウンロード日時およびコンバージョンにつながった入札キーワードを利用できる。
 
-## Apple Ads の実装 {#section_F1094676793540CFA1DBB540174EEB6A}
+## Apple Ads の実装{#section_F1094676793540CFA1DBB540174EEB6A}
 
 >[!TIP]
 >
->Apple Adsを実装するには、iOS SDKバージョン4.13.2以降が必要です。
+>Apple Ads を実装するには、iOS SDK バージョン 4.13.2 以降が必要です。
 
 Search Ads アトリビューションに対してアプリを有効にするには
 
 1. Adobe SDK バージョン 4.13.2 以降を実装します。
 
-   詳しくは、 [Core implementation and lifecycle](/help/ios/getting-started/dev-qs.md).
+   詳しくは、「[コア実装とライフサイクル](/help/ios/getting-started/dev-qs.md)」を参照してください。
 
 1. iAd フレームワークをアプリの Xcode プロジェクトファイルに追加します。
 
-## Search Ads アトリビューションのレポート {#section_1AF4E0B4F8E94F36B38CA3D3E384D0A4}
+## Search Ads アトリビューションのレポート{#section_1AF4E0B4F8E94F36B38CA3D3E384D0A4}
 
 1. Apple Search Ads のアトリビューションデータは、獲得名、ソースおよび項値として提供されます。
 
-   If attribution = `true`, all of the `iad-*` fields will be included in the lifecycle hit.
+   attribution = `true` の場合、すべての `iad-*` フィールドがライフサイクルヒットに含まれます。
 
    さらに、以下の値が `"iad"` 辞書から一般的な獲得コンテキストデータフィールドにマッピングされます。
 
@@ -49,4 +49,4 @@ Search Ads アトリビューションに対してアプリを有効にするに
    * `"iad-campaign-name"` --&gt; `"a.referrer.campaign.name"`
    * `"iad-adgroup-id"` --&gt; `"a.referrer.campaign.content"`
    * `"iad-keyword"` --&gt; `"a.referrer.campaign.term"`
-   このマッピングにより、標準のレポートで値を使用できるようになります。
+   このマッピングは、標準のレポートで値を使用できるようにします。
