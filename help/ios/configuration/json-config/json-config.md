@@ -1,22 +1,22 @@
 ---
 description: この情報は、ADBMobile.json 設定ファイルを使用する場合に役立ちます。
 seo-description: この情報は、ADBMobile.json 設定ファイルを使用する場合に役立ちます。
-seo-title: ADBMobile JSON設定
-solution: Marketing Cloud,Analytics
-title: ADBMobile JSON config
+seo-title: ADBMobile JSON 設定
+solution: Experience Cloud,Analytics
+title: ADBMobile JSON 設定
 topic: 開発者と導入
 uuid: d9708d59-e30a-4f6c-ab1b-d9499855d0c2
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
 
 ---
 
 
-# ADBMobile JSON config {#adbmobile-json-config}
+# ADBMobile JSON 設定 {#adbmobile-json-config}
 
 この情報は、`ADBMobile.json` 設定ファイルを使用する場合に役立ちます。
 
-## ADBMobileConfig.json config file reference {#section_5AD4EDF87E304980B4AC4A5657FDA8B9}
+## ADBMobileConfig.json 設定ファイルのリファレンス {#section_5AD4EDF87E304980B4AC4A5657FDA8B9}
 
 複数のプラットフォームで同じ設定ファイルをアプリに使用することができます。
 
@@ -36,7 +36,7 @@ source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
 
 * **analyticsForwardingEnabled**
 
-   `audienceManager` オブジェクトのプロパティ。If `Audience Manager` is configured and `analyticsForwardingEnabled` is set to `true`, all Analytics traffic is also forwarded to Audience Manager. デフォルト値は `false` です。
+   `audienceManager` オブジェクトのプロパティ。`Audience Manager` が設定され、`analyticsForwardingEnabled` が `true` に設定されている場合は、Analytics のトラフィックもすべて Audience Manager に転送されます。デフォルト値は `false` です。
 
    * 最小 SDK バージョン：4.8.0
 
@@ -57,20 +57,20 @@ source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
    * 最小 SDK バージョン：4.6
    >[!IMPORTANT]
    >
-   >日付を遡ったセッションヒット情報は、セッション情報サーバーコールで送信され、追加のサーバーコールが適用される場合があります。
+   >日付を遡るセッションヒット情報は、セッション情報サーバー呼び出しで送信されます。このとき、追加のサーバー呼び出しが適用される場合があります。
 
 
 * **batchLimit**
 
    連続する呼び出しで送信されるヒット数のしきい値。例えば、この `batchLimit` を 10 に設定した場合は、ヒットが 10 個たまるまでヒットをキューに格納していきます。10 番目のヒットが格納されると、10 個のヒットすべてが連続して送信されます。
 
-   * Default value is `0`, which means that batching is not enabled.
-   * が必要で `offlineEnabled = true`す。
+   * デフォルト値は `0` です。これはバッチ処理が有効になっていないことを意味します。
+   * `offlineEnabled = true` が必要です。
    * 最小 SDK バージョン：4.1
 
 * **charset**
 
-   Analytics に送信されるデータに使用する文字セットを定義します。この文字セットは、受信データを格納およびレポート用に UTF-8 に変換するために使用されます。For more information, see [s.charSet](https://marketing.adobe.com/resources/help/en_US/sc/implement/charset.html).
+   Analytics に送信されるデータに使用する文字セットを定義します。この文字セットは、受信データを格納およびレポート用に UTF-8 に変換するために使用されます。詳しくは、「[s.charSet](https://marketing.adobe.com/resources/help/ja_JP/sc/implement/charset.html)」を参照してください。
 
    * 最小 SDK バージョン：4.0
 
@@ -80,7 +80,7 @@ source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
 
    >[!IMPORTANT]
    >
-   >This variable is required by Target.
+   >この変数は Target で必要です。
 
    * 最小 SDK バージョン：4.0
 
@@ -90,13 +90,13 @@ source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
 
    次の情報に留意してください。
 
-   * When `coopUnsafe` is set to `true`, `coop_unsafe=1` will always be appended to Audience Manager and Visitor ID hits.
+   * `coopUnsafe` を `coop_unsafe=1` に設定すると、常に Audience Manager および訪問者 ID ヒットに `true` が追加されます。
    * Audience Manager への Analytics サーバー側の転送を有効にすると、Analytics ヒットに `coop_unsafe=1` も表示されます。
    追加情報を以下に示します。
 
    * 最小 SDK バージョン：4.16.1
-   * The Boolean property of the `marketingCloud` object that, when set to `true`, causes the device to be opted-out of the Experience Cloud's Device Co-Op.
-   * Default value is `false`.
+   * `marketingCloud` オブジェクトのブールプロパティが `true` に設定されると、デバイスが Experience Cloud の Device Co-op からオプトアウトします。
+   * デフォルト値は `false` です。
    * この設定は、Device Co-op をプロビジョニングしたユーザー&#x200B;**にのみ**&#x200B;適用されます。
 
 
@@ -125,10 +125,10 @@ source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
 
    有効にした場合、ヒットはデバイスがオフラインのときにキューに格納され、後でデバイスがオンラインになったときに送信されます。オフライン追跡を使用するには、レポートスイートでタイムスタンプを有効にする必要があります。デフォルト値は `false` です。
 
-   次に、重要な情報を示します。
+   いくつかの重要情報を以下に示します。
 
    * レポートスイートでタイムスタンプが有効になっている場合、`offlineEnabled` 設定プロパティを&#x200B;*必ず* true に設定してください。
-   * If your report suite is not timestamp enabled, your `offlineEnabled` configuration property *must* be false.
+   * レポートスイートでタイムスタンプが有効になっていない場合、`offlineEnabled` 設定プロパティを&#x200B;*必ず* false に設定してください。
 
       このプロパティを適切に設定しなければ、データが失われます。レポートスイートのタイムスタンプが有効になっているかどうか判断できない場合は、カスタマーケアに問い合わせるか、Adobe Mobile Services から設定ファイルをダウンロードしてください。現在、同じレポートスイートで JavaScript と AppMeasurement からデータを収集している場合は、モバイルデータのレポートスイートを個別に設定するか、`s.timestamp` 変数を使用するすべての JavaScript ヒットにカスタムタイムスタンプを含めます。
 
@@ -136,7 +136,7 @@ source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
 
 * **org**
 
-   Specifies the Experience Cloud org ID for the Adobe Experience Platform Identity Service.
+   Adobe Experience Platform ID サービスに Experience Cloud 組織 ID を指定します。
 
    * 最小 SDK バージョン：4.3
 
@@ -160,7 +160,7 @@ source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
    “analytics.poi”: “`https://assets.adobedtm.com/…/yourfile.json`”,
    ```
 
-   これを設定しない場合は、`ADBMobile.json` ファイルを更新してこの行を含める必要があります。To download an updated configuration file, see Before you start.[](/help/ios/getting-started/requirements.md)
+   これを設定しない場合は、`ADBMobile.json` ファイルを更新してこの行を含める必要があります。更新された設定ファイルをダウンロードするには、「[事前設定](/help/ios/getting-started/requirements.md)」を参照してください。
 
 * **postback**
 
@@ -174,7 +174,7 @@ source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
        "timeout": 0 //optional-number of seconds to wait before timingout.Defaultis2.}
    ```
 
-   The `payload` object in the code is an example payload for a message definition that would go in the `ADBMobileConfig.json` file. For more information, see [Postbacks](/help/ios/analytics-main/postback/postback.md).
+   コード内の `payload` オブジェクトは、`ADBMobileConfig.json` ファイルに追加されるメッセージ定義のサンプルペイロードです。詳しくは、「[ポストバック](/help/ios/analytics-main/postback/postback.md)」を参照してください。
 
    * 最小 SDK バージョン：4.6
 
@@ -196,7 +196,7 @@ source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
 
    >[!IMPORTANT]
    >
-   >This variable is required by Acquisition. If the variable is set to `0`, or is not included, the SDK does not wait for acquisition data, and acquisition metrics are not tracked.
+   >この変数は獲得で必要です。この変数が `0`、またはこの変数自体が含まれていない場合は、SDK は獲得データを待機せず、獲得指標は追跡されません。
 
    * 最小 SDK バージョン：4.1
 
@@ -224,7 +224,7 @@ source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
 
    >[!IMPORTANT]
    >
-   >This variable is required by Analytics.
+   >この変数は Analytics で必要です。
 
    * 最小 SDK バージョン：4.0
 
@@ -232,13 +232,13 @@ source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
 
    親ノードに基づく、Analytics または Audience Management サーバー。
 
-   This variable should be populated with the server domain, without an `https://` or `https://` protocol prefix. プレフィックスは、ライブラリによって自動的に処理され、`ssl` 変数に基づきます。
+   この変数は、`https://` または `https://` プロトコルプレフィックスを付けずに、サーバードメインを設定する必要があります。プレフィックスは、ライブラリによって自動的に処理され、`ssl` 変数に基づきます。
 
    `ssl` が `true` の場合、このサーバーとの安全な接続が確立されます。`ssl` が `false` の場合、このサーバーとの安全でない接続が確立されます。
 
    >[!IMPORTANT]
    >
-   >この変数は、AnalyticsまたはAudience Managementで必要です。
+   >この変数は、Analytics または Audience Management で必要です。
 
    * 最小 SDK バージョン：4.0
 
@@ -256,7 +256,7 @@ source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
        "timeout":0//optional-numberofsecondstowaitbeforetimingout.Defaultis2.} 
    ```
 
-   The `payload` object in the code is an sample payload for a message definition that goes in the `ADBMobileConfig.json` file. For more information, see [Postbacks](/help/ios/analytics-main/postback/postback.md).
+   コードの `payload` オブジェクトは、`ADBMobileConfig.json` ファイルに設定するメッセージ定義のサンプルペイロードです。詳しくは、「[ポストバック](/help/ios/analytics-main/postback/postback.md)」を参照してください。
 
    * 最小 SDK バージョン：4.0
 
@@ -267,7 +267,7 @@ source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
    * 最小 SDK バージョン：4.0
 
 
-## Sample `ADBMobileConfig.json` file {#section_52FA7C71A99147AFA9BE08D2177D8DA7}
+## サンプル `ADBMobileConfig.json` ファイル{#section_52FA7C71A99147AFA9BE08D2177D8DA7}
 
 サンプルの `ADBMobileConfig.json` ファイルを次に示します。
 
@@ -417,15 +417,15 @@ source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
    * 1970 年 1 月 1 日からの経過秒数
    * デフォルトは 0 です。
 
-* 「audiences」
+* "audiences"
 
    メッセージの表示方法を定義するオブジェクトの配列です。
 
-   * 「key」
+   * "key"
 
       ヒット内で検索する変数名。必須項目です。
 
-   * 「matches」
+   * "matches"
 
       比較の実行時に使用するマッチャーのタイプ。
 
@@ -441,7 +441,7 @@ source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
       * le = 次の値以下
       * gt = 次の値を超える
       * ge = 次の値以上
-   * 「values」
+   * "values"
 
       次に示す変数の値と一致する値の配列。
 
@@ -450,10 +450,10 @@ source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
       * matches
 
 
-* 「trigger」
+* "triggers"
 
    audiences と同じ。audiences の代わりとなるアクションを次に示します。
 
-   * 「key」
-   * 「matches」
-   * 「values」
+   * "key"
+   * "matches"
+   * "values"
