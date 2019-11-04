@@ -1,22 +1,22 @@
 ---
 description: 時間計測アクションを使用すると、アクションの開始から終了までのアプリ内時間と合計時間を測定できます。SDK は、アクションが完了するまでにかかる各セッションの時間と全セッションの合計時間を計算します。時間計測アクションを使用して、セグメントを定義し、購入までの時間、パスレベル、チェックアウトフローなどを比較することができます。
 seo-description: 時間計測アクションを使用すると、アクションの開始から終了までのアプリ内時間と合計時間を測定できます。SDK は、アクションが完了するまでにかかる各セッションの時間と全セッションの合計時間を計算します。時間計測アクションを使用して、セグメントを定義し、購入までの時間、パスレベル、チェックアウトフローなどを比較することができます。
-seo-title: Timed actions
-solution: Marketing Cloud,Analytics
+seo-title: 時間計測アクション
+solution: Experience Cloud,Analytics
 title: 時間計測アクション
 topic: 開発者と導入
 uuid: dbcbac5a-6345-49f6-b050-0db05292f005
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 ---
 
 
-# Timed actions {#timed-actions}
+# 時間計測アクション {#timed-actions}
 
 時間計測アクションを使用すると、アクションの開始から終了までのアプリ内時間と合計時間を測定できます。SDK は、アクションが完了するまでにかかる各セッションの時間と全セッションの合計時間を計算します。時間計測アクションを使用して、セグメントを定義し、購入までの時間、パスレベル、チェックアウトフローなどを比較することができます。
 
-時間計測アクションに対しては、以下の指標がレポートされます。
+時間計測アクションでは、次の指標がレポートされます。
 
 * アプリの開始から終了までの合計秒数 - 複数のセッションにまたがって計測
 * 開始から終了までの合計秒数（クロックタイム）
@@ -27,11 +27,11 @@ source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 * 時間として渡す前にコンテキストデータを追加します。
 * まだ送信されていないヒットと時間をキャンセルします。
 
-## Tracking timed actions {#section_FF5B1EDC1A5340A5B13BC0F1BF2E13E1}
+## 時間計測アクションの追跡 {#section_FF5B1EDC1A5340A5B13BC0F1BF2E13E1}
 
 1. ライブラリをプロジェクトに追加し、ライフサイクルを実装します。
 
-   For more information, see Add the SDK and Config File to your Project in Core Implementation and Lifecycle.**[](/help/ios/getting-started/dev-qs.md)
+   詳しくは、[コア実装とライフサイクル](/help/ios/getting-started/dev-qs.md)の「*プロジェクトへの SDK と設定ファイルの追加*」を参照してください。
 1. ライブラリをインポートします。
 
    ```objective-c
@@ -61,7 +61,7 @@ source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
                             logic:nil];
    ```
 
-## Sending additional data {#section_3EBE813E54A24F6FB669B2478B5661F9}
+## 追加データの送信 {#section_3EBE813E54A24F6FB669B2478B5661F9}
 
 時間計測アクション名に加え、アクション開始コールおよびアクション更新コールとともに追加のコンテキストデータを送信できます。
 
@@ -70,7 +70,7 @@ source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
                              data:@{@"myapp.ImageLiked" : imageName}];
 ```
 
-Context data values must be mapped to custom variables:
+コンテキストデータ値は、カスタム変数にマッピングする必要があります。
 
 ![](assets/map-variable-context-ltv.png)
 
