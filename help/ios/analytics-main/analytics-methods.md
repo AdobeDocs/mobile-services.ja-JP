@@ -1,32 +1,32 @@
 ---
 description: iOS ライブラリが提供する Adobe Analytics メソッドの一覧を以下に示します。
 seo-description: iOS ライブラリが提供する Adobe Analytics メソッドの一覧を以下に示します。
-seo-title: Analyticsメソッド
-solution: Marketing Cloud,Analytics
-title: Analytics methods
+seo-title: Analytics メソッド
+solution: Experience Cloud,Analytics
+title: Analytics メソッド
 topic: 開発者と導入
 uuid: d49fe6de-cb32-4b96-9891-c567310e59a6
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
 ---
 
 
-# Analytics methods {#analytics-methods}
+# Analytics メソッド{#analytics-methods}
 
 iOS ライブラリが提供する Adobe Analytics メソッドの一覧を以下に示します。
 
-SDKは、現在、Analytics、Target、Audience Manager、Adobe Experience Platform IDサービスを含む、複数のAdobe Experience cloudソリューションをサポートしています。 Methods are prefixed according to the solution. Experience Cloud ID methods are prefixed with `track`.
+SDK は現在、Analytics、Target、Audience Manager、Adobe Experience Platform ID サービスなど、複数の Adobe Experience Cloud ソリューションをサポートしています。メソッドには、ソリューションに応じたプレフィックスが付きます。Experience Cloud ID メソッドの場合、プレフィックスは「`track`」です。
 
 これらの各メソッドを使用して、Adobe Analytics レポートスイートにデータを送信します。
 
 * **trackState:&#x200B;data:**
 
-   States are the views that are available in your app, such as `home dashboard`, `app settings`, `cart`, and so on. これらの状態は Web サイト上のページによく似ており、`trackState` コールはページビュー数を増分します。`state` が空の場合は、レポートに「*app name app version (build)*」と表示されます。レポートにこの値が表示される場合は、各 `state` コールで `trackState` を設定しているかを確認してください。
+   状態とは、アプリで使用可能なビューのことで、`home dashboard`、`app settings`、`cart` などがあります。これらの状態は Web サイト上のページによく似ており、`trackState` コールはページビュー数を増分します。`state` が空の場合は、レポートに「*app name app version (build)*」と表示されます。レポートにこの値が表示される場合は、各 `state` コールで `trackState` を設定しているかを確認してください。
 
    >[!TIP]
    >
-   >これは、ページビュー数を増やす唯一のトラッキングコールです。
+   >これは、ページビュー数を増分する唯一のトラッキングコールです。
 
    * このメソッドの構文を次に示します。
 
@@ -44,11 +44,11 @@ SDKは、現在、Analytics、Target、Audience Manager、Adobe Experience Platf
 
 * **trackAction:&#x200B;data:**
 
-   アプリのアクションを追跡します。Actions that you want to measure, such as `logons`, `banner taps`, `feed subscriptions`, and other metrics, occur in your app.
+   アプリのアクションを追跡します。`feed subscriptions`、`logons`、`banner taps` などの指標など、測定するアクションはアプリで発生します。
 
    >[!TIP]
    >
-   >If you have code that might run while the app is in the background (for example, a background data retrieval), use `trackActionFromBackground` instead.
+   >アプリがバックグラウンドになっているときに、コードが実行される（バックグラウンドデータの取得など）可能性がある場合は、代わりに `trackActionFromBackground` を使用します。
 
    * このメソッドの構文を次に示します。
 
@@ -86,7 +86,7 @@ SDKは、現在、Analytics、Target、Audience Manager、Adobe Experience Platf
 
    >[!TIP]
    >
-   >This method should only be called in code that runs while your app is in the background.
+   >このメソッドは、アプリがバックグラウンドになっているときに実行されるコードでのみ呼び出す必要があります。
 
    * このメソッドの構文を次に示します。
 
@@ -222,7 +222,7 @@ SDKは、現在、Analytics、Target、Audience Manager、Adobe Experience Platf
 
    >[!TIP]
    >
-   >If you provide `block`, you must return `YES` to send a hit. Passing in `nil` for `block` sends the final hit.
+   >`block` を指定する場合、ヒットを送信するには `YES` を返す必要があります。`nil` に `block` を指定すると、最終ヒットが送信されます。
 
    * このメソッドの構文を次に示します。
 
@@ -263,7 +263,7 @@ SDKは、現在、Analytics、Target、Audience Manager、Adobe Experience Platf
 
 * **trackingSendQueuedHits**
 
-   Requires SDK 4.1. Regardless of how many hits are currently queued, forces the library to send all hits in the offline queue.
+   SDK 4.1 が必要です。現在キューに格納されているヒットの数にかかわらず、オフラインキュー内のすべてのヒットを強制的に送信します。
 
    * このメソッドの構文を次に示します。
 
@@ -299,7 +299,7 @@ SDKは、現在、Analytics、Target、Audience Manager、Adobe Experience Platf
 
    >[!CAUTION]
    >
-   >キューを手動でクリアする場合は注意が必要です。 このプロセスを元に戻すことはできません。
+   >キューを手動でクリアするときは注意が必要です。このプロセスを元に戻すことはできません。
 
    * このメソッドの構文を次に示します。
 
@@ -321,7 +321,7 @@ SDKは、現在、Analytics、Target、Audience Manager、Adobe Experience Platf
 
    >[!IMPORTANT]
    >
-   >このメソッドでは、ページビュー数は増分されません。
+   >このメソッドは、ページビュー数を増分しません。
 
    * このメソッドの構文を次に示します。
 
