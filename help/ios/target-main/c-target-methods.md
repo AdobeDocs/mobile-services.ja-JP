@@ -1,26 +1,26 @@
 ---
 description: iOS ライブラリが提供する Adobe Target メソッドの一覧を以下に示します。
 seo-description: iOS ライブラリが提供する Adobe Target メソッドの一覧を以下に示します。
-seo-title: iOS Target Methods for Adobe Mobile Services
-solution: Marketing Cloud,Analytics
-title: Target Methods for iOS
+seo-title: Adobe Mobile Services の iOS Target メソッド
+solution: Experience Cloud,Analytics
+title: iOS の Target メソッド
 topic: 開発者と導入
 uuid: 692bcda1-02ba-4902-bd65-15888adf1952
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 8dc075603544aaab7fdedb1ff10a12f7fa7e21f5
 
 ---
 
 
-# iOSのTargetメソッド {#target-methods}
+# iOS の Target メソッド {#target-methods}
 
 iOS ライブラリが提供する Adobe Target メソッドの一覧を以下に示します。
 
-The SDK currently has support for multiple Adobe Experience Cloud Solutions, including Analytics, Target, Audience Manager, and the Adobe Experience Platform Identity Service. メソッドには、ソリューションに応じたプレフィックスが付きます。例えば、 メソッドの場合、プレフィックスは「`target`target」です。
+SDK は現在、Analytics、Target、Audience Manager、Adobe Experience Platform ID サービスなど、複数の Adobe Experience Cloud ソリューションをサポートしています。メソッドには、ソリューションに応じたプレフィックスが付きます。例えば、Target メソッドの場合、プレフィックスは「`target`」です。
 
 >[!TIP]
 >
->ライフサイクル指標は、各 mbox が読み込むパラメーターとして送信されます。詳しくは、[ライフサイクル指標](/help/ios/metrics.md)を参照してください。Targetリクエストをdelegateメソッド内で送信する場 `didFinishLaunching` 合は、Target実装コードの前に `[ADBMobile trackAction:data:]` OR `[ADBMobile trackState:data:]` 呼び出しを追加します。 これにより、Targetリクエストには、完全なライフサイクルデータが含まれます。
+>ライフサイクル指標は、各 mbox が読み込むパラメーターとして送信されます。詳しくは、「[ライフサイクル指標](/help/ios/metrics.md)」を参照してください。Target リクエストを `didFinishLaunching` delegate メソッド内で送信する場合は、Target 実装コードの前に `[ADBMobile trackAction:data:]` または `[ADBMobile trackState:data:]` 呼び出しを追加します。これにより、Target リクエストには、完全なライフサイクルデータが含まれます。
 
 ## クラス参照：ADBTargetLocationRequest
 
@@ -36,7 +36,7 @@ NSMutableDictionary *parameters;
 
 >[!TIP]
 >
->The following constants are for ease of use when you set keys for custom parameters.
+>次の定数は、カスタムパラメーターのキーを設定するのに便利です。
 
 ```iOS
 NSString *const ADBTargetParameterOrderId; 
@@ -52,10 +52,10 @@ NSString *const ADBTargetParameterMboxHost;
 
 >[!IMPORTANT]
 >
->* If you are using SDKs **before** version 4.14.0, see [Input Parameters](https://developers.adobetarget.com/api/#input-parameters) for parameters limitations.
+>* バージョン 4.14.0 より&#x200B;**前の** SDK を使用している場合、パラメーターの制限については、「[Input Parameters](https://developers.adobetarget.com/api/#input-parameters)」を参照してください。
    >
    >
-* If you are using SDKs version 4.14.0 **or after**, see [Batch Input Parameters](https://developers.adobetarget.com/api/#batch-input-parameters) for parameters limitations.
+* SDK バージョン 4.14.0 **以降**&#x200B;の SDK を使用している場合、パラメーターの制限については、「[Batch Input Parameters](https://developers.adobetarget.com/api/#batch-input-parameters)」を参照してください。
 
 
 ### メソッド
@@ -152,7 +152,7 @@ NSString *const ADBTargetParameterMboxHost;
                                  }];
       ```
 
-      For more information about the underlying Target API, see Adobe Target Developers.[](https://docs.adobe.com/dev/products/target/reference/delivery.html)
+      基になる Target API について詳しくは、[Adobe Target Developers](https://docs.adobe.com/dev/products/target/reference/delivery.html) を参照してください。
 
 
 
@@ -191,7 +191,7 @@ NSString *const ADBTargetParameterMboxHost;
 
 * **targetCreateOrder&#x200B;ConfirmRequestWithName:&#x200B;orderId:&#x200B;orderTotal:&#x200B;productPurchasedId:&#x200B;parameters**
 
-   を作成しま `ADBTargetLocationRequest`す。
+   `ADBTargetLocationRequest` を作成します。
 
    * このメソッドの構文を次に示します。
 
@@ -264,7 +264,7 @@ NSString *const ADBTargetParameterMboxHost;
 
    >[!TIP]
    >
-   >SDKのバージョン4.10.0以降、Targetはcookieを使用しなくなりました。 このメソッドは、thirdPartyID と sessionID をリセットします。
+   >SDK バージョン 4.10.0 以降、Target で cookie は使用されていません。このメソッドは、thirdPartyID と sessionID をリセットします。
 
    * このメソッドの構文を次に示します。
 
@@ -323,5 +323,4 @@ ADBTargetLocationRequest *myRequest =
                     callback:^(NSString *content) { 
                         // do something with content 
                         heroImage.image = [UIImage imageNamed:content];
-                    }];
-```
+     
