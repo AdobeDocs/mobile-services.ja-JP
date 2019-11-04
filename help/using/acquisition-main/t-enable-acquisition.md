@@ -1,13 +1,13 @@
 ---
-description: Acquisition tracking must be enabled in the SDK configuration before you can track and report on Marketing Links.
+description: マーケティングリンクのトラッキングとレポートをおこなう前に、SDK 設定で獲得トラッキングを有効にしておく必要があります。
 keywords: モバイル
-seo-description: 獲得追跡は、マーケティングリンクを追跡してレポートする前に、SDK設定で有効にする必要があります。
+seo-description: マーケティングリンクのトラッキングとレポートをおこなう前に、SDK 設定で獲得トラッキングを有効にしておく必要があります。
 seo-title: 獲得の設定
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: 獲得の設定
 topic: 指標
 uuid: e996e43e-8a77-47a3-a6fb-53f676f92bef
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
 ---
@@ -15,21 +15,21 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
 # 獲得の設定 {#configure-acquisition}
 
-獲得追跡は、マーケティングリンクを追跡してレポートする前に、SDK設定で有効にする必要があります。
+マーケティングリンクのトラッキングとレポートをおこなう前に、SDK 設定で獲得トラッキングを有効にしておく必要があります。
 
-1. アプリのアプリ設定ページで、「**[!UICONTROL SDK からの獲得データ送信]**」セクションまでスクロールします。
+1. アプリのアプリ設定ページで、**[!UICONTROL SDK からの獲得データ送信]** セクションまでスクロールします。
 1. 次のタスクを実行します。
 
-   * To enable Acquisition, select the **[!UICONTROL Enable]** check box.
+   * 獲得を有効にするには、**[!UICONTROL 有効]** チェックボックスを選択します。
 
-      When you select this check box, the **[!UICONTROL Referrer Timeout]** field becomes active, and the value changes from 0 to 5.
+      このチェックボックスを選択すると、**[!UICONTROL 送信タイムアウト]** フィールドがアクティブになり、値が 0 から 5 に変更されます。
 
-   * 「リファラータイムアウト（秒） **[!UICONTROL 」フィールドに値を入力します]** 。
+   * **[!UICONTROL 送信タイムアウト（秒）]** フィールドに値を入力します。
 
-      (**Optional**) If you enabled the **[!UICONTROL Enable]** check box, this field is optional. タイムアウト値を変更できます。秒単位で指定します。この設定では、初回起動ヒットを送信する前に獲得情報を待機する期間を指定します。
+      （**オプション**）**[!UICONTROL 有効にする]** チェックボックスを有効にした場合、このフィールドはオプションです。タイムアウト値を変更できます。秒単位で指定します。この設定には、初回起動ヒットの送信前に、獲得情報を待機する時間を指定します。
    >[!IMPORTANT]
-   >ゼロ以外の値を入力する必要があります。 「獲得」を有効にし、値をゼロのままにした場合、ダウンロード計測用リンクは機能しません。 デフォルト値の5秒を使用することをお勧めします。
+   >ゼロ以外の値を入力する必要があります。獲得を有効にしたにもかかわらず、この値をゼロのままにした場合、ダウンロード計測用リンクは機能しません。デフォルト値の 5 秒を使用することを推奨します。
 
 1. アプリの新しい SDK 設定ファイルをダウンロードして使用します。
 
-   **iOS** で獲得が正常に設定されました。To enable Acquisition on **Android**, complete the steps in [Tracking Mobile Acquisition](/help/android/acquisition-main/acquisition.md).
+   **iOS** で獲得が正常に設定されました。**Android** で獲得を有効にするには、「[モバイルの獲得の追跡](/help/android/acquisition-main/acquisition.md)」に記載された手順を実行します。
