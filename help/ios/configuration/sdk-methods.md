@@ -1,33 +1,33 @@
 ---
 description: iOS ライブラリが提供するメソッドの一覧を以下に示します。
 seo-description: iOS ライブラリが提供するメソッドの一覧を以下に示します。
-seo-title: 設定方法
-solution: Marketing Cloud,Analytics
-title: 設定方法
+seo-title: 設定メソッド
+solution: Experience Cloud,Analytics
+title: 設定メソッド
 topic: 開発者と導入
 uuid: 623c7b07-fbb3-4d39-a5c4-e64faec4ca29
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
 ---
 
 
-# Configuration methods {#configuration-methods}
+# 設定メソッド{#configuration-methods}
 
 iOS ライブラリが提供するメソッドの一覧を以下に示します。
 
-SDKは、現在、Analytics、Target、Audience Manager、Adobe Experience Platform IDサービスを含む、複数のAdobe Experience cloudソリューションをサポートしています。
+SDK は現在、Analytics、Target、Audience Manager、Adobe Experience Platform ID サービスなど、複数の Adobe Experience Cloud ソリューションをサポートしています。
 
 * **setAppExtensionType**
 
    現在実行中のエクステンションの種類を判断するように Adobe Mobile SDK 設定を指定します。
 
    次のいずれかの値に設定します。
-   * `ADBMobileAppExtensionTypeRegular`  — 拡張は、含まれるアプリにバンドルされています。
-   * `ADBMobileAppExtensionTypeStandAlone`  — 拡張は、含まれるアプリにバンドルされていません。
+   * `ADBMobileAppExtensionTypeRegular`：エクステンションは本体アプリにバンドルされています。
+   * `ADBMobileAppExtensionTypeStandAlone`：エクステンションは本体アプリにバンドルされていません。
    >[!TIP]
    >
-   >This method should **only** be used if your app has an extension or is a stand-alone extension. For more information, see *ADBMobileAppExtensionType* below.
+   >このメソッドは、アプリにエクステンションがあるか、アプリがスタンドアロンエクステンションの場合に&#x200B;**のみ**&#x200B;使用してください。詳しくは、以下の *referrerTimeout* を参照してください。
 
    * このメソッドの構文を次に示します。
 
@@ -63,8 +63,8 @@ SDKは、現在、Analytics、Target、Audience Manager、Adobe Experience Platf
 
    現在のユーザーのプライバシーステータスの enum 表現を返します。
 
-   * `ADBMobilePrivacyStatusOptIn` - hits are sent immediately.
-   * `ADBMobilePrivacyStatusOptOut`  — ヒットは破棄されます。
+   * `ADBMobilePrivacyStatusOptIn`：ヒットは即座に送信されます。
+   * `ADBMobilePrivacyStatusOptOut`：ヒットは破棄されます。
    * `ADBMobilePrivacyStatusUnknown` - オフライン追跡が有効になっている場合、プライバシーステータスがオプトイン（ヒットが送信される）またはオプトアウト（ヒットが破棄される）に変更されるまで、ヒットは保存されます。オフライン追跡が有効になっていない場合、プライバシーステータスがオプトインに変更されるまで、ヒットは破棄されます。デフォルト値は `ADBMobileConfig.json` ファイルに設定します。
 
    * このメソッドの構文を次に示します。
@@ -85,8 +85,8 @@ SDKは、現在、Analytics、Target、Audience Manager、Adobe Experience Platf
 
    次のいずれかの値に設定します。
 
-   * `ADBMobilePrivacyStatusOptIn`  — ヒットは直ちに送信されます。
-   * `ADBMobilePrivacyStatusOptOut`  — ヒットは破棄されます。
+   * `ADBMobilePrivacyStatusOptIn`：ヒットは即座に送信されます。
+   * `ADBMobilePrivacyStatusOptOut`：ヒットは破棄されます。
    * `ADBMobilePrivacyStatusUnknown` - オフライン追跡が有効になっている場合、プライバシーステータスがオプトイン（ヒットが送信される）またはオプトアウト（ヒットが破棄される）に変更されるまで、ヒットは保存されます。オフライン追跡が有効になっていない場合、プライバシーステータスがオプトインに変更されるまで、ヒットは破棄されます。
 
    * このメソッドの構文を次に示します。
@@ -123,7 +123,7 @@ SDKは、現在、Analytics、Target、Audience Manager、Adobe Experience Platf
 
    >[!TIP]
    >
-   >If your app upgrades from the Experience Cloud 3.x to the 4.x SDK, the previous custom or automatically generated visitor ID is retrieved and stored as the custom user identifier. 詳しくは、以下の `userIdentifier` 行を参照してください。これによって、SDK をアップグレードしても訪問者データが保持されます。4.x SDK を新規インストールした場合、ユーザー識別子は `nil` なので、トラッキング識別子が使用されます。
+   >アプリを Experience Cloud 3.x から 4.x SDK にアップグレードした場合、以前のカスタムまたは自動生成された訪問者 ID が取得され、カスタムユーザー識別子として保存されます。詳しくは、以下の `userIdentifier` 行を参照してください。これによって、SDK をアップグレードしても訪問者データが保持されます。4.x SDK を新規インストールした場合、ユーザー識別子は `nil` なので、トラッキング識別子が使用されます。
 
    * このメソッドの構文を次に示します。
 
@@ -143,7 +143,7 @@ SDKは、現在、Analytics、Target、Audience Manager、Adobe Experience Platf
 
    >[!TIP]
    >
-   >アプリがExperience Cloud 3.xから4.x SDKにアップグレードされた場合、以前にカスタムまたは自動生成された訪問者IDが取得され、カスタムユーザーIDとして保存されます。 これにより、SDK をアップグレードしても訪問者データは保存されます。
+   >アプリを Experience Cloud 3.x から 4.x SDK にアップグレードした場合、以前のカスタムまたは自動生成された訪問者 ID が取得され、カスタムユーザー識別子として保存されます。これにより、SDK をアップグレードしても訪問者データは保存されます。
 
    4.x SDK での新規インストールの場合、ユーザー識別子は設定されるまで `nil` です。
 
@@ -213,7 +213,7 @@ SDKは、現在、Analytics、Target、Audience Manager、Adobe Experience Platf
 
    >[!TIP]
    >
-   >このメソッドは、バックグラウンドで通知を登録するアプリに対して使用されることを目的としており、アプリがバックグラウンドで実行されている間に実行されるコードからのみ呼び出す必要があります。
+   >このメソッドは、バックグラウンドにある間に通知を登録するアプリで使用されることを目的としており、アプリがバックグラウンドにある間に実行されるコードからのみ呼び出される必要があります。
 
    * このメソッドの構文を次に示します。
 
@@ -229,11 +229,11 @@ SDKは、現在、Analytics、Target、Audience Manager、Adobe Experience Platf
 
 * **collectLifecycleData**
 
-   SDK のすべてのソリューションで使用するライフサイクルデータを収集するように SDK に指示します。詳しくは、[ライフサイクル指標](/help/ios/metrics.md)を参照してください。
+   SDK のすべてのソリューションで使用するライフサイクルデータを収集するように SDK に指示します。詳しくは、「[ライフサイクル指標](/help/ios/metrics.md)」を参照してください。
 
    >[!TIP]
    >
-   >The preferred location to invoke this method is in `application:didFinishLaunchingWithOptions:`.
+   >このメソッドを呼び出すのに望ましい場所は、`application:didFinishLaunchingWithOptions:` 内です。
 
    * このメソッドの構文を次に示します。
 
@@ -251,11 +251,11 @@ SDKは、現在、Analytics、Target、Audience Manager、Adobe Experience Platf
 
    ライフサイクル指標収集時に追加データとして渡すことができます。
 
-   This method must be called from the entry point of your app. Where applicable, this may include one or both of the methods `application:didFinishLaunchingWithOptions:` and/or `applicationWillEnterForeground:` in your AppDelegate class.
+   このメソッドは、アプリのエントリポイントから呼び出す必要があります。該当する場合、`application:didFinishLaunchingWithOptions:` メソッドと `applicationWillEnterForeground:` メソッドのどちらかまたは両方を AppDelegate クラスに含めることができます。
 
    >[!IMPORTANT]
    >
-   >Data that is passed to the SDK via `collectLifecycleDataWithAdditionalData:` will be persisted by the SDK in `NSUserDefaults`. SDK は、`NSDictionary` 型または `NSString` 型ではない `NSNumber` パラメーターの値を削除します。To use  `collectLifecycleDataWithAdditionalData:`, you must have SDK **version 4.4** or later.
+   >`collectLifecycleDataWithAdditionalData:` を使用して SDK に渡されたデータは、SDK によって `NSUserDefaults` に保持されます。SDK は、`NSDictionary` 型または `NSString` 型ではない `NSNumber` パラメーターの値を削除します。`collectLifecycleDataWithAdditionalData:` を使用するには、SDK **バージョン 4.4** 以降が必要です。
 
    * このメソッドの構文を次に示します。
 
@@ -275,7 +275,7 @@ SDKは、現在、Analytics、Target、Audience Manager、Adobe Experience Platf
 
    >[!IMPORTANT]
    >
-   >To use `overrideConfigPath`, you must have SDK version 4.2 or later.
+   >`overrideConfigPath` を使用するには、SDK バージョン 4.2 以降が必要です。
 
    * このメソッドの構文を次に示します。
 
@@ -296,7 +296,7 @@ SDKは、現在、Analytics、Target、Audience Manager、Adobe Experience Platf
 
    >[!IMPORTANT]
    >
-   >This method should only be used in the  `application:didRegisterForRemoteNotificationsWithDeviceToken:` method.
+   >このメソッドは、`application:didRegisterForRemoteNotificationsWithDeviceToken:`メソッド内でのみ使用する必要があります。
 
    * このメソッドの構文を次に示します。
 
@@ -318,7 +318,7 @@ SDKは、現在、Analytics、Target、Audience Manager、Adobe Experience Platf
 
    >[!TIP]
    >
-   >Retrieve the IDFA from Apple APIs **only** if you are using an ad service. IDFA を取得し、正しく使用していない場合は、アプリが拒否されることがあります。
+   >広告サービスを使用している場合に&#x200B;**のみ**、Apple API から IDFA を取得してください。IDFA を取得し、正しく使用していない場合は、アプリが拒否されることがあります。
 
    * このメソッドの構文を次に示します。
 
