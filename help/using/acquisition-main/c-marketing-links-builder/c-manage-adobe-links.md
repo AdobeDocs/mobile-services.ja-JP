@@ -3,11 +3,11 @@ description: マーケティングリンクページを使用して、マーケ�
 keywords: モバイル
 seo-description: マーケティングリンクページを使用して、マーケティングリンクを作成、使用およびアーカイブできます。
 seo-title: マーケティングリンクを管理
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: マーケティングリンクを管理
 topic: 指標
 uuid: 98ac3520-89ed-4513-83f6-120dda9d0157
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
 ---
@@ -19,20 +19,20 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
 >[!IMPORTANT]
 >
->マーケティングリンクを作成して使用するには、まずリンク先を作成する必要があります。 詳しくは、「マーケティングリン [クの作成または編集](/help/using/acquisition-main/c-marketing-links-builder/t-create-edit-adobe-links/t-create-edit-adobe-links.md)」を参照してください。
+>マーケティングリンクを作成および使用するには、最初にリンク先を作成する必要があります。詳しくは、「[マーケティングリンクの作成または編集](/help/using/acquisition-main/c-marketing-links-builder/t-create-edit-adobe-links/t-create-edit-adobe-links.md)」を参照してください。
 
-マーケティングリンクページで、次のタスクを実行します。
+マーケティングリンクページで、次の作業を実行します。
 
 * **マーケティングリンクの表示**
 
-   To display the list of Marketing Links, in the Mobile Services home page, click **[!UICONTROL Acquisition]** &gt; **[!UICONTROL Marketing Links Builder]**.
+   マーケティングリンクのリストを表示するには、Mobile Services ホームページで、**[!UICONTROL 獲得]**／**[!UICONTROL マーケティングリンクビルダー]**&#x200B;をクリックします。
 
-   The **[!UICONTROL Clicks]** column displays the number of users who have clicked on the Marketing Link. 「**[!UICONTROL 初回起動]」列には、アプリの初回起動数が表示されます。** This value reflects the number of users who chose to install the app and launch it after clicking on the Marketing Link.
+   **[!UICONTROL クリック数]** 列には、マーケティングリンクをクリックしたユーザーの数が表示されます。**[!UICONTROL 初回起動]** 列には、アプリの初回起動数が表示されます。この値には、マーケティングリンクをクリックした後にアプリのインストールを選択して起動したユーザーの数が反映されます。
 
 * **マーケティングリンクのアーカイブまたはアーカイブ解除**
 
-   * To archive a Marketing Link, select the check box next to a link, and click **[!UICONTROL Archive Selected]**.
-   * To unarchive a marketing clink, click **[!UICONTROL View Archive]**, select a link and click **[!UICONTROL Unarchive Selected]**.
+   * マーケティングリンクをアーカイブするには、リンクの横にあるチェックボックスを選択して、**[!UICONTROL 選択項目をアーカイブ]** をクリックします。
+   * マーケティングリンクをアーカイブ解除するには、**[!UICONTROL アーカイブを表示]** をクリックし、リンクを選択して、**[!UICONTROL 選択項目のアーカイブを解除]** をクリックします。
 
-      アーカイブの表示ページには、以前にアーカイブしたマーケティングリンクのみが表示されます。
+      以前にアーカイブしたマーケティングリンクのみ、アーカイブを表示ページに表示されます。
 
