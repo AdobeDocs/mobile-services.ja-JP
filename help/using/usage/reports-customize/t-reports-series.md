@@ -3,39 +3,39 @@ description: この情報は、追加のシリーズ（指標）や、異なる�
 keywords: モバイル
 seo-description: この情報は、追加のシリーズ（指標）や、異なるレポートスイートのアプリを追加して組み込みのレポートをカスタマイズし、データを比較するのに役立ちます。
 seo-title: レポートへのシリーズ（指標）の追加
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: レポートへのシリーズ（指標）の追加
 topic: レポート, 指標
 uuid: 84fdfb1f-70e6-4c02-9b3b-526e9c924f74
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
 
 ---
 
 
-# Add series (metrics) to reports{#add-series-metrics-to-reports}
+# レポートへのシリーズ（指標）の追加{#add-series-metrics-to-reports}
 
 この情報は、追加のシリーズ（指標）や、異なるレポートスイートのアプリを追加して組み込みのレポートをカスタマイズし、データを比較するのに役立ちます。
 
 >[!IMPORTANT]
 >
->モバイルアプリ指標は、Reports &amp; Analytics、Ad Hoc Analysis、Data Warehouseおよびその他のAnalyticsレポートインターフェイスでも使用できます。 分類やレポートタイプが Adobe Mobile で使用できない場合、別のレポートインターフェイスを使用して生成できます。
+>モバイルアプリ指標は、Reports &amp; Analytics、Ad Hoc Analysis、Data Warehouse およびその他の Analytics レポートインターフェイスでも使用できます。分類やレポートタイプが Adobe Mobile で使用できない場合、別のレポートインターフェイスを使用して生成できます。
 
-In this example, we will customize the **[!UICONTROL Users &amp; Sessions]** report, but the instructions can apply to any report.
+この例では、**[!UICONTROL ユーザーとセッション]**&#x200B;レポートをカスタマイズしますが、説明はどのレポートにも当てはまります。
 
-1. Open your app and click **[!UICONTROL Usage]** &gt; **[!UICONTROL Users &amp; Sessions]**.
+1. アプリを開いて、**[!UICONTROL 使用状況]**／**[!UICONTROL ユーザーとセッション]**&#x200B;をクリックします。
 
    ![手順の結果](assets/customize1.png)
 
    このレポートは、アプリのユーザー数を時系列で表示します。例えば、アプリのクラッシュ回数に関するレポートにシリーズを追加してみましょう。
 
-1. Click **[!UICONTROL Customize]**.
+1. **[!UICONTROL カスタマイズ]** をクリックします。
 
    ![手順の結果](assets/customize2.png)
 
-1. Scroll down and click **[!UICONTROL Add Series]**.
+1. 下にスクロールして、**[!UICONTROL シリーズを追加]** をクリックします。
 
-   シリーズの名前が、リストの中の最後のシリーズと同じ名前で設定されます。In the previous illustration, the latest series is **[!UICONTROL App Store Downloads]**, so a new series is added and is also titled **[!UICONTROL App Store Downloads]**.
+   シリーズの名前が、リストの中の最後のシリーズと同じ名前で設定されます。前述の図では、一番下のシリーズは **[!UICONTROL App Store でのダウンロード数]** なので、新しいシリーズも **[!UICONTROL App Store でのダウンロード数]** というタイトルで追加されます。
 
 1. 次のどちらかのタスクを実行します。
 
@@ -43,11 +43,11 @@ In this example, we will customize the **[!UICONTROL Users &amp; Sessions]** rep
 
       ![手順の結果](assets/add_series.png)
 
-   * 新しいアプリを別のレポートスイートに追加してアプリ間でデータを比較するには、新しく作成したシリーズのアプリ名をクリックし、目的のアプリを選択します。
+   * アプリ間でデータを比較できるよう、新しいアプリを別のレポートスイートに追加するには、新しく作成したシリーズのアプリ名をクリックして、目的のアプリを選択します。
 
       ![](assets/add_series_app.png)
 
 1. （条件付き）新しいシリーズにフィルターを追加します。
 
-   詳しくは、「レポートへのフィル [ターの追加」を参照してくださ](/help/using/usage/reports-customize/t-reports-customize.md)い。
-1. Click **[!UICONTROL Update]** and **[!UICONTROL Run]**.
+   詳しくは、「[レポートへのフィルターの追加](/help/using/usage/reports-customize/t-reports-customize.md)」を参照してください。
+1. **[!UICONTROL 更新]** および **[!UICONTROL 実行]** をクリックします。
