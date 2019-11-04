@@ -4,7 +4,7 @@ seo-description: .xml ファイルと直接置き換えることによって、T
 seo-title: TVML／TVJS 対応の Adobe Target
 title: TVML／TVJS 対応の Adobe Target
 uuid: afd5a583-5266-43f2-8cb0-0ace89c53a57
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 ---
@@ -16,54 +16,54 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 >[!IMPORTANT]
 >
->Before using the `ADBTarget` element in your TVML pages, you must configure your TVML/TVJS app to use the tvOS SDK. 詳しくは、「 [Apple TV Implementation with tvOS](/help/ios/apple-tv-implementation-tvos/apple-tv-implementation-tvos.md)」を参照してください。
+>TVML ページで `ADBTarget` 要素を使用する前に、tvOS SDK を使用するように TVML／TVJS アプリを設定する必要があります。詳しくは、「[tvOS を使用した Apple TV 実装](/help/ios/apple-tv-implementation-tvos/apple-tv-implementation-tvos.md)」を参照してください。
 
 ## はじめに {#section_88445645FD67416EAF6FDC3E3D3F5C33}
 
-1. Identify the `.xml` file in which you want to use your Target location.
-1. Add an `ADBTarget` element to the file as a child of the `<document>` element.
-1. If Target fails to find your Mbox location, or it times out, the value between your `<ADBTarget>` and `</ADBTarget>` tags is used as default content.
+1. Target ロケーションを使用する `.xml` ファイルを特定します。
+1. `ADBTarget` 要素を `<document>` 要素の子としてファイルに追加します。
+1. Target が Mbox ロケーションを見つけられなかったり、タイムアウトした場合は、`<ADBTarget>` タグと `</ADBTarget>` タグの間の値がデフォルトコンテンツとして使用されます。
 
-## Configure your mbox in Target {#section_F2DA140C34B0421D976046F825B23123}
+## Target の Mbox の設定 {#section_F2DA140C34B0421D976046F825B23123}
 
-The returned content from Target replaces all content between `<ADBTarget>` and `</ADBTarget>`, including both `ADBTarget` tags.
+Target から返されたコンテンツで、`<ADBTarget>` と `</ADBTarget>` の間のすべてのコンテンツ（両方の `ADBTarget` タグを含む）を置き換えます。
 
 >[!TIP]
 >
->必要に応じて、置き換えるものを計画する必要があります。
+>何を置き換えるかを適切に計画する必要があります。
 
 ユースケースには、ラベルの文字列値を置き換えるくらいシンプルなものもあれば、ページ全体を置き換えるくらい複雑なものもあります。
 
-## ADBTarget要素を設定します {#section_44A7AEC6FC0648ADAD0BACB57D493AFA}
+## ADBTarget 要素の設定 {#section_44A7AEC6FC0648ADAD0BACB57D493AFA}
 
-`ADBTarget` 要素内で、`mbox` プロパティに Mbox 名を指定する必要があります。You can optionally add custom properties to your request in the `customParameterName="customParameterValue"` format.
+`ADBTarget` 要素内で、`mbox` プロパティに Mbox 名を指定する必要があります。オプションで、カスタムプロパティを `customParameterName="customParameterValue"` 形式でリクエストに追加できます。
 
 * **`mbox`**
 
-   Mbox ロケーション名.
+   Mbox ロケーション名。
 
    * プロパティタイプ：文字列
-   * このプロパティは必須です。
+   * このプロパティが必要です。
 
 * **`id`**
 
-   注文ID。
+   注文 ID。
 
    * プロパティタイプ：文字列
-   * このプロパティは **必須ではありません** 。
+   * このプロパティは必須では&#x200B;**ありません**。
 
 * **`total`**
 
    注文の合計。
 
    * プロパティタイプ：文字列
-   * このプロパティは **必須ではありません** 。
+   * このプロパティは必須では&#x200B;**ありません**。
 
 * **`purchasedProductIds`**
 
    この注文で購入する製品の ID のコンマ区切りリスト。
 
-   * このプロパティのコード例を次に示します。
+   * このプロパティのコードサンプルを次に示します。
 
 
       ```objective-c
@@ -71,27 +71,27 @@ The returned content from Target replaces all content between `<ADBTarget>` and 
       ```
 
    * プロパティタイプ：文字列
-   * This property is not required.****
+   * このプロパティは必須では&#x200B;**ありません**。
 
 * **`mboxParameters`**
 
-   `mboxParameters` のキーと値のペアのリスト。この文字列の各エントリはセミコロンで区切られ、キー値はコロンで区切られます。
+   `mboxParameters` のキーと値のペアのリスト。この文字列の各エントリはセミコロンで区切り、キーと値はコロンで区切ります。
 
-   * このプロパティのコード例を次に示します。
+   * このプロパティのコードサンプルを次に示します。
 
       ```objective-c
       mboxParameters="mboxparameterKey:mboxParameterValue;mboxParameterKey1:mboxParameterValue1;mboxParameterKey2:mboxParameterValue2"
       ```
 
-   * Property type: String
-   * This property is not required.****
+   * プロパティタイプ：文字列
+   * このプロパティは必須では&#x200B;**ありません**。
 
 * **`customParameterName`**
 
-   The value of this property is .`customParameterValue`
+   このプロパティの値は `customParameterValue` です。
 
    * プロパティタイプ：文字列
-   * This property is not required.****
+   * このプロパティは必須では&#x200B;**ありません**。
 
 
 ## 例 {#section_6D6D6E8C7FE147168FC30D83CBC06985}
