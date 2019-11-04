@@ -4,13 +4,13 @@ seo-description: アプリ内メッセージのトリガーは、ユーザーが
 seo-title: プッシュメッセージからアプリを開いたときにアプリ内メッセージをトリガー
 title: プッシュメッセージからアプリを開いたときにアプリ内メッセージをトリガー
 uuid: e1c8e29d-1c2b-47b2-8ab2-6b6e15df86f6
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 114bce95e41c8e13695689dd2da2dbc04cb17ad7
 
 ---
 
 
-# Trigger an in-app message when the app is opened from a push message{#trigger-an-in-app-message-when-the-app-is-opened-from-a-push-message}
+# プッシュメッセージからアプリを開いたときにアプリ内メッセージをトリガー{#trigger-an-in-app-message-when-the-app-is-opened-from-a-push-message}
 
 アプリ内メッセージのトリガーは、ユーザーがプッシュメッセージからアプリを開いたときに送信されるプッシュメッセージ ID に設定できます。
 
@@ -28,9 +28,9 @@ source-git-commit: 114bce95e41c8e13695689dd2da2dbc04cb17ad7
 
    >[!TIP]
    >
-   >プッシュメッセージIDは、手順1で検索したIDです。
+   >プッシュメッセージ ID は手順 1 で見つけた ID です。
 
-   このトリガーは手動で追加する必要があります。**[!UICONTROL トリガー]ドロップダウンリストには含まれていません。**
+   このトリガーは手動で追加する必要があります。**[!UICONTROL トリガー]**&#x200B;ドロップダウンリストには含まれていません。
 
    ![](assets/brandon_task2.png)
 
