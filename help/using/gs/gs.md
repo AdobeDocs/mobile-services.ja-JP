@@ -3,11 +3,11 @@ description: この情報は、Adobe Mobile Services の理解と使用に役立
 keywords: モバイル
 seo-description: この情報は、Adobe Mobile Services の理解と使用に役立ちます。
 seo-title: はじめに
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: はじめに
 topic: 指標
 uuid: a7ae7c5a-dab8-4603-b4cd-af73a2f09f71
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
 ---
@@ -39,9 +39,9 @@ Adobe Mobile Services は、次の方法でモバイルアプリのエンゲー�
 
 ### 獲得
 
-**&#x200B;獲得では、有料メディア、オウンドメディアおよび無料メディアを使用して、ユーザーの獲得を推進し、主要なアプリストアからのアプリダウンロードを促します。Adobe Mobile Services を使用すると、アプリユーザーの獲得プロセスを加速できます。
+*獲得*&#x200B;では、有料メディア、オウンドメディアおよび無料メディアを使用して、ユーザーの獲得を推進し、主要なアプリストアからのアプリダウンロードを促します。Adobe Mobile Services を使用すると、アプリユーザーの獲得プロセスを加速できます。
 
-Adobe Mobile Services には、獲得の追跡およびディープリンクを含む、ユーザー獲得ワークフローが備わっており、アプリユーザーの獲得についてチャネルの効果を測定できます。どのチャネルから来たユーザーを追跡するマーケティングリンクを使用すると、どの獲得チャネルが利益を上げ、関与したユーザーを最も効果的に導くかを把握できます。
+Adobe Mobile Services には、獲得の追跡およびディープリンクを含む、ユーザー獲得ワークフローが備わっており、アプリユーザーの獲得についてチャネルの効果を測定できます。どのユーザーがどのチャネルから来たかを追跡するマーケティングリンクを使用すると、利益につながり、積極的に関与するユーザーを集めるうえで、どの獲得チャネルが最も効果的かを明確に把握することができます。
 
 さらに、ディープリンクを使用すると、表示させたいアプリコンテンツにユーザーを直接導くことができ、必要に応じてアプリのインストールを促すことができます。
 
@@ -52,17 +52,17 @@ Adobe Mobile Services には、獲得の追跡およびディープリンクを�
 * アプリへのディープリンク
 * 広告ネットワークとのポストバック統合
 
-このフェーズについて詳しくは、 [獲得](/help/using/acquisition-main/acquisition-main.md).
+このフェーズについて詳しくは、「[獲得](/help/using/acquisition-main/acquisition-main.md)」を参照してください。
 
 ### 分析
 
-**&#x200B;分析では、消費者のモバイルアプリの使い方およびコンバージョンや復帰の要因を把握できます。
+*分析*&#x200B;では、消費者のモバイルアプリの使い方およびコンバージョンや復帰の要因を把握できます。
 
 Adobe Analytics を使用すると、ユーザーによるアプリのダウンロード方法、インストール方法および開き方のファネルに対する主要なインサイトが得られます。また、アプリコンテンツおよび UI を測定および分析したり、コホート、パスおよびフォールアウトの分析を実施したりできます。Adobe Analytics を使用すると、一元化されたデータストアを使用して、マーケティング判断を伝えたり、組織のマーケティングデータのサイロ化を削減したりできます。
 
 Adobe Audience Manager を使用して、リッチデータでオーディエンスセグメントを強化し、より状況に合ったパーソナルなエクスペリエンスを配信できます。
 
-**&#x200B;分析では、次の主要な機能を提供します。
+*分析*&#x200B;では、次の主要な機能を提供します。
 
 * アプリエンゲージメント分析
 * パスおよびファネル分析
@@ -70,19 +70,19 @@ Adobe Audience Manager を使用して、リッチデータでオーディエン
 * ロケーション分析
 * 広範なデバイスおよびプラットフォームのサポート
 
-実行して顧客を分析するレポートについて詳しくは、 [レポート](/help/using/usage/usage.md).
+実行して顧客を分析するレポートについて詳しくは、「[レポート](/help/using/usage/usage.md)」を参照してください。
 
-### ソーシャル管理
+### エンゲージメント
 
-**&#x200B;エンゲージメントでは、関連するプッシュ通知およびアプリ内メッセージを使用して、ユーザーとコミュニケーションを取ることができます。ターゲット設定されたプッシュ通知およびアプリ内メッセージを使用すると、ユーザーが引き続きアプリに戻ってくることを確認できます。Analytics のセグメントのサポートにより、反応のあるユーザーセグメントにプッシュ通知をターゲット設定して、コンバージョン傾向を向上できます。
+*エンゲージメント*&#x200B;では、関連するプッシュ通知およびアプリ内メッセージを使用して、ユーザーとコミュニケーションを取ることができます。ターゲット設定されたプッシュ通知およびアプリ内メッセージを使用すると、ユーザーが引き続きアプリに戻ってくることを確認できます。Analytics のセグメントのサポートにより、反応のあるユーザーセグメントにプッシュ通知をターゲット設定して、コンバージョン傾向を向上できます。
 
-**&#x200B;エンゲージメントでは、次の主要な機能を提供します。
+*エンゲージメント*&#x200B;では、次の主要な機能を提供します。
 
 * プッシュ通知が Analytics セグメントによってトリガーされる。
 * アプリ内メッセージがリアルタイム分析、アラートおよび新しいオファー／コンテンツによってトリガーされる。
 * ビュー数、クリックスルー率およびダウンストリームの行動を把握する。
 
-### Adobe Mobile messaging
+### Adobe Mobile メッセージ
 
 プッシュ通知およびアプリ内通知を使用して、ユーザーとコミュニケーションを取ることができます。アプリ内メッセージがユーザーがアクティブにアプリを操作しているときにアプリ内で送信されるのに対して、プッシュ通知はデバイスのオペレーティングシステムを介して送信されます。アプリ内メッセージには、通常、ポップアップやインタースティシャルなど、様々な形式を含めることができます。
 
@@ -94,7 +94,7 @@ Adobe Mobile では、次のタイプのメッセージを設定できます。
 * ブランドのアプリをダウンロードし、オプトインによってプッシュ通知の受信を承認した顧客に、メッセージを作成、セグメント化および送信する。
 * モバイルアプリからではなく、アプリストアによってサーバー側で送信する。
 
-プッシュ通知の作成について詳しくは、 [プッシュメッセージの作成](/help/using/in-app-messaging/t-create-push-message/t-create-push-message.md).
+プッシュ通知の作成について詳しくは、[プッシュメッセージの作成](/help/using/in-app-messaging/t-create-push-message/t-create-push-message.md)を参照してください。
 
 **アプリ内通知**&#x200B;では、次の機能を提供します。
 
@@ -105,13 +105,13 @@ Adobe Mobile では、次のタイプのメッセージを設定できます。
 * アプリストアの評価を活用するようにユーザーを促す。
 * リアルタイムおよびロケーションベースのメッセージを配信する。
 
-アプリ内メッセージの作成について詳しくは、 [アプリ内メッセージの作成](/help/using/in-app-messaging/t-in-app-message/t-in-app-message.md).
+アプリ内メッセージの作成について詳しくは、[アプリ内メッセージの作成](/help/using/in-app-messaging/t-in-app-message/t-in-app-message.md)を参照してください。
 
 ### 最適化
 
-**&#x200B;最適化では、コンバージョン（購読、コマース、広告収入など）を最適化して、顧客維持を強化します。アプリのユーザーエクスペリエンスの最適化は、コンテンツをパーソナライズして ROI およびコンバージョンを最大限に向上するのに役立ちます。
+**&#x200B;では、コンバージョン（購読、コマース、広告収入など）を最適化して、顧客維持を強化します。アプリのユーザーエクスペリエンスの最適化は、コンテンツをパーソナライズして ROI およびコンバージョンを最大限に向上するのに役立ちます。
 
-テストおよび Adobe Target について詳しくは、[Adobe Target](https://docs.adobe.com/content/help/en/target/using/target-home.html) に移動してください。
+テストおよび Adobe Target について詳しくは、[Adobe Target](https://docs.adobe.com/content/help/ja-JP/target/using/target-home.html) に移動してください。
 
 ### ジオターゲティング
 
@@ -121,9 +121,9 @@ Adobe Mobile では、次のタイプのメッセージを設定できます。
 
 ロケーションについて詳しくは、次のコンテンツを参照してください。
 
-* [Mobile Servicesユーザーガイド内の場所](/help/using/location/c-location-overview.md)
-* Android SDK ガイドの[ロケーション](/help/android/location/location.md)
-* iOS SDK ガイドの[ロケーション](/help/ios/location/location.md)
+* [Mobile Services ユーザーガイド内の場所](/help/using/location/c-location-overview.md)
+* [Android SDK ガイドの ロケーション](/help/android/location/location.md)
+* [iOS SDK ガイドの ロケーション](/help/ios/location/location.md)
 
 ## Adobe Mobile SDK {#mobile-services-sdk}
 
@@ -158,4 +158,4 @@ Adobe Mobile SDK では、次の機能を提供します。
    * データの Adobe サーバーおよびサードパーティシステムへの送信に関するデバイス処理の負荷を最小化します。
    * スモールフットプリントにより、アプリストアに送信されるアプリパッケージのサイズを最小化します。
 
-Adobe Mobile SDK について詳しくは、[Experience Cloud ソリューション用 Android SDK 4.x](https://docs.adobe.com/content/help/en/mobile-services/android/overview.html) および [Experience Cloud ソリューション用 iOS SDK 4.x](https://docs.adobe.com/content/help/en/mobile-services/ios/rel-notes.html) を参照してください。
+Adobe Mobile SDK について詳しくは、[Experience Cloud ソリューション用 Android SDK 4.x](https://docs.adobe.com/content/help/ja-JP/mobile-services/android/overview.html) および [Experience Cloud ソリューション用 iOS SDK 4.x](https://docs.adobe.com/content/help/ja-JP/mobile-services/ios/rel-notes.html) を参照してください。
