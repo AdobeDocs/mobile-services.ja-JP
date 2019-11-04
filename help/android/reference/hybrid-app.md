@@ -1,40 +1,40 @@
 ---
 description: アプリでモバイル Web コンテンツを開く場合は、ネイティブとモバイル Web の間を移動する訪問者が別々に識別されないようにします。
 seo-description: アプリでモバイル Web コンテンツを開く場合は、ネイティブとモバイル Web の間を移動する訪問者が別々に識別されないようにします。
-seo-title: アプリとモバイルWeb間の訪問者トラッキング
-solution: Marketing Cloud,Analytics
-title: アプリとモバイルWeb間の訪問者トラッキング
+seo-title: アプリとモバイル Web にまたがる訪問者トラッキング
+solution: Experience Cloud,Analytics
+title: アプリとモバイル Web にまたがる訪問者トラッキング
 topic: 開発者と導入
 uuid: 073572e4-4c55-4b27-b4a7-e4349ccde7bf
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 ---
 
 
-# Visitor tracking between an app and the mobile web {#visitor-tracking-between-an-app-and-mobile-web}
+# アプリとモバイル Web にまたがる訪問者トラッキング{#visitor-tracking-between-an-app-and-mobile-web}
 
 アプリでモバイル Web コンテンツを開く場合は、ネイティブとモバイル Web の間を移動する訪問者が別々に識別されないようにします。
 
-## Visitor IDs in apps
+## アプリの訪問者 ID
 
 Android SDK は、アプリのインストール時に一意の訪問者 ID を生成します。この ID は、モバイルデバイスの永続メモリに保存され、ヒットごとに送信され、ユーザーがアプリをアンインストールするときにのみ削除されます。
 
 >[!TIP]
 >
->App visitor IDs persist through upgrades.
+>アプリの訪問者 ID は、アップグレード後も保持されます。
 
-## モバイルWebでの訪問者ID
+## モバイル Web の訪問者 ID
 
 一般的なモバイル Web 実装では、デスクトップサイトで使用されているのと同じ標準の Analytics `s_code.js` または `AppMeasurement.js` を使用します。JavaScript ライブラリには、一意の訪問者 ID を生成する独自メソッドがあり、アプリからモバイル Web コンテンツを開くと、異なる訪問者 ID が生成される原因となります。
 
-## Implementing visitor tracking between an app and the mobile web {#section_1755BCCFD42D456EB2319141030FDDFF}
+## アプリとモバイル Web にまたがる訪問者トラッキング{#section_1755BCCFD42D456EB2319141030FDDFF}
 
 アプリとモバイル Web で同じ訪問者 ID を使用するには、以下のようにします。
 
-1. 「ライブラリをプロジェクトに追加し、ライフサイクルを実装します。
+1. ライブラリをプロジェクトに追加し、ライフサイクルを実装します。
 
-   For more information, see Add the SDK and Config File to your IntelliJ IDEA or Eclipse Project in Core implementation and lifecycle.**[](/help/android/getting-started/dev-qs.md)
+   詳しくは、[コア実装とライフサイクル](/help/android/getting-started/dev-qs.md)の「*IntelliJ IDEA または Eclipse プロジェクトへの SDK と設定ファイルの追加*」を参照してください。
 
 1. Web ビューを開くために使用される URL に訪問者情報を追加するために、`visitorAppendToURL` を呼び出します。
 
@@ -63,31 +63,31 @@ Android SDK は、アプリのインストール時に一意の訪問者 ID を�
 
 モバイル Web コンテンツからヒットがあったら、各ヒットに `mid` パラメーターが存在すること、およびこの値がアプリコードによって送信された `mid` パラメーターと一致することを確認します。
 
-## Troubleshooting visitor tracking {#section_9B641F8569E34A089C52AA28EA4C891D}
+## 訪問者トラッキングのトラブルシューティング {#section_9B641F8569E34A089C52AA28EA4C891D}
 
-### I do not see `Visitor.appendToURL`.
+### `Visitor.appendToURL` が見つかりません。
 
 親アプリケーションにバンドルされている Adobe SDK がバージョン 4.12.0 以上であることを確認します。
 
 **URL に Adobe ID が表示されません。**
 
 * 以下を確認します。
-   * Web ビューを開くための URL 文字列が `Visitor.appendToURL(urlString)` ) によって生成されている。
-   * Adobe ID がエンコードされている。To ensure that the IDs that are appended to the URL that is being opened, verify that the `adobe_mc` query parameter appears in the URL.
+   * Web ビューを開くための URL 文字列が `Visitor.appendToURL(urlString)` によって生成されている。
+   * Adobe ID がエンコードされている。開かれている URL に追加されている ID を確認するには、その URL に `adobe_mc` クエリーパラメーターが表示されていることを確認します。
 
 ### アプリと Web ビューで `mid` が同一ではありません。
 
 * 以下を確認します。
 
-   * Web ビューを開くための URL 文字列が `Visitor.appendToURL(urlString)` ) によって生成されている。
+   * Web ビューを開くための URL 文字列が `Visitor.appendToURL(urlString)` によって生成されている。
    * URL 文字列に Adobe パラメーターが含まれている。
 
-      The string should contain `adobe_mc="SAMPLE_ID_DATA"` where `"SAMPLE_ID_DATA"` contains the IDs that are generated in the Adobe Mobile SDK.
+      文字列には `adobe_mc="SAMPLE_ID_DATA"` が含まれている必要があります。ここで、`"SAMPLE_ID_DATA"` は Adobe Mobile SDK で生成された ID になります。
    * `VisitorAPI.js` がバージョン 1.7.0 以上である。
 
 これらのトラブルシューティング手順で問題が解決しない場合は、Adobe Experience Care にお問い合わせください。
 
 >[!IMPORTANT]
 >
->アドビが実装を検証できるようにするには、サンプルアプリケーションと関連サイトを共有する必要があります。
+>アドビが実装を検証できるようにするには、サンプルアプリケーションおよび関連するサイトを共有する必要があります。
 
