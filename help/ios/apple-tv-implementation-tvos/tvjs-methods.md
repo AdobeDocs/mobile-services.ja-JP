@@ -2,11 +2,11 @@
 description: tvOS ライブラリが提供する TVJS メソッドの一覧を以下に示します。
 seo-description: tvOS ライブラリが提供する TVJS メソッドの一覧を以下に示します。
 seo-title: TVJS メソッド
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: TVJS メソッド
 topic: 開発者と導入
 uuid: a7bfa85a-0d6e-4f51-9a9e-70429c2a9806
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
 ---
@@ -16,7 +16,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
 tvOS ライブラリが提供する TVJS メソッドの一覧を以下に示します。
 
-## Configuration methods {#section_5F82FD2F6A0546B3B4E80DF832E11634}
+## 設定メソッド{#section_5F82FD2F6A0546B3B4E80DF832E11634}
 
 * **version**
 
@@ -34,7 +34,7 @@ tvOS ライブラリが提供する TVJS メソッドの一覧を以下に示し
       var sdkVersion = ADBMobile.version();
       ```
 
-   * : `String`
+   * 戻り値：`String`
 
 * **privacyStatus**
 
@@ -42,11 +42,11 @@ tvOS ライブラリが提供する TVJS メソッドの一覧を以下に示し
 
    以下のオプションがあります。
 
-   * `ADBMobilePrivacyStatusOptIn`: Hits are sent immediately.
-   * `ADBMobilePrivacyStatusOptOut`:ヒットは破棄されます。
+   * `ADBMobilePrivacyStatusOptIn`：ヒットは即座に送信されます。
+   * `ADBMobilePrivacyStatusOptOut`：ヒットが破棄されます。
    * `ADBMobilePrivacyStatusUnknown`：オフライン追跡が有効である場合、プライバシーステータスがオプトイン（ヒットが送信される）またはオプトアウト（ヒットが破棄される）に変更されるまで、ヒットは保存されます。
 
-      オフライン追跡が有効になっていない場合、プライバシーステータスがオプトインに変更されるまで、ヒットは破棄されます。THe default value is set in the `ADBMobileConfig.json` file.
+      オフライン追跡が有効になっていない場合、プライバシーステータスがオプトインに変更されるまで、ヒットは破棄されます。デフォルト値は `ADBMobileConfig.json` ファイルに設定します。
 
    * このメソッドの構文を次に示します。
 
@@ -60,15 +60,15 @@ tvOS ライブラリが提供する TVJS メソッドの一覧を以下に示し
       var privacyStatus = ADBMobile.privacyStatus();
       ```
 
-   * : `Number`
+   * 戻り値：`Number`
 
 * **setPrivacyStatus**
 
    現在のユーザーのプライバシーステータスを以下の値のいずれかに設定します。
 
-   * `ADBMobilePrivacyStatusOptIn`:ヒットは直ちに送信されます。
-   * `ADBMobilePrivacyStatusOptOut`:ヒットは破棄されます。
-   * `ADBMobilePrivacyStatusUnknown`:オフライン追跡が有効な場合、プライバシーステータスがオプトイン（ヒットが送信される）またはオプトアウト（ヒットが破棄される）に変わるまで、ヒットは保存されます。
+   * `ADBMobilePrivacyStatusOptIn`：ヒットは即座に送信されます。
+   * `ADBMobilePrivacyStatusOptOut`：ヒットが破棄されます。
+   * `ADBMobilePrivacyStatusUnknown`：オフライン追跡が有効である場合、プライバシーステータスがオプトイン（ヒットが送信される）またはオプトアウト（ヒットが破棄される）に変更されるまで、ヒットは保存されます。
    オフライン追跡が有効になっていない場合、プライバシーステータスがオプトインに変更されるまで、ヒットは破棄されます。
 
    * このメソッドの構文を次に示します。
@@ -100,15 +100,15 @@ tvOS ライブラリが提供する TVJS メソッドの一覧を以下に示し
       var ltv = ADBMobile.lifetimeValue();
       ```
 
-   * : `Number`
+   * 戻り値：`Number`
 
 * **userIdentifier**
 
-   カスタム識別子が設定されている場合は、ユーザー識別子を返します。カスタム識別子が設定されていない場合は、nil を返します。デフォルトは `nil`.
+   カスタム識別子が設定されている場合は、ユーザー識別子を返します。カスタム識別子が設定されていない場合は、nil を返します。デフォルトは `nil` です。
 
    >[!IMPORTANT]
    >
-   >アプリがExperience Cloud 3.xから4.x SDKにアップグレードされた場合、以前にカスタムまたは自動生成された訪問者IDが取得され、カスタムユーザーIDとして保存されます。 これによって、SDK をアップグレードしても訪問者データが保持されます。4.x SDK を新規インストールした場合は、ユーザー識別子は設定されるまで nil となります。
+   >アプリを Experience Cloud 3.x から 4.x SDK にアップグレードした場合、以前のカスタムまたは自動生成された訪問者 ID が取得され、カスタムユーザー識別子として保存されます。これによって、SDK をアップグレードしても訪問者データが保持されます。4.x SDK を新規インストールした場合は、ユーザー識別子は設定されるまで nil となります。
 
    * このメソッドの構文を次に示します。
 
@@ -122,7 +122,7 @@ tvOS ライブラリが提供する TVJS メソッドの一覧を以下に示し
       var uid = ADBMobile.userIdentifier();
       ```
 
-   * : `String`
+   * 戻り値：`String`
 
 * **setUserIdentifier**
 
@@ -142,18 +142,18 @@ tvOS ライブラリが提供する TVJS メソッドの一覧を以下に示し
 
    * 戻り値：なし
 
-   * パラメーター:  `userID`
+   * パラメーター：`userID`
 
       * 型：String
       * このユーザーの新しい識別子。
 
 * **setAdvertisingIdentifier**
 
-   IDFAをSDKに設定し、SDKに設定されている場合は、IDFAをライフサイクルで送信します。 IDFA にはシグナル（ポストバック）でもアクセスできます。
+   SDK で IDFA を設定します。既に SDK に設定されている場合は、IDFA をライフサイクルで送信します。IDFA にはシグナル（ポストバック）でもアクセスできます。
 
    >[!IMPORTANT]
    >
-   >広告サービスを使用している場合にのみ、Apple APIからIDFAを取得します。 IDFA を取得し、正しく使用していない場合は、アプリが拒否されることがあります。
+   >広告サービスを使用している場合にのみ、Apple API から IDFA を取得してください。IDFA を取得し、正しく使用していない場合は、アプリが拒否されることがあります。
 
    * このメソッドの構文を次に示します。
 
@@ -168,8 +168,8 @@ tvOS ライブラリが提供する TVJS メソッドの一覧を以下に示し
       ```
 
    * 戻り値：なし
-   * パラメーター: `idfa`
-      * タイプ: `String`
+   * パラメーター：`idfa`
+      * 型：`String`
       * Apple API から取得した IDFA。
 
 * **setDebugLogging**
@@ -189,12 +189,12 @@ tvOS ライブラリが提供する TVJS メソッドの一覧を以下に示し
       ```
 
    * 戻り値：なし
-   * パラメーター: `logging`
-      * タイプ: `Bool`
+   * パラメーター：`logging`
+      * 型：`Bool`
       * Adobe SDK がデバッグコンソールをログ記録するかどうかを指示する値。
 
 
-## Analytics methods {#section_F3DB9BE225F84F86BE5F8D15164C0379}
+## Analytics メソッド{#section_F3DB9BE225F84F86BE5F8D15164C0379}
 
 * **trackStateData**
 
@@ -204,7 +204,7 @@ tvOS ライブラリが提供する TVJS メソッドの一覧を以下に示し
 
    >[!TIP]
    >
-   >これは、ページビュー数を増やす唯一のトラッキングコールです。
+   >これは、ページビュー数を増分する唯一のトラッキングコールです。
 
    * このメソッドの構文を次に示します。
 
@@ -213,10 +213,10 @@ tvOS ライブラリが提供する TVJS メソッドの一覧を以下に示し
       ```
 
       * 戻り値：なし
-      * パラメーター: `stateName`
-         * タイプ: `String`
-         * ページ状態名
-      * パラメーター: `contextData`
+      * パラメーター：`stateName`
+         * 型：`String`
+         * ページの状態名。
+      * パラメーター：`contextData`
          * 型：Object
          * このヒットの追加コンテキストデータ。
    * このメソッドのコードサンプルを次に示します。
@@ -239,10 +239,10 @@ tvOS ライブラリが提供する TVJS メソッドの一覧を以下に示し
       ```
 
       * 戻り値：なし
-      * パラメーター: `actionName`
+      * パラメーター：`actionName`
          * 型：String
          * 追跡するアクション名。
-      * パラメーター: `contextData`
+      * パラメーター：`contextData`
          * 型：Object
          * このヒットの追加コンテキストデータ。
    * このメソッドのコードサンプルを次に示します。
@@ -257,7 +257,7 @@ tvOS ライブラリが提供する TVJS メソッドの一覧を以下に示し
 
    現在地点の緯度と経度の座標を送信します。
 
-   Also uses points of interest (POI) that are defined in the `ADBMobileConfig.json` file to determine whether the location that you entered as a parameter is in any of your POIs. 現在の座標が定義した目標地点内にある場合、コンテキストデータ変数に代入され、`trackLocation` コールで送信されます。
+   また、現在位置が `ADBMobileConfig.json` ファイルで定義された目標地点（POI）内にあるかどうかを判定します。現在の座標が定義した目標地点内にある場合、コンテキストデータ変数に代入され、`trackLocation` コールで送信されます。
 
    * このメソッドの構文を次に示します。
 
@@ -266,13 +266,13 @@ tvOS ライブラリが提供する TVJS メソッドの一覧を以下に示し
       ```
 
       * 戻り値：なし
-      * パラメーター: `lat`
+      * パラメーター：`lat`
          * 型：Number
          * 現在位置の緯度。
-      * パラメーター: `lon`
+      * パラメーター：`lon`
          * 型：Number
          * 現在位置の経度。
-      * パラメーター: `contextData`
+      * パラメーター：`contextData`
          * 型：Object
          * このヒットの追加コンテキストデータ。
    * このメソッドのコードサンプルを次に示します。
@@ -295,7 +295,7 @@ tvOS ライブラリが提供する TVJS メソッドの一覧を以下に示し
       ```
 
       * 戻り値：なし
-      * パラメーター: `increaseAmount`
+      * パラメーター：`increaseAmount`
          * 型：Number
          * ユーザーの現在のライフタイム値に追加する値。
    * このメソッドのコードサンプルを次に示します。
@@ -320,10 +320,10 @@ tvOS ライブラリが提供する TVJS メソッドの一覧を以下に示し
       ```
 
       * 戻り値：なし
-      * パラメーター: `name`
+      * パラメーター：`name`
          * 型：String
          * 追跡する時間計測アクション名。
-      * パラメーター: `contextData`
+      * パラメーター：`contextData`
          * 型：Object
          * このヒットの追加コンテキストデータ。
    * このメソッドのコードサンプルを次に示します。
@@ -350,10 +350,10 @@ tvOS ライブラリが提供する TVJS メソッドの一覧を以下に示し
       ```
 
       * 戻り値：なし
-      * パラメーター: `name`
+      * パラメーター：`name`
          * 型：String
          * 更新する時間計測アクション名。
-      * パラメーター: `contextData`
+      * パラメーター：`contextData`
          * 型：Object
          * このヒットの追加コンテキストデータ。
    * このメソッドのコードサンプルを次に示します。
@@ -368,7 +368,7 @@ tvOS ライブラリが提供する TVJS メソッドの一覧を以下に示し
 
    時間計測アクションを終了します。
 
-   コールバック関数を指定した場合、最終時刻値にアクセスできます。コールバックを指定しない場合またはコールバックが true を返した場合、Adobe SDK が自動的にヒットを送信します。コールバックからfalseが返されると、時間計測アクションのヒットが抑制されます。
+   コールバック関数を指定した場合、最終時刻値にアクセスできます。コールバックを指定しない場合またはコールバックが true を返した場合、Adobe SDK が自動的にヒットを送信します。コールバックが false を返した場合、時間計測アクションのヒットは送信されません。
 
    * このメソッドの構文を次に示します。
 
@@ -377,14 +377,14 @@ tvOS ライブラリが提供する TVJS メソッドの一覧を以下に示し
       ```
 
       * 戻り値：なし
-      * パラメーター: `name`
+      * パラメーター：`name`
          * 型：String
          * 終了する時間計測アクション名。
-      * パラメーター: `callback`
-         * タイプ: `function(inAppDuration, totalDuration, data)`
-         * Callback method that will have `inAppDuration` (number), `totalDuration` (number), and `data` (context data object) in its parameters.
+      * パラメーター：`callback`
+         * 型：`function(inAppDuration, totalDuration, data)`
+         * パラメーターとして `inAppDuration`（数値）、`totalDuration`（数値）、`data`（コンテキストデータオブジェクト）を持つコールバックメソッド。
 
-            You can suppress the final hit from being sent by the SDK by returning `false` in your callback function.
+            コールバック関数で `false` を返すことによって、SDK が最終ヒットを送信しないようにすることができます。
       * このメソッドのコードサンプルを次に示します。
 
          ```objective-c
@@ -408,9 +408,9 @@ tvOS ライブラリが提供する TVJS メソッドの一覧を以下に示し
       ```
 
       * 戻り値：Bool
-      * パラメーター: `name`
-         * タイプ: `String`
-         * Name of the timed action for which you need to check existence.
+      * パラメーター：`name`
+         * 型：`String`
+         * 存在を確認する必要がある時間指定アクションの名前。
    * このメソッドのコードサンプルを次に示します。
 
 
@@ -427,7 +427,7 @@ tvOS ライブラリが提供する TVJS メソッドの一覧を以下に示し
 
    >[!TIP]
    >
-   >アプリがExperience Cloud 3.xから4.x SDKにアップグレードされた場合、以前にカスタムまたは自動生成された訪問者IDが取得され、カスタムユーザーIDとして保存されます。 これによって、SDK をアップグレードしても訪問者データが保持されます。4.x SDK を新規インストールした場合、ユーザー識別子は `nil` なので、トラッキング識別子が使用されます。詳しくは、以下の userIdentifier 行を参照してください。
+   >アプリを Experience Cloud 3.x から 4.x SDK にアップグレードした場合、以前のカスタムまたは自動生成された訪問者 ID が取得され、カスタムユーザー識別子として保存されます。これによって、SDK をアップグレードしても訪問者データが保持されます。4.x SDK を新規インストールした場合、ユーザー識別子は `nil` なので、トラッキング識別子が使用されます。詳しくは、以下の userIdentifier 行を参照してください。
 
    * このメソッドの構文を次に示します。
 
@@ -435,7 +435,7 @@ tvOS ライブラリが提供する TVJS メソッドの一覧を以下に示し
       trackingIdentifier()
       ```
 
-      * : `String`
+      * 戻り値：`String`
       * パラメーター：なし
    * このメソッドのコードサンプルを次に示します。
 
@@ -502,7 +502,7 @@ tvOS ライブラリが提供する TVJS メソッドの一覧を以下に示し
       ```
 
 
-## Audience Manager methods {#section_0155C4DF04644EDAAF6159C420A158DE}
+## Audience Manager メソッド{#section_0155C4DF04644EDAAF6159C420A158DE}
 
 * **audienceVisitorProfile**
 
@@ -554,7 +554,7 @@ tvOS ライブラリが提供する TVJS メソッドの一覧を以下に示し
       audienceDpuuid()
       ```
 
-      * : `String`
+      * 戻り値：`String`
       * パラメーター：なし
    * このメソッドのコードサンプルを次に示します。
 
@@ -574,11 +574,11 @@ tvOS ライブラリが提供する TVJS メソッドの一覧を以下に示し
       ```
 
       * 戻り値：なし
-      * パラメーター: `dpid`
-         * タイプ: `String`
+      * パラメーター：`dpid`
+         * 型：`String`
          * Audience Manager のデータプロバイダー ID。
-      * パラメーター: `dpuuid`
-         * タイプ: `String`
+      * パラメーター：`dpuuid`
+         * 型：`String`
          * ユーザーとデータプロバイダーの組み合わせに対する識別子。
    * このメソッドのコードサンプルを次に示します。
 
@@ -597,10 +597,10 @@ tvOS ライブラリが提供する TVJS メソッドの一覧を以下に示し
       audienceSignalWithDataJsCallback(traits [, callback])
       ```
 
-      * パラメーター: `traits`
+      * パラメーター：`traits`
          * 型：Object
          * このユーザーの特性辞書。
-      * パラメーター: `callback`
+      * パラメーター：`callback`
          * 型：function(profile)
          * コールバック関数のパラメーターに Audience Manager から返されたプロファイル。
    * このメソッドのコードサンプルを次に示します。
@@ -625,7 +625,7 @@ tvOS ライブラリが提供する TVJS メソッドの一覧を以下に示し
       ```
 
       * 戻り値：なし
-      * Parameter: None
+      * パラメータ：なし
    * このメソッドのコードサンプルを次に示します。
 
       ```objective-c
@@ -633,7 +633,7 @@ tvOS ライブラリが提供する TVJS メソッドの一覧を以下に示し
       ```
 
 
-## ID Service methods {#section_BEB6DA612EA4423FB354B65ECC941335}
+## ID サービスメソッド {#section_BEB6DA612EA4423FB354B65ECC941335}
 
 * **visitorMarketingCloudID**
 
@@ -665,9 +665,9 @@ tvOS ライブラリが提供する TVJS メソッドの一覧を以下に示し
       ```
 
       * 戻り値：なし
-      * パラメーター: `identifiers`
+      * パラメーター：`identifiers`
 
-         * タイプ: `Object`
+         * 型：`Object`
          * このユーザーの ID サービスに同期する識別子。
    * このメソッドのコードサンプルを次に示します。
 
@@ -687,10 +687,10 @@ tvOS ライブラリが提供する TVJS メソッドの一覧を以下に示し
       ```
 
       * 戻り値：なし
-      * パラメーター: `identifiers`
-         * タイプ: `Object`
+      * パラメーター：`identifiers`
+         * 型：`Object`
          * このユーザーの ID サービスに同期する識別子。
-      * パラメーター: `authState`
+      * パラメーター：`authState`
          * 型：ADBMobileVisitorAuthenticationState
          * ユーザーの認証状態。次の値を指定できます。
             * `ADBMobileVisitorAuthenticationStateUnknown`
@@ -714,15 +714,16 @@ tvOS ライブラリが提供する TVJS メソッドの一覧を以下に示し
       visitorSyncIdentifierWithTypeIdentifierAuthenticationState(idType, identifier, authState)
       ```
 
-      * Return: N/A
-      * パラメーター: `idType`
-         * タイプ: `String`
+      * 戻り値：なし
+      * パラメーター：`idType`
+         * 型：`String`
          * 同期する識別子の型。
-      * パラメーター: `identifier`
-         * タイプ: `String`
+      * パラメーター：`identifier`
+         * 型：`String`
          * 同期する識別子の値。
-      * パラメーター: `authState`
-         * タイプ：ユーザーのADBMobileVisitorAuthenticationStateAuthentication状態。 指定できる値には以下のものがあります。
+      * パラメーター：`authState`
+         * 型：ADBMobileVisitorAuthenticationState
+ユーザーの認証状態。指定できる値には以下のものがあります。
             * `ADBMobileVisitorAuthenticationStateUnknown`
             * `ADBMobileVisitorAuthenticationStateAuthenticated`
             * `ADBMobileVisitorAuthenticationStateLoggedOut`
@@ -752,7 +753,7 @@ tvOS ライブラリが提供する TVJS メソッドの一覧を以下に示し
       visitorGetIDsJs()
       ```
 
-      * : `Array [Object]`
+      * 戻り値：`Array [Object]`
 
       * パラメーター：なし
    * このメソッドのコードサンプルを次に示します。
@@ -774,7 +775,7 @@ tvOS ライブラリが提供する TVJS メソッドの一覧を以下に示し
       targetThirdPartyID()
       ```
 
-      * : `String`
+      * 戻り値：`String`
       * パラメーター：なし
    * このメソッドのコードサンプルを次に示します。
 
@@ -794,8 +795,8 @@ tvOS ライブラリが提供する TVJS メソッドの一覧を以下に示し
       ```
 
       * 戻り値：なし
-      * パラメーター: `thirdPartyID`
-         * タイプ: `String`
+      * パラメーター：`thirdPartyID`
+         * 型：`String`
          * Target リクエストに使用するサードパーティ ID。
    * このメソッドのコードサンプルを次に示します。
    ```objective-c
@@ -812,7 +813,7 @@ tvOS ライブラリが提供する TVJS メソッドの一覧を以下に示し
       targetPcID()
       ```
 
-      * : `String`
+      * 戻り値：`String`
       * パラメーター：なし
    * このメソッドのコードサンプルを次に示します。
 
@@ -831,7 +832,7 @@ tvOS ライブラリが提供する TVJS メソッドの一覧を以下に示し
       targetSessionID()
       ```
 
-      * : `String`
+      * 戻り値：`String`
       * パラメーター：なし
    * このメソッドのコードサンプルを次に示します。
 
