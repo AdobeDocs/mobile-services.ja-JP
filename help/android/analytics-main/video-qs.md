@@ -1,13 +1,13 @@
 ---
 description: ビデオ測定ソリューションを使用して Android でビデオを測定する方法について説明します。
-keywords: android;library;mobile;sdk
+keywords: Android, ライブラリ, モバイル, SDK
 seo-description: ビデオ測定ソリューションを使用して Android でビデオを測定する方法について説明します。
 seo-title: ビデオ分析
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: ビデオ分析
 topic: 開発者と導入
 uuid: a137cc27-dc28-48c0-b08e-2ca17d2c7e1d
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
 
 ---
@@ -19,11 +19,11 @@ source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
 
 >[!TIP]
 >
->ビデオの再生中に、頻繁な「ハートビート」コールが送信され、再生時間を測定します。これらのハートビート呼び出しは、10 秒ごとに送信されるので、ビデオエンゲージメント指標やビデオフォールアウトレポートがより正確になります。アドビのビデオ測定ソリューションについて詳しくは、「Adobe Analyticsでのオ [ーディオとビデオの測定」を参照してください](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html)。
+>ビデオの再生中に、頻繁な「ハートビート」コールが送信され、再生時間を測定します。これらのハートビート呼び出しは、10 秒ごとに送信されるので、ビデオエンゲージメント指標やビデオフォールアウトレポートがより正確になります。アドビのビデオ測定ソリューションについて詳しくは、「[Adobe Analytics でのオーディオとビデオの測定](https://docs.adobe.com/content/help/ja-JP/media-analytics/using/media-overview.html)」を参照してください。
 
-ビデオを測定する一般的なプロセスは、どのプラットフォームでも同様です。ここでは、開発者タスクの概要とコードサンプルを提示します。次の表に、Analytics に送信されるメディアデータのリストを示します。処理ルールは、コンテキストデータをAnalytics変数にマップするために使用されます。
+ビデオを測定する一般的なプロセスは、どのプラットフォームでも同様です。ここでは、開発者タスクの概要とコードサンプルを提示します。次の表に、Analytics に送信されるメディアデータのリストを示します。処理ルールは、コンテキストデータを Analytics 変数にマッピングするために使用されます。
 
-## Map player events to Analytics variables {#section_E84987F878AB4A3A83AE700FEC4C9D4D}
+## プレーヤーイベントの Analytics 変数へのマッピング {#section_E84987F878AB4A3A83AE700FEC4C9D4D}
 
 * **a.media.name**
    * 変数型：eVar
@@ -33,20 +33,20 @@ source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
    * （**オプション**）カスタムインサイト変数は、ビデオパス情報を提供します。
 
 * **a.media.name**
-   * 変数型：カスタムインサイト(s.prop)
+   * 変数タイプ：カスタムインサイト（s.prop）
    * （**オプション**）ビデオパス情報を提供します。
 
       >[!IMPORTANT]
       >
-      >この変数に対してExpCareによってパスが有効にされている必要があります。
+      >この変数に対して、ExpCare でパスを有効にする必要があります。
    * イベントタイプ：カスタムインサイト（s.prop）
 
 * **a.media.segment**
-   * Variable type: eVar
+   * 変数型：eVar
    * デフォルトの有効期限：ページビュー
    * （**必須**）セグメント名や、ビデオ内でのセグメントの発生順序を含め、ビデオセグメントデータを収集します。
 
-      この変数を入力するには、プレーヤーイベントを自動的に追跡する場合に `segmentByMilestones` 変数を有効にするか、プレーヤーイベントを手動で追跡する場合にカスタムセグメント名を設定します。For example, when a visitor views the first segment in a video, SiteCatalyst might collect the following in the Segments eVar: `1:M:0-25`.
+      この変数を入力するには、プレーヤーイベントを自動的に追跡する場合に `segmentByMilestones` 変数を有効にするか、プレーヤーイベントを手動で追跡する場合にカスタムセグメント名を設定します。例えば、訪問者がビデオの最初のセグメントを表示すると、SiteCatalyst によって Segments eVar に次の情報が収集されます`1:M:0-25`。
 
       デフォルトのビデオデータ収集メソッドでは、次の時点のデータが収集されます。
 
@@ -57,40 +57,40 @@ source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
 
 
 * **a.contentType**
-   * Variable type: eVar
+   * 変数型：eVar
    * デフォルトの有効期限：ページビュー
    * 訪問者によって閲覧されたコンテンツのタイプに関するデータを収集します。
 
       ビデオ指標によって送信されるヒットには、`video` というコンテンツタイプが割り当てられます。ビデオ指標の見地からすると、**コンテンツタイプ**&#x200B;を使用することで、ビデオ訪問者を識別して、ビデオのコンバージョン率を計算できます。
 
 * **a.media.timePlayed**
-   * Variable type: Event
+   * 変数型：イベント
    * タイプ：カウンター
    * 前回のデータ収集プロセス（イメージリクエスト）以降のビデオ視聴秒数をカウントします。
 
 * **a.media.view**
-   * Variable type: Event
+   * 変数型：イベント
    * タイプ：カウンター
    * 訪問者がビデオの一部を視聴したことを示します。
 
       ただし、訪問者がビデオを視聴した時間や視聴した部分に関する情報は提供されません。
 
 * **a.media.segmentView**
-   * Variable type: Event
+   * 変数型：イベント
    * タイプ：カウンター
    * 訪問者がビデオセグメントの一部を視聴したことを示します。
 
       ただし、訪問者がビデオを視聴した時間や視聴した部分に関する情報は提供されません。
 
 * **a .media.complete**
-   * Variable type: Event
+   * 変数型：イベント
    * タイプ：カウンター
    * ユーザーがビデオを最後まで視聴したことを示します。
 
       デフォルトでは、完了イベントはビデオが終了する 1 秒前に測定されます。実装時に、表示完了と見なすビデオの終わりからの秒数を指定できます。終了が定義されていないライブビデオやその他のストリーミングでは、完了を測定するカスタムポイントを指定できます（例えば、一定の時間視聴した後）。
 
 
-## Configure media settings {#section_929945D4183C428AAF3B983EFD3E2500}
+## メディア設定の指定 {#section_929945D4183C428AAF3B983EFD3E2500}
 
 ビデオの追跡に使用したい設定で `MediaSettings` オブジェクトを設定します。
 
@@ -98,9 +98,9 @@ source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
 MediaSettings mySettings = Media.settingsWith("name", 10, "playerName", "playerId");
 ```
 
-## Track player events {#section_C7F43AECBC0D425390F7FCDF3035B65D}
+## プレーヤーイベントの追跡 {#section_C7F43AECBC0D425390F7FCDF3035B65D}
 
-To measure video playback, the `mediaPlay`, `mediaStop`, and `mediaClose` methods need to be called at the appropriate times. 例えば、プレーヤーが一時停止したときは、`mediaStop` を呼び出します。再生が開始または再開された場合は `mediaPlay` が呼び出されます。
+ビデオの再生を測定するには、`mediaPlay`、`mediaStop` および `mediaClose` メソッドを適切なときに呼び出す必要があります。例えば、プレーヤーが一時停止したときは、`mediaStop` を呼び出します。再生が開始または再開された場合は `mediaPlay` が呼び出されます。
 
 ## クラス {#section_16838332727348F990305C0C6B0D795C}
 
@@ -149,9 +149,9 @@ public boolean ad;
 public boolean eventFirstTime;
 ```
 
-## Media Measurement class and method reference {#section_50DF9359A7B14DF092634C8E913C77FE}
+## メディア測定クラスとメソッドのリファレンス {#section_50DF9359A7B14DF092634C8E913C77FE}
 
-Here are the methods in the Media Measurement class:
+Media Measurement クラスのメソッドを次に示します。
 
 * **settingsWith**
 
@@ -248,7 +248,7 @@ Here are the methods in the Media Measurement class:
       public static void stop(String name, double offset); 
       ```
 
-   * 次に、コードサンプルまたはこのメソッドを示します。
+   * このメソッドのコードサンプルを次に示します。
 
       ```java
       Media.stop("name", 0);
