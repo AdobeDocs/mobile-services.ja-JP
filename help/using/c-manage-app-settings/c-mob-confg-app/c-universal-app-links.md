@@ -1,158 +1,158 @@
 ---
-description: ユニバーサルリンク(iOS)およびアプリリンク(Android)を使用すると、iOSまたはAndroidアプリでディープリンクに接続できます。
+description: ユニバーサルリンク（iOS）およびアプリリンク（Android）を使用すると、iOS または Android アプリでディープリンクに接続できます。
 keywords: モバイル
-seo-description: ユニバーサルリンク(iOS)およびアプリリンク(Android)を使用すると、iOSまたはAndroidアプリでディープリンクに接続できます。
-seo-title: Apple Universal LinksとAndroid App Links
-solution: Marketing Cloud,Analytics
-title: Apple Universal LinksとAndroid App Links
+seo-description: ユニバーサルリンク（iOS）およびアプリリンク（Android）を使用すると、iOS または Android アプリでディープリンクに接続できます。
+seo-title: Apple ユニバーサルリンクと Android アプリリンク
+solution: Experience Cloud,Analytics
+title: Apple ユニバーサルリンクと Android アプリリンク
 topic: 指標
 uuid: 8d6441dc-4307-4454-95ea-d77ec796f918
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e65add089499f728827321e96e439f04ebb19a73
 
 ---
 
 
-# Apple Universal Links and Android App Links{#universal-links-and-app-links}
+# Apple ユニバーサルリンクと Android アプリリンク{#universal-links-and-app-links}
 
-Universal Links (iOS) and App Links (Android) allow you to connect to deep links in your iOS or Android apps.
+ユニバーサルリンク（iOS）およびアプリリンク（Android）を使用すると、iOS または Android アプリでディープリンクに接続できます。
 
 >[!IMPORTANT]
 >
->Starting with iOS 9.2, deep linking is not supported. You must use Apple Universal Links for deep linking to your app or website.
+>iOS 9.2 以降では、ディープリンクはサポートされていません。アプリまたは Web サイトへのディープリンクには、Apple ユニバーサルリンクを使用する必要があります。
 
 ## ユニバーサルリンク {#section_F8147944679A42E59CF4FD8814E5EF12}
 
-Universal Links allow you to connect to deep links in your iOS app and are supported in iOS 9.2 or later. ユニバーサルリンクにアクセスすると、iOSはアプリ内のディープリンクに直接リダイレクトします。 アプリがインストールされていない場合は、代わりにブラウザーでWebサイトのURLが開かれます。 ユニバーサルリンクについて詳しくは、「ユニバーサルリンクのサ [ポート」を参照してくださ](https://developer.apple.com/library/content/documentation/General/Conceptual/AppSearch/UniversalLinks.html)い。
+ユニバーサルリンクを使用すると、iOS アプリ内のディープリンクに接続できます（iOS 9.2 以降でサポートされます）。ユニバーサルリンクにアクセスすると、iOS はリンクをアプリ内のディープリンクに直接リダイレクトします。アプリがインストールされていない場合は、代わりにブラウザーで Web サイトの URL が開きます。ユニバーサルリンクについて詳しくは、「[Support Universal Links（ユニバーサルリンクのサポート）](https://developer.apple.com/library/content/documentation/General/Conceptual/AppSearch/UniversalLinks.html)」を参照してください。
 
 ## アプリリンク
 
-「アプリリンク」を使用すると、Androidアプリ内のディープリンクに接続でき、Android 6.0以降でサポートされます。 アプリリンクにアクセスすると、Androidはアプリ内のディープリンクに直接リダイレクトします。 アプリがインストールされていない場合は、代わりにブラウザーでWebサイトのURLが開かれます。 For more information about App Links, see the [Handling Android App Links](https://developer.android.com/training/app-links/index.html).
+アプリリンクを使用すると、Android アプリ内のディープリンクに接続できます（Android 6.0 以降でサポートされます）。アプリリンクにアクセスすると、Android はアプリ内のディープリンクに直接リダイレクトします。アプリがインストールされていない場合は、代わりにブラウザーで Web サイトの URL が開きます。アプリリンクについて詳しくは、[Android アプリリンクの処理](https://developer.android.com/training/app-links/index.html)を参照してください。
 
 ## ユニバーサルリンクまたはアプリリンクを使用したマーケティングリンクの作成 {#section_609ADEFFB9B441C4A8C45E936D0DC859}
 
 ユニバーサルリンクまたはアプリリンクを使用するマーケティングリンクを作成できます。
 
-### Configure a Universal Link
+### ユニバーサルリンクの設定
 
-1. iOSアプリでユニバーサルリンクを設定するには、「Appleでのユニバーサルリ [ンクの処理」に進みます](https://developer.apple.com/documentation/uikit/inter-process_communication/allowing_apps_and_websites_to_link_to_your_content/handling_universal_links)。
+1. iOS アプリでユニバーサルリンクを設定するには、「[Apple でのユニバーサルリンクの処理](https://developer.apple.com/documentation/uikit/inter-process_communication/allowing_apps_and_websites_to_link_to_your_content/handling_universal_links)」に進みます。
 
-2. Adobe Mobile Servicesで、サイト関連ドキュメントを設定します。
+2. Adobe Mobile Services で関連ドキュメントを設定します。
 
-   a.Mobile Servicesホームページで、ユニバーサルリンクを設定するアプリを選択します。
+   Mobile Services ホームページで、ユニバーサルリンクを設定するアプリを選択します。
 
-   b. Click **[!UICONTROL Manage App Settings]**.
+   b. **[!UICONTROL アプリ設定]** をクリックします。
 
-   c.ユニバーサルリンクを処理するiOSアプリが「App Storeアプリを追加」セクションに追加さ **[!UICONTROL れていることを確認します]** 。
+   c. ユニバーサルリンクを処理する iOS アプリが **[!UICONTROL アプリストアのアプリを追加]** セクションに追加されたことを確認します。
 
    >[!TIP]
    >
-   >If the Add App Store Apps section does not display, click the Add App Store App link.********
+   >**[!UICONTROL アプリストアのアプリを追加]** セクションが表示されない場合は、**[!UICONTROL アプリストアのアプリを追加]** リンクをクリックしす。
 
-   d. In the Universal Links and App Links Options section, select an iOS app and type the App ID.****
+   d. **[!UICONTROL ユニバーサルリンクとアプリリンクのオプション]** セクションで、iOS アプリを選択してアプリ ID を入力します。
 
-   f.Click Save.****
+   f. **[!UICONTROL 保存]** をクリックします。
 
-   You must provide at least one iOS app selection and one App ID, or you will receive an error.
+   iOS アプリを 1 つ以上とアプリ ID を 1 つ提供する必要があります。提供できない場合はエラーが発生します。
 
    >[!IMPORTANT]
    >
-   >「ユニバーサルリンクとアプリリンクのオプション」セクションの「更新」をクリックするとドキュメントを更新できます。However, when you click **[!UICONTROL Update]**, a warning notifies you that all Universal Links or App Links that you created in the past will be affected.
+   >「ユニバーサルリンクとアプリリンクのオプション」セクションの「更新」をクリックするとドキュメントを更新できます。ただし、**[!UICONTROL 更新]** をクリックすると、それまでに作成したすべてのユニバーサルリンク／アプリリンクに影響するという警告が表示されます。
 
 ### ユニバーサルリンクの使用
 
-1. In Adobe Mobile Services, create a Marketing Link that uses Universal Links:
+1. Adobe Mobile Services で、ユニバーサルリンクを使用するマーケティングリンクを作成します。
 
-   a. Select the app from the Mobile Services home page, click **[!UICONTROL Acquisition]** &gt; **[!UICONTROL Marketing Link Builder]**.
+   Mobile Services ホームページでアプリを選択し、**[!UICONTROL 獲得]**／**[!UICONTROL マーケティングリンクビルダー]**&#x200B;をクリックします。
 
-   b.「新規作 **[!UICONTROL 成」をクリックします]**。
+   b. **[!UICONTROL 新規作成]** をクリックします。
 
-   c. Under **[!UICONTROL Marketing Link Options]**, select **[!UICONTROL Use Universal Links or App Links]**.
+   c. **[!UICONTROL マーケティングリンクオプション]** で、**[!UICONTROL ユニバーサルリンクまたはアプリリンクを使用]** を選択します。
 
-   d.上記の「Adobe Mobile Servicesでのサイト関連ドキュメントの設定」でサ *イト関連ドキュメントを設定した場合* 、このオプションはデフォルトで選択されています。
+   d. 「*Adobe Mobile Services でサイト関連のドキュメントを設定する*」セクションでサイト関連ドキュメントを設定した場合、このオプションはデフォルトで選択されます。
 
-   ドキュメントを設定しなかった場合、「ユニバーサルリンク **[!UICONTROL またはアプリリンクを使用]** 」オプションが無効になり、「インタースティ **[!UICONTROL シャルを使用]** 」がデフォルトで選択されます。
+   ドキュメントを設定していない場合、**[!UICONTROL ユニバーサルリンクまたはアプリリンクを使用]** オプションが無効化され、デフォルトで **[!UICONTROL インタースティシャルを使用]** が選択されます。
 
-   e.「ユニバーサル **[!UICONTROL リンクまたはアプリリンクを使用]** 」オプションが選択されている場合は、「カス **[!UICONTROL タムパス]** 」フィールドが表示されます。
+   e. **[!UICONTROL ユニバーサルリンクまたはアプリリンクを使用]** オプションが選択されている場合は、**[!UICONTROL カスタムパス]** フィールドが表示されます。
 
-   このフィールドでは、クエリパラメーターと共に、ドメインに続いて URL パスを定義できます。例えば、「 に設 `my/universal/link?os=9.2`定されている場合、完全なマーケティングリンクURLが表示され `https://[marketing link domain]/my/universal/link?[AMS default query parameters]&os=9.2`ます。
+   このフィールドでは、クエリパラメーターと共に、ドメインに続いて URL パスを定義できます。例えば、「`my/universal/link?os=9.2`」と入力すると、完全なマーケティングリンク URL は `https://[marketing link domain]/my/universal/link?[AMS default query parameters]&os=9.2` になります。
 
-   f. Click the Decisions tab and configure your decision tree.****
+   f. **[!UICONTROL 決定]** タブをクリックし、デシジョンツリーを設定します。
 
-   h.iOSアプリがインストールされている場合、アプリはそのロジックでディープリンクを処理します。 最終的な宛先は、アプリがインストールされていない場合のフォールバックとしてのみ機能します。 アプリがインストールされていないので、最終的なリンク先はWebリンクまたはアプリストアのみにすることができます。
+   h. iOS アプリがインストールされている場合、ディープリンクはアプリのロジックで処理されます。最終的な宛先は、アプリがインストールされていない場合のフォールバックとしてのみ機能します。アプリがインストールされていないので、最終的な宛先に指定できるのは Web リンクまたはアプリストアのみです。
 
-   i.「保存」をク **[!UICONTROL リックしま]**&#x200B;す。
+   i. **[!UICONTROL 保存]** をクリックします。
 
 >[!TIP]
 >
->マーケティングリンクを保存すると、マーケティングリンクオプションを変更できなくなります。 これは、既に配布されている可能性のあるマーケティングリンクの動作を変更しないためです。
+>マーケティングリンクが保存されると、「マーケティングリンクオプション」は変更できなくなります。これは、既に配布されたマーケティングリンクの動作が変化しないようにするためです。
 
 
 ### アプリリンクの設定
 
-1. To set up App Links in your Android app, go to Add Android App Links.[](https://developer.android.com/studio/write/app-link-indexing)
+1. Android アプリでアプリリンクを設定するには、「[Android アプリリンクの追加](https://developer.android.com/studio/write/app-link-indexing)」に移動します。
 
-1. Adobe Mobile Servicesで、サイト関連ドキュメントを設定します。
+1. Adobe Mobile Services で関連ドキュメントを設定します。
 
-   a.Mobile Servicesホームページで、アプリリンクを設定するアプリを選択します。
+   a. Mobile Services ホームページで、アプリリンクを設定するアプリを選択します。
 
-   b. Click **[!UICONTROL Manage App Settings]**.
+   b. **[!UICONTROL アプリ設定]** をクリックします。
 
-   c. Ensure the Android app that handles Universal Links or App Links is added to the Add App Store Apps section.****
+   c. ユニバーサルリンクまたはアプリリンクを処理する Android アプリが **[!UICONTROL アプリストアのアプリを追加]** セクションに追加されたことを確認します。
 
    >[!TIP]
    >
-   >If this section does not display, click the **[!UICONTROL Add App Store App]** link.
+   >このセクションが表示されない場合、**[!UICONTROL アプリストアのアプリを追加]** リンクをクリックします。
 
-   d.「ユニバーサルリンクとア **[!UICONTROL プリリンクのオプション」セクションまでスクロールしま]** す。
+   d.**[!UICONTROL ユニバーサルリンクとアプリリンクのオプション]** セクションまでスクロールします。
 
-   e.「アプリリン **[!UICONTROL ク(Android)」タブをクリックします]** 。
+   e. **[!UICONTROL アプリリンク（Android）]** タブをクリックします。
 
-   f.Androidアプリを選択し、SHA-256証明書指紋を入力します。
+   f. Android アプリを選択し、SHA-256 証明書フィンガープリントを入力します。
 
-   g.「保存」をク **[!UICONTROL リックしま]**&#x200B;す。
+   g. **[!UICONTROL 保存]** をクリックします。
 
-   少なくとも1つのAndroidアプリと1つのSHA-256証明書を指定する必要があります。指定しないと、エラーが表示されます。
+   Android アプリを 1 つ以上と SHA-256 証明書を提供する必要があります。提供できない場合はエラーが発生します。
 
    >[!IMPORTANT]
    >
-   >「**[!UICONTROL ユニバーサルリンクとアプリリンクのオプション]」セクションの「****更新[!UICONTROL 」をクリックするとドキュメントを更新できます。]** However, when you click **[!UICONTROL Update]**, a warning notifies you that all Universal Links or App Links that you created in the past will be affected.
+   >**[!UICONTROL ユニバーサルリンクとアプリリンクのオプション]**&#x200B;セクションの&#x200B;**[!UICONTROL 更新]**&#x200B;をクリックするとドキュメントを更新できます。ただし、**[!UICONTROL 更新]** をクリックすると、それまでに作成したすべてのユニバーサルリンク／アプリリンクに影響するという警告が表示されます。
 
 ### アプリリンクの使用
 
-1. Adobe Mobile Servicesで、「アプリリンク」を使用するマーケティングリンクを作成します。
+1. Adobe Mobile Services で、アプリリンクを使用するマーケティングリンクを作成します。
 
-   a. Select the app from the Mobile Services home page, click **[!UICONTROL Acquisition]** &gt; **[!UICONTROL Marketing Link Builder]**.
+   Mobile Services ホームページでアプリを選択し、**[!UICONTROL 獲得]**／**[!UICONTROL マーケティングリンクビルダー]**&#x200B;をクリックします。
 
-   b. Click Create New.****
+   b. **[!UICONTROL 新規作成]** をクリックします。
 
-   c. In the Marketing Link Options section, select Use Universal Links or App Links.********
+   c. **[!UICONTROL マーケティングリンクオプション]** セクションで、**[!UICONTROL ユニバーサルリンクまたはアプリリンクを使用]** を選択します。
 
-   d.手順2でサイト関連ドキュメントを設定した場合、このオプションはデフォルトで選択されています。
+   d. 手順 2 でサイト関連ドキュメントを設定した場合、このオプションはデフォルトで選択されます。
 
-   If not, the **[!UICONTROL Use Universal Links or App Links]** option is disabled, and **[!UICONTROL Use Interstitials]** is selected by default.
+   そうでない場合、**[!UICONTROL ユニバーサルリンクまたはアプリリンクを使用]** オプションは無効になっていて、デフォルトで **[!UICONTROL インタースティシャルを使用]** が選択されます。
 
-   e. If Use Universal Links or App Links is selected, the Custom Path field is displayed.********
+   e. **[!UICONTROL ユニバーサルリンクまたはアプリリンクを使用]** が選択されている場合は、**[!UICONTROL カスタムパス]** フィールドが表示されます。
 
-   このフィールドでは、クエリパラメーターと共に、ドメインに続いて URL パスを定義できます。例えば、「 に設 `my/app/link?os=6.0`定されている場合、完全なマーケティングリンクURLが表示され `https://[marketing link domain]/my/app/link?[AMS default query parameters]&os=6.0`ます。
+   このフィールドでは、クエリパラメーターと共に、ドメインに続いて URL パスを定義できます。例えば、「`my/app/link?os=6.0`」と入力すると、完全なマーケティングリンク URL は `https://[marketing link domain]/my/app/link?[AMS default query parameters]&os=6.0` になります。
 
-   f. Click the Decisions tab and configure your decision tree.****
+   f. **[!UICONTROL 決定]** タブをクリックし、デシジョンツリーを設定します。
 
-   g. If the Android app is installed, the app handles the deeplink with its logic.
+   ｇ. Android アプリがインストールされている場合、ディープリンクはアプリのロジックで処理されます。
 
-   The final destination serves only as the fallback case for when the app is not installed. アプリがインストールされていないので、最終的なリンク先はWebリンクまたはアプリストアのみにすることができます。
+   最終的な宛先は、アプリがインストールされていない場合のフォールバックケースとしてのみ機能します。アプリがインストールされていないので、最終的な宛先に指定できるのは Web リンクまたはアプリストアのみです。
 
-   h.「保存」をク **[!UICONTROL リックしま]**&#x200B;す。
+   h. **[!UICONTROL 保存]** をクリックします。
 
 >[!TIP]
 >
->After a Marketing Link is saved, the **[!UICONTROL Marketing Links Options]** cannot be altered. This is because you do not want to change the behavior of the Marketing Links that may have already been distributed.
+>マーケティングリンクを保存すると、**[!UICONTROL マーケティングリンクオプション]** は変更できなくなります。これは、既に配布されたマーケティングリンクの動作が変化しないようにするためです。
 
 ## マーケティングリンクの使用
 
-これらのマーケティングリンクは、メッセージングやアプリ内の他の領域で使用できるようになりました。
+これらのマーケティングリンクを、メッセージやアプリ内の他の領域で使用できるようになりました。
 
 >[!IMPORTANT]
 >
->ユニバーサルリンクまたはアプリリンクを使用したクリック追跡カウントは表示されず、インタースティシャルも使用できません。
+>ユニバーサルリンクまたはアプリリンクを使用したクリックの追跡カウントは表示されず、インタースティシャルも使用できません。
 
