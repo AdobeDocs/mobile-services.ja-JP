@@ -4,7 +4,7 @@ seo-description: データ管理事業者は Experience Cloud Mobile SDK で提�
 seo-title: プライバシーと一般データ保護規則
 title: プライバシーと一般データ保護規則
 uuid: 69bb82de-1993-440c-a1b0-8d37919b48b6
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: b690ec677cf5aedfb2673b707f82716af1851124
 
 ---
@@ -16,16 +16,16 @@ source-git-commit: b690ec677cf5aedfb2673b707f82716af1851124
 
 >[!IMPORTANT]
 >
->GDPR is supported **only** in Mobile SDK version 4.16.0 or later.
+>GDPR は Mobile SDK バージョン 4.16.0 以降で&#x200B;**のみ**&#x200B;サポートされています。
 
-## 新しいAdobe Experience Platform Mobile SDKリリース
+## 新しい Adobe Experience Platform Mobile SDK リリース
 
 Adobe Experience Platform Mobile SDK に関する情報やドキュメントをお探しの場合、最新のドキュメントについては、[こちら](https://aep-sdks.gitbook.io/docs/)をクリックしてください。
 
-2018 年 9 月に、SDK の新しいメジャーバージョンをリリースしました。これらの新しい Adobe Experience Platform Mobile SDK は、[Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) から設定できます。
+2018 年 9 月に、SDK の新しいメジャーバージョンをリリースしました。これらの新しい Adobe Experience Platform Mobile SDK は、[Experience Platform Launch](https://www.adobe.com/jp/experience-platform/launch.html) から設定できます。
 
-* To get started, go to Adobe Experience Platform Launch.
-* Experience Platform SDK リポジトリの内容については、[Github：Adobe Experience Platform SDKs](https://github.com/Adobe-Marketing-Cloud/acp-sdks) を参照してください。
+* 開始するには、Adobe Experience Platform Launch に移動します。
+* Experience Platform SDK リポジトリの内容については、[Github: Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks) を参照してください。
 
 ## 概要
 
@@ -37,16 +37,16 @@ Adobe Experience Platform Mobile SDK に関する情報やドキュメントを�
 
 * SDK からデータを取得してサーバーに送信するには、`getAllIdentifiersAsync` メソッドを使用します。
 
-   詳しくは、「格納されたIDの取 [得」を参照してください](/help/ios/c-mob-privacy-gdpr-ios/c-mob-gdpr-ret-stored-ids-ios.md)。
+   詳しくは、「[保存されている ID の取得](/help/ios/c-mob-privacy-gdpr-ios/c-mob-gdpr-ret-stored-ids-ios.md)」を参照してください。
 
 * オプトステータスを設定して GDPR データ削除要求を処理するには、次の設定を使用します。
 
    * `privacyDefault`
    * `setPrivacyStatus`
-   詳しくは、ユーザーのオプ [トステータスの設定を参照してください](/help/ios/c-mob-privacy-gdpr-ios/privacy.md)。
+   詳しくは、「[ユーザーのオプトステータスの設定](/help/ios/c-mob-privacy-gdpr-ios/privacy.md)」を参照してください。
 
 ## 追加情報 {#section_7C7124C50D85469C8C8714533FB1A37D}
 
-* GDPR について詳しくは、[GDPR とビジネス](https://www.adobe.com/privacy/general-data-protection-regulation.html)を参照してください。
+* GDPR について詳しくは、[GDPR とビジネス](https://www.adobe.com/jp/privacy/general-data-protection-regulation.html)を参照してください。
 * GDPR API ドキュメントについて詳しくは、[一般データ保護規則 API](https://adobe.io/apis/cloudplatform/gdpr.html) を参照してください。
 
