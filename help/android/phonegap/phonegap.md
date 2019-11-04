@@ -1,29 +1,29 @@
 ---
 description: このプラグインを使用すると、PhoneGap プロジェクトから Android AppMeasurement コールを送信できます。
-keywords: android;library;mobile;sdk
+keywords: Android, ライブラリ, モバイル, SDK
 seo-description: このプラグインを使用すると、PhoneGap プロジェクトから Android AppMeasurement コールを送信できます。
-seo-title: PhoneGapプラグインの概要
-solution: Marketing Cloud,Analytics
-title: PhoneGapプラグインの概要
+seo-title: PhoneGap プラグインの概要
+solution: Experience Cloud,Analytics
+title: PhoneGap プラグインの概要
 topic: 開発者と導入
 uuid: c5c32357-d8df-458a-b0e8-e0c56040241d
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1c387b063eedb41a52e044dc824df6a51f173ad2
 
 ---
 
 
-# PhoneGapプラグインの概要 {#phonegap-plug-in}
+# PhoneGap プラグインの概要 {#phonegap-plug-in}
 
-このプラグインを使用すると、PhoneGap プロジェクトから Android AppMeasurement コールを送信できます。PhoneGapプロジェクトを作成するには、PhoneGapを参照して [ください](https://helpx.adobe.com/experience-manager/6-4/mobile/using/phonegap.html)。
+このプラグインを使用すると、PhoneGap プロジェクトから Android AppMeasurement コールを送信できます。PhoneGap プロジェクトを作成するには、[PhoneGap](https://helpx.adobe.com/jp/experience-manager/6-4/mobile/using/phonegap.html) を参照してください。
 
-## 新しいAdobe Experience Platform Mobile SDKリリース
+## 新しい Adobe Experience Platform Mobile SDK リリース
 
 Adobe Experience Platform Mobile SDK に関する情報やドキュメントをお探しの場合、最新のドキュメントについては、[こちら](https://aep-sdks.gitbook.io/docs/)をクリックしてください。
 
-2018 年 9 月に、SDK の新しいメジャーバージョンをリリースしました。これらの新しい Adobe Experience Platform Mobile SDK は、[Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) から設定できます。
+2018 年 9 月に、SDK の新しいメジャーバージョンをリリースしました。これらの新しい Adobe Experience Platform Mobile SDK は、[Experience Platform Launch](https://www.adobe.com/jp/experience-platform/launch.html) から設定できます。
 
-* 開始するには、Adobe Experience Platform Launchに移動します。
+* 開始するには、Adobe Experience Platform Launch に移動します。
 * Experience Platform SDK リポジトリの内容については、[Github: Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks) を参照してください。
 
 
@@ -35,19 +35,19 @@ Adobe Experience Platform Mobile SDK に関する情報やドキュメントを�
 cordova plugin add adobe-mobile-services
 ```
 
-## プラグインの手動インストール {#section_EA1FD59C484D44878AB509954DEE6037}
+## プラグインの手動インストール{#section_EA1FD59C484D44878AB509954DEE6037}
 
 ## プラグインの取り込み
 
-1. ファイルをフォ `ADBMobile_PhoneGap.java` ルダーにドラッグ `src` します。
+1. `ADBMobile_PhoneGap.java` ファイルを `src` フォルダーにドラッグします。
 
-   To move this file, click **[!UICONTROL OK]**.
+   このファイルを移動するには、**[!UICONTROL OK]**&#x200B;をクリックします。
 
-1. ファイルを、そ `ADB_Helper.js` のファイルを含むフォルダーにドラッグしま `index.html` す。
+1. `ADB_Helper.js` ファイルを、`index.html` ファイルを含むフォルダーにドラッグします。
 
-   To move this file, click **[!UICONTROL OK]**.
+   このファイルを移動するには、**[!UICONTROL OK]**&#x200B;をクリックします。
 
-1. In the `res/xml` folder, open the `config.xml` file and register an new plugin by adding the following:
+1. `res/xml` フォルダーで、`config.xml` を開き、以下の行を追加して新しいプラグインを登録します。
 
    ```xml
    <feature name="ADBMobile_PhoneGap"> 
@@ -61,19 +61,19 @@ cordova plugin add adobe-mobile-services
    <param name="android-package" value="com.example.phonegaptest.ADBMobile_PhoneGap" />
    ```
 
-## AppMeasurementライブラリを含める
+## AppMeasurement ライブラリの取り込み
 
-1. To download the AppMeasurement library, see [Get the SDK](/help/android/getting-started/dev-qs.md).
-1. ファイルをフォ `adobeMobileLibrary.jar` ルダーにドラッグ `src` します。
+1. AppMeasurement ライブラリをダウンロードするには、「[SDK の取得](/help/android/getting-started/dev-qs.md)」を参照してください。
+1. `adobeMobileLibrary.jar` ファイルを `src` フォルダーにドラッグします。
 
-   To move this file, click **[!UICONTROL OK]**.
+   このファイルを移動するには、**[!UICONTROL OK]**&#x200B;をクリックします。
 
-1. Right-click the `adobeMobileLibrary.jar file and select **[!UICONTROL Add as Library]**.
+1. 「adobeMobileLibrary.jar」ファイルを右クリックし、**[!UICONTROL ライブラリとして追加]**&#x200B;を参照してください。
 1. プロジェクトの要件に基づいて、ライブラリの名前、レベルおよび位置を入力します。
-1. Drag the `ADBMobileConfig.json` file to your `assets` folder in the application root.
+1. `ADBMobileConfig.json` ファイルを、アプリケーションルートの `assets` フォルダーにドラッグします。
 1. アプリケーション内のアプリケーション&#x200B;**ではなく**、ルートアプリケーションを選択していることを確認します。
 
-   To move this file, click **[!UICONTROL OK]**.
+   このファイルを移動するには、**[!UICONTROL OK]**&#x200B;をクリックします。
 
 ## アプリの権限の追加
 
@@ -116,9 +116,9 @@ android:windowSoftInputMode="adjustUnspecified|stateHidden" />
 <receiver android:name="com.adobe.mobile.MessageNotificationHandler" />
 ```
 
-## Implement custom tracking {#section_FD102B3CDAA4492FB04E56BF17E28663}
+## カスタムトラッキングの実装 {#section_FD102B3CDAA4492FB04E56BF17E28663}
 
-In `html` files, add the following to the `<head>` tag where you want to use tracking:
+`html` ファイル内で、トラッキングを使用する `<head>` タグに次のコードを追加します。
 
 ```
 <script type="text/javascript" charset="utf-8" src="ADB_Helper.js"></script>
