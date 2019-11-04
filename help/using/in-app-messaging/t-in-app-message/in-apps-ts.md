@@ -3,17 +3,17 @@ description: この情報は、アプリ内メッセージの問題のトラブ�
 keywords: モバイル
 seo-description: この情報は、アプリ内メッセージの問題のトラブルシューティングに役立ちます。
 seo-title: アプリ内メッセージのトラブルシューティング
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: アプリ内メッセージのトラブルシューティング
 topic: 指標
 uuid: 8813e8d8-bb1e-46ad-83cd-98ae68f73ce6
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
 ---
 
 
-# Troubleshooting in-app messaging{#troubleshooting-in-app-messaging}
+# アプリ内メッセージのトラブルシューティング{#troubleshooting-in-app-messaging}
 
 この情報は、アプリ内メッセージの問題のトラブルシューティングに役立ちます。
 
@@ -23,7 +23,7 @@ source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
 * SDK のバージョンが 4.2 以上であり、正しく設定されていることを確認します。
 
-* Ensure that you have a [Messaging](/help/using/in-app-messaging/in-app-messaging.md) section in your configuration (the downloaded JSON file) or have a Messages remote endpoint, so that it can be retrieved from dynamic tag management.
+* Dynamic Tag Management から取得できるよう、設定（ダウンロードした JSON ファイル）に「[メッセージ](/help/using/in-app-messaging/in-app-messaging.md)」セクションがある、またはメッセージリモートエンドポイントがあることを確認します。
 
 ## Android で全画面表示のメッセージが表示されません。正しい SDK と設定を使用しており、トリガーの条件は満たしています。
 
@@ -31,19 +31,19 @@ source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
 ## Android でローカルの通知メッセージが動作しません。
 
-マニフェストにローカルの通知ブロードキャスト受信者が宣言されていることを確認します。For more information, see step #1 in [In-app messaging](/help/android/messaging-main/messaging/messaging.md).
+マニフェストにローカルの通知ブロードキャスト受信者が宣言されていることを確認します。詳しくは、「[アプリ内メッセージ](/help/android/messaging-main/messaging/messaging.md)」の手順 1 を参照してください。
 
 ## メッセージが発行されているか確認したい場合
 
-**アプリ内メッセージを管理ページの「状態**」列でリストビューをチェックして、メッセージがライブになっているかどうかを確認します。
+アプリ内メッセージを管理ページの **[!UICONTROL 状態]** 列でリストビューをチェックして、メッセージがライブになっているかどうかを確認します。
 
-## オーディエン *スページでは*、一度表示 *、常に表示*、オフ ** ライン設定の表示を確認できます。
+## オーディエンスページの「*1 回のみ表示*」、*常に表示*」、「*オフラインで表示*」設定を確認します。
 
-これらの設定が正しいことを確認します。オーディエンスページで、「**トリガー**」タブのオプションを確認します。このオプションでは、メッセージの表示頻度を指定できます。
+これらの設定が正しいことを確認します。オーディエンスページで、**[!UICONTROL トリガー]** タブのオプションを確認します。このオプションでは、メッセージの表示頻度を指定できます。
 
 ## 起動イベントをトリガーとして使用する場合
 
-起動イベントは、新規セッションでのみ実行されます。セッションが開始されるタイミングについて詳しくは、 `lifecycleTimeout` in the [ADBMobile JSON config](/help/ios/configuration/json-config/json-config.md) file.
+起動イベントは、新規セッションでのみ実行されます。セッションが開始されるタイミングについて詳しくは、`lifecycleTimeout`ADBMobile JSON config[ ファイルの ](/help/ios/configuration/json-config/json-config.md) を参照してください。
 
 ## メッセージをリモートで更新しましたが、アプリで古いメッセージが表示されています。
 
@@ -77,7 +77,7 @@ SDK は、ライフサイクル開始時に、新しい／更新されたメッ�
 
 次の手順を完了します。
 
-1. 設定ファイル内のメッセージURLをカールして、リモートメッセージが更新されたことを確認します(例 `curl "https://assets.adobedtm.com/b213090c5204bf94318f4ef0539a38b487d10368/scripts/satellite-542c62859662383b1a0008f4.json"`:)
+1. 設定ファイル内のメッセージ URL をカールして、リモートメッセージが更新されたことを確認します（例：`curl "https://assets.adobedtm.com/b213090c5204bf94318f4ef0539a38b487d10368/scripts/satellite-542c62859662383b1a0008f4.json"`）。
 1. アプリケーションを閉じます。
-1. Wait for a time period that is longer than the `lifecycleTimeout` in the config file.
+1. 設定ファイルにある `lifecycleTimeout` よりも長い期間待ちます。
 1. アプリを開き、メッセージが表示される場所に移動して、更新されていることを確認します。
