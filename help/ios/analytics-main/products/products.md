@@ -2,21 +2,21 @@
 description: products 変数は、処理ルールを使用して設定することができません。iOS 4.x SDK では、コンテキストデータパラメーターに特別な構文を使用して、サーバーコールに直接 products を設定する必要があります。
 seo-description: products 変数は、処理ルールを使用して設定することができません。iOS 4.x SDK では、コンテキストデータパラメーターに特別な構文を使用して、サーバーコールに直接 products を設定する必要があります。
 seo-title: products 変数
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: products 変数
 topic: 開発者と導入
 uuid: 6ece4d27-ef86-435c-a6f7-bd76be1c95ca
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7aff336586058302046a728a0b1b0ce12660c1ba
 
 ---
 
 
-# Products variable {#products-variable}
+# products 変数{#products-variable}
 
 products 変数は、処理ルールを使用して設定することができません。iOS 4.x SDK では、コンテキストデータパラメーターに特別な構文を使用して、サーバーコールに直接 products を設定する必要があります。
 
-To set the *`products`* variable, set a context data key to `"&&products"`, and set the value by using the syntax that is defined for the *`products`* variable:
+*`products`* 変数を設定するには、コンテキストデータキーを `"&&products"` に設定し、*`products`* 変数用に定義された構文を使用して値を設定します。
 
 ```objective-c
 [contextData setObject:@"Category;Product;Quantity;Price[,Category;Product;Quantity;Price]" forKey:@"&&products"];
@@ -41,8 +41,8 @@ NSMutableDictionary *contextData = [NSMutableDictionary dictionary];
 [ADBMobile trackState:@"Order Confirmation" data:contextData]; 
 ```
 
-*`products`* がイメージリクエストに直接設定され、その他の変数がコンテキストデータとして設定されます。 すべてのコンテキストデータ変数は、処理ルールを使用してマッピングする必要があります。
+*`products`* は画像リクエストに直接設定され、その他の変数はコンテキストデータとして設定されることに注意してください。すべてのコンテキストデータ変数は、処理ルールを使用してマッピングする必要があります。
 
 ![](assets/map-products.png)
 
-Folio Builder *`products`*&#x200B;変数をマッピングする必要はありません。画像リクエストに直接設定されるからです。
+処理ルールを使用して&#x200B;*`products`*&#x200B;変数をマッピングする必要はありません。画像リクエストに直接設定されるからです。
