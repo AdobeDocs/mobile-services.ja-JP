@@ -2,39 +2,39 @@
 description: この情報は、ADBMobile.json 設定ファイルを使用する場合に役立ちます。
 seo-description: この情報は、ADBMobile.json 設定ファイルを使用する場合に役立ちます。
 seo-title: ADBMobile JSON 設定
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: ADBMobile JSON 設定
 topic: 開発者と導入
 uuid: 1decf605-7bc3-4e73-ad52-1ecd5821599e
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
 
 ---
 
 
-# ADBMobile JSON config file {#adbmobile-json-config}
+# ADBMobile JSON 設定ファイル{#adbmobile-json-config}
 
-This information helps you understand the variables in the ADBMobile.json config file.
+この情報は、ADBMobile.json 設定ファイル内の変数を理解するのに役立ちます。
 
-## `ADBMobileConfig.json` 設定ファイルの参照 {#section_5AD4EDF87E304980B4AC4A5657FDA8B9}
+## `ADBMobileConfig.json` 設定ファイルのリファレンス {#section_5AD4EDF87E304980B4AC4A5657FDA8B9}
 
 複数のプラットフォームで同じ設定ファイルをアプリに使用することができます。
 
 >[!TIP]
 >
->In **Android**, the `ADBMobileConfig.json` file must be placed in the `assets` folder.
+>**Android** では、`assets` フォルダーに `ADBMobileConfig.json` ファイルを配置する必要があります。
 
-Here is a list of the variables in the JSON file and the minimum SDK version you need for each variable:
+JSON ファイル内の変数と各変数に必要な最小限の SDK バージョンの一覧を次に示します。
 
 * **acquisition**
    * 最小 SDK バージョン：4.1
    * モバイルアプリの獲得を有効にします。
       * `server`：最初の起動時に獲得リファラーの確認がおこなわれる獲得サーバー。
       * `appid`：獲得サーバー上でこのアプリを一意に識別する、生成された ID。
-   このセクションがない場合は、モバイルアプリの獲得を有効にし、SDK 設定ファイルを再度ダウンロードします。For more information, see referrerTimeout in this list of variables.**
+   このセクションがない場合は、モバイルアプリの獲得を有効にして、SDK 設定ファイルを再度ダウンロードしてください。詳しくは、この変数リストの *referrerTimeout* を参照してください。
 
 * **analyticsForwardingEnabled**
-   * Minimum SDK version is 4.8.0.
+   * SDK の最小バージョンは 4.8.0 です。
    * デフォルト値は `false` です。
 
       `audienceManager` オブジェクトのプロパティ。Audience Manager が設定され、`analyticsForwardingEnabled` が `true` に設定されている場合、すべての Analytics トラフィックも Audience Manager に転送されます。
@@ -53,7 +53,7 @@ Here is a list of the variables in the JSON file and the minimum SDK version you
 
          >[!IMPORTANT]
          >
-         >日付を遡ったセッションヒット情報は、セッション情報サーバーコールで送信され、追加のサーバーコールが適用される場合があります。
+         >日付を遡るセッションヒット情報は、セッション情報サーバー呼び出しで送信されます。このとき、追加のサーバー呼び出しが適用される場合があります。
 
 * **batchLimit**
    * 最小 SDK バージョン：4.1
@@ -64,7 +64,7 @@ Here is a list of the variables in the JSON file and the minimum SDK version you
       次の情報に留意してください。
 
       * デフォルト値は `0` です。これはバッチ処理が有効になっていないことを意味します。
-      * Requires .`offlineEnabled = true`
+      * `offlineEnabled = true` が必要です。
 
 * **charset**
    * 最小 SDK バージョン：4.0
@@ -78,19 +78,19 @@ Here is a list of the variables in the JSON file and the minimum SDK version you
 
       >[!IMPORTANT]
       >
-      >この変数は、Targetで必要です。
+      >この変数は Target で必要です。
 
 * **coopUnsafe**
    * 最小 SDK バージョン：4.16.1
-   * The Boolean property of the `marketingCloud` object that, when set to `true`, causes the device to be opted-out of the Experience Cloud's Device Co-Op.
-   * Default value is `false`.
+   * `marketingCloud` オブジェクトのブールプロパティが `true` に設定されると、デバイスが Experience Cloud の Device Co-op からオプトアウトします。
+   * デフォルト値は `false` です。
    * この設定は、Device Co-op をプロビジョニングしたユーザー&#x200B;**にのみ**&#x200B;適用されます。
    Device Co-op のユーザーで、この値を `true` に設定する必要がある場合は、Co-op グループに連絡して、お使いの Device Co-op アカウント上でブラックリストフラグをリクエストする必要があります。これらのフラグをセルフサービスで有効にする方法はありません。
 
    次の情報に留意してください。
 
-   * When `coopUnsafe` is set to `true`, `coop_unsafe=1` will always be appended to Audience Manager and Visitor ID hits.
-   * If you enable Analytics server-side forwarding to Audience Manager, you will also see `coop_unsafe=1` Analytics hits.
+   * `coopUnsafe` を `coop_unsafe=1` に設定すると、常に Audience Manager および訪問者 ID ヒットに `true` が追加されます。
+   * Audience Manager への Analytics サーバー側の転送を有効にすると、Analytics ヒットに `coop_unsafe=1` も表示されます。
 
 
 * **environmentId**
@@ -154,7 +154,7 @@ Here is a list of the variables in the JSON file and the minimum SDK version you
       …/yourfile.json”`,
       ```
 
-      これを設定しない場合は、`ADBMobile.json` ファイルを更新してこの行を含める必要があります。更新された設定ファイルをダウンロードするには、「開始する前に [」を参照してくださ](/help/android/getting-started/requirements.md)い。
+      これを設定しない場合は、`ADBMobile.json` ファイルを更新してこの行を含める必要があります。更新された設定ファイルをダウンロードするには、「[事前設定](/help/android/getting-started/requirements.md)」を参照してください。
 
 * **postback**
    * 最小 SDK バージョン：4.6
@@ -168,7 +168,7 @@ Here is a list of the variables in the JSON file and the minimum SDK version you
         "timeout": 0 // optional - number of seconds to wait before timing out.  Default is 2.}
       ```
 
-      The `payload` object in the code is a sample payload for a message definition that goes in the `ADBMobileConfig.json` file. For more information, see [Postbacks](/help/android/analytics-main/postbacks/postbacks.md).
+      コードの `payload` オブジェクトは、`ADBMobileConfig.json` ファイルに設定するメッセージ定義のサンプルペイロードです。詳しくは、「[ポストバック](/help/android/analytics-main/postbacks/postbacks.md)」を参照してください。
 
 * **privacyDefault**
    * 最小 SDK バージョン：4.0
@@ -176,7 +176,7 @@ Here is a list of the variables in the JSON file and the minimum SDK version you
       * `optedin`：ヒットは即座に送信されます。
       * `optedout`：ヒットは破棄されます。
       * `optunknown`：レポートスイートのタイムスタンプが有効になっている場合、プライバシーステータスがオプトイン（ヒットが送信される）またはオプトアウト（ヒットが破棄される）に変更されるまで、ヒットは保存されます。
-      If your report suite is not timestamp-enabled, hits are discarded until the privacy status changes to `optedin`.  これは初期値を設定するだけです。この値をコードで設定または変更した場合、値が再び変更されるか、アプリがアンインストールされて再インストールされるまで、新しい値が使用されます。
+      レポートスイートのタイムスタンプが有効になっていない場合、プライバシーステータスが `optedin` に変更されるまで、ヒットは破棄されます。これは初期値を設定するだけです。この値をコードで設定または変更した場合、値が再び変更されるか、アプリがアンインストールされて再インストールされるまで、新しい値が使用されます。
 
 
 * **referrerTimeout**
@@ -185,7 +185,7 @@ Here is a list of the variables in the JSON file and the minimum SDK version you
 
       >[!IMPORTANT]
       >
-      >この変数は、獲得で必須です。 この変数を `0` に設定するか含めない場合、SDK は獲得データを待機せず、獲得指標は追跡されません。
+      >この変数は獲得で必要です。この変数を `0` に設定するか含めない場合、SDK は獲得データを待機せず、獲得指標は追跡されません。
 
 * **remotes**
    * 最小 SDK バージョン：4.2
@@ -209,11 +209,11 @@ Here is a list of the variables in the JSON file and the minimum SDK version you
 
       >[!IMPORTANT]
       >
-      >この変数は、Analyticsで必要です。
+      >この変数は Analytics で必要です。
 
 * **server**
    * 最小 SDK バージョン：4.0
-   * 親ノードに基づく、Analytics または Audience Management サーバー。This variable should be populated with the server domain, without an `https://` or `https://` protocol prefix. プレフィックスは、ライブラリによって自動的に処理され、`ssl` 変数に基づきます。`ssl` が `true` の場合、このサーバーとの安全な接続が確立されます。`ssl` が `false` の場合、このサーバーとの安全でない接続が確立されます。
+   * 親ノードに基づく、Analytics または Audience Management サーバー。この変数は、`https://` または `https://` プロトコルプレフィックスを付けずに、サーバードメインを設定する必要があります。プレフィックスは、ライブラリによって自動的に処理され、`ssl` 変数に基づきます。`ssl` が `true` の場合、このサーバーとの安全な接続が確立されます。`ssl` が `false` の場合、このサーバーとの安全でない接続が確立されます。
 
 * **ssl**
    * 最小 SDK バージョン：4.0
@@ -236,7 +236,7 @@ Here is a list of the variables in the JSON file and the minimum SDK version you
    * Target が応答を待つ時間を決定します。
 
 
-## Sample `ADBMobileConfig.json` file {#section_4655EF79744649E5A5AE19E3224C472C}
+## サンプル `ADBMobileConfig.json` ファイル{#section_4655EF79744649E5A5AE19E3224C472C}
 
 サンプルの `ADBMobileConfig.json` ファイルを次に示します。
 
@@ -342,7 +342,7 @@ Here is a list of the variables in the JSON file and the minimum SDK version you
       * フルスクリーンのみ。オプション
       * バンドルされた画像の名前（
          * image
-         *  に指定された URL に到達できない場合に使用）
+         * に指定された URL に到達できない場合に使用）
    * "title"
       * フルスクリーンおよび警告。必須
       * フルスクリーンまたは警告メッセージのタイトルテキスト
@@ -364,11 +364,11 @@ Here is a list of the variables in the JSON file and the minimum SDK version you
 
 
 
-* 「audiences」
+* "audiences"
    * メッセージの表示方法を定義するオブジェクトの配列
-   * 「key」
+   * "key"
       * ヒット内で検索する変数名。必須
-* 「matches」
+* "matches"
    * 比較時に使用するマッチャーのタイプ
    * eq = 次の値と等しい
    * ne = 次の値と等しくない
@@ -382,13 +382,13 @@ Here is a list of the variables in the JSON file and the minimum SDK version you
    * le = 次の値以下
    * gt = 次の値を超える
    * ge = 次の値以上
-* 「values」
+* "values"
    * matches に指定されたマッチャータイプに基づいて 
       * key
       * と以下に指定されたマッチャ―タイプ
       * matches
-* 「trigger」
+* "triggers"
    * audiences と同じですが、オーディエンスではなくアクションです。
-   * 「key」
-   * 「matches」
-   * 「values」
+   * "key"
+   * "matches"
+   * "values"
