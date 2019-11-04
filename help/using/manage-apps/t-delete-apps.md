@@ -3,26 +3,26 @@ description: Adobe Mobile からアプリを削除できます。
 keywords: モバイル
 seo-description: Adobe Mobile からアプリを削除できます。
 seo-title: アプリの削除
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: アプリの削除
 topic: 指標
 uuid: 1721cce5-b368-4f05-a40b-e3f2348d96d8
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
 
 ---
 
 
-# Delete an app{#delete-an-app}
+# アプリの削除{#delete-an-app}
 
-You can delete an app from the Mobile Services UI.
+Mobile Services UI からアプリを削除できます。
 
-1. Click **[!UICONTROL Manage Apps]**.
+1. **[!UICONTROL アプリの管理]** をクリックします。
 1. 削除するアプリの横にあるチェックボックスを選択します。
 
    >[!IMPORTANT]
    >
-   >Adobe mobileからアプリを削除すると、Adobe Mobile UIからアプリが削除されますが、Apple App storeやGoogle playからは削除されません。 レポートスイートとデータは引き続き Adobe Analytics で使用可能ですが、Adobe Mobile での管理はできなくなります。
+   >Adobe Mobile からアプリを削除すると、Adobe Mobile UI からアプリが削除されますが、Apple App Store または Google Play からは削除されません。レポートスイートとデータは引き続き Adobe Analytics で使用可能ですが、Adobe Mobile での管理はできなくなります。
 
-1. Click **[!UICONTROL Delete Selected]**.
-1. Click **[!UICONTROL Delete]**.
+1. **[!UICONTROL 選択した項目を削除]** をクリックします。
+1. **[!UICONTROL 削除]** をクリックします。
