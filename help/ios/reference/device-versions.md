@@ -2,23 +2,23 @@
 description: 次の表に、多くの iOS デバイスから送信される iOS バージョン文字列を示します。
 seo-description: 次の表に、多くの iOS デバイスから送信される iOS バージョン文字列を示します。
 seo-title: iOS デバイスのバージョン
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: iOS デバイスのバージョン
 topic: 開発者と導入
 uuid: 8b8a9bc3-0737-4de2-9792-0b112aa4cf65
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
 
 ---
 
 
-# iOS device versions {#ios-device-versions}
+# iOS デバイスのバージョン{#ios-device-versions}
 
 次の表に、多くの iOS デバイスから送信される iOS バージョン文字列を示します。
 
 >[!IMPORTANT]
 >
->このリストは内部テストとオンライン情報に基づいており、不正確な情報や不完全な情報が含まれている可能性があります。
+>このリストは、内部テストおよびオンライン情報に基づいたものであり、正確ではない情報や不完全な情報が含まれている可能性があります。
 
 iOS デバイスについて詳しくは、[The iPhone Wiki](https://theiphonewiki.com/wiki/Models) などのサイトをご覧ください。
 
