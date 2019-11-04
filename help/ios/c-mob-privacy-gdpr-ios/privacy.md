@@ -2,27 +2,27 @@
 description: この情報は、GDPR のデータ削除要求に対処する場合に役立ちます。
 seo-description: この情報は、GDPR のデータ削除要求に対処する場合に役立ちます。
 seo-title: ユーザーのオプトステータスの設定
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: ユーザーのオプトステータスの設定
 topic: 開発者と導入
 uuid: 44a09a25-93c6-4e1a-b69e-710018e8b6c3
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
 
 ---
 
 
-# Setting the user's opt status {#setting-the-user-s-opt-status}
+# ユーザーのオプトステータスの設定{#setting-the-user-s-opt-status}
 
 この情報は、GDPR のデータ削除要求に対処する場合に役立ちます。
 
 >[!IMPORTANT]
 >
->Starting with Experience Cloud iOS SDKs 4.15, setting the privacy status to `unknown` holds Audience Manager and Experience Cloud ID hits.
+>Experience Cloud iOS SDK 4.15 以降では、プライバシーステータスを `unknown` に設定すると、Audience Manager および Experience Cloud ID のヒットが保持されます。
 
 以下の設定を使用して、Analytics、Target および Audience Manager のアクティビティをデバイス上で許可するかどうかを制御できます。
 
-* `privacyDefault` ( [ADBMobile JSON Config](/help/ios/configuration/json-config/json-config.md))。
+* 「[ADBMobile JSON 設定](/help/ios/configuration/json-config/json-config.md)」の `privacyDefault`。
 
    この設定は、コード内で変更されるまで保持される初期設定を制御します。
 
@@ -30,7 +30,7 @@ source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
 
    このメソッドを使用してプライバシー設定を変更した後は、同じメソッドを使用して再度変更されるまで、またはアプリをアンインストールして再度インストールするときまで、変更が保持されます。
 
-   メソッドについて詳しくは、 [設定メソッド](/help/ios/configuration/json-config/json-config.md).
+   メソッドについて詳しくは、「[設定メソッド](/help/ios/configuration/json-config/json-config.md)」を参照してください。
 
 各プライバシーステータスに関する情報を次に示します。
 
@@ -39,16 +39,16 @@ source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
    * Analytics：ヒットが送信されます。
    * Target：mbox リクエストが送信されます。
    * Audience Manager：シグナルと ID 同期が送信されます。
-   * Value in the JSON config file: `optedin`
-   * 値 `setPrivacyStatus`: `ADBMobilePrivacyStatusOptIn`
+   * JSON 設定ファイルの値：`optedin`
+   * `setPrivacyStatus` の値：`ADBMobilePrivacyStatusOptIn`
 
 * **オプトアウト**
 
    * Analytics：ヒットが破棄されます。
    * Target：mbox リクエストが許可されません。
    * Audience Manager：シグナルと ID 同期が許可されません。
-   * Value in the JSON config file: `optedout`
-   * 値 `setPrivacyStatus`: `ADBMobilePrivacyStatusOptOut`
+   * JSON 設定ファイルの値：`optedout`
+   * `setPrivacyStatus` の値：`ADBMobilePrivacyStatusOptOut`
 
 * **Unknown**
 
@@ -58,8 +58,8 @@ source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
 
    * Target：mbox リクエストが送信されます。
    * Audience Manager：シグナルと ID 同期が送信されます。
-   * Value in the JSON config file: `optunknown`
-   * 値 `setPrivacyStatus`: `ADBMobilePrivacyStatusUnknown`
+   * JSON 設定ファイルの値：`optunknown`
+   * `setPrivacyStatus` の値：`ADBMobilePrivacyStatusUnknown`
 
 ## 例 {#section_128AC455EE024193B5D4E5A565B53D00}
 
