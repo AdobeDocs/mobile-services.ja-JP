@@ -3,23 +3,23 @@ description: ここでは、デフォルトのモバイル指標およびディ�
 keywords: モバイル
 seo-description: ここでは、デフォルトのモバイル指標およびディメンションに関する参照情報を示します。
 seo-title: モバイル指標およびディメンションのリファレンス
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: モバイル指標およびディメンションのリファレンス
 topic: 指標
 uuid: 96170ae7-8553-4f3e-ae01-65e5b664adf4
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 056bb3edb94c2ceb2961bbe8e4851c20429e1ea2
 
 ---
 
 
-# Mobile metrics and dimensions reference {#mobile-metrics-and-dimensions-reference}
+# モバイル指標およびディメンションのリファレンス{#mobile-metrics-and-dimensions-reference}
 
-この情報は、デフォルトのモバイル指標およびディメンションについての詳細を理解するのに役立ちます。
+この情報は、デフォルトのモバイル指標およびディメンションについての理解を深めるのに役立ちます。
 
 >[!TIP]
 >
->Adobe Analyticsで設定されたディメンションおよび指標の権限は、Mobile Servicesに適用されます。 適切な権限を持たないレポートを実行しようとすると、エラーが発生します。
+>Adobe Analytics で設定されているディメンションと指標の権限は、Mobile Services に適用されます。適切な権限を持たずにレポートを実行しようとすると、エラーが発生します。
 
 ## 指標 {#section_6704C815147D44AF96151D626BEB813C}
 
@@ -38,28 +38,28 @@ source-git-commit: 056bb3edb94c2ceb2961bbe8e4851c20429e1ea2
    特定の日にアプリケーションが使用された場合にトリガーされます。
 
    >[!TIP]
-   >日別関与ユーザーイベントは、Analytics指標に自動的には保存されません。 この指標を取得するためのカスタムイベントを設定する処理ルールを作成する必要があります。
+   >日別関与ユーザー数イベントは、Analytics 指標に自動的には保存されません。この指標を取得するためのカスタムイベントを設定する処理ルールを作成する必要があります。
 
 * **月別関与ユーザー数**
 
    1 ヶ月以内にアプリケーションが使用された場合にトリガーされます。
 
    >[!TIP]
-   >月別関与ユーザーイベントは、Analytics指標に自動的には保存されません。 この指標を取得するためのカスタムイベントを設定する処理ルールを作成する必要があります。
+   >月別関与ユーザー数イベントは、Analytics 指標に自動的には保存されません。この指標を取得するためのカスタムイベントを設定する処理ルールを作成する必要があります。
 
 * **起動回数**
 
-   インストールとアップグレード以外の起動時にトリガーされます。アプリケーションがバックグラウンドから復帰した場合にもトリガーされます。デフォルトで、アプリがバックグラウンドの状態で 5 分以上経過すると、新規起動がトリガーされます。The amount of background time before triggering a new launch can be configured in **[!UICONTROL SDK Analytics Options]** on the Manage App Settings page. 詳しくは、「SDK Analyticsの設定」の「 *Session Timeout (Seconds)* 」行を [参照してください](/help/using/c-manage-app-settings/c-mob-confg-app/t-config-analytics/t-config-analytics.md)。
+   インストールとアップグレード以外の起動時にトリガーされます。アプリケーションがバックグラウンドから復帰した場合にもトリガーされます。デフォルトで、アプリがバックグラウンドの状態で 5 分以上経過すると、新規起動がトリガーされます。バックグラウンドで何分経過すると新たに起動がトリガーされるかは、アプリ設定ページの **[!UICONTROL SDK Analytics オプション]** で設定できます。詳しくは、「[SDK Analyticsの設定](/help/using/c-manage-app-settings/c-mob-confg-app/t-config-analytics/t-config-analytics.md)」の「*セッションタイムアウト（秒）*」行を参照してください。
 
    >[!IMPORTANT]
-   >Because how visits in [!UICONTROL Adobe Analytics] and mobile app launches in [!UICONTROL Adobe Mobile Services] are calculated, you might see different results in reporting. 詳しくは、[訪問回数とモバイルアプリの起動回数の比較](https://helpx.adobe.com/analytics/kb/compare-visits-and-mobile-app-launches.html)を参照してください。
+   >[!UICONTROL Adobe Analytics] とモバイルアプリの起動回数を [!UICONTROL Adobe Mobile Services] で計算する方法により、レポートの結果が異なる場合があります。詳しくは、[訪問回数とモバイルアプリの起動回数の比較](https://helpx.adobe.com/jp/analytics/kb/compare-visits-and-mobile-app-launches.html)を参照してください。
 
 * **クラッシュ**
 
    アプリケーションが正常に終了しなかった場合にトリガーされます。このイベントは、クラッシュ後のアプリケーションの起動時に送信されます。
 
    >[!TIP]
-   >The application is considered to crash if quit is not called.
+   >quit が正常に呼び出されなかった場合にアプリがクラッシュしたと見なされます
 
 * **セッションの長さの合計**
 
@@ -75,7 +75,7 @@ source-git-commit: 056bb3edb94c2ceb2961bbe8e4851c20429e1ea2
 
 * **アプリ ID**
 
-   Stores the Application name and version in the following format: `[AppName] [BundleVersion]`. 例：`myapp 1.1`。
+   アプリケーションの名前とバージョンを次の形式で格納します。`[AppName] [BundleVersion]`例：`myapp 1.1`。
 
 * **起動回数**
 
@@ -111,7 +111,7 @@ source-git-commit: 056bb3edb94c2ceb2961bbe8e4851c20429e1ea2
 
    >[!TIP]
    >
-   >前回のアップグレードからの日数は、Analytics変数に自動的には保存されません。 レポート用にこの値を Analytics 変数にコピーする処理ルールを作成する必要があります。
+   >前回アップグレードからの日数は、Analytics 指標に自動的には保存されません。レポート用にこの値を Analytics 変数にコピーする処理ルールを作成する必要があります。
 
 * **前回アップグレードからの起動回数**
 
@@ -119,11 +119,11 @@ source-git-commit: 056bb3edb94c2ceb2961bbe8e4851c20429e1ea2
 
    >[!TIP]
    >
-   >前回のアップグレード以降の起動回数は、Analytics変数に自動的には保存されません。 レポート用にこの値を Analytics 変数にコピーする処理ルールを作成する必要があります。
+   >前回アップグレードからの起動回数は、Analytics 指標に自動的には保存されません。レポート用にこの値を Analytics 変数にコピーする処理ルールを作成する必要があります。
 
 * **デバイス名**
 
-   デバイス名が格納されます。iOSでは、iOSデバイスを識別するコンマ区切りの2桁の文字列。 第1の番号はデバイスの生成を表し、第2の番号はデバイスファミリの異なるメンバを表します。 一般的なデバイス名の完全なリストについては、[iOS デバイスのバージョン](/help/ios/reference/device-versions.md)を参照してください。
+   デバイス名が格納されます。iOS では、iOS デバイスを識別するコンマ区切りの 2 桁の文字列。最初の番号は、デバイスの世代を表します。次の番号は、デバイスファミリー内の個々のメンバーのバージョン番号です。一般的なデバイス名の完全なリストについては、[iOS デバイスのバージョン](/help/ios/reference/device-versions.md)を参照してください。
 
 * **通信事業者名**
 
