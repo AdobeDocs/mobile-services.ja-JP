@@ -4,27 +4,27 @@ seo-description: ポストバックを使用すると、Adobe Mobile によっ�
 seo-title: ポストバックの設定
 title: ポストバックの設定
 uuid: a026575c-057b-4868-b6c8-9514cbc32b4d
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
 
 ---
 
 
-# Configure postbacks {#configure-postbacks}
+# ポストバックの設定 {#configure-postbacks}
 
 ポストバックを使用すると、Adobe Mobile によって収集されたデータを別のサードパーティサーバーに送信できます。アプリ内メッセージを表示するために使用しているのと同じトリガーおよび特性を活用して、カスタマイズしたデータをサードパーティのサーバーに送信するように Mobile Services を設定できます。
 
 >[!IMPORTANT]
 >
->ポストバックを使用するには、4.6 SDK以降をインストールする必要があります。 詳しくは、「[Android - ポストバック](/help/android/analytics-main/postbacks/postbacks.md)」または「[iOS - ポストバック](/help/ios/analytics-main/postback/postback.md)」を参照してください。
+>ポストバックを使用するには、4.6 以降の SDK をインストールする必要があります。詳しくは、「[Android - ポストバック](/help/android/analytics-main/postbacks/postbacks.md)」または「[iOS - ポストバック](/help/ios/analytics-main/postback/postback.md)」を参照してください。
 
-1. 目的のアプリの名前をクリックして、そのアプリ設定ページに移動し、ページ右上端の「**ポストバックを管理**」リンクをクリックします。
-1. Click **[!UICONTROL Create Postback]**.
+1. 目的のアプリの名前をクリックして、そのアプリ設定ページに移動し、ページ右上端の **[!UICONTROL ポストバックを管理]** リンクをクリックします。
+1. **[!UICONTROL ポストバックを作成]** をクリックします。
 1. フィールドに次の情報を入力します。
 
    * **[!UICONTROL ポストバックのタイプ]**
 
-      Choose **[!UICONTROL Custom]**. 将来的にはテンプレートが使用可能になります。
+      **[!UICONTROL カスタム]** を選択します。将来的にはテンプレートが使用可能になります。
 
    * **[!UICONTROL 名前]**
 
@@ -32,15 +32,15 @@ source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
 
    * **[!UICONTROL URL]**
 
-      有効なエンドポイントURLを指定します（GET要求に必要な場合は、適切なクエリパラメーターを指定します）。 この URL は、データ送信先（広告サーバーまたは独自のエンドポイント）から取得します。For example `https://my.server.com/?user=bob&amp;zip=90210&amp;c16=4.6.0-iOS&amp;c27=cln,132`.
+      有効なエンドポイント URL（および GET リクエストの必要に応じて適切なクエリーパラメーター）を指定します。この URL は、データ送信先（広告サーバーまたは独自のエンドポイント）から取得します。例：`https://my.server.com/?user=bob&amp;zip=90210&amp;c16=4.6.0-iOS&amp;c27=cln,132`。
 
    * **[!UICONTROL コンテキスト変数]**
 
-      URL の一部を強調表示し、ドロップダウンリストから目的のコンテキスト変数を選択します。また、URLにコンテキスト変数を挿入すると、URLによってすべてのテンプレート変数がヒットの値に置き換えられます。
+      URL の一部を強調表示し、ドロップダウンリストから目的のコンテキスト変数を選択します。また、URL にコンテキスト変数を挿入すると、URL によってすべてのテンプレート変数がヒットの値に置き換えられます。
 
    * **[!UICONTROL POST 本文を追加]**
 
-      例えば POST リクエストに対してなど、追加の投稿本文のコンテンツがあれば指定します。If you specify post body text, specify the content type for the post body. 例：`application/json`。
+      例えば POST リクエストに対してなど、追加の投稿本文のコンテンツがあれば指定します。投稿本文テキストを指定する場合は、投稿本文のコンテンツタイプを指定します。例：`application/json`。
 
    * **[!UICONTROL タイムアウト (秒単位)]**
 
@@ -48,14 +48,14 @@ source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
 
    * **[!UICONTROL トリガー]**
 
-      ポストバックをトリガーする 1 つまたは複数のデータタグおよび条件を指定します。For example, you might choose **[!UICONTROL Crashed]** as the trigger and **[!UICONTROL Exists]** as the condition to trigger the postback when the app crashes. また、ポストバックをアクティブ化する指標を指定できます。For example, you can select **[!UICONTROL Device Name]** as the trigger, **[!UICONTROL Equals]**, and **[!UICONTROL iPhone 6 Plus]** as conditions to activate the postback when the app crashes on iPhone 6 Plus devices.
+      ポストバックをトリガーする 1 つまたは複数のデータタグおよび条件を指定します。例えば、アプリがクラッシュしたときにポストバックをトリガーするには、トリガーとして **[!UICONTROL クラッシュ]** を、条件として **[!UICONTROL が存在する]** を選択します。また、ポストバックをアクティブ化する指標を指定できます。例えば、アプリが iPhone 6 Plus デバイスでクラッシュした場合にポストバックをアクティブにするには、トリガーとして **[!UICONTROL デバイス名]** を、条件として **[!UICONTROL 次に等しい]** と **[!UICONTROL iPhone 6 Plus]** を選択します。
 
    * **[!UICONTROL 特徴]**
-   トリガーされたらメッセージが表示されるユーザーを指定します。Options include **[!UICONTROL Session Length**, **[!UICONTROL First Launch Date]**, and **[!UICONTROL App ID]**.
+   トリガーされたらメッセージが表示されるユーザーを指定します。オプションには、**[!UICONTROL セッションの長さ]**、**[!UICONTROL 初回起動日]**&#x200B;および&#x200B;**[!UICONTROL アプリ ID]** があります。
 
-1. 「**[!UICONTROL 保存]**」をクリックしてポストバックを作成し、「**ポストバックを管理[!UICONTROL 」リストに追加します。]**
+1. **[!UICONTROL 保存]** をクリックしてポストバックを作成し、**[!UICONTROL ポストバックを管理]**&#x200B;リストに追加します。
 
    将来的にポストバックをアクティブにするには、次のいずれかを実行します。
 
-   * Select the checkbox next to the postback in the **[!UICONTROL Manage Postbacks]** list and click **[!UICONTROL Activate Selected]**.
-   * 「**[!UICONTROL 保存とアクティブ化]」をクリックして変更内容を保存し、直ちにポストバックをアクティブにします。**
+   * **[!UICONTROL ポストバックを管理]** リストでポストバックの横のチェックボックスを選択して、**[!UICONTROL 選択項目をアクティブ化]** をクリックします。
+   * **[!UICONTROL 保存とアクティブ化]** をクリックして変更内容を保存し、直ちにポストバックをアクティブにします。
