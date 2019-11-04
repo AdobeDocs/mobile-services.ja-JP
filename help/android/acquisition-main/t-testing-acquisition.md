@@ -1,29 +1,29 @@
 ---
-description: この情報は、Android デバイスで従来のダウンロード計測キャンペーンリンクをラウンドトリップする場合に役立ちます。
-keywords: android;library;mobile;sdk
-seo-description: この情報は、Android デバイスで従来のダウンロード計測キャンペーンリンクをラウンドトリップする場合に役立ちます。
-seo-title: 従来のダウンロード計測のテスト
-solution: Marketing Cloud,Analytics
-title: 従来のダウンロード計測のテスト
+description: この情報は、Android デバイスで従来の獲得キャンペーンリンクをラウンドトリップする場合に役立ちます。
+keywords: Android, ライブラリ, モバイル, SDK
+seo-description: この情報は、Android デバイスで従来の獲得キャンペーンリンクをラウンドトリップする場合に役立ちます。
+seo-title: 従来の獲得のテスト
+solution: Experience Cloud,Analytics
+title: 従来の獲得のテスト
 topic: 開発者と導入
 uuid: bb7ace96-68eb-4f43-b3cf-af80730b9cee
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
 
 ---
 
 
-# Testing legacy acquisition {#testing-legacy-acquisition}
+# 従来の獲得のテスト{#testing-legacy-acquisition}
 
-この情報は、Android デバイスで従来のダウンロード計測キャンペーンリンクをラウンドトリップする場合に役立ちます。
+この情報は、Android デバイスで従来の獲得キャンペーンリンクをラウンドトリップする場合に役立ちます。
 
 モバイルアプリがまだ Google Play に登録されていない場合は、マーケティングリンクを作成するときに任意のモバイルアプリをリンク先として選択できます。この設定は、ダウンロード計測用リンクをクリックした後に、獲得サーバーによってどのアプリにリダイレクトされるかに影響するだけで、ダウンロード計測用リンクをテストすること自体には影響しません。クエリ文字列パラメーターは、Google Play ストアに渡されます。これらのパラメーターは、キャンペーンのブロードキャストの一環としてインストール時にアプリに渡されます。モバイルアプリでの獲得のラウンドトリップテストには、このタイプのブロードキャストのシミュレーションが必要です。
 
-The app must be freshly installed, or have data cleared in **[!UICONTROL Settings]**, each time a test is run. そうすることで、アプリが最初に起動したときに、キャンペーンクエリ文字列パラメーターに関連付けられている初期ライフサイクル指標が送信されます。
+テストを実行するたびに、アプリを新しくインストールするか、アプリのデータを&#x200B;**[!UICONTROL 設定]**&#x200B;でクリアする必要があります。そうすることで、アプリが最初に起動したときに、キャンペーンクエリ文字列パラメーターに関連付けられている初期ライフサイクル指標が送信されます。
 
 1. Mobile Services UI で、従来の獲得キャンペーン URL を生成します。
 
-   For more information, see [Use legacy Acquisition links](/help/using/acquisition-main/c-marketing-links-builder/t-create-edit-adobe-links/c-use-legacy-acquisition-links/c-use-legacy-acquisition-links.md).
+   詳しくは、「[従来のダウンロード計測用リンクの使用](/help/using/acquisition-main/c-marketing-links-builder/t-create-edit-adobe-links/c-use-legacy-acquisition-links/c-use-legacy-acquisition-links.md)」を参照してください。
 1. デバイスをコンピューターに接続し、ADB Shell を起動して、デバイスでアプリケーションを起動します。
 1. 次の形式を使用してブロードキャストを送信します。
 
@@ -34,7 +34,7 @@ The app must be freshly installed, or have data cleared in **[!UICONTROL Setting
 1. 次の手順を完了します。
    1. `com.example.adobetesttapp.com` をアプリケーションの逆引き DNS エントリに置き換えます。
    1. 受信者リファレンスを、アプリ内のキャンペーン追跡受信者の場所のリファレンスで更新します。
-   1. Replace values that are associated with `utm_source`, `utm_medium`, `utm_term`, `utm_content`, `utm_campaign`, and so on, with appropriate values.
+   1. `utm_source`、`utm_medium`、`utm_term`、`utm_content`、`utm_campaign`などに関連付けられた値を適切な値に置き換えます。
 
 ブロードキャストが成功すると、次のような応答が表示されます。
 
