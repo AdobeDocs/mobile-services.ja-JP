@@ -3,11 +3,11 @@ description: Apple App Store や Google Play からアプリを直接ダウン�
 keywords: モバイル
 seo-description: Apple App Store や Google Play からアプリを直接ダウンロードできるアプリストアリンクを作成できます。これにより、単なるダウンロード回数に加えて、このリンク経由でアプリをダウンロードした後のユーザー行動（ライフサイクル系指標や成功イベント）を長期で追えるようになります。
 seo-title: ダウンロード計測用リンクの作成
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: ダウンロード計測用リンクの作成
 topic: 指標
 uuid: bb603013-fca9-44a2-820a-59e1c85d9444
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
 ---
@@ -17,38 +17,36 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
 Apple App Store や Google Play からアプリを直接ダウンロードできるアプリストアリンクを作成できます。これにより、単なるダウンロード回数に加えて、このリンク経由でアプリをダウンロードした後のユーザー行動（ライフサイクル系指標や成功イベント）を長期で追えるようになります。
 
-1. Click **[!UICONTROL Acquisition]** &gt; **[!UICONTROL Manage Acquisition Links]** &gt; **[!UICONTROL Create New]**.
-1. Type the following information in the **[!UICONTROL Link Information]** section:
+1. **[!UICONTROL 獲得]**／**[!UICONTROL ダウンロード計測用リンク設定]**／**[!UICONTROL 新規作成]**&#x200B;をクリックします。
+1. **[!UICONTROL リンク情報]** セクションに次の情報を入力します。
 
-   * (**Required**) **[!UICONTROL Name]**
-Specify a descriptive name for the App Link.
-   * **[!UICONTROL Tracking Code]**
-Specify the desired tracking code or click **[!UICONTROL Generate]** to create a new tracking code.
-   * (**Required**) **[!UICONTROL Source]**
-Specify the original referrer, such as "newsletter" or "homepage."
-   * **[!UICONTROL 中：]**「バナー」や「電子メール」などのマーケティングメディアを指定します。
-   * **[!UICONTROL コンテンツ]**&#x200B;リンクを含む広告の名前またはIDを指定します。
-   * **[!UICONTROL キーワード]**&#x200B;広告用の有料キーワードまたは他の検索キーワードを指定します。
+   * （**必須**）アプリのリンクを説明する&#x200B;**[!UICONTROL 名前]**&#x200B;を指定します。
+   * **[!UICONTROL トラッキングコード]**
+目的のトラッキングコードを指定するか、**[!UICONTROL 生成]** をクリックして新しいトラッキングコードを作成します。
+   * （**必須**）**[!UICONTROL ソース]**：「ニュースレター」または「ホームページ」など元のリファラーを指定します。
+   * **[!UICONTROL メディア]**：「バナー」または「電子メール」など、マーケティングメディアを指定します。
+   * **[!UICONTROL コンテンツ]**：リンクを持つ広告の名前または ID を指定します。
+   * **[!UICONTROL 用語]**：広告に対する有料検索キーワードまたは他の検索キーワードを指定します。
    >[!IMPORTANT]
    >
-   >ダウンロード計測用リンクの作成後は、上記のフィールドの値を変更できません。
+   >ダウンロード計測用リンクの作成後に上述のフィールドの値を変更することはできません。
 
-1. Type information in the fields in the **[!UICONTROL Add App Store Link]** section.
+1. **[!UICONTROL アプリストアリンクを追加]** セクションのフィールドに情報を入力します。
 
-   * **[!UICONTROL App Store]**
+   * **[!UICONTROL アプリストア]**
 
       アプリストアを選択します。
       * Apple App Store
       * Google Play
       次に示すように、アプリストアによって異なるオプションがあります。
 
-   * **[!UICONTROL Browser Region (Apple App Store Only)]**
+   * **[!UICONTROL ブラウザーの地域（Apple App Store のみ）]**
 
       デスクトップのブラウザーに対して特定の地域のアプリストアを指定します。
 
       デスクトップのブラウザーでリンクをクリックした場合に表示されるページを定義できます。モバイルデバイスは、デバイスの設定に基づいて自動的にリダイレクトされます。
 
-   * **[!UICONTROL ブラウザーの言語(Google Language（Google playのみ）)]**
+   * **[!UICONTROL ブラウザーの言語（Google Language（Google Play のみ））]**
 
       ドロップダウンリストから言語を選択します。
 
@@ -56,27 +54,27 @@ Specify the original referrer, such as "newsletter" or "homepage."
 
    * **[!UICONTROL 名前で検索]**
 
-      * For the Apple App Store, if you do not know the App ID, you can search for the app by its name.
+      * Apple App Store では、アプリ ID がわからない場合、名前でアプリを検索できます。
 
-         「**[!UICONTROL 地域]」ドロップダウンリストからオプションの地域を選択して、検索を制限できます。**
+         **[!UICONTROL 地域]** ドロップダウンリストからオプションの地域を選択して、検索を制限できます。
 
-      * For Google Play, if you do not know the Package Name, you can search for the app name by its name.
+      * Google Play では、パッケージ名がわからない場合、名前でアプリを検索できます。
    * **[!UICONTROL アプリ ID（Apple App Store のみ）]**
 
       アプリを検索した場合、このフィールドは自動的に設定されます。アプリを検索せずに、アプリ ID の値を直接入力できます。
 
-   * **[!UICONTROL パッケージ名（Google playのみ）]**
+   * **[!UICONTROL パッケージ名（Google Play のみ）]**
 
-      アプリを検索した場合、このフィールドは自動的に設定されます。検索する代わりに。 「パッケージ名」の値を直接入力することもできます。
+      アプリを検索した場合、このフィールドは自動的に設定されます。検索する代わりに、「パッケージ名」の値を直接入力することもできます。
 
 
 
-1. To save your configuration and to generate the link, click **[!UICONTROL Add]** &gt; **[!UICONTROL Save]**.
+1. 設定を保存して、リンクを生成するには、**[!UICONTROL 追加]**／**[!UICONTROL 保存]**&#x200B;をクリックします。
 
-   新規作成されたリンクが「**[!UICONTROL App Store リンク]」セクションに表示されます。**
+   新規作成されたリンクが **[!UICONTROL App Store リンク]** セクションに表示されます。
 
-   ![店舗リンク](assets/apps_store_links.png)
+   ![ストアリンク](assets/apps_store_links.png)
 
-1. Click ![clipboard icon](assets/icon_clipboard.png) to copy the tracked link to your clipboard.
+1. 「![リンクをコピー](assets/icon_clipboard.png)」をクリックして、追跡対象のリンクをクリップボードにコピーします。
 
 1. ソーシャルメディアの投稿、広告、電子メールメッセージなどにリンクを貼り付けます。
