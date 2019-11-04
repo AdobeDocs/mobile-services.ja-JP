@@ -1,23 +1,23 @@
 ---
 description: 以下に、Android ライブラリによって提供されるメソッドのリストを示します。
-keywords: android;library;mobile;sdk
+keywords: Android, ライブラリ, モバイル, SDK
 seo-description: 以下に、Android ライブラリによって提供されるメソッドのリストを示します。
 seo-title: 設定メソッド
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: 設定メソッド
 topic: 開発者と導入
 uuid: 663aeb6c-1b97-4a3a-8c0e-dd4c2ec28c01
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
 
 ---
 
 
-# Configuration methods{#configuration-methods}
+# 設定メソッド{#configuration-methods}
 
 以下に、Android ライブラリによって提供されるメソッドのリストを示します。
 
-## Initial configuration {#section_9169243ECC4744A899A8271F92090ECD}
+## 初期設定 {#section_9169243ECC4744A899A8271F92090ECD}
 
 次のメソッドは、メインアクティビティの `onCreate` メソッドで 1 回呼び出す必要があります。
 
@@ -33,15 +33,15 @@ source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
    ````
 
 
-## SDK settings (Config Class) {#section_C1EB977043C04D2B93E5A63DB72828B6}
+## SDK 設定（設定クラス）{#section_C1EB977043C04D2B93E5A63DB72828B6}
 
 * **registerAdobeDataCallback**
 
-   * `AdobeDataCallback` インターフェイスを実装するオブジェクトを登録します。The overwritten "call" method will be invoked with a `Config.MobileDataEvent` value and the associated data in a `Map<String, Object>` for the triggering event. このコールバックをトリガーするイベントの詳細については、このトピ *ックの下部にある* 「MobileDataEventEnum」を参照してください。
+   * `AdobeDataCallback` インターフェイスを実装するオブジェクトを登録します。上書きされた「call」メソッドは、`Config.MobileDataEvent` 値と、トリガーイベントの `Map<String, Object>` 内の関連データを使用して呼び出されます。このコールバックをトリガーするイベントについて詳しくは、このトピックの下部にある「*MobileDataEventEnum*」を参照してください。
 
       >[!TIP]
       >
-      >このメソッドには、バージョン4.9.0以降が必要です。
+      >このメソッドには、バージョン 4.9.0 以降が必要です。
 
    * このメソッドの構文を次に示します。
 
@@ -73,7 +73,7 @@ source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
       public static String getVersion();
       ```
 
-   * このメソッドのコード例を次に示します。
+   * このメソッドのコードサンプルを次に示します。
 
       ```java
       String libraryVersion = Config.getVersion(); 
@@ -85,8 +85,8 @@ source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
 
       以下は、プライバシーステータスの値です。
 
-      * `MOBILE_PRIVACY_STATUS_OPT_IN`, where the hits are sent immediately.
-      * `MOBILE_PRIVACY_STATUS_OPT_OUT`が破棄されます。
+      * `MOBILE_PRIVACY_STATUS_OPT_IN`：ヒットは即座に送信されます。
+      * `MOBILE_PRIVACY_STATUS_OPT_OUT`：ヒットは破棄されます。
       * `MOBILE_PRIVACY_STATUS_UNKNOWN`：レポートスイートでタイムスタンプが有効になっている場合、プライバシーステータスがオプトイン（ヒットが送信される）またはオプトアウト（ヒットが破棄される）に変更されるまで、ヒットは保存されます。
 
          レポートスイートのタイムスタンプが有効になっていない場合、プライバシーステータスがオプトインに変更されるまで、ヒットは破棄されます。デフォルト値は `ADBMobileConfig.json` ファイルに設定します。
@@ -96,7 +96,7 @@ source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
       public static MobilePrivacyStatus getPrivacyStatus(); 
       ```
 
-   * このメソッドのコード例を次に示します。
+   * このメソッドのコードサンプルを次に示します。
 
       ```java
       MobilePrivacyStatus privacyStatus Config.getPrivacyStatus();
@@ -108,8 +108,8 @@ source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
    * 現在のユーザーのプライバシーステータスを `status` に設定します。
 
       プライバシーステータスは次のいずれかの値に設定できます。
-      * `MOBILE_PRIVACY_STATUS_OPT_IN`に設定され、ヒットが直ちに送信されます。 これらのヒットは即座に送信されます。
-      * `MOBILE_PRIVACY_STATUS_OPT_OUT`が破棄されます。 これらのヒットは破棄されます。
+      * `MOBILE_PRIVACY_STATUS_OPT_IN`：ヒットは即座に送信されます。これらのヒットは即座に送信されます。
+      * `MOBILE_PRIVACY_STATUS_OPT_OUT`：ヒットは破棄されます。これらのヒットは破棄されます。
       * `MOBILE_PRIVACY_STATUS_UNKNOWN`：レポートスイートでタイムスタンプが有効になっている場合、プライバシーステータスがオプトイン（ヒットが送信される）またはオプトアウト（ヒットが破棄される）に変更されるまで、ヒットは保存されます。レポートスイートのタイムスタンプが有効になっていない場合、プライバシーステータスがオプトインに変更されるまで、ヒットは破棄されます。
    * このメソッドの構文を次に示します。
 
@@ -117,7 +117,7 @@ source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
       public static void setPrivacyStatus(MobilePrivacyStatus status); 
       ```
 
-   * このメソッドのコード例を次に示します。
+   * このメソッドのコードサンプルを次に示します。
 
       ```java
       Config.setPrivacyStatus(MobilePrivacyStatus.MOBILE_PRIVACY_STATUS_OPT_IN); 
@@ -134,7 +134,7 @@ source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
       public static BigDecimal getLifetimeValue();
       ```
 
-   * Here is a code sample for this method:
+   * このメソッドのコードサンプルを次に示します。
 
       ```java
       BigDecimal currentLifetimeValue Config.getLifetimeValue(); 
@@ -146,7 +146,7 @@ source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
 
       >[!TIP]
       >
-      >アプリがExperience Cloud 3.xから4.x SDKにアップグレードされた場合、以前にカスタムまたは自動生成された訪問者IDが取得され、カスタムユーザーIDとして保存されます。 これによって、SDK をアップグレードしても訪問者データが保持されます。4.x SDK での新規インストールの場合は、ユーザー識別子は設定されるまでは `null` です。
+      >アプリを Experience Cloud 3.x から 4.x SDK にアップグレードした場合、以前のカスタムまたは自動生成された訪問者 ID が取得され、カスタムユーザー識別子として保存されます。これによって、SDK をアップグレードしても訪問者データが保持されます。4.x SDK での新規インストールの場合は、ユーザー識別子は設定されるまでは `null` です。
 
    * このメソッドの構文を次に示します。
 
@@ -154,7 +154,7 @@ source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
       public static String&amp getUserIdentifier();
       ```
 
-   * Here the code sample for this method:
+   * このメソッドのコードサンプルを次に示します。
 
       ```java
       String userId = Config.getUserIdentifier();
@@ -205,7 +205,7 @@ source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
       ```
 
 * **collectLifecycleData**
-   * SDK のすべてのソリューションで使用するライフサイクルデータを収集するように SDK に指示します。詳しくは、[ライフサイクル指標](/help/android/configuration/methods.md)を参照してください。
+   * SDK のすべてのソリューションで使用するライフサイクルデータを収集するように SDK に指示します。詳しくは、「[ライフサイクル指標](/help/android/configuration/methods.md)」を参照してください。
 
    * このメソッドの構文を次に示します。
 
@@ -234,7 +234,7 @@ source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
 
 * **collectLifecycleData (Activity activity)**
 
-   * （**バージョン 4.2 以降**）SDK のすべてのソリューションで使用するために、ライフサイクルデータが収集される必要があることを SDK に通知します。詳しくは、[ライフサイクル指標](/help/android/metrics.md)を参照してください。
+   * （**バージョン 4.2 以降**）SDK のすべてのソリューションで使用するために、ライフサイクルデータが収集される必要があることを SDK に通知します。詳しくは、「[ライフサイクル指標](/help/android/metrics.md)」を参照してください。
    * このメソッドの構文を次に示します。
 
       ```java
@@ -252,7 +252,7 @@ source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
       
 * **pauseCollecting&#x200B;LifecycleData**
 
-   * ライフサイクル指標が正しく計算されるように、アプリが一時停止されたことを SDK に通知します。例えば、`onPause` は、タイムスタンプを収集して、以前のセッションの長さを決定します。また、これは、アプリがクラッシュしなかったことをライフサイクルが把握できるようにフラグを設定します。詳しくは、 [ライフサイクル指標](/help/android/metrics.md).
+   * ライフサイクル指標が正しく計算されるように、アプリが一時停止されたことを SDK に通知します。例えば、`onPause` は、タイムスタンプを収集して、以前のセッションの長さを決定します。また、これは、アプリがクラッシュしなかったことをライフサイクルが把握できるようにフラグを設定します。詳しくは、「[ライフサイクル指標](/help/android/metrics.md)」を参照してください。
 
    * このメソッドの構文を次に示します。
 
@@ -343,7 +343,7 @@ source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
 
       >[!IMPORTANT]
       > 
-      >If you want to use the Advertising Identifier in Acquisition or Lifecycle, call it before calling `Config.collectLifecycleData`.
+      >獲得またはライフサイクルで広告識別子を使用する場合は、`Config.collectLifecycleData` を呼び出す前にこれを呼び出します。
 
       * このメソッドの構文を次に示します。
 
