@@ -1,75 +1,75 @@
 ---
-description: Web ブラウザーを使用して Adobe Mobile Services にサインインできます。
-keywords: モバイル；パスワードの変更；ログイン；ログアウト；ログイン；ログアウト；ログイン；サインイン；サインイン
-seo-description: Web ブラウザーを使用して Adobe Mobile Services にサインインできます。
-seo-title: サインイン
-solution: Marketing Cloud,Analytics
-title: サインイン
+description: Web ブラウザーを使用して Adobe Mobile Services にログインできます。
+keywords: モバイル,パスワードの変更,ログイン, ログアウト,ログイン, ログアウト,ログイン,ログイン
+seo-description: Web ブラウザーを使用して Adobe Mobile Services にログインできます。
+seo-title: ログイン
+solution: Experience Cloud,Analytics
+title: ログイン
 topic: 指標
 uuid: d6ea0ca1-3511-4133-9d41-21ea2d2f7b3a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 83e6968efb0ed1b4ef504286c6cb2e8e4d2eaf94
 
 ---
 
 
-# サインイン {#signing-in}
+# ログイン {#signing-in}
 
-Web ブラウザーを使用して Adobe Mobile Services にサインインできます。
+Web ブラウザーを使用して Adobe Mobile Services にログインできます。
 
-## Adobe Mobile Services へのサインイン {#section_09ACF2A8FBA44BAEA8EC86604C2A5F30}
+## Adobe Mobile Services へのログイン {#section_09ACF2A8FBA44BAEA8EC86604C2A5F30}
 
-Adobe ID、Enterprise ID または Analytics ID を使用して、Adobe Mobile Services UI にサインインできます。
+Adobe ID、Enterprise ID または Analytics ID を使用して、Adobe Mobile Services UI にログインできます。
 
 ### Adobe ID
 
-Adobe ID を使用して Adobe Mobile Services UI にサインインするには：
+Adobe ID を使用して Adobe Mobile Services UI にログインするには：
 
 1. ブラウザーで、「[https://mobilemarketing.adobe.com](https://mobilemarketing.adobe.com)」と入力します。
-1. Click **[!UICONTROL Sign in with your Adobe ID]**.
-1. 電子メール アドレスを入力します。
-1. In **[!UICONTROL Choose an account for]**, click **[!UICONTROL Adobe ID]**.
+1. **[!UICONTROL Adobe ID を使用してログイン]**&#x200B;をクリックします。
+1. 電子メールアドレスを入力します。
+1. **[!UICONTROL アカウントを選択]**&#x200B;で、**[!UICONTROL Adobe ID]** をクリックします。
 
 1. パスワードを入力します。
-1. Click **[!UICONTROL Sign in]**.
+1. **[!UICONTROL ログイン]**&#x200B;をクリックします。
 
 
 ### Enterprise ID
 
-Enterprise ID を使用して Adobe Mobile Services UI にサインインするには：
+Enterprise ID を使用して Adobe Mobile Services UI にログインするには：
 
-1. In a browser, type [https://mobilemarketing.adobe.com](https://mobilemarketing.adobe.com)
-1. Click **[!UICONTROL Sign in with your Adobe ID]**.
-1. 電子メール アドレスを入力します。
-1. In **[!UICONTROL Choose an account for]**, click **[!UICONTROL Enterprise ID]**.
+1. ブラウザーに「[https://mobilemarketing.adobe.com](https://mobilemarketing.adobe.com)」と入力します。
+1. **[!UICONTROL Adobe ID を使用してログイン]**&#x200B;をクリックします。
+1. 電子メールアドレスを入力します。
+1. **[!UICONTROL アカウントを選択]**&#x200B;で、**[!UICONTROL Enterprise ID]** をクリックします。
 
-1. Enterprise サインインページにリダイレクトされます。
+1. Enterprise ログインページにリダイレクトされます。
 
    >[!IMPORTANT]
    >
-   >If you click **[!UICONTROL Facebook]** or **[!UICONTROL Google]** to sign in, your Facebook and Google account email address must match the Adobe ID or Enterprise ID account email address that has access to Adobe Analytics. FacebookまたはGoogleの電子メール資格情報がAdobe IDまたはEnterprise IDのユーザーの電子メールアドレスと一致しない場合は、管理者に問い合わせてください。
+   >**[!UICONTROL Facebook]** または **[!UICONTROL Google]** をクリックしてログインする場合、Facebook および Google アカウント電子メールが Adobe Analytics へのアクセス権のある Adobe ID または Enterprise ID アカウント電子メールと一致している必要があります。Facebook または Google 電子メール資格情報が Adobe または Enterprise ID ユーザー電子メールアドレスと一致しない場合は、管理者にお問い合わせください。
 
 ### Analytics ID
 
-Analytics ID を使用して Adobe Mobile Services UI にサインインするには：
+Analytics ID を使用して Adobe Mobile Services UI にログインするには：
 
 1. ブラウザーで、「[https://mobilemarketing.adobe.com/](https://mobilemarketing.adobe.com/)」と入力します。
-1. Click **[!UICONTROL Sign In with your Analytics account]**.
+1. **[!UICONTROL Analytics アカウントでログイン]**&#x200B;をクリックします。
 1. 会社名、ユーザー名およびパスワードを入力します。
-1. Click **[!UICONTROL Sign In]**.
+1. **[!UICONTROL ログイン]**&#x200B;をクリックします。
 
 ## パスワードのリセット {#section_B7E23AAF95F549E5A1D778E4A48DCE5E}
 
 次のいずれかの方法でパスワードをリセットします。
 
-* **Adobe Experience Cloud If you use your Adobe ID:**
+* **Adobe Experience Cloud** Adobe ID を使用する場合：
 
-   1. 「**[!UICONTROL Adobe ID を使用してサインイン]」をクリックして、「**&#x200B;パスワードを忘れた場合&#x200B;****」リンクをクリックします。
-   1. Type the email account that is associated with your Adobe ID and click **[!UICONTROL Send]**.
+   1. **[!UICONTROL Adobe ID を使用してサインイン]**&#x200B;をクリックして、**[!UICONTROL パスワードを忘れた場合]**&#x200B;リンクをクリックします。
+   1. Adobe ID に関連付けられている電子メールアカウントを入力して、**[!UICONTROL 送信]** をクリックします。
    1. 受信した電子メールの指示に従って、パスワードをリセットします。
 
 * **Adobe Analytics**&#x200B;会社、ユーザー名およびパスワードを使用する場合：
 
-   1. 「**パスワードを忘れた場合**」リンクをクリックします。
-   1. Type your company name, your username, and click **[!UICONTROL Continue]**.
+   1. **[!UICONTROL パスワードを忘れた場合]**&#x200B;リンクをクリックします。
+   1. 会社名、ユーザー名、およびパスワードを入力して、**[!UICONTROL 続行]** をクリックします。
    1. 受信した電子メールの指示に従います。
