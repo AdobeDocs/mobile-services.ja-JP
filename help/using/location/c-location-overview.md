@@ -3,11 +3,11 @@ description: ロケーション概要レポートでは、アプリが使用さ�
 keywords: モバイル
 seo-description: ロケーション概要レポートでは、アプリが使用されている様々な国、地域、目標地点を確認できます。
 seo-title: 概要（ロケーション）
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: 概要（ロケーション）
 topic: レポート, 指標
 uuid: a701abc3-001b-4015-843f-5fb2c6c80d17
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
 
 ---
@@ -15,33 +15,33 @@ source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
 
 # 概要（ロケーション）{#overview-location}
 
-The **[!UICONTROL Location Overview]** report lets you see the different countries, regions, and points of interest (POI) where your app is being used.
+**[!UICONTROL ロケーション概要]**&#x200B;レポートでは、アプリが使用されている様々な国、地域、目標地点（POI）を確認できます。
 
 このレポートには、既存のデータのサンバーストチャートが表示されます。このレポートを使用して、ターゲティングすべきオーディエンスセグメント（訪問者の集まり）を見つけることができます。オーディエンスを作成して管理することは、セグメントを作成して使用することと似ていますが、例外は、オーディエンスを Experience Cloud で使用できるようになることです。
 
-このレポートに関する追加情報を次に示します。
+このレポートに関する追加情報を以下に示します。
 
-## Navigation and usage {#section_4A88C3849B5847BF8CF433CCFD99FDC3}
+## ナビゲーションと使用方法 {#section_4A88C3849B5847BF8CF433CCFD99FDC3}
 
 このビジュアライゼーションでは、例えば、分類と共にベースレポートが表示されます。指標や、指標間のパフォーマンスの違いが高さで示されます。各リングは、リングのカテゴリ内のオーディエンスセグメントを表します。オーディエンスに対して、共通フィルターの適用、指標の非表示、指標の表示などのアクションを実行できます。
 
 >[!TIP]
 >
->この情報に加えて、サンバーストグラフの操作方法を説明する製品内チュートリアルも表示できます。 チュートリアルを起動するには、レポートのタイトルバーの「**[!UICONTROL ロケーション分類]**」をクリックして、**i]アイコンをクリックします。[!UICONTROL **
+>この情報に加えて、サンバーストグラフの使用方法についてのチュートリアルを製品内で参照できます。チュートリアルを起動するには、レポートのタイトルバーの **[!UICONTROL ロケーション分類]** をクリックして、**[!UICONTROL i]** アイコンをクリックします。
 
 ![](assets/location.png)
 
-このサンバーストグラフはインタラクティブです。右上隅にある&#x200B;**[!UICONTROL カレンダー]アイコンをクリックして、期間を変更できます。**&#x200B;グラフの任意の部分にマウスポインターを置くと、詳細情報が表示されます。例えば、次の図では、米国でアプリを使用した合計数およびパーセンテージを確認できます。
+このサンバーストグラフはインタラクティブです。右上隅にある&#x200B;**[!UICONTROL カレンダー]**&#x200B;アイコンをクリックして、期間を変更できます。グラフの任意の部分にマウスポインターを置くと、詳細情報が表示されます。例えば、次の図では、米国でアプリを使用した合計数およびパーセンテージを確認できます。
 
 ![](assets/location_mouse.png)
 
-In this illustration, the **[!UICONTROL Categories]** buttons in the upper right corner allow you to toggle between viewing information about the top ten countries, regions, and the top three **[!UICONTROL Points of Interest]**.
+この図では、右上隅の **[!UICONTROL カテゴリー]** ボタンを使用すると、上位 10 の国および地域と、上位 3 つの&#x200B;**[!UICONTROL 目標地点]**&#x200B;についての情報の表示を切り替えることができます。
 
-Here is the visualization when you select **[!UICONTROL Country]**:
+次に、**[!UICONTROL 国]** を選択した場合のビジュアライゼーションを示します。
 
 ![](assets/location_countries.png)
 
-Here is the visualization when you select **[!UICONTROL Points of Interest]**:
+次に、**[!UICONTROL 目標地点]** を選択した場合のビジュアライゼーションを示します。
 
 ![](assets/location_poi.png)
 
@@ -53,25 +53,25 @@ Here is the visualization when you select **[!UICONTROL Points of Interest]**:
 
 ![](assets/location_secondary.png)
 
-## Add breakdowns and metrics {#section_15833511E82648869E7B1EFC24EF7B82}
+## 分類と指標の追加 {#section_15833511E82648869E7B1EFC24EF7B82}
 
 分類および二次指標を追加して、グラフ内の他のオーディエンスに対する各オーディエンスの高さを変更できます。
 
 >[!TIP]
 >
->サンバーストに追加するリングの数が多いほど、処理に時間がかかります。
+>サンバーストに追加するリングの数が増えると、処理に掛かる時間が長くなります。
 
-分類および二次指標を追加するには、レポートのタイトルバーの「**[!UICONTROL ロケーション分類]**」をクリックし、「**カスタマイズ]」をクリックして、右側のパネルを開きます。[!UICONTROL **
+分類および二次指標を追加するには、レポートのタイトルバーの **[!UICONTROL ロケーション分類]** をクリックし、**[!UICONTROL カスタマイズ]** をクリックして、右側のパネルを開きます。
 
 ![](assets/location_rail.png)
 
-When you click **[!UICONTROL Add Breakdown]** or **[!UICONTROL Add Metric]**, a new item displays with the same name as the previous item in the respective list. 新しく作成された分類または指標をクリックしてドロップダウンリストにアクセスし、そこから新しいアイテムを選択します。
+**[!UICONTROL 分類を追加]** または **[!UICONTROL 指標を追加]** をクリックすると、各リストの前のアイテムと同じ名前の新しいアイテムが表示されます。新しく作成された分類または指標をクリックしてドロップダウンリストにアクセスし、そこから新しいアイテムを選択します。
 
-## Create a sticky filter {#section_365999D49FC744ECBF9273132497E06C}
+## 共通フィルターの作成 {#section_365999D49FC744ECBF9273132497E06C}
 
-Click a slice in the ring to select the audience for which you want to create a sticky filter and click **[!UICONTROL Sticky Filter]**. 共通フィルターを使用すると、現在のフィルターを適用して、フィルターに基づく新しいレポートを実行できます。
+リングのスライスをクリックし、共通フィルターを作成するオーディエンスを選択して、**[!UICONTROL 共通フィルター]** をクリックします。共通フィルターを使用すると、現在のフィルターを適用して、フィルターに基づく新しいレポートを実行できます。
 
-## レポートの共有 {#section_F8AF2AA73D4C4C008976D45847F82D0B}
+## レポートの共有{#section_F8AF2AA73D4C4C008976D45847F82D0B}
 
 レポートを作成した後、設定を使用してカスタム URL を作成し、その URL をコピーして共有できます。
 
