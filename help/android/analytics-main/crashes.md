@@ -2,25 +2,25 @@
 description: この情報は、クラッシュの追跡方法と、誤ったクラッシュを処理するためのベストプラクティスを理解する場合に役立ちます。
 seo-description: この情報は、クラッシュの追跡方法と、誤ったクラッシュを処理するためのベストプラクティスを理解する場合に役立ちます。
 seo-title: アプリのクラッシュの追跡
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: アプリのクラッシュの追跡
 topic: 開発者と導入
 uuid: 3ab98c14-ccdf-4060-ad88-ec07c1c6bf07
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 ---
 
 
-# アプリのクラッシュを追跡 {#track-app-crashes}
+# アプリのクラッシュの追跡 {#track-app-crashes}
 
 この情報は、クラッシュの追跡方法と、誤ったクラッシュを処理するためのベストプラクティスを理解する場合に役立ちます。
 
 >[!TIP]
 >
->アプリのクラッシュは、ライフサイクル指標の一部として追跡されます。 クラッシュを追跡する前に、プロジェクトにライブラリを追加し、ライフサイクルを実装します。 詳しくは、 *Core実装およびライフサイクルのIntelliJ IDEAまたはEclipse ProjectへのSDKと設定ファイルの追加*[を参照してください](/help/android/getting-started/dev-qs.md)。
+>アプリのクラッシュは、ライフサイクル指標の一部として追跡されます。クラッシュを追跡する前に、プロジェクトにライブラリを追加し、ライフサイクルを実装します。詳しくは、[コア実装とライフサイクル](/help/android/getting-started/dev-qs.md)の「*IntelliJ IDEA または Eclipse プロジェクトへの SDK と設定ファイルの追加*」を参照してください。
 
-ライフサイクル指標を実装すると、各アクティビティの `Config.collectLifecycleData` メソッドで `OnResume` が呼び出されます。In the `onPause` method, a call is made to `Config.pauseCollectingLifeCycleData`.
+ライフサイクル指標を実装すると、各アクティビティの `Config.collectLifecycleData` メソッドで `OnResume` が呼び出されます。`onPause` メソッドでは、`Config.pauseCollectingLifeCycleData` が呼び出されます。
 
 `pauseCollectingLifeCycleData` の内部では、正常終了を示すフラグが設定されます。アプリが再起動または再開されると、`collectLifecycleData` がこのフラグをチェックします。アプリがフラグステータスのとおり正常に終了しなかった場合は、次の呼び出しで `a.CrashEvent` コンテキストデータが送信され、クラッシュイベントがレポートされます。
 
@@ -38,9 +38,9 @@ Android アクティビティのライフサイクルについて詳しくは、
 
    >[!TIP]
    >
-   >IDEから再起動する前にアプリケーションをバックグラウンドに戻すと、このクラッシュを回避できます。
+   >このクラッシュを回避するには、IDE から再度起動する前にアプリをバックグラウンドに移行します。
 
-1. If the last foreground Activity of your app is backgrounded and does not call `Config.pauseCollectingLifecycleData();` in `onPause`, and your app is manually closed or killed by the OS, the next launch results in a crash.
+1. アプリの最後のフォアグラウンドアクティビティがバックグラウンドに移行され、 で `onPause` で `Config.pauseCollectingLifecycleData();` が呼び出されず、アプリを手動で終了するかまたはアプリが OS によって強制終了された場合、次回の起動時にクラッシュが発生します。
 
 ## フラグメントの処理方法
 
@@ -48,13 +48,13 @@ Android アクティビティのライフサイクルについて詳しくは、
 
 >[!IMPORTANT]
 >
->含まれるアクティビティでコードを実行できるライフサイクルイベントを利用する必要があります。 これはフラグメントの親ビューで処理されます。
+>収容アクティビティがコードを実行できるライフサイクルイベントを利用する必要があります。これはフラグメントの親ビューで処理されます。
 
-## （オプション）アクティビティのライフサイクルコールバックの実装
+## （オプション）アクティビティライフサイクルコールバックの実装
 
-API レベル 14 以降、Android では、アクティビティに対するグローバルライフサイクルコールバックが許可されます。For more information, see [Application](https://developer.android.com/reference/android/app/Application).
+API レベル 14 以降、Android では、アクティビティに対するグローバルライフサイクルコールバックが許可されます。詳しくは、「[アプリケーション](https://developer.android.com/reference/android/app/Application)」を参照してください。
 
-You can use these callbacks to ensure that all of your Activities correctly call `collectLifecycleData()` and `pauseCollectingLifecycleData()`. このコードは、メインのアクティビティと、アプリを起動する他のアクティビティにのみ追加する必要があります。
+これらのコールバックを使用して、すべてのアクティビティで `collectLifecycleData()` および `pauseCollectingLifecycleData()` が正しく呼び出されるようにすることができます。このコードは、メインのアクティビティと、アプリを起動する他のアクティビティにのみ追加する必要があります。
 
 ```js
 import com.adobe.mobile.Config; 
@@ -96,7 +96,7 @@ public class MainActivity extends Activity {
 }
 ```
 
-To send additional context data with your lifecycle call by using `Config.collectLifecycleData(Activity activity`, `Map<String`, `Object> contextData)`, you must override the `onResume` method for that Activity and ensure that you call `super.onResume()` after manually calling `collectLifecycleData`.
+`Config.collectLifecycleData(Activity activity`、`Map<String`、`Object> contextData)` を使用してライフサイクル呼び出しで追加のコンテキストデータを送信するには、そのアクティビティの `onResume` メソッドをオーバーライドし、`collectLifecycleData` を手動で呼び出した後で `super.onResume()` を呼び出す必要があります。
 
 ```js
 @Override 
