@@ -4,21 +4,21 @@ seo-description: Adobe Mobile Services UI で設定したディープリンク U
 seo-title: ディープリンクを使用したプッシュメッセージの実装
 title: ディープリンクを使用したプッシュメッセージの実装
 uuid: e24f9248-8d48-4e57-84af-3a05b72e2a09
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 13ff2cb549c4b82a4e0285e1c7c6b3f9c1a5bd4b
 
 ---
 
 
-# Implement push messaging with deep linking {#implement-push-messaging-with-deep-linking}
+# ディープリンクを使用したプッシュメッセージの実装{#implement-push-messaging-with-deep-linking}
 
 Adobe Mobile Services UI で設定したディープリンク URL は、プッシュペイロードの adb_deeplink キーに含まれます。
 
-URLは、を呼び出すことで取得 `remoteMessage.getData().get("adb_deeplink")` できます `FirebaseMessagingService`。
+URL は、`FirebaseMessagingService` の `remoteMessage.getData().get("adb_deeplink")` を呼び出すことで取得できます。
 
 >[!TIP]
 >
->ペイロードにディープリンクURLが含まれているかどうかに応じて、様々なインテントを定義できます。
+>ペイロードにディープリンク URL が含まれているかどうかに応じて、異なるインテントを定義できます。
 
 1. 次のどちらかのタスクを実行します。
 
@@ -30,7 +30,7 @@ URLは、を呼び出すことで取得 `remoteMessage.getData().get("adb_deepli
 
 ## 例
 
-Here is a sample implementation for the class extending from `FirebaseMessagingService`:
+`FirebaseMessagingService` から拡張されるクラスの実装例を示します。
 
 ```java
 public void onMessageReceived(RemoteMessage message) { 
