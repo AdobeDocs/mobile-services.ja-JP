@@ -1,33 +1,33 @@
 ---
 description: Android ライブラリによって提供される Experience Cloud ID メソッドを示します。
-keywords: android;library;mobile;sdk
+keywords: Android, ライブラリ, モバイル, SDK
 seo-description: Android ライブラリによって提供される Experience Cloud ID メソッドを示します。
-seo-title: Adobe Experience Platform Identity Service methods
-solution: Marketing Cloud,Analytics
-title: Adobe Experience Platform Identity Service methods
+seo-title: Adobe Experience Platform ID サービスのメソッド
+solution: Experience Cloud,Analytics
+title: Adobe Experience Platform ID サービスのメソッド
 topic: 開発者と導入
 uuid: c5107a7e-273b-4f71-8738-4c603479b24c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 8fc515a6e89044b9dac98b3f207c5f43b658a2ec
 
 ---
 
 
-# Adobe Experience Platform Identity Service methods{#experience-cloud-id-service-methods}
+# Adobe Experience Platform ID サービスのメソッド{#experience-cloud-id-service-methods}
 
 Android ライブラリによって提供される Experience Cloud ID メソッドを示します。
 
-SDKは、現在、Analytics、Target、Audience ManagerおよびAdobe Experience Platform IDサービスを含む、複数のAdobe Experience cloudソリューションをサポートしています。
+SDK は現在、Analytics、Target、Audience Manager、Adobe Experience Platform ID サービスなど、複数の Adobe Experience Cloud ソリューションをサポートしています。
 
-Methods are prefixed according to the solution. For example, Experience Cloud ID methods are prefixed with `visitor`. For more information, see [Experience Cloud ID Configuration](/help/android/c-marketing-cloud/mcvid.md).
+これらのメソッドには、ソリューションに応じたプレフィックスが付けられています。例えば、Experience Cloud ID メソッドのプレフィックスは、`visitor` です。詳しくは、「[Experience Cloud ID の設定](/help/android/c-marketing-cloud/mcvid.md)」を参照してください。
 
 * **public static String appendToURL(final String URL)**
 
-   アドビ JavaScript ライブラリで使用するために、アドビ訪問者データを URL 文字列に追加します。このメソッドを使用するには、Mobile SDK 4.12 以降が必要です。詳しくは、[訪問者 ID ヘルパー関数の追加](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-appendvisitorid.html)を参照してください。
+   アドビ JavaScript ライブラリで使用するために、アドビ訪問者データを URL 文字列に追加します。このメソッドを使用するには、Mobile SDK 4.12 以降が必要です。詳しくは、[訪問者 ID ヘルパー関数の追加](https://marketing.adobe.com/resources/help/ja_JP/mcvid/mcvid-appendvisitorid.html)を参照してください。
 
    >[!IMPORTANT]
    >
-   >このメソッドは、ネットワーク呼び出しをブロックする原因となる可能性があります。 時間的制約があるスレッドでこのメソッドを呼び出さないでください。
+   >このメソッドにより、ネットワークブロック呼び出しがおこなわれる可能性があります。時間的制約があるスレッドでこのメソッドを呼び出さないでください。
 
    * このメソッドの構文を次に示します。
 
@@ -66,7 +66,7 @@ Methods are prefixed according to the solution. For example, Experience Cloud ID
 
       >[!IMPORTANT]
       >
-      >This method can cause a blocking network call and should **not** be called from a UI thread.
+      >このメソッドは、ネットワークブロック呼び出しがおこなわれる可能性があるので、UI スレッドから呼び出さ&#x200B;**ない**&#x200B;でください。
 
 * **syncIdentifiers**
 
@@ -149,7 +149,7 @@ Methods are prefixed according to the solution. For example, Experience Cloud ID
 
 * **getUrlVariablesAsync**
 
-   バージョン4.16.0で導入されたこのメソッドは、訪問者IDサービスのURL変数を含む適切な形式の文字列を返します。 このメソッドの使用方法について詳しくは、 [Adobe Experience Platform IDサービスのメソッドを参照してください](/help/android/reference/hybrid-app.md)。
+   バージョン 4.16.0 で導入されたこのメソッドは、訪問者 ID サービスの URL 変数を含む適切な形式の文字列を返します。このメソッドの使用方法について詳しくは、「[Adobe Experience Platform ID サービスメソッド](/help/android/reference/hybrid-app.md)」を参照してください。
 
    * このメソッドの構文を次に示します。
 
@@ -170,7 +170,7 @@ Methods are prefixed according to the solution. For example, Experience Cloud ID
       });
       ```
 
-## Public methods {#section_8AC744B431A3438C9B45629CA3EA0F51}
+## パブリックメソッド {#section_8AC744B431A3438C9B45629CA3EA0F51}
 
 ```java
 public class VisitorID { 
