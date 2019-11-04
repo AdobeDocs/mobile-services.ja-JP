@@ -2,24 +2,24 @@
 description: デバイスのフィンガープリントに基づく従来の獲得キャンペーンリンクのラウンドトリップに役立つ情報です。
 seo-description: デバイスのフィンガープリントに基づく従来の獲得キャンペーンリンクのラウンドトリップに役立つ情報です。
 seo-title: 従来の獲得のテスト
-solution: Marketing Cloud,Analytics
-title: 従来のダウンロード計測のテスト
+solution: Experience Cloud,Analytics
+title: 従来の獲得のテスト
 uuid: e0591f4a-e26b-4fe4-97c1-a6831a926fa5
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
 
 ---
 
 
-# Testing legacy acquisition {#testing-legacy-acquisition}
+# 従来の獲得のテスト{#testing-legacy-acquisition}
 
 デバイスのフィンガープリントに基づく従来の獲得キャンペーンリンクのラウンドトリップに役立つ情報です。
 
-モバイルアプリがまだ Google Play にない場合は、キャンペーンリンクの作成時に任意のモバイルアプリをリンク先として選択できます。これは、ダウンロード計測用リンクのクリック後に獲得サーバーによってリダイレクトされるアプリにのみ影響を与えます。ダウンロード計測用リンクのテスト機能には影響を与えません。
+モバイルアプリがまだ Google Play に登録されていない場合は、マーケティングリンクを作成するときに任意のモバイルアプリをリンク先として選択できます。これは、ダウンロード計測用リンクのクリック後に獲得サーバーによってリダイレクトされるアプリにのみ影響を与えます。ダウンロード計測用リンクのテスト機能には影響を与えません。
 
-1. Adobe Mobile Services の&#x200B;**[!UICONTROL 従来のダウンロード計測用リンクの使用]に移動して、獲得キャンペーン URL を生成します。**
+1. Adobe Mobile Services の&#x200B;**[!UICONTROL 従来のダウンロード計測用リンクの使用]**&#x200B;に移動して、獲得キャンペーン URL を生成します。
 
-   詳しくは、[従来のダウンロード計測用リンクの使用](/help/using/acquisition-main/c-marketing-links-builder/t-create-edit-adobe-links/c-use-legacy-acquisition-links/c-use-legacy-acquisition-links.md)を参照してください。
+   詳しくは、「[従来のダウンロード計測用リンクの使用](/help/using/acquisition-main/c-marketing-links-builder/t-create-edit-adobe-links/c-use-legacy-acquisition-links/c-use-legacy-acquisition-links.md)」を参照してください。
 
 1. アプリをインストールするモバイルデバイスから、生成したリンクをクリックします。
 
