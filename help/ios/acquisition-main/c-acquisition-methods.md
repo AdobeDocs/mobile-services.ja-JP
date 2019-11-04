@@ -1,17 +1,17 @@
 ---
-description: 'iOSライブラリで提供される獲得方法は次のとおりです '
-seo-description: 'iOSライブラリで提供される獲得方法は次のとおりです '
+description: 'iOS ライブラリでは、次の獲得メソッドが提供されています。 '
+seo-description: 'iOS ライブラリでは、次の獲得メソッドが提供されています。 '
 seo-title: 獲得メソッド
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: 獲得メソッド
 uuid: 6f88de57-793d-4d33-9a54-f6714289fd2c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
 
 ---
 
 
-# Acquisition methods {#acquisition-methods}
+# 獲得メソッド{#acquisition-methods}
 
 iOS ライブラリは、以下の獲得メソッドを提供します。
 
