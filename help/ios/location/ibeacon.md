@@ -2,11 +2,11 @@
 description: iBeacon トラッキングにより、iBeacon と Low Energy Bluetooth を使用してマイクロロケーションを測定し、ターゲットを設定することができます。
 seo-description: iBeacon トラッキングにより、iBeacon と Low Energy Bluetooth を使用してマイクロロケーションを測定し、ターゲットを設定することができます。
 seo-title: iBeacon トラッキング
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: iBeacon トラッキング
 topic: 開発者と導入
 uuid: 390883db-027e-4d12-8a16-86d514579db1
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 ---
@@ -18,7 +18,7 @@ iBeacon トラッキングにより、iBeacon と Low Energy Bluetooth を使用
 
 `trackBeacon` が呼び出されると、次のビーコンデータが Analytics と Target に送信されます。
 
-* `a.beacon.uuid`  — ビーコンのProximityUUID
+* `a.beacon.uuid` - ビーコンの ProximityUUID
 * `a.beacon.major` - 店舗番号など、ビーコンのメジャー番号
 * `a.beacon.minor` - 店舗内の一意の番号など、ビーコンのマイナー番号
 * `a.beacon.prox` - 以下の値でユーザーとビーコンの距離を表します。
@@ -28,11 +28,11 @@ iBeacon トラッキングにより、iBeacon と Low Energy Bluetooth を使用
    * `2` - 近い
    * `3` - 遠い
 
-## iBeaconの追跡 {#section_FC3F213545944A468B1E6D5D5C8E2F1F}
+## iBeacon の追跡 {#section_FC3F213545944A468B1E6D5D5C8E2F1F}
 
 1. ライブラリをプロジェクトに追加し、ライフサイクルを実装します。
 
-   詳しくは、コア実装とラ *イフサイクルでのプロジェクトへのSDKと設定ファイルの追加* ( [英語のみ)を参照してください](/help/ios/getting-started/dev-qs.md)。
+   詳しくは、[コア実装とライフサイクル](/help/ios/getting-started/dev-qs.md)の「*プロジェクトへの SDK と設定ファイルの追加*」を参照してください。
 1. ライブラリをインポートします。
 
    ```objective-c
@@ -51,7 +51,7 @@ iBeacon トラッキングにより、iBeacon と Low Energy Bluetooth を使用
    [ADBMobile trackingClearCurrentBeacon];
    ```
 
-## Send additional data {#section_3EBE813E54A24F6FB669B2478B5661F9}
+## 追加データの送信 {#section_3EBE813E54A24F6FB669B2478B5661F9}
 
 各 trackAction コールで、時間指定イベント名に加え、追加のコンテキストデータを送信できます。
 
@@ -59,7 +59,7 @@ iBeacon トラッキングにより、iBeacon と Low Energy Bluetooth を使用
 [ADBMobile trackBeacon:beacon data:@{@"myapp.ImageLiked" : imageName}];
 ```
 
-Context data values must be mapped to custom variables:
+コンテキストデータ値は、カスタム変数にマッピングする必要があります。
 
 ![](assets/map-variable-context-ltv.png)
 
