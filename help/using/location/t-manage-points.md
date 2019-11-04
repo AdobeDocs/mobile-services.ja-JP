@@ -3,34 +3,34 @@ description: 目標地点を作成および管理できます。目標地点で�
 keywords: モバイル
 seo-description: 目標地点を作成および管理できます。目標地点では、地理的な場所を定義して、相関関係を分析したり、アプリ内メッセージを使用してターゲット設定したりするのに使用できます。ヒットが目標地点内で送信されると、その目標地点がヒットに追加されます。
 seo-title: 目標地点の設定
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: 目標地点の設定
 topic: 指標
 uuid: 7b362534-54fb-43a3-b6b2-dfc8f45ff7c6
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
 
 ---
 
 
-# Manage points of interest {#manage-points-of-interest}
+# 目標地点の設定 {#manage-points-of-interest}
 
-You can create and manage POIs, which allow you to define geographical locations that you can use for correlation purposes, target with in-app messages, and so on. POIでヒットが送信されると、そのPOIがヒットに関連付けられます。
+目標地点（POI）を作成および管理できます。目標地点では、地理的な場所を定義して、相関関係を分析したり、アプリ内メッセージを使用してターゲット設定したりするのに使用できます。ヒットが目標地点内で送信されると、その目標地点がヒットに追加されます。
 
-「場所」を使用する前に、次の要件を確認します。
+場所を使用する前に、次の要件を確認します。
 
 * Analytics モバイルアプリまたは Analytics Premium のご契約が必要です。
-* アプリの&#x200B;**[!UICONTROL ロケーションレポート]を有効にする必要があります。**
-* If you are using a version of the iOS SDK or Android SDK older than version 4.2, after adding new **[!UICONTROL Points of Interest]**, you must download a new configuration file and give it to your app developers.
+* アプリの&#x200B;**[!UICONTROL ロケーションレポート]**&#x200B;を有効にする必要があります。
+* バージョン 4.2 より前の iOS SDK または Android SDK を使用している場合は、新しい&#x200B;**[!UICONTROL 目標地点]**&#x200B;を追加してから、新しい設定ファイルをダウンロードして、アプリ開発者に提供する必要があります。
 
-   If you are using the iOS SDK or Android SDK version 4.2 or later, you do not need to submit an app update to the store to update your **[!UICONTROL Points of Interest]**. 目標地点の管理ページで、「保存」をクリックすると ******** 、変更が目標地点リストにパッケージ化され、ライブアプリの設定ファイルが更新されます。 また、アプリが更新されたSDKとリモートPOI URLの設定を使用する限り、保存すると、ユーザーデバイス上のアプリ内のポイントのリストも更新されます。
+   iOS SDK または Android SDK のバージョン 4.2 以降を使用している場合は、ストアにアプリのアップデートを送信して&#x200B;**[!UICONTROL 目標地点]**&#x200B;を更新する必要はありません。目標地点の管理ページで、**[!UICONTROL 保存]** をクリックすると、変更は&#x200B;**[!UICONTROL 目標地点]**&#x200B;リストにパッケージ化され、ライブアプリの設定ファイルが更新されます。また、アプリが更新された SDK とリモート目標地点 URL の設定を使用している限り、保存するとユーザーデバイス上のアプリの地点のリストも更新されます。
 
-On the user's device, for a hit to be assigned to a **[!UICONTROL Points of Interest]**, location must be enabled for the app.
+ユーザーのデバイス上で、ヒットを&#x200B;**[!UICONTROL 目標地点]**&#x200B;に割り当てるには、アプリに対してロケーション機能を有効にする必要があります。
 
 場所を使用するには、次のタスクを実行します。
 
 1. 目的のアプリの名前をクリックして、そのアプリのアプリ設定ページに移動します。
-1. Click **[!UICONTROL Location]** &gt; **[!UICONTROL Manage Points of Interest]**.
+1. **[!UICONTROL 場所]**／**[!UICONTROL 目標地点の管理]**&#x200B;をクリックします。
 
    ![手順の結果](assets/poi.png)
 
@@ -38,32 +38,32 @@ On the user's device, for a hit to be assigned to a **[!UICONTROL Points of Inte
 
    * **[!UICONTROL 地点名]**
 
-      **[!UICONTROL 目標地点]の名前を入力します。**
+      **[!UICONTROL 目標地点]**&#x200B;の名前を入力します。
 
-      都市、国、地域の名前を設定できます。競技場や企業など、特定の場所の近くに&#x200B;**[!UICONTROL 目標地点]を作成することもできます。**
+      都市、国、地域の名前を設定できます。競技場や企業など、特定の場所の近くに&#x200B;**[!UICONTROL 目標地点]**&#x200B;を作成することもできます。
 
    * **[!UICONTROL 緯度]**
 
-      Type the latitude of the **[!UICONTROL Point of Location]**. この情報は、インターネットなど他のソースから取得できます。
+      **[!UICONTROL 目標地点]**&#x200B;の緯度を入力します。この情報は、インターネットなど他のソースから取得できます。
 
    * **[!UICONTROL 経度]**
 
-      Type the longitude of the **[!UICONTROL Point of Location]**. この情報は、インターネットなど他のソースから取得できます。
+      **[!UICONTROL 目標地点]**&#x200B;の経度を入力します。この情報は、インターネットなど他のソースから取得できます。
 
    * **[!UICONTROL 半径（m）]**
 
-      含める&#x200B;**[!UICONTROL 目標地点]の周囲の半径（メートル単位）を入力します。** For example, if you create a POI for Denver, Colorado, you can specify a radius large enough to include the city of Denver and the surrounding areas, but exclude Colorado Springs.
+      含める&#x200B;**[!UICONTROL 目標地点]**&#x200B;の周囲の半径（メートル単位）を入力します。例えば、コロラド州デンバーに対して目標地点を作成する場合、デンバーの市街と周辺地域を含むがコロラドスプリングスは除外する大きさの半径を指定できます。
 
    * **[!UICONTROL マップアイコン]**
 
-      概要レポートとマップレポートに表示する [アイコン](/help/using/location/c-location-overview.md) を [選択します](/help/using/location/c-map-points.md) 。
+      [概要](/help/using/location/c-location-overview.md)レポートと[マップ](/help/using/location/c-map-points.md)レポートに表示するアイコンを選択します。
 
-1. 必要に応じて、POIを追加します。
+1. 必要に応じて目標地点を追加します。
 
-   追加するPOIは5,000件以下にすることをお勧めします。 5,000 個を超える目標地点を追加した場合、保存することはできますが、目標地点は 5,000 個未満にすることがベストプラクティスであると知らせる警告メッセージを受け取ることになります。
+   追加する目標地点は 5,000 個以下にすることをお勧めします。5,000 個を超える目標地点を追加した場合、保存することはできますが、目標地点は 5,000 個未満にすることがベストプラクティスであると知らせる警告メッセージを受け取ることになります。
 
-1. 「**[!UICONTROL 保存]**」をクリックします。
+1. **[!UICONTROL 保存]**&#x200B;をクリックします。
 
-To delete one or more POIs, select the applicable check boxes, and click **[!UICONTROL Remove Selected]**.
+1 つまたは複数の目標値点を削除するには、該当するチェックボックスを選択して、**[!UICONTROL 選択項目を削除]** をクリックします。
 
-Click **[!UICONTROL Import]** or **[!UICONTROL Export]** to work with the data by using a `.csv` file instead of using the Adobe Mobile user interface.
+Adobe Mobile ユーザーインターフェイスを使用する代わりに `.csv`ァイルを使用してデータを処理するには、**[!UICONTROL 読み込み]** または **[!UICONTROL 書き出し]** をクリックします。
