@@ -1,31 +1,31 @@
 ---
 description: Android SDK バージョン 4.5 から新しい Android 拡張機能が追加され、Android ウェアラブルアプリからデータを収集できるようになりました。
 seo-description: Android SDK バージョン 4.5 から新しい Android 拡張機能が追加され、Android ウェアラブルアプリからデータを収集できるようになりました。
-seo-title: Android Wearablesはじめに
-solution: Marketing Cloud,Analytics
-title: Android Wearables  Getting Started
+seo-title: Android ウェアラブル：はじめに
+solution: Experience Cloud,Analytics
+title: Android ウェアラブル：はじめに
 topic: 開発者と導入
 uuid: bfe5d41e-b17c-4634-80ac-7a38671ecb81
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 ---
 
 
-# Android Wearables: getting started{#android-wearables-getting-started}
+# Android ウェアラブル：はじめに{#android-wearables-getting-started}
 
 Android SDK バージョン 4.5 から新しい Android 拡張機能が追加され、Android ウェアラブルアプリからデータを収集できるようになりました。
 
-## Configuring the SDK for a handheld app (Android Studio) {#section_262237484EC44C58953891B105F0D000}
+## ハンドヘルドアプリ用の SDK の設定（Android Studio）{#section_262237484EC44C58953891B105F0D000}
 
-For more information about importing the SDK into your project, see Core Implementation and Lifecycle.[](/help/android/getting-started/dev-qs.md)
+SDK をプロジェクトに読み込む方法について詳しくは、「[コア実装とライフサイクル](/help/android/getting-started/dev-qs.md)」を参照してください。
 
 1. `ADBMobileConfig.json` ファイルをプロジェクトの assets フォルダーに追加します。
 1. `adobeMobileLibrary-*.jar` ファイルを libs フォルダーに追加するか、このファイルをプロジェクトで参照されるように設定します。
 
    >[!TIP]
    >
-   >You might need to sync the gradle project after adding the `.jar` file.
+   >`.jar` ファイルを追加した後で gradle プロジェクトを同期することが必要になる場合があります。
 
 1. `onCreate` メソッドで、`Config.setContext` を使用して SDK がアプリケーションコンテキストにアクセスできるようにします。
 
@@ -40,7 +40,7 @@ For more information about importing the SDK into your project, see Core Impleme
    }
    ```
 
-1. Add the following code to the `AndroidManifest.xml` file:
+1. `AndroidManifest.xml` ファイルに次のコードを追加します。
 
    ```java
        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> 
@@ -55,7 +55,7 @@ For more information about importing the SDK into your project, see Core Impleme
    ```
 
 1. プロジェクトに Google Play サービスライブラリが含まれていることを確認します。
-1. Implement `WearableListenerService` or add the corresponding code to your `WearableListenerService`:
+1. `WearableListenerService` を実装するか、対応するコードを `WearableListenerService` に追加します。
 
    ```java
    public class WearListenerService extends WearableListenerService { 
@@ -88,7 +88,7 @@ For more information about importing the SDK into your project, see Core Impleme
    }
    ```
 
-1. Add  to the  file:`WearListenerService``AndroidManifest.xml`
+1. `AndroidManifest.xml` ファイルに `WearListenerService` を追加します。
 
    ```java
    If you are using Google Play Services  < 8.2 
@@ -117,7 +117,7 @@ For more information about importing the SDK into your project, see Core Impleme
    Permalink Edit
    ```
 
-## Configuring the SDK for a Wearable app (Android Studio) {#section_2268EC03E20B4A228A28BDCFEA2E9AE4}
+## ウェアラブルアプリ用の SDK の設定（Android Studio）{#section_2268EC03E20B4A228A28BDCFEA2E9AE4}
 
 1. 次のどちらかのタスクを実行します。
 
@@ -162,7 +162,7 @@ For more information about importing the SDK into your project, see Core Impleme
    ```
 
 1. プロジェクトに Google Play サービスライブラリが含まれていることを確認します。
-1. Implement `WearableListenerService` or add the corresponding code to your `WearableListenerService`:
+1. `WearableListenerService` を実装するか、対応するコードを `WearableListenerService` に追加します。
 
    ```java
    public class WearListenerService extends WearableListenerService { 
@@ -175,7 +175,7 @@ For more information about importing the SDK into your project, see Core Impleme
    }
    ```
 
-1. Add  to the  file:`WearListenerService``AndroidManifest.xml`
+1. `AndroidManifest.xml` ファイルに `WearListenerService` を追加します。
 
    ```java
    If you are using Google Play Services  < 8.2 
