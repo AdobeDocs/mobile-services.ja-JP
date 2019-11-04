@@ -2,23 +2,23 @@
 description: iOS ライブラリが提供する Audience Manager メソッドの一覧を以下に示します。
 seo-description: iOS ライブラリが提供する Audience Manager メソッドの一覧を以下に示します。
 seo-title: Audience Manager メソッド
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Audience Manager メソッド
 topic: 開発者と導入
 uuid: 97658bd6-4c4f-4875-abe9-36dad4ec8bae
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
 ---
 
 
-# Audience Manager methods {#audience-manager-methods}
+# Audience Manager メソッド{#audience-manager-methods}
 
 iOS ライブラリが提供する Audience Manager メソッドの一覧を以下に示します。
 
-SDKは、現在、Analytics、Target、Audience ManagerおよびAdobe Experience Platform IDサービスを含む、複数のAdobe Experience cloudソリューションをサポートしています。 各メソッドには、ソリューションに応じたプレフィックスが付きます。 Manager メソッドの場合、プレフィックスは「`audience`audience」となります。
+SDK は現在、Analytics、Target、Audience Manager、Adobe Experience Platform ID サービスなど、複数の Adobe Experience Cloud ソリューションをサポートしています。各メソッドには、ソリューションに応じたプレフィックスが付きます。Audience Manager メソッドの場合、プレフィックスは「`audience`」となります。
 
-JSON ファイル内で Audience Manager が設定されている場合は、ライフサイクル指標を含むシグナルが `application:didFinishLaunchingWithOptions:` : で送信されます。
+JSON ファイル内で Audience Manager が設定されている場合は、ライフサイクル指標を含むシグナルが `application:didFinishLaunchingWithOptions:` で送信されます。
 
 * **audienceVisitorProfile**
 
@@ -30,7 +30,7 @@ JSON ファイル内で Audience Manager が設定されている場合は、ラ
       + (NSDictionary *) audienceVisitorProfile;
       ```
 
-   * このメニューのコード例を次に示します。
+   * このメニューのコードサンプルを次に示します。
 
       ```objective-c
       NSDictionary *profile = [ADBMobile audienceVisitorProfile]; 
@@ -77,7 +77,7 @@ JSON ファイル内で Audience Manager が設定されている場合は、ラ
 
       >[!IMPORTANT]
       >
-      >バージョン4.13.xより前のバージョンでは、DPUUIDは自動的にエンコードされませんでした。 バージョン 4.13.x 以降の SDK は、渡された値のエンコードを解除してから、この値を再エンコードします。このプロセスにより、後方互換性が確保されます。
+      >4.13.x より前のバージョンでは、DPUUID は自動的にエンコードされませんでした。バージョン 4.13.x 以降の SDK は、渡された値のエンコードを解除してから、この値を再エンコードします。このプロセスにより、後方互換性が確保されます。
 
    * このメソッドの構文を次に示します。
 
