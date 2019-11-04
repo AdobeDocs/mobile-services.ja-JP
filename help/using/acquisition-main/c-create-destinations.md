@@ -1,13 +1,13 @@
 ---
-description: Marketers can create, save, and edit link destinations, such as web, deep, or other links, that can be used while building trackable Marketing Links.
+description: マーケターは、トラッキング可能なマーケティングリンクの構築中に使用できるリンク先（Web、ディープリンクまたはその他のリンクなど）を作成、保存および編集できます。
 keywords: モバイル
-seo-description: マーケターは、追跡可能なマーケティングリンクの構築中に使用できるWeb、ディープ、その他のリンク先を作成、保存および編集できます。
+seo-description: マーケターは、トラッキング可能なマーケティングリンクの構築中に使用できるリンク先（Web、ディープリンクまたはその他のリンクなど）を作成、保存および編集できます。
 seo-title: 宛先
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: 宛先
 topic: 指標
 uuid: 0e0e7d22-067c-4a59-abcb-a4826800944d
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
 ---
@@ -15,15 +15,15 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
 # 宛先{#destinations}
 
-マーケターは、追跡可能なマーケティングリンクの構築中に使用できるWeb、ディープ、その他のリンク先を作成、保存および編集できます。
+マーケターは、トラッキング可能なマーケティングリンクの構築中に使用できるリンク先（Web、ディープリンクまたはその他のリンクなど）を作成、保存および編集できます。
 
-To create different types of link destinations, see Create and manage link destinations.[](/help/using/acquisition-main/c-manage-link-destinations/c-manage-link-destinations.md)
+様々なタイプのリンク先を作成するには、「[リンク先の作 成と管理](/help/using/acquisition-main/c-manage-link-destinations/c-manage-link-destinations.md)」を参照してください。
 
 次のタイプのリンク先を作成できます。
 
 * **[!UICONTROL アプリのディープリンク]**
 
-   App deep link destinations are URI schema deep links that direct users to a Deep Link in your app. 例えば、ユーザーをオンライン小売業者のモバイルアプリにある製品ラインに誘導できます。
+   アプリのディープリンク先は、アプリ内のディープリンクにユーザーを誘導する、URI スキーマのディープリンクです。例えば、ユーザーをオンライン小売業者のモバイルアプリにある製品ラインに誘導できます。
 
 * **[!UICONTROL Web リンク]**
 
@@ -31,10 +31,10 @@ To create different types of link destinations, see Create and manage link desti
 
    >[!IMPORTANT]
    >
-   >Web link destinations are **not** tracked.
+   >Web リンク先はトラック&#x200B;**されません**。
 
 * **[!UICONTROL ハイブリッドリンク]**
 
    ハイブリッドリンクは、iOS Universal Links または Android App Links をサポートします。
 
-各タイプのリンクの作成方法について詳しくは、 [Create new link destination](/help/using/acquisition-main/c-manage-link-destinations/t-create-new-app-deep-link-destination.md).
+各タイプのリンクの作成方法について詳しくは、「[新しいリンク先の作成](/help/using/acquisition-main/c-manage-link-destinations/t-create-new-app-deep-link-destination.md)」を参照してください。
