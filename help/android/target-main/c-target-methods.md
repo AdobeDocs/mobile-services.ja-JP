@@ -1,31 +1,31 @@
 ---
 description: Android ライブラリによって提供される Adobe Target メソッドのリストを示します。
-keywords: android;library;mobile;sdk
+keywords: Android, ライブラリ, モバイル, SDK
 seo-description: Android ライブラリによって提供される Adobe Target メソッドのリストを示します。
-seo-title: Target methods for Android
-solution: Marketing Cloud,Analytics
-title: Target methods for Android
+seo-title: Android の Target メソッド
+solution: Experience Cloud,Analytics
+title: Android の Target メソッド
 topic: 開発者と導入
 uuid: 8e9808b2-ba80-4646-ba05-8e62d4fde065
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 ---
 
 
-# Target methods for Android{#target-methods}
+# Android の Target メソッド{#target-methods}
 
 Android ライブラリによって提供される Adobe Target メソッドのリストを示します。
 
-The SDK currently supports multiple Adobe Experience Cloud Solutions, including Analytics, Target, Audience Manager, and the Adobe Experience Platform Identity Service]. Methods are prefixed according to the solution. For example, Experience Cloud ID methods are prefixed with `target`.
+SDK は現在、Analytics、Target、Audience Manager、Adobe Experience Platform ID サービスなど、複数の Adobe Experience Cloud ソリューションをサポートしています。これらのメソッドには、ソリューションに応じたプレフィックスが付けられています。例えば、Experience Cloud ID メソッドのプレフィックスは、`target` です。
 
 >[!TIP]
 >
 >[ライフサイクル指標](/help/android/metrics.md)は、各 mbox が読み込むパラメーターとして送信されます。
 
-## Class reference : TargetLocationRequest {#section_A8CC898922164E819EC730DC92A6742B}
+## クラス参照：TargetLocationRequest {#section_A8CC898922164E819EC730DC92A6742B}
 
-**プロパティ:**
+**プロパティ：**
 
 ```java
 public String name; 
@@ -37,7 +37,7 @@ public HashMap<String, Object> parameters;
 
 >[!TIP]
 >
->以下の定数は、カスタムパラメーターのキーを設定する際の使いやすさを考慮したものです。
+>次の定数は、カスタムパラメーターのキーを設定するのに便利です。
 
 ```java
 public static final String TARGET_PARAMETER_ORDER_ID   = "orderId"; 
@@ -53,10 +53,10 @@ public static final String TARGET_PARAMETER_MBOX_HOST           = "mboxHost";
 
 >[!IMPORTANT]
 >
->* If you are using SDKs **before** version 4.14.0, see [https://developers.adobetarget.com/api/#input-parameters](https://developers.adobetarget.com/api/#input-parameters) for parameters limitations.
+>* バージョン 4.14.0 より&#x200B;**前の** SDK を使用している場合、パラメーターの制限については、「[https://developers.adobetarget.com/api/#input-parameters](https://developers.adobetarget.com/api/#input-parameters)」を参照してください。
    >
    >
-* If you are using SDKs version 4.14.0 **or later**, see [https://developers.adobetarget.com/api/#batch-input-parameters](https://developers.adobetarget.com/api/#batch-input-parameters) for parameters limitations.
+* SDKバージョン 4.14.0 **以降**&#x200B;を使用している場合は、パラメーターの制限について [](https://developers.adobetarget.com/api/#batch-input-parameters)https://developers.adobetarget.com/api/#batch-input-parameters を参照してください。
 
 
 * **loadRequest**
@@ -122,38 +122,38 @@ public static final String TARGET_PARAMETER_MBOX_HOST           = "mboxHost";
 
          取得する Target の mbox／ロケーションの名前。
 
-         * **** タイプ：文字列
+         * **型：** String
       * **defaultContent**
 
          Target サーバーに到達できない場合、またはユーザーがキャンペーンの対象にならない場合にコールバックで返される値。
 
-         * **** タイプ：文字列
+         * **型：** String
       * **profileParameters**
 
          この辞書の値は、Target へのリクエストの「profileParameters」オブジェクトに格納されます。
 
-         * **** タイプ：マップ `<String, Object>`
+         * **型：**&#x200B;マップ`<String, Object>`
       * **orderParameters**
 
          この辞書の値は、Target へのリクエストの「order」オブジェクトに格納されます。
 
-         * **** タイプ：マップ `<String, Object>`
+         * **型：**&#x200B;マップ`<String, Object>`
       * **mboxParameters**
 
-         このディクショナリの値は、Targetへのリクエストに含まれます。
+         この辞書の値は、Target へのリクエストに含まれます。
 
-         * **** タイプ：マップ `<String, Object>`
+         * **型：**&#x200B;マップ`<String, Object>`
       * **requestLocationParameters**
 
          この辞書の値は、Target へのリクエストの「requestLocation」オブジェクトに格納されます。
 
-         * **** タイプ：マップ `<String, Object>`
+         * **型：**&#x200B;マップ`<String, Object>`
       * **callback**
 
          このメソッドは、Target サーバーからのオファーのコンテンツで呼び出されます。Target サーバーに到達できない場合、またはユーザーがキャンペーンの対象にならない場合、defaultContent が返されます。
 
-         * **Type:** TargetCallback `<String>`
-   * このメソッドのサンプルコードを次に示します。
+         * **型：** TargetCallback `<String>`
+   * このメソッドのコードサンプルを次に示します。
 
       ```java
       Map `<String, Object>` profileParameters = new HashMap `<String, Object>`(); profileParameters.put(“profile-parameter-key”, “profile-parameter-value”); 
