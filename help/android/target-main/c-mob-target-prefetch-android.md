@@ -4,7 +4,7 @@ seo-description: Adobe Target のプリフェッチ機能では、サーバー�
 seo-title: Android でのオファーコンテンツのプリフェッチ
 title: Android でのオファーコンテンツのプリフェッチ
 uuid: 063451b8-e191-4d58-8ed8-1723e310ad1a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: fa7375ac8a1345d81748bcf635791c46d3943fed
 
 ---
@@ -16,17 +16,17 @@ Adobe Target のプリフェッチ機能では、サーバーからの応答を�
 
 >[!IMPORTANT]
 >
->Android用のモバイルSDKのプリフェッチ機能は、Adobe targetの自動ターゲット、自動配分、自動パーソナライゼーションアクティビティタイプではサポートされていません。
+>Android 用のモバイル SDK のプリフェッチ機能は、Adobe Target の自動ターゲット、自動配分、自動パーソナライゼーションアクティビティタイプではサポートされていません。
 
 このプロセスにより、読み込み時間が短縮され、複数のネットワーク呼び出しが回避されるほか、モバイルアプリユーザーがどの mbox を訪問したかを Adobe Target に通知することができます。プリフェッチ呼び出し中にすべてのコンテンツが取得され、キャッシュされます。このコンテンツは、指定された mbox 名のキャッシュされたコンテンツを含む今後のすべての呼び出しに対してキャッシュから取得されます。
 
-プリフェッチコンテンツは、起動間で保持されません。The prefetch content is cached as long as the application lives or until the `clearPrefetchCache()` method is called.
+プリフェッチコンテンツは、起動間で保持されません。プリフェッチコンテンツは、アプリケーションが存続するか、`clearPrefetchCache()` メソッドが呼び出されるまでキャッシュに保持されます。
 
 >[!IMPORTANT]
 >
->Target prefetch APIs have been available since SDK version 4.14.0. For more information about parameter limitations, see [Batch-input-parameters](https://developers.adobetarget.com/api/#batch-input-parameters).
+>Target Prefetch API は、SDK バージョン 4.14.0 以降で使用できます。パラメーターの制限について詳しくは、「[バッチ入力パラメーター](https://developers.adobetarget.com/api/#batch-input-parameters)」を参照してください。
 
-SDK バージョン 4.14 以降で、`environmentId``ADBMobileConfig.json` が指定されている場合、v2 バッチ mbox TnT 呼び出しを開始すると、 ファイルから environmentId を取得します。このファイルで `environmentId` が指定されていない場合、TNT バッチ mbox 呼び出しで環境パラメーターは送信されず、オファーはデフォルト環境に配信されます。
+SDK バージョン 4.14 以降で、`environmentId` が指定されている場合、v2 バッチ mbox TnT 呼び出しを開始すると、`ADBMobileConfig.json` ファイルから environmentId を取得します。このファイルで `environmentId` が指定されていない場合、TNT バッチ mbox 呼び出しで環境パラメーターは送信されず、オファーはデフォルト環境に配信されます。
 
 以下に例を示します。
 
@@ -39,7 +39,7 @@ if (MobileConfig.getInstance().mobileUsingTarget()){
         }
 ```
 
-## Pre-fetch methods {#section_05967F1F3A554B0FBC2C08A954554BDE}
+## プリフェッチメソッド {#section_05967F1F3A554B0FBC2C08A954554BDE}
 
 以下に、Android でのプリフェッチで使用できるメソッドを示します。
 
@@ -68,7 +68,7 @@ if (MobileConfig.getInstance().mobileUsingTarget()){
 
       * **callback**
 
-         プリフェッチの完了時に呼び出されます。Returns `true` if the prefetch was successful and `false` if the prefetch was unsuccesful.
+         プリフェッチの完了時に呼び出されます。プリフェッチが成功した場合は `true`、失敗した場合は `false` を返します。
 
 * **loadRequests**
 
@@ -76,7 +76,7 @@ if (MobileConfig.getInstance().mobileUsingTarget()){
 
    >[!IMPORTANT]
    >
-   >要求された場所のコンテンツが既にキャッシュされている場合、指定されたコールバックで直ちに返されます。 コンテンツがキャッシュされていない場合は、SDK は Target サーバーにネットワーク要求を送信してコンテンツを取得します。
+   >要求されたロケーションのコンテンツが既にキャッシュされている場合は、指定されたコールバックで即座に返されます。コンテンツがキャッシュされていない場合は、SDK は Target サーバーにネットワーク要求を送信してコンテンツを取得します。
 
    * このメソッドの構文を次に示します。
 
@@ -136,7 +136,7 @@ if (MobileConfig.getInstance().mobileUsingTarget()){
       final Map<String, Object> productParams)
       ```
 
-## Public classes {#section_A273E53F069E4327BBC8CE4910B37888}
+## パブリッククラス {#section_A273E53F069E4327BBC8CE4910B37888}
 
 以下に、Android でのプリフェッチをサポートするパブリッククラスを示します。
 
@@ -152,18 +152,18 @@ mbox 名と、mbox のプリフェッチで使用されるパラメーターを�
 * `mboxParameters`
 
    この `mboxParameters` の要求の `TargetPrefetchObject` として添付されるキー値のペアのコレクション。
-   * **タイプ**:マップ`<String, Object>`
+   * **型**：マップ`<String, Object>`
 
 * **`orderParameters`**
 
    order ノード下の現在の mbox に添付されるキー値のペアのコレクション。
-   * **タイプ**:マップ `<String, Object>`
+   * **型**：マップ`<String, Object>`
 
 * **`productParameters`**
 
    product ノード下の現在の mbox に添付されるキー値のペアのコレクション。
 
-   * **タイプ**:マップ `<String, Object>`
+   * **型**：マップ`<String, Object>`
 
 
 ### クラス参照：TargetRequestObject
@@ -180,19 +180,19 @@ mbox 名と、mbox のプリフェッチで使用されるパラメーターを�
 
    この `mboxParameters` の `TargetRequestObject` として添付されるキー値のペアのコレクション。
 
-   * **タイプ：マップ`<String, Object>`**
+   * **型`<String, Object>`：マップ**
 
 * **`orderParameters`**
 
    order ノード下の現在の mbox に添付されるキー値のペアのコレクション。
 
-   * **タイプ**:マップ `<String, Object>`
+   * **型**：マップ`<String, Object>`
 
 * **`productParameters`**
 
    product ノード下の現在の mbox に添付されるキー値のペアのコレクション。
 
-   * **タイプ**:マップ `<String, Object>`
+   * **型**：マップ`<String, Object>`
 
 * **`defaultContent`**
 
@@ -204,10 +204,10 @@ mbox 名と、mbox のプリフェッチで使用されるパラメーターを�
 
    指定された `TargetRequestObject` のコンテンツが使用可能な場合に呼び出される関数ポインター。
 
-   * **タイプ**:Target.TargetCallback`<String>`
+   * **型**：Target.TargetCallback`<String>`
 
 
-## Code sample {#section_BF7F49763D254371B4656E17953D520C}
+## コードサンプル {#section_BF7F49763D254371B4656E17953D520C}
 
 以下に、Android SDK を使用してコンテンツをプリフェッチする方法の例を示します。
 
