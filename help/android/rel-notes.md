@@ -2,11 +2,11 @@
 description: Experience Cloud ソリューション用 Android SDK 4.x のリリースノートと既知の問題です。
 seo-description: Experience Cloud ソリューション用 Android SDK 4.x のリリースノートと既知の問題です。
 seo-title: リリースノート
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: リリースノート
 topic: 開発者と導入
 uuid: 16bb4de8-a216-47a8-928c-0b1e1421adcf
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7fe7c78262a6d35dd27787554bb4f9ee92faa952
 
 ---
@@ -14,31 +14,31 @@ source-git-commit: 7fe7c78262a6d35dd27787554bb4f9ee92faa952
 
 # リリースノート {#release-notes}
 
-Here is the release notes, known issues, and hot fix information for Android SDK 4.x for Experience Cloud Solutions:
+Experience Cloud ソリューション用 Android SDK 4.x のリリースノート、既知の問題およびホットフィックス情報を次に示します。
 
-**2019年9月21日：バージョン4.17.10**
+**2019 年 9 月 21 日：バージョン 4.17.10**
 
-* 一般：Android APIレベル21以降の一部の地域でのロケール文字列の生成を修正しました。
+* 全般：Android API レベル 21 以降における、一部の地域のロケール文字列の生成を修正しました。
 
-**2019年7月19日：バージョン4.17.8**
+**2019 年 7 月 19 日：バージョン 4.17.8**
 
-* Adobe Target:すべてのリクエストに、URLクエリパラメーターにclientとsessionIdが含まれるようになりました。
+* Adobe Target：すべてのリクエストで、URL クエリパラメーターにクライアントおよび sessionId が含まれるようになりました。
 * アプリ内メッセージ：空のクリックスルー URL でメッセージがトリガーされた場合に Android アプリがクラッシュする問題を修正しました。
 * 訪問者 ID サービス：`Visitor.appendToURL` および `Visitor.getUrlVariablesAsync` API は、戻り値を二重エンコードしなくなりました。 
 
    二重エンコードが原因で、API からの戻り値がセキュリティ診断によってリスクありと判断されることがありました。
 
-**2019年6月7日：バージョン4.17.7**
+**2019 年 6 月 6 日：バージョン 4.17.7**
 
-* 一般 — 20未満のAndroid APIレベルでのネットワーク呼び出しで、TLS 1.1またはTLS 1.2が使用されるようになりました。
-* Analytics - Appended push opt-in status to Lifecycle data when push notifications are enabled.
+* 全般 - Android API のレベル 20 未満でのネットワーク呼び出しで、TLS 1.1 または TLS 1.2 が使用されるようになりました。
+* Analytics - プッシュ通知が有効な場合に、ライフサイクルデータにプッシュオプトインステータスを追加します。
 
-**2019年5月25日：バージョン4.17.6**
+**2019 年 5 月 24 日：バージョン 4.17.6**
 
-* 訪問者IDサービス —
-   `setPushIdentifier` API呼び出しは、呼び出されるたびに訪問者IDサービスに非同期呼び出しを送信するようになりました。
+* 訪問者 ID サービス - 
+   `setPushIdentifier` API I呼び出しは、呼び出されるたびに同期呼び出しを訪問者IDサービスへと送信するようになりました。
 
-* 訪問者IDサービス — 接続と読み取りのタイムアウトを2秒から5秒に増やしました。
+* 訪問者 ID サービス - 接続と読み取りのタイムアウトを 2 秒から 5 秒に増やしました。
 
 
-すべてのソリューションに関する現在および過去のリリースノートについては、[Adobe Experience Cloud リリースノート](https://marketing.adobe.com/resources/help/en_US/whatsnew/)を参照してください。
+すべてのソリューションに関する現在および過去のリリースノートについては、[Adobe Experience Cloud リリースノート](https://marketing.adobe.com/resources/help/ja_JP/whatsnew/)を参照してください。
