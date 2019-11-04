@@ -4,17 +4,17 @@ seo-description: Android の通知に画像ファイルを添付することが�
 seo-title: リッチプッシュ通知の受信
 title: リッチプッシュ通知の受信
 uuid: 4a0340a6-666b-49b6-907a-9afc966dfdba
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: dca3663986b3ecc6e9fb736cc99513279715225c
 
 ---
 
 
-# Receive rich push notifications {#receive-rich-push-notifications}
+# リッチプッシュ通知の受信{#receive-rich-push-notifications}
 
 Android の通知に画像ファイルを添付することができます。ビジュアルコンポーネントを追加すると、プッシュ通知に対するユーザーのエンゲージメントが大幅に高まる可能性があります。
 
-## Handle the incoming rich push message (FCM) {#section_AF1A3BC2312C4E1DA517CC90296C11E2}
+## 受信リッチプッシュメッセージ（GCM）の処理{#section_AF1A3BC2312C4E1DA517CC90296C11E2}
 
 アプリがフォアグラウンドにある場合、プッシュメッセージは `FirebaseMessagingService` クラスを拡張するアプリによって処理されます。このクラスは、マニフェストファイルで次のように宣言します。
 
@@ -30,9 +30,9 @@ Android の通知に画像ファイルを添付することができます。ビ
 
 >[!IMPORTANT]
 >
->この実装を含むクラスは、受 `onMessageReceived()` 信したデータを処理します。
+>`onMessageReceived()` 実装を含むクラスは、受信したデータを処理します。
 
-If the push message contains a Media URL, the URL will be available in the `RemoteMessage` parameter that is passed to the `onMessageReceived()` function. 使用するキーは、次のコードサンプルに示すように、`attachment-url` です。
+プッシュメッセージにメディア URL が含まれている場合、URL は `onMessageReceived()` 関数に渡される `RemoteMessage` パラメーターで利用できます。使用するキーは、次のコードサンプルに示すように、`attachment-url` です。
 
 ```java
 public class MyFirebaseMessagingService extends FirebaseMessagingService {
@@ -90,9 +90,9 @@ private void sendNotification(RemoteMessage message) {
 
 >[!IMPORTANT]
 >
->When you set `NotificationCompat.BigPictureStyle`, large images might not be displayed. 大きな画像を常に表示するには、ネイティブの `Notification.BigPictureStyle` を設定してください。
+>`NotificationCompat.BigPictureStyle` を設定すると、大きな画像が表示されない場合があります。大きな画像を常に表示するには、ネイティブの `Notification.BigPictureStyle` を設定してください。
 
-## Sample rich push notification {#section_6819316BEDDE45108413B541CA2BB2DC}
+## サンプルのリッチプッシュ通知 {#section_6819316BEDDE45108413B541CA2BB2DC}
 
 画像を含むリッチプッシュ通知の例を次に示します。
 
