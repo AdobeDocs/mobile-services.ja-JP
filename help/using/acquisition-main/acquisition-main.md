@@ -3,11 +3,11 @@ description: マーケターは、アプリをプロモーションし、アク�
 keywords: モバイル
 seo-description: マーケターは、アプリをプロモーションし、アクセスを促進するトラッキングリンクを作成できます。これらのトラッキングリンクは、アプリストア、アプリ内ディープリンクおよびインタースティシャルにユーザーを導くことができ、アプリ内の行動に関連付けることができます。マーケターは、必要に応じてユーザーを iOS、Android またはその他のプラットフォームにルーティングする単一のリンクを作成できます。
 seo-title: 獲得
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: 獲得
 topic: 指標
 uuid: 987146e4-2cca-46e7-88aa-74b62d9f1dc5
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
 ---
@@ -21,26 +21,26 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
 Adobe Experience Platform Mobile SDK に関する情報やドキュメントをお探しの場合、最新のドキュメントについては、[こちら](https://aep-sdks.gitbook.io/docs/)をクリックしてください。
 
-2018 年 9 月に、SDK の新しいメジャーバージョンをリリースしました。これらの新しい Adobe Experience Platform Mobile SDK は、[Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) から設定できます。
+2018 年 9 月に、SDK の新しいメジャーバージョンをリリースしました。これらの新しい Adobe Experience Platform Mobile SDK は、[Experience Platform Launch](https://www.adobe.com/jp/experience-platform/launch.html) から設定できます。
 
 * 利用を開始するには、[Launch](https://launch.adobe.com/) にアクセスしてください。
-* Experience Platform SDK リポジトリの内容については、[Github：Adobe Experience Platform SDKs](https://github.com/Adobe-Marketing-Cloud/acp-sdks) を参照してください。
+* Experience Platform SDK リポジトリの内容については、[Github: Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks) を参照してください。
 
 >[!IMPORTANT]
 >
-> If you are using the Adobe Experience Platform Mobile SDKs with Adobe Launch, you **must** also install the Adobe Analytics Mobile Services extension to use Adobe Mobile Services features such as Acquisition links. 詳しくは、「[Adobe Analytics - Mobile Services](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services)」を参照してください。For more information about using Acquisition and Marketing Links with the Experience Cloud SDKs, see [Acquisition and Marketing Links](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services#acquisition-and-marketing-links).
+> Adobe Experience Platform Mobile SDK を Adobe Launch で使用している場合、ダウンロード計測用リンクなどの機能を使用するには、Adobe Analytics Mobile Services 拡張機能もインストールする&#x200B;**必要があります**。詳しくは、「[Adobe Analytics - Mobile Services](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services)」を参照してください。Experience Cloud SDK での獲得およびマーケティングリンクの使用について詳しくは、「[獲得およびマーケティングリンク](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services#acquisition-and-marketing-links)」を参照してください。
 
 >[!IMPORTANT]
 >
->Although you can configure features in the UI, these features will not work until you download the generated configuration file and add this file to the SDK. For information about downloading and configuring the SDKs, see the *SDK documentation* section on this page.)
+>UI で機能を設定できますが、これらの機能は、生成された設定ファイルをダウンロードして、このファイルを SDK に追加するまでは機能しません。SDK のダウンロードと設定について詳しくは、本ページの *SDK ドキュメント*&#x200B;の節を参照してください。
 
-You can create, edit, manage, and view reports on trackable mobile app Marketing Links.
+トラッキング可能なモバイルアプリマーケティングリンクに関するレポートを作成、編集、管理および表示できます。
 
 >[!TIP]
 >
->This functionality requires the Adobe Analytics - Mobile Apps or the Adobe Analytics Premium SKU.
+>この機能には、Adobe Analytics - Mobile Apps または Adobe Analytics Premium SKU が必要です。
 
-The following Acquisition reports provide insight into how your Marketing Links are performing:
+次の獲得レポートで、マーケティングリンクの効果に関するインサイトを得ることができます。
 
 * **概要** {#section_5B2BA47F22694919A472AB591101237E}
 
@@ -50,10 +50,10 @@ The following Acquisition reports provide insight into how your Marketing Links 
 
 * **リンクレポート** {#section_A23A640C363B43569D9D484CF49EA277}
 
-   このレポートは、マーケティングリンクのパフォーマンスをランク表示します。 主要パフォーマンス指標と共にリンク名が表示されますが、このレポートはカスタマイズすることもできます。詳しくは、 [レポートのカスタマイズ](/help/using/usage/reports-customize/t-reports-customize.md).
+   このレポートには、マーケティングリンクの効果がランキング形式で表示されます。主要パフォーマンス指標と共にリンク名が表示されますが、このレポートはカスタマイズすることもできます。詳しくは、「[レポートのカスタマイズ](/help/using/usage/reports-customize/t-reports-customize.md)」を参照してください。
 
    次の情報に留意してください。
 
    * 列ヘッダーの矢印アイコンをクリックすると、データを昇順または降順に並べ替えることができます。
-   * To export the data to a PDF document, you can click **[!UICONTROL Download]**.
+   * データを PDF 文書に書き出すには、**[!UICONTROL ダウンロード]** をクリックします。
    ![](assets/acquisition_name.png)
