@@ -1,26 +1,26 @@
 ---
-description: 'The following information helps you get started with the iOS SDK for Experience Cloud Solutions '
-seo-description: '次の情報は、iOS SDK for Experience cloudソリューションの使い始めに役立ちます '
-seo-title: はじめにの概要
-solution: Marketing Cloud,Analytics
-title: Getting started overview
+description: 'Experience Cloud ソリューションで iOS SDK の利用を開始するのに役立つ情報です。 '
+seo-description: 'Experience Cloud ソリューションで iOS SDK の利用を開始するのに役立つ情報です。 '
+seo-title: 導入の概要
+solution: Experience Cloud,Analytics
+title: 導入の概要
 topic: 開発者と導入
 uuid: a2b9baad-b959-4b9a-893d-99c0f4072e8d
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: b690ec677cf5aedfb2673b707f82716af1851124
 
 ---
 
 
-# Getting started overview {#getting-started}
+# 導入の概要 {#getting-started}
 
-次の情報は、iOS SDK for Experience cloudソリューションの使い始めに役立ちます。
+Experience Cloud ソリューションで iOS SDK の利用を開始するのに役立つ情報です。
 
-## New Adobe Experience Platform Mobile SDK Release
+## 新しい Adobe Experience Platform Mobile SDK リリース
 
 Adobe Experience Platform Mobile SDK に関する情報やドキュメントをお探しの場合、最新のドキュメントについては、[こちら](https://aep-sdks.gitbook.io/docs/)をクリックしてください。
 
-2018 年 9 月に、SDK の新しいメジャーバージョンをリリースしました。これらの新しい Adobe Experience Platform Mobile SDK は、[Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) から設定できます。
+2018 年 9 月に、SDK の新しいメジャーバージョンをリリースしました。これらの新しい Adobe Experience Platform Mobile SDK は、[Experience Platform Launch](https://www.adobe.com/jp/experience-platform/launch.html) から設定できます。
 
-* To get started, go to Adobe Experience Platform Launch.
-* Experience Platform SDK リポジトリの内容については、[Github：Adobe Experience Platform SDKs](https://github.com/Adobe-Marketing-Cloud/acp-sdks) を参照してください。
+* 開始するには、Adobe Experience Platform Launch に移動します。
+* Experience Platform SDK リポジトリの内容については、[Github: Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks) を参照してください。
