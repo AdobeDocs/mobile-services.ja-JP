@@ -3,25 +3,25 @@ description: アプリストアの概要レポートは、アプリストア指�
 keywords: モバイル
 seo-description: アプリストアの概要レポートは、アプリストア指標のスナップショットを提供します（アプリストア指標には、ダウンロード数、アプリ内購入、アプリストア評価平均、ダウンロードの売上高、アプリ内での売上高、国別ダウンロード数、アプリストア別ダウンロード数、名前別アプリ内購入数が含まれます）。
 seo-title: アプリストアの概要レポート
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: アプリストアの概要レポート
 topic: 指標
 uuid: ac066f31-ec4b-4b67-b839-780c2cd1574e
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3b744229b3fc288363be74c3c4adcd71ecc4fad4
 
 ---
 
 
-# App Store Overview report{#app-store-overview-report}
+# アプリストアの概要レポート{#app-store-overview-report}
 
-**[!UICONTROL アプリストアの概要]レポートは、アプリストア指標のスナップショットを提供します（アプリストア指標には、ダウンロード数、アプリ内購入、アプリストア評価平均、ダウンロードの売上高、アプリ内での売上高、国別ダウンロード数、アプリストア別ダウンロード数、名前別アプリ内購入数が含まれます）。**
+**[!UICONTROL アプリストアの概要]**&#x200B;レポートは、アプリストア指標のスナップショットを提供します（アプリストア指標には、ダウンロード数、アプリ内購入、アプリストア評価平均、ダウンロードの売上高、アプリ内での売上高、国別ダウンロード数、アプリストア別ダウンロード数、名前別アプリ内購入数が含まれます）。
 
 >[!TIP]
 >
->In the Mobile Services UI, the **[!UICONTROL App Store]** menu item and **[!UICONTROL Overview]** report appear in the left navigation menu after you configure the integration.
+>Mobile Services UI では、**[!UICONTROL アプリストア]**&#x200B;メニュー項目および&#x200B;**[!UICONTROL 概要]**&#x200B;レポートは、統合を設定した後、左側のナビゲーションメニューに表示されます。
 
-**[!UICONTROL 概要]レポートには、アプリストアのダウンロード数、アプリを使用したアプリ内購入およびアプリの評価平均についての情報を表示する時系列のグラフが含まれます。**
+**[!UICONTROL 概要]**&#x200B;レポートには、アプリストアのダウンロード数、アプリを使用したアプリ内購入およびアプリの評価平均についての情報を表示する時系列のグラフが含まれます。
 
 ![](assets/app_store_metrics.png)
 
@@ -29,11 +29,11 @@ source-git-commit: 3b744229b3fc288363be74c3c4adcd71ecc4fad4
 
 >[!IMPORTANT]
 >
->App store metrics, such as downloads, rank, revenue, rating, and so on in Adobe Analytics require a Data Connector integration with an appropriate vendor. `appFigures` で現在提供されている統合の場合は、統合を有効にする前に`appFigures`、適切な製品やサービスを **** から購入する必要があります。Data Connector の統合について詳しくは、[Adobe Exchange](https://www.adobeexchange.com/experiencecloud.html) を参照してください。
+>ダウンロード数、ランク、売上高、評価などの Adobe Analytics のアプリストア指標を使用するには、適切なベンダーとの Data Connector 統合が必要です。`appFigures` で現在提供されている統合の場合は、統合を有効にする&#x200B;**前に**、適切な製品やサービスを `appFigures` から購入する必要があります。Data Connector の統合について詳しくは、[Adobe Exchange](https://www.adobeexchange.com/experiencecloud.html) を参照してください。
 
 >[!TIP]
 >
->右上のカレンダーアイコンをクリックしてレポートの日付範囲を変更する以外にも、一部のドリルダウンレポートのカスタマイズ、フィルターとシリーズ（指標）の追加、共通フィルターの追加、PDFまたはCSV形式でのレポートのダウンロードが可能です。 For more information, see [Customize reports](/help/using/usage/reports-customize/reports-customize.md).
+>レポートの右上隅のカレンダーアイコンをクリックしてレポートの日付範囲を変更することに加えて、一部のドリルダウンレポートをカスタマイズしたり、フィルターやシリーズ（指標）を追加したり、共通フィルターを追加したり、PDF や CSV 形式でレポートをダウンロードしたりできます。詳しくは、「[レポートのカスタマイズ](/help/using/usage/reports-customize/reports-customize.md)」を参照してください。
 
 ## アプリストア評価平均 {#section_60D0D21824AE4450BC3E34D7ACA12A7A}
 
@@ -41,7 +41,7 @@ source-git-commit: 3b744229b3fc288363be74c3c4adcd71ecc4fad4
 
 ![](assets/app_store_rating.png)
 
-You can click anywhere on the **[!UICONTROL App Store Average Rating]** widget to display a graph and chart that displays the average rating by date. ある日のデータを表示するには、その日の上にマウスポインターを置きます。
+**[!UICONTROL アプリストア評価平均]**&#x200B;ウィジェットの任意の場所をクリックすると、日別評価平均を示すグラフおよび表を表示できます。ある日のデータを表示するには、その日の上にマウスポインターを置きます。
 
 ![](assets/app_store_downloads_detail.png)
 
@@ -49,30 +49,30 @@ You can click anywhere on the **[!UICONTROL App Store Average Rating]** widget t
 
 このレポートには、アプリのダウンロードによって発生した売上高が表示されます。
 
-## アプリ内での売上高 {#section_58792ED9C4B54B7D836E30CF09E8E204}
+## アプリ内での売上高{#section_58792ED9C4B54B7D836E30CF09E8E204}
 
 このレポートには、アプリを使用しておこなわれたアプリ内購入による売上高が表示されます。
 
-## 国別ダウンロード数 {#section_10373CD28CA94BA5859DFDEED7D548C6}
+## 国別ダウンロード数{#section_10373CD28CA94BA5859DFDEED7D548C6}
 
 このレポートには、国ごとにグループ化したアプリのダウンロード数が表示されます。
 
 ![](assets/country.png)
 
-To display a graph and chart that displays the number of downloads per country by date, click **[!UICONTROL Downloads by Country]**. 日付の上にマウスポインターを置くと、その日のデータを表示できます。
+国ごとの日別ダウンロード数を示すグラフおよび表を表示するには、**[!UICONTROL 国別ダウンロード数]** をクリックします。日付の上にマウスポインターを置くと、その日のデータを表示できます。
 
 ![](assets/downloads_by_country.png)
 
-## アプリストア別ダウンロード数 {#section_F1CD1A3F0105469D879E4F280CE32484}
+## アプリストア別ダウンロード数{#section_F1CD1A3F0105469D879E4F280CE32484}
 
 このレポートには、アプリストアごとにグループ化したアプリのダウンロード数が表示されます。
 
 ![](assets/app_store.png)
 
-To display a graph and chart that displays the number of downloads per app store grouped by date, click **[!UICONTROL Downloads by App Store]**. 日付の上にマウスポインターを置くと、その日のデータを表示できます。
+日別にグループ化されたアプリストアごとのダウンロード数を示すグラフおよび表を表示するには、**[!UICONTROL アプリストア別ダウンロード数]** をクリックします。日付の上にマウスポインターを置くと、その日のデータを表示できます。
 
 ![](assets/app_store_downloads_detail.png)
 
-## 名前別アプリ内購入数 {#section_D747A64F9F6449E0A02EF31D56C92F83}
+## 名前別アプリ内購入数{#section_D747A64F9F6449E0A02EF31D56C92F83}
 
 このレポートには、すべてのアプリ内購入が名前ごとに表示されます。
