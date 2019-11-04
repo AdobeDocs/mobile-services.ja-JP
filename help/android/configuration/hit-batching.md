@@ -1,13 +1,13 @@
 ---
 description: ヒットのバッチ処理では、キュー内のヒット数が設定済みの制限を超えるまで、ヒットの送信を抑制できます。
-keywords: android;library;mobile;sdk
+keywords: Android, ライブラリ, モバイル, SDK
 seo-description: ヒットのバッチ処理では、キュー内のヒット数が設定済みの制限を超えるまで、ヒットの送信を抑制できます。
 seo-title: ヒットのバッチ処理
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: ヒットのバッチ処理
 topic: 開発者と導入
 uuid: ada35be3-242b-4b2b-a828-9bf998dd58b5
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
 ---
@@ -19,9 +19,9 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
 >[!IMPORTANT]
 >
->ヒットのバッチ処理を使用するには、 **オフライン** 追跡を有効にし、SDKバージョン4.1以降が必要です
+>ヒットのバッチ処理を使用するには、オフライン追跡を&#x200B;**有効**&#x200B;にし、SDK バージョン 4.1 以降を持っている必要があります。
 
-To enable hit batching, update your `ADBMobileConfig.json` file and specify a value for `batchLimit`:
+ヒットのバッチ処理を有効にするには、`ADBMobileConfig.json` ファイルを更新して `batchLimit` の値を指定します。
 
 ```js
 "analytics": {
@@ -30,7 +30,7 @@ To enable hit batching, update your `ADBMobileConfig.json` file and specify a va
 }
 ```
 
-When the value is set to a number greater than 0, the SDK queues the number of hits equal to the *`batchLimit`* value. このしきい値を超えると、キュー内のすべてのヒットが送信されます。
+値に 0 より大きい数を設定すると、SDK は *`batchLimit`* の値と等しいヒット数をキューに追加します。このしきい値を超えると、キュー内のすべてのヒットが送信されます。
 
 ヒットのバッチ処理では、次のメソッドが使用されます。
 
