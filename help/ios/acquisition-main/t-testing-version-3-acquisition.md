@@ -2,27 +2,27 @@
 description: デバイスのフィンガープリントに基づいた V3 による獲得キャンペーンリンクのラウンドトリップに役立つ情報です。
 seo-description: デバイスのフィンガープリントに基づいた V3 による獲得キャンペーンリンクのラウンドトリップに役立つ情報です。
 seo-title: V3 による獲得のテスト
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: V3 による獲得のテスト
 uuid: 89137ccf-4839-4b37-926e-303cf8e511a5
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 ---
 
 
-# Testing V3 acquisition{#testing-v-acquisition}
+# V3 による獲得のテスト{#testing-v-acquisition}
 
 デバイスのフィンガープリントに基づいた V3 による獲得キャンペーンリンクのラウンドトリップに役立つ情報です。
 
 >[!IMPORTANT]
 >
->  V3 の獲得とは、Adobe Mobile Services UI でダウンロード計測ビルダーを使用して作成した獲得リンクを指します。この機能を使用するには、iOS SDK バージョン 4.6.0 以降にアップグレードする必要があります。
+>V3 の獲得とは、Adobe Mobile Services UI でダウンロード計測ビルダーを使用して作成した獲得リンクを指します。この機能を使用するには、iOS SDK バージョン 4.6.0 以降にアップグレードする必要があります。
 
 モバイルアプリがまだ App Store にない場合は、キャンペーンリンクの作成時に任意のモバイルアプリをリンク先として選択してください。これは、ダウンロード計測用リンクのクリック後に獲得サーバーによってリダイレクトされるアプリにのみ影響を与えます。リンクのテスト機能には影響を与えません。
 
 1. [モバイルアプリ獲得](/help/ios/acquisition-main/acquisition.md)の前提条件タスクを完了します。
-1. Adobe Mobile Services UI で&#x200B;**[!UICONTROL 獲得ビルダー]に移動し、獲得キャンペーン URL を生成します。**
+1. Adobe Mobile Services UI で&#x200B;**[!UICONTROL 獲得ビルダー]**&#x200B;に移動し、獲得キャンペーン URL を生成します。
 
    以下に例を示します。
 
@@ -40,17 +40,17 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
    {"fingerprint":"228d7e6058b1d731dc7a8b8bd0c15e1d78242f31","timestamp":1457989293,"appguid":"","contextData":{"a.referrer.campaign.name":"name","a.referrer.campaign.trackingcode":"trackingcode"}}.
    ```
 
-   If you do not see `contextData`, or some of it is missing, ensure that the acquisition URL follows the format that is specified in [Create Acquisition Link Manually](/help/using/acquisition-main/c-marketing-links-builder/acquisition-link-manual.md).
+   `contextData` がない場合や、一部が不足している場合は、獲得 URL が「[手作業によるダウンロード計測用リンクの作成](/help/using/acquisition-main/c-marketing-links-builder/acquisition-link-manual.md)」で指定されている形式に従っていることを確認してください。
 1. 設定ファイルの次の設定が正しいことを確認します。
 
    | 設定 | 値 |
    |--- |--- |
-   | acquisition | The server should be  `c00.adobe.com`. *`appid`* should equal the *`appid`* in your acquisition link. |
+   | acquisition | サーバー `c00.adobe.com` である必要があります。*`appid`* がダウンロード計測用リンクの *`appid`* と同じである必要があります。 |
    | analytics | `referrerTimeout` は 0 より大きい値です。 |
 
 
 1. （条件付き）アプリの設定ファイル内の `ssl` 設定が true の場合、HTTPS プロトコルを使用するようにダウンロード計測用リンクを更新します。
-1. アプリのインストール先のモバイルデバイスから生成されたリンクをクリックします。
+1. アプリをインストールする予定のモバイルデバイスから、生成したリンクをクリックします。
 
    アドビのサーバー（`c00.adobe.com`）がデバイス指紋を保存し、App Store にリダイレクトします。テストのためにアプリをダウンロードする必要はありません。
 1. 手順 6 で使用したのと同じモバイルデバイスから、アプリケーションを初めて起動します。
@@ -65,7 +65,7 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
    ログが上記のようにならない場合は、手順 4 および 5 を実行したことを確認してください。
 
-   Here is some information about possible errors:
+   考えられるエラーに関する情報を次に示します。
 
    * `Analytics - Unable to retrieve acquisition service response (<error message>)`ネットワークエラーが発生しました。
 
@@ -79,7 +79,7 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
    * `Analytics - Acquisition referrer data was not complete, ignoring`
 
-      `a.referrer.campaign.name` がに含まれていな `contextData`い。
+      `a.referrer.campaign.name` に `contextData` が含まれていません。
 
    * `Analytics - Acquisition referrer timed out`
 
@@ -97,7 +97,7 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
          >[!TIP]
          >
-         >Ensure that  and  have the same user-agent values.`https://c00.adobe.com/v3/<appid>/start``https://c00.adobe.com/v3/<appid>/end`
+         >`https://c00.adobe.com/v3/<appid>/start` と `https://c00.adobe.com/v3/<appid>/end` のユーザーエージェント値が同じなるようにしてください。
 
       * ダウンロード計測用リンクと SDK からのヒットは、同じ HTTP／HTTPS プロトコルを使用している必要があります。
 
