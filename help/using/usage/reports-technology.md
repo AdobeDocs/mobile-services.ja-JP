@@ -3,11 +3,11 @@ description: 技術レポートでは、アプリが使用されている様々�
 keywords: モバイル
 seo-description: 技術レポートでは、アプリが使用されている様々なデバイスタイプ、オペレーティングシステム、オペレーティングシステムのバージョンおよび携帯電話会社を確認できます。
 seo-title: 技術レポート
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: 技術レポート
 topic: レポート, 指標
 uuid: 4b7322c4-8920-43cd-bb72-5a5bd515ae84
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
 ---
@@ -15,7 +15,7 @@ source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
 # 技術レポート {#technology}
 
-**[!UICONTROL 技術]レポートでは、アプリが使用されている様々なデバイスタイプ、オペレーティングシステム、オペレーティングシステムのバージョンおよび携帯電話会社を確認できます。**
+**[!UICONTROL 技術]**&#x200B;レポートでは、アプリが使用されている様々なデバイスタイプ、オペレーティングシステム、オペレーティングシステムのバージョンおよび携帯電話会社を確認できます。
 
 このレポートには、既存のデータのサンバーストチャートが表示されます。このレポートを使用して、ターゲティングすべきオーディエンスセグメント（訪問者の集まり）を見つけることができます。オーディエンスを作成して管理することは、セグメントを作成して使用することと似ていますが、例外は、オーディエンスを Experience Cloud で使用できるようになることです。
 
@@ -25,16 +25,16 @@ source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
 >[!TIP]
 >
->この情報に加えて、サンバーストグラフの操作方法を説明する製品内チュートリアルも表示できます。 To start the tutorial, click **[!UICONTROL Technology Breakdown]** in the title bar of the report, click **[!UICONTROL Customize]**, and click the **[!UICONTROL i]** icon.
+>この情報に加えて、サンバーストグラフの使用方法についてのチュートリアルを製品内で参照できます。チュートリアルを開始するには、レポートのタイトルバーの **[!UICONTROL 技術分類]** をクリックし、**[!UICONTROL カスタマイズ]** をクリックして、**[!UICONTROL i]** アイコンをクリックします。
 
 ![](assets/report_technology.png)
 
 このサンバーストグラフはインタラクティブです。次の作業を実行できます。
 
 * グラフの任意の部分にマウスポインターを置くと、詳細情報が表示されます。
-* **[!UICONTROL カレンダー]アイコンをクリックして、期間を変更します。**
+* **[!UICONTROL カレンダー]**&#x200B;アイコンをクリックして、期間を変更します。
 * リングのスライスをクリックしてオーディエンスを選択し、ズームイン、オーディエンスの非表示、アプリ内メッセージや共通フィルターの作成などのアクションを実行できます。
-* 右上隅で、「**[!UICONTROL デバイスタイプ]**」および「**デバイス]」を選択して、デバイスおよびデバイスタイプに関する情報を表示します。[!UICONTROL **
+* 右上隅で、**[!UICONTROL デバイスタイプ]** および **[!UICONTROL デバイス]** を選択して、デバイスおよびデバイスタイプに関する情報を表示します。
 
 * 右側の二次指標をクリックすると、その指標をグラフに追加できます。
 
@@ -51,7 +51,7 @@ source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
 >[!TIP]
 >
->通信事業者 **[!UICONTROL レポートで]** 、Wi-Fiユーザーは、としてレポートされま `none`す。
+>**[!UICONTROL 携帯電話会社]**&#x200B;レポートでは、Wi-fi ユーザーは `none` して報告されます。
 
 
 ## 分類と指標の追加 {#section_15833511E82648869E7B1EFC24EF7B82}
@@ -60,16 +60,16 @@ source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
 >[!IMPORTANT]
 >
->サンバーストに追加するリングの数が多いほど、処理に時間がかかります。
+>サンバーストに追加するリングの数が増えると、処理に掛かる時間が長くなります。
 
-To add breakdowns and secondary metrics, click **[!UICONTROL Technology Breakdown]** in the title bar of the report and click **[!UICONTROL Customize]**.
+分類および二次指標を追加するには、レポートのタイトルバーの **[!UICONTROL 技術分類]** をクリックし、**[!UICONTROL カスタマイズ]** をクリックします。
 
-When you click **[!UICONTROL Add Breakdown]** or **[!UICONTROL Add Metric]**, a new item displays with the same name as the previous item in the list. 新しく作成された分類または指標をクリックしてドロップダウンリストにアクセスし、そこから新しいアイテムを選択します。
+**[!UICONTROL 分類を追加]** または **[!UICONTROL 指標を追加]** をクリックすると、リストの前のアイテムと同じ名前の新しいアイテムが表示されます。新しく作成された分類または指標をクリックしてドロップダウンリストにアクセスし、そこから新しいアイテムを選択します。
 
 ## 共通フィルターの作成 {#section_B4E355CD1FE34E4C8ADC38139ED67FC8}
 
-Click a slice in the ring to select the audience for which you want to create a sticky filter and click **[!UICONTROL Sticky Filter]**. このフィルターを使用すると、現在のフィルターを適用して、フィルターに基づく新しいレポートを実行できます。
+リングのスライスをクリックし、共通フィルターを作成するオーディエンスを選択して、**[!UICONTROL 共通フィルター]** をクリックします。このフィルターを使用すると、現在のフィルターを適用して、フィルターに基づく新しいレポートを実行できます。
 
-## レポートの共有 {#section_560DD5CED5144249B7E49461E2422100}
+## レポートの共有{#section_560DD5CED5144249B7E49461E2422100}
 
 レポートを作成した後、設定を使用して、コピーおよび共有できるカスタム URL を作成します。
