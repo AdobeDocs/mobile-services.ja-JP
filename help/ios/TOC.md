@@ -1,102 +1,102 @@
 ---
-product: モバイルサービス
+product: mobile-services
 audience: end-user
-user-guide-title: Mobile Services iOSヘルプ
-translation-type: tm+mt
+user-guide-title: Mobile Services iOS ヘルプ
+translation-type: ht
 source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
 ---
 
 
-# Mobile Services iOSヘルプ {#ios}
+# Mobile Services iOS ヘルプ {#ios}
 
 + [Experience Cloud ソリューション用 iOS SDK 4.x](overview.md)
 + [リリースノート](rel-notes.md)
 + はじめに {#getting-started-ios}
-   + [はじめにの概要](getting-started/getting-started.md)
-   + [Before you start](getting-started/requirements.md)
-   + [コアの実装とライフサイクル](getting-started/dev-qs.md)
+   + [導入の概要](getting-started/getting-started.md)
+   + [事前準備](getting-started/requirements.md)
+   + [コア実装とライフサイクル](getting-started/dev-qs.md)
    + [処理ルールとコンテキストデータ](getting-started/proc-rules.md)
-   + [迅速な統合](getting-started/swift-integration.md)
-   + [4.x iOSライブラリへの移行](getting-started/migration-v3.md)
+   + [Swift 統合 ](getting-started/swift-integration.md)
+   + [4.x iOS ライブラリへの移行](getting-started/migration-v3.md)
 + 設定 {#config-ios}
-   + [Configuration overview](configuration/configuration.md)
-   + [ADBMobile JSON config](configuration/json-config/json-config.md)
-   + [ADBMobile JSON設定パスの上書き](configuration/json-config/json-config-remote.md)
+   + [設定の概要](configuration/configuration.md)
+   + [ADBMobile JSON 設定](configuration/json-config/json-config.md)
+   + [ADBMobile JSON 設定パスのオーバーライド](configuration/json-config/json-config-remote.md)
    + [ヒットのバッチ処理](configuration/hit-batching.md)
-   + [設定方法](configuration/sdk-methods.md)
+   + [設定メソッド](configuration/sdk-methods.md)
    + [App Transport Security](configuration/app-transport-security.md)
 + [ライフサイクル指標](metrics.md)
 + Analytics {#analytics-ios}
-   + [解析の概要](analytics-main/analytics-main.md)
+   + [Analytics の概要](analytics-main/analytics-main.md)
    + [アプリの状態の追跡](analytics-main/states.md)
    + [アプリのアクションの追跡](analytics-main/actions.md)
-   + [アプリのクラッシュを追跡](analytics-main/crashes.md)
-   + [Timed actions](analytics-main/timed-actions.md)
-   + [訪問者の全期間値](analytics-main/lifetime-value.md)
-   + Products variable {#products-variable}
-      + [製品変数](analytics-main/products/products.md)
-      + [Products variable with merchandising eVars and product-specific events](analytics-main/products/products-variable-evars-events.md)
-   + [イベントシリアル化](analytics-main/event-serialization.md)
+   + [アプリのクラッシュの追跡](analytics-main/crashes.md)
+   + [時間計測アクション](analytics-main/timed-actions.md)
+   + [訪問者のライフタイム値](analytics-main/lifetime-value.md)
+   + products 変数{#products-variable}
+      + [products 変数](analytics-main/products/products.md)
+      + [マーチャンダイジング eVar および製品固有のイベントを持つ products 変数 ](analytics-main/products/products-variable-evars-events.md)
+   + [イベントのシリアル化](analytics-main/event-serialization.md)
    + [ビデオ分析](analytics-main/video-qs.md)
    + ポストバック {#postbacks}
       + [ポストバックの概要](analytics-main/postback/postback.md)
-      + [ポストバックの例](analytics-main/postback/postback-example.md)
-      + [PIIポストバック](analytics-main/postback/c-pii-postbacks.md)
-   + [Analytics methods](analytics-main/analytics-methods.md)
+      + [ポストバックのサンプル ](analytics-main/postback/postback-example.md)
+      + [PII ポストバック](analytics-main/postback/c-pii-postbacks.md)
+   + [Analytics メソッド](analytics-main/analytics-methods.md)
 + 獲得 {#acquisition-ios}
    + [獲得の概要](acquisition-main/acquisition-main.md)
-   + [Mobile app acquisition](acquisition-main/acquisition.md)
-   + [獲得方法](acquisition-main/c-acquisition-methods.md)
-   + Tracking deep links {#tracking-deep-links}
-      + [Tracking deep links](acquisition-main/tracking-deep-links/tracking-deep-links.md)
-      + [サードパーティの遅延ディープリンクの追跡](acquisition-main/tracking-deep-links/c-tracking-3rd-party-deep-deferred-links.md)
-   + [マーケティングリンク獲得のテスト](acquisition-main/t-testing-marketing-link-acquisition.md)
-   + [V3獲得のテスト](acquisition-main/t-testing-version-3-acquisition.md)
-   + [Testing legacy acquisition](acquisition-main/t-testing-acquisition.md)
+   + [モバイルアプリの獲得](acquisition-main/acquisition.md)
+   + [獲得メソッド](acquisition-main/c-acquisition-methods.md)
+   + ディープリンクの追跡{#tracking-deep-links}
+      + [ディープリンクの追跡](acquisition-main/tracking-deep-links/tracking-deep-links.md)
+      + [サードパーティのディファードディープリンクの追跡](acquisition-main/tracking-deep-links/c-tracking-3rd-party-deep-deferred-links.md)
+   + [マーケティングリンクによる獲得のテスト](acquisition-main/t-testing-marketing-link-acquisition.md)
+   + [V3 による獲得のテスト](acquisition-main/t-testing-version-3-acquisition.md)
+   + [従来の獲得のテスト](acquisition-main/t-testing-acquisition.md)
    + [Apple Search Ads](acquisition-main/c-apple-search-ads.md)
 + メッセージ {#messaging-ios}
-   + [Messaging overview](messaging-main/messaging-main.md)
+   + [メッセージの概要](messaging-main/messaging-main.md)
    + アプリ内メッセージ {#in-app-messaging}
       + [アプリ内メッセージ](messaging-main/messaging/messaging.md)
       + [アプリ内メッセージのトラブルシューティング](messaging-main/messaging/in-apps-ts.md)
-   + Push messaging {#push-messaging}
+   + プッシュメッセージ{#push-messaging}
       + [プッシュメッセージ](messaging-main/push-messaging/push-messaging.md)
-      + [Implement push messaging with deep linking](messaging-main/push-messaging/t-mob-imp-push-deeplinking-ios-4x.md)
+      + [ディープリンクを使用したプッシュメッセージの実装](messaging-main/push-messaging/t-mob-imp-push-deeplinking-ios-4x.md)
       + [リッチプッシュ通知の受信](messaging-main/push-messaging/c-set-up-rich-push-notif-ios.md)
       + [プッシュメッセージのトラブルシューティング](messaging-main/push-messaging/c-troubleshooting-push-messaging.md)
-+ 場所 {#location-ios}
-   + [場所の概要](location/location.md)
-   + [地域と目標地点](location/geo-poi.md)
++ ロケーション {#location-ios}
+   + [ロケーションの概要](location/location.md)
+   + [位置情報と目標地点](location/geo-poi.md)
    + [iBeacon トラッキング](location/ibeacon.md)
 + Target {#target-ios}
-   + [Targetの概要](target-main/target-main.md)
+   + [Target の概要](target-main/target-main.md)
    + [Target メソッド](target-main/c-target-methods.md)
    + [iOS でのオファーコンテンツのプリフェッチ](target-main/c-mob-target-prefetch-ios.md)
    + [iOS の Target プレビュー](target-main/c-mob-target-preview-ios.md)
 + Experience Cloud {#exp-cloud-ios}
-   + [Experience cloudの概要](marketing-cloud/marketing-cloud.md)
+   + [Experience Cloud の概要](marketing-cloud/marketing-cloud.md)
    + [Experience Cloud ID](marketing-cloud/mcvid.md)
-   + [Adobe Experience Platform IDサービスのメソッド](marketing-cloud/mc-methods.md)
+   + [Adobe Experience Platform ID サービスのメソッド](marketing-cloud/mc-methods.md)
    + [Experience Cloud Device Co-op](marketing-cloud/t-mob-mc-device-coop-ios-.md)
-+ [Audience Managerのメソッド](amm/aam-methods.md)
-+ Apple TV implementation with tvOS {#apple-tv-implementation-tvos-ios}
-   + [tvOSを使用したApple TV実装](apple-tv-implementation-tvos/apple-tv-implementation-tvos.md)
++ [Audience Manager メソッド](amm/aam-methods.md)
++ tvOS を使用した Apple TV 実装{#apple-tv-implementation-tvos-ios}
+   + [tvOS を使用した Apple TV 実装](apple-tv-implementation-tvos/apple-tv-implementation-tvos.md)
    + [TVML／TVJS 対応の Adobe Target](apple-tv-implementation-tvos/target-for-tvml-tvjs.md)
    + [TVJS メソッド](apple-tv-implementation-tvos/tvjs-methods.md)
-+ iOS extension implementation {#ios-ext}
-   + [iOS拡張の実装](ios-ext/ios-ext.md)
-   + [Stand-alone extension implementation](ios-ext/c-stand-alone-extension-implementation.md)
-+ [WatchOS 2を使用したApple watchの実装](apple-watch-implementation-watchkit.md)
-+ iOS SDK reference {#sdk-reference-ios}
-   + [iOS SDK reference](reference/reference.md)
++ iOS エクステンション実装 {#ios-ext}
+   + [iOS エクステンション実装](ios-ext/ios-ext.md)
+   + [スタンドアロンエクステンション実装](ios-ext/c-stand-alone-extension-implementation.md)
++ [WatchOS 2 を使用した Apple Watch 実装](apple-watch-implementation-watchkit.md)
++ iOS SDK リファレンス {#sdk-reference-ios}
+   + [iOS SDK リファレンス ](reference/reference.md)
    + [アプリ ID](reference/app-ids.md)
-   + [アプリとモバイルWeb間の訪問者の追跡](reference/hybrid-app.md)
-   + [iOS device versions](reference/device-versions.md)
+   + [アプリとモバイル Web にまたがる訪問者トラッキング](reference/hybrid-app.md)
+   + [iOS デバイスのバージョン](reference/device-versions.md)
 + プライバシーと一般データ保護規則{#privacy-gdpr-ios}
    + [プライバシーと一般データ保護規則](c-mob-privacy-gdpr-ios/c-mob-privacy-gdpr-ios.md)
-   + [保存された識別子の取得](c-mob-privacy-gdpr-ios/c-mob-gdpr-ret-stored-ids-ios.md)
+   + [保存されている ID の取得](c-mob-privacy-gdpr-ios/c-mob-gdpr-ret-stored-ids-ios.md)
    + [ユーザーのオプトステータスの設定](c-mob-privacy-gdpr-ios/privacy.md)
 + PhoneGap プラグイン {#phonegap-ios}
-   + [PhoneGapプラグイン](phonegap/phonegap.md)
-   + [PhoneGapプラグインのメソッド](phonegap/phonegap-methods.md)
+   + [PhoneGap プラグイン](phonegap/phonegap.md)
+   + [PhoneGap プラグインのメソッド ](phonegap/phonegap-methods.md)
