@@ -2,17 +2,17 @@
 description: iOS ライブラリの実装や、起動、アップグレード、セッション、関与ユーザーといったライフサイクル指標の収集に役立つ情報です。
 seo-description: iOS ライブラリの実装や、起動、アップグレード、セッション、関与ユーザーといったライフサイクル指標の収集に役立つ情報です。
 seo-title: コア実装とライフサイクル
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: コア実装とライフサイクル
 topic: 開発者と導入
 uuid: 96d06325-e424-4770-8659-4b5431318ee3
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 4db9781e6e1e75a04d9715a41c5a32c10ede1bf4
 
 ---
 
 
-# Core implementation and lifecycle {#core-implementation-and-lifecycle}
+# コア実装とライフサイクル{#core-implementation-and-lifecycle}
 
 iOS ライブラリの実装や、起動、アップグレード、セッション、関与ユーザーといったライフサイクル指標の収集に役立つ情報です。
 
@@ -20,19 +20,19 @@ iOS ライブラリの実装や、起動、アップグレード、セッショ�
 
 >[!IMPORTANT]
 >
->To download the SDKs, you **must** use iOS 6 or later.
+>SDK をダウンロードするには、iOS 6 以降を使用する&#x200B;**必要があります**。
 
 **前提条件**
 
-SDKをダウンロードする前に、 *Core実装およびライフサイクルのレポートスイートの作成の手順を実行して*[](/help/ios/getting-started/requirements.md) 、開発レポートスイートを設定し、設定ファイルの事前入力バージョンをダウンロードします。
+SDK をダウンロードする前に、「[コア実装およびライフサイクル](/help/ios/getting-started/requirements.md)」の「*レポートスイートの作成*」の手順を実行して、開発レポートスイートを設定し、設定ファイルの事前入力バージョンをダウンロードします。
 
 SDK をダウンロードするには
 
-1. Download, unzip the `[Your_App_Name_]AdobeMobileLibrary-4.*-iOS.zip` file and verify that you have the following software components:
+1. `[Your_App_Name_]AdobeMobileLibrary-4.*-iOS.zip`ファイルをダウンロードして展開し、以下のソフトウェアコンポーネントがあることを確認します。
 
    * `ADBMobile.h`：iOS AppMeasurement に使用する Objective-C ヘッダーファイル。
    * `ADBMobileConfig.json`：アプリ用にカスタマイズされた SDK 設定ファイル。
-   * `AdobeMobileLibrary.a`、iOSデバイス用のライブラリビルド(armv7、armv7s、arm64)とシミュレーター(i386、x86_64)を含む、ビットコード対応の大きなバイナリ。
+   * `AdobeMobileLibrary.a`：iOS デバイス用のライブラリビルド（armv7、armv7s、arm64）とシミュレーター（i386 および x86_64）を含む、ビットコード対応のファットバイナリ。
 
       ターゲットが iOS アプリを対象としている場合は、このファットバイナリがリンクされている必要があります。
 
@@ -50,35 +50,35 @@ SDK をダウンロードするには
 
 >[!IMPORTANT]
 >
->If you download the SDK outside the Adobe Mobile services UI, the `ADBMobileConfig.json` file must be manually configured. If you are new to Analytics and the Mobile SDK, see [Before You Start](/help/ios/getting-started/requirements.md) to set up a development report suite and download a pre-populated version of the configuration file.
+>SDK を Adobe Mobile Services UI 以外でダウンロードした場合は、`ADBMobileConfig.json` ファイルを手動で設定する必要があります。Analytics と Mobile SDK を使い始めたばかりのユーザーが開発レポートスイートを設定して、事前に構成された設定ファイルをダウンロードする場合は、「[事前準備](/help/ios/getting-started/requirements.md)」を参照してください。
 
-## Add the SDK and config file to your project {#section_93C25D893B4A4CD3B996CF3C5590C8DC}
+## プロジェクトへの SDK と設定ファイルの追加{#section_93C25D893B4A4CD3B996CF3C5590C8DC}
 
 1. Xcode IDE を起動して、アプリを開きます。
 1. プロジェクトナビゲーターで、`AdobeMobileLibrary` フォルダーをドラッグして、プロジェクトにドロップします。
 1. 以下を確認します。
 
-   * 「**[!UICONTROL Copy Items if Needed]」チェックボックスがオンになっている。**
-   * **[!UICONTROL 「Create Groups]**」がオンになっている。
-   * 「**[!UICONTROL Add to targets]」セクションのチェックボックスがすべてオフになっている。**
+   * **[!UICONTROL Copy Items if Needed]**&#x200B;チェックボックスがオンになっている。
+   * **[!UICONTROL Create Groups]**&#x200B;がオンになっている。
+   * **[!UICONTROL Add to targets]**&#x200B;セクションのチェックボックスがすべてオフになっている。
    ![](assets/step_3.png)
 
-1. Click **[!UICONTROL Finish]**.
-1. In **[!UICONTROL Project Navigator]**, select **[!UICONTROL`ADBMobileConfig.json`]**.
-1. In **[!UICONTROL File Inspector]**, add the JSON file to any targets in your project that will use the Adobe SDK.
+1. **[!UICONTROL Finish]**&#x200B;をクリックします。
+1. **[!UICONTROL プロジェクトナビゲーター]**&#x200B;で、**[!UICONTROL`ADBMobileConfig.json`]**&#x200B;を選択します。
+1. **[!UICONTROL ファイルインスペクター]**&#x200B;で、Adobe SDK を使用するプロジェクト内の任意のターゲットにこの JSON ファイルを追加します。
 
    ![](assets/step_4.png)
 
-1. In **[!UICONTROL Project Navigator]**, complete the following steps:
+1. **[!UICONTROL プロジェクトナビゲーター]**&#x200B;で、以下の手順を実行します。
 
    1. アプリをクリックします。
-   1. 「**[!UICONTROL General]**」タブで、ターゲットを選択し、「**[!UICONTROL Linked Frameworks]and** Libraries **」セクションで、必要なフレームワークおよびライブラリをリンクします。**
+   1. **[!UICONTROL General]**&#x200B;タブで、ターゲットを選択し、**[!UICONTROL Linked Frameworks]**&#x200B;および&#x200B;**[!UICONTROL Libraries]**&#x200B;セクションで、必要なフレームワークおよびライブラリをリンクします。
    * **iOS App Targets**
       * `SystemConfiguration.framework`
       * `WebKit.framework`
       * `libsqlite3.0.tbd`
       * `AdobeMobileLibrary.a`
-      * `CoreLocation.framework` （オプション、ただし地域追跡機能に必要）
+      * `CoreLocation.framework`（オプション、ただしジオトラッキング機能に必要）
    * **iOS エクステンションのターゲット**
 
       * `SystemConfiguration.framework`
@@ -95,19 +95,19 @@ SDK をダウンロードするには
       * `AdobeMobileLibrary\_TV.a`
    >[!CAUTION]
    >
-   > Linking more than one `AdobeMobileLibrary*.a` file in the same target will result in unexpected behavior or the inability to build.
+   > 同じターゲット内で複数の `AdobeMobileLibrary*.a` ファイルをリンクすると、予期せぬ動作が発生したり、ビルドできなくなったりすることがあります。
 
 1. アプリがエラーなくビルドされることを確認します。
 
-## Implement lifecycle metrics {#section_532702562A7A43809407C9A2CBA80E1E}
+## ライフサイクル指標の実装 {#section_532702562A7A43809407C9A2CBA80E1E}
 
 >[!IMPORTANT]
 >
->iOS will send lifecycle information with or without calling `collectlifecycledata`, and `collectlifecycledata` is only a way to initiate lifecycle earlier in the application's launch sequence.
+>iOS では、`collectlifecycledata` の呼び出しの有無にかかわらず、ライフサイクル情報を送信します。`collectlifecycledata` は、アプリケーションがシーケンスを起動するより前にライフサイクルを開始するための唯一の手段です。
 
-After you enable lifecycle, each time your app is launched, one hit is sent to measure launches, upgrades, sessions, engaged users, and other [Lifecycle Metrics](/help/ios/metrics.md).
+ライフサイクルを有効にすると、アプリが起動されるたびに、1 件のヒットが送信されて、起動、アップグレード、セッション、アクションを実行したユーザー、その他の多くの[ライフサイクル指標](/help/ios/metrics.md)が測定されます。
 
-次に/ `collectLifecycleData`呼び出し `collectLifecycleDataWithAdditionalData` を追加しま `application:didFinishLaunchingWithOptions`す。
+`application:didFinishLaunchingWithOptions` に `collectLifecycleData`／`collectLifecycleDataWithAdditionalData` 呼び出しを追加します。
 
 ```objective-c
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions { 
@@ -116,13 +116,13 @@ After you enable lifecycle, each time your app is launched, one hit is sent to m
 }
 ```
 
-### ライフサイクル呼び出しに追加のデータを含める
+### ライフサイクル呼び出しで追加のデータを含める
 
-追加データをライフサイクル指標コールに含めるには、`collectLifecycleDataWithAdditionalData` : を使用します。
+追加データをライフサイクル指標コールに含めるには、`collectLifecycleDataWithAdditionalData` を使用します。
 
 >[!IMPORTANT]
 >
->Any data that is passed to the SDK through `collectLifecycleDataWithAdditionalData:` is persisted in `NSUserDefaults` by the SDK. SDK は、`NSDictionary` 型または `NSString` 型ではない `NSNumber` パラメーターの値を削除します。
+>`collectLifecycleDataWithAdditionalData:` を使用して SDK に渡されたデータはすべて、SDK によって `NSUserDefaults` に保持されます。SDK は、`NSDictionary` 型または `NSString` 型ではない `NSNumber` パラメーターの値を削除します。
 
 ```objective-c
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions { 
@@ -137,7 +137,7 @@ After you enable lifecycle, each time your app is launched, one hit is sent to m
 
 ![](assets/map-variable-lifecycle.png)
 
-その他のライフサイクル指標は自動的に収集されます。詳しくは、 [ライフサイクル指標](/help/ios/metrics.md).
+その他のライフサイクル指標は自動的に収集されます。詳しくは、「[ライフサイクル指標](/help/ios/metrics.md)」を参照してください。
 
 ## 次の作業 {#section_A24DC703359D4B5C8F493D6421306FD3}
 
