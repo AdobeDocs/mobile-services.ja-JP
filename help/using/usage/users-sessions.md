@@ -7,7 +7,7 @@ solution: Experience Cloud,Analytics
 title: ユーザーとセッションレポート
 topic: レポート, 指標
 uuid: 6d70d7f6-de81-4307-a4f3-14f18fc3c9b3
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
 ---
@@ -35,4 +35,4 @@ source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
 * **[!UICONTROL ダウンロード]**
 
-   **[!UICONTROL PDF]** または **[!UICONTROL CSV]** をクリックして、ドキュメントをダウンロードするか開いて Mobile Services へのアクセス権を持たないユーザーと共有したり、プレゼンテーションで使用したりし�
+   **[!UICONTROL PDF]** または **[!UICONTROL CSV]** をクリックして、ドキュメントをダウンロードするか開いて Mobile Services へのアクセス権を持たないユーザーと共有したり、プレゼンテーションで使用したりします。
