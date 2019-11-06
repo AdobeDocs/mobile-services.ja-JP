@@ -6,7 +6,7 @@ solution: Experience Cloud,Analytics
 title: 処理ルールとコンテキストデータ
 topic: 開発者と導入
 uuid: 51338ccd-fa52-4d9c-97c4-947a4100465d
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
 
 ---
@@ -21,7 +21,7 @@ source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
 * [処理ルールのトレーニング](https://tv.adobe.com/embed/1181/16506/)（Summit 2013）
 * 処理ルールを使用するための承認の取得
 
-   処理ルールについて詳しくは、「[処理ルールの概要](https://docs.adobe.com/content/help/ja-JP/analytics/admin/admin-tools/processing-rules/processing-rules.html)」を参照してください。
+   処理ルールについて詳しくは、「[処理ルールの概要](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/processing-rules/processing-rules.html)」を参照してください。
 
 処理ルールを使用する際には、次の情報に留意してください。
 
@@ -63,4 +63,5 @@ source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
 
 >[!TIP]
 >
->アドビは名前空間「`a.`」を予約します。この制約の他に、衝突を回避するために従うべき唯一の要件は、コンテキストデータ変数をログイン会社内で一意にする�
+>アドビは名前空間「`a.`」を予約します。この制約の他に、衝突を回避するために従うべき唯一の要件は、コンテキストデータ変数をログイン会社内で一意にすることです。
+
