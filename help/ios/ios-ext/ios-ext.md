@@ -74,7 +74,7 @@ WatchKit アプリを使用する場合は、3 つ目のターゲットが必要
 
 1. アプリが予期せぬエラーなくビルドされることを確認します。
 
-##  拡張機能の設定{#section_28C994B7892340AC8D1F07AF26FF3946}
+## 拡張機能の設定{#section_28C994B7892340AC8D1F07AF26FF3946}
 
 1. `ADBMobileConfig.json` ファイルがエクステンションのターゲットのメンバーであることを確認します。
 1. エクステンションのターゲットの&#x200B;**[!UICONTROL Build Phases]**&#x200B;タブで、**[!UICONTROL Link Binary with Libraries]**&#x200B;セクションを展開して、以下のライブラリを追加します。

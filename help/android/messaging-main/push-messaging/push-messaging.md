@@ -43,6 +43,7 @@ Adobe Mobile および Adobe Mobile SDK を使用すると、ユーザーにプ�
 1. FireBase Cloud Messaging（FCM）API を使用して、登録 ID／トークンを取得します。
 
    * FCM の設定について詳しくは、[Android に Firebase Cloud Messaging クライアントアプリを設定する](https://firebase.google.com/docs/cloud-messaging/android/client)を参照してください。
+
    ```js
    String token = FirebaseInstanceId.getInstance().getToken();
    ```
@@ -58,6 +59,7 @@ Adobe Mobile および Adobe Mobile SDK を使用すると、ユーザーにプ�
    プッシュクリックスルーレポートを有効にするための要件を次に示します。
 
    * `FireBaseMessageService` の実装で、（RemoteMessage オブジェクトで `onMessageReceived` メソッドに渡される）メッセージデータが含まれたバンドルオブジェクトを、クリックスルーでターゲットアクティビティを開くために使用されるインテントに追加する必要があります。これには、`putExtras` メソッドを使用します。詳しくは、「[putExtras](https://developer.android.com/reference/android/content/Intent.html#putExtras(android.os.Bundle))」を参照してください。
+
    ```java
    Intent intent = new Intent(this, MainActivity.class);
       intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);

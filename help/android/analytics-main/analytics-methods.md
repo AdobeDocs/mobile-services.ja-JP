@@ -118,6 +118,7 @@ SDK は現在、Analytics、Target、Audience Manager、Adobe Experience Platfor
    >この呼び出しはヒットを送信しません。
 
    * このメソッドの構文を次に示します。
+
    ```java
    publicstaticvoidtrackTimedActionStart(Stringaction,Map<String,Object>contextData);
    ```

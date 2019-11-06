@@ -202,6 +202,7 @@ Android PhoneGap プラグインのメソッドを使用して、様々な作業
    PII 収集リクエストを送信します。
 
    * このメソッドの構文を次に示します。
+
    ```javascript
    ADB.collectPII(piiData,success, fail);
    ```
