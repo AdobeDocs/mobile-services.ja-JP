@@ -6,13 +6,13 @@ solution: Experience Cloud,Analytics
 title: Experience Cloud ソリューション用 iOS SDK 4.x
 topic: 開発者と導入
 uuid: 8b374cee-1432-460b-aac2-70623dd80a04
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: cb4a549d889d169bdf8ab0bb997d5c95f44f073e
 
 ---
 
 
-# Experience Cloud ソリューション用 iOS SDK 4.x{#ios-sdk-x-for-experience-cloud-solutions}
+# Experience Cloud ソリューション用 iOS SDK 4.x {#ios-sdk-x-for-experience-cloud-solutions}
 
 Experience Cloud ソリューション用 iOS SDK 4.x を使用すると、ネイティブの Apple iPhone および iPad アプリケーションを測定したり、アプリ内からターゲットコンテンツを配信したり、Audience Manager でオーディエンスデータを活用および収集したりできます。
 
@@ -22,13 +22,13 @@ Experience Cloud ソリューション用 iOS SDK 4.x を使用すると、ネ�
 
 >[!IMPORTANT]
 >
->Experience Cloud ソリューション用 iOS SDK 4.x で、[iOS 13 および Xcode 11](https://developer.apple.com/ios/) / をサポートするようになりました。シームレスな互換性を確保するには、4.x iOS SDK の最新バージョンを使用してください。最新バージョンについて詳しくは、[リリースノート](/help/ios/rel-notes.md)を参照してください。
+>Experience Cloud ソリューション用 iOS SDK 4.x で、[iOS 13 および Xcode 11](https://developer.apple.com/ios/) をサポートするようになりました。シームレスな互換性を確保するには、4.x iOS SDK の最新バージョンを使用してください。最新バージョンについて詳しくは、[リリースノート](/help/ios/rel-notes.md)を参照してください。
 
 ## 新しい Adobe Experience Platform Mobile SDK リリース
 
 Adobe Experience Platform Mobile SDK に関する情報やドキュメントをお探しの場合、最新のドキュメントについては、[こちら](https://aep-sdks.gitbook.io/docs/)をクリックしてください。
 
-2018 年 9 月に、SDK の新しいメジャーバージョンをリリースしました。これらの新しい Adobe Experience Platform Mobile SDK は、[Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) から設定できます。
+2018 年 9 月に、SDK の新しいメジャーバージョンをリリースしました。これらの新しい Adobe Experience Platform Mobile SDK は、[Experience Platform Launch](https://www.adobe.com/jp/experience-platform/launch.html) から設定できます。
 
 * 開始するには、Adobe Experience Platform Launch に移動します。
 * Experience Platform SDK リポジトリの内容については、[Github: Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks) を参照してください。
