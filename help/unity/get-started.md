@@ -7,7 +7,7 @@ solution: Marketing Cloud，開発者
 title: iOS および Android 4.x SDK 用 Unity プラグイン
 uuid: 83289a73-982d-4472-a8c8-00b562dc80f5
 translation-type: tm+mt
-source-git-commit: 5fbba02eb61679344f638b6465e47b0d9ae5a988
+source-git-commit: df4ff7128357a18c56d840eb5697f9c8813ad751
 
 ---
 
@@ -16,7 +16,7 @@ source-git-commit: 5fbba02eb61679344f638b6465e47b0d9ae5a988
 
 このプラグインを使用すると、Unity プロジェクトから Adobe Analytics コールを送信できます。
 
-最終更新日：**2016 年 10 月 21 日**
+Last Updated: **November 12, 2019**
 
 ## はじめに {#section_246D1F9B32ED47EABC41BDA8D0BD0CC7}
 
@@ -28,17 +28,7 @@ GitHub または Developer Connection から [ADBMobile.unitypackage](https://gi
 
    * ADBMobile
 
-      * Demo
-
-         * ADBMobileDemo.cs
-         * BooDemo.boo
-         * BooScene.unity
-         * CSharpScene.unity
-         * JavaScriptDemo.js
-         * JavaScriptScene.unity
-         * SecondScene.unity
-         * SecondSceneScript.cs
-   * Plugins
+   * プラグイン
 
       * ADBMobile.cs
       * Android
@@ -55,7 +45,6 @@ GitHub または Developer Connection から [ADBMobile.unitypackage](https://gi
          * ADBMobileWrapper.h
          * ADBMobileWrapper.mm
          * AdobeMobileLibrary.a
-
 
 
 オプションのフォルダー：Demo フォルダーには、サポートする各スクリプト言語用の Unity シーンおよびサンプルコードが含まれています。
