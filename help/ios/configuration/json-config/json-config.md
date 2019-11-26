@@ -6,7 +6,7 @@ solution: Marketing Cloud,Analytics
 title: ADBMobile JSON 設定
 topic: Developer and implementation
 uuid: d9708d59-e30a-4f6c-ab1b-d9499855d0c2
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: bb7fc1c1fc6e88549a1673baedae19f808d222f0
 
 ---
@@ -70,7 +70,7 @@ source-git-commit: bb7fc1c1fc6e88549a1673baedae19f808d222f0
 
 * **charset**
 
-   Analytics に送信されるデータに使用する文字セットを定義します。この文字セットは、受信データを格納およびレポート用に UTF-8 に変換するために使用されます。詳しくは、「[s.charSet](https://marketing.adobe.com/resources/help/en_US/sc/implement/charset.html)」を参照してください。
+   Analytics に送信されるデータに使用する文字セットを定義します。この文字セットは、受信データを格納およびレポート用に UTF-8 に変換するために使用されます。詳しくは、「[s.charSet](https://marketing.adobe.com/resources/help/ja_JP/sc/implement/charset.html)」を参照してください。
 
    * 最小 SDK バージョン：4.0
 
@@ -247,7 +247,7 @@ source-git-commit: bb7fc1c1fc6e88549a1673baedae19f808d222f0
 
    >[!IMPORTANT]
    >
-   > バージョン4.10.0以降では、フラグが設定されていない場合、SSLはデフォルトでtrueに設定されています。
+   > バージョン 4.10.0 以降では、フラグが設定されていない場合、SSL はデフォルトで true に設定されています。
 
    SSL（HTTPS）を使用して測定データを送信する機能を有効（`true`）または無効（`false`）にします。
 
