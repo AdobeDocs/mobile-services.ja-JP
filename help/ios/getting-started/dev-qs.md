@@ -2,12 +2,12 @@
 description: iOS ライブラリの実装や、起動、アップグレード、セッション、関与ユーザーといったライフサイクル指標の収集に役立つ情報です。
 seo-description: iOS ライブラリの実装や、起動、アップグレード、セッション、関与ユーザーといったライフサイクル指標の収集に役立つ情報です。
 seo-title: コア実装とライフサイクル
-solution: Experience Cloud,Analytics
+solution: Marketing Cloud,Analytics
 title: コア実装とライフサイクル
-topic: 開発者と導入
+topic: Developer and implementation
 uuid: 96d06325-e424-4770-8659-4b5431318ee3
-translation-type: ht
-source-git-commit: 4db9781e6e1e75a04d9715a41c5a32c10ede1bf4
+translation-type: tm+mt
+source-git-commit: bd8aa0c7ff58e4cf28a67b8a107db52fb30cd3dc
 
 ---
 
@@ -64,7 +64,7 @@ SDK をダウンロードするには
    ![](assets/step_3.png)
 
 1. **[!UICONTROL Finish]**&#x200B;をクリックします。
-1. **[!UICONTROL プロジェクトナビゲーター]**&#x200B;で、**[!UICONTROL`ADBMobileConfig.json`]**&#x200B;を選択します。
+1. **[!UICONTROL プロジェクトナビゲーター]**&#x200B;で、**`ADBMobileConfig.json`**&#x200B;を選択します。
 1. **[!UICONTROL ファイルインスペクター]**&#x200B;で、Adobe SDK を使用するプロジェクト内の任意のターゲットにこの JSON ファイルを追加します。
 
    ![](assets/step_4.png)
