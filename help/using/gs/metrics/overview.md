@@ -1,14 +1,14 @@
 ---
 description: 最近表示したアプリの主要パフォーマンス指標を表示できます。デフォルトでは、最大 12 個のアプリを表示できます。概要ページで、日付範囲を変更し、フィルターを作成して、データをセグメント化したり、アプリを編集したりできます。
-keywords: モバイル
+keywords: mobile
 seo-description: 最近表示したアプリの主要パフォーマンス指標を表示できます。デフォルトでは、最大 12 個のアプリを表示できます。概要ページで、日付範囲を変更し、フィルターを作成して、データをセグメント化したり、アプリを編集したりできます。
 seo-title: モバイル指標の表示
-solution: Experience Cloud,Analytics
+solution: Marketing Cloud,Analytics
 title: モバイル指標の表示
-topic: 指標
+topic: Metrics
 uuid: 57db0b77-6b0a-4a0c-9aad-0731275233fd
-translation-type: ht
-source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
+translation-type: tm+mt
+source-git-commit: bd8aa0c7ff58e4cf28a67b8a107db52fb30cd3dc
 
 ---
 
@@ -53,7 +53,7 @@ source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
 
 * **主要業績評価指標の表示**
 
-   アプリの名前をクリックして、主要業績評価指標の詳細を表示します。グラフの線は色分けされ、データポイントにマウスポインターを置くと、特定の日付の統計を表示できます。ドリルダウンするには、**[!UICONTROL 主要業績指標]**&#x200B;の隣にある&#x200B;****「&gt;」アイコンをクリックします。グラフの線は色分けされ、データポイントにマウスポインターを置くと、特定の日付の統計を表示できます。表の列ヘッダーをクリックすると、昇順または降順にデータを並べ替えることができます。
+   アプリの名前をクリックして、主要業績評価指標の詳細を表示します。グラフの線は色分けされ、データポイントにマウスポインターを置くと、特定の日付の統計を表示できます。To drill down, click the icon next to **[!UICONTROL Key Performance Indicators]**. グラフの線は色分けされ、データポイントにマウスポインターを置くと、特定の日付の統計を表示できます。表の列ヘッダーをクリックすると、昇順または降順にデータを並べ替えることができます。
 
 ## アプリの設定の編集 {#section_C1CF227A2E534A798F0073E43AD6A2D1}
 
