@@ -6,13 +6,13 @@ solution: Marketing Cloud,Analytics
 title: コア実装とライフサイクル
 topic: Developer and implementation
 uuid: 96d06325-e424-4770-8659-4b5431318ee3
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: bd8aa0c7ff58e4cf28a67b8a107db52fb30cd3dc
 
 ---
 
 
-# コア実装とライフサイクル{#core-implementation-and-lifecycle}
+# コア実装とライフサイクル {#core-implementation-and-lifecycle}
 
 iOS ライブラリの実装や、起動、アップグレード、セッション、関与ユーザーといったライフサイクル指標の収集に役立つ情報です。
 
