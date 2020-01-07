@@ -7,7 +7,7 @@ title: 事前準備
 topic: Developer and implementation
 uuid: 0ca9e937-8d40-4570-9dbf-9aecc6ecedf6
 translation-type: tm+mt
-source-git-commit: 3249a0f35807b230f8200e81772957fbb255832b
+source-git-commit: 0720b2004097eb288bd8f59723eeb09a79dd81e7
 
 ---
 
@@ -35,10 +35,9 @@ Analytics 管理者およびアプリ開発者は、次のタスクを完了す�
 
 ### アプリ開発者
 
-1. [役割固有のタスク](../getting-started/requirements.md#section_8B9EA1FA189F4C6DB7D829F0B5844FBC)の「*Analytics 管理者*」の節に記載される手順を Analytics 管理者が完了していることを確認します。
-
+1. Ensure that your Analytics administrator has completed the steps in the *Analytics Administrators* in [Role-Specific Tasks](../getting-started/requirements.md#section_8B9EA1FA189F4C6DB7D829F0B5844FBC).
 1. [Adobe Mobile Services UI へのログイン](../getting-started/requirements.md#section_690A2EC4572E47869F183974E932A6A8)に記載されるいずれかの節を Analytics 管理者が完了していることを確認します。
-1. レポートスイートが設定されたら、[SDK のダウンロード](../getting-started/requirements.md#section_044C17DF82BC4FD8A3E409C456CE9A46)に記載される手順を完了します。
+1. After the report suite has been configured, complete steps in the [Download the SDK](../getting-started/requirements.md#section_044C17DF82BC4FD8A3E409C456CE9A46).
 
 役割と権限について詳しくは、[役割と権限](/help/using/gs/c-mob-roles-and-permissions.md)を参照してください。
 
@@ -91,11 +90,15 @@ Adobe ID を使用して [Experience Cloud](https://marketing.adobe.com) にロ�
 
    >[!IMPORTANT]
    >
-   >右側のパネルにアプリを表示するには、まずアプリを作成する必要があります。 アプリの作成について詳しくは、新しいアプリの追 [加を参照してください](https://docs.adobe.com/content/help/en/mobile-services/using/manage-apps-ug/t-new-app.html)。
+   >右側のパネルにアプリを表示するには、まずアプリを作成する必要があります。 アプリの作成について詳しくは、新しいアプリの追 [加を参照してください。](https://docs.adobe.com/content/help/en/mobile-services/using/manage-apps-ug/t-new-app.html)
 
 1. アプリの左側のウィンドウで、「アプリ設定を管理」 **[!UICONTROL をクリックします]**。
-1. ページの下部で、「 **[!UICONTROL App SDKのダウンロード数」セクションまで下にスク]**ロールします。
-1. プラットフォームに応じた SDK とサンプルアプリをダウンロードします。
+
+   >[!IMPORTANT]
+   >
+   >「アプリ設定を管理」オプ **[!UICONTROL ションが表示されない場合は]**、Adobe Mobile Servicesにログインしていることを確認します。 検証するには、ページ![の右上にあるソリューション切り替え](assets/solution-switcher.png)「アイコン」をクリックし、**[!UICONTROL  Adobe Mobile Services]** が左上に表示されていることを確認します。
+
+1. アプリ設定ページの下部にある「アプリSDKのダウンロード」セクションで ****、お使いのプラットフォーム用のSDKとサンプルアプリをダウンロードします。
 
 >[!TIP]
 >
