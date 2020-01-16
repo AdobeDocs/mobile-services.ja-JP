@@ -1,14 +1,14 @@
 ---
 description: この情報は、Android デバイスでバージョン 3 の獲得キャンペーンリンクをラウンドトリップする場合に役立ちます。
-keywords: Android, ライブラリ, モバイル, SDK
+keywords: android;library;mobile;sdk
 seo-description: この情報は、Android デバイスでバージョン 3 の獲得キャンペーンリンクをラウンドトリップする場合に役立ちます。
 seo-title: バージョン 3 の獲得のテスト
-solution: Experience Cloud,Analytics
+solution: Marketing Cloud,Analytics
 title: バージョン 3 の獲得のテスト
-topic: 開発者と導入
+topic: Developer and implementation
 uuid: 5e38b43d-389e-4412-99e5-3e6223b6ad28
-translation-type: ht
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+translation-type: tm+mt
+source-git-commit: 657e8b93d1516690ad21d6cf504f9c8f611747b6
 
 ---
 
@@ -23,10 +23,15 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
 モバイルアプリがまだ Google Play に登録されていない場合は、マーケティングリンクを作成するときに任意のモバイルアプリをリンク先として選択できます。これは、ダウンロード計測用リンクのクリック後に獲得サーバーによってリダイレクトされるアプリにのみ影響を与えます。リンクのテスト機能には影響を与えません。クエリ文字列パラメーターは、Google Play ストアに渡されます。これらのパラメーターは、キャンペーンのブロードキャストの一環としてインストール時にアプリに渡されます。モバイルアプリでの獲得のラウンドトリップテストには、このタイプのブロードキャストのシミュレーションが必要です。
 
-テストを実行するたびに、アプリを新しくインストールするか、アプリのデータを&#x200B;**[!UICONTROL 設定]**&#x200B;でクリアする必要があります。そうすることで、アプリが最初に起動したときに、キャンペーンクエリ文字列パラメーターに関連付けられている初期ライフサイクル指標が送信されます。
+>[!IMPORTANT]
+>
+>Google Play Install Referrer APIを使用して実装する場合、アプリがGoogle playストアに入る前に獲得をテストすることはできません。
+
+テストを実行するたびに、アプリを新しくインストールするか、アプリのデータを&#x200B;**[!UICONTROL 設定]**でクリアする必要があります。そうすることで、アプリが最初に起動したときに、キャンペーンクエリ文字列パラメーターに関連付けられている初期ライフサイクル指標が送信されます。
 
 1. 「[モバイルアプリの獲得](/help/android/acquisition-main/acquisition.md)」の前提条件のタスクを実行し、`INSTALL_REFERRER` のブロードキャストレシーバーが正しく実装されていることを確認します。
-1. Adobe Mobile Services UI で、**[!UICONTROL 獲得]**／**[!UICONTROL マーケティングリンクビルダー]**&#x200B;をクリックし、Google Play を Android デバイスのリンク先として設定する獲得マーケティングリンク URL を生成します。
+
+1. In the Adobe Mobile Services UI, click  **[!UICONTROL Acquisition]**>**[!UICONTROL  Marketing Links Builder]** and generate an Acquisition Marketing Link URL that sets Google Play as the destination for Android devices.
 
    詳しくは、[マーケティングリンクビルダー](/help/using/acquisition-main/c-marketing-links-builder/c-marketing-links-builder.md)を参照してください。
 
@@ -63,7 +68,7 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
    | 設定 | 値 |
    |--- |--- |
-   | acquisition | サーバーは `c00.adobe.com` である必要があります。また、**`appid` がダウンロード計測用リンクの `appid` と同じである必要があります。 |
+   | acquisition | サーバー `c00.adobe.com` である必要があります。*`appid`*がダウンロード計測用リンクの`appid`と同じである必要があります。 |
    | analytics | テストのために、ブロードキャストを手動で送信するのに十分な時間（60 秒以上）に送信タイムアウトを設定します。テスト後に元のタイムアウト設定に復元できます。 |
 
 1. デバイスをコンピューターに接続し、アプリをアンインストールしてからインストールし直します。
@@ -78,8 +83,8 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
    1. `utm_content` に関連付けられた値を置き換えます。
    ブロードキャストが成功すると、次の例のような応答が返されます。
 
-   `Broadcasting: Intent 
-{ act=com.android.vending.INSTALL_REFERRER cmp=com.adobe.adms.tests/.ReferralReceiver (has extras) } 
+   `Broadcasting: Intent
+{ act=com.android.vending.INSTALL_REFERRER cmp=com.adobe.adms.tests/.ReferralReceiver (has extras) }
 Broadcast completed: result=0`
 
 1. （オプション）SDK のデバッグログを有効にして、追加の情報を取得することができます。
