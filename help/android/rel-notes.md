@@ -2,12 +2,12 @@
 description: Experience Cloud ソリューション用 Android SDK 4.x のリリースノートと既知の問題です。
 seo-description: Experience Cloud ソリューション用 Android SDK 4.x のリリースノートと既知の問題です。
 seo-title: リリースノート
-solution: Experience Cloud,Analytics
+solution: Marketing Cloud,Analytics
 title: リリースノート
-topic: 開発者と導入
+topic: Developer and implementation
 uuid: 16bb4de8-a216-47a8-928c-0b1e1421adcf
-translation-type: ht
-source-git-commit: 7fe7c78262a6d35dd27787554bb4f9ee92faa952
+translation-type: tm+mt
+source-git-commit: 712a1107b317f02216e4df8d75fddda67a6f1feb
 
 ---
 
@@ -15,6 +15,12 @@ source-git-commit: 7fe7c78262a6d35dd27787554bb4f9ee92faa952
 # リリースノート {#release-notes}
 
 Experience Cloud ソリューション用 Android SDK 4.x のリリースノート、既知の問題およびホットフィックス情報を次に示します。
+
+**2020年1月17日：4.18.0**
+
+* 獲得 — Google playインストールリファラーAPIをサ `Analytics.processGooglePlayInstallReferrerUrl(final String url)`ポートする新しいAPIが追加されました。
+
+   リファラーAPIのインストールについて詳しくは、「InstallBroadcastを使用し [続けますか？ 2020年3月1日までにリファラー再生APIに切り替えます](https://android-developers.googleblog.com/2019/11/still-using-installbroadcast-switch-to.html) 。
 
 **2019 年 9 月 21 日：バージョン 4.17.10**
 
@@ -41,4 +47,4 @@ Experience Cloud ソリューション用 Android SDK 4.x のリリースノー�
 * 訪問者 ID サービス - 接続と読み取りのタイムアウトを 2 秒から 5 秒に増やしました。
 
 
-すべてのソリューションに関する現在および過去のリリースノートについては、[Adobe Experience Cloud リリースノート](https://marketing.adobe.com/resources/help/ja_JP/whatsnew/)を参照してください。
+すべてのソリューションに関する現在および過去のリリースノートについては、[Adobe Experience Cloud リリースノート](https://marketing.adobe.com/resources/help/en_US/whatsnew/)を参照してください。
