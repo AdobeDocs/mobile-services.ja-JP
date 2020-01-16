@@ -1,14 +1,14 @@
 ---
 description: Android ライブラリによって提供される Adobe Analytics メソッドのリストを示します。
-keywords: Android, ライブラリ, モバイル, SDK
+keywords: android;library;mobile;sdk
 seo-description: Android ライブラリによって提供される Adobe Analytics メソッドのリストを示します。
 seo-title: Analytics メソッド
-solution: Experience Cloud,Analytics
+solution: Marketing Cloud,Analytics
 title: Analytics メソッド
-topic: 開発者と導入
+topic: Developer and implementation
 uuid: ac7c640e-9dcc-4724-b561-019cc025d5a7
-translation-type: ht
-source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+translation-type: tm+mt
+source-git-commit: 657e8b93d1516690ad21d6cf504f9c8f611747b6
 
 ---
 
@@ -34,13 +34,13 @@ SDK は現在、Analytics、Target、Audience Manager、Adobe Experience Platfor
    * このメソッドの構文を次に示します。
 
       ```java
-      public staticvoidtrackState(Stringstate, Map<String,Object> contextData);
+      public static void trackState(String state, Map<String, Object> contextData);
       ```
 
    * このメソッドのコードサンプルを次に示します。
 
       ```java
-      Analytics.trackState("loginScreen",null);
+      Analytics.trackState("loginScreen", null);
       ```
 
 * **trackAction**：アプリのアクションを追跡します。
@@ -50,13 +50,13 @@ SDK は現在、Analytics、Target、Audience Manager、Adobe Experience Platfor
    * このメソッドの構文を次に示します。
 
       ```java
-      publicstaticvoidtrackAction(Stringstate,Map<String,Object> contextData);
+      public static void trackAction(String state, Map<String, Object> contextData);
       ```
 
    * このメソッドのコードサンプルを次に示します。
 
       ```java
-      Analytics.trackAction("heroBannerTouched",null);
+      Analytics.trackAction("heroBannerTouched", null);
       ```
 
 * **getTrackingIdentifier**：Analytics 用に自動的に生成された訪問者識別子を返します。
@@ -66,13 +66,13 @@ SDK は現在、Analytics、Target、Audience Manager、Adobe Experience Platfor
    * このメソッドの構文を次に示します。
 
       ```java
-      public static String getTrackingIdentifier(); 
+      public static String getTrackingIdentifier();
       ```
 
    * このメソッドのコードサンプルを次に示します。
 
       ```java
-      String trackingId = Analytics.getTrackingIdentifier(); 
+      String trackingId = Analytics.getTrackingIdentifier();
       ```
 
 * **trackLocation**
@@ -82,7 +82,7 @@ SDK は現在、Analytics、Target、Audience Manager、Adobe Experience Platfor
    * このメソッドの構文を次に示します。
 
       ```java
-      public static void trackLocation(Location location, Map<String,Object> contextData); 
+      public static void trackLocation(Location location, Map<String, Object> contextData);
       ```
 
    * このメソッドのコードサンプルを次に示します。
@@ -98,7 +98,7 @@ SDK は現在、Analytics、Target、Audience Manager、Adobe Experience Platfor
    * このメソッドの構文を次に示します。
 
       ```java
-      publicstaticvoidtrackLifetimeValueIncrease(BigDecimalamount,Map<String,Object>contextData);
+      public static void trackLifetimeValueIncrease(BigDecimal amount, Map<String, Object> contextData);
       ```
 
    * このメソッドのコードサンプルを次に示します。
@@ -120,13 +120,13 @@ SDK は現在、Analytics、Target、Audience Manager、Adobe Experience Platfor
    * このメソッドの構文を次に示します。
 
    ```java
-   publicstaticvoidtrackTimedActionStart(Stringaction,Map<String,Object>contextData);
+   public static void trackTimedActionStart(String action, Map<String, Object> contextData);
    ```
 
    * このメソッドのコードサンプルを次に示します。
 
       ```java
-      Analytics.trackTimedActionStart("cartToCheckout",null)
+      Analytics.trackTimedActionStart("cartToCheckout", null)
       ```
 
 
@@ -141,14 +141,14 @@ SDK は現在、Analytics、Target、Audience Manager、Adobe Experience Platfor
    * このメソッドの構文を次に示します。
 
       ```java
-      public static void trackTimedActionUpdate(Stringaction,Map <String,Object> contextData); 
+      public static void trackTimedActionUpdate(String action, Map<String, Object> contextData);
       ```
 
    * このメソッドのコードサンプルを次に示します。
 
       ```java
-      HashMap cdata = new HashMap<String Object> (); 
-      cdata.put("quantity",3); 
+      HashMap cdata = new HashMap<String Object> ();
+      cdata.put("quantity",3);
       Analytics.trackTimedActionUpdate("cartToCheckout", cdata);
       ```
 
@@ -163,7 +163,7 @@ SDK は現在、Analytics、Target、Audience Manager、Adobe Experience Platfor
    * このメソッドの構文を次に示します。
 
       ```java
-      public static void trackTimedActionEnd(Stringaction,TimedActionBlock<Boolean> logic); 
+      public static void trackTimedActionEnd(String action, TimedActionBlock<Boolean> logic);
       ```
 
    * このメソッドのコードサンプルを次に示します。
@@ -171,12 +171,11 @@ SDK は現在、Analytics、Target、Audience Manager、Adobe Experience Platfor
       ```java
       Analytics.trackTimedActionEnd("cartToCheckout",new
       Analytics.TimedActionBlock<Boolean>(){
-        @Override
-        public Booleancall(long inAppDuration,long totalDuration, Map<String,
-      Object> contextData) {
+          @Override
+          public Boolean call(long inAppDuration, long totalDuration, Map<String, Object> contextData) {
               contextData.put("price", 49.95);
               return true;
-         }
+          }
       });
       ```
 
@@ -189,7 +188,7 @@ SDK は現在、Analytics、Target、Audience Manager、Adobe Experience Platfor
    * このメソッドの構文を次に示します。
 
       ```java
-      voidsendQueuedHits()
+      public static void sendQueuedHits();
       ```
 
    * このメソッドのコードサンプルを次に示します。
@@ -205,13 +204,13 @@ SDK は現在、Analytics、Target、Audience Manager、Adobe Experience Platfor
    * このメソッドの構文を次に示します。
 
       ```java
-      long getQueueSize()
+      public static long getQueueSize();
       ```
 
    * このメソッドのコードサンプルを次に示します。
 
       ```java
-      long queueSize = Analytics.getQueueSize(); 
+      long queueSize = Analytics.getQueueSize();
       ```
 
 * **clearQueue**
@@ -221,7 +220,7 @@ SDK は現在、Analytics、Target、Audience Manager、Adobe Experience Platfor
    * このメソッドの構文を次に示します。
 
       ```java
-      voidclearQueue()
+      public static void clearQueue();
       ```
 
    * このメソッドのコードサンプルを次に示します。
@@ -233,3 +232,45 @@ SDK は現在、Analytics、Target、Audience Manager、Adobe Experience Platfor
       >[!WARNING]
       >
       > キューを手動でクリアする場合は、注意が必要です。このプロセスを元に戻すことはできません。
+
+* **processReferrer**
+
+   Google Play storeからのリファラーキャンペーンデータを後で使用するために処理します。
+
+   * このメソッドの構文を次に示します。
+
+      ```java
+      public static void processReferrer(final Context context, final Intent intent);
+      ```
+
+   * このメソッドのコードサンプルを次に示します。
+
+      ```java
+      Analytics.processReferrer(getApplicationContext(), intent);
+      ```
+
+* **processGooglePlayInstallReferrerUrl**
+
+   >[!IMPORTANT]
+   >
+   > このAPIは、SDKバージョン4.18.0以降で利用可能です。
+
+   指定されたGoogle playインストールリファラーURLから獲得データを取得します。
+
+   このAPIから収集されたデータは、Analyticsに送信されたインストールヒット時に送信され、Adobe Data Callbackで使用できるようになります。
+
+   リファラーデータがSDKによって既に収集されている場合、このメソッドを呼び出すと、何も実行されません。
+
+   リファラーURLの取得方法について詳しくは、Googleのドキュメントを参照してください。https://developer.android.com/google/play/installreferrer/library.
+
+   * このメソッドの構文を次に示します。
+
+      ```java
+      public static void processGooglePlayInstallReferrerUrl(final String referrerUrl);
+      ```
+
+   * このメソッドのコードサンプルを次に示します。
+
+      ```java
+      Analytics.processGooglePlayInstallReferrerUrl(referrerUrl);
+      ```
