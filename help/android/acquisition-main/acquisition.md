@@ -1,14 +1,14 @@
 ---
 description: Adobe Mobile Services で一意のトラッキングコードを持つダウンロード計測用リンクを生成できます。生成されたリンクをユーザーがクリックした後で App Store からアプリをダウンロードして実行すると、SDK が自動的に獲得データを収集し、Adobe Mobile Services に送信します。
-keywords: Android, ライブラリ, モバイル, SDK
+keywords: android;library;mobile;sdk
 seo-description: Adobe Mobile Services で一意のトラッキングコードを持つダウンロード計測用リンクを生成できます。生成されたリンクをユーザーがクリックした後で App Store からアプリをダウンロードして実行すると、SDK が自動的に獲得データを収集し、Adobe Mobile Services に送信します。
 seo-title: モバイルアプリの獲得
-solution: Experience Cloud,Analytics
+solution: Marketing Cloud,Analytics
 title: モバイルアプリの獲得
-topic: 開発者と導入
+topic: Developer and implementation
 uuid: 4d32eae9-e856-4e40-8a29-2b5bccd106e0
-translation-type: ht
-source-git-commit: b690ec677cf5aedfb2673b707f82716af1851124
+translation-type: tm+mt
+source-git-commit: 8a25259732a916f977f733cd22971b1d847aae5f
 
 ---
 
@@ -21,7 +21,7 @@ Adobe Mobile Services で一意のトラッキングコードを持つダウン�
 
 Adobe Experience Platform Mobile SDK に関する情報やドキュメントをお探しの場合、最新のドキュメントについては、[こちら](https://aep-sdks.gitbook.io/docs/)をクリックしてください。
 
-2018 年 9 月に、SDK の新しいメジャーバージョンをリリースしました。これらの新しい Adobe Experience Platform Mobile SDK は、[Experience Platform Launch](https://www.adobe.com/jp/experience-platform/launch.html) から設定できます。
+2018 年 9 月に、SDK の新しいメジャーバージョンをリリースしました。これらの新しい Adobe Experience Platform Mobile SDK は、[Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) から設定できます。
 
 * 開始するには、Adobe Experience Platform Launch に移動します。
 * Experience Platform SDK リポジトリの内容については、[Github: Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks) を参照してください。
@@ -31,6 +31,91 @@ Adobe Experience Platform Mobile SDK に関する情報やドキュメントを�
 >獲得を使用するには、SDK バージョン 4.1 以降が&#x200B;**必要**&#x200B;です。
 
 ダウンロード計測用リンクは Adobe Mobile Services で作成する必要があります。詳しくは、「[獲得](/help/using/acquisition-main/acquisition-main.md)」を参照してください。
+
+**SDK バージョン 4.18.0 以降**：
+
+2020年3月1日以降、Googleはinstall_referrerインテントブロードキャストメカニズムを廃止します。 詳しくは、「InstallBroadcastを使用し続 [けますか？ 2020年3月1日までにリファラーを再生APIに切り替えます](https://android-developers.googleblog.com/2019/11/still-using-installbroadcast-switch-to.html)。 Google playストアからインストールリファラー情報の収集を続行するには、SDKバージョン4.18.0以降を使用するようにアプリケーションを更新します。
+
+非推奨の機能では、新しいGoogle APIからインス `BroadcastReceiver`トールリファラーURLを収集し、そのURLをSDKに渡す必要があります。
+
+1. Google playインストールリファラーパッケージをグレードファイルの依存関係に追加します。
+
+   `implementation 'com.android.installreferrer:installreferrer:1.1'`
+
+1. リファラーのインストールAPIからリファラーURLを取得するには、インストールリファラーの取 [得の手順を実行します](https://developer.android.com/google/play/installreferrer/library#install-referrer)。
+
+1. リファラーURLをSDKに渡します。
+
+   `Analytics.processGooglePlayInstallReferrerUrl(referrerUrl);`
+
+>[!IMPORTANT]
+>
+>アプリで不要なAPI呼び出しを避けるために、Googleではインストール直後に1回だけAPIを呼び出すことをお勧めします。
+
+アプリでGoogle Play Install Referrer APIを使用する最善の方法を決定するには、Googleのドキュメントを参照してください。 Adobe SDKとGoogle Play Install Referrer APIの使用方法の例を次に示します。
+
+```java
+void handleGooglePlayReferrer() {
+    // Google recommends only calling this API the first time you need it:
+    // https://developer.android.com/google/play/installreferrer/library#install-referrer
+
+    // Store a boolean in SharedPreferences to ensure we only call it once.
+    final SharedPreferences prefs = getSharedPreferences("acquisition", 0);
+    if (prefs != null) {
+        if (prefs.getBoolean("referrerHasBeenProcessed", false)) {
+            return;
+        }
+    }
+
+    final InstallReferrerClient referrerClient = InstallReferrerClient.newBuilder(getApplicationContext()).build();
+    referrerClient.startConnection(new InstallReferrerStateListener() {
+        private boolean complete = false;
+
+        @Override
+        public void onInstallReferrerSetupFinished(int responseCode) {
+            switch (responseCode) {
+                case InstallReferrerClient.InstallReferrerResponse.OK:
+                    // connection is established
+                    complete();
+                    try {
+                        final ReferrerDetails details = referrerClient.getInstallReferrer();                        
+
+                        // pass the install referrer url to the SDK
+                        Analytics.processGooglePlayInstallReferrerUrl(details.getInstallReferrer());
+
+                    } catch (final RemoteException ex) {
+                        Log.w("Acquisition - RemoteException while retrieving referrer information (%s)", ex.getLocalizedMessage() == null ? "unknown" : ex.getLocalizedMessage());
+                    } finally {
+                        referrerClient.endConnection();
+                    }
+                    break;
+                case InstallReferrerClient.InstallReferrerResponse.FEATURE_NOT_SUPPORTED:
+                case InstallReferrerClient.InstallReferrerResponse.SERVICE_UNAVAILABLE:
+                default:
+                    // API not available in the Play Store app - nothing to do here
+                    complete();
+                    referrerClient.endConnection();
+                    break;
+            }
+        }
+
+        @Override
+        public void onInstallReferrerServiceDisconnected() {
+            if (!complete) {
+                // something went wrong trying to get a connection, try again
+                referrerClient.startConnection(this);
+            }
+        }
+
+        void complete() {
+            complete = true;
+            SharedPreferences.Editor editor = getSharedPreferences("acquisition", 0).edit();
+            editor.putBoolean("referrerHasBeenProcessed", true);
+            editor.apply();
+        }
+    });
+}
+```
 
 **SDK バージョン 4.13.1 以降**：
 
@@ -56,7 +141,7 @@ Adobe Mobile Services で作成されたダウンロード計測用リンクを�
 
 1. 獲得変数の先頭にプレフィックス「`adb`」を付けます。
 
-   SDK が（最初の起動時に）Adobe Mobile Services から獲得データを受け取ると、そのデータは保存され、以前に SDK に登録された `AdobeDataCallback` インスタンスでも使用できるようになります。詳しくは、「[設定メソッド](/help/android/configuration/methods.md)」を参照してください。
+   SDKが最初の起動時にAdobe Mobile Servicesから獲得データを受け取ると、データが保存され、SDKの以前に登録されたインスタ `AdobeDataCallback` ンスで使用できるようになります。 詳しくは、「[設定メソッド](/help/android/configuration/methods.md)」を参照してください。
 
 1. `MobileDataEvent.MOBILE_EVENT_ACQUISITION_INSTALL` または `MobileDataEvent.MOBILE_EVENT_ACQUISITION_LAUNCH` イベントタイプが使用されます。
 
@@ -83,39 +168,39 @@ Adobe Mobile Services で作成されたダウンロード計測用リンクを�
 1. リファラーの `BroadcastReceiver` を実装します。
 
    ```java
-   package com.your.package.name;  // replace with your app package name 
+   package com.your.package.name;  // replace with your app package name
    
-   import android.content.BroadcastReceiver; 
-   import android.content.Context; 
-   import android.content.Intent; 
+   import android.content.BroadcastReceiver;
+   import android.content.Context;
+   import android.content.Intent;
    
-   public class GPBroadcastReceiver extends BroadcastReceiver { 
-     @Override 
-     public void onReceive(Context c, Intent i) { 
-      com.adobe.mobile.Analytics.processReferrer(c, i); 
-     } 
+   public class GPBroadcastReceiver extends BroadcastReceiver {
+     @Override
+     public void onReceive(Context c, Intent i) {
+      com.adobe.mobile.Analytics.processReferrer(c, i);
+     }
    }
    ```
 
 1. `AndroidManifest.xml` を更新して、前の手順で作成した `BroadcastReceiver` を有効にします。
 
    ```xml
-   <receiver android:name="com.your.package.name.GPBroadcastReceiver" android:exported="true"> 
-    <intent-filter> 
-     <action android:name="com.android.vending.INSTALL_REFERRER" /> 
-    </intent-filter> 
+   <receiver android:name="com.your.package.name.GPBroadcastReceiver" android:exported="true">
+    <intent-filter>
+     <action android:name="com.android.vending.INSTALL_REFERRER" />
+    </intent-filter>
    </receiver>
    ```
 
 1. `ADBMobileConfig.json` ファイルに次の必須の acquisition 設定が含まれていることを確認します。
 
    ```xml
-   "acquisition": { 
-      "server": "c00.adobe.com", 
-      "appid": "0652024f-adcd-49f9-9bd7-2552a4565d2f" 
-   }, 
-   "analytics": { 
-     "referrerTimeout": 5, 
+   "acquisition": {
+      "server": "c00.adobe.com",
+      "appid": "0652024f-adcd-49f9-9bd7-2552a4565d2f"
+   },
+   "analytics": {
+     "referrerTimeout": 5,
      ...
    ```
 
