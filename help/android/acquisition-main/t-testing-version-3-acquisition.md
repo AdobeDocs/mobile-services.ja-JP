@@ -7,13 +7,13 @@ solution: Marketing Cloud,Analytics
 title: バージョン 3 の獲得のテスト
 topic: Developer and implementation
 uuid: 5e38b43d-389e-4412-99e5-3e6223b6ad28
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 657e8b93d1516690ad21d6cf504f9c8f611747b6
 
 ---
 
 
-# V3 による獲得のテスト{#testing-version-acquisition}
+# V3 による獲得のテスト {#testing-version-acquisition}
 
 この情報は、Android デバイスでバージョン 3 の獲得キャンペーンリンクをラウンドトリップする場合に役立ちます。
 
@@ -25,13 +25,13 @@ source-git-commit: 657e8b93d1516690ad21d6cf504f9c8f611747b6
 
 >[!IMPORTANT]
 >
->Google Play Install Referrer APIを使用して実装する場合、アプリがGoogle playストアに入る前に獲得をテストすることはできません。
+>Google Play インストールリファラー API を使用して実装する場合、アプリケーションが Google Play ストアに登録される前に獲得のテストをおこなうことはできません。
 
 テストを実行するたびに、アプリを新しくインストールするか、アプリのデータを&#x200B;**[!UICONTROL 設定]**でクリアする必要があります。そうすることで、アプリが最初に起動したときに、キャンペーンクエリ文字列パラメーターに関連付けられている初期ライフサイクル指標が送信されます。
 
 1. 「[モバイルアプリの獲得](/help/android/acquisition-main/acquisition.md)」の前提条件のタスクを実行し、`INSTALL_REFERRER` のブロードキャストレシーバーが正しく実装されていることを確認します。
 
-1. In the Adobe Mobile Services UI, click  **[!UICONTROL Acquisition]**>**[!UICONTROL  Marketing Links Builder]** and generate an Acquisition Marketing Link URL that sets Google Play as the destination for Android devices.
+1. Adobe Mobile Services UI で、**[!UICONTROL 獲得]**／**[!UICONTROL &#x200B;マーケティングリンクビルダー]**をクリックし、Google Play を Android デバイスのリンク先として設定する獲得マーケティングリンク URL を生成します。
 
    詳しくは、[マーケティングリンクビルダー](/help/using/acquisition-main/c-marketing-links-builder/c-marketing-links-builder.md)を参照してください。
 
