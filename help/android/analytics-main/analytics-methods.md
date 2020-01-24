@@ -7,13 +7,13 @@ solution: Marketing Cloud,Analytics
 title: Analytics メソッド
 topic: Developer and implementation
 uuid: ac7c640e-9dcc-4724-b561-019cc025d5a7
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 657e8b93d1516690ad21d6cf504f9c8f611747b6
 
 ---
 
 
-# Analytics メソッド{#analytics-methods}
+# Analytics メソッド {#analytics-methods}
 
 Android ライブラリによって提供される Adobe Analytics メソッドのリストを示します。
 
@@ -235,7 +235,7 @@ SDK は現在、Analytics、Target、Audience Manager、Adobe Experience Platfor
 
 * **processReferrer**
 
-   Google Play storeからのリファラーキャンペーンデータを後で使用するために処理します。
+   後で使用できるよう Google Play ストアのリファラーキャンペーンデータを処理します。
 
    * このメソッドの構文を次に示します。
 
@@ -253,15 +253,15 @@ SDK は現在、Analytics、Target、Audience Manager、Adobe Experience Platfor
 
    >[!IMPORTANT]
    >
-   > このAPIは、SDKバージョン4.18.0以降で利用可能です。
+   > この API は、SDK バージョン 4.18.0 以降で利用可能です。
 
-   指定されたGoogle playインストールリファラーURLから獲得データを取得します。
+   指定された Google Play インストールリファラー URL から獲得データを取得します。
 
-   このAPIから収集されたデータは、Analyticsに送信されたインストールヒット時に送信され、Adobe Data Callbackで使用できるようになります。
+   この API から収集されたデータは、インストールヒットが Analytics に送信される際に送信され、Adobe Data Callback で使用できるようになります。
 
-   リファラーデータがSDKによって既に収集されている場合、このメソッドを呼び出すと、何も実行されません。
+   リファラーデータが SDK によって既に収集されている場合、このメソッドを呼び出しても何も実行されません。
 
-   リファラーURLの取得方法について詳しくは、Googleのドキュメントを参照してください。https://developer.android.com/google/play/installreferrer/library.
+   リファラーURLの取得方法について詳しくは、Google のドキュメント（https://developer.android.com/google/play/installreferrer/library）を参照してください。
 
    * このメソッドの構文を次に示します。
 
