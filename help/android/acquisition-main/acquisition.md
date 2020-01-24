@@ -7,7 +7,7 @@ solution: Marketing Cloud,Analytics
 title: モバイルアプリの獲得
 topic: Developer and implementation
 uuid: 4d32eae9-e856-4e40-8a29-2b5bccd106e0
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 8a25259732a916f977f733cd22971b1d847aae5f
 
 ---
@@ -21,7 +21,7 @@ Adobe Mobile Services で一意のトラッキングコードを持つダウン�
 
 Adobe Experience Platform Mobile SDK に関する情報やドキュメントをお探しの場合、最新のドキュメントについては、[こちら](https://aep-sdks.gitbook.io/docs/)をクリックしてください。
 
-2018 年 9 月に、SDK の新しいメジャーバージョンをリリースしました。これらの新しい Adobe Experience Platform Mobile SDK は、[Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) から設定できます。
+2018 年 9 月に、SDK の新しいメジャーバージョンをリリースしました。これらの新しい Adobe Experience Platform Mobile SDK は、[Experience Platform Launch](https://www.adobe.com/jp/experience-platform/launch.html) から設定できます。
 
 * 開始するには、Adobe Experience Platform Launch に移動します。
 * Experience Platform SDK リポジトリの内容については、[Github: Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks) を参照してください。
@@ -34,25 +34,25 @@ Adobe Experience Platform Mobile SDK に関する情報やドキュメントを�
 
 **SDK バージョン 4.18.0 以降**：
 
-2020年3月1日以降、Googleはinstall_referrerインテントブロードキャストメカニズムを廃止します。 詳しくは、「InstallBroadcastを使用し続 [けますか？ 2020年3月1日までにリファラーを再生APIに切り替えます](https://android-developers.googleblog.com/2019/11/still-using-installbroadcast-switch-to.html)。 Google playストアからインストールリファラー情報の収集を続行するには、SDKバージョン4.18.0以降を使用するようにアプリケーションを更新します。
+2020 年 3 月 1 日以降、Google は install_referrer インテントブロードキャストメカニズムを廃止します。詳しくは、「[まだ InstallBroadcast を使用している場合は、2020 年 3 月 1 日までに再生リファラー API に切り替えてください](https://android-developers.googleblog.com/2019/11/still-using-installbroadcast-switch-to.html)」を参照してください。Google Play ストアから引き続きインストールリファラー情報を収集するには、SDK バージョン 4.18.0 以降を使用するようにアプリケーションを更新します。
 
-非推奨の機能では、新しいGoogle APIからインス `BroadcastReceiver`トールリファラーURLを収集し、そのURLをSDKに渡す必要があります。
+廃止に伴い、`BroadcastReceiver` を作成する代わりに、新しい Google API からインストールリファラー URL を収集し、その URL を SDK に渡す必要があります。
 
-1. Google playインストールリファラーパッケージをグレードファイルの依存関係に追加します。
+1. Google Play インストールリファラーパッケージをグレードファイルの依存関係に追加します。
 
    `implementation 'com.android.installreferrer:installreferrer:1.1'`
 
-1. リファラーのインストールAPIからリファラーURLを取得するには、インストールリファラーの取 [得の手順を実行します](https://developer.android.com/google/play/installreferrer/library#install-referrer)。
+1. インストールリファラー API からリファラー URL を取得するには、[インストールリファラーの取得](https://developer.android.com/google/play/installreferrer/library#install-referrer)の手順を実行します。
 
-1. リファラーURLをSDKに渡します。
+1. リファラー URL を SDK に渡します。
 
    `Analytics.processGooglePlayInstallReferrerUrl(referrerUrl);`
 
 >[!IMPORTANT]
 >
->アプリで不要なAPI呼び出しを避けるために、Googleではインストール直後に1回だけAPIを呼び出すことをお勧めします。
+>アプリケーションで不要な API 呼び出しがおこなわれるのを避けるために、Google ではインストール直後に 1 回だけ API を呼び出すことをお勧めします。
 
-アプリでGoogle Play Install Referrer APIを使用する最善の方法を決定するには、Googleのドキュメントを参照してください。 Adobe SDKとGoogle Play Install Referrer APIの使用方法の例を次に示します。
+アプリで Google Play インストールリファラー API を使用する最善の方法を決定するには、Google のドキュメントを参照してください。Google Play インストールリファラー API での Adobe SDK の使用方法の例を次に示します。
 
 ```java
 void handleGooglePlayReferrer() {
@@ -141,7 +141,7 @@ Adobe Mobile Services で作成されたダウンロード計測用リンクを�
 
 1. 獲得変数の先頭にプレフィックス「`adb`」を付けます。
 
-   SDKが最初の起動時にAdobe Mobile Servicesから獲得データを受け取ると、データが保存され、SDKの以前に登録されたインスタ `AdobeDataCallback` ンスで使用できるようになります。 詳しくは、「[設定メソッド](/help/android/configuration/methods.md)」を参照してください。
+   初回起動時に SDK が Adobe Mobile Services から獲得データを受け取ると、データが保存され、SDK で以前登録された `AdobeDataCallback` インスタンスでそのデータを使用できるようになります。詳しくは、「[設定メソッド](/help/android/configuration/methods.md)」を参照してください。
 
 1. `MobileDataEvent.MOBILE_EVENT_ACQUISITION_INSTALL` または `MobileDataEvent.MOBILE_EVENT_ACQUISITION_LAUNCH` イベントタイプが使用されます。
 
