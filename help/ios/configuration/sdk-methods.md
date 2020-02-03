@@ -2,12 +2,12 @@
 description: iOS ライブラリが提供するメソッドの一覧を以下に示します。
 seo-description: iOS ライブラリが提供するメソッドの一覧を以下に示します。
 seo-title: 設定メソッド
-solution: Experience Cloud,Analytics
+solution: Marketing Cloud,Analytics
 title: 設定メソッド
-topic: 開発者と導入
+topic: Developer and implementation
 uuid: 623c7b07-fbb3-4d39-a5c4-e64faec4ca29
-translation-type: ht
-source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
+translation-type: tm+mt
+source-git-commit: ea4b054fbeea3967c28ee938aed5997a4c287a0d
 
 ---
 
@@ -268,6 +268,40 @@ SDK は現在、Analytics、Target、Audience Manager、Adobe Experience Platfor
       ```objective-c
       [ADBMobile collectLifecycleDataWithAdditionalData:@{@"entryType":@"appShortcutIcon"}]; 
       ```
+
+* **pauseCollectingLifecycleData**
+
+   このAPIを使用して、ライフサイクルデータの収集を一時停止します。 詳しくは、「[ライフサイクル指標](/help/ios/metrics.md)」を参照してください。
+
+   >[!IMPORTANT]
+   >
+   >delegateメソッド `applicationDidEnterBackground` では、まずメソッドを呼び出す必要があ `pauseCollectingLifecycleData` ります。
+   >
+   >このAPIは、セッション長指標が異常になったiOS 13を搭載したiPhone7/7以前のデバイスでの問題を軽減するために提供されています。 これは、iOS 13で発生した不明な変更が原因です。iOSでは、アプリのバックグラウンド時にバックグラウンドタスクを完了するのに十分な時間が残っていません。
+
+   * このメソッドの構文を次に示します。
+
+      ```objective-c
+      + (void) pauseCollectingLifecycleData;
+      ```
+
+   * このメソッドのコードサンプルを次に示します。
+
+      ```objective-c
+      - (void)applicationDidEnterBackground:(UIApplication *)application{
+          // manually stop the lifecycle of SDK
+          // important: do NOT call any track state or track action after this line
+          [ADBMobile pauseCollectingLifecycleData];   
+      
+      
+          // the following code is optional, may help to mitigate the issue a bit more. If you have other logic to run here that probably takes more than 10ms, then there is no need to add this line of code.
+          [NSThread sleepForTimeInterval:0.01];
+      
+      
+          // app's code to handle applicationDidEnterBackground
+      }
+      ```
+
 
 * **overrideConfigPath**
 
