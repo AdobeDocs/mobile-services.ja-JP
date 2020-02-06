@@ -6,13 +6,13 @@ solution: Marketing Cloud,Analytics
 title: 設定メソッド
 topic: Developer and implementation
 uuid: 623c7b07-fbb3-4d39-a5c4-e64faec4ca29
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ea4b054fbeea3967c28ee938aed5997a4c287a0d
 
 ---
 
 
-# 設定メソッド{#configuration-methods}
+# 設定メソッド {#configuration-methods}
 
 iOS ライブラリが提供するメソッドの一覧を以下に示します。
 
@@ -65,7 +65,7 @@ SDK は現在、Analytics、Target、Audience Manager、Adobe Experience Platfor
 
    * `ADBMobilePrivacyStatusOptIn`：ヒットは即座に送信されます。
    * `ADBMobilePrivacyStatusOptOut`：ヒットは破棄されます。
-   * `ADBMobilePrivacyStatusUnknown` - オフライン追跡が有効になっている場合、プライバシーステータスがオプトイン（ヒットが送信される）またはオプトアウト（ヒットが破棄される）に変更されるまで、ヒットは保存されます。オフライン追跡が有効になっていない場合、プライバシーステータスがオプトインに変更されるまで、ヒットは破棄されます。デフォルト値は `ADBMobileConfig.json` ファイルに設定します。
+   * `ADBMobilePrivacyStatusUnknown`：オフライン追跡が有効になっている場合、プライバシーステータスがオプトイン（ヒットが送信される）またはオプトアウト（ヒットが破棄される）に変更されるまで、ヒットは保存されます。オフライン追跡が有効になっていない場合、プライバシーステータスがオプトインに変更されるまで、ヒットは破棄されます。デフォルト値は `ADBMobileConfig.json` ファイルに設定します。
 
    * このメソッドの構文を次に示します。
 
@@ -87,7 +87,7 @@ SDK は現在、Analytics、Target、Audience Manager、Adobe Experience Platfor
 
    * `ADBMobilePrivacyStatusOptIn`：ヒットは即座に送信されます。
    * `ADBMobilePrivacyStatusOptOut`：ヒットは破棄されます。
-   * `ADBMobilePrivacyStatusUnknown` - オフライン追跡が有効になっている場合、プライバシーステータスがオプトイン（ヒットが送信される）またはオプトアウト（ヒットが破棄される）に変更されるまで、ヒットは保存されます。オフライン追跡が有効になっていない場合、プライバシーステータスがオプトインに変更されるまで、ヒットは破棄されます。
+   * `ADBMobilePrivacyStatusUnknown`：オフライン追跡が有効になっている場合、プライバシーステータスがオプトイン（ヒットが送信される）またはオプトアウト（ヒットが破棄される）に変更されるまで、ヒットは保存されます。オフライン追跡が有効になっていない場合、プライバシーステータスがオプトインに変更されるまで、ヒットは破棄されます。
 
    * このメソッドの構文を次に示します。
 
@@ -271,13 +271,13 @@ SDK は現在、Analytics、Target、Audience Manager、Adobe Experience Platfor
 
 * **pauseCollectingLifecycleData**
 
-   このAPIを使用して、ライフサイクルデータの収集を一時停止します。 詳しくは、「[ライフサイクル指標](/help/ios/metrics.md)」を参照してください。
+   この API を使用して、ライフサイクルデータの収集を一時停止します。詳しくは、「[ライフサイクル指標](/help/ios/metrics.md)」を参照してください。
 
    >[!IMPORTANT]
    >
-   >delegateメソッド `applicationDidEnterBackground` では、まずメソッドを呼び出す必要があ `pauseCollectingLifecycleData` ります。
+   >`applicationDidEnterBackground` delegate メソッドでは、まず `pauseCollectingLifecycleData` メソッドを呼び出す必要があります。
    >
-   >このAPIは、セッション長指標が異常になったiOS 13を搭載したiPhone7/7以前のデバイスでの問題を軽減するために提供されています。 これは、iOS 13で発生した不明な変更が原因です。iOSでは、アプリのバックグラウンド時にバックグラウンドタスクを完了するのに十分な時間が残っていません。
+   >この API は、セッション長指標が異常となった iOS 13 を搭載した、iPhone 7／7s 以前のデバイスでの問題を軽減するために提供されています。これは、iOS 13 で発生した不明な変更が原因です。iOS では、アプリケーションをバックグラウンドで実行する際、バックグラウンドタスクを完了するのに十分な時間が残りません。
 
    * このメソッドの構文を次に示します。
 
