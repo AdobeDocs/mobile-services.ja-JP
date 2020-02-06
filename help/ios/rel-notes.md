@@ -6,7 +6,7 @@ solution: Marketing Cloud,Analytics
 title: リリースノート
 topic: Developer and implementation
 uuid: e1613dc5-02a4-43a7-997a-29b4de98b4d1
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c7a0fde8b981ae5cfb0f54131d8ae59a008825b3
 
 ---
@@ -16,13 +16,13 @@ source-git-commit: c7a0fde8b981ae5cfb0f54131d8ae59a008825b3
 
 Experience Cloud ソリューション用 iOS SDK 4.x のリリースノート、既知の問題およびホットフィックス情報を次に示します。
 
-**2020年2月4日：バージョン4.19.0**
+**2020 年 2 月 5 日：バージョン 4.19.0**
 
-* ライフサイクル — 一部の古いiOSデバイスから報告されたセッション長の異常データを軽減するために、新しいAPI、pauseCollectingLifecycleDataが追加されました。
+* ライフサイクル — 一部の古い iOS デバイスで報告されたセッション長の異常データを軽減するために、新しい API、pauseCollectingLifecycleData が追加されました。
 
-**2019年11月9日：バージョン4.18.9**
+**2019 年 11 月 9 日：バージョン 4.18.9**
 
-* アプリ内メッセージ — キャッシュされた画像またはバンドルされた画像がフルスクリーンメッセージに読み込めなかったバグを修正しました。
+* アプリ内メッセージ — キャッシュされた画像またはバンドルされた画像をフルスクリーンメッセージに読み込めなかったバグを修正しました。
 
 **2019 年 9 月 21 日：バージョン 4.18.8**
 
@@ -45,7 +45,7 @@ Experience Cloud ソリューション用 iOS SDK 4.x のリリースノート�
 
 * Adobe Target：すべてのリクエストで、URL クエリパラメーターにクライアントおよび `sessionId` が含まれるようになりました。
 * Adobe Target：メモリリークを修正しました。
-* 訪問者 ID サービス：`visitorAppendToURL` および `visitorGetUrlVariablesAsync` API は、戻り値を二重エンコードしなくなりました。 
+* 訪問者 ID サービス：`visitorAppendToURL` および `visitorGetUrlVariablesAsync` API は、戻り値を二重エンコードしなくなりました。
 
    二重エンコードが原因で、API からの戻り値がセキュリティ診断によってリスクありと判断されることがありました。
 
@@ -60,4 +60,4 @@ Experience Cloud ソリューション用 iOS SDK 4.x のリリースノート�
 
 * 訪問者 ID サービス — `setPushIdentifier` API I呼び出しは、呼び出されるたびに同期呼び出しを訪問者IDサービスへと送信するようになりました。
 
-すべてのソリューションに関する現在および過去のリリースノートについては、[Adobe Experience Cloud リリースノート](https://marketing.adobe.com/resources/help/en_US/whatsnew/)を参照してください。
+すべてのソリューションに関する現在および過去のリリースノートについては、[Adobe Experience Cloud リリースノート](https://marketing.adobe.com/resources/help/ja_JP/whatsnew/)を参照してください。
