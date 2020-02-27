@@ -6,7 +6,7 @@ solution: Marketing Cloud,Analytics
 title: リリースノート
 topic: Developer and implementation
 uuid: e1613dc5-02a4-43a7-997a-29b4de98b4d1
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: b608516b0103db3ae0eed1deaa4fb9733a98f7fa
 
 ---
@@ -18,7 +18,7 @@ Experience Cloud ソリューション用 iOS SDK 4.x のリリースノート�
 
 **2020 年 2 月 5 日：バージョン 4.19.0**
 
-* ライフサイクル — 一部の古いiOSデバイスから報告されたセッション長の異常データを軽減するために、新しいAPI、pauseCollectingLifecycleDataが追加されました。
+* ライフサイクル — 一部の古い iOS デバイスで報告されたセッション長の異常データを軽減するために、新しい API、pauseCollectingLifecycleData が追加されました。
 
 **2019 年 11 月 9 日：バージョン 4.18.9**
 
@@ -60,4 +60,4 @@ Experience Cloud ソリューション用 iOS SDK 4.x のリリースノート�
 
 * 訪問者 ID サービス — `setPushIdentifier` API I呼び出しは、呼び出されるたびに同期呼び出しを訪問者IDサービスへと送信するようになりました。
 
-すべてのソリューションに関する現在および過去のリリースノートについては、[Adobe Experience Cloud リリースノート](https://marketing.adobe.com/resources/help/en_US/whatsnew/)を参照してください。
+すべてのソリューションに関する現在および過去のリリースノートについては、[Adobe Experience Cloud リリースノート](https://marketing.adobe.com/resources/help/ja_JP/whatsnew/)を参照してください。
