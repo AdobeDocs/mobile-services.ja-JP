@@ -3,22 +3,22 @@ description: 'null'
 keywords: Unity
 seo-description: 'null'
 seo-title: ADBMobile.csメソッド
-solution: Marketing Cloud，開発者
+solution: Marketing Cloud,Developer
 title: ADBMobile.csメソッド
 uuid: af504934-febd-45d9-81e2-2a310f4c65dc
 translation-type: tm+mt
-source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
+source-git-commit: 0d50c7e6674de33b8190e74c113ae010ff226e97
 
 ---
 
 
 # ADBMobile.cs methods {#adbmobile-cs-methods}
 
-## 設定方法
+## 設定メソッド
 
 * **CollectLifecycleData**
 
-   SDK のすべてのソリューションで使用するライフサイクルデータを収集するように SDK に指示します。詳しくは、[ライフサイクル指標](/help/ios/metrics.md)を参照してください。
+   SDK のすべてのソリューションで使用するライフサイクルデータを収集するように SDK に指示します。詳しくは、「[ライフサイクル指標](/help/ios/metrics.md)」を参照してください。
 
    * このメソッドの構文を次に示します。
 
@@ -29,7 +29,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
    * このメソッドのコードサンプルを次に示します。
 
       ```java
-      ADBMobile.CollectLifecycleData(); 
+      ADBMobile.CollectLifecycleData();
       ```
 
 * **EnableLocalNotifications（iOS のみ）**
@@ -45,7 +45,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
    * このメソッドのコードサンプルを次に示します。
 
       ```java
-      ADBMobile.EnableLocalNotifications(); 
+      ADBMobile.EnableLocalNotifications();
       ```
 
 * **GetDebugLogging**
@@ -83,8 +83,8 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 * **GetPrivacyStatus**
 
    現在のユーザーのプライバシーステータスの enum 表現を返します。
-   * `MOBILE_PRIVACY_STATUS_OPT_IN`:ヒットは直ちに送信されます。
-   * `MOBILE_PRIVACY_STATUS_OPT_OUT`:ヒットは破棄されます。
+   * `MOBILE_PRIVACY_STATUS_OPT_IN`：ヒットは即座に送信されます。
+   * `MOBILE_PRIVACY_STATUS_OPT_OUT`：ヒットが破棄されます。
    * `MOBILE_PRIVACY_STATUS_UNKNOWN`：オフライン追跡が有効な場合、プライバシーステータスがオプトイン（ヒットが送信される）またはオプトアウト（ヒットが破棄される）に変更されるまで、ヒットは保存されます。
 
       オフライン追跡が有効になっていない場合、プライバシーステータスがオプトインに変更されるまで、ヒットは破棄されます。デフォルト値は [ADBMobileConfig.json](/help/ios/configuration/json-config/json-config.md) ファイルに設定します。
@@ -114,7 +114,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
    * このメソッドのコードサンプルを次に示します。
 
       ```java
-      var userId = ADBMobile.GetUserIdentifier(); 
+      var userId = ADBMobile.GetUserIdentifier();
       ```
 
 * **GetVersion**
@@ -139,23 +139,23 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
    >[!TIP]
    >
-   >このメソッドは、バックグラウンドでの通知に登録するアプリに対して使用されることを目的としており、アプリがバックグラウンドで実行されている間に実行されるコードからのみ呼び出す必要があります。
+   >このメソッドは、バックグラウンドにある間に通知を登録するアプリで使用されることを目的としており、アプリがバックグラウンドにある間に実行されるコードからのみ呼び出す必要があります。
 
    * このメソッドの構文を次に示します。
 
       ```java
-      public static void KeepLifecycleSessionAlive(); 
+      public static void KeepLifecycleSessionAlive();
       ```
 
    * このメソッドのコードサンプルを次に示します。
 
       ```java
-      ADBMobile.KeepLifecycleSessionAlive(); 
+      ADBMobile.KeepLifecycleSessionAlive();
       ```
 
 * **PauseCollectingLifecycleData（Android のみ）**
 
-   ライフサイクル指標が正しく計算されるように、アプリが一時停止されたことを SDK に通知します。例えば、一時停止中にタイムスタンプを収集して、セッションの長さの計測を一時停止します。また、クラッシュ回数を正しく計測するためのフラグを設定します。詳しくは、[ライフサイクル指標](/help/android/metrics.md)を参照してください。
+   ライフサイクル指標が正しく計算されるように、アプリが一時停止されたことを SDK に通知します。例えば、一時停止中にタイムスタンプを収集して、セッションの長さの計測を一時停止します。また、クラッシュ回数を正しく計測するためのフラグを設定します。詳しくは、「[ライフサイクル指標](/help/android/metrics.md)」を参照してください。
 
    * このメソッドの構文を次に示します。
 
@@ -166,12 +166,12 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
    * このメソッドのコードサンプルを次に示します。
 
       ```java
-      ADBMobile.PauseCollectingLifecycleData(); 
+      ADBMobile.PauseCollectingLifecycleData();
       ```
 
 * **SetContext（Android のみ）**
 
-   Indicates to the SDK that it should set its application context from the UnityPlayer's current activity.
+   UnityPlayerの現在のアクティビティからアプリケーションコンテキストを設定する必要があるSDKを示します。
 
    * このメソッドの構文を次に示します。
 
@@ -182,7 +182,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
    * このメソッドのコードサンプルを次に示します。
 
       ```java
-      ADBMobile.SetContext(); 
+      ADBMobile.SetContext();
       ```
 
 * **SetDebugLogging**
@@ -192,30 +192,30 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
    * このメソッドの構文を次に示します。
 
       ```java
-      public static void SetDebugLogging (bool enabled); 
+      public static void SetDebugLogging (bool enabled);
       ```
 
    * このメソッドのコードサンプルを次に示します。
 
       ```java
-      ADBMobile.SetDebugLogging(true); 
+      ADBMobile.SetDebugLogging(true);
       ```
 
 * **SetPrivacyStatus**
 
-   現在のユーザーのプライバシーステータスをステータスに設定します。次のいずれかに設定します。
+   現在のユーザーのプライバシーステータスをステータスに設定します。次のいずれかの値に設定します。
 
-   * `MOBILE_PRIVACY_STATUS_OPT_IN`:ヒットは直ちに送信されます。
-   * `MOBILE_PRIVACY_STATUS_OPT_OUT`:ヒットは破棄されます。
+   * `MOBILE_PRIVACY_STATUS_OPT_IN`：ヒットは即座に送信されます。
+   * `MOBILE_PRIVACY_STATUS_OPT_OUT`：ヒットが破棄されます。
    * `MOBILE_PRIVACY_STATUS_UNKNOWN`：オフライン追跡が有効な場合、プライバシーステータスがオプトイン（ヒットが送信される）またはオプトアウト（ヒットが破棄される）に変更されるまで、ヒットは保存されます。オフライン追跡が有効になっていない場合、プライバシーステータスがオプトインに変更されるまで、ヒットは破棄されます。
 
    * このメソッドの構文を次に示します。
 
       ```java
-      public static void SetPrivacyStatus(ADBPrivacyStatusstatus); 
+      public static void SetPrivacyStatus(ADBPrivacyStatusstatus);
       ```
 
-   * Here is the code sample for this syntax:
+   * この構文のコード例を次に示します。
 
       ```java
       ADBMobile.SetPrivacyStatus(ADBMobile.ADBPrivacyStatus.MOBILE_PRIVACY_STATUS_OPT_IN);
@@ -228,16 +228,16 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
    * このメソッドの構文を次に示します。
 
       ```java
-      public static void SetUserIdentifier(string userId); 
+      public static void SetUserIdentifier(string userId);
       ```
 
    * このメソッドのコードサンプルを次に示します。
 
       ```java
-      ADBMobile.SetUserIdentifier("myCustomUserId"); 
+      ADBMobile.SetUserIdentifier("myCustomUserId");
       ```
 
-## Analyticsメソッド
+## Analytics メソッド
 
 * **GetTrackingIdentifier**
 
@@ -252,18 +252,18 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
    * このメソッドのコードサンプルを次に示します。
 
       ```java
-      var trackingId = ADBMobile.GetTrackingIdentifier(); 
+      var trackingId = ADBMobile.GetTrackingIdentifier();
       ```
 
 * **TrackState**
 
-   オプションのコンテキストデータでアプリ状態を追跡します。状態は、「title screen」、「level 1」、「pause」など、アプリで利用できる表示です。これらの状態は Web サイト上のページによく似ており、`TrackState` コールはページビュー数を増分します。
+   オプションのコンテキストデータを使用してアプリの状態を追跡します。状態は、「title screen」、「level 1」、「pause」など、アプリで利用できる表示です。これらの状態は Web サイト上のページによく似ており、`TrackState` コールはページビュー数を増分します。
 
    If state is empty, it displays as *`app name app version (build)`* in reports. レポートにこの値がある場合、各 `TrackState` 呼び出しで state を設定していることを確認してください。
 
    >[!TIP]
    >
-   >これは、ページビュー数を増やす唯一のトラッキングコールです。
+   >これは、ページビュー数を増分する唯一のトラッキングコールです。
 
    * このメソッドの構文を次に示します。
 
@@ -274,7 +274,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
    * このメソッドのコードサンプルを次に示します。
 
       ```java
-      var contextData = new Dictionary<string, object>); 
+      var contextData = new Dictionary<string, object>);
       contextData.Add ("user", "jim");
       ADBMobile.TrackState("title screen", contextData);
       ```
@@ -285,18 +285,18 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
    >[!TIP]
    >
-   >If you have code that might run while the app is in the background (for example, a background data retrieval), use `trackActionFromBackground` instead.
+   >アプリがバックグラウンドになっているときに、コードが実行される（バックグラウンドデータの取得など）可能性がある場合は、代わりに `trackActionFromBackground` を使用します。
 
    * このメソッドの構文を次に示します。
 
       ```java
-      public static void TrackAction(string action, Dictionary<string, object> cdata); 
+      public static void TrackAction(string action, Dictionary<string, object> cdata);
       ```
 
    * このメソッドのコードサンプルを次に示します。
 
       ```java
-      ADBMobile.TrackAction("level gained", null); 
+      ADBMobile.TrackAction("level gained", null);
       ```
 
 * **TrackActionFromBackground（iOS のみ）**
@@ -305,12 +305,12 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
    >[!TIP]
    >
-   >このメソッドは、アプリがバックグラウンドにある間に実行されるコードでのみ呼び出す必要があります。
+   >このメソッドは、アプリがバックグラウンドになっているときに実行されるコードでのみ呼び出す必要があります。
 
    * このメソッドの構文を次に示します。
 
       ```java
-      public static void TrackActionFromBackground(string action, Dictionary<string,object> cdata); 
+      public static void TrackActionFromBackground(string action, Dictionary<string,object> cdata);
       ```
 
    * このメソッドのコードサンプルを次に示します。
@@ -326,13 +326,13 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
    * このメソッドの構文を次に示します。
 
       ```java
-      public static void TrackLocation(float latValue, float lonValue, Dictionary<string, object> cdata); 
+      public static void TrackLocation(float latValue, float lonValue, Dictionary<string, object> cdata);
       ```
 
    * このメソッドのコードサンプルを次に示します。
 
       ```java
-      ADBMobile.TrackLocation(28.418649, -81.581324, null); 
+      ADBMobile.TrackLocation(28.418649, -81.581324, null);
       ```
 
 * **TrackBeacon**
@@ -342,7 +342,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
    * このメソッドの構文を次に示します。
 
       ```java
-      public static void TrackBeacon(int major, int minor, string uuid, ADBBeaconProximity proximity, Dictionary<string, object> cdata); 
+      public static void TrackBeacon(int major, int minor, string uuid, ADBBeaconProximity proximity, Dictionary<string, object> cdata);
       ```
 
 * **TrackingClearCurrentBeacon**
@@ -352,7 +352,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
    * このメソッドの構文を次に示します。
 
       ```java
-      public static void TrackingClearCurrentBeacon(); 
+      public static void TrackingClearCurrentBeacon();
       ```
 
    * このメソッドのコードサンプルを次に示します。
@@ -374,7 +374,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
    * このメソッドのコードサンプルを次に示します。
 
       ```java
-      ADBMobile.TrackLifetimeValueIncrease(5, null); 
+      ADBMobile.TrackLifetimeValueIncrease(5, null);
       ```
 
 * **TrackTimedActionStart**
@@ -388,7 +388,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
    * このメソッドの構文を次に示します。
 
       ```java
-      public static void TrackTimedActionStart(string action, Dictionary<string,object> cdata); 
+      public static void TrackTimedActionStart(string action, Dictionary<string,object> cdata);
       ```
 
    * このメソッドのコードサンプルを次に示します。
@@ -408,14 +408,14 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
    * このメソッドの構文を次に示します。
 
       ```java
-      public static void TrackTimedActionUpdate(string action, Dictionary<string, object> cdata); 
+      public static void TrackTimedActionUpdate(string action, Dictionary<string, object> cdata);
       ```
 
    * このメソッドのコードサンプルを次に示します。
 
       ```java
-      var contextData = new Dictionary<string, object>; 
-      contextData.Add("checkpoint", "1:32"); 
+      var contextData = new Dictionary<string, object>;
+      contextData.Add("checkpoint", "1:32");
          ADBMobile.TrackTimedActionUpdate("level2", contextData);
       ```
 
@@ -426,13 +426,13 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
    * このメソッドの構文を次に示します。
 
       ```java
-      public static void TrackTimedActionEnd(string action); 
+      public static void TrackTimedActionEnd(string action);
       ```
 
    * このメソッドのコードサンプルを次に示します。
 
       ```java
-      ADBMobile.TrackTimedActionEnd("level2"); 
+      ADBMobile.TrackTimedActionEnd("level2");
       ```
 
 * **TrackingTimedActionExists**
@@ -442,13 +442,13 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
    * このメソッドの構文を次に示します。
 
       ```java
-      public static bool TrackingTimedActionExists(string action); 
+      public static bool TrackingTimedActionExists(string action);
       ```
 
    * このメソッドのコードサンプルを次に示します。
 
       ```java
-       var level2InProgress = ADBMobile.TrackingTimedActionExists("level2"); 
+       var level2InProgress = ADBMobile.TrackingTimedActionExists("level2");
       ```
 
 * **TrackingSendQueuedHits**
@@ -464,7 +464,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
    * このメソッドのコードサンプルを次に示します。
 
       ```java
-      ADBMobile.TrackingSendQueuedHits(); 
+      ADBMobile.TrackingSendQueuedHits();
       ```
 
 * **TrackingClearQueue**
@@ -480,7 +480,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
    * このメソッドのコードサンプルを次に示します。
 
       ```java
-      ADBMobile.TrackingClearQueue(); 
+      ADBMobile.TrackingClearQueue();
       ```
 
 * **TrackingGetQueueSize**
@@ -508,7 +508,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
    * このメソッドの構文を次に示します。
 
       ```java
-      public static string GetMarketingCloudID(); 
+      public static string GetMarketingCloudID();
       ```
 
    * このメソッドのコードサンプルを次に示します。
@@ -524,14 +524,34 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
    * このメソッドの構文を次に示します。
 
       ```java
-      public static void VisitorSyncIdentifiers(Dictionary<string, object> identifiers); 
+      public static void VisitorSyncIdentifiers(Dictionary<string, object> identifiers);
       ```
 
    * このメソッドのコードサンプルを次に示します。
 
       ```java
-      var ids = new Dictionary<string, object> (); 
-      ids.Add ("player1", "jimbob"); 
+      var ids = new Dictionary<string, object> ();
+      ids.Add ("player1", "jimbob");
       ADBMobile.VisitorSyncIdentifiers(ids);
       ```
 
+## 獲得メソッド
+
+* **ProcessGooglePlayInstallReferrerUrl***（Androidのみ）*
+
+   Google Play Install Referrer APIの呼び出しから返されたリファラーURLをこのメソッドに渡します。
+
+   * このメソッドの構文を次に示します。
+
+      ```java
+      public static void ProcessGooglePlayInstallReferrerUrl(string referrerUrl);
+      ```
+
+   * このメソッドのコードサンプルを次に示します。
+
+      ```java
+      // in actual implementation, the referrer url should be retrieved
+      // from the Google Play Install Referrer API.
+      var myReferrer = "utm_source=unityTestSource&utm_content=unityTestContent&utm_campaign=unityTestCampaign";
+      ADBMobile.ProcessGooglePlayInstallReferrerUrl(myReferrer);
+      ```
