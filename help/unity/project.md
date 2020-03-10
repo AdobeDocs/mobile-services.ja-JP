@@ -3,11 +3,11 @@ description: 'null'
 keywords: Unity
 seo-description: 'null'
 seo-title: プロジェクトの構築
-solution: Marketing Cloud，開発者
+solution: Marketing Cloud,Developer
 title: プロジェクトの構築
 uuid: 5550a394-6f3f-4b87-b840-89621d8a0c1e
 translation-type: tm+mt
-source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+source-git-commit: 0d50c7e6674de33b8190e74c113ae010ff226e97
 
 ---
 
@@ -25,7 +25,7 @@ iOS 用にビルドする場合、Xcode プロジェクトが作成されます�
 1. In the **[!UICONTROL Build Phases]** tab of your project, add a link to the following libraries:
 
    * `SystemConfiguration.framework`
-(This library might be linked already.)
+（このライブラリは既にリンクされている可能性があります）。
 
    * `libsqlite3.0.dylib`
 
@@ -45,7 +45,7 @@ Android 用にビルドする場合、`apk` ファイルの正しい場所に既
 * `ACCESS_NETWORK_STATE`
 
 ```java
-<uses-permission android:name="android.permission.INTERNET" /> 
+<uses-permission android:name="android.permission.INTERNET" />
 <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 ```
 
@@ -53,16 +53,6 @@ Android 用にビルドする場合、`apk` ファイルの正しい場所に既
 
 ```java
 <activity android:name="com.adobe.mobile.MessageFullScreenActivity"  
-android:theme="@android:style/Theme.Translucent.NoTitleBar" /> 
-<receiver android:name="com.adobe.mobile.MessageNotificationHandler" /> 
-```
-
-獲得を使用する場合は、次の受信者を追加します。
-
-```java
-<receiver android:name="com.your.package.name.GPBroadcastReceiver" android:exported="true"> 
-   <intent-filter> 
-      <action android:name="com.android.vending.INSTALL_REFERRER" /> 
-   </intent-filter> 
-</receiver>
+android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+<receiver android:name="com.adobe.mobile.MessageNotificationHandler" />
 ```
