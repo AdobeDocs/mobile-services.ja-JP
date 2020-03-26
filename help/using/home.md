@@ -6,7 +6,7 @@ solution: Marketing Cloud, Analytics, Experience Cloud
 title: Adobe Mobile Services
 uuid: e86a77c9-4ff1-403f-a5a1-4afbdc4e6f68
 translation-type: tm+mt
-source-git-commit: 6cb8c0a12c39287209e9f0060ace179ab563cd61
+source-git-commit: 322fdab0ff5eeb54fdbb04502508849e86d05a50
 
 ---
 
@@ -56,7 +56,7 @@ Adobe Experience Platform Mobile SDKに関連する情報やドキュメント�
 開発者を支援するリンクを次に示します。
 
 * [Mobile SDK およびツールのダウンロード](/help/using/c-manage-app-settings/c-mob-confg-app/t-config-analytics/download-sdk.md)
-* [開発者](https://marketing.adobe.com/resources/help/en_US/reference/developer.html)
+* [開発者](https://docs.adobe.com/content/help/en/analytics/implementation/home.html)
 
 ## コミュニティリソース
 
@@ -74,16 +74,16 @@ Adobe Experience Platform Mobile SDKに関連する情報やドキュメント�
 
 ネイティブライブラリは、次のプラットフォームに対して提供されます。
 
-* [Experience Cloud ソリューション用 Android SDK 4.x](https://docs.adobe.com/content/help/en/mobile-services/android/overview.html)
-* [Experience Cloud ソリューション用 iOS SDK 4.x](https://docs.adobe.com/content/help/en/mobile-services/ios/overview.html)
-* [iOSおよびAndroid 4.x SDK用Unityプラグイン](https://docs.adobe.com/content/help/en/mobile-services/unity/get-started.html)
-* [Experience Cloudソリューション4.x SDK用Xamarinコンポーネント](https://docs.adobe.com/content/help/en/mobile-services/xamarin/get-started.html)
-* [Experience Cloudソリューション用Universal Windows Platform SDK 4.x](https://docs.adobe.com/content/help/en/mobile-services/universal-windows/overview.html)
-* [Windows 8.1 ユニバーサルアプリストア](https://docs.adobe.com/content/help/en/mobile-services/windows-universal-appstore/overview.html)
+* [Experience Cloud ソリューション用 Android SDK 4.x](/help/android/overview.md)
+* [Experience Cloud ソリューション用 iOS SDK 4.x](/help/ios/overview.md)
+* [iOSおよびAndroid 4.x SDK用Unityプラグイン](/help/unity/get-started.md)
+* [Experience Cloudソリューション4.x SDK用Xamarinコンポーネント](/help/xamarin/get-started.md)
+* [Experience Cloudソリューション用Universal Windows Platform SDK 4.x](/help/universal-windows/overview.md)
+* [Windows 8.1 ユニバーサルアプリストア](/help/windows-appstore/overview.md)
 
-   * [Windows Visual Studio拡張機能（Experience Cloudソリューション4.x SDK）](https://docs.adobe.com/content/help/en/mobile-services/windows-universal-appstore/win-vse-4x.html)
+   * [Windows Visual Studio拡張機能（Experience Cloudソリューション4.x SDK）](/help/windows-appstore/extensions/win-vse-4x.md)
 
-* [Experience Cloudソリューション用BlackBerry 10 SDK 4.x](https://docs.adobe.com/content/help/en/mobile-services/blackberry/overview.html)
+* [Experience Cloudソリューション用BlackBerry 10 SDK 4.x](/help/blackberry/overview.md)
 
 ## Adobe Mobile の概要に関する Web セミナー {#section_420EA66F39FE44B9B531ADF5F5465543}
 
