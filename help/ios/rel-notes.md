@@ -1,13 +1,13 @@
 ---
-description: Experience Cloud ソリューション用 iOS SDK 4.x のリリースノートと既知の問題です。
-seo-description: Experience Cloud ソリューション用 iOS SDK 4.x のリリースノートと既知の問題です。
+description: Experience Cloudソリューション用iOS SDK 4.xのリリースノートおよび既知の問題です。
+seo-description: Experience Cloudソリューション用iOS SDK 4.xのリリースノートおよび既知の問題です。
 seo-title: リリースノート
 solution: Marketing Cloud,Analytics
 title: リリースノート
 topic: Developer and implementation
 uuid: e1613dc5-02a4-43a7-997a-29b4de98b4d1
-translation-type: ht
-source-git-commit: b608516b0103db3ae0eed1deaa4fb9733a98f7fa
+translation-type: tm+mt
+source-git-commit: c9ee89ef5039c52ebab41a9495f1794c08a415ba
 
 ---
 
@@ -15,6 +15,15 @@ source-git-commit: b608516b0103db3ae0eed1deaa4fb9733a98f7fa
 # リリースノート {#release-notes}
 
 Experience Cloud ソリューション用 iOS SDK 4.x のリリースノート、既知の問題およびホットフィックス情報を次に示します。
+
+**2020年3月24日：バージョン4.19.2**
+
+* 一般 —ターゲットコードの漏れを修正。
+
+**2020年3月12日：バージョン4.19.1**
+
+* 一般 — Swift列挙がコールの追跡用のコンテキストデータに含まれる場合に発生する潜在的なクラッシュを解決しました。
+* ターゲット-ターゲットセッションIDは、Adobe Analyticsに送信されるターゲットヒットに関して、内部Analyticsのコンテキストデータパラメーター「a.ターゲット.sessionId」として追加されるようになりました。
 
 **2020 年 2 月 5 日：バージョン 4.19.0**
 
