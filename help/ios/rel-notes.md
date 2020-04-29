@@ -1,12 +1,12 @@
 ---
-description: Experience Cloudソリューション用iOS SDK 4.xのリリースノートおよび既知の問題です。
-seo-description: Experience Cloudソリューション用iOS SDK 4.xのリリースノートおよび既知の問題です。
+description: Experience Cloud ソリューション用 iOS SDK 4.x のリリースノートおよび既知の問題です。
+seo-description: Experience Cloud ソリューション用 iOS SDK 4.x のリリースノートおよび既知の問題です。
 seo-title: リリースノート
 solution: Marketing Cloud,Analytics
 title: リリースノート
 topic: Developer and implementation
 uuid: e1613dc5-02a4-43a7-997a-29b4de98b4d1
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c9ee89ef5039c52ebab41a9495f1794c08a415ba
 
 ---
@@ -16,22 +16,22 @@ source-git-commit: c9ee89ef5039c52ebab41a9495f1794c08a415ba
 
 Experience Cloud ソリューション用 iOS SDK 4.x のリリースノート、既知の問題およびホットフィックス情報を次に示します。
 
-**2020年3月24日：バージョン4.19.2**
+**2020 年 3 月 25 日：バージョン 4.19.2**
 
-* 一般 —ターゲットコードの漏れを修正。
+* 一般：Target コードの漏れを修正しました。
 
-**2020年3月12日：バージョン4.19.1**
+**2020 年 3 月 13 日：バージョン 4.19.1**
 
-* 一般 — Swift列挙がコールの追跡用のコンテキストデータに含まれる場合に発生する潜在的なクラッシュを解決しました。
-* ターゲット-ターゲットセッションIDは、Adobe Analyticsに送信されるターゲットヒットに関して、内部Analyticsのコンテキストデータパラメーター「a.ターゲット.sessionId」として追加されるようになりました。
+* 一般：コール追跡のコンテキストデータに Swift Enum が含まれる場合に、クラッシュが発生する可能性があったを解決しました。
+* Target：Target セッション ID は、Adobe Analytics に送信される Target 用内部 Analytics ヒットで、コンテキストデータパラメーター「a.target.sessionId」として追加されるようになりました。
 
 **2020 年 2 月 5 日：バージョン 4.19.0**
 
-* ライフサイクル — 一部の古い iOS デバイスで報告されたセッション長の異常データを軽減するために、新しい API、pauseCollectingLifecycleData が追加されました。
+* ライフサイクル：一部の古い iOS デバイスで報告されたセッション長の異常データを軽減するために、新しい API、pauseCollectingLifecycleData が追加されました。
 
 **2019 年 11 月 9 日：バージョン 4.18.9**
 
-* アプリ内メッセージ — キャッシュされた画像またはバンドルされた画像をフルスクリーンメッセージに読み込めなかったバグを修正しました。
+* アプリ内メッセージ：キャッシュされた画像またはバンドルされた画像をフルスクリーンメッセージに読み込めなかったバグを修正しました。
 
 **2019 年 9 月 21 日：バージョン 4.18.8**
 
@@ -42,7 +42,7 @@ Experience Cloud ソリューション用 iOS SDK 4.x のリリースノート�
    * プッシュのクリックスルーペイロードをアプリ内メッセージの特性として使用できなかったバグを修正しました。
    * クラッシュの問題を修正しました。
 
-* 一般 - Analytics の呼び出しごとに SDK データがペアリングされた WatchOS アプリに同期されるバグを修正しました。
+* 一般：Analytics の呼び出しごとに SDK データがペアリングされた WatchOS アプリに同期されるバグを修正しました。
 
 **2019 年 8 月 3 日：バージョン 4.18.7**
 
@@ -60,13 +60,13 @@ Experience Cloud ソリューション用 iOS SDK 4.x のリリースノート�
 
 **2019 年 6 月 6 日：バージョン 4.18.5**
 
-* Analytics - プッシュ通知が有効な場合に、ライフサイクルデータにプッシュオプトインステータスを追加します。
+* Analytics：プッシュ通知が有効な場合に、ライフサイクルデータにプッシュオプトインステータスを追加します。
 
 **2019 年 5 月 25 日：バージョン 4.18.5**
 
-* 訪問者 ID サービス - 
+* 訪問者 ID サービス：
    `visitorGetUrlVariablesAsync` API の戻りタイムアウトを 30 秒に増やしました。
 
-* 訪問者 ID サービス — `setPushIdentifier` API I呼び出しは、呼び出されるたびに同期呼び出しを訪問者IDサービスへと送信するようになりました。
+* 訪問者 ID サービス：`setPushIdentifier` API I呼び出しは、呼び出されるたびに同期呼び出しを訪問者IDサービスへと送信するようになりました。
 
 すべてのソリューションに関する現在および過去のリリースノートについては、[Adobe Experience Cloud リリースノート](https://marketing.adobe.com/resources/help/ja_JP/whatsnew/)を参照してください。
