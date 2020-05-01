@@ -1,14 +1,14 @@
 ---
 description: 以下に、Android ライブラリによって提供されるメソッドのリストを示します。
-keywords: Android, ライブラリ, モバイル, SDK
+keywords: android;library;mobile;sdk
 seo-description: 以下に、Android ライブラリによって提供されるメソッドのリストを示します。
 seo-title: 設定メソッド
-solution: Experience Cloud,Analytics
+solution: Marketing Cloud,Analytics
 title: 設定メソッド
-topic: 開発者と導入
+topic: Developer and implementation
 uuid: 663aeb6c-1b97-4a3a-8c0e-dd4c2ec28c01
-translation-type: ht
-source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
+translation-type: tm+mt
+source-git-commit: dae60a21286edc28c84b7638da214b824abf0cd3
 
 ---
 
@@ -30,8 +30,7 @@ source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
       setContentView(R.layout.main);
       Config.setContext(this.getApplicationContext());
     }
-   ````
-
+   ```
 
 ## SDK 設定（設定クラス）{#section_C1EB977043C04D2B93E5A63DB72828B6}
 
@@ -83,7 +82,7 @@ source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
 
    * 現在のユーザーのプライバシーステータスの enum 表現を返します。
 
-      以下は、プライバシーステータスの値です。
+      プライバシーステータスの値を次に示します。
 
       * `MOBILE_PRIVACY_STATUS_OPT_IN`：ヒットは即座に送信されます。
       * `MOBILE_PRIVACY_STATUS_OPT_OUT`：ヒットは破棄されます。
@@ -272,7 +271,7 @@ source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
 
 * **setSmallIconResourceId(int resourceId)**
 
-   * （**バージョン 4.2 以降**）SDK で作成された通知に使用される小さいアイコンを設定します。このアイコンは、ステータスバーに表示されます。ユーザーが通知センターで完全な通知を表示する際に表示されるセカンダリ画像です。
+   * (**バージョン4.2以降**)SDKで作成された通知に使用する小さいアイコンを設定します。 このアイコンはステータスバーに表示され、ユーザーが通知センターで通知を完了したときに表示されるセカンダリイメージです。
    * このメソッドの構文を次に示します。
 
       ```java
@@ -287,7 +286,7 @@ source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
 
 * **setLargeIconResourceId(int resourceId)**
 
-   * （**バージョン 4.2 以降**）SDK で作成された通知に使用される大きいアイコンを設定します。このアイコンは、ユーザーが通知センターで完全な通知を表示する際に表示されるプライマリ画像です。
+   * (**バージョン4.2以降**)SDKで作成された通知に使用する大きいアイコンを設定します。 このアイコンは、ユーザーが通知センターで完全な通知を表示する際に表示されるプライマリ画像です。
    * このメソッドの構文を次に示します。
 
       ```java
@@ -302,7 +301,7 @@ source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
 
 * **overrideConfigStream(InputStream configInput)**
 
-   * （**バージョン 4.2 以降**）アプリケーションの起動時に、別の ADBMobile JSON 設定ファイルをロードすることができます。アプリケーションが閉じられるまで、この設定が使用されます。
+   * (**バージョン4.2以降**)アプリケーションの開始時に、別のADBMobile JSON設定ファイルを読み込むことができます。 アプリケーションが閉じられるまで、この設定が使用されます。
    * このメソッドの構文を次に示します。
 
       ```java
