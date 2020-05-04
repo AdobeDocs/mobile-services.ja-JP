@@ -2,12 +2,12 @@
 description: iOS ライブラリが提供する Adobe Analytics メソッドの一覧を以下に示します。
 seo-description: iOS ライブラリが提供する Adobe Analytics メソッドの一覧を以下に示します。
 seo-title: Analytics メソッド
-solution: Experience Cloud,Analytics
+solution: Marketing Cloud,Analytics
 title: Analytics メソッド
-topic: 開発者と導入
+topic: Developer and implementation
 uuid: d49fe6de-cb32-4b96-9891-c567310e59a6
-translation-type: ht
-source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
+translation-type: tm+mt
+source-git-commit: 82c8e82ce5ce333c2482252e96f928829d322e7e
 
 ---
 
@@ -40,7 +40,7 @@ SDK は現在、Analytics、Target、Audience Manager、Adobe Experience Platfor
       ```objective-c
       [ADBMobile  trackState:@"loginScreen"
                         data:nil]; 
-      ````
+      ```
 
 * **trackAction:&#x200B;data:**
 
