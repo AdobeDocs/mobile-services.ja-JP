@@ -2,12 +2,12 @@
 description: Adobe Experience Platform ID サービスは、Experience Cloud ソリューション全体に汎用の訪問者 ID を提供します。Analytics は、Target、ビデオのハートビート、将来の Experience Cloud 統合に ID サービスを必要とします。
 seo-description: Adobe Experience Platform ID サービスは、Experience Cloud ソリューション全体に汎用の訪問者 ID を提供します。Analytics は、Target、ビデオのハートビート、将来の Experience Cloud 統合に ID サービスを必要とします。
 seo-title: Experience Cloud ID の設定
-solution: Experience Cloud,Analytics
+solution: Marketing Cloud,Analytics
 title: Experience Cloud ID の設定
-topic: 開発者と導入
+topic: Developer and implementation
 uuid: 8ebdf2bf-c581-448f-9542-f99a19784fe7
-translation-type: ht
-source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
+translation-type: tm+mt
+source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
 
 ---
 
@@ -18,7 +18,7 @@ Adobe Experience Platform ID サービスは、Experience Cloud ソリューシ�
 
 >[!TIP]
 >
->Adobe Experience Platform ID サービスを使用しない場合は、この ID を設定する必要はありません。詳しくは、「[Adobe Experience Platform ID サービス](https://marketing.adobe.com/resources/help/ja_JP/mcvid/)」を参照してください。
+>Adobe Experience Platform ID サービスを使用しない場合は、この ID を設定する必要はありません。詳しくは、「[Adobe Experience Platform ID サービス](https://docs.adobe.com/content/help/ja-JP/id-service/using/home.html)」を参照してください。
 
 >[!IMPORTANT]
 >
@@ -56,4 +56,4 @@ Experience Cloud ID を有効にするには：
 
    これらの ID が設定されていない場合は、更新された `ADBMobileConfig.json` ファイルを Adobe Mobile Services からダウンロードしてください。詳しくは、[事前準備](/help/android/getting-started/requirements.md)を参照してください。
 
-設定が完了すると、Experience Cloud ID が生成され、すべてのヒットに含まれます。カスタム ID や自動生成された ID などの他の ID は、引き続きヒットごとに送信されます。
+設定が完了すると、Experience Cloud IDが生成され、すべてのヒットに含められます。 その他のID（カスタムIDや自動生成IDなど）は、各ヒットで引き続き送信されます。
