@@ -1,26 +1,26 @@
 ---
-description: Experience Cloud Device Co-op の使用を開始するには、アドビの担当者にお問い合わせください。
-seo-description: Experience Cloud Device Co-op の使用を開始するには、アドビの担当者にお問い合わせください。
+description: Experience Cloud Device Co-opを使用して開始を行うには、アドビの担当者にお問い合わせください。
+seo-description: Experience Cloud Device Co-opを使用して開始を行うには、アドビの担当者にお問い合わせください。
 seo-title: Experience Cloud Device Co-op
 title: Experience Cloud Device Co-op
 uuid: 434a6f8f-ec24-439d-95f0-a246b384b3b5
-translation-type: ht
-source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
+translation-type: tm+mt
+source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
 
 ---
 
 
 # Experience Cloud Device Co-op {#experience-cloud-device-co-op}
 
-Experience Cloud Device Co-op の使用を開始するには、アドビの担当者にお問い合わせください。
+Experience Cloud Device Co-opを使用して開始を行うには、アドビの担当者にお問い合わせください。
 
-Experience Cloud Device Co-op に対してモバイルアプリを有効にするには、Experience Cloud iOS SDK の以下の手順を実行します。
+Experience Cloud Device Co-op用のモバイルアプリを有効にするには、Experience Cloud iOS SDKの次の手順を実行します。
 
 >[!IMPORTANT]
 >
 >この機能には、iOS SDK バージョン 4.8.5 以降が必要です。
 
-SDK バージョン 4.16.1 以降の Device Co-op ユーザーは、Experience Cloud Device Co-op からモバイルデバイスのデータをオプトアウトできます。詳しくは、[ADBMobile JSON 設定](/help/ios/configuration/json-config/json-config.md)および `visitorAPI.js`isCoopSafe[ 向けの ](https://marketing.adobe.com/resources/help/ja_JP/mcvid/mcvid-coopsafe.html) メソッドを参照してください。
+SDKバージョン4.16.1以降、Device Co-opメンバーは、Experience Cloud Device Co-opからモバイルデバイスデータをオプトアウトできます。 詳しくは、 [ADBMobile JSON Config](/help/ios/configuration/json-config/json-config.md) とisCoopSafeの `visitorAPI.js` メソッドを参照してく [](https://docs.adobe.com/content/help/en/id-service/using/id-service-api/configurations/coopsafe.html)ださい。
 
 1. Adobe Mobile SDK を実装します。
 
