@@ -1,43 +1,43 @@
 ---
-description: Experience Cloud ソリューション向けの BlackBerry 10 SDK 4.x では、Adobe Analytics を使用して BlackBerry 10 のネイティブアプリケーションを測定できます。
-seo-description: BlackBerry 10 SDK 4.x for Experience cloudソリューションを使用すると、Adobe Analyticsを使用してネイティブのBlackBerry 10アプリケーションを測定できます
-seo-title: Experience Cloud ソリューション用 BlackBerry 10 SDK 4.x
-title: 'Experience Cloud ソリューション用 BlackBerry 10 SDK 4.x  '
+description: BlackBerry 10 SDK 4.x for Experience Cloudソリューションを使用すると、Adobe Analyticsを使用してネイティブのBlackBerry 10アプリケーションの測定を実行できます。
+seo-description: BlackBerry 10 SDK 4.x for Experience Cloudソリューションを使用すると、Adobe Analyticsを使用してネイティブのBlackBerry 10アプリケーションの測定を実行できます
+seo-title: Experience Cloud ソリューション用 BlackBerry 10 SDK 4
+title: Experience Cloud ソリューション用 BlackBerry 10 SDK 4
 uuid: c336db33-2cb5-48fe-a3f5-2d3ced6c3966
 translation-type: tm+mt
-source-git-commit: 8f71ee66b364d2c484464e51775c971734381b86
+source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
 
 ---
 
 
-# Experience Cloud ソリューション用 BlackBerry 10 SDK 4.x  {#blackberry-sdk-x-for-experience-cloud-solutions}
+# Experience Cloud ソリューション用 BlackBerry 10 SDK 4 {#blackberry-sdk-x-for-experience-cloud-solutions}
 
-Experience Cloud ソリューション向けの BlackBerry 10 SDK 4.x では、Adobe Analytics を使用して BlackBerry 10 のネイティブアプリケーションを測定できます。
+BlackBerry 10 SDK 4.x for Experience Cloudソリューションを使用すると、Adobe Analyticsを使用してネイティブのBlackBerry 10アプリケーションの測定を実行できます。
 
 ## はじめに {#section_DB6175C7BD5C41E3A7D5DB175C5E01C7}
 
-BlackBerry SDKを使用するには：
+BlackBerry SDKの使用を開始するには：
 
-1. プロジェクトに SDK を追加するには、[開発者クイックスタート](/help/blackberry/dev-qs.md)のタスクを実行します。
-1. 始める前に、 [ADBMobileクラスおよびメソッドリファレンス](/help/blackberry/methods.md)。
+1. プロジェクトにSDKを追加するには、 [開発者クイック開始でタスクを完了します](/help/blackberry/dev-qs.md)。
+1. ADBMobileクラスおよびメソッドリファレンス [を確認します](/help/blackberry/methods.md)。
 1. [Analyticsの実装](/help/blackberry/analytics.md)。
 
 ## Supported versions {#section_45978BF5C62E4986AAB7FFD96402BF2D}
 
-BlackBerry 10 以降。
+BlackBerry 10以降。
 
-## New features in version 4 {#section_58E60BCFD4AE49B194A49F6AA3D37DAC}
+## バージョン4の新機能 {#section_58E60BCFD4AE49B194A49F6AA3D37DAC}
 
-バージョン 4 では、パフォーマンスの大幅な向上に加えて、次の新機能が追加されました。
+バージョン4には、大幅なパフォーマンス向上に加え、次の新機能が追加されています。
 
 | 機能 | 説明 |
 |--- |--- |
-| オプトイン／オプトアウト | 分析をすばやく有効または無効にします。 |
+| オプトイン/オプトアウト | 解析をすばやく有効または無効にします。 |
 
-すべてのソリューションのリリースノートについて詳しくは、[Adobe Experience Cloud リリースノート](https://marketing.adobe.com/resources/help/en_US/whatsnew/)を参照してください。
+For more information about the release notes for all solutions, see [Adobe Experience Cloud Release Notes](https://docs.adobe.com/content/help/ja-JP/release-notes/experience-cloud/current.html).
 
 ## Bloodhound の使用
 
 >[!IMPORTANT]
 >
->As of **April 30, 2017**, Adobe Bloodhound has been sunset. 2017 年 5 月 1 日以降、追加の機能強化や追加のエンジニアリングまたは Adobe Expert Care のサポートは提供されません。
+>Adobe Bloodhound は、**2017 年 4 月 30 日**&#x200B;をもって廃止されました。2017 年 5 月 1 日以降、追加の機能強化や追加のエンジニアリングまたは Adobe Expert Care のサポートは提供されません。
