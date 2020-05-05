@@ -1,14 +1,14 @@
 ---
 description: Experience Cloud ソリューション用 Android SDK 4.x を使用すると、ネイティブ Android アプリケーションを測定したり、ターゲットコンテンツをアプリに配信したり、Audience Management を通じて視聴者データを活用および収集したりすることができます。
-keywords: Android, ライブラリ, モバイル, SDK
+keywords: android;library;mobile;sdk
 seo-description: Experience Cloud ソリューション用 Android SDK 4.x を使用すると、ネイティブ Android アプリケーションを測定したり、ターゲットコンテンツをアプリに配信したり、Audience Management を通じて視聴者データを活用および収集したりすることができます。
 seo-title: Experience Cloud ソリューション用 Android SDK 4.x
-solution: Experience Cloud,Analytics
+solution: Marketing Cloud,Analytics
 title: Experience Cloud ソリューション用 Android SDK 4.x
-topic: 開発者と導入
+topic: Developer and implementation
 uuid: 56f1ff41-0365-41dd-bdde-245c823dff07
-translation-type: ht
-source-git-commit: b690ec677cf5aedfb2673b707f82716af1851124
+translation-type: tm+mt
+source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
 
 ---
 
@@ -19,7 +19,7 @@ Experience Cloud ソリューション用 Android SDK 4.x を使用すると、�
 
 ## 新しい Adobe Experience Platform Mobile SDK リリース
 
-Adobe Experience Platform Mobile SDK に関する情報やドキュメントをお探しの場合、最新のドキュメントについては、[こちら](https://aep-sdks.gitbook.io/docs/)をクリックしてください。
+Adobe Experience Platform Mobile SDK に関する情報やドキュメントをお探しの場合[こちら](https://aep-sdks.gitbook.io/docs/)をクリックし、最新のドキュメントを参照してください。
 
 2018 年 9 月に、SDK の新しいメジャーバージョンをリリースしました。これらの新しい Adobe Experience Platform Mobile SDK は、[Experience Platform Launch](https://www.adobe.com/jp/experience-platform/launch.html) から設定できます。
 
@@ -34,14 +34,14 @@ Adobe Experience Platform Mobile SDK に関する情報やドキュメントを�
 >
 >UI で機能を設定できますが、これらの機能は、生成された設定ファイルをダウンロードして、このファイルを SDK に追加するまでは機能しません。SDK のダウンロードと設定について詳しくは、「[コア実装とライフサイクル](/help/android/getting-started/dev-qs.md)」を参照してください。
 
-SDK は、Android の次のバージョンをサポートしています。
+SDKは、次のバージョンのAndroidをサポートしています。
 
-* バージョン 4.6.0 以前では、Android 2.2（API 8）から Android 5.1.1（API 22）までがサポートされます。
-* バージョン4.6.1 以降では、Android 2.3（API 9）以降がサポートされます。
+* バージョン4.6.0以前はAndroid 2.2(API 8)をサポート — Android 5.1.1(API 22)
+* バージョン4.6.1以降は、Android 2.3(API 9)以降をサポートします
 
 注意事項：
 
-* バージョン 4.2 以降では、すべてのヒットが HTTP POST を使用して送信されるようになりました。
+* バージョン4.2以降では、すべてのヒットがHTTP POSTを使用して送信されるようになりました。
 
    収集またはレポートされるデータに影響はありませんが、ヒットを調べるにるには、POST データの検査をサポートするパケットアナライザーを使用する必要があります。
 
@@ -49,11 +49,11 @@ SDK は、Android の次のバージョンをサポートしています。
 
 ## Adobe Mobile ユーザードキュメント {#section_7583FD5FDED143619048E9744A3F2D21}
 
-Adobe Mobile Services は、Adobe Experience Cloud の各種モバイルアプリケーションのモバイルマーケティング機能を統合する UI を提供します。UI の詳細を学習し、ユーザードキュメントを読むには、[Adobe Mobile Services](https://marketing.adobe.com/resources/help/ja_JP/mobile/) を参照してください。
+Adobe Mobile Services は、Adobe Experience Cloud の各種モバイルアプリケーションのモバイルマーケティング機能を統合する UI を提供します。UI の詳細を学習し、ユーザードキュメントを読むには、[Adobe Mobile Services](https://docs.adobe.com/content/help/ja-JP/mobile-services/using/home.html) を参照してください。
 
 ## リリースノート {#section_F8181DC052D44DD2A99AB40A41F6792C}
 
-Experience Cloud リリースの最新情報については、[Experience Cloud リリースノート](https://marketing.adobe.com/resources/help/ja_JP/whatsnew/)を参照してください。
+Experience Cloud リリースの最新情報については、[Experience Cloud リリースノート](https://docs.adobe.com/content/help/ja-JP/release-notes/experience-cloud/current.html)を参照してください。
 
 ## Bloodhound の使用
 
