@@ -2,12 +2,12 @@
 description: iOS ライブラリが提供する Adobe Experience Platform サービスメソッドを以下に示します。
 seo-description: iOS ライブラリが提供する Adobe Experience Platform サービスメソッドを以下に示します。
 seo-title: Adobe Experience Platform ID サービスのメソッド
-solution: Experience Cloud,Analytics
+solution: Marketing Cloud,Analytics
 title: Adobe Experience Platform ID サービスのメソッド
-topic: 開発者と導入
+topic: Developer and implementation
 uuid: cdd307bc-8b7d-47a8-b77e-00902b9e2968
-translation-type: ht
-source-git-commit: cbbb85b4d117fcaa502a1e01423f1f5d3b2ecc2b
+translation-type: tm+mt
+source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
 
 ---
 
@@ -22,7 +22,7 @@ SDK は現在、Analytics、Target、Audience Manager、Experience Cloud ID サ�
 
 * **`+`(nullable NSURL`*`)visitorAppendToURL:(nullable NSURL`*`)url;**
 
-   アドビ JavaScript ライブラリで使用するために、アドビ訪問者データを URL 文字列に追加します。このメソッドを使用するには、Mobile SDK 4.12 以降が必要です。詳しくは、[訪問者 ID ヘルパー関数の追加](https://marketing.adobe.com/resources/help/ja_JP/mcvid/mcvid-appendvisitorid.html)を参照してください。
+   アドビ JavaScript ライブラリで使用するために、アドビ訪問者データを URL 文字列に追加します。このメソッドを使用するには、Mobile SDK 4.12 以降が必要です。詳しくは、[訪問者 ID ヘルパー関数の追加](https://docs.adobe.com/content/help/ja-JP/id-service/using/id-service-api/methods/appendvisitorid.html)を参照してください。
 
    >[!IMPORTANT]
    >
@@ -61,7 +61,7 @@ SDK は現在、Analytics、Target、Audience Manager、Experience Cloud ID サ�
 
 * **visitorSyncIdentifiers:**
 
-   Experience Cloud ID を使用すると、各訪問者に関連付けることができる追加の顧客 ID を設定できます。訪問者 API は、同じ訪問者に対して複数の顧客 ID と、異なる顧客 ID の範囲を区別するための顧客タイプ識別子を受け取ります。このメソッドは、JavaScript ライブラリの `setCustomerIDs` に相当します。
+   Experience Cloud IDを使用して、各訪問者に関連付けることができる追加の顧客IDを設定できます。 訪問者 API は、同じ訪問者に対して複数の顧客 ID と、異なる顧客 ID の範囲を区別するための顧客タイプ識別子を受け取ります。このメソッドは、JavaScript ライブラリの `setCustomerIDs` に相当します。
 
    * このメソッドの構文を次に示します。
 
@@ -164,7 +164,7 @@ SDK は現在、Analytics、Target、Audience Manager、Experience Cloud ID サ�
 - (ADBMobileVisitorAuthenticationState) authenticationState; 
 ```
 
-## ADBMobileVisitorAuthenticationState enum {#section_A55A3F336DDF4F838900632087F51430}
+## ADBMobileVisitorAuthenticationState enum  {#section_A55A3F336DDF4F838900632087F51430}
 
 ```objective-c
 ADBMobileVisitorAuthenticationStateUnknown, 
