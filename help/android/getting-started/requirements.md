@@ -6,8 +6,8 @@ solution: Marketing Cloud,Analytics
 title: 事前準備
 topic: Developer and implementation
 uuid: 0ca9e937-8d40-4570-9dbf-9aecc6ecedf6
-translation-type: ht
-source-git-commit: 0720b2004097eb288bd8f59723eeb09a79dd81e7
+translation-type: tm+mt
+source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
 
 ---
 
@@ -22,12 +22,12 @@ Analytics 管理者およびアプリ開発者は、次のタスクを完了す�
 
 ### Analytics 管理者
 
-レポートスイートを設定してモバイルアプリデータを収集するには、以下のようにします。
+レポートスイートを設定してモバイルアプリデータを収集するには：
 
-1. [Adobe Mobile Services UI へのログイン](../getting-started/requirements.md#section_690A2EC4572E47869F183974E932A6A8)に記載される節のいずれかを完了します。
-1. 各アプリ開発者の Analytics アカウントを作成します。
+1. 「Adobe Mobile Services UIへの [ログイン」のいずれかの節に従い](../getting-started/requirements.md#section_690A2EC4572E47869F183974E932A6A8)ます。
+1. 各アプリ開発者用にAnalyticsアカウントを作成します。
 
-これで、アプリ開発者は作成されたレポートスイートにアクセスして表示できるようになります。
+アプリ開発者は、作成したレポートスイートの表示にアクセスできるようになりました。
 
 >[!IMPORTANT]
 >
@@ -43,13 +43,13 @@ Analytics 管理者およびアプリ開発者は、次のタスクを完了す�
 
 ## Adobe Mobile Services UI へのログイン {#section_690A2EC4572E47869F183974E932A6A8}
 
-Adobe Mobile Services は、モバイルアプリの分析およびターゲティングのための主要レポートインターフェイスです。これらの手順を完了すると、データ収集サーバー、レポートスイートなど、様々な設定が事前に構成された設定ファイルをダウンロードできます。
+Adobe Mobileサービスは、モバイルアプリの分析とターゲティングの主なレポートインターフェイスです。 これらの手順を完了したら、データ収集サーバー、レポートスイート、その他多くの設定で事前設定された設定ファイルをダウンロードできます。
 
-Adobe Mobile Services UI には、以下のいずれかの方法でログインできます。
+Adobe Mobile Services UIには、次のいずれかの方法でログインできます。
 
 ### Experience Cloud
 
-Adobe ID を使用して [Experience Cloud](https://marketing.adobe.com) にログインします。この方法は、会社が Experience Cloud でプロビジョニングされていることと、お使いの Analytics アカウントがリンクされていることを前提としています。詳しくは、「[Experience Cloud ユーザーと製品の管理](https://docs.adobe.com/content/help/ja-JP/core-services/interface/manage-users-and-products/admin-getting-started.html)」を参照してください。
+Adobe ID を使用して [Experience Cloud](https://experiencecloud.adobe.com) にログインします。この方法は、会社が Experience Cloud でプロビジョニングされていることと、お使いの Analytics アカウントがリンクされていることを前提としています。詳しくは、「[Experience Cloud ユーザーと製品の管理](https://docs.adobe.com/content/help/ja-JP/core-services/interface/manage-users-and-products/admin-getting-started.html)」を参照してください。
 
 >[!TIP]
 >
@@ -66,15 +66,15 @@ Adobe ID を使用して [Experience Cloud](https://marketing.adobe.com) にロ�
 1. ブラウザーに「[https://mobilemarketing.adobe.com/](https://mobilemarketing.adobe.com/)」と入力して Mobile Services UI にログインします。
 1. 「**[!UICONTROL アプリケーションを作成]**」をクリックします。
 
-   このボタンが表示されない場合、**[!UICONTROL アプリ設定]** ／ **[!UICONTROL &#x200B;追加]** をクリックします。
+   このボタンが表示されない場合、**[!UICONTROL アプリ設定]** ／ **[!UICONTROL 追加]** をクリックします。
 
-1. **[!UICONTROL レポートスイート]** ドロップダウンで、**[!UICONTROL &#x200B;新しいレポートスイート]** を選択します。
+1. **[!UICONTROL レポートスイート]** ドロップダウンで、**[!UICONTROL 新しいレポートスイート]** を選択します。
 
 1. アプリの名前を入力し、レポートスイートのタイプを選択します。
 
    例えば、`mycomobileappdev` などのレポートスイート ID です。開発版と実稼働版では別個のレポートスイートおよびアプリを設定する必要があります。そのため、実稼働版を設定する準備が整ったら、これらの手順を繰り返します。
 1.  **[!UICONTROL レポートスイート ID]** で、レポートスイートの名前が表示されていることを確認します。
-1. **[!UICONTROL 次の設定をコピー]** で、**[!UICONTROL &#x200B;モバイルアプリのテンプレート]** が選択されていることを確認します。
+1. **[!UICONTROL 次の設定をコピー]** で、**[!UICONTROL モバイルアプリのテンプレート]** が選択されていることを確認します。
 
    このテンプレートでタイムスタンプを有効にして、オフラインデータを収集することができます。また、モバイルソリューション変数をアクティベートして、ライフサイクル指標をキャプチャします。
 
@@ -95,7 +95,7 @@ Adobe ID を使用して [Experience Cloud](https://marketing.adobe.com) にロ�
 
    >[!IMPORTANT]
    >
-   >「**[!UICONTROL アプリケーションの設定を管理]**」オプションが表示されない場合は、Adobe Mobile Services にログインしていることを確認します。検証するには、ページの右上にある「![ソリューション切り替え](assets/solution-switcher.png)」アイコンをクリックし、**[!UICONTROL  Adobe Mobile Services]** が左上に表示されていることを確認します。
+   >「**[!UICONTROL アプリケーションの設定を管理]**」オプションが表示されない場合は、Adobe Mobile Services にログインしていることを確認します。検証するには、ページの右上にある「![ソリューション切り替え](assets/solution-switcher.png)」アイコンをクリックし、**[!UICONTROL Adobe Mobile Services]** が左上に表示されていることを確認します。
 
 1. 「アプリケーションの設定を管理」ページの下部にある「**[!UICONTROL アプリケーション SDK のダウンロード]**」セクションで、お使いのプラットフォーム用の　SDK　とサンプルアプリケーションをダウンロードします。
 
@@ -111,5 +111,5 @@ compile 'com.adobe.mobile:adobeMobileLibrary:4.13.7'
 
 次の情報に留意してください。
 
-* コードサンプルのバージョン番号を Android SDK の適切なバージョンに置き換えてください。
-* 設定ファイルをダウンロードして、プロジェクトにインクルードします。
+* コードサンプルのバージョン番号を、適切なバージョンのAndroid SDKに置き換えます。
+* 設定ファイルをダウンロードし、プロジェクトに含めます。
