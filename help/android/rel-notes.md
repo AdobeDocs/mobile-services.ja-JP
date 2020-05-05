@@ -1,13 +1,13 @@
 ---
-description: Experience Cloud ソリューション用 Android SDK 4.x のリリースノートと既知の問題です。
-seo-description: Experience Cloud ソリューション用 Android SDK 4.x のリリースノートと既知の問題です。
+description: Experience Cloudソリューション用Android SDK 4.xのリリースノートおよび既知の問題です。
+seo-description: Experience Cloudソリューション用Android SDK 4.xのリリースノートおよび既知の問題です。
 seo-title: リリースノート
 solution: Marketing Cloud,Analytics
 title: リリースノート
 topic: Developer and implementation
 uuid: 16bb4de8-a216-47a8-928c-0b1e1421adcf
-translation-type: ht
-source-git-commit: 712a1107b317f02216e4df8d75fddda67a6f1feb
+translation-type: tm+mt
+source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
 
 ---
 
@@ -47,4 +47,4 @@ Experience Cloud ソリューション用 Android SDK 4.x のリリースノー�
 * 訪問者 ID サービス - 接続と読み取りのタイムアウトを 2 秒から 5 秒に増やしました。
 
 
-すべてのソリューションに関する現在および過去のリリースノートについては、[Adobe Experience Cloud リリースノート](https://marketing.adobe.com/resources/help/ja_JP/whatsnew/)を参照してください。
+すべてのソリューションに関する現在および過去のリリースノートについては、[Adobe Experience Cloud リリースノート](hhttps://docs.adobe.com/content/help/en/release-notes/experience-cloud/current.html)を参照してください。
