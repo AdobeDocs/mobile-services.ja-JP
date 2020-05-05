@@ -1,28 +1,28 @@
 ---
-description: ADBMobile JSON 設定ファイルを使用する際に役立つ情報です。
-seo-description: ADBMobile JSON 設定ファイルを使用する際に役立つ情報です。
+description: ADBMobile JSON設定ファイルの使用に役立つ情報です。
+seo-description: ADBMobile JSON設定ファイルの使用に役立つ情報です。
 seo-title: ADBMobileConfig.json設定ファイル
 solution: Marketing Cloud,Analytics
 title: ADBMobileConfig.json設定ファイル
-topic: 開発者と導入
+topic: Developer and implementation
 uuid: a45b91cc-982e-4d6c-a4e4-d2e4b4fa7556
 translation-type: tm+mt
-source-git-commit: 1dbdb998228bd3b0ae41e774b6e9aa111d8dbe1c
+source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
 
 ---
 
 
 # `ADBMobileConfig.json` 設定ファイル {#adbmobileconfig-json-config}
 
-Information to help you use the `ADBMobile.json` config file.
+設定ファイルの使用に役立つ情報 `ADBMobile.json` です。
 
-現在、SDK では、Analytics、Target、Audience Manager をはじめとする複数の Adobe Experience Cloud ソリューションがサポートさています。これらのメソッドには、ソリューションに応じたプレフィックスが付けられています。設定メソッドには「Config」というプレフィックスが付けられています。
+SDKは、現在、Analytics、ターゲット、オーディエンスマネージャーを含む複数のAdobe Experience Cloudソリューションをサポートしています。 メソッドには、ソリューションに応じたプレフィックスが付きます。設定メソッドの先頭に「Config」が付きます。
 
 * **rsids**
 
-   （Analytics の場合は必須）：Analytics データを受け取るための 1 つまたは複数のレポートスイート。レポートスイート ID を複数指定する場合は、スペースを入れずにレポートスイート ID をコンマで区切る必要があります。
+   （Analyticsで必須）Analyticsデータを受け取るための1つ以上のレポートスイート。 複数のレポートスイートIDは、スペースを入れずにコンマで区切る必要があります。
 
-   * この変数のコード例を次に示します。
+   * この変数のコードサンプルを次に示します。
 
       ```js
       "rsids" : "rsid"
@@ -34,45 +34,45 @@ Information to help you use the `ADBMobile.json` config file.
 
 * **server**
 
-   （Analytics および Audience Management の場合は必須）：親ノードに基づく、Analytics または Audience Management サーバー。This variable should be populated with the server domain, without an `https://` or `https://` protocol prefix. プロトコルプレフィックスは、`ssl` 変数に基づいてライブラリで自動的に処理されます。
+   (Analyticsおよびオーディエンス管理で必須)。 親ノードに基づくAnalyticsまたはオーディエンス管理サーバー。 この変数は、`https://` または `https://` プロトコルプレフィックスを付けずに、サーバードメインを設定する必要があります。プロトコルのプレフィックスは、 `ssl` 変数に基づいてライブラリによって自動的に処理されます。
 
    `ssl` が `true` の場合、このサーバーとの安全な接続が確立されます。`ssl` が `false` の場合、このサーバーとの安全でない接続が確立されます。
 
 * **charset**
 
-   Analytics に送信されるデータに使用する文字セットを定義します。この文字セットは、受信データを格納およびレポート用に UTF-8 に変換するために使用されます。For more information, see [s.charSet](https://marketing.adobe.com/resources/help/en_US/sc/implement/charset.html).
+   Analyticsに送信されるデータに使用する文字セットを定義します。 この文字セットは、受信データを格納およびレポート用に UTF-8 に変換するために使用されます。詳しくは、「[s.charSet](https://docs.adobe.com/content/help/en/analytics/implementation/vars/config-vars/charset.html)」を参照してください。
 
 * **ssl**
 
-   Enables (`true`) or disables (`false`) sending measurement data via SSL (HTTPS). デフォルト値は `false` です。
+   SSL(HTTPS)を介して測定データを送信する設定を、有効(`true`)または無効(`false`)にします。 デフォルト値は `false` です。
 
 * **offlineEnabled**
 
-   有効（true）にした場合、ヒットはデバイスがオフラインのときにキューに格納され、後でデバイスがオンラインになったときに送信されます。オフライン追跡を使用するには、レポートスイートでタイムスタンプを有効にする必要があります。
+   有効(true)に設定すると、デバイスがオフラインの間、ヒットはキューに登録され、デバイスがオンラインの間、後で送信されます。 オフライン追跡を使用するには、レポートスイートでタイムスタンプを有効にする必要があります。
 
    >[!IMPORTANT]
    >
-   >IIf time stamps are enabled on your report suite, your `offlineEnabled` configuration property *must* be true. レポートスイートでタイムスタンプが有効になっていない場合、`offlineEnabled` 設定プロパティを&#x200B;*必ず* false に設定してください。このプロパティを適切に設定しなければ、データが失われます。レポートスイートのタイムスタンプが有効になっているかどうか判断できない場合は、カスタマーケアにお問い合わせください。現在、同じレポートスイートで JavaScript と AppMeasurement からデータを収集している場合は、モバイルデータのレポートスイートを個別に設定するか、`s.timestamp` 変数を使用するすべての JavaScript ヒットにカスタムタイムスタンプを含めます。
+   >IIf time stamps are enabled on your report suite, your `offlineEnabled` configuration property *must* be true. レポートスイートでタイムスタンプが有効になっていない場合、`offlineEnabled` 設定プロパティを&#x200B;*必ず* false に設定してください。この設定が正しく行われないと、データが失われます。 レポートスイートのタイムスタンプが有効になっているかどうかが不明な場合は、カスタマーケアにお問い合わせください。 If you are currently reporting AppMeasurement data to a report suite that also collects data from JavaScript, you might need to set up a separate report suite for mobile data, or include a custom timestamp on all JavaScript hits using the `s.timestamp` variable.
 
 * **lifecycleTimeout**
 
-   アプリケーションの起動が新しいセッションであると見なされるまでの経過時間を秒数で指定します。このタイムアウトは、アプリケーションがバックグラウンドに移行し、再びアクティブになる場合にも適用されます。アプリケーションがバックグラウンドになっている時間はセッションの長さには含まれません。デフォルト値は 300 秒です。
+   アプリが起動してからその起動が新しいセッションと見なされるまでに経過する必要がある時間（秒単位）を指定します。 このタイムアウトは、アプリケーションがバックグラウンドに送信され、再びアクティブになる場合にも適用されます。 アプリがバックグラウンドに従っている時間は、セッションの長さには含まれません。 デフォルト値は 300 秒です。
 
 * **batchLimit**
 
-   ヒットのバッチ送信を有効にします。例えば、この変数を 50 に設定すると、キューに格納されているヒットの数が 50 に達したときに、キュー内のすべてのヒットが一括で送信されます。が必要で `offlineEnabled=true`す。 The default value is `0` (No batching).
+   ヒットをバッチで送信します。 例えば、50に設定した場合、50件のヒットが格納されるまでキューに登録され、キューに登録されたすべてのヒットが送信されます。 `offlineEnabled=true` が必要です。デフォルト値は `0` （バッチ処理なし）です。
 
 * **privacyDefault**
 
-   * `optedin`  — ヒットは直ちに送信されます。
-   * `optedout` - hits are discarded.
-   * `optunknown` - レポートスイートでタイムスタンプが有効になっている場合、プライバシーステータスがオプトイン（ヒットが送信される）またはオプトアウト（ヒットが破棄される）に変更されるまで、ヒットは保存されます。レポートスイートのタイムスタンプが有効になっていない場合、プライバシーステータスがオプトインに変更されるまで、ヒットは破棄されます。
+   * `optedin`：ヒットは即座に送信されます。
+   * `optedout`：ヒットは破棄されます。
+   * `optunknown`  — レポートスイートでタイムスタンプが有効になっている場合、プライバシーステータスがオプトイン（ヒットが送信される）またはオプトアウト（ヒットが破棄される）に変わるまで、ヒットは保存されます。 レポートスイートのタイムスタンプが有効になっていない場合、プライバシーステータスがオプトインに変更されるまで、ヒットは破棄されます。
 
       デフォルト値は `optedin` です。
 
       >[!TIP]
       >
-      >This sets the default value only. この値がコード内で設定または変更された場合、値が再び変更されるか、アプリがアンインストールされて再インストールされるまで、コードによって設定された値がローカルストレージに保存されて使用され続けます。
+      >これにより、デフォルト値のみが設定されます。 この値がコード内で設定または変更された場合、コードによって設定された値はローカルストレージに保存され、変更されるまで使用されます。または、アプリがアンインストールされてから再インストールされます。
 
 * **poi**
 
@@ -89,13 +89,13 @@ Information to help you use the `ADBMobile.json` config file.
 
 * **clientCode**
 
-   (**Required by Target**) Your assigned client code.
+   (**ターゲットが必要**)割り当てたクライアントコード。
 
 * **timeout**
 
    Target が応答を待つ時間を決定します。
 
-`ADBMobileConfig.json` ファイルの例を次に示します。
+The following is an example of an `ADBMobileConfig.json` file:
 
 ```js
 { 
