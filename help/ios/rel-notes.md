@@ -6,8 +6,8 @@ solution: Marketing Cloud,Analytics
 title: リリースノート
 topic: Developer and implementation
 uuid: e1613dc5-02a4-43a7-997a-29b4de98b4d1
-translation-type: ht
-source-git-commit: c9ee89ef5039c52ebab41a9495f1794c08a415ba
+translation-type: tm+mt
+source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
 
 ---
 
@@ -69,4 +69,4 @@ Experience Cloud ソリューション用 iOS SDK 4.x のリリースノート�
 
 * 訪問者 ID サービス：`setPushIdentifier` API I呼び出しは、呼び出されるたびに同期呼び出しを訪問者IDサービスへと送信するようになりました。
 
-すべてのソリューションに関する現在および過去のリリースノートについては、[Adobe Experience Cloud リリースノート](https://marketing.adobe.com/resources/help/ja_JP/whatsnew/)を参照してください。
+すべてのソリューションに関する現在および過去のリリースノートについては、[Adobe Experience Cloud リリースノート](https://docs.adobe.com/content/help/ja-JP/release-notes/experience-cloud/current.html)を参照してください。
