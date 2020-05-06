@@ -7,13 +7,13 @@ solution: Marketing Cloud,Analytics
 title: 設定メソッド
 topic: Developer and implementation
 uuid: 663aeb6c-1b97-4a3a-8c0e-dd4c2ec28c01
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: dae60a21286edc28c84b7638da214b824abf0cd3
 
 ---
 
 
-# 設定メソッド{#configuration-methods}
+# 設定メソッド {#configuration-methods}
 
 以下に、Android ライブラリによって提供されるメソッドのリストを示します。
 
@@ -32,7 +32,7 @@ source-git-commit: dae60a21286edc28c84b7638da214b824abf0cd3
     }
    ```
 
-## SDK 設定（設定クラス）{#section_C1EB977043C04D2B93E5A63DB72828B6}
+## SDK 設定（設定クラス） {#section_C1EB977043C04D2B93E5A63DB72828B6}
 
 * **registerAdobeDataCallback**
 
@@ -271,7 +271,7 @@ source-git-commit: dae60a21286edc28c84b7638da214b824abf0cd3
 
 * **setSmallIconResourceId(int resourceId)**
 
-   * (**バージョン4.2以降**)SDKで作成された通知に使用する小さいアイコンを設定します。 このアイコンはステータスバーに表示され、ユーザーが通知センターで通知を完了したときに表示されるセカンダリイメージです。
+   * （**バージョン 4.2 以降**）SDK で作成された通知に使用する小さいアイコンを設定します。このアイコンはステータスバーに表示され、ユーザーが通知センターで完全な通知を表示する際に表示されるセカンダリ画像です。
    * このメソッドの構文を次に示します。
 
       ```java
@@ -286,7 +286,7 @@ source-git-commit: dae60a21286edc28c84b7638da214b824abf0cd3
 
 * **setLargeIconResourceId(int resourceId)**
 
-   * (**バージョン4.2以降**)SDKで作成された通知に使用する大きいアイコンを設定します。 このアイコンは、ユーザーが通知センターで完全な通知を表示する際に表示されるプライマリ画像です。
+   * （**バージョン 4.2 以降**）SDK で作成された通知に使用する大きいアイコンを設定します。このアイコンは、ユーザーが通知センターで完全な通知を表示する際に表示されるプライマリ画像です。
    * このメソッドの構文を次に示します。
 
       ```java
@@ -301,7 +301,7 @@ source-git-commit: dae60a21286edc28c84b7638da214b824abf0cd3
 
 * **overrideConfigStream(InputStream configInput)**
 
-   * (**バージョン4.2以降**)アプリケーションの開始時に、別のADBMobile JSON設定ファイルを読み込むことができます。 アプリケーションが閉じられるまで、この設定が使用されます。
+   * （**バージョン 4.2以降**）アプリケーションの開始時に、別の ADBMobile JSON 設定ファイルを読み込むことができます。アプリケーションが閉じられるまで、この設定が使用されます。
    * このメソッドの構文を次に示します。
 
       ```java
