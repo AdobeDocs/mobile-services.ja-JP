@@ -7,7 +7,7 @@ solution: Marketing Cloud,Analytics
 title: コア実装とライフサイクル
 topic: Developer and implementation
 uuid: af4d11ac-8245-46a0-9b3a-4a0a29cfbbb2
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: dae60a21286edc28c84b7638da214b824abf0cd3
 
 ---
@@ -23,7 +23,7 @@ source-git-commit: dae60a21286edc28c84b7638da214b824abf0cd3
 >
 >SDK をダウンロードするには、Android 2.2 以降を使用する必要があります。
 
-1. 次の各節の手順を実行して、開発レポートスイートを設定し、設定ファイルの事前入力されたバージョンをダウンロードします。
+1. 次の節の手順を実行して開発レポートスイートを設定し、設定ファイルの事前入力済みバージョンをダウンロードします。
 
    * [レポートスイートの作成](/help/android/getting-started/requirements.md)
    * [SDK のダウンロード](/help/android/getting-started/requirements.md)
@@ -48,7 +48,7 @@ SDK と設定ファイルをプロジェクトに追加するには、以下の�
 1. プロジェクトナビゲーションパネルで、プロジェクトを右クリックします。
 1. **[!UICONTROL モジュール設定を開く]**&#x200B;を選択します。
 1. **[!UICONTROL プロジェクト設定]**&#x200B;で、**[!UICONTROL ライブラリ]**&#x200B;を選択します。
-1. Click the **[!UICONTROL +]** icon to add a new library.
+1. **[!UICONTROL +]** アイコンをクリックし、新しいライブラリを追加します。
 1. **[!UICONTROL Java]**&#x200B;を選択し、`adobeMobileLibrary.jar` ファイルに移動します。
 1. モバイルライブラリを使用する予定のモジュールを選択します。
 1. **[!UICONTROL 適用]**&#x200B;をクリックしてから&#x200B;**[!UICONTROL OK]**&#x200B;をクリックして、モジュール設定ウィンドウを閉じます。
@@ -61,9 +61,9 @@ SDK と設定ファイルをプロジェクトに追加するには、以下の�
 1. **[!UICONTROL Eclipse IDE]** で、プロジェクト名を右クリックします。
 1. **[!UICONTROL ビルドパス]**／**[!UICONTROL 外部アーカイブの追加]**&#x200B;をクリックします。
 1. `adobeMobileLibrary.jar` を選択します。
-1. **[!UICONTROL Open（開く）]**&#x200B;をクリックします。
-1. Right-click the project again and select **[!UICONTROL Build Path]** > **[!UICONTROL Configure Build Path]**.
-1. **[!UICONTROL Order and Export（並べ替えとエクスポート）]**&#x200B;タブで、**`adobeMobileLibrary.jar`** が選択されていることを確認します。
+1. 「**[!UICONTROL 開く]**」をクリックします。
+1. プロジェクトを再度右クリックし、**[!UICONTROL ビルドパス]**／**[!UICONTROL ビルドパスを設定]**&#x200B;を選択します。
+1. 「**[!UICONTROL 並べ替えと書き出し]**」タブで、**`adobeMobileLibrary.jar`** が選択されていることを確認します。
 
 ## アプリの権限の追加 {#section_2EAF73ABF6424647B219A63B33B02CD5}
 
@@ -96,7 +96,7 @@ AppMeasurement ライブラリでは、データの送信とオフラインの�
 
 ライフサイクルを有効にすると、アプリが起動されるたびに、1 件のヒットが送信されて、起動、アップグレード、セッション、アクションを実行したユーザー、その他の多くの指標が測定されます。詳しくは、「[ライフサイクル指標](/help/android/metrics.md)」を参照してください。
 
-**アプリケーションの各アクティビティで次の手順を実行します。**
+**アプリケーションの各アクティビティで、次の手順を実行します。**
 
 1. ライブラリをインポートします。
 
