@@ -7,7 +7,10 @@ title: リリースノート
 topic: Developer and implementation
 uuid: 16bb4de8-a216-47a8-928c-0b1e1421adcf
 translation-type: tm+mt
-source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
+source-git-commit: a2a2ea4bd3826b061b198e684dd31d9328137d7e
+workflow-type: tm+mt
+source-wordcount: '297'
+ht-degree: 76%
 
 ---
 
@@ -15,6 +18,14 @@ source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
 # リリースノート {#release-notes}
 
 Experience Cloud ソリューション用 Android SDK 4.x のリリースノート、既知の問題およびホットフィックス情報を次に示します。
+
+**2020年4月3日： 4.18.2**
+
+* アプリ内メッセージ — セキュリティ上の理由から、SDKによって作成されたWebViewsは、プロパティ&#39;setAllowFileAccess&#39;をfalseに設定するようになりました。
+
+**2020年3月12日： 4.18.1**
+
+* ターゲット-ターゲットセッションIDは、Adobe Analyticsに送信される内部Analytics-for-ターゲットヒットで、コンテキストデータパラメーター「a.ターゲット.sessionId」として追加されるようになりました。
 
 **2020 年 1 月 16 日：4.18.0**
 
