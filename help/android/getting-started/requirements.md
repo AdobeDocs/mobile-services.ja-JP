@@ -6,8 +6,11 @@ solution: Marketing Cloud,Analytics
 title: 事前準備
 topic: Developer and implementation
 uuid: 0ca9e937-8d40-4570-9dbf-9aecc6ecedf6
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
+workflow-type: ht
+source-wordcount: '760'
+ht-degree: 100%
 
 ---
 
@@ -22,12 +25,12 @@ Analytics 管理者およびアプリ開発者は、次のタスクを完了す�
 
 ### Analytics 管理者
 
-レポートスイートを設定してモバイルアプリデータを収集するには：
+レポートスイートを設定してモバイルアプリデータを収集するには、以下のようにします。
 
-1. 「Adobe Mobile Services UIへの [ログイン」のいずれかの節に従い](../getting-started/requirements.md#section_690A2EC4572E47869F183974E932A6A8)ます。
-1. 各アプリ開発者用にAnalyticsアカウントを作成します。
+1. [Adobe Mobile Services UI へのログイン](../getting-started/requirements.md#section_690A2EC4572E47869F183974E932A6A8)に記載される節のいずれかを完了します。
+1. アプリ開発者ごとに Analytics アカウントを作成します。
 
-アプリ開発者は、作成したレポートスイートの表示にアクセスできるようになりました。
+これで、アプリ開発者は作成されたレポートスイートにアクセスして表示できるようになります
 
 >[!IMPORTANT]
 >
@@ -43,9 +46,9 @@ Analytics 管理者およびアプリ開発者は、次のタスクを完了す�
 
 ## Adobe Mobile Services UI へのログイン {#section_690A2EC4572E47869F183974E932A6A8}
 
-Adobe Mobileサービスは、モバイルアプリの分析とターゲティングの主なレポートインターフェイスです。 これらの手順を完了したら、データ収集サーバー、レポートスイート、その他多くの設定で事前設定された設定ファイルをダウンロードできます。
+Adobe Mobile Services は、モバイルアプリの分析およびターゲティングのための主要レポートインターフェイスです。これらの手順を完了すると、データ収集サーバー、レポートスイートなど、様々な設定が事前に構成された設定ファイルをダウンロードできます。
 
-Adobe Mobile Services UIには、次のいずれかの方法でログインできます。
+Adobe Mobile Services UI には、以下のいずれかの方法でログインできます。
 
 ### Experience Cloud
 
@@ -111,5 +114,5 @@ compile 'com.adobe.mobile:adobeMobileLibrary:4.13.7'
 
 次の情報に留意してください。
 
-* コードサンプルのバージョン番号を、適切なバージョンのAndroid SDKに置き換えます。
-* 設定ファイルをダウンロードし、プロジェクトに含めます。
+* コードサンプルのバージョン番号を Android SDK の適切なバージョンに置き換えてください。
+* 設定ファイルをダウンロードして、プロジェクトにインクルードします。
