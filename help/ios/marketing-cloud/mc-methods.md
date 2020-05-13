@@ -6,13 +6,16 @@ solution: Marketing Cloud,Analytics
 title: Adobe Experience Platform ID サービスのメソッド
 topic: Developer and implementation
 uuid: cdd307bc-8b7d-47a8-b77e-00902b9e2968
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
+workflow-type: ht
+source-wordcount: '461'
+ht-degree: 100%
 
 ---
 
 
-# Adobe Experience Platform ID サービスのメソッド{#experience-cloud-id-service-methods}
+# Adobe Experience Platform ID サービスのメソッド {#experience-cloud-id-service-methods}
 
 iOS ライブラリが提供する Adobe Experience Platform サービスメソッドを以下に示します。
 
@@ -61,7 +64,7 @@ SDK は現在、Analytics、Target、Audience Manager、Experience Cloud ID サ�
 
 * **visitorSyncIdentifiers:**
 
-   Experience Cloud IDを使用して、各訪問者に関連付けることができる追加の顧客IDを設定できます。 訪問者 API は、同じ訪問者に対して複数の顧客 ID と、異なる顧客 ID の範囲を区別するための顧客タイプ識別子を受け取ります。このメソッドは、JavaScript ライブラリの `setCustomerIDs` に相当します。
+   Experience Cloud ID を使用すると、各訪問者に関連付けることができる追加の顧客 ID を設定できます。訪問者 API は、同じ訪問者に対して複数の顧客 ID と、異なる顧客 ID の範囲を区別するための顧客タイプ識別子を受け取ります。このメソッドは、JavaScript ライブラリの `setCustomerIDs` に相当します。
 
    * このメソッドの構文を次に示します。
 
@@ -164,7 +167,7 @@ SDK は現在、Analytics、Target、Audience Manager、Experience Cloud ID サ�
 - (ADBMobileVisitorAuthenticationState) authenticationState; 
 ```
 
-## ADBMobileVisitorAuthenticationState enum  {#section_A55A3F336DDF4F838900632087F51430}
+## ADBMobileVisitorAuthenticationState enum   {#section_A55A3F336DDF4F838900632087F51430}
 
 ```objective-c
 ADBMobileVisitorAuthenticationStateUnknown, 
