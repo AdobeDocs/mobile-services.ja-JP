@@ -6,8 +6,11 @@ solution: Marketing Cloud,Analytics
 title: Experience Cloud ID
 topic: Developer and implementation
 uuid: 13628ea8-3cd4-4cfc-8ff6-722c33f7813a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
+workflow-type: ht
+source-wordcount: '261'
+ht-degree: 100%
 
 ---
 
@@ -49,4 +52,4 @@ Adobe Experience Platform ID サービスは、Experience Cloud ソリューシ�
 
    これらの値が存在しない場合は、Adobe Mobile Services から更新された `ADBMobileConfig.json` ファイルをダウンロードしてください。詳しくは、「[ADBMobile JSON の設定](/help/ios/getting-started/requirements.md)」を参照してください。
 
-設定後、Experience Cloud IDが生成され、すべてのヒットに含められます。 カスタムや自動生成など、その他の訪問者 ID は、引き続き各ヒットとともに送信されます。
+設定後、Experience Cloud ID が生成され、すべてのヒットに含まれます。カスタムや自動生成など、その他の訪問者 ID は、引き続き各ヒットとともに送信されます。
