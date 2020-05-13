@@ -7,13 +7,16 @@ solution: Marketing Cloud,Analytics
 title: Adobe Experience Platform ID サービスのメソッド
 topic: Developer and implementation
 uuid: c5107a7e-273b-4f71-8738-4c603479b24c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
+workflow-type: ht
+source-wordcount: '449'
+ht-degree: 100%
 
 ---
 
 
-# Adobe Experience Platform ID サービスのメソッド{#experience-cloud-id-service-methods}
+# Adobe Experience Platform ID サービスのメソッド {#experience-cloud-id-service-methods}
 
 Android ライブラリによって提供される Experience Cloud ID メソッドを示します。
 
@@ -23,7 +26,7 @@ SDK は現在、Analytics、Target、Audience Manager、Adobe Experience Platfor
 
 * **public static String appendToURL(final String URL)**
 
-   アドビ JavaScript ライブラリで使用するために、アドビ訪問者データを URL 文字列に追加します。このメソッドを使用するには、Mobile SDK 4.12以降が必要です。 詳しくは、[訪問者 ID ヘルパー関数の追加](https://docs.adobe.com/content/help/ja-JP/id-service/using/id-service-api/methods/appendvisitorid.html)を参照してください。
+   アドビ JavaScript ライブラリで使用するために、アドビ訪問者データを URL 文字列に追加します。このメソッドを使用するには、Mobile SDK 4.12 以降が必要です。詳しくは、[訪問者 ID ヘルパー関数の追加](https://docs.adobe.com/content/help/ja-JP/id-service/using/id-service-api/methods/appendvisitorid.html)を参照してください。
 
    >[!IMPORTANT]
    >
@@ -70,7 +73,7 @@ SDK は現在、Analytics、Target、Audience Manager、Adobe Experience Platfor
 
 * **syncIdentifiers**
 
-   Experience Cloud IDを使用して、各訪問者に関連付けることができる追加の顧客IDを設定できます。 訪問者 API は、同じ訪問者に対して複数の顧客 ID と、異なる顧客 ID の範囲を区別するための顧客タイプ識別子を受け取ります。このメソッドは、JavaScript ライブラリの `setCustomerIDs` に相当します。
+   Experience Cloud ID を使用すると、各訪問者に関連付けることができる追加の顧客 ID を設定できます。訪問者 API は、同じ訪問者に対して複数の顧客 ID と、異なる顧客 ID の範囲を区別するための顧客タイプ識別子を受け取ります。このメソッドは、JavaScript ライブラリの `setCustomerIDs` に相当します。
 
    * このメソッドの構文を次に示します。
 
