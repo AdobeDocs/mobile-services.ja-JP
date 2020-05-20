@@ -1,16 +1,16 @@
 ---
-description: Experience Cloudソリューション用Android SDK 4.xのリリースノートおよび既知の問題です。
-seo-description: Experience Cloudソリューション用Android SDK 4.xのリリースノートおよび既知の問題です。
+description: Experience Cloud ソリューション用 Android SDK 4.x のリリースノートと既知の問題です。
+seo-description: Experience Cloud ソリューション用 Android SDK 4.x のリリースノートと既知の問題です。
 seo-title: リリースノート
 solution: Marketing Cloud,Analytics
 title: リリースノート
 topic: Developer and implementation
 uuid: 16bb4de8-a216-47a8-928c-0b1e1421adcf
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: a2a2ea4bd3826b061b198e684dd31d9328137d7e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '297'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
@@ -19,13 +19,13 @@ ht-degree: 76%
 
 Experience Cloud ソリューション用 Android SDK 4.x のリリースノート、既知の問題およびホットフィックス情報を次に示します。
 
-**2020年4月3日： 4.18.2**
+**2020 年 4 月 4 日：4.18.2**
 
-* アプリ内メッセージ — セキュリティ上の理由から、SDKによって作成されたWebViewsは、プロパティ&#39;setAllowFileAccess&#39;をfalseに設定するようになりました。
+* アプリ内メッセージ：セキュリティ上の理由から、SDK によって作成された WebViews で、プロパティ「setAllowFileAccess」が false に設定されるようになりました。
 
-**2020年3月12日： 4.18.1**
+**2020 年 3 月 13 日：4.18.1**
 
-* ターゲット-ターゲットセッションIDは、Adobe Analyticsに送信される内部Analytics-for-ターゲットヒットで、コンテキストデータパラメーター「a.ターゲット.sessionId」として追加されるようになりました。
+* Target：Target セッション ID は、Adobe Analytics に送信される Target 用内部 Analytics ヒットで、コンテキストデータパラメーター「a.target.sessionId」として追加されるようになりました。
 
 **2020 年 1 月 16 日：4.18.0**
 
