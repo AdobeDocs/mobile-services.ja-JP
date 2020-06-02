@@ -2,8 +2,12 @@
 product: mobile-services
 audience: end-user
 user-guide-title: Mobile Services ユーザーガイド
-translation-type: ht
-source-git-commit: 6e6b5df2b83591f4bd4eb0db0c664bd36a6abc2c
+user-guide-description: Mobile Services is an end-to-end solution that helps you acquire and engage mobile app users and analyze and optimize their experiences.
+translation-type: tm+mt
+source-git-commit: e39a31d765bebf4f80eed47e04056108f424b905
+workflow-type: tm+mt
+source-wordcount: '323'
+ht-degree: 100%
 
 ---
 
@@ -76,7 +80,7 @@ source-git-commit: 6e6b5df2b83591f4bd4eb0db0c664bd36a6abc2c
       + [リンク先の作成と管理](acquisition-main/c-manage-link-destinations/c-manage-link-destinations.md)
       + [新しいリンク先の作成](acquisition-main/c-manage-link-destinations/t-create-new-app-deep-link-destination.md)
       + [リンク先を管理](acquisition-main/c-manage-link-destinations/t-archive-unarchive-link-destinations.md)
-      + マーケティングリンクビルダー{#marketing-links-builder}
+      + マーケティングリンクビルダー {#marketing-links-builder}
          + [マーケティングリンクビルダー](acquisition-main/c-marketing-links-builder/c-marketing-links-builder.md)
          + [マーケティングリンクの作成または編集](acquisition-main/c-marketing-links-builder/t-create-edit-adobe-links/t-create-edit-adobe-links.md)
          + [インタースティシャル](acquisition-main/c-marketing-links-builder/t-create-edit-adobe-links/t-interstitials.md)
