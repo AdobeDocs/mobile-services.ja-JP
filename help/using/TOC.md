@@ -3,16 +3,16 @@ product: mobile-services
 audience: end-user
 user-guide-title: Mobile Services ユーザーガイド
 user-guide-description: Mobile Services is an end-to-end solution that helps you acquire and engage mobile app users and analyze and optimize their experiences.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e39a31d765bebf4f80eed47e04056108f424b905
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '323'
 ht-degree: 100%
 
 ---
 
 
-# Mobile Services ユーザーガイド{#using}
+# Mobile Services ユーザーガイド {#using}
 
 + [Adobe Mobile Services](home.md)
 + [リリースノート](whatsnew.md)
@@ -76,7 +76,7 @@ ht-degree: 100%
    + [獲得の前提条件](acquisition-main/c-acquisition-prerequisites.md)
    + [獲得の設定](acquisition-main/t-enable-acquisition.md)
    + [宛先](acquisition-main/c-create-destinations.md)
-   + リンク先の作成と管理{#create-manage-link-destination}
+   + リンク先の作成と管理 {#create-manage-link-destination}
       + [リンク先の作成と管理](acquisition-main/c-manage-link-destinations/c-manage-link-destinations.md)
       + [新しいリンク先の作成](acquisition-main/c-manage-link-destinations/t-create-new-app-deep-link-destination.md)
       + [リンク先を管理](acquisition-main/c-manage-link-destinations/t-archive-unarchive-link-destinations.md)
@@ -107,7 +107,7 @@ ht-degree: 100%
       + [エクスペリエンス：プッシュメッセージ](in-app-messaging/t-create-push-message/c-experience-push-message.md)
       + [スケジュール：プッシュメッセージ](in-app-messaging/t-create-push-message/c-schedule-push-message.md)
       + [プッシュメッセージのトラブルシューティング](in-app-messaging/t-create-push-message/c-troubleshooting-push-messaging.md)
-   + アプリ内メッセージ{#inapp-messages}
+   + アプリ内メッセージ {#inapp-messages}
       + [アプリ内メッセージの作成](in-app-messaging/t-in-app-message/t-in-app-message.md)
       + [オーディエンス：アプリ内メッセージ](in-app-messaging/t-in-app-message/c-audience-in-app-message.md)
       + [エクスペリエンス：アプリ内メッセージ](in-app-messaging/t-in-app-message/c-experience-in-app-message.md)
