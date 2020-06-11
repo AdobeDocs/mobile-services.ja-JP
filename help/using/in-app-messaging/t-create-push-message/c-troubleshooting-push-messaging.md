@@ -8,9 +8,9 @@ title: プッシュメッセージのトラブルシューティング
 topic: Metrics
 uuid: c7be4ab7-0cfe-4296-84a8-01412f4fd93f
 translation-type: tm+mt
-source-git-commit: e6af295ddc5fea2a3e649b659894e6c6123a3457
+source-git-commit: 86ba045b44bf6553e80727c0d61ccdd9a552d16c
 workflow-type: tm+mt
-source-wordcount: '736'
+source-wordcount: '735'
 ht-degree: 59%
 
 ---
@@ -100,10 +100,10 @@ Mobile Services のプッシュメッセージは、次のタイプの遅延を�
    * RSID：PhotoShop_iOS_app_LA
    * VRSID 定義セグメント：`a.os contains “iOS”`
 
-この例では、Photoshop ユーザーが *PhotoShop_iOS_app_SF* アプリにプッシュを送信すると、すべての *PhotoShop_iOS_app_SF*&#x200B;アプリユーザーが期待どおりにプッシュメッセージを受け取ります。しかし、ユーザーが *PhotoShop_iOS_app_LA*&#x200B;アプリにメッセージを送信すると、その VRSID 定義セグメントが正しくない（`a.os contains "PhotoShop_iOS_app_LA"` ではなく `iOS` となっている）ので、*AllAdobe PhotoShop_apps* の&#x200B;**すべての** iOS ユーザーにメッセージが送信されます。Although the message still goes to *PhotoShop_iOS_app_LA* users, the message also deny-lists the push IDs for *PhotoShop_iOS_app_SF* users because the *PhotoShop_iOS_app_SF* app has a different certificate. セグメントが `a.os contains “PhotoShop_iOS_app_LA”` と定義されていた場合、プッシュメッセージは&#x200B;*PhotoShop_iOS_app_LA*&#x200B;ユーザーにのみ送信されていました。
+この例では、Photoshop ユーザーが *PhotoShop_iOS_app_SF* アプリにプッシュを送信すると、すべての *PhotoShop_iOS_app_SF*&#x200B;アプリユーザーが期待どおりにプッシュメッセージを受け取ります。しかし、ユーザーが *PhotoShop_iOS_app_LA*&#x200B;アプリにメッセージを送信すると、その VRSID 定義セグメントが正しくない（`a.os contains "PhotoShop_iOS_app_LA"` ではなく `iOS` となっている）ので、*AllAdobe PhotoShop_apps* の&#x200B;**すべての** iOS ユーザーにメッセージが送信されます。Although the message still goes to *PhotoShop_iOS_app_LA* users, the message also blocklists the push IDs for *PhotoShop_iOS_app_SF* users because the *PhotoShop_iOS_app_SF* app has a different certificate. セグメントが `a.os contains “PhotoShop_iOS_app_LA”` と定義されていた場合、プッシュメッセージは&#x200B;*PhotoShop_iOS_app_LA*&#x200B;ユーザーにのみ送信されていました。
 
 *PhotoShop_IOS_app_LA* プッシュ証明書を使用して渡された場合、*PhotoShop_iOS_app_SF* のプッシュ ID は `invalid` として復活します。
 
 >[!CAUTION]
 >
->VRS を使用しているアプリ用にプッシュメッセージを作成して **[!UICONTROL 保存して送信]** をクリックすると、リストされている各アプリに有効な証明書がある&#x200B;**必要がある**&#x200B;ことを確認するアラートが表示されます。If each app does **not** have a valid certificate, your audience segments might be indefinitely deny listed, and you might not be able to send future push messages to the affected users. オーディエンスセグメントについて詳しくは、「[オーディエンス：プッシュメッセージ用のオーディエンスオプションの定義および設定](/help/using/in-app-messaging/t-create-push-message/c-audience-push-message.md)」を参照してください。
+>VRS を使用しているアプリ用にプッシュメッセージを作成して **[!UICONTROL 保存して送信]** をクリックすると、リストされている各アプリに有効な証明書がある&#x200B;**必要がある**&#x200B;ことを確認するアラートが表示されます。If each app does **not** have a valid certificate, your audience segments might be indefinitely blocklisted, and you might not be able to send future push messages to the affected users. オーディエンスセグメントについて詳しくは、「[オーディエンス：プッシュメッセージ用のオーディエンスオプションの定義および設定](/help/using/in-app-messaging/t-create-push-message/c-audience-push-message.md)」を参照してください。
