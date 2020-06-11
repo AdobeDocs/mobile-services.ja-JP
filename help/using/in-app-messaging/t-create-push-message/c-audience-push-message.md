@@ -8,9 +8,9 @@ title: オーディエンス：プッシュメッセージ用のオーディエ�
 topic: Metrics
 uuid: efd410e7-3b6c-4cf4-a26f-b11688adc491
 translation-type: tm+mt
-source-git-commit: e6af295ddc5fea2a3e649b659894e6c6123a3457
+source-git-commit: 86ba045b44bf6553e80727c0d61ccdd9a552d16c
 workflow-type: tm+mt
-source-wordcount: '1024'
+source-wordcount: '1021'
 ht-degree: 72%
 
 ---
@@ -24,13 +24,13 @@ ht-degree: 72%
 
 プッシュメッセージ用のオーディエンスセグメントを作成すると、レポートスイートや仮想レポートスイートに1つ以上のアプリのデータが含まれる場合があるので、1つ以上のアプリのユーザーがこのセグメントに含まれる可能性があります。 For more information about virtual report suites, see [Virtual report suites](/help/using/manage-apps/c-mob-vrs.md).
 
-Adobe Mobile Servicesでは、マーケターはプラットフォームごとに1つのアプリにしかプッシュできません。 マーケターが複数のアプリからのユーザーを含むセグメントにプッシュしようとすると、処理を続行すると重大なプッシュエラーが発生し、ユーザーのリストが拒否される可能性があるという警告が表示されます。 プッシュの失敗が発生した場合は、「*プッシュメッセージの失敗の解決*」（[プッシュメッセージのトラブルシューティング](/help/using/in-app-messaging/t-create-push-message/c-schedule-push-message.md)）を参照してください。
+Adobe Mobile Servicesでは、マーケターはプラットフォームごとに1つのアプリにしかプッシュできません。 マーケターが複数のアプリからのユーザーを含むセグメントにプッシュしようとすると、処理を続行すると重大なプッシュエラーが発生し、ユーザーがブロックされる可能性があるという警告が表示されます。 プッシュの失敗が発生した場合は、「*プッシュメッセージの失敗の解決*」（[プッシュメッセージのトラブルシューティング](/help/using/in-app-messaging/t-create-push-message/c-schedule-push-message.md)）を参照してください。
 
 セグメント定義で Audience Manager データを使用するには、[Audience Analytics](https://docs.adobe.com/content/help/ja-JP/analytics/integration/audience-analytics/mc-audiences-aam.html) を参照してください。
 
 >[!IMPORTANT]
 >
->If app users are deny listed, marketers can **never** send push messages to those affected users again.
+>If app users are blocklisted, marketers can **never** send push messages to those affected users again.
 
 複数のアプリにわたるユーザーを含むオーディエンスセグメントを選択すると、次のアラートが表示される可能性があります。
 
@@ -66,7 +66,7 @@ Adobe Mobile Servicesでは、マーケターはプラットフォームごと�
 
 **実行**: Adobe Photoshopなど、1つのアプリのiOS版とAndroid版に対して、マーケティング担当者がプッシュ証明書を提供します。 マーケティング担当者は、両方のプラットフォームにまたがるユーザーセグメントにプッシュ通知を送信できます。
 
-**禁止**: 1つのアプリのiOS版とAndroid版（例えば、Adobe Photoshop）に対してプッシュ証明書を提供します。 過去30日間にマーケティング担当者が *すべてのアクティブなユーザーのセグメントを作成およびプッシュした場合*、Adobe Photoshop iOSおよびAndroidアプリのユーザーのみがプッシュを受け取り、Adobe Illustrator iOSおよびAndroidアプリのユーザーはすべて拒否されます。 より詳細な例については、「*プッシュメッセージの失敗の解決*」（[プッシュメッセージのトラブルシューティング](/help/using/in-app-messaging/t-create-push-message/c-troubleshooting-push-messaging.md)）を参照してください。
+**禁止**: 1つのアプリのiOS版とAndroid版（例えば、Adobe Photoshop）に対してプッシュ証明書を提供します。 過去30日間にアクティブな *すべてのユーザーのセグメントを作成およびプッシュした場合*、Adobe Photoshop iOSおよびAndroidアプリのユーザーのみがプッシュを受け取り、Adobe IllustratorのiOSおよびAndroidアプリのすべてのユーザーがブロックリストに表示されます。 より詳細な例については、「*プッシュメッセージの失敗の解決*」（[プッシュメッセージのトラブルシューティング](/help/using/in-app-messaging/t-create-push-message/c-troubleshooting-push-messaging.md)）を参照してください。
 
 ## オーディエンスセグメントの設定 {#section_A92C60885A30421B8150820EC1CCBF13}
 
