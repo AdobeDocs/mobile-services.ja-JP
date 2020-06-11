@@ -5,9 +5,9 @@ seo-title: Experience Cloud Device Co-op
 title: Experience Cloud Device Co-op
 uuid: 7bb8a19c-4b80-4911-879d-f9941baa3b62
 translation-type: tm+mt
-source-git-commit: e6af295ddc5fea2a3e649b659894e6c6123a3457
+source-git-commit: 86ba045b44bf6553e80727c0d61ccdd9a552d16c
 workflow-type: tm+mt
-source-wordcount: '291'
+source-wordcount: '290'
 ht-degree: 90%
 
 ---
@@ -44,7 +44,7 @@ SDK バージョン 4.16.1 以降、Device Co-op メンバーは、Experience Cl
 * デフォルト値は `false` です。
 * この設定は、Device Co-op をプロビジョニングしたユーザー&#x200B;**にのみ**&#x200B;適用されます。
 
-For Device Co-op members who require this value set to `true`, you need to work with the Co-op team to request a deny list flag on your Device Co-op account. これらのフラグをセルフサービスで有効にする方法はありません。
+For Device Co-op members who require this value set to `true`, you need to work with the Co-op team to request a blocklist flag on your Device Co-op account. これらのフラグをセルフサービスで有効にする方法はありません。
 
 次の情報に留意してください。
 
