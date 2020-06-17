@@ -11,20 +11,20 @@ translation-type: tm+mt
 source-git-commit: 86ba045b44bf6553e80727c0d61ccdd9a552d16c
 workflow-type: tm+mt
 source-wordcount: '1021'
-ht-degree: 72%
+ht-degree: 90%
 
 ---
 
 
-# オーディエンス：プッシュメッセージ{#audience-define-and-configure-audience-segments-for-push-messages}
+# オーディエンス：プッシュメッセージ {#audience-define-and-configure-audience-segments-for-push-messages}
 
 日付範囲オプション、Analytics セグメントおよびカスタムセグメントを含む、プッシュメッセージのオーディエンスオプションを定義および設定できます。
 
 ## オーディエンスセグメントの定義 {#section_7C4D2393CF7441959FE2381A02867CAC}
 
-プッシュメッセージ用のオーディエンスセグメントを作成すると、レポートスイートや仮想レポートスイートに1つ以上のアプリのデータが含まれる場合があるので、1つ以上のアプリのユーザーがこのセグメントに含まれる可能性があります。 For more information about virtual report suites, see [Virtual report suites](/help/using/manage-apps/c-mob-vrs.md).
+プッシュメッセージ用のオーディエンスセグメントを作成すると、レポートスイートや仮想レポートスイートに 1 つ以上のアプリのデータが含まれる場合があるので、セグメントに1つ以上のアプリのユーザーが関与する可能性があります。有効なレポートスイートについて詳しくは、「[仮想レポートスイート](/help/using/manage-apps/c-mob-vrs.md)」を参照してください。
 
-Adobe Mobile Servicesでは、マーケターはプラットフォームごとに1つのアプリにしかプッシュできません。 マーケターが複数のアプリからのユーザーを含むセグメントにプッシュしようとすると、処理を続行すると重大なプッシュエラーが発生し、ユーザーがブロックされる可能性があるという警告が表示されます。 プッシュの失敗が発生した場合は、「*プッシュメッセージの失敗の解決*」（[プッシュメッセージのトラブルシューティング](/help/using/in-app-messaging/t-create-push-message/c-schedule-push-message.md)）を参照してください。
+Adobe Mobile Services では、マーケターはプラットフォームごとに 1 つのアプリにしかプッシュできません。マーケターが複数のアプリからのユーザーを含むセグメントにプッシュしようとすると、処理を続行すると重大なプッシュエラーが発生し、ユーザーがブロックされる可能性があるという警告が表示されます。 プッシュの失敗が発生した場合は、「*プッシュメッセージの失敗の解決*」（[プッシュメッセージのトラブルシューティング](/help/using/in-app-messaging/t-create-push-message/c-schedule-push-message.md)）を参照してください。
 
 セグメント定義で Audience Manager データを使用するには、[Audience Analytics](https://docs.adobe.com/content/help/ja-JP/analytics/integration/audience-analytics/mc-audiences-aam.html) を参照してください。
 
@@ -42,7 +42,7 @@ Adobe Mobile Servicesでは、マーケターはプラットフォームごと�
 >
 >&lt;version number> はオプションです。
 
-バージョンに対しては最大6セットの数字、バンドルIDに対しては5セットの数字が削除されます。
+バージョンでは最大 6 セットの数字、バンドル ID で 5 セットの数字が削除されます。
 
 以下に例を示します。
 
@@ -62,11 +62,11 @@ Adobe Mobile Servicesでは、マーケターはプラットフォームごと�
 
 ### 例
 
-次に、セグメントを正しく定義する方法を理解するのに役立つ例を示します。
+次に、セグメントを正しく定義する方法を理解できるよう、いくつか例を示します。
 
-**実行**: Adobe Photoshopなど、1つのアプリのiOS版とAndroid版に対して、マーケティング担当者がプッシュ証明書を提供します。 マーケティング担当者は、両方のプラットフォームにまたがるユーザーセグメントにプッシュ通知を送信できます。
+**すべきこと**：マーケターが、1 つのアプリ（Adobe Photoshop など）の iOS 版と Android 版に対して、プッシュ証明書を提供します。マーケターは、両方のプラットフォームにまたがるユーザーセグメントにプッシュ通知を送信できます。
 
-**禁止**: 1つのアプリのiOS版とAndroid版（例えば、Adobe Photoshop）に対してプッシュ証明書を提供します。 過去30日間にアクティブな *すべてのユーザーのセグメントを作成およびプッシュした場合*、Adobe Photoshop iOSおよびAndroidアプリのユーザーのみがプッシュを受け取り、Adobe IllustratorのiOSおよびAndroidアプリのすべてのユーザーがブロックリストに表示されます。 より詳細な例については、「*プッシュメッセージの失敗の解決*」（[プッシュメッセージのトラブルシューティング](/help/using/in-app-messaging/t-create-push-message/c-troubleshooting-push-messaging.md)）を参照してください。
+**すべきでないこと**：マーケターが、1 つのアプリ（Adobe Photoshop など）の iOS 版と Android 版に対して、プッシュ証明書を提供します。If the marketer creates and pushes to a segment of *all active users in the last 30 days*, only the users of the Adobe Photoshop iOS and Android app receive the push, and all of the Adobe Illustrator iOS and Android app users will be blocklisted. より詳細な例については、「*プッシュメッセージの失敗の解決*」（[プッシュメッセージのトラブルシューティング](/help/using/in-app-messaging/t-create-push-message/c-troubleshooting-push-messaging.md)）を参照してください。
 
 ## オーディエンスセグメントの設定 {#section_A92C60885A30421B8150820EC1CCBF13}
 
@@ -78,7 +78,7 @@ Adobe Mobile Servicesでは、マーケターはプラットフォームごと�
 
    * **[!UICONTROL 推定オプトインオーディエンス]**&#x200B;は、Adobe Analytics セグメントに合致するデバイスの数&#x200B;**および**&#x200B;オプトインしたデバイスの数です。
 
-      選択したセグメント内で、メッセージの受信をオプトインし、プッシュメッセージを受信する予測ユーザー数を表示できます。 推定数の下には、オプトイン状況に関係なく、アプリのユーザーの合計数が表示されます。
+      選択したセグメント内で、メッセージの受信をオプトインし、プッシュメッセージを受信するユーザー数の見積もりを表示できます。見積もりの下には、オプトイン状況に関係なく、アプリケーションユーザーの合計数が表示されます。
 
    * **[!UICONTROL 合計]**&#x200B;は、Adobe Analytics セグメントに合致するデバイスの数です。
 
