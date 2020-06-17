@@ -11,12 +11,12 @@ translation-type: tm+mt
 source-git-commit: 86ba045b44bf6553e80727c0d61ccdd9a552d16c
 workflow-type: tm+mt
 source-wordcount: '735'
-ht-degree: 59%
+ht-degree: 91%
 
 ---
 
 
-# プッシュメッセージのトラブルシューティング{#troubleshooting-push-messaging}
+# プッシュメッセージのトラブルシューティング {#troubleshooting-push-messaging}
 
 この情報は、プッシュメッセージのトラブルシューティングに役立ちます。
 
@@ -28,11 +28,11 @@ Mobile Services のプッシュメッセージは、次のタイプの遅延を�
 
    どのレポートスイートにも、受信する Analytics のヒットをいつ処理するかを決定する設定があります。デフォルトは、1 時間ごとです。
 
-   Analytics のヒットの実際の処理にかかる時間は最大 30 分ですが、通常は 15 ～ 20 分です。例えば、1つのレポートスイートでは1時間ごとにヒットが処理されます。 最大30分の処理時間を必要とする場合、受信ヒットがプッシュメッセージに使用できるようになるまでに最大90分かかる場合があります。 あるユーザーがアプリを午前 9 時 1 分に起動した場合、ヒットが新しい一意のユーザーとして Mobile Services UI に表示されるのは、午前 10 時 15 分～ 10 時 30 分になります。
+   Analytics のヒットの実際の処理にかかる時間は最大 30 分ですが、通常は 15 ～ 20 分です。例えば、あるレポートスイートでは 1 時間ごとにヒットが処理されます。最大 30 分の処理時間を必要とする場合、受信ヒットをプッシュメッセージに使用できるようになるまでに最大 90 分かかる場合があります。あるユーザーがアプリを午前 9 時 1 分に起動した場合、ヒットが新しい一意のユーザーとして Mobile Services UI に表示されるのは、午前 10 時 15 分～ 10 時 30 分になります。
 
-* **プッシュサービスの待機中**
+* **プッシュサービスの待機**
 
-   プッシュサービス（APNSまたはGCM）は、メッセージを直ちに送信できない場合があります。 めったに起こりませんが、5 ～ 10 分の待ち時間が生じます。プッシュメッセージの&#x200B;**[!UICONTROL レポート]**&#x200B;ビューを見て、**[!UICONTROL メッセージ履歴]**&#x200B;テーブルにあるメッセージを探し、**[!UICONTROL 発行数]**&#x200B;を確認することで、プッシュメッセージがプッシュサービスに送信されたことを確認できます。
+   プッシュサービス（APNS または GCM）は、メッセージを直ちに送信できないことがあります。めったに起こりませんが、5 ～ 10 分の待ち時間が生じます。プッシュメッセージの&#x200B;**[!UICONTROL レポート]**&#x200B;ビューを見て、**[!UICONTROL メッセージ履歴]**&#x200B;テーブルにあるメッセージを探し、**[!UICONTROL 発行数]**&#x200B;を確認することで、プッシュメッセージがプッシュサービスに送信されたことを確認できます。
 
    >[!TIP]
    >
@@ -43,18 +43,18 @@ Mobile Services のプッシュメッセージは、次のタイプの遅延を�
    * [サービス品質](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html#//apple_ref/doc/uid/TP40008194-CH8-SW5l)
    * [メッセージの有効期間](https://developers.google.com/cloud-messaging/concept-options#lifetime)
 
-## Android GCM APIキーが無効なのはなぜですか。
+## Android GCM API キーが無効なのはなぜですか。
 
-* **無効なAPIキー**
+* **無効な API キー**
 
-   次の理由で、APIキーが無効の可能性があります。
+   次の理由で、API キーが無効となっている可能性があります。
 
-   * 指定したAPIキーは、正しいGCM APIキー値を持つサーバーキーではありません。
-   * サーバーキーはIPを許可し、アドビのサーバーがプッシュメッセージを送信するのをブロックしています。
+   * 指定した API キーは、正しい GCM API キー値を持つサーバーキーではありません。
+   * サーバーキーは IP を許可し、アドビのサーバーがプッシュメッセージを送信するのをブロックしています。
 
-* **APIキーの有効性の確認**
+* **API キーの有効性の判断**
 
-   APIキーの有効性を判断するには、次のコマンドを実行します。
+   API キーの有効性を判断するには、次のコマンドを実行します。
 
    **Android**
 
@@ -66,7 +66,7 @@ Mobile Services のプッシュメッセージは、次のタイプの遅延を�
        -d"{\"registration_ids\":[\"ABC\"]}"
    ```
 
-   返される401 HTTPステータスコードは、APIキーが無効であることを意味します。 それ以外の場合は、次のような表示になります。
+   返された 401 HTTP ステータスコードは、APIキーが無効であることを意味します。それ以外の場合は、次のようになります。
 
    ```java
    {"multicast_id":6782339717028231855,"success":0,"failure":1,
@@ -77,26 +77,26 @@ Mobile Services のプッシュメッセージは、次のタイプの遅延を�
 
 ## APNS 証明書が機能しない理由
 
-次の理由で、APNS証明書が無効になっている可能性があります。
+次の理由で、APNS 証明書が無効になっている可能性があります。
 
 * 実稼働版証明書の代わりにサンドボックス証明書を使用している可能性があります。
-* サポートされていない新しい実稼働用/サンドボックス証明書を使用しています。
+* サポートされていない新しい実稼動／サンドボックス証明書を使用しています。
 * `.p8` ファイルではなく、`.p12` ファイルを使用しています。
 
 ## プッシュメッセージの失敗の解決
 
 **例**
 
-次の例は、VRSを使用する場合のプッシュ失敗の解決方法を示しています。
+次の例は、VRS を使用した場合のプッシュ失敗の解決方法を示しています。
 
-次のお客様にはiOSアプリが2つあります。
+次のお客様には iOS アプリが 2 つあります。
 
-* アプリ名： PhotoShop_app_iOS
-   * 親RSID: AllAdobe PhotoShop_apps
-   * VRSID: PhotoShop_iOS_app_SF
+* アプリ名：PhotoShop_app_iOS
+   * 親 RSID：AllAdobe PhotoShop_apps
+   * VRSID：PhotoShop_iOS_app_SF
    * VRSID 定義セグメント：`a.appid contains “PhotoShop_iOS_app_SF”`
-* アプリ名： PhotoShop_app_iOS
-   * 親RSID: AllAdobe PhotoShop_apps
+* アプリ名：PhotoShop_app_iOS
+   * 親 RSID：AllAdobe PhotoShop_apps
    * RSID：PhotoShop_iOS_app_LA
    * VRSID 定義セグメント：`a.os contains “iOS”`
 
