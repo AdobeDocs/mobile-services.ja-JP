@@ -10,12 +10,12 @@ translation-type: tm+mt
 source-git-commit: 86ba045b44bf6553e80727c0d61ccdd9a552d16c
 workflow-type: tm+mt
 source-wordcount: '1678'
-ht-degree: 92%
+ht-degree: 98%
 
 ---
 
 
-# ADBMobile JSON 設定ファイル{#adbmobile-json-config}
+# ADBMobile JSON 設定ファイル {#adbmobile-json-config}
 
 この情報は、ADBMobile.json 設定ファイル内の変数を理解するのに役立ちます。
 
@@ -34,7 +34,6 @@ JSON ファイル内の変数と各変数に必要な最小限の SDK バージ�
    * モバイルアプリの獲得を有効にします。
       * `server`：最初の起動時に獲得リファラーの確認がおこなわれる獲得サーバー。
       * `appid`：獲得サーバー上でこのアプリを一意に識別する、生成された ID。
-
    このセクションがない場合は、モバイルアプリの獲得を有効にして、SDK 設定ファイルを再度ダウンロードしてください。詳しくは、この変数リストの *referrerTimeout* を参照してください。
 
 * **analyticsForwardingEnabled**
@@ -63,7 +62,7 @@ JSON ファイル内の変数と各変数に必要な最小限の SDK バージ�
    * 最小 SDK バージョン：4.1
    * 連続する呼び出しで送信されるヒット数のしきい値。
 
-      例えば、この `batchLimit` を 10 に設定した場合は、ヒットが 10 個たまるまでヒットをキューに格納していきます。10番目のヒットが含まれると、10個のヒットすべてが連続して送信されます。
+      例えば、この `batchLimit` を 10 に設定した場合は、ヒットが 10 個たまるまでヒットをキューに格納していきます。10 番目のヒットが格納されると、10 個のヒットすべてが連続して送信されます。
 
       次の情報に留意してください。
 
@@ -89,7 +88,6 @@ JSON ファイル内の変数と各変数に必要な最小限の SDK バージ�
    * `marketingCloud` オブジェクトのブールプロパティが `true` に設定されると、デバイスが Experience Cloud の Device Co-op からオプトアウトします。
    * デフォルト値は `false` です。
    * この設定は、Device Co-op をプロビジョニングしたユーザー&#x200B;**にのみ**&#x200B;適用されます。
-
    For Device Co-op members who require this value set to `true`, you need to work with the Co-op team to request a blocklist flag on your Device Co-op account. これらのフラグをセルフサービスで有効にする方法はありません。
 
    次の情報に留意してください。
@@ -130,7 +128,7 @@ JSON ファイル内の変数と各変数に必要な最小限の SDK バージ�
       >
       >レポートスイートでタイムスタンプが有効になっている場合、`offlineEnabled` 設定プロパティを&#x200B;**必ず** true に設定してください。レポートスイートでタイムスタンプが有効になっていない場合、`offlineEnabled` 設定プロパティを&#x200B;**必ず** false に設定してください。
       >
-      >このプロパティを適切に設定しなければ、データが失われます。レポートスイートのタイムスタンプが有効になっているかどうかが不明な場合は、カスタマーケアにお問い合わせいただくか、Adobe Mobile Servicesから設定ファイルをダウンロードしてください。
+      >このプロパティを適切に設定しなければ、データが失われます。レポートスイートのタイムスタンプが有効になっているかどうかが不明な場合は、カスタマーケアに問い合わせるか、Adobe Mobile Servicesから設定ファイルをダウンロードしてください。
 
       現在、同じレポートスイートで JavaScript と AppMeasurement からデータを収集している場合は、モバイルデータのレポートスイートを個別に設定するか、`s.timestamp` 変数を使用するすべての JavaScript ヒットにカスタムタイムスタンプを含めます。
 
@@ -181,7 +179,6 @@ JSON ファイル内の変数と各変数に必要な最小限の SDK バージ�
       * `optedin`：ヒットは即座に送信されます。
       * `optedout`：ヒットは破棄されます。
       * `optunknown`：レポートスイートのタイムスタンプが有効になっている場合、プライバシーステータスがオプトイン（ヒットが送信される）またはオプトアウト（ヒットが破棄される）に変更されるまで、ヒットは保存されます。
-
       レポートスイートのタイムスタンプが有効になっていない場合、プライバシーステータスが `optedin` に変更されるまで、ヒットは破棄されます。このオプションは、初期値のみを設定します。この値をコードで設定または変更した場合、値が再び変更されるか、アプリがアンインストールされて再インストールされるまで、新しい値が使用されます。
 
 
@@ -242,7 +239,7 @@ JSON ファイル内の変数と各変数に必要な最小限の SDK バージ�
    * Target が応答を待つ時間を決定します。
 
 
-## サンプル `ADBMobileConfig.json` ファイル{#section_4655EF79744649E5A5AE19E3224C472C}
+## サンプル `ADBMobileConfig.json` ファイル {#section_4655EF79744649E5A5AE19E3224C472C}
 
 サンプルの `ADBMobileConfig.json` ファイルを次に示します。
 
@@ -373,9 +370,9 @@ messages ノードは Adobe Mobile Services によって自動的に生成され
 * &quot;audiences&quot;
    * メッセージの表示方法を定義するオブジェクトの配列
    * &quot;key&quot;
-      * 変数名をヒットで探す（必須）
+      * ヒット内で検索する変数名（必須）
 * &quot;matches&quot;
-   * 比較の際に使用するマッチャーの種類
+   * 比較の実行時に使用するマッチャーのタイプ
    * eq = 次の値と等しい
    * ne = 次の値と等しくない
    * co = 次の値を含む
@@ -389,12 +386,12 @@ messages ノードは Adobe Mobile Services によって自動的に生成され
    * gt = 次の値を超える
    * ge = 次の値以上
 * &quot;values&quot;
-   * 値の配列。
+   * 次に記載されている、変数の値との照合に使用される値の配列
       * key
       * に指定された変数の値と
       * 一致する
 * &quot;triggers&quot;
-   * オーディエンスと同じですが、これはオーディエンスの代わりにアクションです
+   * audiences と同じ。audiences の代わりとなるアクション。
    * &quot;key&quot;
    * &quot;matches&quot;
    * &quot;values&quot;
