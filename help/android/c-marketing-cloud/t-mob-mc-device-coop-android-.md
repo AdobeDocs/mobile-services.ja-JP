@@ -23,7 +23,7 @@ Experience Cloud Device Co-op 用のモバイルアプリを有効にするに�
 >
 >この機能には、Android SDK バージョン 4.8.3 以降が必要です。
 
-SDK バージョン 4.16.1 以降、Device Co-op メンバーは、Experience Cloud Device Co-op からモバイルデバイスデータをオプトアウトできます。詳しくは、[ADBMobile JSON 載せ設定](/help/android/configuration/json-config/json-config.md)および [isCoopSafe](https://docs.adobe.com/content/help/ja-JP/id-service/using/id-service-api/configurations/coopsafe.html)　用の `visitorAPI.js` メソッドを参照してください。
+SDK バージョン 4.16.1 以降、Device Co-op メンバーは、Experience Cloud Device Co-op からモバイルデバイスデータをオプトアウトできます。詳しくは、[ADBMobile JSON 載せ設定](/help/android/configuration/json-config/json-config.md)および [isCoopSafe](https://docs.adobe.com/content/help/ja-JP/id-service/using/id-service-api/configurations/coopsafe.html) 用の `visitorAPI.js` メソッドを参照してください。
 
 1. Adobe Mobile SDK を実装します。
 
