@@ -95,7 +95,6 @@ ht-degree: 98%
 
    * `coopUnsafe` を `coop_unsafe=1` に設定すると、常に Audience Manager および訪問者 ID ヒットに `true` が追加されます。
    * Audience Manager への Analytics サーバー側の転送を有効にすると、Analytics ヒットに `coop_unsafe=1` も表示されます。
-
    追加情報を以下に示します。
 
    * 最小 SDK バージョン：4.16.1
