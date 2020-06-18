@@ -1,30 +1,33 @@
 ---
-description: 分析データまたはイベントからトリガーされるアプリ内メッセージを配信できます。実装後、メッセージはアプリに動的に配信され、コードを更新する必要はありません。
-seo-description: 分析データまたはイベントからトリガーされるアプリ内メッセージを配信できます。実装後、メッセージはアプリに動的に配信され、コードを更新する必要はありません。
+description: 解析データやイベントからトリガーされるアプリ内メッセージを配信できます。 実装後、メッセージはアプリに動的に配信され、コードを更新する必要はありません。
+seo-description: 解析データやイベントからトリガーされるアプリ内メッセージを配信できます。 実装後、メッセージはアプリに動的に配信され、コードを更新する必要はありません。
 seo-title: アプリ内メッセージ
-solution: Experience Cloud,Analytics
+solution: Marketing Cloud,Analytics
 title: アプリ内メッセージ
-topic: 開発者と導入
+topic: Developer and implementation
 uuid: 351ee3d2-80b9-4f2d-9696-21f274d89f5a
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
+workflow-type: tm+mt
+source-wordcount: '803'
+ht-degree: 61%
 
 ---
 
 
 # アプリ内メッセージ {#in-app-messaging}
 
-分析データまたはイベントからトリガーされるアプリ内メッセージを配信できます。実装後、メッセージはアプリに動的に配信され、コードを更新する必要はありません。
+解析データやイベントからトリガーされるアプリ内メッセージを配信できます。 実装後、メッセージはアプリに動的に配信され、コードを更新する必要はありません。
 
-## Adobe Experience Cloud SDK の新規リリース
+## 新しい Adobe Experience Cloud SDK リリース
 
-Adobe Experience Platform Mobile SDK に関する情報やドキュメントをお探しの場合、最新のドキュメントについては、[こちら](https://aep-sdks.gitbook.io/docs/)をクリックしてください。
+Adobe Experience Platform Mobile SDK に関する情報やドキュメントをお探しの場合[こちら](https://aep-sdks.gitbook.io/docs/)をクリックし、最新のドキュメントを参照してください。
 
 >[!IMPORTANT]
 >
 >2018 年 9 月に、SDK の新しいメジャーバージョンをリリースしました。これらの新しい Adobe Experience Platform Mobile SDK は、[Experience Platform Launch](https://www.adobe.com/jp/experience-platform/launch.html) から設定できます。
 
-* 利用を開始するには、[Launch](https://launch.adobe.com/) にアクセスしてください。
+* To get started, go to [Launch](https://launch.adobe.com/).
 * Experience Platform SDK リポジトリの内容については、[Github: Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks) を参照してください。
 
 >[!IMPORTANT]
@@ -33,9 +36,9 @@ Adobe Experience Platform Mobile SDK に関する情報やドキュメントを�
 
 >[!IMPORTANT]
 >
->アプリ内メッセージを使用するには、SDK バージョン 4.2 以降が&#x200B;**必要**&#x200B;です。
+>To use in-app messaging, you **must** have SDK version 4.2 or later.
 
-メッセージと、メッセージが表示されるタイミングを定義するルールを Adobe Mobile Services で作成できます。詳しくは、[アプリ内メッセージの作成](/help/using/in-app-messaging/t-in-app-message/t-in-app-message.md)を参照してください。アプリ内メッセージを表示するには、SDK を更新する必要があります。メッセージを定義していない場合でも、これらの手順を実行することができます。定義したメッセージは、アプリに動的に配信され、アプリストアの更新なしで表示されます。
+Adobe Mobile Servicesでは、メッセージや、メッセージを表示するタイミングを定義するルールを作成できます。 For more information, see [Create an in-app message](/help/using/in-app-messaging/t-in-app-message/t-in-app-message.md). アプリ内メッセージを表示するには、SDKを更新する必要があります。 メッセージをまだ定義していない場合でも、これらの手順を実行できます。 定義したメッセージは、アプリに動的に配信され、アプリストアを更新しなくても表示されます。
 
 ## アプリ内メッセージの有効化 {#section_380DF56C4EE4432A823940E4AE4C9E91}
 
@@ -117,11 +120,11 @@ Adobe Experience Platform Mobile SDK に関する情報やドキュメントを�
 
 ## アプリ内メッセージの追跡 {#section_B85CDF6929564AAEA79338B55E5CB1E8}
 
-Android Mobile SDK はアプリ内メッセージに関する次の指標を追跡します。
+AndroidモバイルSDKは、アプリ内メッセージに関する以下の指標を追跡します。
 
-* 全画面および警告方式のアプリ内メッセージの場合：
+* アプリ内メッセージのフルスクリーンおよび警告スタイルの場合：
 
-   * **インプレッション**：ユーザーがアプリ内メッセージをトリガーしたとき。
+   * **インプレッション**: ユーザーがアプリ内メッセージをトリガーしたとき。
    * **クリックスルー**：ユーザーが&#x200B;**[!UICONTROL クリックスルー]**&#x200B;ボタンを押したとき。
    * **キャンセル**：ユーザーが&#x200B;**[!UICONTROL キャンセル]**&#x200B;を押したとき。
 
@@ -136,7 +139,7 @@ Android Mobile SDK はアプリ内メッセージに関する次の指標を追�
 
 ## ローカルフォールバック画像 {#section_DEACC1CE549B4573B556A44A52409941}
 
-フルスクリーンメッセージを作成する場合は、オプションでフォールバック画像を指定できます。メッセージで Web から目的の画像を取得できない場合、SDK はアプリケーションの assets フォルダーから同じ名前の画像をロードしようとします。これにより、ユーザーがオフライン状態の場合や、事前設定された画像に到達できない場合でも、元の形式でメッセージを表示することができます。
+フルスクリーンメッセージを作成する場合、必要に応じてフォールバック画像を指定できます。 メッセージがWebから目的の画像を取得できない場合、SDKは、アプリケーションのアセットフォルダーから同じ名前の画像を読み込もうとします。 これにより、ユーザーがオフラインの場合や、事前に決められている画像が未到達の場合でも、メッセージを元の形式で表示できます。
 
 >[!IMPORTANT]
 >
@@ -148,7 +151,7 @@ Android Mobile SDK はアプリ内メッセージに関する次の指標を追�
 
 * **Config.setSmallIconResourceId(int resourceId)**
 
-   SDK で作成される通知に使用される小さいアイコンを設定します。このアイコンは、ステータスバーに表示されます。ユーザーが通知センターで完全な通知を表示する際に表示されるセカンダリ画像です。
+   SDKで作成される通知に使用する小さいアイコンを設定します。 このアイコンは、ステータスバーに表示され、ユーザーが通知センターで通知を完了したときに表示されるセカンダリイメージです。
 
    * このメソッドの構文を次に示します。
 
