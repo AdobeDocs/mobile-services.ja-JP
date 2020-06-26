@@ -6,11 +6,11 @@ solution: Marketing Cloud,Analytics
 title: ADBMobile JSON 設定
 topic: Developer and implementation
 uuid: 1decf605-7bc3-4e73-ad52-1ecd5821599e
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 86ba045b44bf6553e80727c0d61ccdd9a552d16c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1678'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -34,6 +34,7 @@ JSON ファイル内の変数と各変数に必要な最小限の SDK バージ�
    * モバイルアプリの獲得を有効にします。
       * `server`：最初の起動時に獲得リファラーの確認がおこなわれる獲得サーバー。
       * `appid`：獲得サーバー上でこのアプリを一意に識別する、生成された ID。
+
    このセクションがない場合は、モバイルアプリの獲得を有効にして、SDK 設定ファイルを再度ダウンロードしてください。詳しくは、この変数リストの *referrerTimeout* を参照してください。
 
 * **analyticsForwardingEnabled**
@@ -88,7 +89,8 @@ JSON ファイル内の変数と各変数に必要な最小限の SDK バージ�
    * `marketingCloud` オブジェクトのブールプロパティが `true` に設定されると、デバイスが Experience Cloud の Device Co-op からオプトアウトします。
    * デフォルト値は `false` です。
    * この設定は、Device Co-op をプロビジョニングしたユーザー&#x200B;**にのみ**&#x200B;適用されます。
-   For Device Co-op members who require this value set to `true`, you need to work with the Co-op team to request a blocklist flag on your Device Co-op account. これらのフラグをセルフサービスで有効にする方法はありません。
+
+   Device Co-op のユーザーで、この値を `true` に設定する必要がある場合は、Co-op グループに連絡して、お使いの Device Co-op アカウント上でブロックリストフラグをリクエストする必要があります。これらのフラグをセルフサービスで有効にする方法はありません。
 
    次の情報に留意してください。
 
@@ -179,6 +181,7 @@ JSON ファイル内の変数と各変数に必要な最小限の SDK バージ�
       * `optedin`：ヒットは即座に送信されます。
       * `optedout`：ヒットは破棄されます。
       * `optunknown`：レポートスイートのタイムスタンプが有効になっている場合、プライバシーステータスがオプトイン（ヒットが送信される）またはオプトアウト（ヒットが破棄される）に変更されるまで、ヒットは保存されます。
+
       レポートスイートのタイムスタンプが有効になっていない場合、プライバシーステータスが `optedin` に変更されるまで、ヒットは破棄されます。このオプションは、初期値のみを設定します。この値をコードで設定または変更した場合、値が再び変更されるか、アプリがアンインストールされて再インストールされるまで、新しい値が使用されます。
 
 
