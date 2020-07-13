@@ -2,12 +2,15 @@
 description: この情報は、クラッシュの追跡方法と、誤ったクラッシュを処理するためのベストプラクティスを理解する場合に役立ちます。
 seo-description: この情報は、クラッシュの追跡方法と、誤ったクラッシュを処理するためのベストプラクティスを理解する場合に役立ちます。
 seo-title: アプリのクラッシュの追跡
-solution: Experience Cloud,Analytics
+solution: Marketing Cloud,Analytics
 title: アプリのクラッシュの追跡
-topic: 開発者と導入
+topic: Developer and implementation
 uuid: 3ab98c14-ccdf-4060-ad88-ec07c1c6bf07
-translation-type: ht
-source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
+translation-type: tm+mt
+source-git-commit: 161212216565d56e346abc664197fedbea83d6a0
+workflow-type: tm+mt
+source-wordcount: '487'
+ht-degree: 95%
 
 ---
 
@@ -28,7 +31,7 @@ source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 ![](assets/android-lifecycle.png)
 
-Android アクティビティのライフサイクルについて詳しくは、[アクティビティ](https://developer.android.com/guide/components/activities.html)を参照してください。
+For more information about the Android activity lifecycle, see [Activities](https://developer.android.com/guide/components/activities.html).
 
 *この Android のライフサイクルの図は、[Android Open Source Project](https://source.android.com/)によって作成および共有され、[Creative Commons 2.5 Attribution License](https://creativecommons.org/licenses/by/2.5/)の条項に従って使用されています。*
 
@@ -44,7 +47,7 @@ Android アクティビティのライフサイクルについて詳しくは、
 
 ## フラグメントの処理方法
 
-フラグメントには、アクティビティと同様のアプリケーションライフサイクルイベントがあります。ただし、フラグメントは、アクティビティにアタッチしないとアクティブにできません。
+フラグメントには、アクティビティと同様のアプリケーションライフサイクルイベントがあります。ただし、フラグメントをアクティブにするには、アクティビティに添付する必要があります。
 
 >[!IMPORTANT]
 >
