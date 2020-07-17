@@ -6,11 +6,11 @@ solution: Marketing Cloud,Analytics
 title: アプリのクラッシュの追跡
 topic: Developer and implementation
 uuid: 3ab98c14-ccdf-4060-ad88-ec07c1c6bf07
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 161212216565d56e346abc664197fedbea83d6a0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '487'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 95%
 
 ![](assets/android-lifecycle.png)
 
-For more information about the Android activity lifecycle, see [Activities](https://developer.android.com/guide/components/activities.html).
+Android アクティビティのライフサイクルについて詳しくは、「[アクティビティ](https://developer.android.com/guide/components/activities.html)」を参照してください。
 
 *この Android のライフサイクルの図は、[Android Open Source Project](https://source.android.com/)によって作成および共有され、[Creative Commons 2.5 Attribution License](https://creativecommons.org/licenses/by/2.5/)の条項に従って使用されています。*
 
