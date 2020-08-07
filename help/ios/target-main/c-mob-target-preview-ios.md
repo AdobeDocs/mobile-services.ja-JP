@@ -4,8 +4,11 @@ seo-description: Target プレビューを使用すれば、Target アクティ�
 seo-title: iOS の Target プレビュー
 title: iOS の Target プレビュー
 uuid: d92867a4-0569-4732-a928-28f9e2f8b21e
-translation-type: ht
-source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
+translation-type: tm+mt
+source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+workflow-type: tm+mt
+source-wordcount: '141'
+ht-degree: 87%
 
 ---
 
@@ -24,7 +27,7 @@ Target プレビューの設定と使用方法について詳しくは、[Target
 
 * **setPreviewRestartDeeplink**
 
-   プレビューモードでプレビューの選択項目が適用された場合にトリガーされる、アプリケーションのディープリンクを設定します。
+   プレビューモードでプレビューの選択が適用されたときにトリガーされるアプリのディープリンクを設定します。
 
    * このメソッドの構文を次に示します。
 
