@@ -1,30 +1,33 @@
 ---
-description: BlackBerry ライブラリが提供するクラスおよびメソッド。
-seo-description: BlackBerry ライブラリが提供するクラスおよびメソッド。
-seo-title: Adobe mobileクラスおよびメソッドリファレンス
-title: Adobe Mobile class and method reference
+description: BlackBerryライブラリが提供するクラスとメソッド。
+seo-description: BlackBerryライブラリが提供するクラスとメソッド。
+seo-title: AdobeMobileクラスおよびメソッドの参照
+title: AdobeMobileクラスおよびメソッドの参照
 uuid: 1e42d759-be43-4bb3-ac1a-c7d64133d61c
 translation-type: tm+mt
-source-git-commit: 68bc21f1c6dba2faeed332495592114af90c8f61
+source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+workflow-type: tm+mt
+source-wordcount: '988'
+ht-degree: 54%
 
 ---
 
 
-# Adobe Mobile class and method reference {#adobe-mobile-class-and-method-reference}
+# AdobeMobileクラスおよびメソッドの参照 {#adobe-mobile-class-and-method-reference}
 
-BlackBerry ライブラリが提供するクラスおよびメソッド。
+BlackBerryライブラリが提供するクラスとメソッド。
 
-The SDK currently has support for Adobe Analytics, and methods are in separate classes based on the solution.
+SDKは現在、Adobe Analyticsをサポートしており、メソッドはソリューションに基づいて別々のクラスにあります。
 
-## SDK settings {#section_C1EB977043C04D2B93E5A63DB72828B6}
+## SDK設定 {#section_C1EB977043C04D2B93E5A63DB72828B6}
 
 * **getPrivacyStatus**
 
    現在のユーザーのプライバシーステータスの enum 表現を返します。
 
-   * ADBMobilePrivacyStatusOptIn - ヒットが即座に送信されます。
-   * ADBMobilePrivacyStatusOptOut - ヒットは破棄されます。
-   * ADBMobilePrivacyStatusUnknown - レポートスイートでタイムスタンプが有効になっている場合、プライバシーステータスがオプトイン（ヒットが送信される）またはオプトアウト（ヒットが破棄される）に変更されるまで、ヒットは保存されます。レポートスイートのタイムスタンプが有効になっていない場合、プライバシーステータスがオプトインに変更されるまで、ヒットは破棄されます。
+   * ADBMobilePrivacyStatusOptIn — ヒットは即座に送信されます。
+   * ADBMobilePrivacyStatusOptOut — ヒットは破棄されます。
+   * ADBMobilePrivacyStatusUnknown — レポートスイートでタイムスタンプが有効な場合、プライバシーステータスがオプトイン（ヒットが送信される）またはオプトアウト（ヒットが破棄される）に変わるまで、ヒットは保存されます。 レポートスイートのタイムスタンプが有効になっていない場合、プライバシーステータスがオプトインに変更されるまで、ヒットは破棄されます。
 
       デフォルト値は `ADBMobileConfig.json` ファイルに設定します。
 
@@ -44,9 +47,9 @@ The SDK currently has support for Adobe Analytics, and methods are in separate c
 
    現在のユーザーのプライバシーステータスを `status` に設定します。次のいずれかの値に設定します。
 
-   * `ADBMobilePrivacyStatusOptIn` - hits are sent immediately.
-   * `ADBMobilePrivacyStatusOptOut`  — ヒットは破棄されます。
-   * `ADBMobilePrivacyStatusUnknown` - レポートスイートでタイムスタンプが有効になっている場合、プライバシーステータスがオプトイン（ヒットが送信される）またはオプトアウト（ヒットが破棄される）に変更されるまで、ヒットは保存されます。レポートスイートのタイムスタンプが有効になっていない場合、プライバシーステータスがオプトインに変更されるまで、ヒットは破棄されます。
+   * `ADBMobilePrivacyStatusOptIn`：ヒットは即座に送信されます。
+   * `ADBMobilePrivacyStatusOptOut`：ヒットは破棄されます。
+   * `ADBMobilePrivacyStatusUnknown`  — レポートスイートでタイムスタンプが有効になっている場合、プライバシーステータスがオプトイン（ヒットが送信される）またはオプトアウト（ヒットが破棄される）に変わるまで、ヒットは保存されます。 レポートスイートのタイムスタンプが有効になっていない場合、プライバシーステータスがオプトインに変更されるまで、ヒットは破棄されます。
 
    * このメソッドの構文を次に示します。
 
@@ -126,7 +129,7 @@ The SDK currently has support for Adobe Analytics, and methods are in separate c
 
 * **collectLifecycleData**
 
-   SDK のすべてのソリューションで使用するライフサイクルデータを収集するように SDK に指示します。詳しくは、[ライフサイクル指標](/help/blackberry/metrics.md)を参照してください。
+   SDK のすべてのソリューションで使用するライフサイクルデータを収集するように SDK に指示します。詳しくは、「[ライフサイクル指標](/help/blackberry/metrics.md)」を参照してください。
 
    * このメソッドの構文を次に示します。
 
@@ -143,17 +146,17 @@ The SDK currently has support for Adobe Analytics, and methods are in separate c
       }
       ```
 
-## Analytics methods {#section_91F4AD0A045D4E4E8F9A93450503E49E}
+## Analytics メソッド {#section_91F4AD0A045D4E4E8F9A93450503E49E}
 
 これらの各メソッドを使用して、Adobe Analytics レポートスイートにデータを送信します。
 
 * **trackState**
 
-   オプションのコンテキストデータでアプリ状態を追跡します。状態とは、アプリで使用可能なビューのことで、「home dashboard」、「app settings」、「cart」などがあります。これらの状態は Web サイト上のページによく似ており、`trackState` コールはページビュー数を増分します。
+   オプションのコンテキストデータを使用してアプリの状態を追跡します。状態は、「ホームダッシュボード」、「アプリ設定」、「カート」など、アプリで使用できる表示です。 これらの状態は Web サイト上のページによく似ており、`trackState` コールはページビュー数を増分します。
 
    >[!TIP]
    >
-   >This is the only tracking call that increments page views.
+   >これは、ページビュー数を増分する唯一のトラッキングコールです。
 
    * このメソッドの構文を次に示します。
 
@@ -169,7 +172,7 @@ The SDK currently has support for Adobe Analytics, and methods are in separate c
 
 * **trackAction**
 
-   アプリのアクションを追跡します。アクションとは、アプリ内で測定対象となる重要な操作のことで、「logons」、「banner taps」、「feed subscriptions」などの指標があります。
+   アプリのアクションを追跡します。アクションとは、「ログオン」、「バナーのタップ」、「フィード購読」など、測定対象のアプリで発生する操作です。
 
    * このメソッドの構文を次に示します。
 
@@ -185,7 +188,7 @@ The SDK currently has support for Adobe Analytics, and methods are in separate c
 
 * **trackLocation**
 
-   現在の XY 座標を送信します。イベントを、サブスクライバーから BPS に受信されるイベントに置き換えます。
+   現在の XY 座標を送信します。イベントを、サブスクライバからBPSに受信したイベントに置き換えます。
 
    * このメソッドの構文を次に示します。
 
@@ -199,15 +202,15 @@ The SDK currently has support for Adobe Analytics, and methods are in separate c
         ADBMobile::trackLocation(event, null);
       ```
 
-## `ADBMobileConfig.json` 設定ファイルの参照 {#section_5AD4EDF87E304980B4AC4A5657FDA8B9}
+## `ADBMobileConfig.json` 設定ファイルのリファレンス {#section_5AD4EDF87E304980B4AC4A5657FDA8B9}
 
 The `ADBMobileConfig.json` file must be placed in the *assets* folder.
 
 * **rsids**
 
-   （必須）Analytics データを受け取るための 1 つまたは複数のレポートスイート。レポートスイート ID を複数指定する場合は、スペースを入れずにレポートスイート ID をコンマで区切る必要があります。
+   （必須）Analyticsデータを受け取る1つ以上のレポートスイート。 レポートスイート ID を複数指定する場合は、スペースを入れずにレポートスイート ID をコンマで区切る必要があります。
 
-   Here are the code sample for this variable:
+   この変数のコード例を次に示します。
 
    ```js
    "rsids" : "rsid"
@@ -219,15 +222,15 @@ The `ADBMobileConfig.json` file must be placed in the *assets* folder.
 
 * **server**
 
-   (必須). Analytics サーバー。This variable should be populated with the server domain, without an `https://` or `https://` protocol prefix. プロトコルプレフィックスは、`ssl` 変数に基づいてライブラリで自動的に処理されます。`ssl` が `true` の場合、このサーバーとの安全な接続が確立されます。`ssl` が `false` の場合、このサーバーとの安全でない接続が確立されます。
+   (必須). Analyticsサーバー。 この変数は、`https://` または `https://` プロトコルプレフィックスを付けずに、サーバードメインを設定する必要があります。プロトコルのプレフィックスは、 `ssl` 変数に基づいてライブラリによって自動的に処理されます。 `ssl` が `true` の場合、このサーバーとの安全な接続が確立されます。`ssl` が `false` の場合、このサーバーとの安全でない接続が確立されます。
 
 * **charset**
 
-   Analytics に送信されるデータに使用する文字セットを定義します。この文字セットは、受信データを格納およびレポート用に UTF-8 に変換するために使用されます。
+   Analyticsに送信されるデータに使用する文字セットを定義します。 この文字セットは、受信データを格納およびレポート用に UTF-8 に変換するために使用されます。
 
 * **ssl**
 
-   Enables (`true`) or disables (`false`) sending measurement data via SSL (HTTPS). デフォルト値は `false` です。
+   SSL(HTTPS)を介して測定データを送信する設定を、有効(`true`)または無効(`false`)にします。 デフォルト値は `false` です。
 
 * **offlineEnabled**
 
@@ -235,34 +238,34 @@ The `ADBMobileConfig.json` file must be placed in the *assets* folder.
 
    >[!TIP]
    >
-   >If timestamps are enabled on your report suite, your `offlineEnabled` configuration property *must* be `true`. レポートスイートでタイムスタンプが有効になっていない場合、`offlineEnabled` 設定プロパティを&#x200B;*必ず* false に設定してください。このプロパティを適切に設定しなければ、データが失われます。レポートスイートのタイムスタンプが有効になっているかどうか判断できない場合は、 contact Enterprise Support.[](https://helpx.adobe.com/contact/enterprise-support.ec.html)
+   >If timestamps are enabled on your report suite, your `offlineEnabled` configuration property *must* be `true`. レポートスイートでタイムスタンプが有効になっていない場合、`offlineEnabled` 設定プロパティを&#x200B;*必ず* false に設定してください。このプロパティを適切に設定しなければ、データが失われます。レポートスイートのタイムスタンプが有効になっているかどうかが不明な場合は、 [エンタープライズサポート](https://helpx.adobe.com/jp/contact/enterprise-support.ec.html)にお問い合わせください。
 
-   現在、同じレポートスイートで JavaScript と AppMeasurement からデータを収集している場合は、モバイルデータのレポートスイートを個別に設定するか、`s.timestamp` 変数を使用するすべての JavaScript ヒットにカスタムタイムスタンプを含めます。
+   If you are currently reporting AppMeasurement data to a report suite that also collects data from JavaScript, you might need to set up a separate report suite for mobile data, or include a custom timestamp on all JavaScript hits using the `s.timestamp` variable.
 
    デフォルト値は `false` です。
 
 * **lifecycleTimeout**
 
-   アプリケーションの起動が新しいセッションであると見なされるまでの経過時間を秒数で指定します。このタイムアウトは、アプリケーションがバックグラウンドに移行し、再びアクティブになる場合にも適用されます。アプリケーションがバックグラウンドになっている時間はセッションの長さには含まれません。
+   アプリが起動してからその起動が新しいセッションと見なされるまでに経過する必要がある時間（秒単位）を指定します。 このタイムアウトは、アプリケーションがバックグラウンドに移行し、再びアクティブになる場合にも適用されます。アプリケーションがバックグラウンドになっている時間はセッションの長さには含まれません。
 
    デフォルト値は 300 秒です。
 
 * **batchLimit**
 
-   キューに格納されるオフラインヒットの最大数。デフォルト値は0（制限なし）です。
+   キューに格納されるオフラインヒットの最大数。 デフォルト値は0（制限なし）です。
 
 * **privacyDefault**
 
-   * `optedin`  — ヒットは直ちに送信されます。
-   * `optedout`  — ヒットは破棄されます。
-   * `optunknown` - レポートスイートでタイムスタンプが有効になっている場合、プライバシーステータスがオプトイン（ヒットが送信される）またはオプトアウト（ヒットが破棄される）に変更されるまで、ヒットは保存されます。
+   * `optedin`：ヒットは即座に送信されます。
+   * `optedout`：ヒットは破棄されます。
+   * `optunknown`  — レポートスイートでタイムスタンプが有効になっている場合、プライバシーステータスがオプトイン（ヒットが送信される）またはオプトアウト（ヒットが破棄される）に変わるまで、ヒットは保存されます。
 
       レポートスイートのタイムスタンプが有効になっていない場合、プライバシーステータスがオプトインに変更されるまで、ヒットは破棄されます。
-   この変数は初期値のみを設定します。 この値をコードで設定または変更した場合、値が変更されるか、アプリがアンインストールされて再インストールされるまで、新しい値が使用されます。
+   この変数は、初期値のみを設定します。 この値がコード内で設定または変更された場合、新しい値が変更されるまで使用されるか、アプリケーションがアンインストールおよび再インストールされます。
 
    デフォルト値は `optedin` です。
 
-`ADBMobileConfig.json` ファイルの例を次に示します。
+The following is an example of an `ADBMobileConfig.json` file:
 
 ```js
 { 
