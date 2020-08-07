@@ -2,12 +2,15 @@
 description: iOS ライブラリが提供する Adobe Target メソッドの一覧を以下に示します。
 seo-description: iOS ライブラリが提供する Adobe Target メソッドの一覧を以下に示します。
 seo-title: Adobe Mobile Services の iOS Target メソッド
-solution: Experience Cloud,Analytics
+solution: Marketing Cloud,Analytics
 title: iOS の Target メソッド
-topic: 開発者と導入
+topic: Developer and implementation
 uuid: 692bcda1-02ba-4902-bd65-15888adf1952
-translation-type: ht
-source-git-commit: 8dc075603544aaab7fdedb1ff10a12f7fa7e21f5
+translation-type: tm+mt
+source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+workflow-type: tm+mt
+source-wordcount: '656'
+ht-degree: 100%
 
 ---
 
@@ -323,4 +326,5 @@ ADBTargetLocationRequest *myRequest =
                     callback:^(NSString *content) { 
                         // do something with content 
                         heroImage.image = [UIImage imageNamed:content];
-     
+                    }];
+```
