@@ -1,28 +1,31 @@
 ---
-description: Universal Windows Platform ライブラリで提供されている Target メソッドのリストです。
-seo-description: Universal Windows Platform ライブラリで提供されている Target メソッドのリストです。
+description: ユニバーサルWindowsプラットフォームライブラリが提供するターゲットメソッドのリスト。
+seo-description: ユニバーサルWindowsプラットフォームライブラリが提供するターゲットメソッドのリスト。
 seo-title: Target メソッド
 solution: Marketing Cloud,Analytics
 title: Target メソッド
-topic: 開発者と導入
+topic: Developer and implementation
 uuid: 2ad5953b-7850-446a-8053-b3715b86329b
 translation-type: tm+mt
-source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+workflow-type: tm+mt
+source-wordcount: '265'
+ht-degree: 36%
 
 ---
 
 
 # Target メソッド {#target-methods}
 
-Universal Windows Platform ライブラリで提供されている Target メソッドのリストです。
+ユニバーサルWindowsプラットフォームライブラリが提供するターゲットメソッドのリスト。
 
-現在、SDK では、Analytics、Target、Audience Manager をはじめとする複数の Adobe Experience Cloud ソリューションがサポートさています。
+SDKは、現在、Analytics、ターゲット、Audience Managerを含む複数のAdobe Experience Cloudソリューションをサポートしています。
 
-[Lifecycle metrics](/help/universal-windows/metrics.md) are sent as parameters to each mbox load.
+[ライフサイクル指標](/help/universal-windows/metrics.md) は、各mboxが読み込まれるたびに、パラメーターとして送信されます。
 
 >[!TIP]
 >
->When you consume `winmd` methods from winJS (JavaScript), all methods automatically have their first letter lowercased.
+>winJS (JavaScript)から `winmd` メソッドを使用する場合、すべてのメソッドの先頭文字が自動的に小文字に変換されます。
 
 ## クラス参照：TargetLocationRequest
 
@@ -68,9 +71,9 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
 }
 ```
 
-* **LoadRequest (winJS: loadRequest)**
+* **LoadRequest (winJS:loadRequest)**
 
-   設定した Target サーバーに `request` を送信し、ブロック `callback` で生成されたオファーの文字列値を返します。
+   Sends `request` to your configured Target server and returns the string value of the offer generated in a block `callback`.
 
    * このメソッドの構文を次に示します。
 
@@ -89,7 +92,7 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
 
 * **CreateRequest (winJS:createRequest)**
 
-   指定されたパラメーターで `TargetLocationRequest` オブジェクトを作成します。
+   Creates a `TargetLocationRequest` object with the given parameters.
 
    * このメソッドの構文を次に示します。
 
@@ -104,9 +107,9 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
       var heroBannerRequest = ADB.Target.createRequest("heroBanner","default.png", null); 
       ```
 
-* **CreateOrder&#x200B;ConfirmRequest (winJS: createOrder&#x200B;ConfirmRequest)**
+* **CreateOrder &#x200B; ConfirmRequest (winJS:createOrder &#x200B; ConfirmRequest)**
 
-   指定されたパラメーターで `TargetLocationRequest` オブジェクトを作成します。
+   Creates a `TargetLocationRequest` object with the given parameters.
 
    * このメソッドの構文を次に示します。
 
@@ -123,7 +126,7 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
 
 * **ClearCookies(winJS:clearCookies)**
 
-   現在のデバイス上にあるアプリケーションの Target Cookie をクリアします。
+   現在のデバイスのターゲットのCookieをクリアします。
 
    * このメソッドの構文を次に示します。
 
@@ -139,7 +142,7 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
 
 * **GetPcId (winJS:getPcId)**
 
-   現在のデバイスの PC ID Cookie を返します。
+   現在のデバイスのPC ID cookieを返します。
 
    * このメソッドの構文を次に示します。
 
@@ -155,7 +158,7 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
 
 * **GetSessionId (winJS:getSessionId)**
 
-   現在のデバイスのセッション ID Cookie を返します。
+   現在のデバイスのセッションID cookieを返します。
 
    * このメソッドの構文を次に示します。
 
@@ -168,4 +171,3 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
       ```js
        autosessionId=ADBMobile.Target.getSessionId(); 
       ```
-
