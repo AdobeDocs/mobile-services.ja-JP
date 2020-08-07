@@ -1,32 +1,35 @@
 ---
-description: Universal Windows Platform ライブラリで提供されている Audience Manager メソッドのリストです。
-seo-description: Universal Windows Platform ライブラリで提供されている Audience Manager メソッドのリストです。
-seo-title: Audience Manager methods
+description: ユニバーサルWindowsプラットフォームライブラリが提供するAudience Managerメソッドのリスト。
+seo-description: ユニバーサルWindowsプラットフォームライブラリが提供するAudience Managerメソッドのリスト。
+seo-title: Audience Manager メソッド
 solution: Marketing Cloud,Analytics
-title: Audience Manager methods
-topic: 開発者と導入
+title: Audience Manager メソッド
+topic: Developer and implementation
 uuid: efbe8f33-7f53-40a6-b7aa-a36ac718c047
 translation-type: tm+mt
-source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+workflow-type: tm+mt
+source-wordcount: '276'
+ht-degree: 43%
 
 ---
 
 
-# Audience Manager methods{#audience-manager-methods}
+# Audience Manager メソッド{#audience-manager-methods}
 
-Universal Windows Platform ライブラリで提供されている Audience Manager メソッドのリストです。
+ユニバーサルWindowsプラットフォームライブラリが提供するAudience Managerメソッドのリスト。
 
-現在、SDK では、Analytics、Target、Audience Manager をはじめとする複数の Adobe Experience Cloud ソリューションがサポートさています。メソッドには、ソリューションに応じたプレフィックスが付きます。Audience Manager methods are prefixed with `AudienceManager`.
+SDKは、現在、Analytics、ターゲット、Audience Managerを含む複数のAdobe Experience Cloudソリューションをサポートしています。 Methods are prefixed according to the solution. Audience Manager methods are prefixed with `AudienceManager`.
 
 >[!TIP]
 >
->When you consume `winmd` methods from winJS (JavaScript), all methods automatically have their first letter lowercased.
+>winJS (JavaScript)から `winmd` メソッドを使用する場合、すべてのメソッドの先頭文字が自動的に小文字に変換されます。
 
-If audience manager is configured in your JSON file, a signal that contains lifecycle metrics is sent in with your lifecycle hit.
+オーディエンスマネージャーがJSONファイル内に設定されている場合は、ライフサイクルヒットと共に、ライフサイクル指標を含むシグナルが送信されます。
 
-* **GetVisitorProfile (winJS: getVisitorProfile)**
+* **GetVisitorProfile (winJS:getVisitorProfile)**
 
-   取得された最も直近の訪問者プロファイルを返します。まだシグナルが送信されていない場合は `null` を返します。訪問者プロファイルは、次回以降のアプリ起動時も簡単にアクセスできるように、`SharedPreferences` に保存されます。
+   取得された最も直近の訪問者プロファイルを返します。Returns `null` if no signal has been submitted yet. Visitor profile is saved in `SharedPreferences` for easy access across multiple launches of your app.
 
    * このメソッドの構文を次に示します。
 
@@ -58,7 +61,7 @@ If audience manager is configured in your JSON file, a signal that contains life
       var dpid = ADB.AudienceManager.getDpid(); 
       ```
 
-* **GetDpuuid (winJS: getDpuuid)**
+* **GetDpuuid (winJS:getDpuuid)**
 
    現在の DPUUID を返します。
 
@@ -75,9 +78,9 @@ If audience manager is configured in your JSON file, a signal that contains life
       var dpuuid = ADB.AudienceManager.getDpuuid();
       ```
 
-* **SetDpidAndDpuuid (winJS: setDpidAndDpuuid)**
+* **SetDpidAndDpuuid (winJS:setDpidAndDpuuid)**
 
-   DPID および DPUUID を設定します。DPID および DPUUID が設定されている場合、各シグナルと共に送信されます。
+   DPID および DPUUID を設定します。DPID と DPUUID が設定されている場合は、各シグナルと共に送信されます。
 
    * このメソッドの構文を次に示します。
 
@@ -92,9 +95,9 @@ If audience manager is configured in your JSON file, a signal that contains life
       ADB.AudienceManager.setDpidAndDpuuid("newDpid", "newDpuuid");
       ```
 
-* **SignalWithData (winJS: signalWithData)**
+* **SignalWithData (winJS:signalWithData)**
 
-   Audience Management に特性を持つシグナルを送信し、ブロックコールバックで返された一致するセグメントを取得します。
+   オーディエンス管理に特性を持つシグナルを送信し、ブロックコールバックで返された一致するセグメントを取得します。
 
    * このメソッドの構文を次に示します。
 
@@ -111,5 +114,5 @@ If audience manager is configured in your JSON file, a signal that contains life
       traits["trait"] = "b";
       ADB.AudienceManager.signalWithData(traits).then(function (visitorProfile) { 
         // segments come back here in "visitorProfile", normally found in the "segs" object of your json 
-      }); 
-      
+      });
+      ```
