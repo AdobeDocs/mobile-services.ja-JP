@@ -1,14 +1,17 @@
 ---
 description: 新しいアプリの作成および主要指標の設定をおこなったり、Adobe Analytics および Adobe Audience Manager の SDK オプションを設定したり、獲得および ID サービスオプションを設定したり、設定ファイル、SDK、開発者およびテスター向けツールをダウンローするための情報です。
-keywords: モバイル
+keywords: mobile
 seo-description: 新しいアプリの作成および主要指標の設定をおこなったり、Adobe Analytics および Adobe Audience Manager の SDK オプションを設定したり、獲得および ID サービスオプションを設定したり、設定ファイル、SDK、開発者およびテスター向けツールをダウンローするための情報です。
 seo-title: 新しいアプリの追加
-solution: Experience Cloud,Analytics
+solution: Marketing Cloud,Analytics
 title: 新しいアプリの追加
-topic: 指標
+topic: Metrics
 uuid: 706b5e4d-1318-4a9e-8c69-ffabf51fa02c
-translation-type: ht
-source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+translation-type: tm+mt
+source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+workflow-type: tm+mt
+source-wordcount: '710'
+ht-degree: 95%
 
 ---
 
@@ -69,9 +72,9 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
    * **[!UICONTROL タイプ]**
 
-      ドロップダウンリストからタイプを選択します。左側のナビゲーションメニューに表示される使用可能なレポートは、選択したアプリのタイプによって異なります。
+      ドロップダウンリストからタイプを選択します。 左側のナビゲーションメニューに表示される使用可能なレポートは、選択したアプリのタイプによって異なります。
 
-      次に、利用可能なタイプを示します。
+      使用できるタイプは次のとおりです。
 
       * **[!UICONTROL 標準]**
 
