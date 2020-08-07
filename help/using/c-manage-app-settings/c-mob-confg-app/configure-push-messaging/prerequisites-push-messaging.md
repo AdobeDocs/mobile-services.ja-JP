@@ -7,11 +7,11 @@ solution: Marketing Cloud,Analytics
 title: プッシュメッセージを有効にするための前提条件
 topic: Metrics
 uuid: 194e6e07-b794-4152-a838-a4125c3292d4
-translation-type: ht
-source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+workflow-type: tm+mt
 source-wordcount: '646'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -73,7 +73,9 @@ Adobe Analytics を使用する会社では、Experience Cloud を有効にす�
 
 アプリに対して ID サービスを有効にする前は、**[!UICONTROL プッシュサービス]** セクションが無効になっています。ただし、ID サービスを有効にした後は、「プッシュサービス」セクションが有効になります。プッシュサービスの有効化について詳しくは、「[SDK ID サービスオプションの設定](/help/using/c-manage-app-settings/c-mob-confg-app/t-config-visitor.md)」を参照してください。
 
->[!IMPORTANT]**[!UICONTROL 保存]** をクリックして変更を保存し、プッシュサービスを更新する必要があります。
+>[!IMPORTANT]
+>
+>You must click **[!UICONTROL Save]** to save your changes and refresh the Push Services.
 >
 >各レポートスイートでは、Apple 用に 1 つのアプリ、Google 用に 1 つのアプリを設定できます。追加のアプリが必要な場合（例えば、実稼動環境用と開発環境用にアプリが必要な場合）、各環境用に新しいアプリストアアプリと新しいレポートスイートを設定する必要があります。
 
