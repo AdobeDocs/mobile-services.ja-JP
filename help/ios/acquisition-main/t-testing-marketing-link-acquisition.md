@@ -1,14 +1,17 @@
 ---
 description: デバイスのフィンガープリントに基づくマーケティングリンクを使用した獲得キャンペーンのラウンドトリップに役立つ情報です。
-keywords: Android, ライブラリ, モバイル, SDK
+keywords: android;library;mobile;sdk
 seo-description: デバイスのフィンガープリントに基づくマーケティングリンクを使用した獲得キャンペーンのラウンドトリップに役立つ情報です。
 seo-title: マーケティングリンクによる獲得のテスト
-solution: Experience Cloud,Analytics
+solution: Marketing Cloud,Analytics
 title: マーケティングリンクによる獲得のテスト
-topic: 開発者と導入
+topic: Developer and implementation
 uuid: 69503e01-182d-44c6-b0fb-e1c012ffa3bd
-translation-type: ht
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+translation-type: tm+mt
+source-git-commit: c64e2fa7cee3cd35c4574e5007406b7604c99499
+workflow-type: tm+mt
+source-wordcount: '562'
+ht-degree: 94%
 
 ---
 
@@ -33,7 +36,8 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
    JSON 応答の contextData は次のようになります。
 
-   ```js{"fingerprint":"bae91bb778f0ad52e37f0892961d06ac6a5c935b","endCallbacks":["***"],"timestamp":1464301217,"appguid":"da120731d6c09658b82d8fac78da1d5fc2d09c48e21b3a55f9e2d7344e08425d","contextData":
+   ```js
+   {"fingerprint":"bae91bb778f0ad52e37f0892961d06ac6a5c935b","endCallbacks":["***"],"timestamp":1464301217,"appguid":"da120731d6c09658b82d8fac78da1d5fc2d09c48e21b3a55f9e2d7344e08425d","contextData":
    {"a.launch.campaign.trackingcode":"twdf4546","a.referrer.campaign.name":"iOS Demo","a.referrer.campaign.trackingcode":"twdf4546"}
    ,"adobeData":{"unique_id":"8c14098d7c79e8a180c15e4b2403549d3cc21ea8","deeplinkid":"57477650072932ec6d3a470f"}}
    ```
@@ -42,7 +46,7 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
    | 設定 | 値 |
    |--- |--- |
-   | acquisition | サーバーは `c00.adobe.com` である必要があります。また、`appid` がダウンロード計測用リンクの *`appid`* と同じである必要があります。 |
+   | acquisition | サーバー `c00.adobe.com` である必要があります。`appid` がダウンロード計測用リンクの *`appid`* と同じである必要があります。 |
    | analytics | `referrerTimeout` は 0 より大きい値です。 |
 
 1. （条件付き）アプリの設定ファイル内の SSL 設定が `false` の場合、HTTPS の代わりに HTTP プロトコルを使用するようにダウンロード計測用リンクを更新します。
@@ -81,7 +85,7 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
    * `Analytics - Acquisition referrer timed out`
 
-      `referrerTimeout` で定義されている時間内に応答を取得できませんでした。値を増やしてもう一度試してください。ダウンロード計測用リンクを開いてからアプリをインストールすることと、URL のクリック時とアプリの起動時に同じネットワークを使用することも必要です。
+      `referrerTimeout` で定義されている時間内に応答を取得できませんでした。値を増やしてもう一度試してください。また、アプリをインストールする前にダウンロード計測用リンクを開いておき、URLをクリックしてアプリを開いたときにも、同じネットワークを使用していることを確認してください。
 
 次の情報に留意してください。
 
