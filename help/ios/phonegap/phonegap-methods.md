@@ -3,12 +3,15 @@ description: iOS PhoneGap プラグインメソッドを使用して、様々な
 keywords: phonegap
 seo-description: iOS PhoneGap プラグインメソッドを使用して、様々なタスクを完了できます。
 seo-title: PhoneGap プラグインのメソッド
-solution: Experience Cloud,Analytics
+solution: Marketing Cloud,Analytics
 title: PhoneGap プラグインのメソッド
-topic: 開発者と導入
+topic: Developer and implementation
 uuid: bd830fe5-804a-4d0a-bbb6-99a6d8da6a03
-translation-type: ht
-source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
+translation-type: tm+mt
+source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+workflow-type: tm+mt
+source-wordcount: '1730'
+ht-degree: 96%
 
 ---
 
@@ -87,7 +90,7 @@ iOS PhoneGap プラグインメソッドを使用して、様々なタスクを�
 
 * **trackingIdentifier**
 
-   自動的に生成された訪問者識別子を返します。これはアプリ固有の一意の訪問者 ID で、アプリが初回起動されると生成され、保存されて、その時点から使用されます。この ID はアプリをアップグレードしても保存され、アプリがアンインストールされると削除されます。
+   自動的に生成された訪問者識別子を返します。これは、アプリが最初に起動されたときに生成され、その時点から保存されて使用される、アプリ固有の一意の訪問者IDです。 このIDは、アプリがアップグレードされても保持され、アプリがアンインストールされると削除されます。
 
    >[!TIP]
    >
@@ -322,7 +325,7 @@ iOS PhoneGap プラグインメソッドを使用して、様々なタスクを�
 
 * **trackActionFromBackground**
 
-   バックグラウンドで発生したアクションを追跡します。これにより、特定の状況でライフサイクルイベントが発生するのを抑えます。
+   バックグラウンドで発生したアクションを追跡します。 これにより、特定のシナリオでライフサイクルイベントが発生するのを抑えます。
 
    * このメソッドの構文を次に示します。
 
