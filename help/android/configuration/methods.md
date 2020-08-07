@@ -7,8 +7,11 @@ solution: Marketing Cloud,Analytics
 title: 設定メソッド
 topic: Developer and implementation
 uuid: 663aeb6c-1b97-4a3a-8c0e-dd4c2ec28c01
-translation-type: ht
-source-git-commit: dae60a21286edc28c84b7638da214b824abf0cd3
+translation-type: tm+mt
+source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+workflow-type: tm+mt
+source-wordcount: '985'
+ht-degree: 100%
 
 ---
 
@@ -247,8 +250,8 @@ source-git-commit: dae60a21286edc28c84b7638da214b824abf0cd3
         super.onResume()
         // assume being called in an Activity class Config.collectLifecycleData(this);
         } 
-        ```
-      
+      ```
+
 * **pauseCollecting&#x200B;LifecycleData**
 
    * ライフサイクル指標が正しく計算されるように、アプリが一時停止されたことを SDK に通知します。例えば、`onPause` は、タイムスタンプを収集して、以前のセッションの長さを決定します。また、これは、アプリがクラッシュしなかったことをライフサイクルが把握できるようにフラグを設定します。詳しくは、「[ライフサイクル指標](/help/android/metrics.md)」を参照してください。
