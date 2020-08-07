@@ -6,9 +6,9 @@ solution: Marketing Cloud,Analytics
 title: ADBMobile JSON 設定
 topic: Developer and implementation
 uuid: 1decf605-7bc3-4e73-ad52-1ecd5821599e
-translation-type: ht
-source-git-commit: 86ba045b44bf6553e80727c0d61ccdd9a552d16c
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+workflow-type: tm+mt
 source-wordcount: '1678'
 ht-degree: 100%
 
@@ -155,7 +155,7 @@ JSON ファイル内の変数と各変数に必要な最小限の SDK バージ�
       バージョン 4.2 以降、POI は Adobe Mobile インターフェイスで定義され、アプリ設定ファイルに動的に同期されます。この同期をおこなうには、`analytics.poi` 設定が必要です。
 
       ```javascript
-      “analytics.poi“: `https://assets.adobedtm.com/`
+        “analytics.poi“: `https://assets.adobedtm.com/`
       …/yourfile.json”`,
       ```
 
