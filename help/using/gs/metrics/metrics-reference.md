@@ -1,14 +1,17 @@
 ---
 description: ここでは、デフォルトのモバイル指標およびディメンションに関する参照情報を示します。
-keywords: モバイル
+keywords: mobile
 seo-description: ここでは、デフォルトのモバイル指標およびディメンションに関する参照情報を示します。
 seo-title: モバイル指標およびディメンションのリファレンス
-solution: Experience Cloud,Analytics
+solution: Marketing Cloud,Analytics
 title: モバイル指標およびディメンションのリファレンス
-topic: 指標
+topic: Metrics
 uuid: 96170ae7-8553-4f3e-ae01-65e5b664adf4
-translation-type: ht
-source-git-commit: 056bb3edb94c2ceb2961bbe8e4851c20429e1ea2
+translation-type: tm+mt
+source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+workflow-type: tm+mt
+source-wordcount: '637'
+ht-degree: 94%
 
 ---
 
@@ -38,6 +41,7 @@ source-git-commit: 056bb3edb94c2ceb2961bbe8e4851c20429e1ea2
    特定の日にアプリケーションが使用された場合にトリガーされます。
 
    >[!TIP]
+   >
    >日別関与ユーザー数イベントは、Analytics 指標に自動的には保存されません。この指標を取得するためのカスタムイベントを設定する処理ルールを作成する必要があります。
 
 * **月別関与ユーザー数**
@@ -56,7 +60,7 @@ source-git-commit: 056bb3edb94c2ceb2961bbe8e4851c20429e1ea2
 
 * **クラッシュ**
 
-   アプリケーションが正常に終了しなかった場合にトリガーされます。このイベントは、クラッシュ後のアプリケーションの起動時に送信されます。
+   アプリケーションが正しく終了しなかった場合にトリガーされます。 このイベントは、クラッシュ後にアプリケーションが開始した場合に送信されます。
 
    >[!TIP]
    >quit が正常に呼び出されなかった場合にアプリがクラッシュしたと見なされます
@@ -71,7 +75,7 @@ source-git-commit: 056bb3edb94c2ceb2961bbe8e4851c20429e1ea2
 
 * **インストール日**
 
-   インストール後の初回起動日。日付は、*MM/DD/YYYY* の形式です。
+   インストール後の最初の起動日。 日付は、 *MM/DD/YYYY* 形式です。
 
 * **アプリ ID**
 
