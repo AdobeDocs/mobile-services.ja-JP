@@ -1,14 +1,17 @@
 ---
 description: iOS PhoneGap プラグインメソッドを使用して、様々なタスクを完了できます。
-keywords: Android, ライブラリ, モバイル, SDK
+keywords: android;library;mobile;sdk
 seo-description: iOS PhoneGap プラグインメソッドを使用して、様々なタスクを完了できます。
 seo-title: PhoneGap プラグインのメソッド
-solution: Experience Cloud,Analytics
+solution: Marketing Cloud,Analytics
 title: PhoneGap プラグインのメソッド
-topic: 開発者と導入
+topic: Developer and implementation
 uuid: bc3db9ce-81b7-45ec-88aa-6020c1db5d9c
-translation-type: ht
-source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
+translation-type: tm+mt
+source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+workflow-type: tm+mt
+source-wordcount: '1569'
+ht-degree: 97%
 
 ---
 
@@ -93,7 +96,7 @@ Android PhoneGap プラグインのメソッドを使用して、様々な作業
 
    自動的に生成された訪問者識別子を返します。
 
-   これは、アプリの初回起動時に生成され、それ以降、保存および使用されるアプリ固有の一意の訪問者 ID です。この ID は、アプリをアップグレードしても保持され、アプリをアンインストールすると削除されます。
+   これは、アプリが最初に起動されたときに生成され、その時点から保存および使用される、アプリ固有の一意の訪問者IDです。 このIDは、アプリのアップグレード時に保持され、アプリをアンインストールする際に削除されます。
 
    >[!TIP]
    >
