@@ -7,12 +7,15 @@ solution: Marketing Cloud,Developer
 title: ADBMobile.csメソッド
 uuid: af504934-febd-45d9-81e2-2a310f4c65dc
 translation-type: tm+mt
-source-git-commit: 0d50c7e6674de33b8190e74c113ae010ff226e97
+source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+workflow-type: tm+mt
+source-wordcount: '1324'
+ht-degree: 65%
 
 ---
 
 
-# ADBMobile.cs methods {#adbmobile-cs-methods}
+# ADBMobile.csメソッド {#adbmobile-cs-methods}
 
 ## 設定メソッド
 
@@ -32,9 +35,9 @@ source-git-commit: 0d50c7e6674de33b8190e74c113ae010ff226e97
       ADBMobile.CollectLifecycleData();
       ```
 
-* **EnableLocalNotifications（iOS のみ）**
+* **EnableLocalNotifications（iOSのみ）**
 
-   アプリのローカル通知を有効にします。
+   アプリでローカル通知を有効にします。
 
    * このメソッドの構文を次に示します。
 
@@ -85,9 +88,9 @@ source-git-commit: 0d50c7e6674de33b8190e74c113ae010ff226e97
    現在のユーザーのプライバシーステータスの enum 表現を返します。
    * `MOBILE_PRIVACY_STATUS_OPT_IN`：ヒットは即座に送信されます。
    * `MOBILE_PRIVACY_STATUS_OPT_OUT`：ヒットが破棄されます。
-   * `MOBILE_PRIVACY_STATUS_UNKNOWN`：オフライン追跡が有効な場合、プライバシーステータスがオプトイン（ヒットが送信される）またはオプトアウト（ヒットが破棄される）に変更されるまで、ヒットは保存されます。
+   * `MOBILE_PRIVACY_STATUS_UNKNOWN`:オフライン追跡が有効な場合、プライバシーステータスがオプトイン（ヒットが送信される）またはオプトアウト（ヒットが破棄される）に変わるまで、ヒットは保存されます。
 
-      オフライン追跡が有効になっていない場合、プライバシーステータスがオプトインに変更されるまで、ヒットは破棄されます。デフォルト値は [ADBMobileConfig.json](/help/ios/configuration/json-config/json-config.md) ファイルに設定します。
+      オフライン追跡が有効になっていない場合、プライバシーステータスがオプトインに変更されるまで、ヒットは破棄されます。The default value is set in the [ADBMobileConfig.json](/help/ios/configuration/json-config/json-config.md) file.
 
    * このメソッドの構文を次に示します。
 
@@ -103,7 +106,7 @@ source-git-commit: 0d50c7e6674de33b8190e74c113ae010ff226e97
 
 * **GetUserIdentifier**
 
-   カスタム識別子が設定されている場合、カスタムユーザー識別子を返します。カスタム識別子が設定されていない場合、null を返します。デフォルト値は `null` です。
+   カスタム識別子が設定されている場合、カスタムユーザ識別子を返します。 カスタム識別子が設定されていない場合はnullを返します。 デフォルト値は `null` です。
 
    * このメソッドの構文を次に示します。
 
@@ -133,13 +136,13 @@ source-git-commit: 0d50c7e6674de33b8190e74c113ae010ff226e97
       var version = ADBMobile.GetVersion();
       ```
 
-* **KeepLifecycleSessionAlive（iOS のみ）**
+* **KeepLifecycleSessionAlive（iOSのみ）**
 
    設定ファイル内のライフサイクルセッションのタイムアウト値にかかわらず、バックグラウンドから次に戻ったときに新しいセッションを開始しないように SDK に指示します。
 
    >[!TIP]
    >
-   >このメソッドは、バックグラウンドにある間に通知を登録するアプリで使用されることを目的としており、アプリがバックグラウンドにある間に実行されるコードからのみ呼び出す必要があります。
+   >このメソッドは、バックグラウンドにある間に通知を登録するアプリで使用されることを目的としており、アプリがバックグラウンドにある間に実行されるコードからのみ呼び出される必要があります。
 
    * このメソッドの構文を次に示します。
 
@@ -153,9 +156,9 @@ source-git-commit: 0d50c7e6674de33b8190e74c113ae010ff226e97
       ADBMobile.KeepLifecycleSessionAlive();
       ```
 
-* **PauseCollectingLifecycleData（Android のみ）**
+* **PauseCollectingLifecycleData（Androidのみ）**
 
-   ライフサイクル指標が正しく計算されるように、アプリが一時停止されたことを SDK に通知します。例えば、一時停止中にタイムスタンプを収集して、セッションの長さの計測を一時停止します。また、クラッシュ回数を正しく計測するためのフラグを設定します。詳しくは、「[ライフサイクル指標](/help/android/metrics.md)」を参照してください。
+   ライフサイクル指標が正しく計算されるように、アプリが一時停止されたことを SDK に通知します。例えば、一時停止中にタイムスタンプを収集して、以前のセッションの長さを判断します。 また、これは、アプリがクラッシュしなかったことをライフサイクルが正しく認識できるようにフラグを設定します。 詳しくは、「[ライフサイクル指標](/help/android/metrics.md)」を参照してください。
 
    * このメソッドの構文を次に示します。
 
@@ -169,9 +172,9 @@ source-git-commit: 0d50c7e6674de33b8190e74c113ae010ff226e97
       ADBMobile.PauseCollectingLifecycleData();
       ```
 
-* **SetContext（Android のみ）**
+* **SetContext（Androidのみ）**
 
-   UnityPlayerの現在のアクティビティからアプリケーションコンテキストを設定する必要があるSDKを示します。
+   Unity Playerの現在のアクティビティからアプリケーションコンテキストを設定する必要があるSDKを示します。
 
    * このメソッドの構文を次に示します。
 
@@ -203,11 +206,11 @@ source-git-commit: 0d50c7e6674de33b8190e74c113ae010ff226e97
 
 * **SetPrivacyStatus**
 
-   現在のユーザーのプライバシーステータスをステータスに設定します。次のいずれかの値に設定します。
+   現在のユーザーのプライバシーステータスをステータスに設定します。 次のいずれかの値に設定します。
 
    * `MOBILE_PRIVACY_STATUS_OPT_IN`：ヒットは即座に送信されます。
    * `MOBILE_PRIVACY_STATUS_OPT_OUT`：ヒットが破棄されます。
-   * `MOBILE_PRIVACY_STATUS_UNKNOWN`：オフライン追跡が有効な場合、プライバシーステータスがオプトイン（ヒットが送信される）またはオプトアウト（ヒットが破棄される）に変更されるまで、ヒットは保存されます。オフライン追跡が有効になっていない場合、プライバシーステータスがオプトインに変更されるまで、ヒットは破棄されます。
+   * `MOBILE_PRIVACY_STATUS_UNKNOWN`:オフライン追跡が有効な場合、プライバシーステータスがオプトイン（ヒットが送信される）またはオプトアウト（ヒットが破棄される）に変わるまで、ヒットは保存されます。 オフライン追跡が有効になっていない場合、プライバシーステータスがオプトインに変更されるまで、ヒットは破棄されます。
 
    * このメソッドの構文を次に示します。
 
@@ -223,7 +226,7 @@ source-git-commit: 0d50c7e6674de33b8190e74c113ae010ff226e97
 
 * **SetUserIdentifier**
 
-   ユーザー識別子を userId に設定します。
+   ユーザー識別子をuserIdに設定します。
 
    * このメソッドの構文を次に示します。
 
@@ -257,9 +260,9 @@ source-git-commit: 0d50c7e6674de33b8190e74c113ae010ff226e97
 
 * **TrackState**
 
-   オプションのコンテキストデータを使用してアプリの状態を追跡します。状態は、「title screen」、「level 1」、「pause」など、アプリで利用できる表示です。これらの状態は Web サイト上のページによく似ており、`TrackState` コールはページビュー数を増分します。
+   オプションのコンテキストデータを使用してアプリの状態を追跡します。状態とは、「title screen」、「level 1」、「pause」など、アプリで使用できる表示です。 これらの状態は Web サイト上のページによく似ており、`TrackState` コールはページビュー数を増分します。
 
-   If state is empty, it displays as *`app name app version (build)`* in reports. レポートにこの値がある場合、各 `TrackState` 呼び出しで state を設定していることを確認してください。
+   状態が空の場合は、レポート *`app name app version (build)`* に表示されます。 If you see this value in reports, make sure you are setting state in each `TrackState` call.
 
    >[!TIP]
    >
@@ -281,7 +284,7 @@ source-git-commit: 0d50c7e6674de33b8190e74c113ae010ff226e97
 
 * **TrackAction**
 
-   アプリのアクションを追跡します。アクションとは、アプリ内で計測に価する重要な操作のことで、「deaths」、「level gained」、「feed subscriptions」などの指標があります。
+   アプリのアクションを追跡します。アクションとは、アプリ内で測定したい、「deaths」、「level gained」、「feed購読」などの指標です。
 
    >[!TIP]
    >
@@ -299,9 +302,9 @@ source-git-commit: 0d50c7e6674de33b8190e74c113ae010ff226e97
       ADBMobile.TrackAction("level gained", null);
       ```
 
-* **TrackActionFromBackground（iOS のみ）**
+* **TrackActionFromBackground（iOSのみ）**
 
-   バックグラウンドで発生したアクションを追跡します。これにより、特定の状況でライフサイクルイベントが発生するのを抑えます。
+   バックグラウンドで発生したアクションを追跡します。 これにより、特定のシナリオでライフサイクルイベントが発生するのを抑えます。
 
    >[!TIP]
    >
@@ -321,7 +324,7 @@ source-git-commit: 0d50c7e6674de33b8190e74c113ae010ff226e97
 
 * **TrackLocation**
 
-   現在地点の緯度と経度の座標を送信します。また、現在位置が `ADBMobileConfig.json` ファイルで定義された目標地点内にあるかどうかを判定します。現在の座標が定義した目標地点内にある場合、コンテキストデータ変数に代入され、TrackLocation 呼び出しで送信されます。
+   現在地点の緯度と経度の座標を送信します。また、現在位置が `ADBMobileConfig.json` ファイルで定義された目標地点内にあるかどうかを判定します。現在の座標が定義したPOI内にある場合、コンテキストデータ変数に値が設定され、TrackLocation呼び出しで送信されます。
 
    * このメソッドの構文を次に示します。
 
@@ -363,7 +366,7 @@ source-git-commit: 0d50c7e6674de33b8190e74c113ae010ff226e97
 
 * **TrackLifetimeValueIncrease**
 
-   ユーザーのライフタイム値に値を加算します。
+   ユーザーのライフタイム値に金額を加算します。
 
    * このメソッドの構文を次に示します。
 
@@ -399,7 +402,7 @@ source-git-commit: 0d50c7e6674de33b8190e74c113ae010ff226e97
 
 * **TrackTimedActionUpdate**
 
-   特定のアクションに関連付けられたコンテキストデータを指定データで更新します。渡されたデータは、特定のアクションの既存のデータに追加され、同じキーが既にアクションに定義されている場合は、データを上書きします。
+   データを渡して、特定のアクションに関連付けられたコンテキストデータを更新します。 渡されたデータは、特定のアクションの既存のデータに追加され、同じキーが既にアクションに定義されている場合は、データを上書きします。
 
    >[!TIP]
    >
@@ -499,7 +502,7 @@ source-git-commit: 0d50c7e6674de33b8190e74c113ae010ff226e97
       var queueSize = ADBMobile.TrackingGetQueueSize();
       ```
 
-## Experience Cloud IDの方法
+## Experience CloudIDメソッド
 
 * **GetMarketingCloudID**
 
@@ -519,7 +522,7 @@ source-git-commit: 0d50c7e6674de33b8190e74c113ae010ff226e97
 
 * **VisitorSyncIdentifiers**
 
-   Experience Cloud ID を使用すると、追加の顧客 ID を設定して、各訪問者に関連付けることができます。独自の識別子を使えば、同じ訪問者に対して複数の顧客 ID をセットすることも可能です。このメソッドは、JavaScript ライブラリの setCustomerIDs に相当します。
+   Experience CloudIDを使用して、各訪問者に関連付ける追加の顧客IDを設定できます。 訪問者APIは、同じ訪問者に対して複数の顧客IDと、異なる顧客IDの範囲を区切るための顧客タイプ識別子を受け取ります。 このメソッドは、JavaScript ライブラリの setCustomerIDs に相当します。
 
    * このメソッドの構文を次に示します。
 
@@ -539,7 +542,7 @@ source-git-commit: 0d50c7e6674de33b8190e74c113ae010ff226e97
 
 * **ProcessGooglePlayInstallReferrerUrl***（Androidのみ）*
 
-   Google Play Install Referrer APIの呼び出しから返されたリファラーURLをこのメソッドに渡します。
+   Google Play Install転送者APIへの呼び出しから返された転送者URLをこのメソッドに渡します。
 
    * このメソッドの構文を次に示します。
 
