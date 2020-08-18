@@ -7,11 +7,11 @@ solution: Marketing Cloud,Analytics
 title: プッシュメッセージを有効にするための前提条件
 topic: Metrics
 uuid: 194e6e07-b794-4152-a838-a4125c3292d4
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '646'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -75,7 +75,7 @@ Adobe Analytics を使用する会社では、Experience Cloud を有効にす�
 
 >[!IMPORTANT]
 >
->You must click **[!UICONTROL Save]** to save your changes and refresh the Push Services.
+>「**[!UICONTROL 保存]**」をクリックして変更を保存し、プッシュサービスを更新する必要があります。
 >
 >各レポートスイートでは、Apple 用に 1 つのアプリ、Google 用に 1 つのアプリを設定できます。追加のアプリが必要な場合（例えば、実稼動環境用と開発環境用にアプリが必要な場合）、各環境用に新しいアプリストアアプリと新しいレポートスイートを設定する必要があります。
 
