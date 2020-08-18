@@ -7,16 +7,16 @@ solution: Marketing Cloud,Analytics
 title: モバイル指標およびディメンションのリファレンス
 topic: Metrics
 uuid: 96170ae7-8553-4f3e-ae01-65e5b664adf4
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '637'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 
-# モバイル指標およびディメンションのリファレンス{#mobile-metrics-and-dimensions-reference}
+# モバイル指標およびディメンションのリファレンス {#mobile-metrics-and-dimensions-reference}
 
 この情報は、デフォルトのモバイル指標およびディメンションについての理解を深めるのに役立ちます。
 
@@ -60,7 +60,7 @@ ht-degree: 94%
 
 * **クラッシュ**
 
-   アプリケーションが正しく終了しなかった場合にトリガーされます。 このイベントは、クラッシュ後にアプリケーションが開始した場合に送信されます。
+   アプリケーションが正常に終了しなかった場合にトリガーされます。このイベントは、クラッシュ後にアプリケーションが開始した場合に送信されます。
 
    >[!TIP]
    >quit が正常に呼び出されなかった場合にアプリがクラッシュしたと見なされます
@@ -75,7 +75,7 @@ ht-degree: 94%
 
 * **インストール日**
 
-   インストール後の最初の起動日。 日付は、 *MM/DD/YYYY* 形式です。
+   インストール後の初回起動日。日付の形式は、*MM/DD/YYYY* です。
 
 * **アプリ ID**
 
