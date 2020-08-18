@@ -7,11 +7,11 @@ solution: Marketing Cloud,Analytics
 title: Analytics メソッド
 topic: Developer and implementation
 uuid: ac7c640e-9dcc-4724-b561-019cc025d5a7
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '740'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -64,7 +64,7 @@ SDK は現在、Analytics、Target、Audience Manager、Adobe Experience Platfor
 
 * **getTrackingIdentifier**：Analytics 用に自動的に生成された訪問者識別子を返します。
 
-   これは、初回起動時に生成され、その時点から保存されて使用される、アプリ固有の一意の訪問者IDです。 IDは、アプリがアップグレードされても保持され、アプリがアンインストールされると削除されます。
+   これは、初回起動時に生成され、その時点から保存されて使用される、アプリ固有の一意の訪問者 ID です。ID は、アプリがアップグレードされても保持され、アプリがアンインストールされると削除されます。
 
    * このメソッドの構文を次に示します。
 
