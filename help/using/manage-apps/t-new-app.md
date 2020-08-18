@@ -7,16 +7,16 @@ solution: Marketing Cloud,Analytics
 title: 新しいアプリの追加
 topic: Metrics
 uuid: 706b5e4d-1318-4a9e-8c69-ffabf51fa02c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '710'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
 
-# 新しいアプリの追加{#add-a-new-app}
+# 新しいアプリの追加 {#add-a-new-app}
 
 新しいアプリの作成および主要指標の設定をおこなったり、Adobe Analytics および Adobe Audience Manager の SDK オプションを設定したり、獲得および ID サービスオプションを設定したり、設定ファイル、SDK、開発者およびテスター向けツールをダウンローするための情報です。
 
@@ -72,13 +72,13 @@ ht-degree: 95%
 
    * **[!UICONTROL タイプ]**
 
-      ドロップダウンリストからタイプを選択します。 左側のナビゲーションメニューに表示される使用可能なレポートは、選択したアプリのタイプによって異なります。
+      ドロップダウンリストからタイプを選択します。左側のナビゲーションメニューに表示される使用可能なレポートは、選択したアプリのタイプによって異なります。
 
-      使用できるタイプは次のとおりです。
+      利用可能なタイプは次のとおりです。
 
       * **[!UICONTROL 標準]**
 
-         ほとんどのアプリで、**[!UICONTROL 標準}** オプションを選択したままにしておくことができます。
+         ほとんどのアプリで、**[!UICONTROL 標準]** オプションを選択したままにしておくことができます。
 
       * **[!UICONTROL パブリケーション]**
 
