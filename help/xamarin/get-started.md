@@ -1,40 +1,40 @@
 ---
-description: ここでは、Mobileソリューション4.x SDK用Xamarinコンポーネントの使用を開始する方法について説明します。
+description: ここでは、Mobile ソリューション 4.x SDK 用 Xamarin コンポーネントの使用を開始する方法について説明します。
 keywords: Xamarin
-seo-description: ここでは、Mobileソリューション4.x SDK用Xamarinコンポーネントの使用を開始する方法について説明します。
-seo-title: Experience Cloudソリューション4.x SDK用Xamarinコンポーネント
+seo-description: ここでは、Mobile ソリューション 4.x SDK 用 Xamarin コンポーネントの使用を開始する方法について説明します。
+seo-title: Experience Cloud ソリューション 4.x SDK 用 Xamarin コンポーネント
 solution: Marketing Cloud,Developer
-title: Experience Cloudソリューション4.x SDK用Xamarinコンポーネント
+title: Experience Cloud ソリューション 4.x SDK 用 Xamarin コンポーネント
 uuid: e7a48107-bd0e-47d6-b49c-dfdae189ac37
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '199'
-ht-degree: 5%
+ht-degree: 100%
 
 ---
 
 
-# Xamarin components for Experience Cloud Solutions 4.x SDK {#xamarin-components-for-experience-cloud-solutions-x-sdk}
+# Experience Cloud ソリューション 4.x SDK 用 Xamarin コンポーネント {#xamarin-components-for-experience-cloud-solutions-x-sdk}
 
-ここでは、Mobileソリューション4.x SDK用Xamarinコンポーネントの使用を開始する方法について説明します。
+ここでは、Mobile ソリューション 4.x SDK 用 Xamarin コンポーネントの使用を開始する方法について説明します。
 
-Last Updated: **January 10, 2019**
+最終更新日：**2019 年 1 月 10 日**
 
 ## はじめに {#section_59D434C30C8F4765A7DEFE877D5268D0}
 
 >[!IMPORTANT]
 >
->AdobeモバイルSDKは、Xamarin Components StoreやNuGetギャラリーではご利用いただけません。 Xamarinコンポーネントをダウンロードするには、GitHub [に移動します](https://github.com/Adobe-Marketing-Cloud/mobile-services)。
+>Adobe モバイル SDK は、Xamarin Components Store や NuGet ギャラリーではご利用いただけません。Xamarin コンポーネントをダウンロードするには、[GitHub](https://github.com/Adobe-Marketing-Cloud/mobile-services) に移動します。
 
 ## Android {#section_9CAE1BFD359242568D8288C12A4B7A7D}
 
-ADBMobileコンポーネントをXamarin.Androidプロジェクトに読み込みます。
+ADBMobile コンポーネントを Xamarin.Android プロジェクトに読み込みます。
 
-1. Xamarinプロジェクトを開きます。
-1. [ **[!UICONTROL 参照]** ]ダイアログを開き、[ **[!UICONTROL .Netアセンブリ]** ]タブをクリックします。
-1. `ADBMobile.XamarinAndroidBinding.dll` lib/Android **** フォルダーからを選択します。
-1. Add your `ADBMobileConfig.json` file to the **[!UICONTROL Assets]** folder of your project.
+1. Xamarin プロジェクトを開きます。
+1. **[!UICONTROL 参照]**&#x200B;ダイアログを開き、「 **[!UICONTROL .ネットアセンブリー]**」タブをクリックします。
+1. **[!UICONTROL lib/Android]**&#x200B;フォルダーから `ADBMobile.XamarinAndroidBinding.dll` を選択します。
+1. `ADBMobileConfig.json` ファイルをプロジェクトの **[!UICONTROL Assets]** フォルダーに追加します。
 1. 次の権限を追加します。
 
    * `INTERNET`
@@ -54,7 +54,7 @@ ADBMobileコンポーネントをXamarin.Androidプロジェクトに読み込�
     <receiver android:name="com.adobe.mobile.MessageNotificationHandler" />
    ```
 
-1. 獲得を使用している場合は、次の受信者を追加します。
+1. 獲得を使用している場合は、次のレシ―バーを追加します。
 
    ```java
     <receiver android:name="com.your.package.name.GPBroadcastReceiver" android:exported="true">
@@ -66,9 +66,9 @@ ADBMobileコンポーネントをXamarin.Androidプロジェクトに読み込�
 
 ## iOS {#section_1531928DDE904D769B3987BF927D0E02}
 
-ADBMobileコンポーネントをXamarin.iOSプロジェクトに読み込みます。
+ADBMobile コンポーネントを Xamarin.iOS プロジェクトに読み込みます。
 
-1. Xamarinプロジェクトを開きます。
-1. [ **[!UICONTROL 参照]** ]ダイアログを開き、[ **[!UICONTROL .Netアセンブリ]** ]タブをクリックします。
-1. `ADBMobile.XamarinIOSBinding.dll` lib/ios-unified **** フォルダーから選択します。
-1. プロジ追加ェクトに `ADBMobileConfig.json` ファイルを追加します。
+1. Xamarin プロジェクトを開きます。
+1. **[!UICONTROL 参照]**&#x200B;ダイアログを開き、「 **[!UICONTROL .ネットアセンブリー]**」タブをクリックします。
+1. **[!UICONTROL lib/ios-unified]** フォルダーから `ADBMobile.XamarinIOSBinding.dll` を選択します。
+1. プロジェクトに `ADBMobileConfig.json` ファイルを追加します。
