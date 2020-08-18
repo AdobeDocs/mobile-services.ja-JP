@@ -7,16 +7,16 @@ solution: Marketing Cloud,Analytics
 title: PhoneGap プラグインのメソッド
 topic: Developer and implementation
 uuid: bc3db9ce-81b7-45ec-88aa-6020c1db5d9c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1569'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 
-# PhoneGap プラグインのメソッド{#phonegap-plug-in-methods}
+# PhoneGap プラグインのメソッド {#phonegap-plug-in-methods}
 
 Android PhoneGap プラグインのメソッドを使用して、様々な作業を実行できます。
 
@@ -26,7 +26,7 @@ Android PhoneGap プラグインのメソッドを使用して、様々な作業
 <script type="text/javascript" charset="utf-8" src="ADB_Helper.js"></script>
 ```
 
-## 設定メソッド{#section_CC429F68292D4601AEEF0A91445E1185}
+## 設定メソッド {#section_CC429F68292D4601AEEF0A91445E1185}
 
 * **getPrivacyStatus**
 
@@ -96,7 +96,7 @@ Android PhoneGap プラグインのメソッドを使用して、様々な作業
 
    自動的に生成された訪問者識別子を返します。
 
-   これは、アプリが最初に起動されたときに生成され、その時点から保存および使用される、アプリ固有の一意の訪問者IDです。 このIDは、アプリのアップグレード時に保持され、アプリをアンインストールする際に削除されます。
+   これは、アプリが最初に起動されたときに生成され、その時点から保存および使用される、アプリ固有の一意の訪問者 ID です。この ID は、アプリのアップグレード時に保持され、アプリをアンインストールする際に削除されます。
 
    >[!TIP]
    >
@@ -564,7 +564,7 @@ Android PhoneGap プラグインのメソッドを使用して、様々な作業
        ADB.targetThirdPartyID(function (value) { alert(value); },function (value) { alert('fail')__;});
       ```
 
-## 獲得メソッド{#section_EDEA25C4B2884487827069E9257A0BA6}
+## 獲得メソッド {#section_EDEA25C4B2884487827069E9257A0BA6}
 
 * **acquisitionCampaignStartForApp**
 
@@ -590,7 +590,7 @@ Android PhoneGap プラグインのメソッドを使用して、様々な作業
 
 Cordova によって生成されたメインアクティビティで、`Config.submitAdvertisingIdentifierTask()` メソッドの `onResume()` を呼び出します。詳しくは、「[設定メソッド](/help/android/configuration/methods.md)」を参照してください。
 
-## Audience Manager メソッド{#section_1FD12B29A0AF41D3BEACBB3D624EA0E4}
+## Audience Manager メソッド {#section_1FD12B29A0AF41D3BEACBB3D624EA0E4}
 
 * **audienceGetVisitorProfile**
 
