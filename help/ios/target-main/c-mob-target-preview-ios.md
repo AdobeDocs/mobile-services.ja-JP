@@ -4,16 +4,16 @@ seo-description: Target プレビューを使用すれば、Target アクティ�
 seo-title: iOS の Target プレビュー
 title: iOS の Target プレビュー
 uuid: d92867a4-0569-4732-a928-28f9e2f8b21e
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '141'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
 
-# iOS の Target プレビュー{#target-preview-on-ios}
+# iOS の Target プレビュー {#target-preview-on-ios}
 
 Target プレビューを使用すれば、Target アクティビティに対してエンドツーエンドの QA を容易に実行でき、お使いのデバイスでこうしたアクティビティをプレビューできます。
 
