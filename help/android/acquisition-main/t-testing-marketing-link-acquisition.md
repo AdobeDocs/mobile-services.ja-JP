@@ -1,14 +1,17 @@
 ---
 description: この手順は、Android デバイスでマーケティングリンクを使用して獲得キャンペーンをラウンドトリップする場合に役立ちます。
-keywords: Android, ライブラリ, モバイル, SDK
+keywords: android;library;mobile;sdk
 seo-description: この手順は、Android デバイスでマーケティングリンクを使用して獲得キャンペーンをラウンドトリップする場合に役立ちます。
 seo-title: マーケティングリンクによる獲得のテスト
-solution: Experience Cloud,Analytics
+solution: Marketing Cloud,Analytics
 title: マーケティングリンクによる獲得のテスト
-topic: 開発者と導入
+topic: Developer and implementation
 uuid: d0933dcc-8fc3-4f60-987f-7a54559aacf5
-translation-type: ht
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+translation-type: tm+mt
+source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
+workflow-type: tm+mt
+source-wordcount: '763'
+ht-degree: 78%
 
 ---
 
@@ -17,7 +20,7 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
 この手順は、Android デバイスでマーケティングリンクを使用して獲得キャンペーンをラウンドトリップする場合に役立ちます。
 
-モバイルアプリがまだ Google Play に登録されていない場合は、マーケティングリンクを作成するときに任意のモバイルアプリをリンク先として選択できます。この設定は、ダウンロード計測用リンクをクリックした後に、獲得サーバーによってどのアプリにリダイレクトされるかに影響するだけで、ダウンロード計測用リンクをテストすること自体には影響しません。クエリ文字列パラメーターは、Google Play ストアに渡されます。これらのパラメーターは、キャンペーンのブロードキャストの一環としてインストール時にアプリに渡されます。モバイルアプリでの獲得のラウンドトリップテストには、このタイプのブロードキャストのシミュレーションが必要です。
+モバイルアプリがまだ Google Play に登録されていない場合は、マーケティングリンクを作成するときに任意のモバイルアプリをリンク先として選択できます。これは、ダウンロード計測用リンクをクリックした後、ダウンロード計測用リンクのリダイレクト先のアプリにのみ影響し、ダウンロード計測用リンクのテスト機能には影響しません。 クエリ文字列パラメーターは、Google Playストアに渡され、キャンペーンブロードキャストの一環としてインストール時にアプリに渡されます。 ラウンドトリップモバイルアプリの獲得テストでは、このタイプのブロードキャストのシミュレーションが必要です。
 
 テストを実行するたびに、アプリを新しくインストールするか、アプリのデータを&#x200B;**[!UICONTROL 設定]**&#x200B;でクリアする必要があります。そうすることで、アプリが最初に起動したときに、キャンペーンクエリ文字列パラメーターに関連付けられている初期ライフサイクル指標が送信されます。
 
@@ -69,8 +72,8 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
    | 設定 | 値 |
    |--- |--- |
-   | acquisition | サーバーは `c00.adobe.com` で、*がダウンロード計測用リンクの`appid`*`appid` と同じである必要があります。 |
-   | analytics | テストのために、ブロードキャストを手動で送信するのに十分な時間（60 秒以上）に送信タイムアウトを設定します。テスト後に元のタイムアウト設定に復元できます。 |
+   | acquisition | サーバーは `c00.adobe.com` で、*`appid`* がダウンロード計測用リンクの `appid` と同じである必要があります。 |
+   | analytics | テストの目的で、転送者のタイムアウトを設定し、適切な時間（60秒以上）を経てブロードキャストが手動で送信されるようにします。 テスト後に、元のタイムアウト設定に戻すことができます。 |
 
 1. デバイスをコンピューターに接続し、アプリをアンインストールしてからインストールし直します。
 1. ADB Shell を起動し、デバイスでアプリケーションを起動します。
@@ -105,21 +108,21 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
    "Analytics - Received Referrer Data(<A JSON Response>)"
    ```
 
-   これらのログが表示されない場合は、手順 6 ～ 10 が完了していることを確認してください。
+   これらのログが表示されない場合は、手順6 ～ 10を実行したことを確認します。
 
-   次の表には、考えられるエラーに関する追加の情報を示します。
+   次の表に、考えられるエラーに関する追加情報を示します。
 
-   | エラー | 説明 |
+   | Error | 説明 |
    |--- |--- |
    | Analytics - Unable to decode response(`<string>`). | 応答の形式が正しくありません。 |
    | Analytics - Unable to parse response (`a JSON Response`). | JSON 文字列の形式が正しくありません。 |
    | Analytics - Unable to parse acquisition service response (no `contextData` parameter in response). | 応答に `contextData` パラメーターがありません。 |
    | Analytics - Acquisition referrer data was not complete (no `a.referrer.campaign.name` in context data), ignoring. | contextData に `a.referrer.campaign.name` が含まれていません。 |
-   | Analytics - Acquisition referrer timed out. | `referrerTimeout` で定義された時間内に応答を取得できませんでした。値を増やしてもう一度試してください。また、アプリのインストール前にダウンロード計測用リンクを開いたことも確認してください。 |
+   | Analytics - Acquisition referrer timed out. | `referrerTimeout` で定義された時間内に応答を取得できませんでした。値を増やしてもう一度試してください。また、アプリをインストールする前に、ダウンロード計測用リンクが開いていることを確認してください。 |
 
 次の情報に留意してください。
 
-* アプリから送信されたヒットを監視するには、HTTP 監視ツールを使用して、獲得アトリビューションを確認します。
+* HTTP監視ツールを使用して獲得属性を検証することで、アプリから送信されるヒットを監視できます。
 * `INSTALL_REFERRER` のブロードキャスト方法について詳しくは、Google Developers ガイドの [Google Play キャンペーン測定のテスト](https://developers.google.com/analytics/solutions/testing-play-campaigns)を参照してください。
 * アドビが提供する `acquisitionTest.jar` Java ツールを使用して、一意の ID を取得し、インストールリファラーをブロードキャストできます。そのため、手順 3 ～ 10 における情報の取得に役立ちます。
 
@@ -128,9 +131,9 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 この Java ツールをインストールするには：
 
 1. [`acquistionTester.zip`](../assets/acquisitionTester.zip) ファイルをダウンロードします。
-1. .jar ファイルを抽出します。
+1. .jarファイルを展開します。
 
-   コマンドラインで .jar ファイルを実行できます。
+   コマンドラインで.jarファイルを実行できます。
 
 以下に例を示します。
 
