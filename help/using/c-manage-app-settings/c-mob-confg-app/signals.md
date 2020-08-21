@@ -1,18 +1,21 @@
 ---
-description: ポストバックを使用すると、Adobe Mobile によって収集されたデータを別のサードパーティサーバーに送信できます。アプリ内メッセージを表示するために使用しているのと同じトリガーおよび特性を活用して、カスタマイズしたデータをサードパーティのサーバーに送信するように Mobile Services を設定できます。
-seo-description: ポストバックを使用すると、Adobe Mobile によって収集されたデータを別のサードパーティサーバーに送信できます。アプリ内メッセージを表示するために使用しているのと同じトリガーおよび特性を活用して、カスタマイズしたデータをサードパーティのサーバーに送信するように Mobile Services を設定できます。
+description: ポストバックを使用すると、AdobeMobileによって収集されたデータを別のサードパーティサーバーに送信できます。 アプリ内メッセージの表示に使用するのと同じトリガーおよび特性を活用することで、カスタマイズしたデータをサードパーティのサーバーに送信するようにMobile Servicesを設定できます。
+seo-description: ポストバックを使用すると、AdobeMobileによって収集されたデータを別のサードパーティサーバーに送信できます。 アプリ内メッセージの表示に使用するのと同じトリガーおよび特性を活用することで、カスタマイズしたデータをサードパーティのサーバーに送信するようにMobile Servicesを設定できます。
 seo-title: ポストバックの設定
 title: ポストバックの設定
 uuid: a026575c-057b-4868-b6c8-9514cbc32b4d
-translation-type: ht
-source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
+translation-type: tm+mt
+source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
+workflow-type: tm+mt
+source-wordcount: '474'
+ht-degree: 71%
 
 ---
 
 
 # ポストバックの設定 {#configure-postbacks}
 
-ポストバックを使用すると、Adobe Mobile によって収集されたデータを別のサードパーティサーバーに送信できます。アプリ内メッセージを表示するために使用しているのと同じトリガーおよび特性を活用して、カスタマイズしたデータをサードパーティのサーバーに送信するように Mobile Services を設定できます。
+ポストバックを使用すると、AdobeMobileによって収集されたデータを別のサードパーティサーバーに送信できます。 アプリ内メッセージの表示に使用するのと同じトリガーおよび特性を活用することで、カスタマイズしたデータをサードパーティのサーバーに送信するようにMobile Servicesを設定できます。
 
 >[!IMPORTANT]
 >
@@ -51,7 +54,7 @@ source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
       ポストバックをトリガーする 1 つまたは複数のデータタグおよび条件を指定します。例えば、アプリがクラッシュしたときにポストバックをトリガーするには、トリガーとして **[!UICONTROL クラッシュ]** を、条件として **[!UICONTROL が存在する]** を選択します。また、ポストバックをアクティブ化する指標を指定できます。例えば、アプリが iPhone 6 Plus デバイスでクラッシュした場合にポストバックをアクティブにするには、トリガーとして **[!UICONTROL デバイス名]** を、条件として **[!UICONTROL 次に等しい]** と **[!UICONTROL iPhone 6 Plus]** を選択します。
 
    * **[!UICONTROL 特徴]**
-   トリガーされたらメッセージが表示されるユーザーを指定します。オプションには、**[!UICONTROL セッションの長さ]**、**[!UICONTROL 初回起動日]**&#x200B;および&#x200B;**[!UICONTROL アプリ ID]** があります。
+   トリガーされたらメッセージが表示されるユーザーを指定します。Options include **[!UICONTROL Session Length]**, **[!UICONTROL First Launch Date]**, and **[!UICONTROL App ID]**.
 
 1. **[!UICONTROL 保存]** をクリックしてポストバックを作成し、**[!UICONTROL ポストバックを管理]**&#x200B;リストに追加します。
 
