@@ -1,26 +1,29 @@
 ---
-description: Experience Cloud ソリューション 4.x SDK 用 Xamarin コンポーネントの iOS メソッド。
+description: experience cloudソリューション4.x SDK用のXamarinコンポーネントのiOSメソッド。
 keywords: Xamarin
-seo-description: Experience Cloud ソリューション 4.x SDK 用 Xamarin コンポーネントの iOS メソッド。
-seo-title: iOSメソッド
-solution: Marketing Cloud，開発者
-title: iOS methods
+seo-description: experience cloudソリューション4.x SDK用のXamarinコンポーネントのiOSメソッド。
+seo-title: iOSのメソッド
+solution: Marketing Cloud,Developer
+title: iOSのメソッド
 uuid: d6a056db-80c1-44d0-970f-c961ad01b0bc
 translation-type: tm+mt
-source-git-commit: f53953831e6471ea64eb2ae06ddae16ca0eab6f6
+source-git-commit: 70c79d404c29a8a35b5eadbb3ad99f953a5166e0
+workflow-type: tm+mt
+source-wordcount: '1749'
+ht-degree: 70%
 
 ---
 
 
-# iOS methods{#ios-methods}
+# iOSのメソッド{#ios-methods}
 
-Experience Cloud ソリューション 4.x SDK 用 Xamarin コンポーネントの iOS メソッド。
+experience cloudソリューション4.x SDK用のXamarinコンポーネントのiOSメソッド。
 
-## Configuration methods {#section_405AA09390E346E5BB7B1F4E0F65F51E}
+## 設定メソッド {#section_405AA09390E346E5BB7B1F4E0F65F51E}
 
 * **CollectLifecycleData**
 
-   SDK のすべてのソリューションで使用するライフサイクルデータを収集するように SDK に指示します。詳しくは、[ライフサイクル指標](/help/ios/metrics.md)を参照してください。
+   SDK のすべてのソリューションで使用するライフサイクルデータを収集するように SDK に指示します。詳しくは、「[ライフサイクル指標](/help/ios/metrics.md)」を参照してください。
 
    * このメソッドの構文を次に示します。
 
@@ -85,9 +88,10 @@ Experience Cloud ソリューション 4.x SDK 用 Xamarin コンポーネント
 * **PrivacyStatus**
 
    現在のユーザーのプライバシーステータスの enum 表現を返します。
-   * `ADBMobilePrivacyStatus.OptIn`  — ヒットは直ちに送信されます。
-   * `ADBMobilePrivacyStatus.OptOut`  — ヒットは破棄されます。
-   * ADBMobilePrivacyStatus.Unknown - オフライン追跡が有効な場合、プライバシーステータスがオプトイン（ヒットが送信される）またはオプトアウト（ヒットが破棄される）に変更されるまで、ヒットは保存されます。If offline tracking is disabled, hits are discarded until the privacy status changes to opt in.
+   * `ADBMobilePrivacyStatus.OptIn`：ヒットは即座に送信されます。
+   * `ADBMobilePrivacyStatus.OptOut`：ヒットは破棄されます。
+   * ADBMobilePrivacyStatus.Unknown — オフライン追跡が有効な場合、プライバシーステータスがオプトイン（ヒットが送信される）またはオプトアウト（ヒットが破棄される）に変更されるまで、ヒットは保存されます。 オフライン追跡が無効になっている場合、プライバシーステータスがに変わるまで、ヒットは破棄されオプトインます。
+
    The default value is set in the [ADBMobileConfig.json](/help/ios/configuration/json-config/json-config.md).
 
    * このメソッドの構文を次に示します。
@@ -105,10 +109,10 @@ Experience Cloud ソリューション 4.x SDK 用 Xamarin コンポーネント
 
 * **SetPrivacyStatus**
 
-   現在のユーザーのプライバシーステータスをステータスに設定します。次のいずれかに設定します。
-   * `ADBMobilePrivacyStatus.OptIn`  — ヒットは直ちに送信されます。
-   * `ADBMobilePrivacyStatus.OptOut`  — ヒットは破棄されます。
-   * `ADBMobilePrivacyStatus.Unknown` - オフライン追跡が有効になっている場合、プライバシーステータスがオプトイン（ヒットが送信される）またはオプトアウト（ヒットが破棄される）に変更されるまで、ヒットは保存されます。オフライン追跡が有効になっていない場合、プライバシーステータスがオプトインに変更されるまで、ヒットは破棄されます。
+   現在のユーザーのプライバシーステータスをステータスに設定します。 次のいずれかの値に設定します。
+   * `ADBMobilePrivacyStatus.OptIn`：ヒットは即座に送信されます。
+   * `ADBMobilePrivacyStatus.OptOut`：ヒットは破棄されます。
+   * `ADBMobilePrivacyStatus.Unknown`：オフライン追跡が有効になっている場合、プライバシーステータスがオプトイン（ヒットが送信される）またはオプトアウト（ヒットが破棄される）に変更されるまで、ヒットは保存されます。オフライン追跡が有効になっていない場合、プライバシーステータスがオプトインに変更されるまで、ヒットは破棄されます。
 
    * このメソッドの構文を次に示します。
 
@@ -124,7 +128,7 @@ Experience Cloud ソリューション 4.x SDK 用 Xamarin コンポーネント
 
 * **UserIdentifier**
 
-   カスタム識別子が設定されている場合、カスタムユーザー識別子を返します。カスタム識別子が設定されていない場合、null を返します。デフォルト値は `null` です。
+   カスタム識別子が設定されている場合、カスタムユーザ識別子を返します。 カスタム識別子が設定されていない場合はnullを返します。 デフォルト値は `null` です。
 
    * このメソッドの構文を次に示します。
 
@@ -140,7 +144,7 @@ Experience Cloud ソリューション 4.x SDK 用 Xamarin コンポーネント
 
 * **SetUserIdentifier**
 
-   カスタム識別子が設定されている場合、カスタムユーザー識別子を返します。カスタム識別子が設定されていない場合、null を返します。デフォルト値は `null` です。
+   カスタム識別子が設定されている場合、カスタムユーザ識別子を返します。 カスタム識別子が設定されていない場合はnullを返します。 デフォルト値は `null` です。
 
    * このメソッドの構文を次に示します。
 
@@ -170,13 +174,13 @@ Experience Cloud ソリューション 4.x SDK 用 Xamarin コンポーネント
       var version = ADBMobile.Version();
       ```
 
-* **KeepLifecycleSessionAlive（iOS のみ）**
+* **KeepLifecycleSessionAlive（iOSのみ）**
 
    設定ファイル内のライフサイクルセッションのタイムアウト値にかかわらず、バックグラウンドから次に戻ったときに新しいセッションを開始しないように SDK に指示します。
 
    >[!TIP]
    >
-   >このメソッドは、バックグラウンドで通知を登録するアプリに対して使用されることを目的としており、アプリがバックグラウンドで実行されている間に実行されるコードからのみ呼び出す必要があります。
+   >このメソッドは、バックグラウンドにある間に通知を登録するアプリで使用されることを目的としており、アプリがバックグラウンドにある間に実行されるコードからのみ呼び出される必要があります。
 
    * このメソッドの構文を次に示します。
 
@@ -190,7 +194,7 @@ Experience Cloud ソリューション 4.x SDK 用 Xamarin コンポーネント
       ADBMobile.KeepLifecycleSessionAlive();
       ```
 
-## Analytics methods {#section_63CF636104EF41F790C3E4190D755BBA}
+## Analytics メソッド {#section_63CF636104EF41F790C3E4190D755BBA}
 
 * **TrackingIdentifier**
 
@@ -210,11 +214,12 @@ Experience Cloud ソリューション 4.x SDK 用 Xamarin コンポーネント
 
 * **TrackState**
 
-   オプションのコンテキストデータでアプリ状態を追跡します。状態は、「title screen」、「level 1」、「pause」など、アプリで利用できる表示です。これらの状態は、Webサイト上のページに似ており、呼び出しによってページビュー数が増加します。状態が空の場合、レポートに「app name app version (build)」と表示されます。 `TrackState` レポートにこの値がある場合、各 `TrackState` 呼び出しで state を設定していることを確認してください。
+   オプションのコンテキストデータを使用してアプリの状態を追跡します。状態とは、「title screen」、「level 1」、「pause」など、アプリで使用できる表示です。 これらの状態は、Webサイト上のページと同様で、 `TrackState` 呼び出しはページ表示数を増分します。状態が空の場合、レポートに「app name app version (build)」と表示されます。 If you see this value in reports, make sure you are setting state in each `TrackState` call.
 
-   [!TIP]
-   >これは、ページビュー数を増やす唯一のトラッキングコールです。
+   >[!TIP]
    >
+   >これは、ページビュー数を増分する唯一のトラッキングコールです。
+
    * このメソッドの構文を次に示します。
 
       ```objective-c
@@ -231,10 +236,11 @@ Experience Cloud ソリューション 4.x SDK 用 Xamarin コンポーネント
 
 * **TrackAction**
 
-   アプリのアクションを追跡します。アクションとは、アプリ内で計測に価する重要な操作のことで、「deaths」、「level gained」、「feed subscriptions」などの指標があります。
+   アプリのアクションを追跡します。アクションとは、アプリ内で測定したい、「deaths」、「level gained」、「feed購読」などの指標です。
 
    >[!TIP]
-   If you have code that might run while the app is in the background (for example, a background data retrieval), use `trackActionFromBackground` instead.
+   >
+   >アプリがバックグラウンドになっているときに、コードが実行される（バックグラウンドデータの取得など）可能性がある場合は、代わりに `trackActionFromBackground` を使用します。
 
    * このメソッドの構文を次に示します。
 
@@ -248,12 +254,13 @@ Experience Cloud ソリューション 4.x SDK 用 Xamarin コンポーネント
       ADBMobile.TrackAction("level gained", null); 
       ```
 
-* **TrackActionFromBackground（iOS のみ）**
+* **TrackActionFromBackground（iOSのみ）**
 
-   バックグラウンドで発生したアクションを追跡します。これにより、特定の状況でライフサイクルイベントが発生するのを抑えます。
+   バックグラウンドで発生したアクションを追跡します。これにより、特定のシナリオでライフサイクルイベントが発生しないようにします。
 
    >[!TIP]
-   This method should only be called in code that runs while your app is in the background.
+   >
+   > このメソッドは、アプリがバックグラウンドになっているときに実行されるコードでのみ呼び出す必要があります。
 
    * このメソッドの構文を次に示します。
 
@@ -319,11 +326,11 @@ Experience Cloud ソリューション 4.x SDK 用 Xamarin コンポーネント
 
 * **TrackLifetimeValueIncrease**
 
-   ユーザーのライフタイム値に値を加算します。
+   ユーザーのライフタイム値に金額を加算します。
 
    * このメソッドの構文を次に示します。
 
-      public nbsp;static void trackLifetimeValueIncrease(double amount, NSDictionary cdata);
+      public nbsp;static void TrackLifetimeValueIncrease(重複量， NSDictionary cdata);
 
    * このメソッドのコードサンプルを次に示します。
 
@@ -336,7 +343,8 @@ Experience Cloud ソリューション 4.x SDK 用 Xamarin コンポーネント
    指定アクションの時間計測を開始します。既に開始しているアクションでこのメソッドを呼び出すと、以前の時間計測アクションが上書きされます。
 
    >[!TIP]
-   この呼び出しはヒットを送信しません。
+   >
+   >この呼び出しはヒットを送信しません。
 
    * このメソッドの構文を次に示します。
 
@@ -352,10 +360,11 @@ Experience Cloud ソリューション 4.x SDK 用 Xamarin コンポーネント
 
 * **TrackTimedActionUpdate**
 
-   特定のアクションに関連付けられたコンテキストデータを指定データで更新します。渡されたデータは、特定のアクションの既存のデータに追加され、同じキーが既にアクションに定義されている場合は、データを上書きします。
+   データを渡して、特定のアクションに関連付けられたコンテキストデータを更新します。 渡されたデータは、特定のアクションの既存のデータに追加され、同じキーが既にアクションに定義されている場合は、データを上書きします。
 
    >[!TIP]
-   この呼び出しはヒットを送信しません。
+   >
+   >この呼び出しはヒットを送信しません。
 
    * このメソッドの構文を次に示します。
 
@@ -390,7 +399,7 @@ Experience Cloud ソリューション 4.x SDK 用 Xamarin コンポーネント
 
 * **TrackingTimedActionExists**
 
-   時間指定アクションが進行中かどうかを返します。
+   時間計測が進行中かどうかを返します。
 
    * このメソッドの構文を次に示します。
 
@@ -475,7 +484,7 @@ Experience Cloud ソリューション 4.x SDK 用 Xamarin コンポーネント
 
 * **VisitorSyncIdentifiers**
 
-   Experience Cloud ID を使用すると、追加の顧客 ID を設定して、各訪問者に関連付けることができます。独自の識別子を使えば、同じ訪問者に対して複数の顧客 ID をセットすることも可能です。このメソッドは、JavaScript ライブラリの setCustomerIDs に相当します。
+   Experience CloudIDを使用して、各訪問者に関連付ける追加の顧客IDを設定できます。 訪問者APIは、同じ訪問者に対して複数の顧客IDと、異なる顧客IDの範囲を区切るための顧客タイプ識別子を受け取ります。 このメソッドは、JavaScript ライブラリの setCustomerIDs に相当します。
 
    * このメソッドの構文を次に示します。
 
@@ -514,7 +523,7 @@ Experience Cloud ソリューション 4.x SDK 用 Xamarin コンポーネント
 
 * **TargetCreateRequest**
 
-   指定したパラメーターを持つ `ADBTargetLocationRequest` オブジェクトを作成する便利なコンストラクターです。
+   Convenience constructor to create an `ADBTargetLocationRequest` object with the given parameters.
 
    * このメソッドの構文を次に示します。
 
@@ -531,7 +540,7 @@ Experience Cloud ソリューション 4.x SDK 用 Xamarin コンポーネント
 
 * **TargetCreateOrderConfirmRequest**
 
-   を作成しま `ADBTargetLocationRequest`す。
+   `ADBTargetLocationRequest` を作成します。
 
    * このメソッドの構文を次に示します。
 
@@ -565,7 +574,7 @@ Experience Cloud ソリューション 4.x SDK 用 Xamarin コンポーネント
 
 * **AudienceVisitorProfile**
 
-   取得された最も直近の訪問者プロファイルを返します。まだシグナルが送信されていない場合は nil を返します。訪問者プロファイルは、次回以降のアプリ起動時も簡単にアクセスできるように、`NSUserDefaults` に保存されます。
+   取得された最も直近の訪問者プロファイルを返します。まだシグナルが送信されていない場合はnilを返します。 Visitor profile is saved in `NSUserDefaults` for easy access across multiple launches of your app.
 
    * このメソッドの構文を次に示します。
 
@@ -613,7 +622,7 @@ Experience Cloud ソリューション 4.x SDK 用 Xamarin コンポーネント
 
 * **AudienceSetDpidAndDpuuid**
 
-   dpid および dpuuid を設定します。dpid および dpuuid が設定されている場合、各シグナルと共に送信されます。
+   dpidとdpuuidを設定します。 dpidとdpuuidが設定されている場合、各シグナルと共に送信されます。
 
    * このメソッドの構文を次に示します。
 
@@ -662,9 +671,9 @@ Experience Cloud ソリューション 4.x SDK 用 Xamarin コンポーネント
       ADBMobile.AudienceReset ();
       ```
 
-## Video {#section_CBCE1951CE204A108AD4CA7BB07C7F98}
+## ビデオ {#section_CBCE1951CE204A108AD4CA7BB07C7F98}
 
-詳しくは、[ビデオの分析](/help/ios/getting-started/dev-qs.md)を参照してください。
+詳しくは、 [ビデオ分析を参照してください](/help/ios/getting-started/dev-qs.md)。
 
 * **MediaCreateSettings**
 
@@ -719,7 +728,7 @@ Experience Cloud ソリューション 4.x SDK 用 Xamarin コンポーネント
 
 * **MediaClose**
 
-   指定された名前のメディアアイテムを閉じます。
+   name という名前のメディアアイテムを閉じます。
 
    * このメソッドの構文を次に示します。
 
@@ -751,7 +760,7 @@ Experience Cloud ソリューション 4.x SDK 用 Xamarin コンポーネント
 
 * **MediaComplete**
 
-   指定されたオフセットでメディアアイテムが再生完了された、と手動で記録します。
+   指定されたオフセットでメディアアイテムが再生完了されたことを手動で記録します。
 
    * このメソッドの構文を次に示します。
 
@@ -767,7 +776,7 @@ Experience Cloud ソリューション 4.x SDK 用 Xamarin コンポーネント
 
 * **MediaStop**
 
-   指定されたオフセットでビデオが停止または一時停止されたことを記録します。
+   指定された offset でビデオが停止または一時停止されたことを記録します。
 
    * このメソッドの構文を次に示します。
 
