@@ -1,40 +1,43 @@
 ---
-description: この拡張機能を使用すると、Experience Cloud ソリューション 4.x Windows SDK の参照を簡単にプロジェクトに追加できるようになります。
-seo-description: この拡張機能を使用すると、Experience Cloud ソリューション 4.x Windows SDK の参照を簡単にプロジェクトに追加できるようになります。
-seo-title: Experience Cloud Solutions 4.x SDK用Windows Visual studio拡張機能
+description: この拡張機能を使用すると、Experience Cloudソリューション4.x Windows SDKの参照をプロジェクトに追加する際に、より簡単に利用できます。
+seo-description: この拡張機能を使用すると、Experience Cloudソリューション4.x Windows SDKの参照をプロジェクトに追加する際に、より簡単に利用できます。
+seo-title: Experience Cloudソリューション4.x SDK用Windows Visual Studio拡張機能
 solution: Marketing Cloud,Analytics
-title: Experience Cloud Solutions 4.x SDK用Windows Visual studio拡張機能
-topic: 開発者と導入
+title: Experience Cloudソリューション4.x SDK用Windows Visual Studio拡張機能
+topic: Developer and implementation
 uuid: 7d0ea312-340b-46ea-a737-b70a6766a536
 translation-type: tm+mt
-source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+source-git-commit: 38e63d6f4f85c2ced6364baa47646241ac783c12
+workflow-type: tm+mt
+source-wordcount: '213'
+ht-degree: 2%
 
 ---
 
 
 # Windows Visual Studio extensions for Experience Cloud Solutions 4.x SDK {#windows-visual-studio-extensions-for-experience-cloud-solutions-x-sdk}
 
-この拡張機能を使用すると、Experience Cloud ソリューション 4.x Windows SDK の参照を簡単にプロジェクトに追加できるようになります。
+この拡張機能を使用すると、Experience Cloudソリューション4.x Windows SDKの参照をプロジェクトに追加する際に、より簡単に利用できます。
 
-## GitHubからライブラリをインストールする {#section_F55DB6241EF1475286C05FEAEBF996A3}
+## GitHubからのライブラリのインストール {#section_F55DB6241EF1475286C05FEAEBF996A3}
 
-1. [GitHub](https://github.com/Adobe-Marketing-Cloud/mobile-services/releases) から Windows Universal SDK をダウンロードします。
+1. GitHubからWindows Universal SDKをダウンロードし [ます](https://github.com/Adobe-Marketing-Cloud/mobile-services/releases)。
 1. ダウンロードしたファイルをローカルに解凍します。
-1. ADBMobileWindowsStoreVSIX.vsixまたはADBMobileWindowsPhoneVSIX.vsixファイルをダブルクリックして、インストーラーを開きます。
+1. ADBMobileWindowsStoreVSIX.v6またはADBMobileWindowsPhoneVSIX.v6ファイルを重複クリックして、インストーラーを開きます。
 
-1. 「グローバ **[!UICONTROL ルな場所」を選択し]** 、ライブラリをインストールします。
+1. 「 **[!UICONTROL グローバルロケーション]** 」を選択し、ライブラリをインストールします。
 
-## Add references to your project {#section_00C14FE9243D4330BE1F4BB56FCF08B1}
+## プロジ追加ェクトへの参照 {#section_00C14FE9243D4330BE1F4BB56FCF08B1}
 
-1. Windows 8.1 または Windows Phone 8.1 プロジェクトを開きます。
-1. 「参照マネージャ」(Reference Manager)ダイアログボックスを開きます。
+1. Windows 8.1またはWindows Phone 8.1プロジェクトを開きます。
+1. 「参照マネージャー」(Reference Manager)ダイアログボックスを開きます。
 
    ![](assets/ref_manager.png)
 
-1. Windows 8.1ま **[!UICONTROL たはWindows]** Phone 8.1の「拡張機能」タブで、「 **[UICONTROL Adobe Mobile SDK」を探して選択します]**。
-1. 「**[!UICONTROL OK]」をクリックして保存します。**
+1. Windows 8.1またはWindows Phone 8.1の「 **[!UICONTROL Adobe]** 」タブで、「 **[!UICONTROL 拡張機能]**」を探して選択します。
+1. Click **[!UICONTROL OK]** to save it.
 
-   Adobe Mobile SDKがプロジェクトに追加され、まだ追加されていない場合は **[UICONTROL Microsoft Visual C++ Runtime]** パッケージも追加されます。
+   AdobeMobile SDKがプロジェクトに追加され、まだ追加されていない場合は、 **[!UICONTROL Microsoft Visual C++ Runtime]** パッケージも追加されます。
 
 1. Configuration Managerで、プラットフォームタイプを選択し、アプリのテストを開始します。
 
