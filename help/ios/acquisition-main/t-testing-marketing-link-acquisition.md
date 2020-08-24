@@ -7,11 +7,11 @@ solution: Marketing Cloud,Analytics
 title: マーケティングリンクによる獲得のテスト
 topic: Developer and implementation
 uuid: 69503e01-182d-44c6-b0fb-e1c012ffa3bd
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c64e2fa7cee3cd35c4574e5007406b7604c99499
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '562'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -67,7 +67,7 @@ ht-degree: 94%
 
    考えられるエラーに関する情報を次に示します。
 
-   *  `Analytics - Unable to retrieve acquisition service response (<error message>)`。
+   * `Analytics - Unable to retrieve acquisition service response (<error message>)`
 
       ネットワークエラーが発生しました。
 
@@ -85,7 +85,7 @@ ht-degree: 94%
 
    * `Analytics - Acquisition referrer timed out`
 
-      `referrerTimeout` で定義されている時間内に応答を取得できませんでした。値を増やしてもう一度試してください。また、アプリをインストールする前にダウンロード計測用リンクを開いておき、URLをクリックしてアプリを開いたときにも、同じネットワークを使用していることを確認してください。
+      `referrerTimeout` で定義されている時間内に応答を取得できませんでした。値を増やしてもう一度試してください。また、アプリをインストールする前にダウンロード計測用リンクを開いておき、URL をクリックしてアプリを開いたときにも、同じネットワークを使用していることを確認してください。
 
 次の情報に留意してください。
 
