@@ -7,7 +7,7 @@ title: Experience Cloudソリューション4.x SDK用Windows Visual Studio拡�
 topic: Developer and implementation
 uuid: e48faf54-8b08-4224-9d80-e553a983129e
 translation-type: tm+mt
-source-git-commit: 38e63d6f4f85c2ced6364baa47646241ac783c12
+source-git-commit: 97e6d24b75e770685d440d31aa5ee8924a079501
 workflow-type: tm+mt
 source-wordcount: '208'
 ht-degree: 2%
@@ -23,7 +23,7 @@ ht-degree: 2%
 
 1. GitHubからWindows Universal SDKをダウンロードし [ます](https://github.com/Adobe-Marketing-Cloud/mobile-services/releases)。
 1. ダウンロードしたファイルをローカルに解凍します。
-1. ADBMobileUniversalWindowsVSIX.vsix **[!UICONTRTOL ファイルを重複クリックして]** 、インストーラーを開きます。
+1. ADBMobileUniversalWindowsVSIX.vsix **[!UICONTROL ファイルを重複クリックして]** 、インストーラーを開きます。
 1. 「 **[!UICONTROL グローバルロケーション]** 」を選択し、ライブラリをインストールします。
 
 ## プロジ追加ェクトへの参照 {#section_00C14FE9243D4330BE1F4BB56FCF08B1}
