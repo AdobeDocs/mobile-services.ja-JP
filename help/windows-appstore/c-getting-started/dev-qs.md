@@ -7,7 +7,7 @@ title: 開発者クイック開始
 topic: Developer and implementation
 uuid: b368959b-d985-436e-8b3e-97e355a97951
 translation-type: tm+mt
-source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
+source-git-commit: 97e6d24b75e770685d440d31aa5ee8924a079501
 workflow-type: tm+mt
 source-wordcount: '919'
 ht-degree: 2%
@@ -41,10 +41,10 @@ Windows 8.1ユニバーサルアプリストアライブラリは、複数のプ
 
 また、WinJSプロジェクトでSDKを使用する場合は、空の文字列値ではなく空の文字列( `""` または `''`) `null` を使用します。
 
-## プロジ追加ェクトのライブラリと設定ファイル — C Sharp {#section_93C25D893B4A4CD3B996CF3C5590C8DC}
+## プロジェクト追加へのライブラリと設定ファイル — C Sharp {#section_93C25D893B4A4CD3B996CF3C5590C8DC}
 
 1. Visual Studioを起動し、ソリューションを開きます。
-1. ソリュ **ーションエクスプローラーで**、「 **[!UICONTROL 参照」を右クリックし]** 、「参照 **[!UIUCONTROL ]**」を選択します。
+1. ソリュ **ーションエクスプローラーで**、「 **[!UICONTROL 参照」を右クリックし]** 、「参照 ****」を選択します。
 
 1. ライブラリの正しいバージョンを選択し、関連する `ADBMobile.winmd` ファイルを参照します。
 
