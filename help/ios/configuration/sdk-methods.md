@@ -6,8 +6,11 @@ solution: Marketing Cloud,Analytics
 title: 設定メソッド
 topic: Developer and implementation
 uuid: 623c7b07-fbb3-4d39-a5c4-e64faec4ca29
-translation-type: ht
-source-git-commit: ea4b054fbeea3967c28ee938aed5997a4c287a0d
+translation-type: tm+mt
+source-git-commit: 527f93ae4ec910d1d1ea3637eb3a62d749a14397
+workflow-type: tm+mt
+source-wordcount: '1198'
+ht-degree: 86%
 
 ---
 
@@ -20,11 +23,12 @@ SDK は現在、Analytics、Target、Audience Manager、Adobe Experience Platfor
 
 * **setAppExtensionType**
 
-   現在実行中のエクステンションの種類を判断するように Adobe Mobile SDK 設定を指定します。
+   現在実行中の拡張の種類を特定するために、AdobeモバイルSDKの設定を設定します。
 
    次のいずれかの値に設定します。
    * `ADBMobileAppExtensionTypeRegular`：エクステンションは本体アプリにバンドルされています。
    * `ADBMobileAppExtensionTypeStandAlone`：エクステンションは本体アプリにバンドルされていません。
+
    >[!TIP]
    >
    >このメソッドは、アプリにエクステンションがあるか、アプリがスタンドアロンエクステンションの場合に&#x200B;**のみ**&#x200B;使用してください。詳しくは、以下の *referrerTimeout* を参照してください。
@@ -119,7 +123,7 @@ SDK は現在、Analytics、Target、Audience Manager、Adobe Experience Platfor
 
 * **trackingIdentifier**
 
-   自動的に生成された訪問者識別子を返します。これは、アドビのサーバーによって生成される、アプリ固有の一意の訪問者 ID です。生成時にアドビのサーバーに到達できない場合、ID は Apple の CFUUID を使用して生成されます。値は初期起動時に生成され、保存されて、その時点から使用されます。この ID はアプリをアップグレードしても保持され、標準的なアプリケーションバックアッププロセス時に保存および復元され、アンインストール時に削除されます。
+   自動的に生成された訪問者識別子を返します。これは、Adobe のサーバーによって生成される、アプリ固有の一意の訪問者 ID です。生成時にAdobeのサーバーにアクセスできない場合は、AppleのCFUUIDを使用してIDが生成されます。 この値は、初回起動時に生成され、その時点から保存および使用されます。 このIDは、アプリのアップグレードの間も保持され、標準のアプリケーションバックアッププロセス中に保存および復元され、アンインストール時に削除されます。
 
    >[!TIP]
    >
@@ -305,7 +309,7 @@ SDK は現在、Analytics、Target、Audience Manager、Adobe Experience Platfor
 
 * **overrideConfigPath**
 
-   アプリケーションの起動時に、別の ADBMobile JSON 設定ファイルを読み込むことができます。アプリケーションが閉じられるまで、この設定が使用されます。
+   アプリケーションの開始時に、別のADBMobile JSON設定ファイルを読み込むことができます。 アプリケーションが閉じられるまで、この設定が使用されます。
 
    >[!IMPORTANT]
    >
@@ -348,12 +352,15 @@ SDK は現在、Analytics、Target、Audience Manager、Adobe Experience Platfor
 
 * **setAdvertisingIdentifier**
 
-   IDFA を SDK に設定します。SDK で IDFA が設定されている場合、ライフサイクルで IDFA が送信されます。IDFA にはシグナル（ポストバック）でもアクセスできます。
+   IDFA を SDK に設定します。IDFAがSDKで設定されている場合、IDFAはライフサイクル内に送信されます。 シグナル（ポストバック）からアクセスすることもできます。
 
    >[!TIP]
    >
    >広告サービスを使用している場合に&#x200B;**のみ**、Apple API から IDFA を取得してください。IDFA を取得し、正しく使用していない場合は、アプリが拒否されることがあります。
-
+   >
+   >アプリケーションでIDFAが必要な場合は、 [](https://developer.apple.com/documentation/adsupport) Appleのドキュメントを参照し、広告トラッキングに関するユーザーの環境設定に関する質問を行い、IDFA値を取得します。
+   >
+   >iOS 14以降では、IDFA値を正しく取得するために、新しい [アプリ追跡透明度フレームワーク](https://developer.apple.com/documentation/apptrackingtransparency) (ATM)を実装する必要があります。
    * このメソッドの構文を次に示します。
 
       ```objective-c
@@ -363,7 +370,7 @@ SDK は現在、Analytics、Target、Audience Manager、Adobe Experience Platfor
    * このメソッドのコードサンプルを次に示します。
 
       ```objective-c
-      NSString *idfa = [[[ASIdentifierManager sharedManager]advertisingIdentifier] UUIDString]; 
+      NSString *idfa = // retrieve IDFA using AdSupport (before iOS 14.0) and/or AppTrackingTransparency (iOS 14.0+)
       [ADBMobile setAdvertisingIdentifier:idfa]; 
       ```
 
