@@ -7,16 +7,16 @@ solution: Marketing Cloud,Analytics
 title: ディープリンクの追跡
 topic: Developer and implementation
 uuid: ebb1c08c-a246-40b3-9ac6-4606a14b4c5a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '330'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
 
-# ディープリンクの追跡{#tracking-deep-links}
+# ディープリンクの追跡 {#tracking-deep-links}
 
 この情報は、Adobe Mobile Android SDK を使用して、モバイルアプリのディープリンクおよびディファードディープリンクを追跡する場合に役立ちます。
 
@@ -45,7 +45,7 @@ ht-degree: 88%
    }
    ```
 
-The Adobe Mobile SDK can parse key and value pairs of data that is appended to any Deep or Universal Link as long as the link contains a key with the `a.deeplink.id` label and a corresponding non-null and user-generated value. リンクに `a.deeplink.id` キーと値が含まれる場合、そのリンクに追加されたデータのすべてのキーと値のペアが解析され、ライフサイクルヒットに添付されて、Adobe Analytics に送信されます。
+Adobe Mobile SDK は、任意のディープリンクまたはユニバーサルリンクに `a.deeplink.id` というラベルを持つキーと、対応する null 以外のユーザー生成値が含まれる場合、そのリンクに追加されたデータのキーと値のペアを解析できます。リンクに `a.deeplink.id` キーと値が含まれる場合、そのリンクに追加されたデータのすべてのキーと値のペアが解析され、ライフサイクルヒットに添付されて、Adobe Analytics に送信されます。
 
 さらに、以下の 1 つ以上の予約済みキー（とユーザー生成値）をディープリンクまたはユニバーサルリンクに追加することもできます。
 
