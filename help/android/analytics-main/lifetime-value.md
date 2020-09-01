@@ -1,23 +1,23 @@
 ---
-description: ライフタイム値を使用すると、各Androidユーザーのライフタイム値を測定し、ターゲットできます。 この値は、全期間にわたる購入、広告表示、ビデオ完了、ソーシャル共有、写真のアップロードなどの保存に使用できます。
-seo-description: ライフタイム値を使用すると、各Androidユーザーのライフタイム値を測定し、ターゲットできます。 この値は、全期間にわたる購入、広告表示、ビデオ完了、ソーシャル共有、写真のアップロードなどの保存に使用できます。
+description: ライフタイム値を使用して、各 Android ユーザーのライフタイム値を測定し、ターゲットを設定できます。この値を使用して、全期間の購入、広告ビュー、ビデオ完了、ソーシャル共有、写真のアップロードなどを保存できます。
+seo-description: ライフタイム値を使用して、各 Android ユーザーのライフタイム値を測定し、ターゲットを設定できます。この値を使用して、全期間の購入、広告ビュー、ビデオ完了、ソーシャル共有、写真のアップロードなどを保存できます。
 seo-title: 訪問者のライフタイム値
 solution: Marketing Cloud,Analytics
 title: 訪問者のライフタイム値
 topic: Developer and implementation
 uuid: ba0308de-282e-46f9-a14c-19fb6d5c363e
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '232'
-ht-degree: 52%
+ht-degree: 100%
 
 ---
 
 
 # 訪問者のライフタイム値 {#visitor-lifetime-value}
 
-ライフタイム値を使用すると、各Androidユーザーのライフタイム値を測定し、ターゲットできます。 この値は、全期間にわたる購入、広告表示、ビデオ完了、ソーシャル共有、写真のアップロードなどの保存に使用できます。
+ライフタイム値を使用して、各 Android ユーザーのライフタイム値を測定し、ターゲットを設定できます。この値を使用して、全期間の購入、広告ビュー、ビデオ完了、ソーシャル共有、写真のアップロードなどを保存できます。
 
 `trackLifetimeValueIncrease` で値を送信するたびに、その値が既存の値に追加されます。ライフタイム値はデバイス上に保存され、`lifetimeValue` を呼び出していつでも取得することができます。
 
