@@ -1,23 +1,23 @@
 ---
-description: AdobeSDKを使用して個人情報(PII)を収集し、サードパーティのエンドポイントに送信できます。
-seo-description: AdobeSDKを使用して個人情報(PII)を収集し、サードパーティのエンドポイントに送信できます。
+description: Adobe SDK を使用して個人情報（PII）を収集し、サードパーティのエンドポイントに送信できます。
+seo-description: Adobe SDK を使用して個人情報（PII）を収集し、サードパーティのエンドポイントに送信できます。
 seo-title: PII ポストバック
 title: PII ポストバック
 uuid: 8d1f1fb8-6842-478b-a164-e7f727755bd9
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '182'
-ht-degree: 47%
+ht-degree: 100%
 
 ---
 
 
 # PII ポストバック {#pii-postbacks}
 
-AdobeSDKを使用して個人情報(PII)を収集し、サードパーティのエンドポイントに送信できます。
+Adobe SDK を使用して個人情報（PII）を収集し、サードパーティのエンドポイントに送信できます。
 
-AdobeSDKを使用してPIIを収集する場合は、PIIトラック呼び出しを送信する必要があります。 この呼び出しを使用すると、PIIデータの収集が有効になりますが、SDKはAdobeエンドポイントにデータを自動的に送信しません。 PII タイプのポストバックは、適切なエンドポイントで設定する必要があります。
+Adobe SDK を使用して PII を収集する場合は、PII トラック呼び出しを送信する必要があります。この呼び出しを使用すると、PII データの収集が有効になりますが、SDK は Adobe エンドポイントにデータを自動的に送信しません。PII タイプのポストバックは、適切なエンドポイントで設定する必要があります。
 
 >[!TIP]
 >
