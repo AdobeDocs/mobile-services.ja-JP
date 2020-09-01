@@ -7,11 +7,11 @@ solution: Marketing Cloud,Analytics
 title: モバイルアプリの獲得
 topic: Developer and implementation
 uuid: 4d32eae9-e856-4e40-8a29-2b5bccd106e0
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '876'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ Adobe Experience Platform Mobile SDK に関する情報やドキュメントを�
 >
 >獲得を使用するには、SDK バージョン 4.1 以降が&#x200B;**必要**&#x200B;です。
 
-ダウンロード計測用リンクは、AdobeMobileサービスで作成する必要があります。 詳しくは、「[獲得](/help/using/acquisition-main/acquisition-main.md)」を参照してください。
+ダウンロード計測用リンクは、Adobe Mobile Services で作成する必要があります。詳しくは、「[獲得](/help/using/acquisition-main/acquisition-main.md)」を参照してください。
 
 **SDK バージョン 4.18.0 以降**：
 
