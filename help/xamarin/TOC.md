@@ -1,21 +1,25 @@
 ---
-product: モバイルサービス
+product: mobile-services
 audience: end-user
-user-guide-title: Mobile Services Xamarinヘルプ
+user-guide-title: Mobile Services Xamarinガイド
+breadcrumb-title: Xamarin Guide
 translation-type: tm+mt
-source-git-commit: 9d1d3a2fa65c6627c748c417aa18f04f8fdc255e
+source-git-commit: 18ef20df0a32741685e35cee98a1adf4a1b823a1
+workflow-type: tm+mt
+source-wordcount: '36'
+ht-degree: 27%
 
 ---
 
 
-# Mobile Services Xamarinヘルプ {#xamarin}
+# Mobile Services Xamarinガイド {#xamarin}
 
-+ [Experience cloudソリューション4.x SDK用Xamarinコンポーネント](get-started.md)
++ [Experience Cloud ソリューション 4.x SDK 用 Xamarin コンポーネント](get-started.md)
 + [ライブラリへの呼び出し](library-calls.md)
 + [ライフサイクルの実装](lifecycle.md)
 + Android {#android-xamarin}
    + [Androidメソッド](c-android/methods-android.md)
-   + [Classes, enums, and interfaces](c-android/c-classes-enums-interfaces.md)
+   + [クラス、列挙、およびインターフェイス](c-android/c-classes-enums-interfaces.md)
 + iOS {#ios-xamarin}
-   + [iOSメソッド](c-ios/methods-ios.md)
-   + [Classes and enums](c-ios/c-classes-enums-constants.md)
+   + [iOSのメソッド](c-ios/methods-ios.md)
+   + [クラスと列挙](c-ios/c-classes-enums-constants.md)
