@@ -1,34 +1,38 @@
 ---
-product: モバイルサービス
+product: mobile-services
 audience: end-user
 user-guide-title: Mobile Services Windows 8.1ユニバーサルアプリストアSDK
+breadcrumb-title: Windows 8.1 Universal App Store SDK
 translation-type: tm+mt
-source-git-commit: 7aff336586058302046a728a0b1b0ce12660c1ba
+source-git-commit: 18ef20df0a32741685e35cee98a1adf4a1b823a1
+workflow-type: tm+mt
+source-wordcount: '78'
+ht-degree: 47%
 
 ---
 
 
 # Mobile Services Windows 8.1ユニバーサルアプリストアSDK {#windows-universal-appstore}
 
-+ [Experience Cloud ソリューション用 Windows 8.1 ユニバーサルアプリストア SDK 4.x ](overview.md)
++ [Experience Cloudソリューション用Windows 8.1ユニバーサルアプリストアSDK 4.x](overview.md)
 + [リリースノート](release-notes.md)
-+ Get started {#getting-started-win-appstore}
++ はじめに {#getting-started-win-appstore}
    + [はじめに](c-getting-started/c-getting-started.md)
-   + [開発者クイックスタート](c-getting-started/dev-qs.md)
+   + [開発者クイック開始](c-getting-started/dev-qs.md)
 + 設定 {#config-win-appstore}
    + [設定の概要](c-configuration/c-configuration.md)
    + [ADBMobileConfig.json config](c-configuration/c.json.md)
-   + [SDK methods](c-configuration/methods.md)
+   + [SDKのメソッド](c-configuration/methods.md)
 + Analytics {#analytics-win-appstore}
-   + [Analytics](analytics/analytics.md)
-   + Products variable {#products-variable}
-      + [製品変数](analytics/products/products.md)
-      + [マーチャンダイジングeVarおよび製品固有のイベントを含む製品変数](analytics/products/products-variable-evars-events.md)
-   + [イベントシリアル化](analytics/event-serialization.md)
+   + [分析](analytics/analytics.md)
+   + products 変数{#products-variable}
+      + [products 変数](analytics/products/products.md)
+      + [マーチャンダイジング eVar および製品固有のイベントを持つ products 変数 ](analytics/products/products-variable-evars-events.md)
+   + [イベントのシリアル化](analytics/event-serialization.md)
    + [ビデオ分析](analytics/video-qs.md)
-   + [Analytics methods](analytics/analytics-methods.md)
+   + [Analytics メソッド](analytics/analytics-methods.md)
 + [Target メソッド](target/target-methods.md)
-+ [Audience Manager methods](audiencemgmt/audience-manager-methods.md)
-+ [Lifecycle metrics](metrics.md)
-+ [Windows Visual Studio extensions for Experience Cloud Solutions 4.x SDK](extensions/win-vse-4x.md)
++ [Audience Manager メソッド](audiencemgmt/audience-manager-methods.md)
++ [ライフサイクル指標](metrics.md)
++ [Experience Cloudソリューション4.x SDK用Windows Visual Studio拡張機能](extensions/win-vse-4x.md)
 + [移行](migration-v3.md)
