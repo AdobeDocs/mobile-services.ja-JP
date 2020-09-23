@@ -4,10 +4,13 @@ seo-description: 処理ルールは、コンテキストデータ変数で送信
 seo-title: 処理ルールとコンテキストデータ
 solution: Experience Cloud,Analytics
 title: 処理ルールとコンテキストデータ
-topic: 開発者と導入
+topic: Developer and implementation
 uuid: 51338ccd-fa52-4d9c-97c4-947a4100465d
 translation-type: tm+mt
-source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '297'
+ht-degree: 61%
 
 ---
 
@@ -18,16 +21,16 @@ source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
 
 詳しくは、以下のコンテンツを参照してください。
 
-* [処理ルールのトレーニング](https://tv.adobe.com/embed/1181/16506/)（Summit 2013）
+* [処理ルールトレーニング](https://tv.adobe.com/embed/1181/16506/) @ Summit 2013
 * 処理ルールを使用するための承認の取得
 
-   処理ルールについて詳しくは、「[処理ルールの概要](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/processing-rules/processing-rules.html)」を参照してください。
+   処理ルールについて詳しくは、「[処理ルールの概要](https://docs.adobe.com/content/help/ja-JP/analytics/admin/admin-tools/processing-rules/processing-rules.html)」を参照してください。
 
 処理ルールを使用する際には、次の情報に留意してください。
 
-* コンテキストデータ変数は、名前空間を使用してグループ化します。これは、論理的な順序を維持するのに役立ちます。
+* 論理的な順序を維持するのに役立つので、名前空間を使用してコンテキストデータ変数をグループ化します。
 
-   例えば、ある製品に関する情報を収集する場合、以下の変数を定義できます。
+   例えば、製品に関する情報を収集する場合、次の変数を定義できます。
 
    ```js
    "product.type":"hat" 
@@ -35,9 +38,9 @@ source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
    "product.color":"blue"
    ```
 
-* コンテキストデータ変数は、処理ルールインターフェイスでアルファベット順に並べ替えられます。そのため、同じ名前空間に属している変数がすぐにわかります。
+* 処理ルールインターフェイスでは、コンテキストデータ変数がアルファベット順に並べ替えられるので、同じ名前空間にある変数をすばやく確認できます。
 
-   コンテキストデータキーの名前には、eVar 番号および prop 番号を使用しないようにします。
+   evarまたはprop番号を使用して、コンテキストデータキーに名前を付けないでください。
 
    ```js
    "eVar1":"jimbo"
@@ -49,13 +52,13 @@ source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
    "username":"jimbo"
    ```
 
-* カウンターイベントを定義するコンテキスト変数は、1 に設定します。
+* カウンターイベントを定義するコンテキスト変数は1に設定する必要があります。
 
    ```js
    "logon":"1"
    ```
 
-* 増分イベントを定義するコンテキストデータ変数では、イベントをキーに、増分する量を値に設定することができます。
+* 増分イベントを定義するコンテキストデータ変数は、イベントをキーとして持つことができ、増分量を値として持つことができます。
 
    ```js
    "levels completed":"6"
