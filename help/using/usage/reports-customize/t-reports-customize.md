@@ -1,14 +1,17 @@
 ---
 description: この情報は、フィルター（セグメント）を追加して組み込みのレポートをカスタマイズするのに役立ちます。
-keywords: モバイル
+keywords: mobile
 seo-description: この情報は、フィルター（セグメント）を追加して組み込みのレポートをカスタマイズするのに役立ちます。
 seo-title: レポートへのフィルターの追加
 solution: Experience Cloud,Analytics
 title: レポートへのフィルターの追加
-topic: レポート, 指標
+topic: Reports,Metrics
 uuid: 19c395cc-2e07-4588-825b-f2f8b10a87c1
-translation-type: ht
-source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '384'
+ht-degree: 70%
 
 ---
 
@@ -23,11 +26,11 @@ source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
 
 この例では、**[!UICONTROL ユーザーとセッション]**&#x200B;レポートをカスタマイズしますが、説明はどのレポートにも当てはまります。
 
-1. アプリを開いて、**[!UICONTROL 使用状況]**／**[!UICONTROL ユーザーとセッション]**&#x200B;をクリックします。
+1. Open your app and click **[!UICONTROL Usage]** > **[!UICONTROL Users &amp; Sessions]**.
 
    ![](assets/customize1.png)
 
-   このレポートは、アプリのユーザー数を時系列で表示します。例えば、iOS バージョンと Android バージョンの両方のアプリの指標が同じレポートスイートで収集されている場合、ユーザー指標にカスタムフィルターを追加して、モバイル OS 別にユーザーをセグメント化できます。
+   このレポートは、アプリのユーザー数を時系列で表示します。 ただし、このアプリのiOS版とAndroid版の両方の指標は同じレポートスイートで収集されます。 ユーザー指標にカスタムフィルターを追加することで、モバイルOSごとにユーザーをセグメント化できます。
 
 1. **[!UICONTROL カスタマイズ]** をクリックします。
 
@@ -50,7 +53,7 @@ source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
 1. **[!UICONTROL 更新]** をクリックします。
 1. レポートを再生成するには、**[!UICONTROL 実行]** をクリックします。
 
-   このレポートには、ユーザーがオペレーティングシステムごとに分類された形で表示されます。レポートのタイトルも、レポートに適用したフィルターに合わせて変更されます。
+   このレポートには、ユーザーがオペレーティングシステム別に分類されて表示されるようになりました。 レポートのタイトルが、レポートに適用されたフィルターに合わせて変更されました。
 
    ![](assets/customize5.png)
 
@@ -64,8 +67,8 @@ source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
 
 1. **[!UICONTROL 更新]** および **[!UICONTROL 実行]** をクリックします。
 
-   このレポートには、アプリを初回起動した iOS 8.3 のユーザーが表示されます。
+   このレポートには、iOS 8.3を使用し、アプリを初めて起動したユーザーが表示されます。
 
    ![](assets/customize7.png)
 
-   レポートのカスタマイズメニューでいくつかのオプションをテストしてみてください。お気に入りのレポートは、ブックマークできます。Adobe Mobile のレポートの URL を使用し、URL を電子メールで送信したり、お気に入りに追加したりできます。
+   レポートのカスタマイズメニューの様々なオプションをテストし、お気に入りにブックマークを付けてください。 Adobe Mobile のレポートの URL を使用し、URL を電子メールで送信したり、お気に入りに追加したりできます。
