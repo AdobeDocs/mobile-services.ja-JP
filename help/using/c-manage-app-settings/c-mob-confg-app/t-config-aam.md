@@ -1,14 +1,17 @@
 ---
 description: 新しいアプリの作成中または既存のアプリの編集中に、アプリ設定ページで Audience Manager SDK の設定をおこなうことができます。
-keywords: モバイル
+keywords: mobile
 seo-description: 新しいアプリの作成中または既存のアプリの編集中に、アプリ設定ページで Audience Manager SDK の設定をおこなうことができます。
 seo-title: Audience Manager オプションの設定
 solution: Experience Cloud,Analytics
 title: Audience Manager オプションの設定
-topic: 指標
+topic: Metrics
 uuid: 471270ca-cee5-401e-aac1-e48146ee8399
-translation-type: ht
-source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '129'
+ht-degree: 100%
 
 ---
 
