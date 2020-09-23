@@ -4,10 +4,13 @@ seo-description: 状態とは、アプリケーションの様々な画面また
 seo-title: アプリの状態の追跡
 solution: Experience Cloud,Analytics
 title: アプリの状態の追跡
-topic: 開発者と導入
+topic: Developer and implementation
 uuid: 69c99d05-5816-4c86-97c5-d218dc26c129
-translation-type: ht
-source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '291'
+ht-degree: 88%
 
 ---
 
@@ -68,11 +71,11 @@ public void onCreate(Bundle savedInstanceState) {
 
 ## アプリの状態のレポート {#section_0F6A54AB7A3F42C9BB042D86A0FC4630}
 
-状態を確認するには、通常、パスレポートを使用します。このレポートでは、ユーザーがアプリ内をどのように移動したかや、最も頻繁に表示されたのはどの状態であるかがわかります。
+通常、州はパスレポートを使用して表示されます。パスレポートを使用すると、ユーザーがアプリ内をどのように移動したか、および最も頻繁に表示された州を確認できます。
 
 |  |  |
 |--- |--- |
-| Adobe Mobile Services | **[!UICONTROL 画面遷移]**&#x200B;レポート。このレポートは、ユーザーがアプリケーション内でたどったパスに基づきます。パスの例：**[!UICONTROL ホーム]**／**[!UICONTROL 設定]**／**[!UICONTROL フィード]**。 |
+| Adobe Mobile Services | **[!UICONTROL 画面遷移]**&#x200B;レポート。このレポートは、ユーザーがアプリケーション内でたどったパスに基づきます。A sample path is  **[!UICONTROL Home]**  >  **[!UICONTROL Settings]**  > **[!UICONTROL Feed]**. |
 | Adobe Analytics | 状態は、**[!UICONTROL ページ]**&#x200B;レポート、**[!UICONTROL ページビュー数]**&#x200B;レポート、**[!UICONTROL パス]**&#x200B;レポートなど、ページを確認できる場所であればどこでも確認できます。 |
 | ad hoc analysis | 状態は、**[!UICONTROL ページ]**&#x200B;ディメンション、**[!UICONTROL ページビュー数]**&#x200B;指標、**[!UICONTROL パス]**&#x200B;レポートを使用してページを確認できる場所であればどこでも確認できます。 |
 
