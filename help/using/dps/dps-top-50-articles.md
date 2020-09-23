@@ -1,14 +1,17 @@
 ---
 description: トップ 50 の記事レポートには、アプリを使用して最も読まれた記事を示す棒グラフとランクレポートが表示されます。このレポートは、Digital Publishing Suites（DPS）のユーザーのみが利用できます。
-keywords: モバイル
+keywords: mobile
 seo-description: トップ 50 の記事レポートには、アプリを使用して最も読まれた記事を示す棒グラフとランクレポートが表示されます。このレポートは、Digital Publishing Suites（DPS）のユーザーのみが利用できます。
 seo-title: トップ 50 の記事
 solution: Experience Cloud,Analytics
 title: トップ 50 の記事
-topic: 指標
+topic: Metrics
 uuid: 341370d1-fa87-43ca-8135-425b3bba272f
-translation-type: ht
-source-git-commit: b11a03226ff6100554d072b4ef523d703b80a6e5
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '256'
+ht-degree: 95%
 
 ---
 
@@ -32,7 +35,7 @@ source-git-commit: b11a03226ff6100554d072b4ef523d703b80a6e5
 
    **[!UICONTROL 表示方法]** オプションを変更したり、指標およびフィルターを追加したり、追加のシリーズ（指標）を追加したりして、レポートをカスタマイズします。詳しくは、「[レポートのカスタマイズ](/help/using/usage/reports-customize/reports-customize.md)」を参照してください。
 
-* **[!UICONTROL フィルター]**
+* **[!UICONTROL Filter]**
 
    **[!UICONTROL フィルター]** をクリックし、様々なレポートにわたるフィルターを作成して、すべてのモバイルレポートにおけるセグメントのパフォーマンスを確認します。共通フィルターを定義すると、パス（画面遷移）レポート以外のすべてのレポートに適用できます。詳しくは、「[共通フィルターの追加](/help/using/usage/reports-customize/t-sticky-filter.md)」を参照してください。
 
