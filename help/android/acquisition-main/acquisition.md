@@ -3,13 +3,13 @@ description: Adobe Mobile Services で一意のトラッキングコードを持
 keywords: android;library;mobile;sdk
 seo-description: Adobe Mobile Services で一意のトラッキングコードを持つダウンロード計測用リンクを生成できます。生成されたリンクをユーザーがクリックした後で App Store からアプリをダウンロードして実行すると、SDK が自動的に獲得データを収集し、Adobe Mobile Services に送信します。
 seo-title: モバイルアプリの獲得
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: モバイルアプリの獲得
 topic: Developer and implementation
 uuid: 4d32eae9-e856-4e40-8a29-2b5bccd106e0
-translation-type: ht
-source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
 source-wordcount: '876'
 ht-degree: 100%
 
