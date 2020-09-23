@@ -1,14 +1,17 @@
 ---
 description: この情報は、ポストバックの機能とそのしくみを理解するのに役立ちます。
-keywords: Android, ライブラリ, モバイル, SDK
+keywords: android;library;mobile;sdk
 seo-description: この情報は、ポストバックの機能とそのしくみを理解するのに役立ちます。
 seo-title: ポストバックの例
 solution: Experience Cloud,Analytics
 title: ポストバックの例
-topic: 開発者と導入
+topic: Developer and implementation
 uuid: 8010cd00-d42b-4e16-8403-692fab2550f1
-translation-type: ht
-source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '141'
+ht-degree: 100%
 
 ---
 
