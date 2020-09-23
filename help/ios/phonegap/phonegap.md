@@ -5,10 +5,13 @@ seo-description: このプラグインを使用すると、PhoneGap プロジェ
 seo-title: PhoneGap プラグイン
 solution: Experience Cloud,Analytics
 title: PhoneGap プラグイン
-topic: 開発者と導入
+topic: Developer and implementation
 uuid: f88bcf10-1f9e-4c97-b348-40db797c9923
-translation-type: ht
-source-git-commit: 517ae533864aebe9c6a20d877a9638d5d3e2a071
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '327'
+ht-degree: 96%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 517ae533864aebe9c6a20d877a9638d5d3e2a071
 
 ## 新しい Adobe Experience Platform Mobile SDK リリース
 
-Adobe Experience Platform Mobile SDK に関する情報やドキュメントをお探しの場合、最新のドキュメントについては、[こちら](https://aep-sdks.gitbook.io/docs/)をクリックしてください。
+Adobe Experience Platform Mobile SDK に関する情報やドキュメントをお探しの場合[こちら](https://aep-sdks.gitbook.io/docs/)をクリックし、最新のドキュメントを参照してください。
 
 2018 年 9 月に、SDK の新しいメジャーバージョンをリリースしました。これらの新しい Adobe Experience Platform Mobile SDK は、[Experience Platform Launch](https://www.adobe.com/jp/experience-platform/launch.html) から設定できます。
 
@@ -39,7 +42,7 @@ PhoneGap プロジェクトを作成するには、[PhoneGap](https://helpx.adob
    cordova plugin add adobe-mobile-services
    ```
 
-## プラグインの手動インストール{#section_D53BA60D488C4DB8AD2BDF90439C180A}
+## 手動でのプラグインのインストール {#section_D53BA60D488C4DB8AD2BDF90439C180A}
 
 ### AppMeasurement ライブラリの取り込み
 
@@ -48,7 +51,7 @@ AppMeasurement を取り込むには：
 1. `ADBMobile_PhoneGap.h` と `ADBMobile_PhoneGap.m` を Xcode プロジェクトの **[!UICONTROL Plugins]** フォルダーにドラッグします。
 1. 以下の設定を実行します。
 
-   1. **[!UICONTROL Copy items into destination group's folder (if needed)（必要に応じて保存先グループのフォルダーにアイテムをコピーする）]**&#x200B;を選択します。
+   1. **[!UICONTROL Copy items into destination group&#39;s folder (if needed)（必要に応じて保存先グループのフォルダーにアイテムをコピーする）]**&#x200B;を選択します。
    1. AppMeasurement コードを使用するターゲットを選択します。
 
 1. `ADB_Helper.js` をプロジェクトの `www` フォルダーにドラッグします。
@@ -62,15 +65,16 @@ AppMeasurement を取り込むには：
 
 ### アプリの権限の追加
 
-AppMeasurement ライブラリには以下が必要です。
+AppMeasurementライブラリには、以下が必要です。
 
 1. Xcode IDE を起動して、アプリを開きます。
 1. **[!UICONTROL Adobe Mobile]** フォルダーを Xcode プロジェクトにドラッグして、以下の設定を実行します。
 
-   1. **[!UICONTROL Copy items into destination group's folder (if needed)（必要に応じて保存先グループのフォルダーにアイテムをコピーする）]**&#x200B;を選択します。
+   1. **[!UICONTROL Copy items into destination group&#39;s folder (if needed)（必要に応じて保存先グループのフォルダーにアイテムをコピーする）]**&#x200B;を選択します。
    1. **[!UICONTROL Create groups for any added folders（追加されたフォルダーに対してグループを再帰的に作成する）]**&#x200B;を選択します。
    1. AppMeasurement コードを使用するターゲットを選択して、**[!UICONTROL Finish]**&#x200B;をクリックします。
-   ![](assets/xcode-settings.png){width="672"}
+
+   ![](assets/xcode-settings.png){width=&quot;672&quot;}
 
 1. プロジェクトのターゲットの&#x200B;**[!UICONTROL Build Phases]**&#x200B;タブで、**[!UICONTROL Link Binary with Libraries]**&#x200B;セクションを展開して、以下のライブラリを追加します。
 
