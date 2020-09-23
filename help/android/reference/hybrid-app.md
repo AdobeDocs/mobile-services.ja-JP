@@ -4,10 +4,13 @@ seo-description: アプリでモバイル Web コンテンツを開く場合は�
 seo-title: アプリとモバイル Web にまたがる訪問者トラッキング
 solution: Experience Cloud,Analytics
 title: アプリとモバイル Web にまたがる訪問者トラッキング
-topic: 開発者と導入
+topic: Developer and implementation
 uuid: 073572e4-4c55-4b27-b4a7-e4349ccde7bf
-translation-type: ht
-source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '508'
+ht-degree: 85%
 
 ---
 
@@ -18,7 +21,7 @@ source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 ## アプリの訪問者 ID
 
-Android SDK は、アプリのインストール時に一意の訪問者 ID を生成します。この ID は、モバイルデバイスの永続メモリに保存され、ヒットごとに送信され、ユーザーがアプリをアンインストールするときにのみ削除されます。
+Android SDKは、アプリがインストールされると一意の訪問者IDを生成します。 このIDはモバイルデバイスの永続的なメモリに保存され、ヒットのたびに送信され、ユーザーがアプリをアンインストールした場合にのみ削除されます。
 
 >[!TIP]
 >
@@ -59,7 +62,7 @@ Android SDK は、アプリのインストール時に一意の訪問者 ID を�
    });
    ```
 
-アドビに新しい ID のリクエストを送信するのではなく、宛先ドメインの ID サービスコードによって、URL から MID が抽出されます。このコードでは、渡された MID を使用して訪問者を追跡します。
+宛先ドメインのIDサービスコードは、新しいIDの要求をAdobeに送信する代わりに、URLからMIDを抽出します。 コードは、MIDで渡された値を使用して訪問者を追跡します。
 
 モバイル Web コンテンツからヒットがあったら、各ヒットに `mid` パラメーターが存在すること、およびこの値がアプリコードによって送信された `mid` パラメーターと一致することを確認します。
 
