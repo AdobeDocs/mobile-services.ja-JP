@@ -2,12 +2,15 @@
 description: iOS ライブラリの実装や、起動、アップグレード、セッション、関与ユーザーといったライフサイクル指標の収集に役立つ情報です。
 seo-description: iOS ライブラリの実装や、起動、アップグレード、セッション、関与ユーザーといったライフサイクル指標の収集に役立つ情報です。
 seo-title: コア実装とライフサイクル
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: コア実装とライフサイクル
 topic: Developer and implementation
 uuid: 96d06325-e424-4770-8659-4b5431318ee3
-translation-type: ht
-source-git-commit: bd8aa0c7ff58e4cf28a67b8a107db52fb30cd3dc
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '656'
+ht-degree: 100%
 
 ---
 
@@ -61,6 +64,7 @@ SDK をダウンロードするには
    * **[!UICONTROL Copy Items if Needed]**&#x200B;チェックボックスがオンになっている。
    * **[!UICONTROL Create Groups]**&#x200B;がオンになっている。
    * **[!UICONTROL Add to targets]**&#x200B;セクションのチェックボックスがすべてオフになっている。
+
    ![](assets/step_3.png)
 
 1. **[!UICONTROL Finish]**&#x200B;をクリックします。
@@ -93,6 +97,7 @@ SDK をダウンロードするには
       * `SystemConfiguration.framework`
       * `libsqlite3.0.tbd`
       * `AdobeMobileLibrary\_TV.a`
+
    >[!CAUTION]
    >
    > 同じターゲット内で複数の `AdobeMobileLibrary*.a` ファイルをリンクすると、予期せぬ動作が発生したり、ビルドできなくなったりすることがあります。
