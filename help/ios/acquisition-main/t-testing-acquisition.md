@@ -5,8 +5,11 @@ seo-title: 従来の獲得のテスト
 solution: Experience Cloud,Analytics
 title: 従来の獲得のテスト
 uuid: e0591f4a-e26b-4fe4-97c1-a6831a926fa5
-translation-type: ht
-source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '272'
+ht-degree: 100%
 
 ---
 
@@ -27,7 +30,7 @@ source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
 
 1. 手順 2 で使用したのと同じモバイルデバイスで、アプリケーションを初めて起動します。
 
-   最も簡単な方法は、アプリを削除してから再度インストールすることです。
+   この問題を確実に発生させる最も簡単な方法は、アプリを削除して再びインストールすることです。
 
 次の情報に留意してください。
 
