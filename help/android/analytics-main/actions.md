@@ -1,20 +1,23 @@
 ---
-description: アクションは、測定する Android アプリ内で発生するイベントです。
-seo-description: アクションは、測定する Android アプリ内で発生するイベントです。
+description: アクションとは、測定するAndroidアプリで発生するイベントです。
+seo-description: アクションとは、測定するAndroidアプリで発生するイベントです。
 seo-title: アプリのアクションの追跡
 solution: Experience Cloud,Analytics
 title: アプリのアクションの追跡
-topic: 開発者と導入
+topic: Developer and implementation
 uuid: fe01c1df-f6bb-4b32-b3ef-959d2c724af6
-translation-type: ht
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '379'
+ht-degree: 88%
 
 ---
 
 
 # アプリのアクションの追跡 {#track-app-actions}
 
-アクションは、測定する Android アプリ内で発生するイベントです。
+アクションとは、測定するAndroidアプリで発生するイベントです。
 
 各アクションは、イベントが発生するたびに増分される、1 つ以上の対応する指標を持ちます。例えば、新規サブスクリプションごとに、記事が表示されるたびに、レベルが完了するたびに、`trackAction` 呼び出しを送信します。アクションは自動的には追跡されないので、追跡するイベントが発生したときに `trackAction` を呼び出し、アクションをカスタムイベントにマップする必要があります。
 
