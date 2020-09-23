@@ -3,13 +3,13 @@ description: この情報は、アプリ内メッセージのトラブルシュ�
 keywords: mobile
 seo-description: この情報は、アプリ内メッセージのトラブルシューティングに役立ちます。
 seo-title: アプリ内メッセージのトラブルシューティング
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: アプリ内メッセージのトラブルシューティング
 topic: Metrics
 uuid: 58533aa3-2eb2-4597-8525-77e4e5975e56
-translation-type: ht
-source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
 source-wordcount: '595'
 ht-degree: 100%
 
