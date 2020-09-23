@@ -1,14 +1,17 @@
 ---
 description: この情報を使用すると、新しいアプリの作成中または既存のアプリの編集中に、アプリ設定ページでプッシュサービスオプションを設定するのに役立ちます。
-keywords: モバイル
+keywords: mobile
 seo-description: この情報を使用すると、新しいアプリの作成中または既存のアプリの編集中に、アプリ設定ページでプッシュサービスオプションを設定するのに役立ちます。
 seo-title: プッシュメッセージの設定
 solution: Experience Cloud,Analytics
 title: プッシュメッセージの設定
-topic: 指標
+topic: Metrics
 uuid: 6763858d-6046-4d36-87c0-cf3600a44fb1
-translation-type: ht
-source-git-commit: 2c85c31d2fa54de26771553a6d349d3101e0048c
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '318'
+ht-degree: 99%
 
 ---
 
@@ -21,7 +24,7 @@ source-git-commit: 2c85c31d2fa54de26771553a6d349d3101e0048c
 
 * **レポートスイートの考慮事項**
 
-   各レポートスイートでは、Apple 用に 1 つのアプリ、Google 用に 1 つのアプリを設定できます。追加のアプリが必要な場合（例えば、実稼動環境用と開発環境用にアプリが必要な場合）、各間教養に新しいアプリストアアプリと新しいレポートスイートを設定する必要があります。
+   各レポートスイートでは、Apple 用に 1 つのアプリ、Google 用に 1 つのアプリを設定できます。追加のアプリが必要な場合（例えば、実稼動環境用と開発環境用にアプリが必要な場合）、各環境用に新しいアプリストアアプリと新しいレポートスイートを設定する必要があります。
 
 >[!IMPORTANT]
 >
@@ -53,4 +56,4 @@ source-git-commit: 2c85c31d2fa54de26771553a6d349d3101e0048c
       * [Android でのプッシュメッセージ](/help/android/messaging-main/push-messaging/push-messaging.md)
       * [iOS でのプッシュメッセージ](/help/ios/messaging-main/push-messaging/push-messaging.md)
 
-1. **[!UICONTROL 保存]**&#x200B;をクリックします。
+1. 「**[!UICONTROL 保存]**」をクリックします。
