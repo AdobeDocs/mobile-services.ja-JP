@@ -1,26 +1,29 @@
 ---
-description: Adobe Mobile および Adobe Mobile SDK を使用すると、ユーザーにプッシュメッセージを送信できます。SDK を使用して、プッシュメッセージをクリックした後にアプリを開いたユーザーを簡単にレポートすることもできます。
-seo-description: Adobe Mobile および Adobe Mobile SDK を使用すると、ユーザーにプッシュメッセージを送信できます。SDK を使用して、プッシュメッセージをクリックした後にアプリを開いたユーザーを簡単にレポートすることもできます。
+description: AdobeモバイルとAdobeモバイルSDKを使用して、ユーザーにプッシュメッセージを送信できます。 また、SDKを使用すると、プッシュメッセージをクリックした後にアプリを開いたユーザーを簡単にレポートできます。
+seo-description: AdobeモバイルとAdobeモバイルSDKを使用して、ユーザーにプッシュメッセージを送信できます。 また、SDKを使用すると、プッシュメッセージをクリックした後にアプリを開いたユーザーを簡単にレポートできます。
 seo-title: プッシュメッセージ
 solution: Experience Cloud,Analytics
 title: プッシュメッセージ
-topic: 開発者と導入
+topic: Developer and implementation
 uuid: 729d4010-3733-4dff-b188-ad45bd3e7cc4
-translation-type: ht
-source-git-commit: 17cb91a28966cf32f955a2cb724e89ab228de5b8
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '439'
+ht-degree: 61%
 
 ---
 
 
 # プッシュメッセージ{#push-messaging}
 
-Adobe Mobile および Adobe Mobile SDK を使用すると、ユーザーにプッシュメッセージを送信できます。SDK を使用して、プッシュメッセージをクリックした後にアプリを開いたユーザーを簡単にレポートすることもできます。
+AdobeモバイルとAdobeモバイルSDKを使用して、ユーザーにプッシュメッセージを送信できます。 また、SDKを使用すると、プッシュメッセージをクリックした後にアプリを開いたユーザーを簡単にレポートできます。
 
 プッシュメッセージを使用するには、SDK バージョン 4.6 以降が&#x200B;**必要**&#x200B;です。
 
 >[!IMPORTANT]
 >
->アプリ内部の Experience Cloud ID を手動で設定しないでください。手動で設定すると、新しい一意のユーザーが作成されます。このユーザーは、オプトインステータスが原因でプッシュメッセージを受信しません。例えば、プッシュメッセージを受信するためにオプトインしているユーザーがアプリにログインしたとします。ログイン後、アプリ内で ID を手動で設定すると、プッシュメッセージの受信をオプトインしていない新しい一意のユーザーが作成されます。この新しいユーザーは、プッシュメッセージを受信しません。
+>アプリ内部の Experience Cloud ID を手動で設定しないでください。これにより、新しい一意のユーザーが作成されます。このユーザーはオプトイン状態のため、プッシュメッセージを受信しません。 例えば、ユーザーがプッシュメッセージを受信するようにアプリにログインしているとします。 ログイン後、アプリ内で手動でIDを設定すると、プッシュメッセージの受信を希望しない新しい一意のユーザーが作成されます。 この新しいユーザーは、プッシュメッセージを受信しません。
 >
 >新しいレポートスイートへのアプリの移行はサポートされていません。新しいレポートスイートに移行すると、プッシュ設定が破損し、メッセージが送信されない可能性があります。
 
@@ -73,4 +76,7 @@ Adobe Mobile および Adobe Mobile SDK を使用すると、ユーザーにプ�
 
       * `Config.collectLifecycleData(this)` または `Config.collectLifecycleData(this, contextData)` を使用する。
 
-      * `Config.collectLifecycleData()` は使用&#x2
+      * `Config.collectLifecycleData()` は使用&#x200B;**しない**。
+
+
+
