@@ -2,20 +2,20 @@
 description: 'null'
 keywords: Unity
 seo-description: 'null'
-seo-title: ADBMobile.csメソッド
-solution: Marketing Cloud,Developer
-title: ADBMobile.csメソッド
+seo-title: ADBMobile.cs メソッド
+solution: Experience Cloud
+title: ADBMobile.cs メソッド
 uuid: af504934-febd-45d9-81e2-2a310f4c65dc
 translation-type: tm+mt
-source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '1324'
-ht-degree: 65%
+ht-degree: 66%
 
 ---
 
 
-# ADBMobile.csメソッド {#adbmobile-cs-methods}
+# ADBMobile.cs メソッド {#adbmobile-cs-methods}
 
 ## 設定メソッド
 
@@ -304,7 +304,7 @@ ht-degree: 65%
 
 * **TrackActionFromBackground（iOSのみ）**
 
-   バックグラウンドで発生したアクションを追跡します。 これにより、特定のシナリオでライフサイクルイベントが発生するのを抑えます。
+   バックグラウンドで発生したアクションを追跡します。これにより、特定のシナリオでライフサイクルイベントが発生しないようにします。
 
    >[!TIP]
    >
