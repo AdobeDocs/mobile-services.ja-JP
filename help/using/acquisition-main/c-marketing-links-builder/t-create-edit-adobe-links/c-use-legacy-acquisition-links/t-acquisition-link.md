@@ -1,23 +1,26 @@
 ---
-description: Apple App Store や Google Play からアプリを直接ダウンロードできるアプリストアリンクを作成できます。これにより、単なるダウンロード回数に加えて、このリンク経由でアプリをダウンロードした後のユーザー行動（ライフサイクル系指標や成功イベント）を長期で追えるようになります。
-keywords: モバイル
-seo-description: Apple App Store や Google Play からアプリを直接ダウンロードできるアプリストアリンクを作成できます。これにより、単なるダウンロード回数に加えて、このリンク経由でアプリをダウンロードした後のユーザー行動（ライフサイクル系指標や成功イベント）を長期で追えるようになります。
+description: アプリをApple App StoreやGoogle Playから直接ダウンロードできるアプリストアリンクを作成できます。 作成したリンクは、ダウンロードの成功イベントを表します。
+keywords: mobile
+seo-description: アプリをApple App StoreやGoogle Playから直接ダウンロードできるアプリストアリンクを作成できます。 作成したリンクは、ダウンロードの成功イベントを表します。
 seo-title: ダウンロード計測用リンクの作成
 solution: Experience Cloud,Analytics
 title: ダウンロード計測用リンクの作成
-topic: 指標
+topic: Metrics
 uuid: bb603013-fca9-44a2-820a-59e1c85d9444
-translation-type: ht
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '506'
+ht-degree: 74%
 
 ---
 
 
 # ダウンロード計測用リンクの作成{#create-an-acquisition-link}
 
-Apple App Store や Google Play からアプリを直接ダウンロードできるアプリストアリンクを作成できます。これにより、単なるダウンロード回数に加えて、このリンク経由でアプリをダウンロードした後のユーザー行動（ライフサイクル系指標や成功イベント）を長期で追えるようになります。
+アプリをApple App StoreやGoogle Playから直接ダウンロードできるアプリストアリンクを作成できます。 作成したリンクは、ダウンロードの成功イベントを表します。
 
-1. **[!UICONTROL 獲得]**／**[!UICONTROL ダウンロード計測用リンク設定]**／**[!UICONTROL 新規作成]**&#x200B;をクリックします。
+1. Click **[!UICONTROL Acquisition]** > **[!UICONTROL Manage Acquisition Links]** > **[!UICONTROL Create New]**.
 1. **[!UICONTROL リンク情報]** セクションに次の情報を入力します。
 
    * （**必須**）アプリのリンクを説明する&#x200B;**[!UICONTROL 名前]**&#x200B;を指定します。
@@ -38,7 +41,8 @@ Apple App Store や Google Play からアプリを直接ダウンロードでき
       アプリストアを選択します。
       * Apple App Store
       * Google Play
-      次に示すように、アプリストアによって異なるオプションがあります。
+
+      以下に示すように、アプリストアごとに異なるオプションがあります。
 
    * **[!UICONTROL ブラウザーの地域（Apple App Store のみ）]**
 
@@ -69,7 +73,7 @@ Apple App Store や Google Play からアプリを直接ダウンロードでき
 
 
 
-1. 設定を保存して、リンクを生成するには、**[!UICONTROL 追加]**／**[!UICONTROL 保存]**&#x200B;をクリックします。
+1. To save your configuration and to generate the link, click **[!UICONTROL Add]** > **[!UICONTROL Save]**.
 
    新規作成されたリンクが **[!UICONTROL App Store リンク]** セクションに表示されます。
 
