@@ -2,13 +2,13 @@
 description: この情報は、ADBMobile.json 設定ファイルを使用する場合に役立ちます。
 seo-description: この情報は、ADBMobile.json 設定ファイルを使用する場合に役立ちます。
 seo-title: ADBMobile JSON 設定
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: ADBMobile JSON 設定
 topic: Developer and implementation
 uuid: 1decf605-7bc3-4e73-ad52-1ecd5821599e
-translation-type: ht
-source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
 source-wordcount: '1678'
 ht-degree: 100%
 
