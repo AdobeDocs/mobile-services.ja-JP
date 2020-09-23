@@ -4,15 +4,18 @@ seo-description: iOS アプリデータを収集するようにレポートス�
 seo-title: 事前準備
 solution: Experience Cloud,Analytics
 title: 事前準備
-topic: 開発者と導入
+topic: Developer and implementation
 uuid: 04133f68-3618-41fd-8a13-aec5b6f04df6
-translation-type: ht
-source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '595'
+ht-degree: 95%
 
 ---
 
 
-# 事前準備{#before-you-start}
+# 事前準備 {#before-you-start}
 
 iOS アプリデータを収集するようにレポートスイートを設定するには、次の手順を実行します。
 
@@ -25,9 +28,9 @@ Analytics 管理者およびアプリ開発者は、次のタスクを完了す�
 レポートスイートを設定してモバイルアプリデータを収集するには、以下のようにします。
 
 1. [Adobe Mobile Services UI へのログイン](/help/ios/getting-started/getting-started.md)に記載される節のいずれかを完了します。
-1. 各アプリ開発者の Analytics アカウントを作成します。
+1. アプリ開発者ごとに Analytics アカウントを作成します。
 
-これで、アプリ開発者は作成されたレポートスイートにアクセスして表示できるようになります。
+これで、アプリ開発者は作成されたレポートスイートにアクセスして表示できるようになります
 
 >[!IMPORTANT]
 >
@@ -44,7 +47,7 @@ Analytics 管理者およびアプリ開発者は、次のタスクを完了す�
 
 ## Adobe Mobile Services UI へのログイン {#section_690A2EC4572E47869F183974E932A6A8}
 
-Adobe Mobile Services は、モバイルアプリの分析およびターゲティングのための主要レポートインターフェイスです。これらの手順を完了すると、データ収集サーバー、レポートスイートなど、様々な設定が事前に構成された設定ファイルをダウンロードできます。
+Adobe Mobile Services は、モバイルアプリの分析およびターゲティングのための主要レポートインターフェイスです。これらの手順を完了すると、データ収集サーバー、レポートスイート、その他多くの設定で事前設定された設定ファイルをダウンロードできます。
 
 Adobe Mobile Services には、以下のいずれかの方法でログインできます。
 
@@ -60,17 +63,17 @@ Adobe Mobile Services には、以下のいずれかの方法でログインで�
 
 * **Adobe Analytics**
 
-   **[!UICONTROL Analytics アカウントでサインイン]**&#x200B;をクリックし、Analytics の会社名、ユーザー名、パスワードを入力します。
+   **[!UICONTROL Analytics アカウントでサインイン]** をクリックし、Analytics の会社名、ユーザー名、パスワードを入力します。
 
 ## レポートスイートの作成 {#section_7BC602ED1ABA42C6AB722F506B5219F3}
 
 アプリのデータを収集し、アプリを定義するレポートスイートを作成するには、以下のようにします。
 
-1. **[!UICONTROL 新しいアプリを作成]**&#x200B;をクリックします。
+1.  **[!UICONTROL 新しいアプリを作成]** をクリックします。
 
-   このボタンが表示されない場合、**[!UICONTROL アプリ設定]**／**[!UICONTROL 追加]**&#x200B;をクリックします。
+   このボタンが表示されない場合、**[!UICONTROL アプリ設定]** ／ **[!UICONTROL 追加]** をクリックします。
 
-1. **[!UICONTROL レポートスイート]**&#x200B;ドロップダウンで、**[!UICONTROL 新しいレポートスイート]**&#x200B;を選択します。
+1. **[!UICONTROL レポートスイート]** ドロップダウンで、**[!UICONTROL 新しいレポートスイート]** を選択します。
 
 1. アプリの名前を入力し、一意のレポートスイート ID を選択します。
 
