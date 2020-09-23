@@ -2,12 +2,12 @@
 description: ユニバーサルWindowsプラットフォームライブラリが提供するAudience Managerメソッドのリスト。
 seo-description: ユニバーサルWindowsプラットフォームライブラリが提供するAudience Managerメソッドのリスト。
 seo-title: Audience Manager メソッド
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Audience Manager メソッド
 topic: Developer and implementation
 uuid: efbe8f33-7f53-40a6-b7aa-a36ac718c047
 translation-type: tm+mt
-source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '276'
 ht-degree: 43%
@@ -25,7 +25,7 @@ SDKは、現在、Analytics、ターゲット、Audience Managerを含む複数�
 >
 >winJS (JavaScript)から `winmd` メソッドを使用する場合、すべてのメソッドの先頭文字が自動的に小文字に変換されます。
 
-オーディエンスマネージャーがJSONファイル内に設定されている場合は、ライフサイクルヒットと共に、ライフサイクル指標を含むシグナルが送信されます。
+オーディエンスマネージャーがJSONファイルに設定されている場合は、ライフサイクルヒットと共に、ライフサイクル指標を含むシグナルが送信されます。
 
 * **GetVisitorProfile (winJS:getVisitorProfile)**
 
