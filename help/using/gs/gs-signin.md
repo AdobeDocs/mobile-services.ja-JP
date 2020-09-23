@@ -1,14 +1,17 @@
 ---
 description: Web ブラウザーを使用して Adobe Mobile Services にログインできます。
-keywords: モバイル,パスワードの変更,ログイン, ログアウト,ログイン, ログアウト,ログイン,ログイン
+keywords: mobile;change password;log in;log out;login;logout;sign in;signin
 seo-description: Web ブラウザーを使用して Adobe Mobile Services にログインできます。
 seo-title: ログイン
 solution: Experience Cloud,Analytics
 title: ログイン
-topic: 指標
+topic: Metrics
 uuid: d6ea0ca1-3511-4133-9d41-21ea2d2f7b3a
-translation-type: ht
-source-git-commit: 83e6968efb0ed1b4ef504286c6cb2e8e4d2eaf94
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '361'
+ht-degree: 90%
 
 ---
 
@@ -25,7 +28,7 @@ Adobe ID、Enterprise ID または Analytics ID を使用して、Adobe Mobile S
 
 Adobe ID を使用して Adobe Mobile Services UI にログインするには：
 
-1. ブラウザーで、「[https://mobilemarketing.adobe.com](https://mobilemarketing.adobe.com)」と入力します。
+1. In a browser, type [https://mobilemarketing.adobe.com](https://mobilemarketing.adobe.com).
 1. **[!UICONTROL Adobe ID を使用してログイン]**&#x200B;をクリックします。
 1. 電子メールアドレスを入力します。
 1. **[!UICONTROL アカウントを選択]**&#x200B;で、**[!UICONTROL Adobe ID]** をクリックします。
@@ -53,7 +56,7 @@ Enterprise ID を使用して Adobe Mobile Services UI にログインするに�
 
 Analytics ID を使用して Adobe Mobile Services UI にログインするには：
 
-1. ブラウザーで、「[https://mobilemarketing.adobe.com/](https://mobilemarketing.adobe.com/)」と入力します。
+1. In a browser, type [https://mobilemarketing.adobe.com/](https://mobilemarketing.adobe.com/).
 1. **[!UICONTROL Analytics アカウントでログイン]**&#x200B;をクリックします。
 1. 会社名、ユーザー名およびパスワードを入力します。
 1. **[!UICONTROL ログイン]**&#x200B;をクリックします。
@@ -66,9 +69,9 @@ Analytics ID を使用して Adobe Mobile Services UI にログインするに�
 
    1. **[!UICONTROL Adobe ID を使用してサインイン]**&#x200B;をクリックして、**[!UICONTROL パスワードを忘れた場合]**&#x200B;リンクをクリックします。
    1. Adobe ID に関連付けられている電子メールアカウントを入力して、**[!UICONTROL 送信]** をクリックします。
-   1. 受信した電子メールの指示に従って、パスワードをリセットします。
+   1. 電子メールの受信後、指示に従ってパスワードをリセットします。
 
-* **Adobe Analytics**&#x200B;会社、ユーザー名およびパスワードを使用する場合：
+* **Adobe Analytics** :会社、ユーザー名、パスワードを使用する場合
 
    1. **[!UICONTROL パスワードを忘れた場合]**&#x200B;リンクをクリックします。
    1. 会社名、ユーザー名、およびパスワードを入力して、**[!UICONTROL 続行]** をクリックします。
