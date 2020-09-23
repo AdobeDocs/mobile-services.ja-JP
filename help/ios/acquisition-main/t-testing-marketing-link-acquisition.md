@@ -3,13 +3,13 @@ description: デバイスのフィンガープリントに基づくマーケテ�
 keywords: android;library;mobile;sdk
 seo-description: デバイスのフィンガープリントに基づくマーケティングリンクを使用した獲得キャンペーンのラウンドトリップに役立つ情報です。
 seo-title: マーケティングリンクによる獲得のテスト
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: マーケティングリンクによる獲得のテスト
 topic: Developer and implementation
 uuid: 69503e01-182d-44c6-b0fb-e1c012ffa3bd
-translation-type: ht
-source-git-commit: c64e2fa7cee3cd35c4574e5007406b7604c99499
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
 source-wordcount: '562'
 ht-degree: 100%
 
@@ -67,7 +67,7 @@ ht-degree: 100%
 
    考えられるエラーに関する情報を次に示します。
 
-   * `Analytics - Unable to retrieve acquisition service response (<error message>)`
+   * `Analytics - Unable to retrieve acquisition service response (<error message>)`:
 
       ネットワークエラーが発生しました。
 
