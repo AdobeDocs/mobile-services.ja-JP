@@ -4,10 +4,13 @@ seo-description: tvOS を使用した Apple TV を実装するのに役立つ情
 seo-title: tvOS を使用した Apple TV 実装
 solution: Experience Cloud,Analytics
 title: tvOS を使用した Apple TV 実装
-topic: 開発者と導入
+topic: Developer and implementation
 uuid: d1571ea2-a5de-4b96-a527-72abbf51fab8
-translation-type: ht
-source-git-commit: 718e336b9002fe3d5282697d4302d12a89297181
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '402'
+ht-degree: 90%
 
 ---
 
@@ -18,7 +21,7 @@ tvOS を使用した Apple TV を実装するのに役立つ情報です。
 
 ## 新しい Adobe Experience Platform Mobile SDK リリース
 
-Adobe Experience Platform Mobile SDK に関する情報やドキュメントをお探しの場合、最新のドキュメントについては、[こちら](https://aep-sdks.gitbook.io/docs/)をクリックしてください。
+Adobe Experience Platform Mobile SDK に関する情報やドキュメントをお探しの場合[こちら](https://aep-sdks.gitbook.io/docs/)をクリックし、最新のドキュメントを参照してください。
 
 2018 年 9 月に、SDK の新しいメジャーバージョンをリリースしました。これらの新しい Adobe Experience Platform Mobile SDK は、[Experience Platform Launch](https://www.adobe.com/jp/experience-platform/launch.html) から設定できます。
 
@@ -27,7 +30,7 @@ Adobe Experience Platform Mobile SDK に関する情報やドキュメントを�
 
 ## 概要
 
-Apple TV では、ネイティブ tvOS 環境で動作するアプリケーションを作成できるようになりました。iOS で利用可能ないくつかのフレームワークを使用してネイティブなアプリを作成することも、XML テンプレートおよび JavaScript を使用してアプリを作成することもできます。
+Apple TVを使用して、ネイティブtvOS環境で実行するアプリケーションを作成できるようになりました。 ネイティブアプリは、iOSで複数のフレームワークを使用して作成するか、XMLテンプレートとJavaScriptを使用して作成することができます。
 
 >[!TIP]
 >
