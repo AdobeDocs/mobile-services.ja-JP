@@ -1,14 +1,17 @@
 ---
 description: ビーコン追跡では、iBeacon と Bluetooth Low Energy を使用して、マイクロ位置を測定し、ターゲットにすることができます。
-keywords: Android, ライブラリ, モバイル, SDK
+keywords: android;library;mobile;sdk
 seo-description: ビーコン追跡では、iBeacon と Bluetooth Low Energy を使用して、マイクロ位置を測定し、ターゲットにすることができます。
 seo-title: ビーコン追跡
 solution: Experience Cloud,Analytics
 title: ビーコン追跡
-topic: 開発者と導入
+topic: Developer and implementation
 uuid: 16c1d267-85f4-4a6a-a6d3-d6ffb0f80b29
-translation-type: ht
-source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '240'
+ht-degree: 81%
 
 ---
 
@@ -24,12 +27,12 @@ source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 * `a.beacon.minor` - ビーコンのマイナー番号（ストア内の一意の番号など）
 * `a.beacon.prox` - 0 ～ 3 の値でユーザーとビーコンの距離を表します。
 
-以下に、これらの値の意味を示します。
+次に、これらの値の意味を示します。
 
-* 0 = unknown
-* 1 = immediate
-* 2 = near
-* 3 = far
+* 0 =不明
+* 1 =即時
+* 2 =近い
+* 3 =遠い
 
 このビーコンデータは、モバイルソリューションの変数にキャプチャされます。
 
@@ -45,10 +48,10 @@ source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
    import com.adobe.mobile.*;
    ```
 
-1. ビーコンの位置を収集します。
+1. ビーコンの場所を収集します。
 
-   ビーコンの製造元に応じて、Bluetooth LE ビーコンをスキャンするのに複数のサードパーティのライブラリを利用できます。
-1. ビーコン情報が取得された後、以下の呼び出しを使用して位置を追跡します。
+   ビーコンの製造元に応じて、Bluetooth LEビーコンをスキャンするために複数のサードパーティライブラリを使用できます。
+1. ビーコン情報を取得したら、次の呼び出しを使用して場所を追跡します。
 
    ```java
    // assumed that the following variables will have been retrieved by the 3rd party beacon library 
