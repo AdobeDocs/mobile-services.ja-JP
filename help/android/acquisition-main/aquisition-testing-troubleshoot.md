@@ -1,12 +1,15 @@
 ---
 description: 次の情報は、獲得テストの問題のトラブルシューティングに役立ちます。
-keywords: Android; 獲得; テスト
+keywords: android;Acquisition;testing
 seo-description: 次の情報は、獲得テストの問題のトラブルシューティングに役立ちます。
 seo-title: 獲得テストのトラブルシューティング
 solution: Experience Cloud,Analytics
 title: 獲得テストのトラブルシューティング
-translation-type: ht
-source-git-commit: 1c387b063eedb41a52e044dc824df6a51f173ad2
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '251'
+ht-degree: 100%
 
 ---
 
