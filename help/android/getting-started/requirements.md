@@ -2,13 +2,13 @@
 description: 'レポートスイートを設定して Android アプリデータを収集する前に、前提条件のタスクを完了してください。 '
 seo-description: 'レポートスイートを設定して Android アプリデータを収集する前に、前提条件のタスクを完了してください。 '
 seo-title: 事前準備
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: 事前準備
 topic: Developer and implementation
 uuid: 0ca9e937-8d40-4570-9dbf-9aecc6ecedf6
-translation-type: ht
-source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
 source-wordcount: '760'
 ht-degree: 100%
 
