@@ -2,13 +2,13 @@
 description: iOS ライブラリが提供する Adobe Experience Platform サービスメソッドを以下に示します。
 seo-description: iOS ライブラリが提供する Adobe Experience Platform サービスメソッドを以下に示します。
 seo-title: Adobe Experience Platform ID サービスのメソッド
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Adobe Experience Platform ID サービスのメソッド
 topic: Developer and implementation
 uuid: cdd307bc-8b7d-47a8-b77e-00902b9e2968
-translation-type: ht
-source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 100%
 
@@ -167,7 +167,7 @@ SDK は現在、Analytics、Target、Audience Manager、Experience Cloud ID サ�
 - (ADBMobileVisitorAuthenticationState) authenticationState; 
 ```
 
-## ADBMobileVisitorAuthenticationState enum   {#section_A55A3F336DDF4F838900632087F51430}
+## ADBMobileVisitorAuthenticationState enum    {#section_A55A3F336DDF4F838900632087F51430}
 
 ```objective-c
 ADBMobileVisitorAuthenticationStateUnknown, 
