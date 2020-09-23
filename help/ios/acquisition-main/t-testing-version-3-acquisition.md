@@ -5,8 +5,11 @@ seo-title: V3 による獲得のテスト
 solution: Experience Cloud,Analytics
 title: V3 による獲得のテスト
 uuid: 89137ccf-4839-4b37-926e-303cf8e511a5
-translation-type: ht
-source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '620'
+ht-degree: 97%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 >
 >V3 の獲得とは、Adobe Mobile Services UI でダウンロード計測ビルダーを使用して作成した獲得リンクを指します。この機能を使用するには、iOS SDK バージョン 4.6.0 以降にアップグレードする必要があります。
 
-モバイルアプリがまだ App Store にない場合は、キャンペーンリンクの作成時に任意のモバイルアプリをリンク先として選択してください。これは、ダウンロード計測用リンクのクリック後に獲得サーバーによってリダイレクトされるアプリにのみ影響を与えます。リンクのテスト機能には影響を与えません。
+モバイルアプリがまだ App Store にない場合は、キャンペーンリンクを作成する際に、目的のモバイルアプリを選択します。これは、ダウンロード計測用リンクをクリックした後にダウンロード計測用サーバーがリダイレクトするアプリにのみ影響しますが、リンクのテスト機能には影響しません。
 
 1. [モバイルアプリ獲得](/help/ios/acquisition-main/acquisition.md)の前提条件タスクを完了します。
 1. Adobe Mobile Services UI で&#x200B;**[!UICONTROL 獲得ビルダー]**&#x200B;に移動し、獲得キャンペーン URL を生成します。
@@ -31,7 +34,7 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
    ```
 
 
-   ダウンロード計測用リンクで iOS アプリと Android アプリの両方を指す場合は、Apple Store をデフォルトのストアとして使用します。
+   ダウンロード計測用リンクで iOS アプリと Android アプリの両方を参照する場合、Apple Store をデフォルトのストアとして使用します。
 1. 生成したリンクをデスクトップブラウザーで開き、`https://c00.adobe.com/v3/<appid>/end` に移動します。
 
    JSON 応答の `contextData` は次のようになります。
@@ -63,7 +66,7 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
    `"Analytics - Trying to fetch referrer data from <acquisition end url>"`
    `"Analytics - Received Referrer Data(<Json Object>)"`
 
-   ログが上記のようにならない場合は、手順 4 および 5 を実行したことを確認してください。
+   上記のログが表示されない場合は、手順4と5を実行済みであることを確認してください。
 
    考えられるエラーに関する情報を次に示します。
 
@@ -83,7 +86,7 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
    * `Analytics - Acquisition referrer timed out`
 
-      `referrerTimeout` で定義されている時間内に応答を取得できませんでした。値を増やしてもう一度試してください。ダウンロード計測用リンクを開いてからアプリをインストールすることと、URL のクリック時とアプリの起動時に同じネットワークを使用することも必要です。
+      `referrerTimeout` で定義されている時間内に応答を取得できませんでした。値を増やしてもう一度試してください。また、アプリをインストールする前にダウンロード計測用リンクを開いておき、URL をクリックしてアプリを開いたときにも、同じネットワークを使用していることを確認してください。
 
       次の情報に留意してください。
 
