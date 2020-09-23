@@ -1,44 +1,46 @@
 ---
-description: Experience Cloud ソリューション用 Windows 8.1 ユニバーサルアプリストア SDK 4.x を使用すると、ネイティブ Windows 8.1 および Windows Phone 8.1 アプリケーションを測定し、アプリ内でターゲットを絞り込んだコンテンツを配信し、Audience Manager を通じてオーディエンスデータを活用および収集することができます。
-seo-description: Experience Cloud ソリューション用 Windows 8.1 ユニバーサルアプリストア SDK 4.x を使用すると、ネイティブ Windows 8.1 および Windows Phone 8.1 アプリケーションを測定し、アプリ内でターゲットを絞り込んだコンテンツを配信し、Audience Manager を通じてオーディエンスデータを活用および収集することができます。
-seo-title: 'Experience Cloud ソリューション用 Windows 8.1 ユニバーサルアプリストア SDK 4.x '
-solution: Marketing Cloud,Analytics
-title: 'Experience Cloud ソリューション用 Windows 8.1 ユニバーサルアプリストア SDK 4.x '
-topic: 開発者と導入
+description: Experience Cloudソリューション用Windows 8.1 Universal App Store SDK 4.xを使用すると、ネイティブのWindows 8.1およびWindows Phone 8.1アプリケーションを測定し、アプリ内からターゲットコンテンツを配信し、Audience Managerを介してオーディエンスデータを活用および収集できます。
+seo-description: Experience Cloudソリューション用Windows 8.1 Universal App Store SDK 4.xを使用すると、ネイティブのWindows 8.1およびWindows Phone 8.1アプリケーションを測定し、アプリ内からターゲットコンテンツを配信し、Audience Managerを介してオーディエンスデータを活用および収集できます。
+seo-title: 'Experience Cloud ソリューション用 Windows 8.1 Universal アプリストア SDK 4.x '
+solution: Experience Cloud,Analytics
+title: 'Experience Cloud ソリューション用 Windows 8.1 Universal アプリストア SDK 4.x '
+topic: Developer and implementation
 uuid: a06d8cf2-5d2d-49a8-86ac-102e2934ea59
 translation-type: tm+mt
-source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '234'
+ht-degree: 35%
 
 ---
 
 
-# Experience Cloud ソリューション用 Windows 8.1 ユニバーサルアプリストア SDK 4.x {#windows-universal-app-store-sdk-x-for-experience-cloud-solutions}
+# Experience Cloud ソリューション用 Windows 8.1 Universal アプリストア SDK 4.x {#windows-universal-app-store-sdk-x-for-experience-cloud-solutions}
 
-Windows 8.1 Universal App Store SDK 4.x for Experience Cloud Solutions lets you measure native Windows 8.1 and Windows Phone 8.1 applications, deliver targeted content in your app, and leverage and collect audience data through Audience Manager.
+Experience Cloudソリューション用Windows 8.1ユニバーサルアプリストアSDK 4.xを使用すると、ネイティブのWindows 8.1およびWindows Phone 8.1アプリケーションを測定し、アプリ内からターゲットコンテンツを配信し、Audience Managerを介してオーディエンスデータを活用および収集できます。
 
-**最終更新日：2015 年 8 月 21 日**
+**最終更新日：2015年8月22日**
 
-## サポート対象のプラットフォーム {#section_45978BF5C62E4986AAB7FFD96402BF2D}
+## Supported Platforms {#section_45978BF5C62E4986AAB7FFD96402BF2D}
 
 次のプラットフォームがサポートされています。
 
-* Windows 8.1 以降。
+* Windows 8.1以降。
 
-* Windows Phone 8.1 以降。
+* Windows Phone 8.1以降。
 
-## サポート対象の IDE {#section_03905798D74940C9A9F77285DA3F27D0}
+## サポートされるIDE {#section_03905798D74940C9A9F77285DA3F27D0}
 
-Visual Studio 2013 以降。
+Visual Studio 2013以降。
 
 ## Adobe Mobile Services {#section_7583FD5FDED143619048E9744A3F2D21}
 
-Adobe Mobile Services は、モバイルアプリケーション用のモバイルマーケティング機能を Adobe Experience Cloud 上で統合する新しい UI を提供します。最初は、Mobileサービスは、Adobe AnalyticsとAdobe targetのアプリ分析とターゲティング機能をシームレスに統合します。
+Adobe Mobile Services は、モバイルアプリケーション用のモバイルマーケティング機能を Adobe Experience Cloud 上で統合する新しい UI を提供します。最初は、Mobileサービスは、Adobe AnalyticsとAdobe Targetのアプリ分析機能とターゲティング機能をシームレスに統合しています。
 
-詳しくは、[Adobe Mobile Services のドキュメント](/help/using/home.md)を参照してください。
+Learn more at [Adobe Mobile services documentation](/help/using/home.md).
 
 ## Bloodhound の使用
 
 >[!IMPORTANT]
 >
->As of **April 30, 2017**, Adobe Bloodhound has been
-sunset. 2017 年 5 月 1 日以降、追加の機能強化や追加のエンジニアリングまたは Adobe Expert Care のサポートは提供されません。
+>Adobe Bloodhound は、**2017 年 4 月 30 日**&#x200B;をもって廃止されました。2017 年 5 月 1 日以降、追加の機能強化や追加のエンジニアリングまたは Adobe Expert Care のサポートは提供されません。
