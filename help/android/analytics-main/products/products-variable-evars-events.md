@@ -1,14 +1,17 @@
 ---
 description: マーチャンダイジング eVar および製品固有のイベントを持つ products 変数の例を以下に示します。
-keywords: Android, ライブラリ, モバイル, SDK
+keywords: android;library;mobile;sdk
 seo-description: マーチャンダイジング eVar および製品固有のイベントを持つ products 変数の例を以下に示します。
 seo-title: マーチャンダイジング eVar および製品固有のイベントを持つ products 変数
 solution: Experience Cloud,Analytics
 title: マーチャンダイジング eVar および製品固有のイベントを持つ products 変数
-topic: 開発者と導入
+topic: Developer and implementation
 uuid: 64f822a0-6ccf-48e7-8886-31b93d8198a3
-translation-type: ht
-source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '98'
+ht-degree: 100%
 
 ---
 
