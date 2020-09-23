@@ -1,14 +1,17 @@
 ---
 description: バナー指標レポートには、既存のデータのサンバーストチャートが表示されます。このレポートは、Digital Publishing Suite（DPS）のユーザーのみが利用できます。
-keywords: モバイル
+keywords: mobile
 seo-description: バナー指標レポートには、既存のデータのサンバーストチャートが表示されます。このレポートは、Digital Publishing Suite（DPS）のユーザーのみが利用できます。
 seo-title: バナー指標
 solution: Experience Cloud,Analytics
 title: バナー指標
-topic: 指標
+topic: Metrics
 uuid: 50638c55-f10d-43d7-8d12-e48908572766
-translation-type: ht
-source-git-commit: 7f53ece867144236f170533d8474dada4c29ad39
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '195'
+ht-degree: 100%
 
 ---
 
