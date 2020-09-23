@@ -1,14 +1,17 @@
 ---
 description: ソーシャルシェアレポートには、既存のデータのサンバーストチャートが表示されます。このレポートは、Digital Publishing Suites（DPS）のユーザーのみが利用できます。
-keywords: モバイル
+keywords: mobile
 seo-description: ソーシャルシェアレポートには、既存のデータのサンバーストチャートが表示されます。このレポートは、Digital Publishing Suites（DPS）のユーザーのみが利用できます。
 seo-title: ソーシャルシェア
 solution: Experience Cloud,Analytics
 title: ソーシャルシェア
-topic: 指標
+topic: Metrics
 uuid: 900e58aa-c1d3-4590-af44-df67575214a4
-translation-type: ht
-source-git-commit: b11a03226ff6100554d072b4ef523d703b80a6e5
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '142'
+ht-degree: 100%
 
 ---
 
