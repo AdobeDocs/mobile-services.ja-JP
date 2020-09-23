@@ -1,14 +1,17 @@
 ---
 description: この情報は、Android ライブラリのバージョン 3.x または 2.x をバージョン 4.x に移行する場合に役立ちます。
-keywords: Android, ライブラリ, モバイル, SDK
+keywords: android;library;mobile;sdk
 seo-description: この情報は、Android ライブラリのバージョン 3.x または 2.x をバージョン 4.x に移行する場合に役立ちます。
 seo-title: Android 4.x ライブラリへの移行
 solution: Experience Cloud,Analytics
 title: Android 4.x ライブラリへの移行
-topic: 開発者と導入
+topic: Developer and implementation
 uuid: 906e83bb-2faf-4aa2-ac9b-3fba6b833c7e
-translation-type: ht
-source-git-commit: 68bc21f1c6dba2faeed332495592114af90c8f61
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '880'
+ht-degree: 59%
 
 ---
 
@@ -21,19 +24,19 @@ source-git-commit: 68bc21f1c6dba2faeed332495592114af90c8f61
 >
 >SDK では、個別ユーザー数の計算に必要なデータ、ライフサイクル指標、SDK の中心機能に関連するその他のデータを保存するために、`SharedPreferences` が使用されます。SDK で想定されている `SharedPreferences` の値を変更または削除すると予期しない動作が発生し、データの不整合が生じる可能性があります。
 
-バージョン 4.x のライブラリでは、パブリックメソッドが 1 つのヘッダーに統合されています。また、クラスレベルのメソッドからすべての機能にアクセスできるようになり、ポインター、インスタンスまたはシングルトンを追跡する必要がなくなりました。
+バージョン4.xライブラリでは、パブリックメソッドは1つのヘッダーに統合されています。 また、すべての機能はクラスレベルメソッドを通じてアクセスできるようになったので、ポインタ、インスタンス、シングルトンを追跡する必要はありません。
 
 ## event、prop、eVar {#section_76EA6F5611184C5CAE6E62956D84D7B6}
 
-バージョン 4 では、アプリで event、eVar、prop、heir、リストなどの変数を割り当てることができなくなりました。代わりに、SDK は、コンテキストデータと処理ルールを使用して、レポート用にアプリデータを Analytics 変数にマップします。
+バージョン4では、アプリ内のイベント、eVar、prop、相続人、リストなどの変数を割り当てることができなくなりました。 代わりに、SDKは、コンテキストデータと処理ルールを使用して、レポート用にアプリデータをAnalytics変数にマッピングします。
 
-処理ルールには、次の利点があります。
+処理ルールには次の利点があります。
 
-* App Store に更新を提出することなく、データマッピングを変更することができます。
-* レポートスイートに固有の変数を設定する代わりに、意味のある名前をデータに使用できます。
-* 追加のデータの送信にはほとんど影響しません。
+* データマッピングは、更新をApp Storeに送信しなくても変更できます。
+* データには、レポートスイートに固有の変数を設定する代わりに、意味のある名前を付けることができます。
+* 追加のデータを送信する場合、影響はほとんどありません。
 
-   これらの値は、処理ルールを使用してマップされるまではレポートに表示されません。
+   これらの値は、処理ルールを使用してマッピングされるまで、レポートに表示されません。
 
 >[!TIP]
 >
@@ -75,7 +78,7 @@ source-git-commit: 68bc21f1c6dba2faeed332495592114af90c8f61
 
 ### 設定ファイルの移動
 
-1. 先頭列の変数に設定されている値を 2 番目の列の変数に移動します。
+1. 1列目の変数に設定されている値を2列目の変数に移動します。
 1. コードから古い設定変数を削除します。
 
 ### バージョン 3.x からの移行
@@ -84,15 +87,15 @@ source-git-commit: 68bc21f1c6dba2faeed332495592114af90c8f61
 
 | 設定変数またはメソッド | `ADBMobileConfig.json` ファイル内の変数 |
 |--- |--- |
-| setOfflineTrackingEnabled | "offlineEnabled" |
-| setOfflineHitLimit | "batchLimit" |
-| reportSuiteIDs | "rsids" |
-| trackingServer | "server" |
-| charSet | "charset" |
-| currencyCode | "currency" |
-| ssl | "ssl" |
-| linkTrackVars | 削除します。使用されなくなりました。 |
-| linkTrackEvents | 削除します。使用されなくなりました。 |
+| setOfflineTrackingEnabled | &quot;offlineEnabled&quot; |
+| setOfflineHitLimit | &quot;batchLimit&quot; |
+| reportSuiteIDs | &quot;rsids&quot; |
+| trackingServer | &quot;server&quot; |
+| charSet | &quot;charset&quot; |
+| currencyCode | &quot;currency&quot; |
+| ssl | &quot;ssl&quot; |
+| linkTrackVars | 削除（使用終了） |
+| linkTrackEvents | 削除（使用終了） |
 
 ### バージョン 2.x からの移行
 
@@ -100,23 +103,23 @@ source-git-commit: 68bc21f1c6dba2faeed332495592114af90c8f61
 
 | 設定変数 | `ADBMobileConfig.json` ファイル内の変数 |
 | --- |--- |
-| trackOffline | "offlineEnabled" |
-| offlineLimit | "batchLimit" |
-| account | "rsids" |
-| trackingServer | "server"、`"https://"` プレフィックスを削除します。プロトコルプレフィックスは、"ssl" 設定に基づいて自動的に追加されます。 |
-| trackingServerSecure | 削除します。安全な接続をおこなうには、"server" を定義し、"ssl" を有効にします。 |
-| charSet | "charset" |
-| currencyCode | "currency" |
-| ssl | "ssl" |
-| linkTrackVars | 削除します。使用されなくなりました。 |
-| linkTrackEvents | 削除します。使用されなくなりました。 |
-| timestamp | 削除します。設定できなくなりました。 |
-| dc | 削除します。使用されなくなりました。 |
-| userAgent | 削除します。設定できなくなりました。 |
-| dynamicVariablePrefix | 削除します。使用されなくなりました。 |
-| visitorNamespace | 削除します。使用されなくなりました。 |
-| usePlugins | 削除します。使用されなくなりました。 |
-| useBestPractices  チャーン測定（getChurnInstance）へのすべての呼び出し | ライフサイクル指標による削除、置き換え |
+| trackOffline | &quot;offlineEnabled&quot; |
+| offlineLimit | &quot;batchLimit&quot; |
+| account | &quot;rsids&quot; |
+| trackingServer | &quot;server&quot;, remove the `"https://"` prefix. 「ssl」設定に基づいて、プロトコルプレフィックスが自動的に追加されます。 |
+| trackingServerSecure | 削除. 安全な接続の場合は、「server」を定義し、「ssl」を有効にします。 |
+| charSet | &quot;charset&quot; |
+| currencyCode | &quot;currency&quot; |
+| ssl | &quot;ssl&quot; |
+| linkTrackVars | 削除（使用終了） |
+| linkTrackEvents | 削除（使用終了） |
+| timestamp | 削除（設定不可） |
+| dc | 削除（使用終了） |
+| userAgent | 削除（設定不可） |
+| dynamicVariablePrefix | 削除（使用終了） |
+| visitorNamespace | 削除（使用終了） |
+| usePlugins | 削除（使用終了） |
+| useBestPracticesは、測定をチャーン化する(getChurnInstance)ためのすべての呼び出しを行います。 | ライフサイクル指標による削除、置き換え |
 
 ## トラッキングコールとトラッキング変数の更新 {#section_96E7D9B3CDAC444789503B7E7F139AB9}
 
@@ -132,15 +135,15 @@ source-git-commit: 68bc21f1c6dba2faeed332495592114af90c8f61
 
 ## event、prop、eVar 
 
-バージョン 4 では、event、eVar、prop、継承、リストなどの変数をアプリ内で直接割り当てることができなくなりました。SDK は、コンテキストデータと処理ルールを使用して、レポート用にアプリデータを Analytics 変数にマップするようになりました。
+バージョン4では、イベント、eVar、prop、相続人、リストなどの変数を直接アプリに割り当てることができなくなりました。 SDKは、コンテキストデータと処理ルールを使用して、レポートのためにアプリデータをAnalytics変数にマップするようになりました。
 
-処理ルールには、次の利点があります。
+処理ルールには次の利点があります。
 
-* App Store に更新を提出することなく、データマッピングを変更することができます。
-* レポートスイートに固有の変数を設定する代わりに、意味のある名前をデータに使用できます。
-* 追加のデータの送信にはほとんど影響しません。
+* データマッピングは、更新をApp Storeに送信しなくても変更できます。
+* データには、レポートスイートに固有の変数を設定する代わりに、意味のある名前を付けることができます。
+* 追加のデータを送信する場合、影響はほとんどありません。
 
-   これらの値は、処理ルールを使用してマップされるまではレポートに表示されません。詳しくは、[処理ルールとコンテキストデータ](/help/android/getting-started/proc-rules.md)を参照してください。
+   これらの値は、処理ルールを使用してマッピングされるまで、レポートに表示されません。 詳しくは、 [処理ルールとコンテキストデータを参照してください](/help/android/getting-started/proc-rules.md)。
 
 変数に直接代入していた値を `data` HashMap に追加する必要があります。つまり、`setEvar` や `setProp` の呼び出し、永続コンテキストデータへの代入を削除し、値を `data` パラメーターに追加する必要があります。
 
@@ -172,7 +175,7 @@ source-git-commit: 68bc21f1c6dba2faeed332495592114af90c8f61
 
 オフライン追跡は `ADBMobileConfig.json` で有効に設定されます。他のすべてのオフライン設定は自動的におこなわれます。
 
-以下のメソッドに対する呼び出しを削除します。
+次のメソッドへの呼び出しを削除します。
 
 **バージョン 3.x**
 
