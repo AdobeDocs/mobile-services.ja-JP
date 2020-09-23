@@ -1,21 +1,21 @@
 ---
 description: 'null'
 seo-description: 'null'
-seo-title: 開発者クイック開始
-solution: Marketing Cloud,Analytics
-title: 開発者クイック開始
+seo-title: 開発者向けクイックスタート
+solution: Experience Cloud,Analytics
+title: 開発者向けクイックスタート
 topic: Developer and implementation
 uuid: b368959b-d985-436e-8b3e-97e355a97951
 translation-type: tm+mt
-source-git-commit: 97e6d24b75e770685d440d31aa5ee8924a079501
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '919'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
 
-# 開発者クイック開始 {#developer-quick-start}
+# 開発者向けクイックスタート {#developer-quick-start}
 
 SDKを実装するには、Visual Studio 2013以降が必要です。
 
