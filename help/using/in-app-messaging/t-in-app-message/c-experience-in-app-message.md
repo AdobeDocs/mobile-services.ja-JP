@@ -1,14 +1,17 @@
 ---
 description: タイプ（フルスクリーン、アラートまたは通知）および表示、テキストおよびボタンオプションを含む、アプリ内メッセージのエクスペリエンスオプションを設定します。
-keywords: モバイル
+keywords: mobile
 seo-description: タイプ（フルスクリーン、アラートまたは通知）および表示、テキストおよびボタンオプションを含む、アプリ内メッセージのエクスペリエンスオプションを設定します。
 seo-title: エクスペリエンス：アプリ内メッセージ
 solution: Experience Cloud,Analytics
 title: エクスペリエンス：アプリ内メッセージ
-topic: 指標
+topic: Metrics
 uuid: 4c6d6756-47fb-4f1b-8338-0b0c9b0fceb0
-translation-type: ht
-source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '686'
+ht-degree: 92%
 
 ---
 
@@ -17,7 +20,7 @@ source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
 タイプ（フルスクリーン、アラートまたは通知）および表示、テキストおよびボタンオプションを含む、アプリ内メッセージのエクスペリエンスオプションを設定します。
 
-1. アプリで、**[!UICONTROL メッセージング]**／**[!UICONTROL メッセージを管理]**／**[!UICONTROL メッセージを作成]**／**[!UICONTROL アプリ内を作成]**&#x200B;をクリックします。
+1. In your app, click **[!UICONTROL Messaging]** > **[!UICONTROL Manage Messages]** > **[!UICONTROL Create Message]** > **[!UICONTROL Create In-App]**.
 1. エクスペリエンスページで、メッセージの名前を入力します。
 1. **[!UICONTROL タイプ]** セクションのフィールドに入力します。
 
@@ -36,10 +39,11 @@ source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
    * **[!UICONTROL カスタム]**
 
-      カスタム HTML コンテンツを読み込みます（全画面表示のみ）。クリックスルーリンクおよびキャンセルリンクを設置する必要があります。
+      カスタムHTMLコンテンツを読み込みます（全画面表示のみ）。 クリックスルーリンクとキャンセルリンクを設定する必要があります。
 
       1. **[!UICONTROL 参照]** をクリックして HTML ファイルをダウンロードするか、HTML ドキュメントをウィンドウにドラッグします。
       1. **[!UICONTROL 例をダウンロード]** をクリックすると、サンプルのカスタム HTML コンテンツが表示されます。
+
       >[!TIP]
       >
       >**[!Fフルスクリーン]** メッセージタイプを選択した場合のみ、このオプションが表示されます。
@@ -49,6 +53,7 @@ source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 1. **[!UICONTROL 表示]** セクションのフィールドに入力します。
 
    * **[!UICONTROL テーマ]**
+
    メッセージのテーマを選択します。
 
    * **[!UICONTROL レイアウト]**
@@ -61,7 +66,7 @@ source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
    * **[!UICONTROL バンドルされている画像]**
 
-      アプリコードバンドル内の画像へのパス。このオプションは、画像がない場合、または画像が使用できない場合に使用されます。例えば、デバイスがオフラインの場合は、画像は使用できない可能性があります。フルスクリーンテンプレートを使用する際にサイズ変更の問題がある場合は、[アプリ内メッセージのトラブルシューティング](/help/using/in-app-messaging/t-in-app-message/in-apps-ts.md)の「*画像がテンプレートのスペースに収まらない*」を参照してください。
+      アプリコードバンドル内の画像へのパス。 このオプションは、画像がない場合に使用されます。 または画像が使用できない場合。 例えば、デバイスがオフラインの場合は、画像は使用できない可能性があります。フルスクリーンテンプレートを使用する際にサイズ変更の問題がある場合は、[アプリ内メッセージのトラブルシューティング](/help/using/in-app-messaging/t-in-app-message/in-apps-ts.md)の「*画像がテンプレートのスペースに収まらない*」を参照してください。
 
 
 1. **[!UICONTROL テキスト]** セクションのフィールドに入力します。
@@ -80,7 +85,7 @@ source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
       **[!UICONTROL クリックスルー]**&#x200B;ボタンのラベル。このボタンをタップすると、成功したクリックスルーとしてカウントされます。ユーザーは、宛先にリダイレクトされます。
 
-   * **[!UICONTROL 送信先]**
+   * **[!UICONTROL 宛先]**
 
       メッセージをクリックスルーしたら、ユーザーを送る特定の宛先（Web、ディープまたはハイブリッドリンク）を選択します。成功したクリックスルーのリダイレクト URL。
 
@@ -90,13 +95,14 @@ source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
       * `{trackingId}`：aid（*s_vi* cookie と相関関係にある）に置き換えられます。
       * `{messageId}`：アプリ内メッセージの一意の ID に置き換えられます。
       * `{lifetimeValue}`：ライフタイム値に置き換えられます。ライフタイム値がない場合は、0 になります。
+
       次に、ユーザー ID `https://www.mysite.com?uid={userId}` の追跡の例を示します。
 
       クリックスルー URL で `https://` または `https://` が使用されている場合、この URL は、アプリ外部で、デバイスのブラウザーを使用して開かれます。それ以外の場合、各プラットフォームでは、スキームがサポートされます。スキームを使用すると、アプリがカスタムスキームをサポートするように開発されている場合に、アプリを開いたり参照したりできます。
 
       >[!TIP]
       >
-      >宛先のタイプに **[!UICONTROL Web リンク]** または **[!UICONTROL カスタムリンク]** を使用すると、宛先のタイプは追跡されません。**[!UICONTROL ディープリンク]** のみが追跡されます。詳しくは、「[宛先](/help/using/acquisition-main/c-create-destinations.md)」を参照してください。
+      >宛先のタイプに **[!UICONTROL Web リンク]** または **[!UICONTROL カスタムリンク]** を使用すると、宛先のタイプは追跡されません。**[!UICONTROL ディープリンク]**&#x200B;のみが追跡されます。詳しくは、「[宛先](/help/using/acquisition-main/c-create-destinations.md)」を参照してください。
 
 
 1. （オプション）次のアイコンをクリックして、メッセージのレイアウトをプレビューします。
