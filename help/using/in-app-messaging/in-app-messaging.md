@@ -1,14 +1,17 @@
 ---
 description: アプリ内メッセージおよびプッシュメッセージを作成、管理およびレポートします。
-keywords: モバイル
+keywords: mobile
 seo-description: アプリ内メッセージおよびプッシュメッセージを作成、管理およびレポートします。
 seo-title: メッセージ
 solution: Experience Cloud,Analytics
 title: メッセージ
-topic: 指標
+topic: Metrics
 uuid: e32d3e35-2d09-4ddf-8919-75dc895abcb3
-translation-type: ht
-source-git-commit: 3b744229b3fc288363be74c3c4adcd71ecc4fad4
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '468'
+ht-degree: 77%
 
 ---
 
@@ -17,13 +20,13 @@ source-git-commit: 3b744229b3fc288363be74c3c4adcd71ecc4fad4
 
 アプリ内メッセージおよびプッシュメッセージを作成、管理およびレポートできます。
 
-## Adobe Experience Cloud SDK の新規リリース
+## 新しい Adobe Experience Cloud SDK リリース
 
-Adobe Experience Platform Mobile SDK に関する情報やドキュメントをお探しの場合、最新のドキュメントについては、[こちら](https://aep-sdks.gitbook.io/docs/)をクリックしてください。
+Adobe Experience Platform Mobile SDK に関する情報やドキュメントをお探しの場合[こちら](https://aep-sdks.gitbook.io/docs/)をクリックし、最新のドキュメントを参照してください。
 
 2018 年 9 月に、SDK の新しいメジャーバージョンをリリースしました。これらの新しい Adobe Experience Platform Mobile SDK は、[Experience Platform Launch](https://www.adobe.com/jp/experience-platform/launch.html) から設定できます。
 
-* 利用を開始するには、[Launch](https://launch.adobe.com/) にアクセスしてください。
+* To get started, go to [Launch](https://launch.adobe.com/).
 * Experience Platform SDK リポジトリの内容については、[Github: Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks) を参照してください。
 
 >[!IMPORTANT]
@@ -48,10 +51,10 @@ Adobe Experience Platform Mobile SDK に関する情報やドキュメントを�
 
    これらの権限があれば、ダウンロード計測用リンクとアプリ内メッセージにアクセスできます。詳しくは、「[ロールと権限](/help/using/gs/c-mob-roles-and-permissions.md)」を参照してください。
 * メッセージが承認されると、自動的にアプリに発行されます。
-* メッセージパラメーター（traits、trigger、schedule など）の条件が一致すると、メッセージが表示されます。
-* メッセージは、リモートの HTML や画像を URL で指定できます。
+* 特徴、トリガー、スケジュールなどのメッセージパラメーターが満たされると、SDKがメッセージを表示します。
+* メッセージには、カスタムHTMLや画像を含めることができます。オンラインURLを使用できます。
 
-   メッセージがオフライン時に表示された場合の対策として、アプリバンドル内に保存する代替イメージも指定できます。
+   オフライン時にトリガーされるメッセージに対しては、アプリバンドルのバックアップまたは代替イメージを指定することもできます。
 * 表示されたメッセージは、合計表示回数、クリックスルー率などのレポートを提供します
 * カスタムメッセージにテンプレートを使用できます。これにより、独自のアプリ内メッセージを簡単に作成できます。
 
@@ -59,4 +62,4 @@ Adobe Experience Platform Mobile SDK に関する情報やドキュメントを�
 
 プッシュメッセージは、通知の受信を希望するユーザーに送信されます。これらのプッシュメッセージは、Analytics のセグメントまたはカスタムセグメントのユーザーに向けてターゲット設定できます。プッシュメッセージを使用すると、アプリを使用していない状態でも表示されるので、積極的にアプリを利用していないユーザーにアプリの利用を働きかけたり、特定の時間や場所に限定した情報を伝えることができます。
 
-プッシュメッセージを設定する前に、「[プッシュメッセージを有効にするための前提条件](/help/using/c-manage-app-settings/c-mob-confg-app/configure-push-messaging/prerequisites-push-messaging.md)」を参照してください。これらのタスクを実行した後、アプリの設定でプッシュメッセージを設定する必要があります。詳しくは、「[プッシュメッセージの設定](/help/using/c-manage-app-settings/c-mob-confg-app/configure-push-messaging/configure-push-messaging.md)」を参照してください。
+プッシュメッセージを設定する前に、「[プッシュメッセージを有効にするための前提条件](/help/using/c-manage-app-settings/c-mob-confg-app/configure-push-messaging/prerequisites-push-messaging.md)」を参照してください。これらのタスクを実行した後、アプリの設定でプッシュメッセージを設定する必要があります。 For more information, see [Configure push messaging](/help/using/c-manage-app-settings/c-mob-confg-app/configure-push-messaging/configure-push-messaging.md).
