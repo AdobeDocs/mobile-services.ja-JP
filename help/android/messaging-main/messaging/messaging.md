@@ -2,12 +2,12 @@
 description: 解析データやイベントからトリガーされるアプリ内メッセージを配信できます。 実装後、メッセージはアプリに動的に配信され、コードを更新する必要はありません。
 seo-description: 解析データやイベントからトリガーされるアプリ内メッセージを配信できます。 実装後、メッセージはアプリに動的に配信され、コードを更新する必要はありません。
 seo-title: アプリ内メッセージ
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: アプリ内メッセージ
 topic: Developer and implementation
 uuid: 351ee3d2-80b9-4f2d-9696-21f274d89f5a
 translation-type: tm+mt
-source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '803'
 ht-degree: 61%
@@ -38,7 +38,7 @@ Adobe Experience Platform Mobile SDK に関する情報やドキュメントを�
 >
 >To use in-app messaging, you **must** have SDK version 4.2 or later.
 
-Adobe Mobile Servicesでは、メッセージや、メッセージを表示するタイミングを定義するルールを作成できます。 For more information, see [Create an in-app message](/help/using/in-app-messaging/t-in-app-message/t-in-app-message.md). アプリ内メッセージを表示するには、SDKを更新する必要があります。 メッセージをまだ定義していない場合でも、これらの手順を実行できます。 定義したメッセージは、アプリに動的に配信され、アプリストアを更新しなくても表示されます。
+Adobeと、メッセージを表示するタイミングを定義するMobile Servicesのルールを作成できます。 For more information, see [Create an in-app message](/help/using/in-app-messaging/t-in-app-message/t-in-app-message.md). アプリ内メッセージを表示するには、SDKを更新する必要があります。 メッセージをまだ定義していない場合でも、これらの手順を実行できます。 定義したメッセージは、アプリに動的に配信され、アプリストアを更新しなくても表示されます。
 
 ## アプリ内メッセージの有効化 {#section_380DF56C4EE4432A823940E4AE4C9E91}
 
@@ -60,6 +60,7 @@ Adobe Mobile Servicesでは、メッセージや、メッセージを表示す�
    * `Theme.Translucent.NoTitleBar.Fullscreen`
    * `Theme.Translucent.NoTitleBar`
    * `Theme.Translucent`
+
    以下に例を示します。
 
    ```java
@@ -124,7 +125,7 @@ AndroidモバイルSDKは、アプリ内メッセージに関する以下の指�
 
 * アプリ内メッセージのフルスクリーンおよび警告スタイルの場合：
 
-   * **インプレッション**: ユーザーがアプリ内メッセージをトリガーしたとき。
+   * **インプレッション**:ユーザーがアプリ内メッセージをトリガーしたとき。
    * **クリックスルー**：ユーザーが&#x200B;**[!UICONTROL クリックスルー]**&#x200B;ボタンを押したとき。
    * **キャンセル**：ユーザーが&#x200B;**[!UICONTROL キャンセル]**&#x200B;を押したとき。
 
