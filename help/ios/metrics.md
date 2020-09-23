@@ -1,13 +1,16 @@
 ---
-description: 以下の表に、ライフサイクル実装後にモバイルライブラリで自動的に測定できる指標とディメンションの一覧を示します。
-seo-description: 以下の表に、ライフサイクル実装後にモバイルライブラリで自動的に測定できる指標とディメンションの一覧を示します。
+description: 次の表に、ライフサイクルが実装された後、モバイルライブラリによって自動的に測定される指標とディメンションを示します。
+seo-description: 次の表に、ライフサイクルが実装された後、モバイルライブラリによって自動的に測定される指標とディメンションを示します。
 seo-title: ライフサイクル指標
 solution: Experience Cloud,Analytics
 title: ライフサイクル指標
-topic: 開発者と導入
+topic: Developer and implementation
 uuid: b795e383-d59b-4a3c-9e14-ffe8fb58412c
-translation-type: ht
-source-git-commit: a6608bf4d36a6fb6aca00f50cc058c09dbd931b1
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '1108'
+ht-degree: 88%
 
 ---
 
@@ -18,7 +21,7 @@ source-git-commit: a6608bf4d36a6fb6aca00f50cc058c09dbd931b1
 
 ## 新しい Adobe Experience Platform Mobile SDK リリース
 
-Adobe Experience Platform Mobile SDK に関する情報やドキュメントをお探しの場合、最新のドキュメントについては、[こちら](https://aep-sdks.gitbook.io/docs/)をクリックしてください。
+Adobe Experience Platform Mobile SDK に関する情報やドキュメントをお探しの場合[こちら](https://aep-sdks.gitbook.io/docs/)をクリックし、最新のドキュメントを参照してください。
 
 2018 年 9 月に、SDK の新しいメジャーバージョンをリリースしました。これらの新しい Adobe Experience Platform Mobile SDK は、[Experience Platform Launch](https://www.adobe.com/jp/experience-platform/launch.html) から設定できます。
 
@@ -68,7 +71,7 @@ Analytics の場合、各ライフサイクルトラッキングコールとと�
 
 * **起動回数**
 
-   クラッシュおよびインストールを含め、実行のたびにトリガーされます。ライフサイクルセッションのタイムアウトを超えた後にアプリがバックグラウンドから再開されたときにもトリガーされます。
+   クラッシュおよびインストールを含め、実行のたびにトリガーされます。また、ライフサイクルセッションのタイムアウトを超えた後に、アプリがバックグラウンドから再開された場合にもトリガーされます。
 
    * Analytics コンテキストデータ／Target パラメーター：`a.LaunchEvent`
    * Audience Manager のシグナル：`c_a_LaunchEvent`
@@ -130,7 +133,7 @@ Analytics の場合、各ライフサイクルトラッキングコールとと�
 
 * **時刻**
 
-   アプリが起動された時間帯を測定します。24 時間形式が使用されます。利用のピーク時間を判定するために使用します。
+   アプリが起動された時間を測定し、24時間形式を使用します。 利用のピーク時間を判定するために使用します。
 
    * Analytics コンテキストデータ／Target: `a.HourOfDay`
    * Audience Management: `c_a_HourOfDay`
@@ -165,7 +168,7 @@ Analytics の場合、各ライフサイクルトラッキングコールとと�
 
 * **デバイス名**
 
-   デバイス名が格納されます。iOS デバイスを識別するコンマ区切りの 2 桁の文字列。最初の番号は通常、デバイスの世代を表します。次の番号は通常、デバイスファミリー内の個々のメンバーのバージョン番号です。一般的なデバイス名の一覧は、    iOS デバイスのバージョンを参照してください。
+   デバイス名が格納されます。iOSデバイスを識別する、コンマ区切りの2桁の文字列。 最初の番号は通常、デバイスの世代を表します。次の番号は通常、デバイスファミリー内の個々のメンバーのバージョン番号です。一般的なデバイス名の一覧は、    iOS デバイスのバージョンを参照してください。
 
    * Analytics コンテキストデータ／Target: `a.DeviceName`
    * Audience Management: `c_a_DeviceName`
@@ -283,7 +286,7 @@ Analytics の場合、各ライフサイクルトラッキングコールとと�
 
 * **トラッキングコード**
 
-   モバイルアプリの獲得によって設定されます。Adobe Mobile Services によって自動的に生成されます。
+   モバイルアプリの獲得によって設定されます。Adobeのモバイルサービスによって自動的に生成されます。
 
    * Analytics コンテキストデータ／Target パラメーター：`a.referrer.campaign.trackingcode`
    * Audience Management の特性：`c_a_referrer_campaign_trackingcode`
@@ -297,28 +300,28 @@ Analytics の場合、各ライフサイクルトラッキングコールとと�
 
 * **キャンペーンの内容**
 
-   リンクを表示するコンテンツの名前または ID。モバイルアプリの獲得によって設定されます。
+   リンクを表示したコンテンツの名前またはID。 モバイルアプリの獲得によって設定されます。
 
    * Analytics コンテキストデータ／Target パラメーター：`a.referrer.campaign.content`
    * Audience Management の特性：`c_a_referrer_campaign_content`
 
 * **キャンペーンのメディア**
 
-   バナーや電子メールなどのマーケティングメディア。モバイルアプリの獲得によって設定されます。
+   マーケティングメディア（バナー、電子メールなど）。 モバイルアプリの獲得によって設定されます。
 
    * Analytics コンテキストデータ／Target パラメーター：`a.referrer.campaign.medium`
    * Audience Management の特性：`c_a_referrer_campaign_medium`
 
 * **キャンペーンのソース**
 
-   ニュースレターやソーシャルメディアネットワークなどのオリジナルリファラー。モバイルアプリの獲得によって設定されます。
+   ニュースレターやソーシャルメディアネットワークなど、元の転送者。 モバイルアプリの獲得によって設定されます。
 
    * Analytics コンテキストデータ／Target パラメーター：`a.referrer.campaign.source`
    * Audience Management の特性：`c_a_referrer_campaign_source`
 
 * **キャンペーンのキーワード**
 
-   この獲得で追跡する有料検索キーワードやその他の語句。モバイルアプリの獲得によって設定されます。
+   この獲得で追跡する有料キーワードまたはその他の用語。 モバイルアプリの獲得によって設定されます。
 
    * Analytics コンテキストデータ／Target パラメーター：`a.referrer.campaign.term`
    * Audience Management の特性：`c_a_referrer_campaign_term`
