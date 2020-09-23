@@ -1,14 +1,17 @@
 ---
 description: Audience Management からシグナルを送信し、訪問者セグメントを獲得することができます。
-keywords: Android, ライブラリ, モバイル, SDK
+keywords: android;library;mobile;sdk
 seo-description: Audience Management からシグナルを送信し、訪問者セグメントを獲得することができます。
 seo-title: Audience Manager の設定
 solution: Experience Cloud,Analytics
 title: Audience Manager の設定
-topic: 開発者と導入
+topic: Developer and implementation
 uuid: f68d5b2e-fa2c-4db6-98ad-d1855a2c45ac
-translation-type: ht
-source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '88'
+ht-degree: 100%
 
 ---
 
