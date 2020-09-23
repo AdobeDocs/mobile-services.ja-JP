@@ -1,13 +1,16 @@
 ---
-description: iOS アプリで獲得追跡リンクを使用するのに役立つ情報です。
-seo-description: iOS アプリで獲得追跡リンクを使用するのに役立つ情報です。
+description: この情報は、iOSアプリで獲得追跡リンクを使用する際に役立ちます。
+seo-description: この情報は、iOSアプリで獲得追跡リンクを使用する際に役立ちます。
 seo-title: 獲得の概要
 solution: Experience Cloud,Analytics
 title: 獲得の概要
-topic: 開発者と導入
+topic: Developer and implementation
 uuid: e22d2785-58f1-4841-9163-912c5e0f5d61
-translation-type: ht
-source-git-commit: 718e336b9002fe3d5282697d4302d12a89297181
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '136'
+ht-degree: 79%
 
 ---
 
@@ -18,7 +21,7 @@ Android sアプリで獲得追跡リンクを使用するのに役立つ情報�
 
 ## 新しい Adobe Experience Platform Mobile SDK リリース
 
-Adobe Experience Platform Mobile SDK に関する情報やドキュメントをお探しの場合、最新のドキュメントについては、[こちら](https://aep-sdks.gitbook.io/docs/)をクリックしてください。
+Adobe Experience Platform Mobile SDK に関する情報やドキュメントをお探しの場合[こちら](https://aep-sdks.gitbook.io/docs/)をクリックし、最新のドキュメントを参照してください。
 
 2018 年 9 月に、SDK の新しいメジャーバージョンをリリースしました。これらの新しい Adobe Experience Platform Mobile SDK は、[Experience Platform Launch](https://www.adobe.com/jp/experience-platform/launch.html) から設定できます。
 
