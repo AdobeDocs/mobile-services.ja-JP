@@ -2,13 +2,13 @@
 description: iOS ライブラリが提供する Adobe Target メソッドの一覧を以下に示します。
 seo-description: iOS ライブラリが提供する Adobe Target メソッドの一覧を以下に示します。
 seo-title: Adobe Mobile Services の iOS Target メソッド
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: iOS の Target メソッド
 topic: Developer and implementation
 uuid: 692bcda1-02ba-4902-bd65-15888adf1952
-translation-type: ht
-source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
 source-wordcount: '656'
 ht-degree: 100%
 
