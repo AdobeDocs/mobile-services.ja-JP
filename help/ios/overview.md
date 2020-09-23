@@ -4,10 +4,13 @@ seo-description: Experience Cloud ソリューション用 iOS SDK 4.x を使用
 seo-title: Experience Cloud ソリューション用 iOS SDK 4.x
 solution: Experience Cloud,Analytics
 title: Experience Cloud ソリューション用 iOS SDK 4.x
-topic: 開発者と導入
+topic: Developer and implementation
 uuid: 8b374cee-1432-460b-aac2-70623dd80a04
-translation-type: ht
-source-git-commit: cb4a549d889d169bdf8ab0bb997d5c95f44f073e
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '454'
+ht-degree: 97%
 
 ---
 
@@ -26,7 +29,7 @@ Experience Cloud ソリューション用 iOS SDK 4.x を使用すると、ネ�
 
 ## 新しい Adobe Experience Platform Mobile SDK リリース
 
-Adobe Experience Platform Mobile SDK に関する情報やドキュメントをお探しの場合、最新のドキュメントについては、[こちら](https://aep-sdks.gitbook.io/docs/)をクリックしてください。
+Adobe Experience Platform Mobile SDK に関する情報やドキュメントをお探しの場合[こちら](https://aep-sdks.gitbook.io/docs/)をクリックし、最新のドキュメントを参照してください。
 
 2018 年 9 月に、SDK の新しいメジャーバージョンをリリースしました。これらの新しい Adobe Experience Platform Mobile SDK は、[Experience Platform Launch](https://www.adobe.com/jp/experience-platform/launch.html) から設定できます。
 
@@ -37,7 +40,7 @@ Adobe Experience Platform Mobile SDK に関する情報やドキュメントを�
 
 * iOS 8 以降がサポートされています。
 
-   iOS 11 以降の場合は、SDK バージョン 4.13.8 以降を使用する&#x200B;**必要**&#x200B;があります。
+   iOS 11以降の場合は、SDKバージョン4.13.8以降 **が必要です** 。
 
 * この SDK のバージョン 4.2 以降では、すべてのヒットが HTTP POST を使用して送信されるようになりました。
 
