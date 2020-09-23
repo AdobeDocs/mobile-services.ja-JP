@@ -4,10 +4,13 @@ seo-description: Android SDK バージョン 4.5 から新しい Android 拡張�
 seo-title: Android ウェアラブル：はじめに
 solution: Experience Cloud,Analytics
 title: Android ウェアラブル：はじめに
-topic: 開発者と導入
+topic: Developer and implementation
 uuid: bfe5d41e-b17c-4634-80ac-7a38671ecb81
-translation-type: ht
-source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '291'
+ht-degree: 100%
 
 ---
 
