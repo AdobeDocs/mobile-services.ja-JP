@@ -2,12 +2,12 @@
 description: Windows 8.1ユニバーサルアプリストアライブラリが提供するAudience Managerメソッドのリスト。
 seo-description: Windows 8.1ユニバーサルアプリストアライブラリが提供するAudience Managerメソッドのリスト。
 seo-title: Audience Manager メソッド
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Audience Manager メソッド
 topic: Developer and implementation
 uuid: e39c9c3e-fd53-4b46-8fff-88101a064a9c
 translation-type: tm+mt
-source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '280'
 ht-degree: 45%
@@ -15,7 +15,7 @@ ht-degree: 45%
 ---
 
 
-# Audience Manager メソッド{#audience-manager-methods}
+# Audience Manager メソッド {#audience-manager-methods}
 
 Windows 8.1ユニバーサルアプリストアライブラリが提供するAudience Managerメソッドのリスト。
 
