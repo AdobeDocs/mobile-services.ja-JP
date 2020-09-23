@@ -1,14 +1,17 @@
 ---
 description: 目標地点およびその他のデータのマーカーを示すインタラクティブマップを表示できます。
-keywords: モバイル
+keywords: mobile
 seo-description: 目標地点およびその他のデータのマーカーを示すインタラクティブマップを表示できます。
 seo-title: マップ
 solution: Experience Cloud,Analytics
-title: マップ
-topic: 指標
+title: Map
+topic: Metrics
 uuid: 3c271738-eb8d-4c26-baaf-54b247bfc4da
-translation-type: ht
-source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '313'
+ht-degree: 74%
 
 ---
 
@@ -23,10 +26,10 @@ source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
 * マップのサイズは増減できます。
 
-   この機能は、例えば 2 つの目標地点が近い場合などに役立ちます。マップを拡大すると、マップを詳しく見ることができます。
+   この機能は、例えば、2つの目標地点が近い場合に便利です。 マップを拡大すると、マップを詳細に表示できます。
 * 目標地点は青色で表示されます。
 
-   その他のデータのマーカー（起動など）は、黒色で表示されます。マーカーをクリックすると、詳細を表示できます。
+   起動回数など、その他のデータのマーカーは黒で表示されます。 マーカーをクリックして詳細を表示します。
 
 ![レイヤーす。](assets/map_layers.png)をクリックして、次のオプションを選択します。
 
@@ -42,7 +45,7 @@ source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
 * **[!UICONTROL ヒートマップ]**
 
-   ヒートマップのマーカーを表示するかどうかを選択します。色の強度が高いほど、より頻繁に条件（起動など）が満たされていることを示しています。
+   ヒートマップマーカーを表示するかどうかを選択します。 色の強度が高いほど、より頻繁に条件（起動など）が満たされます。
 
 * **[!UICONTROL 目標地点]**
 
@@ -58,7 +61,7 @@ source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
    **[!UICONTROL 表示方法]** オプションを変更したり、指標およびフィルターを追加したり、追加のシリーズ（指標）を追加したりして、レポートをカスタマイズします。詳しくは、「[レポートのカスタマイズ](/help/using/usage/reports-customize/t-reports-customize.md)」を参照してください。
 
-* **[!UICONTROL フィルター]**
+* **[!UICONTROL Filter]**
 
    **[!UICONTROL フィルター]** をクリックし、様々なレポートにわたるフィルターを作成して、すべてのモバイルレポートにおけるセグメントのパフォーマンスを確認します。共通フィルターを定義すると、パス（画面遷移）レポート以外のすべてのレポートに適用できます。詳しくは、「[共通フィルターの追加](/help/using/usage/reports-customize/t-sticky-filter.md)」を参照してください。
 
