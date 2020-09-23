@@ -3,18 +3,21 @@ description: 'null'
 keywords: Unity
 seo-description: 'null'
 seo-title: ライフサイクルの実装
-solution: Marketing Cloud，開発者
+solution: Experience Cloud
 title: ライフサイクルの実装
 uuid: 7ff2c194-569c-42a6-922d-dccd2aa9eb8d
 translation-type: tm+mt
-source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '85'
+ht-degree: 11%
 
 ---
 
 
 # ライフサイクルの実装{#implement-lifecycle}
 
-ライフサイクルの実装後にモバイルライブラリによって自動的に測定される指標とディメンションについて詳しくは、Androidのライフサイクル指標または [iOSのライフサイクル](/help/android/metrics.md) ( [Lifecycle Metrics)を参照してください](/help/ios/metrics.md)。
+ライフサイクルを実装した後、モバイルライブラリによって自動的に測定される指標とディメンションについて詳しくは、Androidの [ライフサイクル指標](/help/android/metrics.md) (Lifecycle Metrics in Android [)またはiOSの](/help/ios/metrics.md)ライフサイクル(Lifecycle)を参照してください。
 
 ## iOS
 
@@ -22,7 +25,7 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
 ## Android
 
-Unity スクリプトで、Android SDK のアプリケーションコンテキストを設定します。Add the following code to the `Awake()` function of your FIRST scene:
+Unityスクリプトで、Android SDKのアプリケーションコンテキストを設定します。 最初のシーンの `Awake()` 関数に対する追加次のコード：
 
 ```java
 void Awake()
