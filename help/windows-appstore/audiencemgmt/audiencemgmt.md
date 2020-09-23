@@ -1,21 +1,24 @@
 ---
-description: Audience Manager からシグナルを送信し、訪問者セグメントを取得する場合に役立つ情報です。
-seo-description: Audience Manager からシグナルを送信し、訪問者セグメントを取得する場合に役立つ情報です。
+description: シグナルを送信し、Audience Managerから訪問者セグメントを取得するのに役立つ情報です。
+seo-description: シグナルを送信し、Audience Managerから訪問者セグメントを取得するのに役立つ情報です。
 seo-title: Audience Manager
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Audience Manager
-topic: 開発者と導入
+topic: Developer and implementation
 uuid: fadc3296-c17c-4732-9b75-a6fb4d33a282
 translation-type: tm+mt
-source-git-commit: 398299575a32d4fee4dcea22788839afa13a1a0f
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '50'
+ht-degree: 22%
 
 ---
 
 
-# Audience Manager{#audience-manager}
+# Audience Manager {#audience-manager}
 
-Audience Manager からシグナルを送信し、訪問者セグメントを取得する場合に役立つ情報です。
+シグナルを送信し、Audience Managerから訪問者セグメントを取得するのに役立つ情報です。
 
 ## 追加情報
 
-+ [Audience Manager methods](/help/windows-appstore/audiencemgmt/audience-manager-methods.md)
++ [Audience Manager メソッド](/help/windows-appstore/audiencemgmt/audience-manager-methods.md)
