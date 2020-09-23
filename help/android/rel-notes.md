@@ -2,13 +2,13 @@
 description: Experience Cloud ソリューション用 Android SDK 4.x のリリースノートと既知の問題です。
 seo-description: Experience Cloud ソリューション用 Android SDK 4.x のリリースノートと既知の問題です。
 seo-title: リリースノート
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: リリースノート
 topic: Developer and implementation
 uuid: 16bb4de8-a216-47a8-928c-0b1e1421adcf
-translation-type: ht
-source-git-commit: a2a2ea4bd3826b061b198e684dd31d9328137d7e
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 100%
 
