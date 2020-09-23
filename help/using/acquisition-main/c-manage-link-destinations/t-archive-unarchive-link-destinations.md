@@ -1,14 +1,17 @@
 ---
 description: リンク先ページを使用して、既存の宛先を編集、アーカイブ／アーカイブ解除または削除できます。
-keywords: モバイル
+keywords: mobile
 seo-description: リンク先ページを使用して、既存の宛先を編集、アーカイブ／アーカイブ解除または削除できます。
 seo-title: リンク先を管理
 solution: Experience Cloud,Analytics
 title: リンク先を管理
-topic: 指標
+topic: Metrics
 uuid: 3a38d40d-b4c7-4f9f-aa6e-979613faaba2
-translation-type: ht
-source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '296'
+ht-degree: 94%
 
 ---
 
@@ -28,7 +31,7 @@ source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
    * **Edit**
 
-      既存のリンク先を編集するには、リストで名前をクリックして、関連するフィールドを編集します。詳しくは、「[新しいリンク先を作成する](/help/using/acquisition-main/c-manage-link-destinations/t-create-new-app-deep-link-destination.md)」を参照してください。
+      既存のリンク先を編集するには、リストで名前をクリックし、関連するフィールドを編集します。 詳しくは、「[新しいリンク先を作成する](/help/using/acquisition-main/c-manage-link-destinations/t-create-new-app-deep-link-destination.md)」を参照してください。
 
       >[!IMPORTANT]
       >
@@ -49,6 +52,7 @@ source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
       1. **[!UICONTROL アーカイブを表示]** をクリックします。
       1. アーカイブを解除したいリンク名の横にある 1 つ以上のチェックボックスをオンにします。
       1. **[!UICONTROL 選択項目のアーカイブ解除]** をクリックします。
+
       **[!UICONTROL アーカイブを表示]** オプションは、以前リンク先をアーカイブした場合にのみ表示されます。
 
    * **Delete**
