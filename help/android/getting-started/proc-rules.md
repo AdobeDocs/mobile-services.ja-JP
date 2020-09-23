@@ -4,10 +4,13 @@ seo-description: 処理ルールは、コンテキストデータ変数で送信
 seo-title: 処理ルールとコンテキストデータ
 solution: Experience Cloud,Analytics
 title: 処理ルールとコンテキストデータ
-topic: 開発者と導入
+topic: Developer and implementation
 uuid: ea892228-86f5-4980-acb8-45ae43c6996d
-translation-type: ht
-source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '272'
+ht-degree: 48%
 
 ---
 
@@ -18,7 +21,7 @@ source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
 
 処理ルールを使用する際には、次の情報に留意してください。
 
-* コンテキストデータ変数は、名前空間を使用してグループ化します。これは、論理的な順序を維持するのに役立ちます。例えば、ある製品の情報を収集するために、次の変数を定義できます。
+* 論理的な順序を維持するのに役立つので、名前空間を使用してコンテキストデータ変数をグループ化します。 例えば、製品に関する情報を収集するには、次の変数を定義します。
 
    ```js
    "product.type":"hat" 
@@ -26,27 +29,27 @@ source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
    "product.color":"blue"
    ```
 
-* コンテキストデータ変数は、処理ルールインターフェイスでアルファベット順に並べ替えられます。そのため、同じ名前空間に属している変数がすぐにわかります。
+* 処理ルールインターフェイスでは、コンテキストデータ変数がアルファベット順に並べ替えられるので、同じ名前空間にある変数をすばやく確認できます。
 
-   コンテキストデータキーの名前には、eVar 番号および prop 番号を使用しないようにします。
+   evarまたはprop番号を使用して、コンテキストデータキーに名前を付けないでください。
 
    ```js
    "eVar1":"jimbo"
    ```
 
-   これらの番号を使用すると、処理ルールで 1 回のみのマッピングを作成する際に作業が&#x200B;*多少*&#x200B;容易になる可能性はあります。しかし、デバッグ中や後でコードを更新するときにわかりにくくなり、作業が困難になるおそれがあります。そのため、キーと値にはわかりやすい名前を付けることを強くお勧めします。
+   This might make it *slightly* easier when you complete the one-time mapping in processing rules, but you lose readability during debugging and future code updates, which can be more difficult. 代わりに、キーと値には説明的な名前を使用することを強くお勧めします。
 
    ```js
    "username":"jimbo"
    ```
 
-* カウンターイベントを定義するコンテキスト変数は、1 に設定します。
+* カウンターイベントを定義するコンテキスト変数は1に設定する必要があります。
 
    ```js
    "logon":"1"
    ```
 
-* 増分イベントを定義するコンテキストデータ変数では、イベントをキーに、増分する量を値に設定することができます。
+* 増分イベントを定義するコンテキストデータ変数は、イベントをキーとして持つことができ、増分量を値として持つことができます。
 
    ```js
    "levels completed":"6"
