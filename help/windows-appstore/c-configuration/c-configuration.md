@@ -1,17 +1,20 @@
 ---
-description: JSON 設定、ヒットのバッチ処理、SDK メソッドなど、Windows 8.1 ユニバーサルアプリストア SDK を設定するときに役立つ情報です。
-seo-description: JSON 設定、ヒットのバッチ処理、SDK メソッドなど、Windows 8.1 ユニバーサルアプリストア SDK を設定するときに役立つ情報です。
+description: JSON設定、ヒットバッチ処理、SDKメソッドなど、Windows 8.1ユニバーサルアプリストアSDKを設定するのに役立つ情報です。
+seo-description: JSON設定、ヒットバッチ処理、SDKメソッドなど、Windows 8.1ユニバーサルアプリストアSDKを設定するのに役立つ情報です。
 seo-title: 設定
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: 設定
-topic: 開発者と導入
+topic: Developer and implementation
 uuid: 93a63808-ccad-4dae-a822-c3edf6eded52
 translation-type: tm+mt
-source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '60'
+ht-degree: 5%
 
 ---
 
 
 # 設定 {#configuration}
 
-JSON 設定、ヒットのバッチ処理、SDK メソッドなど、Windows 8.1 ユニバーサルアプリストア SDK を設定するときに役立つ情報です。
+JSON設定、ヒットバッチ処理、SDKメソッドなど、Windows 8.1ユニバーサルアプリストアSDKを設定するのに役立つ情報です。
