@@ -1,14 +1,17 @@
 ---
 description: ダウンロード計測用リンクを使用する前に、次の前提条件を満たします。
-keywords: モバイル
+keywords: mobile
 seo-description: ダウンロード計測用リンクを使用する前に、次の前提条件を満たします。
 seo-title: 獲得の前提条件
 solution: Experience Cloud,Analytics
 title: 獲得の前提条件
-topic: 指標
+topic: Metrics
 uuid: a224499a-5a51-4ca5-a37b-06792b774671
-translation-type: ht
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '197'
+ht-degree: 85%
 
 ---
 
@@ -33,7 +36,7 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
    |--- |--- |--- |--- |
    | 4.1 ～ 4.5 | ○ | × | × |
    | 4.6 ～ 4.9 | ○ | ○ | × |
-   | 4.9 以降 | ○ | ○ | ○ |
+   | 4.9以降 | ○ | ○ | ○ |
 
 1. SDK からの獲得データ送信オプションの有効化
 
@@ -41,4 +44,4 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
 1. アプリストアのアプリを追加
 
-   Apple App Store または Google Play からアプリを追加する必要があります。詳しくは、「[アプリストアからのアプリの追加](/help/using/manage-apps/c-app-store/t-app-store-app.md)」を参照してください。
+   アプリは、Apple App StoreまたはGoogle Playから追加する必要があります。 詳しくは、App Store [から追加のアプリの参照を参照してください](/help/using/manage-apps/c-app-store/t-app-store-app.md)。
