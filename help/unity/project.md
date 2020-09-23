@@ -3,26 +3,29 @@ description: 'null'
 keywords: Unity
 seo-description: 'null'
 seo-title: プロジェクトの構築
-solution: Marketing Cloud,Developer
+solution: Experience Cloud
 title: プロジェクトの構築
 uuid: 5550a394-6f3f-4b87-b840-89621d8a0c1e
 translation-type: tm+mt
-source-git-commit: 0d50c7e6674de33b8190e74c113ae010ff226e97
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '162'
+ht-degree: 20%
 
 ---
 
 
-# Building your project{#building-your-project}
+# プロジェクトの構築{#building-your-project}
 
 ## iOS
 
-iOS 用にビルドする場合、Xcode プロジェクトが作成されます。デフォルトでは、`ADBMobileWrapper.mm` および `AdobeMobileLibrary.a` ファイルが新しいプロジェクトの Libraries グループに存在します。アプリをビルドするために必要な、次の手順を手動で実行します。
+iOS用にビルドする場合、Xcodeプロジェクトが作成されます。 既定では、 `ADBMobileWrapper.mm` および `AdobeMobileLibrary.a` ファイルは、新しいプロジェクトの[ライブラリ]グループに含まれます。 アプリの作成に必要な次の手順を手動で実行します。
 
 1. プロジェクトに `ADBMobileConfig.json` ファイルを追加します。
 
-   必要なターゲットのビルドのメンバーであることを確認します。
+   必要に応じて、このIDがビルドのメンバーであることを確認します。
 
-1. In the **[!UICONTROL Build Phases]** tab of your project, add a link to the following libraries:
+1. プロジェクトの「 **[!UICONTROL Build Phases]** （ビルドフェーズ）」タブで、次のライブラリへのリンクを追加します。
 
    * `SystemConfiguration.framework`
 （このライブラリは既にリンクされている可能性があります）。
@@ -31,13 +34,13 @@ iOS 用にビルドする場合、Xcode プロジェクトが作成されます�
 
 >[!TIP]
 >
->To use Local Notification In-App messages from the SDK, you must call `ADBMobile.EnableLocalNotifications();` from the Start method in your first Unity Scene.
+>SDKからローカル通知のアプリ内メッセージを使用するには、最初のUnityシーンの開始メソッド `ADBMobile.EnableLocalNotifications();` からを呼び出す必要があります。
 
 ## Android
 
-Android 用にビルドする場合、`apk` ファイルの正しい場所に既に `ADBMobileConfig.json` ファイルが含まれています。By default, the `AndroidManifest.xml` file in your `/Plugins/Android` folder is also used.
+Android用にビルドする場合、 `apk` ファイルは既に正しい場所に `ADBMobileConfig.json` ファイルが含まれています。 デフォルトでは、フォルダー内の `AndroidManifest.xml` ファイルも `/Plugins/Android` 使用されます。
 
-独自のカスタムマニフェストファイルを使用する必要がある場合、次の変更を加える必要があります。
+独自のカスタムマニフェストファイルを使用する必要がある場合は、次の変更を追加する必要があります。
 
 次の権限を追加します。
 
