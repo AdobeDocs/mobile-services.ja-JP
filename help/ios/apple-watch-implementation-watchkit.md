@@ -1,13 +1,16 @@
 ---
-description: WatchOS 2 以降、WatchKit エクステンションが Apple Watch 端末で動作するようになります。この環境で動作するアプリケーションが iOS 本体アプリとデータを共有するには、WatchConnectivity フレームワークが必要です。
-seo-description: WatchOS 2 以降、WatchKit エクステンションが Apple Watch 端末で動作するようになります。この環境で動作するアプリケーションが iOS 本体アプリとデータを共有するには、WatchConnectivity フレームワークが必要です。
+description: WatchOS 2以降、WatchKit拡張機能はApple Watchデバイスで実行されます。 この環境で実行するアプリケーションでは、WatchConnectivityフレームワークで、データを含むiOSアプリと共有する必要があります。
+seo-description: WatchOS 2以降、WatchKit拡張機能はApple Watchデバイスで実行されます。 この環境で実行するアプリケーションでは、WatchConnectivityフレームワークで、データを含むiOSアプリと共有する必要があります。
 seo-title: WatchOS 2 を使用した Apple Watch 実装
 solution: Experience Cloud,Analytics
 title: WatchOS 2 を使用した Apple Watch 実装
-topic: 開発者と導入
+topic: Developer and implementation
 uuid: 9498467e-db5e-411e-a00e-d19841f485de
-translation-type: ht
-source-git-commit: 718e336b9002fe3d5282697d4302d12a89297181
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '542'
+ht-degree: 84%
 
 ---
 
@@ -22,7 +25,7 @@ WatchOS 2 以降、WatchKit エクステンションを Apple Watch で実行で
 
 ## 新しい Adobe Experience Platform Mobile SDK リリース
 
-Adobe Experience Platform Mobile SDK に関する情報やドキュメントをお探しの場合、最新のドキュメントについては、[こちら](https://aep-sdks.gitbook.io/docs/)をクリックしてください。
+Adobe Experience Platform Mobile SDK に関する情報やドキュメントをお探しの場合[こちら](https://aep-sdks.gitbook.io/docs/)をクリックし、最新のドキュメントを参照してください。
 
 2018 年 9 月に、SDK の新しいメジャーバージョンをリリースしました。これらの新しい Adobe Experience Platform Mobile SDK は、[Experience Platform Launch](https://www.adobe.com/jp/experience-platform/launch.html) から設定できます。
 
@@ -35,14 +38,15 @@ Adobe Experience Platform Mobile SDK に関する情報やドキュメントを�
 >
 >少なくとも以下のターゲットを持つプロジェクトがあることを確認します。
 >
->* 本体アプリ
->* WatchKit アプリ
->* WatchKit エクステンション
+>* 含まれるアプリ
+>* WatchKitアプリケーション
+>* WatchKit拡張
+
 >
 
 
 
-WatchKit アプリの開発について詳しくは、[Watch App のアーキテクチャ](https://developer.apple.com/library/ios/documentation/General/Conceptual/WatchKitProgrammingGuide/DesigningaWatchKitApp.html#//apple_ref/doc/uid/TP40014969-CH3-SW1)を参照してください。
+WatchKitアプリの開発について詳しくは、「Watch App Architecture [」を参照してください](https://developer.apple.com/library/ios/documentation/General/Conceptual/WatchKitProgrammingGuide/DesigningaWatchKitApp.html#//apple_ref/doc/uid/TP40014969-CH3-SW1)。
 
 ## 含まれるアプリの設定 {#section_0A2A3995575B4E2ABD12E426BA06AEFF}
 
