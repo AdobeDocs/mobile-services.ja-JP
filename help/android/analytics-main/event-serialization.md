@@ -1,21 +1,24 @@
 ---
-description: イベントのシリアル化は処理ルールでサポートされていません。Mobile SDK では、コンテキストデータパラメーターに特殊な構文を使用して、シリアル化されたイベントをサーバー呼び出しで直接設定する必要があります。
-keywords: Android, ライブラリ, モバイル, SDK
-seo-description: イベントのシリアル化は処理ルールでサポートされていません。Mobile SDK では、コンテキストデータパラメーターに特殊な構文を使用して、シリアル化されたイベントをサーバー呼び出しで直接設定する必要があります。
+description: イベントシリアル化は処理ルールではサポートされていません。 Mobile SDKでは、コンテキストデータパラメーターで特殊な構文を使用して、シリアル化されたイベントをサーバーコールで直接設定する必要があります。
+keywords: android;library;mobile;sdk
+seo-description: イベントシリアル化は処理ルールではサポートされていません。 Mobile SDKでは、コンテキストデータパラメーターで特殊な構文を使用して、シリアル化されたイベントをサーバーコールで直接設定する必要があります。
 seo-title: イベントのシリアル化
 solution: Experience Cloud,Analytics
 title: イベントのシリアル化
-topic: 開発者と導入
+topic: Developer and implementation
 uuid: acdeda16-ab83-4cfc-907d-33448b801b31
-translation-type: ht
-source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '104'
+ht-degree: 7%
 
 ---
 
 
 # イベントのシリアル化{#event-serialization}
 
-イベントのシリアル化は処理ルールでサポートされていません。Mobile SDK では、コンテキストデータパラメーターに特殊な構文を使用して、シリアル化されたイベントをサーバー呼び出しで直接設定する必要があります。
+イベントシリアル化は処理ルールではサポートされていません。 Mobile SDKでは、コンテキストデータパラメーターで特殊な構文を使用して、シリアル化されたイベントをサーバーコールで直接設定する必要があります。
 
 ```java
 cdata.put("&&events", "event1:12341234");
