@@ -4,10 +4,13 @@ seo-description: iOS エクステンションを使用して、Apple Watch ア�
 seo-title: iOS エクステンション実装
 solution: Experience Cloud,Analytics
 title: iOS エクステンション実装
-topic: 開発者と導入
+topic: Developer and implementation
 uuid: 8afc03fe-403e-4643-ada1-30e403ede238
-translation-type: ht
-source-git-commit: 718e336b9002fe3d5282697d4302d12a89297181
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '721'
+ht-degree: 76%
 
 ---
 
@@ -18,7 +21,7 @@ iOS エクステンションを使用して、Apple Watch アプリ（WatchOS 1�
 
 ## 新しい Adobe Experience Platform Mobile SDK リリース
 
-Adobe Experience Platform Mobile SDK に関する情報やドキュメントをお探しの場合、最新のドキュメントについては、[こちら](https://aep-sdks.gitbook.io/docs/)をクリックしてください。
+Adobe Experience Platform Mobile SDK に関する情報やドキュメントをお探しの場合[こちら](https://aep-sdks.gitbook.io/docs/)をクリックし、最新のドキュメントを参照してください。
 
 2018 年 9 月に、SDK の新しいメジャーバージョンをリリースしました。これらの新しい Adobe Experience Platform Mobile SDK は、[Experience Platform Launch](https://www.adobe.com/jp/experience-platform/launch.html) から設定できます。
 
@@ -31,7 +34,7 @@ Adobe Experience Platform Mobile SDK に関する情報やドキュメントを�
 >
 >独自のラッパーではなく、iOS SDK を使用することをお勧めします。
 
-Apple は、本体アプリにリクエストを送信し、応答を受信することによって Watch アプリと本体アプリとの通信を可能にする API のセットを提供しています。Watch アプリから本体アプリに辞書としてトラッキングデータを送信し、本体アプリに対してトラッキングメソッドを呼び出してデータを送信することは可能ですが、この方法には限界があります。
+Appleは、Watchアプリが含まれるアプリにリクエストを送信し、レスポンスを受信することで、含まれるアプリと通信できるAPIを一式提供しています。 ウォッチアプリからそのアプリに追跡データをディクショナリとして送信し、それを含むアプリに対して任意の追跡メソッドを呼び出してデータを送信できますが、このソリューションには制限があります。
 
 ほとんどの場合、Watch アプリの使用時には本体アプリがバックグラウンドで実行されているので、安全に呼び出せるメソッドは `TrackLocation`、`TrackActionInBackground`、`TrackBeacon` の 3 つのみとなります。他のトラッキングメソッドはライフサイクルデータに干渉するので、Watch アプリからデータを送信する際には使用できません。
 
@@ -43,13 +46,14 @@ Watch アプリ向けの SDK には、アプリ内メッセージ以外のすべ
 >
 >少なくとも以下のターゲットを持つプロジェクトがあることを確認します。
 >
->* アプリを収容する 1 つのターゲット。
->* エクステンション用の 1 つのターゲット。
+>* アプリを含む1つのターゲット。
+>* 拡張の1ターゲット。
+
 >
 
 
 
-WatchKit アプリを使用する場合は、3 つ目のターゲットが必要です。Apple Watch 用の開発について詳しくは、「[Apple Watch 用の開発](https://developer.apple.com/library/ios/documentation/General/Conceptual/WatchKitProgrammingGuide/index.html#//apple_ref/doc/uid/TP40014969-CH8-SW1)」を参照してください。
+WatchKitアプリケーションを使用する場合は、3つ目のターゲットが必要です。 Apple Watch 用の開発について詳しくは、「[Apple Watch 用の開発](https://developer.apple.com/library/ios/documentation/General/Conceptual/WatchKitProgrammingGuide/index.html#//apple_ref/doc/uid/TP40014969-CH8-SW1)」を参照してください。
 
 ## 含まれるアプリの設定 {#section_0BAB0842E4C04A62B5E03DFC4BA77851}
 
@@ -74,7 +78,7 @@ WatchKit アプリを使用する場合は、3 つ目のターゲットが必要
 
 1. アプリが予期せぬエラーなくビルドされることを確認します。
 
-## 拡張機能の設定{#section_28C994B7892340AC8D1F07AF26FF3946}
+##  拡張機能の設定{#section_28C994B7892340AC8D1F07AF26FF3946}
 
 1. `ADBMobileConfig.json` ファイルがエクステンションのターゲットのメンバーであることを確認します。
 1. エクステンションのターゲットの&#x200B;**[!UICONTROL Build Phases]**&#x200B;タブで、**[!UICONTROL Link Binary with Libraries]**&#x200B;セクションを展開して、以下のライブラリを追加します。
@@ -105,10 +109,10 @@ WatchKit アプリを使用する場合は、3 つ目のターゲットが必要
       この値は、ヒット元が本体アプリであることを意味します。
    * `a.RunMode = Extension`
 
-      この値は、ヒット元がエクステンションであることを意味します。
+      この値は、ヒットが拡張子から発生したことを意味します。
 
-* SDK の以前のバージョンからアップグレードする場合、本体アプリを起動すると、すべてのユーザーデフォルト値とキャッシュされているファイルが、本体アプリのフォルダーからアプリグループの共有フォルダーに自動的に移行されます。
-* 本体アプリが起動されない場合、エクステンションからのヒットは破棄されます。
-* バージョン番号とビルド番号は、本体アプリとエクステンションアプリ間で同じである必要があります。
-* iOS エクステンションアプリに対してライフサイクルコールはトリガーされません。
+* 古いバージョンのSDKからアップグレードした場合、含まれるアプリが起動すると、Adobeによって、すべてのユーザーのデフォルトとキャッシュされたファイルが、含まれるアプリのフォルダーからアプリグループの共有フォルダーに自動的に移行されます。
+* 含まれているアプリが起動されない場合、拡張機能からのヒットは破棄されます。
+* バージョン番号とビルド番号は、使用しているアプリと拡張機能アプリの間で同じにする必要があります。
+* iOS拡張機能アプリでは、ライフサイクル呼び出しはトリガーされません。
 
