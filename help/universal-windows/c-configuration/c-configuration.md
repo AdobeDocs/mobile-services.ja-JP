@@ -1,17 +1,20 @@
 ---
-description: JSON 設定、ヒットのバッチ処理、SDK メソッドなど、Universal Windows Platform SDK を設定する場合に役立つ情報です。
-seo-description: JSON 設定、ヒットのバッチ処理、SDK メソッドなど、Universal Windows Platform SDK を設定する場合に役立つ情報です。
+description: JSON設定、ヒットバッチ処理、SDKメソッドなど、ユニバーサルWindowsプラットフォームSDKを設定するのに役立つ情報です。
+seo-description: JSON設定、ヒットバッチ処理、SDKメソッドなど、ユニバーサルWindowsプラットフォームSDKを設定するのに役立つ情報です。
 seo-title: 設定
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: 設定
-topic: 開発者と導入
+topic: Developer and implementation
 uuid: f49667b9-b87b-42bd-b7a6-4c6154d1b137
 translation-type: tm+mt
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '57'
+ht-degree: 5%
 
 ---
 
 
 # 設定{#configuration}
 
-JSON 設定、ヒットのバッチ処理、SDK メソッドなど、Universal Windows Platform SDK を設定する場合に役立つ情報です。
+JSON設定、ヒットバッチ処理、SDKメソッドなど、ユニバーサルWindowsプラットフォームSDKを設定するのに役立つ情報です。
