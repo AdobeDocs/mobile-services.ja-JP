@@ -3,13 +3,13 @@ description: 日付範囲オプション、Analytics セグメントおよびカ
 keywords: mobile
 seo-description: 日付範囲オプション、Analytics セグメントおよびカスタムセグメントを含む、プッシュメッセージのオーディエンスオプションを定義および設定できます。
 seo-title: オーディエンス：プッシュメッセージ用のオーディエンスセグメントの定義および設定
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: オーディエンス：プッシュメッセージ用のオーディエンスセグメントの定義および設定
 topic: Metrics
 uuid: efd410e7-3b6c-4cf4-a26f-b11688adc491
-translation-type: ht
-source-git-commit: 86ba045b44bf6553e80727c0d61ccdd9a552d16c
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
 source-wordcount: '1021'
 ht-degree: 100%
 
