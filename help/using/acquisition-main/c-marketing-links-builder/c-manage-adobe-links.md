@@ -1,14 +1,17 @@
 ---
 description: マーケティングリンクページを使用して、マーケティングリンクを作成、使用およびアーカイブできます。
-keywords: モバイル
+keywords: mobile
 seo-description: マーケティングリンクページを使用して、マーケティングリンクを作成、使用およびアーカイブできます。
 seo-title: マーケティングリンクを管理
 solution: Experience Cloud,Analytics
 title: マーケティングリンクを管理
-topic: 指標
+topic: Metrics
 uuid: 98ac3520-89ed-4513-83f6-120dda9d0157
-translation-type: ht
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '201'
+ht-degree: 91%
 
 ---
 
@@ -25,7 +28,7 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
 * **マーケティングリンクの表示**
 
-   マーケティングリンクのリストを表示するには、Mobile Services ホームページで、**[!UICONTROL 獲得]**／**[!UICONTROL マーケティングリンクビルダー]**&#x200B;をクリックします。
+   To display the list of Marketing Links, in the Mobile Services home page, click **[!UICONTROL Acquisition]** > **[!UICONTROL Marketing Links Builder]**.
 
    **[!UICONTROL クリック数]** 列には、マーケティングリンクをクリックしたユーザーの数が表示されます。**[!UICONTROL 初回起動]** 列には、アプリの初回起動数が表示されます。この値には、マーケティングリンクをクリックした後にアプリのインストールを選択して起動したユーザーの数が反映されます。
 
