@@ -1,14 +1,17 @@
 ---
 description: URL パラメーターを手作業で設定することで、新しいモバイルアプリユーザーをその場で獲得するためのマーケティングリンクを作成できます。
-keywords: モバイル
+keywords: mobile
 seo-description: URL パラメーターを手作業で設定することで、新しいモバイルアプリユーザーをその場で獲得するためのマーケティングリンクを作成できます。
 seo-title: ダウンロード計測用リンクの手動作成
 solution: Experience Cloud,Analytics
 title: ダウンロード計測用リンクの手動作成
-topic: 指標
+topic: Metrics
 uuid: d7709203-f793-4982-adaa-9c3c914aca2b
-translation-type: ht
-source-git-commit: 54e3b2d673356a616987537d20758bef8b044db4
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '496'
+ht-degree: 91%
 
 ---
 
@@ -25,7 +28,7 @@ URL パラメーターを手作業で設定することで、新しいモバイ�
 
 ![](assets/acquisition_url.png)
 
-このリンクは、モバイルアプリケーションで、Google Play ストアまたは Apple App Store へのプラットフォーム専用のリダイレクトを実行するように設定されています。宛先が判断できない場合、デフォルトのストアは Apple App Store に設定されています。アプリがインストールされた後、Analytics のインストールヒットにカスタムコンテキストキー `my.custom.key:test` が追加されます。
+このリンクは、モバイルアプリに対してGoogle PlayストアまたはApple App Storeへのプラットフォーム固有のリダイレクトを実行するように設定されます。 宛先が判断できない場合、デフォルトのストアはApple App Storeに設定されています。 アプリがインストールされた後、Analytics のインストールヒットにカスタムコンテキストキー `my.custom.key:test` が追加されます。
 
 リンクを手動で作成するには、次の URL 形式を使用します。
 
@@ -37,8 +40,8 @@ URL パラメーターを手作業で設定することで、新しいモバイ�
 
 iOS の場合、次の正しいプロトコルを使用していることを確認します。
 
-* バージョン 4.7.0 より前の iOS SDK を使用している場合、または iOS SDK 4.7.0 以降を使用していて、アプリ設定ページで **[!UICONTROL HTTPS を使用]** が選択されて&#x200B;**いない**&#x200B;場合は、**HTTP** を選択します。
-* iOS SDK 4.7.0 以降を使用していて、アプリ設定ページで **[!UICONTROL HTTPS を使用]** が選択されて&#x200B;**いる**&#x200B;場合は、**HTTPS** を使用します。
+* バージョン 4.7.0 より前の iOS SDK を使用している場合、または iOS SDK 4.7.0 以降を使用していて、アプリ設定ページで **HTTPS を使用** が選択されて&#x200B;**[!UICONTROL いない]**&#x200B;場合は、**HTTP** を選択します。
+* iOS SDK 4.7.0 以降を使用していて、アプリ設定ページで **HTTPS を使用****[!UICONTROL が選択されている]**&#x200B;場合は、**HTTPS** を使用します。
 
 ここでは、次の条件が当てはまります。
 
