@@ -4,10 +4,13 @@ seo-description: iOS 開発者ライブラリのミックス＆マッチ機能�
 seo-title: Swift 統合
 solution: Experience Cloud,Analytics
 title: Swift 統合
-topic: 開発者と導入
+topic: Developer and implementation
 uuid: 5fb77b57-cbf9-4bcf-8b41-65a933bf9336
-translation-type: ht
-source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '129'
+ht-degree: 71%
 
 ---
 
@@ -18,13 +21,13 @@ iOS 開発者ライブラリのミックス＆マッチ機能を使用して、i
 
 詳しくは、「[Language Interoperability（言語の相互互換性）](https://developer.apple.com/documentation/swift#2984801.html)」を参照してください。
 
-例えば、ドキュメントで説明したように、ブリッジヘッダーメソッドを使用して、Adobe Mobile iOS SDK ヘッダーファイルをインポートできます。
+例えば、ドキュメントで説明されているブリッジヘッダー方式を使用すると、AdobeモバイルiOS SDKヘッダーファイルを読み込むことができます。
 
 ```
 #import “ADBMobile.h”
 ```
 
-Swift ファイル内で SDK のメソッドにアクセスするには、以下の形式を使用してください。
+Swiftファイル内のSDKからメソッドにアクセスするには、次の形式を使用します。
 
 ```
 ADBMobile.{methodname}
