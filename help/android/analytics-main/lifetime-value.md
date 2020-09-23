@@ -2,13 +2,13 @@
 description: ライフタイム値を使用して、各 Android ユーザーのライフタイム値を測定し、ターゲットを設定できます。この値を使用して、全期間の購入、広告ビュー、ビデオ完了、ソーシャル共有、写真のアップロードなどを保存できます。
 seo-description: ライフタイム値を使用して、各 Android ユーザーのライフタイム値を測定し、ターゲットを設定できます。この値を使用して、全期間の購入、広告ビュー、ビデオ完了、ソーシャル共有、写真のアップロードなどを保存できます。
 seo-title: 訪問者のライフタイム値
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: 訪問者のライフタイム値
 topic: Developer and implementation
 uuid: ba0308de-282e-46f9-a14c-19fb6d5c363e
-translation-type: ht
-source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
 source-wordcount: '232'
 ht-degree: 100%
 
