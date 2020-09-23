@@ -2,15 +2,15 @@
 description: この情報は、ADBMobile.json 設定ファイルを使用する場合に役立ちます。
 seo-description: この情報は、ADBMobile.json 設定ファイルを使用する場合に役立ちます。
 seo-title: ADBMobile JSON 設定
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: ADBMobile JSON 設定
 topic: Developer and implementation
 uuid: d9708d59-e30a-4f6c-ab1b-d9499855d0c2
 translation-type: tm+mt
-source-git-commit: 86ba045b44bf6553e80727c0d61ccdd9a552d16c
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '1715'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -89,7 +89,7 @@ ht-degree: 98%
 
 * **coopUnsafe**
 
-   For Device Co-op members who require this value be set to `true`, you need to work with the Co-op team to request a blocklist flag on your Device Co-op account. これらのフラグをセルフサービスで有効にする方法はありません。
+   Device Co-op のユーザーで、この値を `true` に設定する必要がある場合は、Co-op グループに連絡して、お使いの Device Co-op アカウント上でブロックリストフラグをリクエストする必要があります。これらのフラグをセルフサービスで有効にする方法はありません。
 
    次の情報に留意してください。
 
