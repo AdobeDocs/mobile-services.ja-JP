@@ -1,14 +1,17 @@
 ---
 description: ユニバーサルリンク（iOS）およびアプリリンク（Android）を使用すると、iOS または Android アプリでディープリンクに接続できます。
-keywords: モバイル
+keywords: mobile
 seo-description: ユニバーサルリンク（iOS）およびアプリリンク（Android）を使用すると、iOS または Android アプリでディープリンクに接続できます。
 seo-title: Apple ユニバーサルリンクと Android アプリリンク
 solution: Experience Cloud,Analytics
 title: Apple ユニバーサルリンクと Android アプリリンク
-topic: 指標
+topic: Metrics
 uuid: 8d6441dc-4307-4454-95ea-d77ec796f918
-translation-type: ht
-source-git-commit: e65add089499f728827321e96e439f04ebb19a73
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '1142'
+ht-degree: 97%
 
 ---
 
@@ -63,7 +66,7 @@ source-git-commit: e65add089499f728827321e96e439f04ebb19a73
 
 1. Adobe Mobile Services で、ユニバーサルリンクを使用するマーケティングリンクを作成します。
 
-   Mobile Services ホームページでアプリを選択し、**[!UICONTROL 獲得]**／**[!UICONTROL マーケティングリンクビルダー]**&#x200B;をクリックします。
+   a. Select the app from the Mobile Services home page, click **[!UICONTROL Acquisition]** > **[!UICONTROL Marketing Link Builder]**.
 
    b. **[!UICONTROL 新規作成]** をクリックします。
 
@@ -122,7 +125,7 @@ source-git-commit: e65add089499f728827321e96e439f04ebb19a73
 
 1. Adobe Mobile Services で、アプリリンクを使用するマーケティングリンクを作成します。
 
-   Mobile Services ホームページでアプリを選択し、**[!UICONTROL 獲得]**／**[!UICONTROL マーケティングリンクビルダー]**&#x200B;をクリックします。
+   a. Select the app from the Mobile Services home page, click **[!UICONTROL Acquisition]** > **[!UICONTROL Marketing Link Builder]**.
 
    b. **[!UICONTROL 新規作成]** をクリックします。
 
