@@ -4,10 +4,13 @@ seo-description: この情報は、GDPR のデータ削除要求に対処する�
 seo-title: ユーザーのオプトステータスの設定
 solution: Experience Cloud,Analytics
 title: ユーザーのオプトステータスの設定
-topic: 開発者と導入
+topic: Developer and implementation
 uuid: f8a3e6be-44dd-494e-9cda-dbbac86d6772
-translation-type: ht
-source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '266'
+ht-degree: 67%
 
 ---
 
@@ -28,23 +31,23 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 * `Config.setPrivacyStatus` メソッド。
 
-   このメソッドを使用しておこなったプライバシー設定の変更は、もう一度プライバシー設定を変更するか、アプリをアンインストールしてインストールし直すまで有効なままです。メソッドについて詳しくは、「[設定メソッド](/help/android/configuration/methods.md)」を参照してください。
+   この方法を使用してプライバシー設定を変更した後も、この設定を再度変更するか、アプリをアンインストールして再びインストールするまで、この設定は有効です。 メソッドについて詳しくは、「 [設定メソッド](/help/android/configuration/methods.md)」を参照してください。
 
 次の表に、各プライバシーステータスを示します。
 
 * **オプトイン**
 
-   * **Analytics**：ヒットが送信されます。
-   * **Target**：mbox リクエストが送信されます。
-   * **Audience Manager**：シグナルと ID 同期が送信されます。
+   * **解析**:ヒットが送信されます。
+   * **ターゲット**:mboxリクエストが送信されます。
+   * **Audience Manager**:シグナルとID同期が送信されます。
    * JSON 設定ファイルの値：`optedin`
    * `setPrivacyStatus` の値：`MOBILE_PRIVACY_STATUS_OPT_IN`
 
 * **オプトアウト**
 
-   * **Analytics**：ヒットが破棄されます。
-   * **Target**：mbox リクエストが許可されません。
-   * **Audience Manager**：シグナルと ID 同期が許可されません。
+   * **解析**:ヒットは破棄されます。
+   * **ターゲット**:mboxリクエストは許可されません。
+   * **Audience Manager**:シグナルとIDの同期は許可されません。
    * JSON 設定ファイルの値：`optedout`
    * `setPrivacyStatus` の値：`MOBILE_PRIVACY_STATUS_OPT_OUT`
 
@@ -53,8 +56,8 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
    * **Analytics**：オフライン追跡が&#x200B;**有効**&#x200B;である場合、プライバシーステータスがオプトイン（ヒットが送信される）またはオプトアウト（ヒットが破棄される）に変更されるまで、ヒットは保存されます。
 
       オフライン追跡が<b>有効になっていない</b>場合、プライバシーステータスがオプトインに変更されるまで、ヒットは破棄されます。
-   * **Target**：mbox リクエストが送信されます。
-   * **Audience Manager**：シグナルと ID 同期が送信されます。
+   * **ターゲット**:mboxリクエストが送信されます。
+   * **Audience Manager**:シグナルとID同期が送信されます。
    * JSON 設定ファイルの値：`optunknown`
    * `setPrivacyStatus` の値：`MOBILE_PRIVACY_STATUS_UNKNOWN`
 
