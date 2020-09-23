@@ -4,10 +4,13 @@ seo-description: 位置情報は、緯度と経度に加え、事前定義され
 seo-title: 位置情報と目標地点
 solution: Experience Cloud,Analytics
 title: 位置情報と目標地点
-topic: 開発者と導入
+topic: Developer and implementation
 uuid: b8209370-cbc4-40f9-97d8-017e2d74a377
-translation-type: ht
-source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '596'
+ht-degree: 83%
 
 ---
 
@@ -20,9 +23,9 @@ source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 * Adobe Mobile Services UI で定義されている目標地点（POI）の緯度、経度および位置。
 
-   この情報がモバイルソリューション変数に渡され、自動的にレポートが作成されます。
+   この情報は、自動レポートのためにモバイルソリューション変数に渡されます。
 
-* コンテキストデータとして渡された中心からの距離と精度。
+* 中心からの距離と、コンテキストデータとして渡される精度。
 
    これらの変数は、自動ではキャプチャされません。これらのコンテキストデータ変数は、以下の「*追加データの送信*」の節の手順に従ってマッピングする必要があります。
 
@@ -81,9 +84,9 @@ Analytics.trackLocation(currentLocation, locationContextData);
 
 ## 位置コンテキストデータ {#section_FFB71E6653F9410A89CC6ACC0C9164A9}
 
-緯度と経度は、3 つの異なるコンテキストデータパラメーターを使用して送信されます。各パラメーターは、異なるレベルの精度を表し、合計で 6 つのコンテキストデータパラメーターがあります。
+緯度と経度は、3つの異なるコンテキストデータパラメータを使用して送信され、各パラメータは異なる精度を表し、合計6つのコンテキストデータパラメータが含まれます。
 
-例えば、1 m の精度で位置を表す lat = 40.93231、long = -111.93152 という座標があるとします。この位置は、次の変数に応じて様々なレベルの精度に分割されます。
+例えば、座標lat = 40.93231、long = -111.93152は、1 mの精度の位置を表します。 この場所は、次の変数の精度のレベルに従って分割されます。
 
 `a.loc.lat.a`= 040.9
 
@@ -116,5 +119,5 @@ Analytics.trackLocation(currentLocation, locationContextData);
 
 * 2 つの POI の直径が重なっている場合は、現在のロケーションを含む最初の POI が使用されます。
 
-   POI が重複している場合は、粒度の大きい順に POI のリストを並べ替えて、粒度の最も大きい POI がレポートされるようにする必要があります。
+   POIが重複する場合、最も精度の高いPOIが確実にレポートされるように、POIを最も精度の高い順にリストする必要があります。
 
