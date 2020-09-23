@@ -3,11 +3,14 @@ description: このプラグインを使用すると、Unity プロジェクト�
 keywords: Unity
 seo-description: このプラグインを使用すると、Unity プロジェクトから Adobe Analytics コールを送信できます。
 seo-title: iOS および Android 4.x SDK 用 Unity プラグイン
-solution: Marketing Cloud,Developer
+solution: Experience Cloud
 title: iOS および Android 4.x SDK 用 Unity プラグイン
 uuid: 83289a73-982d-4472-a8c8-00b562dc80f5
-translation-type: ht
-source-git-commit: 0d50c7e6674de33b8190e74c113ae010ff226e97
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '141'
+ht-degree: 90%
 
 ---
 
@@ -25,7 +28,7 @@ GitHub から ADBMobile.unitypackage ファイルをダウンロードします�
 
 `ADBMobile.unitypackage` ファイルの内容を以下に示します。
 
-* Assets（ルート）
+* アセット（ルート）
 
    * ADBMobile
 
@@ -36,7 +39,7 @@ GitHub から ADBMobile.unitypackage ファイルをダウンロードします�
 
          * adobeMobileLibrary-{version}.jar
          * AndroidManifest.xml
-         * assets
+         * アセット
 
             * ADBMobileConfig.json
       * iOS
