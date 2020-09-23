@@ -2,12 +2,15 @@
 description: ADBMobile JSON設定ファイルの使用に役立つ情報です。
 seo-description: ADBMobile JSON設定ファイルの使用に役立つ情報です。
 seo-title: ADBMobileConfig.json config
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: ADBMobileConfig.json config
 topic: Developer and implementation
 uuid: cbcb54a3-4b8f-4651-8ce9-2731ac988545
 translation-type: tm+mt
-source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '620'
+ht-degree: 40%
 
 ---
 
@@ -16,11 +19,11 @@ source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
 
 ADBMobile JSON設定ファイルの使用に役立つ情報です。
 
-SDKは、現在、Analytics、ターゲット、オーディエンスマネージャーを含む複数のAdobe Experience Cloudソリューションをサポートしています。 メソッドには、ソリューションに応じたプレフィックスが付きます。設定メソッドの先頭に「Config」が付きます。
+SDKは、現在、Analytics、ターゲット、Audience Managerを含む複数のAdobe Experience Cloudソリューションをサポートしています。 メソッドには、ソリューションに応じたプレフィックスが付きます。設定メソッドの先頭に「Config」が付きます。
 
 * **rsids**
 
-   (Analytics **で必須**)Analyticsデータを受け取るための1つ以上のレポートスイート。 複数のレポートスイートIDは、スペースを入れずにコンマで区切る必要があります。
+   (Analytics **で必須**)Analyticsデータを受け取るための1つ以上のレポートスイート。 レポートスイート ID を複数指定する場合は、スペースを入れずにレポートスイート ID をコンマで区切る必要があります。
 
    * このメソッドの構文を次に示します。
 
@@ -40,7 +43,7 @@ SDKは、現在、Analytics、ターゲット、オーディエンスマネー�
 
 * **charset**
 
-   Analyticsに送信されるデータに使用する文字セットを定義します。 この文字セットは、受信データを格納およびレポート用に UTF-8 に変換するために使用されます。詳しくは、「[s.charSet](https://docs.adobe.com/content/help/en/analytics/implementation/vars/config-vars/charset.html)」を参照してください。
+   Analyticsに送信されるデータに使用する文字セットを定義します。 この文字セットは、受信データを格納およびレポート用に UTF-8 に変換するために使用されます。詳しくは、「[s.charSet](https://docs.adobe.com/content/help/ja-JP/analytics/implementation/vars/config-vars/charset.html)」を参照してください。
 
 * **ssl**
 
@@ -52,13 +55,13 @@ SDKは、現在、Analytics、ターゲット、オーディエンスマネー�
 
    If time stamps are enabled on your report suite, your `offlineEnabled` configuration property *must* be `true`. if your report suite is not timestamp enabled, your `offlineEnabled` configuration property *must* be `false`.
 
-   この設定が正しく行われないと、データが失われます。 レポートスイートでタイムスタンプが有効になっているかどうかがわからない場合は、カスタマーケアにお問い合わせください。 If you are currently reporting AppMeasurement data to a report suite that also collects data from JavaScript, you might need to set up a separate report suite for mobile data or include a custom timestamp on all JavaScript hits using the `s.timestamp` variable.
+   このプロパティを適切に設定しなければ、データが失われます。レポートスイートでタイムスタンプが有効になっているかどうかがわからない場合は、カスタマーケアにお問い合わせください。 If you are currently reporting AppMeasurement data to a report suite that also collects data from JavaScript, you might need to set up a separate report suite for mobile data or include a custom timestamp on all JavaScript hits using the `s.timestamp` variable.
 
    デフォルト値は `false` です。
 
 * **lifecycleTimeout**
 
-   アプリが起動してからその起動が新しいセッションと見なされるまでに経過する必要がある時間（秒単位）を指定します。 このタイムアウトは、アプリケーションがバックグラウンドに送信され、再びアクティブになる場合にも適用されます。 アプリがバックグラウンドに従っている時間は、セッションの長さには含まれません。
+   アプリが起動してからその起動が新しいセッションと見なされるまでに経過する必要がある時間（秒単位）を指定します。 このタイムアウトは、アプリケーションがバックグラウンドに移行し、再びアクティブになる場合にも適用されます。アプリケーションがバックグラウンドになっている時間はセッションの長さには含まれません。
 
    デフォルト値は 300 秒です。
 
