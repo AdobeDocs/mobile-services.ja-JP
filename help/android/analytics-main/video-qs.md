@@ -1,14 +1,17 @@
 ---
 description: ビデオ測定ソリューションを使用して Android でビデオを測定する方法について説明します。
-keywords: Android, ライブラリ, モバイル, SDK
+keywords: android;library;mobile;sdk
 seo-description: ビデオ測定ソリューションを使用して Android でビデオを測定する方法について説明します。
 seo-title: ビデオ分析
 solution: Experience Cloud,Analytics
 title: ビデオ分析
-topic: 開発者と導入
+topic: Developer and implementation
 uuid: a137cc27-dc28-48c0-b08e-2ca17d2c7e1d
-translation-type: ht
-source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '881'
+ht-degree: 85%
 
 ---
 
@@ -28,9 +31,9 @@ source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
 * **a.media.name**
    * 変数型：eVar
       * デフォルトの有効期限：訪問
-      * カスタムインサイト（s.prop、ビデオパスに使用）
-   * （**必須**）訪問者が何らかの方法でビデオを表示すると、このコンテキストデータ変数は、実装に指定されているビデオの名前を収集します。この変数では分類を追加できます。
-   * （**オプション**）カスタムインサイト変数は、ビデオパス情報を提供します。
+      * Custom Insight（s.prop、ビデオパスに使用）
+   * (**必須**)訪問者が何らかの方法でビデオを表示すると、このコンテキストデータ変数によって、実装で指定されているとおりにビデオの名前が収集されます。 この変数に分類を追加できます。
+   * (**Optional**) The Custom Insight variable provides video pathing information.
 
 * **a.media.name**
    * 変数タイプ：カスタムインサイト（s.prop）
@@ -44,16 +47,17 @@ source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
 * **a.media.segment**
    * 変数型：eVar
    * デフォルトの有効期限：ページビュー
-   * （**必須**）セグメント名や、ビデオ内でのセグメントの発生順序を含め、ビデオセグメントデータを収集します。
+   * (**Required**) Collects video segment data, including the segment name and the order in which the segment occurs in the video.
 
       この変数を入力するには、プレーヤーイベントを自動的に追跡する場合に `segmentByMilestones` 変数を有効にするか、プレーヤーイベントを手動で追跡する場合にカスタムセグメント名を設定します。例えば、訪問者がビデオの最初のセグメントを表示すると、SiteCatalyst によって Segments eVar に次の情報が収集されます`1:M:0-25`。
 
-      デフォルトのビデオデータ収集メソッドでは、次の時点のデータが収集されます。
+      デフォルトのビデオデータ収集方法では、次の時点でデータが収集されます。
 
-      * ビデオの開始（再生）
-      * セグメントの開始
-      * ビデオの終了（停止）
-      Analytics は、訪問者が視聴を開始したときに最初のセグメントビューをセグメントの先頭としてカウントします。後続のセグメントビューは、セグメントの開始としてカウントされます。
+      * ビデオ開始（再生）
+      * セグメント開始
+      * ビデオ終了（停止）
+
+      Analytics は、訪問者開始が視聴しているときに、最初のセグメント表示をセグメントの開始でカウントします。後続のセグメントは、セグメントの開始時に表示されます。
 
 
 * **a.contentType**
@@ -66,7 +70,7 @@ source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
 * **a.media.timePlayed**
    * 変数型：イベント
    * タイプ：カウンター
-   * 前回のデータ収集プロセス（イメージリクエスト）以降のビデオ視聴秒数をカウントします。
+   * 最後のデータ収集プロセス（イメージ要求）以降のビデオ視聴に費やした時間を秒単位でカウントします。
 
 * **a.media.view**
    * 変数型：イベント
@@ -87,7 +91,7 @@ source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
    * タイプ：カウンター
    * ユーザーがビデオを最後まで視聴したことを示します。
 
-      デフォルトでは、完了イベントはビデオが終了する 1 秒前に測定されます。実装時に、表示完了と見なすビデオの終わりからの秒数を指定できます。終了が定義されていないライブビデオやその他のストリーミングでは、完了を測定するカスタムポイントを指定できます（例えば、一定の時間視聴した後）。
+      デフォルトでは、完了イベントはビデオが終了する 1 秒前に測定されます。導入時に、表示が完了したと見なすビデオの最後からの秒数を指定できます。 終わりが定義されていないライブビデオや他のストリームの場合は、完了を測定するカスタムポイントを指定できます（例えば、特定の視聴後）。
 
 
 ## メディア設定の指定 {#section_929945D4183C428AAF3B983EFD3E2500}
@@ -203,6 +207,7 @@ Media Measurement クラスのメソッドを次に示します。
       *name* という名前のメディアアイテムを閉じます。
 
       * このメソッドの構文を次に示します。
+
       ```java
       public static void close(String name);
       ```
