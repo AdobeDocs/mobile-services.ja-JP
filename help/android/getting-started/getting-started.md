@@ -4,10 +4,13 @@ seo-description: 'この情報は、Experience Cloud ソリューション用 An
 seo-title: はじめに
 solution: Experience Cloud,Analytics
 title: はじめに
-topic: 開発者と導入
+topic: Developer and implementation
 uuid: 39c642e2-60f0-4bbe-b0d1-2635ee2c6d01
-translation-type: ht
-source-git-commit: b690ec677cf5aedfb2673b707f82716af1851124
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '141'
+ht-degree: 100%
 
 ---
 
@@ -18,7 +21,7 @@ source-git-commit: b690ec677cf5aedfb2673b707f82716af1851124
 
 ## 新しい Adobe Experience Platform Mobile SDK リリース
 
-Adobe Experience Platform Mobile SDK に関する情報やドキュメントをお探しの場合、最新のドキュメントについては、[こちら](https://aep-sdks.gitbook.io/docs/)をクリックしてください。
+Adobe Experience Platform Mobile SDK に関する情報やドキュメントをお探しの場合[こちら](https://aep-sdks.gitbook.io/docs/)をクリックし、最新のドキュメントを参照してください。
 
 2018 年 9 月に、SDK の新しいメジャーバージョンをリリースしました。これらの新しい Adobe Experience Platform Mobile SDK は、[Experience Platform Launch](https://www.adobe.com/jp/experience-platform/launch.html) から設定できます。
 
