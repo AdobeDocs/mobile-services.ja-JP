@@ -4,10 +4,13 @@ seo-description: iOS ライブラリのバージョン 3.x または 2.x から�
 seo-title: 4.x iOS ライブラリへの移行
 solution: Experience Cloud,Analytics
 title: 4.x iOS ライブラリへの移行
-topic: 開発者と導入
+topic: Developer and implementation
 uuid: 5668972b-f355-4e03-9df0-8c82ddf6809b
-translation-type: ht
-source-git-commit: 68bc21f1c6dba2faeed332495592114af90c8f61
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '895'
+ht-degree: 61%
 
 ---
 
@@ -24,15 +27,15 @@ iOS ライブラリのバージョン 3.x または 2.x からバージョン 4.
 
 ## event、prop、eVar {#section_76EA6F5611184C5CAE6E62956D84D7B6}
 
-バージョン 4 では、event、eVar、prop、継承、リストなどの変数をアプリ内で直接割り当てることができなくなりました。代わりに、SDK は、コンテキストデータと処理ルールを使用して、レポート用にアプリデータを Analytics 変数にマップします。
+バージョン4では、イベント、eVar、prop、相続人、リストなどの変数を直接アプリに割り当てることができなくなりました。 代わりに、SDKは、コンテキストデータと処理ルールを使用して、レポート用にアプリデータをAnalytics変数にマッピングします。
 
-処理ルールには、次の利点があります。
+処理ルールには次の利点があります。
 
-* App Store に更新を提出することなく、データマッピングを変更することができます。
-* レポートスイートに固有の変数を設定する代わりに、意味のある名前をデータに使用できます。
-* 追加のデータの送信にはほとんど影響しません。
+* データマッピングは、更新をApp Storeに送信しなくても変更できます。
+* データには、レポートスイートに固有の変数を設定する代わりに、意味のある名前を付けることができます。
+* 追加のデータを送信する場合、影響はほとんどありません。
 
-   これらの値は、処理ルールを使用してマップされるまではレポートに表示されません。
+   これらの値は、処理ルールを使用してマッピングされるまで、レポートに表示されません。
 
 >[!TIP]
 >
@@ -73,7 +76,7 @@ iOS ライブラリのバージョン 3.x または 2.x からバージョン 4.
 
 設定ファイルを移動するには：
 
-1. 先頭列の変数に設定されている値を 2 番目の列の変数に移動します。
+1. 1列目の変数に設定されている値を2列目の変数に移動します。
 1. コードから古い設定変数を削除します。
 
 ### 移行情報
@@ -82,44 +85,44 @@ iOS ライブラリのバージョン 3.x または 2.x からバージョン 4.
 
 #### バージョン 3.x からの移行
 
-先頭列の値を 2 番目の列の変数に移動します。
+1列目の値を2列目の変数に移動します。
 
 | 設定変数 | `ADBMobileConfig.json` ファイル内の変数 |
 |--- |--- |
-| offlineTrackingEnabled | "offlineEnabled" |
-| offlineHitLimit | "batchLimit" |
-| reportSuiteIDs | "rsids" |
-| trackingServer | "server" |
-| charSet | "charset" |
-| currencyCode | "currency" |
-| ssl | "ssl" |
-| linkTrackVars | 削除します。使用されなくなりました。 |
-| linkTrackEvents | 削除します。使用されなくなりました。 |
+| offlineTrackingEnabled | &quot;offlineEnabled&quot; |
+| offlineHitLimit | &quot;batchLimit&quot; |
+| reportSuiteIDs | &quot;rsids&quot; |
+| trackingServer | &quot;server&quot; |
+| charSet | &quot;charset&quot; |
+| currencyCode | &quot;currency&quot; |
+| ssl | &quot;ssl&quot; |
+| linkTrackVars | 削除（使用終了） |
+| linkTrackEvents | 削除（使用終了） |
 
 
 #### バージョン 2.x からの移行
 
-先頭列の値を 2 番目の列の変数に移動します。
+1列目の値を2列目の変数に移動します。
 
 | 設定変数 | `ADBMobileConfig.json` ファイル内の変数 |
 |--- |--- |
-| trackOffline | "offlineEnabled" |
-| offlineLimit | "batchLimit" |
-| account | "rsids" |
-| trackingServer | "server"、`"https://"` プレフィックスを削除します。プロトコルプレフィックスは、"ssl" 設定に基づいて自動的に追加されます。 |
-| trackingServerSecure | 削除します。安全な接続をおこなうには、"server" を定義し、"ssl" を有効にします。 |
-| charSet | "charset" |
-| currencyCode | "currency" |
-| ssl | "ssl" |
-| linkTrackVars | 削除します。使用されなくなりました。 |
-| linkTrackEvents | 削除します。使用されなくなりました。 |
-| timestamp | 削除します。設定できなくなりました。 |
-| dc | 削除します。使用されなくなりました。 |
-| userAgent | 削除します。設定できなくなりました。 |
-| dynamicVariablePrefix | 削除します。使用されなくなりました。 |
-| visitorNamespace | 削除します。使用されなくなりました。 |
-| usePlugins | 削除します。使用されなくなりました。 |
-| useBestPractices  チャーン測定（getChurnInstance）へのすべての呼び出し | 削除します。ライフサイクル指標に置き換えられました。詳しくは、「[ライフサイクル指標](//help/ios/metrics.md)」を参照してください。 |
+| trackOffline | &quot;offlineEnabled&quot; |
+| offlineLimit | &quot;batchLimit&quot; |
+| account | &quot;rsids&quot; |
+| trackingServer | &quot;server&quot;, remove the `"https://"` prefix. 「ssl」設定に基づいて、プロトコルプレフィックスが自動的に追加されます。 |
+| trackingServerSecure | 削除. 安全な接続の場合は、「server」を定義し、「ssl」を有効にします。 |
+| charSet | &quot;charset&quot; |
+| currencyCode | &quot;currency&quot; |
+| ssl | &quot;ssl&quot; |
+| linkTrackVars | 削除（使用終了） |
+| linkTrackEvents | 削除（使用終了） |
+| timestamp | 削除（設定不可） |
+| dc | 削除（使用終了） |
+| userAgent | 削除（設定不可） |
+| dynamicVariablePrefix | 削除（使用終了） |
+| visitorNamespace | 削除（使用終了） |
+| usePlugins | 削除（使用終了） |
+| useBestPracticesは、churn measurement(churn measurement)(getChurnInstance)のすべての呼び出しをチャーン測定(churn measurement)に対して実行します。 | 削除します。ライフサイクル指標に置き換えられました。詳しくは、「[ライフサイクル指標](//help/ios/metrics.md)」を参照してください。 |
 
 
 ## トラッキングコールとトラッキング変数の更新 {#section_96E7D9B3CDAC444789503B7E7F139AB9}
@@ -136,15 +139,15 @@ iOS ライブラリのバージョン 3.x または 2.x からバージョン 4.
 
 ### event、prop、eVar
 
-バージョン 4 では、event、eVar、prop、継承、リストなどの変数をアプリ内で直接割り当てることができなくなりました。SDK は、コンテキストデータと処理ルールを使用して、レポート用にアプリデータを Analytics 変数にマップするようになりました。
+バージョン4では、イベント、eVar、prop、相続人、リストなどの変数を直接アプリに割り当てることができなくなりました。 SDKは、コンテキストデータと処理ルールを使用して、レポートのためにアプリデータをAnalytics変数にマップするようになりました。
 
-処理ルールには、次の利点があります。
+処理ルールには次の利点があります。
 
-* App Store に更新を提出することなく、データマッピングを変更することができます。
-* レポートスイートに固有の変数を設定する代わりに、意味のある名前をデータに使用できます。
-* 追加のデータの送信にはほとんど影響しません。
+* データマッピングは、更新をApp Storeに送信しなくても変更できます。
+* データには、レポートスイートに固有の変数を設定する代わりに、意味のある名前を付けることができます。
+* 追加のデータを送信する場合、影響はほとんどありません。
 
-   これらの値は、処理ルールを使用してマッピングするまではレポートに表示されません。詳しくは、[処理ルールとコンテキストデータ](/help/ios/getting-started/proc-rules.md)を参照してください。
+   これらの値は、処理ルールを使用してマッピングされるまで、レポートに表示されません。 詳しくは、 [処理ルールとコンテキストデータを参照してください](/help/ios/getting-started/proc-rules.md)。
 
 代わりに、変数に直接割り当てた値を `data` `NSDictionary` に追加する必要があります。つまり、`setProp` および `setEvar` への呼び出しと、持続コンテキストデータへの割り当てをすべて削除して、値を `data` パラメーターに追加する必要があります。
 
