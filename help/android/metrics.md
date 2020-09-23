@@ -1,14 +1,17 @@
 ---
 description: 以下では、ライフサイクルの実装後にモバイルライブラリによって自動的に測定可能な指標およびディメンションと、ライフサイクルデータのトラブルシューティングに関するページへのリンクを示します。
-keywords: Android, ライブラリ, モバイル, SDK
+keywords: android;library;mobile;sdk
 seo-description: 以下では、ライフサイクルの実装後にモバイルライブラリによって自動的に測定可能な指標およびディメンションと、ライフサイクルデータのトラブルシューティングに関するページへのリンクを示します。
 seo-title: ライフサイクル指標
 solution: Experience Cloud,Analytics
 title: ライフサイクル指標
-topic: 開発者と導入
+topic: Developer and implementation
 uuid: a8f3ebac-be3b-4948-82bb-105d46cfff6d
-translation-type: ht
-source-git-commit: 1c387b063eedb41a52e044dc824df6a51f173ad2
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '1240'
+ht-degree: 91%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 1c387b063eedb41a52e044dc824df6a51f173ad2
 
 ## 新しい Adobe Experience Platform Mobile SDK リリース
 
-Adobe Experience Platform Mobile SDK に関する情報やドキュメントをお探しの場合、最新のドキュメントについては、[こちら](https://aep-sdks.gitbook.io/docs/)をクリックしてください。
+Adobe Experience Platform Mobile SDK に関する情報やドキュメントをお探しの場合[こちら](https://aep-sdks.gitbook.io/docs/)をクリックし、最新のドキュメントを参照してください。
 
 2018 年 9 月に、SDK の新しいメジャーバージョンをリリースしました。これらの新しい Adobe Experience Platform Mobile SDK は、[Experience Platform Launch](https://www.adobe.com/jp/experience-platform/launch.html) から設定できます。
 
@@ -28,7 +31,7 @@ Adobe Experience Platform Mobile SDK に関する情報やドキュメントを�
 
 ## ライフサイクル指標およびディメンション {#section_78F036C4296F4BA3A47C2044F79C86C1}
 
-設定された場合、ライフサイクル指標は、コンテキストデータパラメーターで Analytics に送信され、mbox 呼び出しのたびにパラメーターで Target に送信され、シグナルとして Audience Management に送信されます。Analytics および Target は同じ形式を使用しますが、Audience Management は、各指標に異なるプレフィックスを使用します。
+設定した場合、ライフサイクル指標は、コンテキストデータパラメーターでAnalyticsに、mbox呼び出しのたびにターゲットするパラメーターで、オーディエンス管理へのシグナルとして送信されます。 Analyticsとターゲットは同じ形式を使用しますが、オーディエンス管理では各指標に異なるプレフィックスを使用します。
 
 Analytics の場合、各ライフサイクルトラッキングコールとともに送信されるコンテキストデータは、自動的にキャプチャされ、先頭の列の指標またはディメンションを使用してレポートされ、例外が指摘されます。
 
@@ -72,7 +75,7 @@ Analytics の場合、各ライフサイクルトラッキングコールとと�
 
 * **起動回数**
 
-   クラッシュおよびインストールを含め、実行のたびにトリガーされます。また、ライフサイクルセッションタイムアウトを超えた場合、バックグラウンドからの再開時にもトリガーされます。
+   クラッシュやインストールを含め、実行のたびにトリガーされます。 また、ライフサイクルセッションのタイムアウトを超えた場合に、バックグラウンドからの再開時にもトリガーされます。
 
    >[!IMPORTANT]
    >
@@ -309,28 +312,28 @@ Analytics の場合、各ライフサイクルトラッキングコールとと�
 
 * **キャンペーンの内容**
 
-   リンクを表示するコンテンツの名前または ID。モバイルアプリの獲得によって設定されます。
+   リンクを表示したコンテンツの名前またはID。 モバイルアプリの獲得によって設定されます。
 
    * Analytics コンテキストデータ／Target パラメーター：`a.referrer.campaign.content`
    * Audience Managerの特性：`c_a_referrer_campaign_content`
 
 * **キャンペーンのメディア**
 
-   バナーまたは電子メールなどのマーケティングメディア。モバイルアプリの獲得によって設定されます。
+   マーケティングメディア（バナー、電子メールなど）。 モバイルアプリの獲得によって設定されます。
 
    * Analytics コンテキストデータ／Target パラメーター：`a.referrer.campaign.medium`
    * Audience Managerの特性：`c_a_referrer_campaign_medium`
 
 * **キャンペーンのソース**
 
-   ニュースレターやソーシャルメディアネットワークなどのオリジナルリファラー。モバイルアプリの獲得によって設定されます。
+   ニュースレターやソーシャルメディアネットワークなど、元の転送者。 モバイルアプリの獲得によって設定されます。
 
    * Analytics コンテキストデータ／Target パラメーター：`a.referrer.campaign.source`
    * Audience Managerの特性：`c_a_referrer_campaign_source`
 
 * **キャンペーンのキーワード**
 
-   この獲得で追跡する有料検索キーワードまたはその他の用語。モバイルアプリの獲得によって設定されます。
+   有料キーワードまたはこの獲得で追跡する他のキーワード。 モバイルアプリの獲得によって設定されます。
 
    * Analytics コンテキストデータ／Target パラメーター：`a.referrer.campaign.term`
    * Audience Managerの特性：`c_a_referrer_campaign_term`
