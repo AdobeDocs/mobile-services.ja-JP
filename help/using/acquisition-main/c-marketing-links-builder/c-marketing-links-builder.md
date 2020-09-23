@@ -1,14 +1,17 @@
 ---
 description: ビルダーを使用すれば、アプリストアおよびアプリまたは Web のリンク先にユーザーをルーティングできる、マーケティングリンクを構築できます。マーケターは、デバイスタイプやユーザーのデバイスのオペレーティングシステムなど、ルールに基づいて宛先を選択できます。
-keywords: モバイル
+keywords: mobile
 seo-description: ビルダーを使用すれば、アプリストアおよびアプリまたは Web のリンク先にユーザーをルーティングできる、マーケティングリンクを構築できます。マーケターは、デバイスタイプやユーザーのデバイスのオペレーティングシステムなど、ルールに基づいて宛先を選択できます。
 seo-title: マーケティングリンクビルダー
 solution: Experience Cloud,Analytics
 title: マーケティングリンクビルダー
-topic: 指標
+topic: Metrics
 uuid: 94906393-ffa5-47a6-89f6-1c812bad34af
-translation-type: ht
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '149'
+ht-degree: 100%
 
 ---
 
