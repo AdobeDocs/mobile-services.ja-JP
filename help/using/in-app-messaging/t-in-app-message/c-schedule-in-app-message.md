@@ -1,14 +1,17 @@
 ---
 description: 期間、曜日および時間帯オプションを含む、アプリ内メッセージのスケジュールオプションを設定できます。
-keywords: モバイル
+keywords: mobile
 seo-description: 期間、曜日および時間帯オプションを含む、アプリ内メッセージのスケジュールオプションを設定できます。
 seo-title: スケジュール：アプリ内メッセージ
 solution: Experience Cloud,Analytics
 title: スケジュール：アプリ内メッセージ
-topic: 指標
+topic: Metrics
 uuid: d10e691b-105a-4165-a49d-d046ce250acd
-translation-type: ht
-source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '223'
+ht-degree: 95%
 
 ---
 
@@ -21,7 +24,7 @@ source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
 >
 >「日付範囲」は、設定ユーザーのタイムゾーンに基づいて定義されます。「特定の日」および「時間範囲」は、ユーザーのデバイスの時間が基準となります。
 
-1. アプリで、**[!UICONTROL メッセージング]**／**[!UICONTROL メッセージを管理]**／**[!UICONTROL メッセージを作成]**／**[!UICONTROL アプリ内を作成]**&#x200B;をクリックします。
+1. In your app, click **[!UICONTROL Messaging]** > **[!UICONTROL Manage Messages]** > **[!UICONTROL Create Message]** > **[!UICONTROL Create In-App]**.
 1. **[!UICONTROL スケジュール]** をクリックします。
 1. **[!UICONTROL 期間]** セクションの次のフィールドに入力します。
 
