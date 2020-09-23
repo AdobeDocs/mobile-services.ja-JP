@@ -1,13 +1,16 @@
 ---
 description: このトピックでは、獲得テスト中に直面する可能性のある問題のトラブルシューティング方法について説明します。
-keywords: Android, ライブラリ, モバイル, SDK
+keywords: android;library;mobile;sdk
 seo-description: このトピックでは、獲得テスト中に直面する可能性のある問題のトラブルシューティング方法について説明します。
 seo-title: 獲得テストのトラブルシューティング
 solution: Experience Cloud,Analytics
 title: 獲得テストのトラブルシューティング
-topic: 開発者と導入
-translation-type: ht
-source-git-commit: 1c387b063eedb41a52e044dc824df6a51f173ad2
+topic: Developer and implementation
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '248'
+ht-degree: 100%
 
 ---
 
