@@ -1,20 +1,23 @@
 ---
-description: products 変数をマーチャンダイジング eVar および製品固有イベントと共に使用した例です。
-seo-description: products 変数をマーチャンダイジング eVar および製品固有イベントと共に使用した例です。
+description: マーチャンダイジングeVarおよび製品固有のイベントを含むproducts変数の例を示します。
+seo-description: マーチャンダイジングeVarおよび製品固有のイベントを含むproducts変数の例を示します。
 seo-title: マーチャンダイジング eVar および製品固有のイベントを持つ products 変数
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: マーチャンダイジング eVar および製品固有のイベントを持つ products 変数
-topic: 開発者と導入
+topic: Developer and implementation
 uuid: 94e882e4-b19d-4c48-9dfb-331465490347
 translation-type: tm+mt
-source-git-commit: b630c5cf09be7fbe31018cbf50564001eb6e2a5a
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '86'
+ht-degree: 27%
 
 ---
 
 
-# Products variable with merchandising eVars and product-specific events{#products-variable-with-merchandising-evars-and-product-specific-events}
+# マーチャンダイジング eVar および製品固有のイベントを持つ products 変数{#products-variable-with-merchandising-evars-and-product-specific-events}
 
-products 変数をマーチャンダイジング eVar および製品固有イベントと共に使用した例です。
+マーチャンダイジングeVarおよび製品固有のイベントを含むproducts変数の例を示します。
 
 ```
 //create a context data dictionary 
@@ -37,5 +40,5 @@ ADB.Analytics.trackState("Order Confirmation", cdata);
 
 >[!TIP]
 >
->If you trigger a product-specific event using the  variable, you must also set that event in the  variable, otherwise the event is filtered out during processing.*`&&products`**`&&events`*
+>変数を使用して製品固有のイベントをトリガーする場合は、そのイベントを変数に設定する必要もあります。設定しない場合は、 *`&&products`**`&&events`* イベントが処理中に除外されます。
 
