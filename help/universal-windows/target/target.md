@@ -1,20 +1,23 @@
 ---
-description: Universal Windows Platform アプリケーション内でターゲットコンテンツを配信する場合に役立つ情報です。
-seo-description: Universal Windows Platform アプリケーション内でターゲットコンテンツを配信する場合に役立つ情報です。
+description: ユニバーサルWindowsプラットフォームアプリケーション内でターゲットコンテンツを提供するのに役立つ情報です。
+seo-description: ユニバーサルWindowsプラットフォームアプリケーション内でターゲットコンテンツを提供するのに役立つ情報です。
 seo-title: Target
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Target
-topic: 開発者と導入
+topic: Developer and implementation
 uuid: c764e65c-476d-47a4-a463-ac232d011824
 translation-type: tm+mt
-source-git-commit: b3932306186ab76d16bd5ed5dfa1346363dc8637
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '43'
+ht-degree: 16%
 
 ---
 
 
-# Target{#target}
+# Target {#target}
 
-Universal Windows Platform アプリケーション内でターゲットコンテンツを配信する場合に役立つ情報です。
+ユニバーサルWindowsプラットフォームアプリケーション内でターゲットコンテンツを提供するのに役立つ情報です。
 
 ## 追加情報
 
