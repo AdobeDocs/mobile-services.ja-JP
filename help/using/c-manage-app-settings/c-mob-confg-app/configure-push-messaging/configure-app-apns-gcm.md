@@ -1,14 +1,17 @@
 ---
 description: Apple Push Notification Service（APNS）または Firebase Cloud Messaging（FCM）を使用するようにアプリを設定できます。
-keywords: モバイル
+keywords: mobile
 seo-description: Apple Push Notification Service（APNS）または Firebase Cloud Messaging（FCM）を使用するようにアプリを設定できます。
 seo-title: APNS または FCM を使用するアプリ設定
 solution: Experience Cloud,Analytics
 title: APNS または FCM を使用するアプリ設定
-topic: 指標
+topic: Metrics
 uuid: fa411f2a-ba47-4499-bbe5-1aedef6b49ad
-translation-type: ht
-source-git-commit: 608384f1fee2a05699ff13fbd51c3cc43aeb693c
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '652'
+ht-degree: 90%
 
 ---
 
@@ -83,12 +86,12 @@ Apple Push Notification Service（APNS）または Firebase Cloud Messaging（FC
 
 iOS アプリで APNS を使用するように設定するには：
 
-1. [https://developer.apple.com/account](https://developer.apple.com/account) に移動して、[Apple Developer アカウント](https://developer.apple.com/account)にログインします。
+1. Go to [https://developer.apple.com/account](https://developer.apple.com/account) and log in to your [Apple Developer account](https://developer.apple.com/account).
 1. **[!UICONTROL iOS Apps]** で、**[!UICONTROL Identifiers]** を選択します。
 1. 既にプッシュ用のアプリ ID がある場合は、手順 11 に進みます。
-1. **[!UICONTROL +]** ボタンを押して、新しいアプリ ID を作成します。
-1. 「App ID Description」を入力します。
-1. 「App ID Suffix」を入力します。
+1. Press the **[!UICONTROL +]** button to create a new App ID.
+1. 「アプリIDの説明」を入力します。
+1. 「アプリIDサフィックス」を入力します。
 
    >[!IMPORTANT]
    >
@@ -114,10 +117,10 @@ SSL 証明書および秘密鍵を取得するには（APNS）：
 1. **[!UICONTROL キーチェーンアクセス]**&#x200B;を開きます。
 1. **[!UICONTROL 証明書]** をクリックし、アプリおよび環境に適した&#x200B;**[!UICONTROL iOS プッシュサービス証明書]**&#x200B;を確認します。
 
-   バンドル ID を照合し、開発用か実稼動用かを確認することで、適切な証明書を見つけることができます。
+   バンドルIDを照合し、開発用か実稼働用かを判断することで、正しい証明書を特定できます。
 
 1. 証明書を展開し、秘密鍵が含まれていることを確認します。
-1. 秘密鍵を右クリックし、**[!UICONTROL の書き出し&#x200B;*`<name of key>`*]** をクリックします。
+1. 秘密鍵を右クリックし、**[!UICONTROL の書き出し&#x200B;*`<name of key>`*]**をクリックします。
 1. ダイアログボックスに必要な情報を入力し、新しい `.p12` ファイルを保存します。
 
    パスワードを入力する必要はありません。
