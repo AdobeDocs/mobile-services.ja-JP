@@ -1,14 +1,17 @@
 ---
 description: この情報は、Android デバイスで従来の獲得キャンペーンリンクをラウンドトリップする場合に役立ちます。
-keywords: Android, ライブラリ, モバイル, SDK
+keywords: android;library;mobile;sdk
 seo-description: この情報は、Android デバイスで従来の獲得キャンペーンリンクをラウンドトリップする場合に役立ちます。
 seo-title: 従来の獲得のテスト
 solution: Experience Cloud,Analytics
 title: 従来の獲得のテスト
-topic: 開発者と導入
+topic: Developer and implementation
 uuid: bb7ace96-68eb-4f43-b3cf-af80730b9cee
-translation-type: ht
-source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '320'
+ht-degree: 82%
 
 ---
 
@@ -17,7 +20,7 @@ source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
 
 この情報は、Android デバイスで従来の獲得キャンペーンリンクをラウンドトリップする場合に役立ちます。
 
-モバイルアプリがまだ Google Play に登録されていない場合は、マーケティングリンクを作成するときに任意のモバイルアプリをリンク先として選択できます。この設定は、ダウンロード計測用リンクをクリックした後に、獲得サーバーによってどのアプリにリダイレクトされるかに影響するだけで、ダウンロード計測用リンクをテストすること自体には影響しません。クエリ文字列パラメーターは、Google Play ストアに渡されます。これらのパラメーターは、キャンペーンのブロードキャストの一環としてインストール時にアプリに渡されます。モバイルアプリでの獲得のラウンドトリップテストには、このタイプのブロードキャストのシミュレーションが必要です。
+モバイルアプリがまだ Google Play に登録されていない場合は、マーケティングリンクを作成するときに任意のモバイルアプリをリンク先として選択できます。これは、ダウンロード計測用リンクのクリック後に獲得サーバーによってリダイレクトされるアプリにのみ影響を与えます。ダウンロード計測用リンクのテスト機能には影響を与えません。クエリ文字列パラメーターは、Google Play ストアに渡され、キャンペーンブロードキャストの一環としてインストール時にアプリに渡されます。ラウンドトリップモバイルアプリの獲得テストでは、このタイプのブロードキャストのシミュレーションが必要です。
 
 テストを実行するたびに、アプリを新しくインストールするか、アプリのデータを&#x200B;**[!UICONTROL 設定]**&#x200B;でクリアする必要があります。そうすることで、アプリが最初に起動したときに、キャンペーンクエリ文字列パラメーターに関連付けられている初期ライフサイクル指標が送信されます。
 
@@ -36,10 +39,10 @@ source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
    1. 受信者リファレンスを、アプリ内のキャンペーン追跡受信者の場所のリファレンスで更新します。
    1. `utm_source`、`utm_medium`、`utm_term`、`utm_content`、`utm_campaign`などに関連付けられた値を適切な値に置き換えます。
 
-ブロードキャストが成功すると、次のような応答が表示されます。
+ブロードキャストが成功した場合は、次のような応答が表示されます。
 
 ```
 Broadcasting: Intent { act=com.android.vending.INSTALL_REFERRER cmp=com.example.analyticsecommtest/com.google.analytics.tracking.android.AnalyticsReceiver has extras) } Broadcast completed: result=0
 ```
 
-また、アドビのデータ収集サーバーに送信されたイメージリクエストも表示されます。キャンペーンパラメーターが含まれていないイメージリクエストで SDK の待機時間が（手順 1 で設定した）送信タイムアウトの期間を超えた場合、ブロードキャストは失敗です。
+また、Adobeのデータ収集サーバーに送信されたイメージリクエストも表示されます。 手順1で設定した転送者タイムアウトの完了時間(キャンペーンパラメーターを含まないイメージリクエスト)を待つと、SDKはブロードキャストに失敗します。
