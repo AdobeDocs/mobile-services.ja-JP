@@ -1,20 +1,23 @@
 ---
-description: products 変数は、処理ルールを使用して設定することができません。モバイル SDK では、コンテキストデータパラメーター内で特殊な構文を使用して、products をサーバー呼び出しで直接設定する必要があります。
-seo-description: products 変数は、処理ルールを使用して設定することができません。モバイル SDK では、コンテキストデータパラメーター内で特殊な構文を使用して、products をサーバー呼び出しで直接設定する必要があります。
-seo-title: Products variable
-solution: Marketing Cloud,Analytics
-title: 製品変数
-topic: 開発者と導入
-uuid: 2057a564-06ae-4171-bbe7-0bufa71608b
+description: products変数は処理ルールを使用して設定できません。 モバイルSDKでは、コンテキストデータパラメーター内で特別な構文を使用して、サーバーコール時に製品を直接設定する必要があります。
+seo-description: products変数は処理ルールを使用して設定できません。 モバイルSDKでは、コンテキストデータパラメーター内で特別な構文を使用して、サーバーコール時に製品を直接設定する必要があります。
+seo-title: products 変数
+solution: Experience Cloud,Analytics
+title: products 変数
+topic: Developer and implementation
+uuid: 2057a564-06ae-4171-bbe7-0baffa71608b
 translation-type: tm+mt
-source-git-commit: 7aff336586058302046a728a0b1b0ce12660c1ba
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '173'
+ht-degree: 13%
 
 ---
 
 
-# Products variable{#products-variable}
+# products 変数 {#products-variable}
 
-products 変数は、処理ルールを使用して設定することができません。モバイル SDK では、コンテキストデータパラメーター内で特殊な構文を使用して、products をサーバー呼び出しで直接設定する必要があります。
+products変数は処理ルールを使用して設定できません。 モバイルSDKでは、コンテキストデータパラメーター内で特別な構文を使用して、サーバーコール時に製品を直接設定する必要があります。
 
 To set the *`products`* variable, set a context data key to `"&&products"`, and set the value using the syntax defined for the *`products`*:
 
@@ -42,8 +45,8 @@ ADB.Analytics.trackAction("purchase", cdata);
 ADB.Analytics.trackState("Order Confirmation", cdata);
 ```
 
-*`products`* がイメージリクエストに直接設定され、その他の変数がコンテキストデータとして設定されます。 すべてのコンテキストデータ変数は、処理ルールを使用してマッピングする必要があります。
+*`products`* は画像リクエストに直接設定され、その他の変数はコンテキストデータとして設定されることに注意してください。すべてのコンテキストデータ変数は、次の処理ルールを使用してマッピングする必要があります。
 
 ![](assets/products-procrules.png)
 
-You do not need to map the  variable using processing rules since it is set directly on the image request by the SDK.*`products`*
+処理ルールを使用して *`products`* 変数をマッピングする必要はありません。これは、変数がSDKによるイメージリクエストに直接設定されるためです。
