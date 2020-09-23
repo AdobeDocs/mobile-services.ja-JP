@@ -4,10 +4,13 @@ seo-description: 位置情報を利用すると、緯度と経度およびアプ
 seo-title: 位置情報と目標地点
 solution: Experience Cloud,Analytics
 title: 位置情報と目標地点
-topic: 開発者と導入
+topic: Developer and implementation
 uuid: c800ec85-a33f-425d-b28f-bfe8bf229ae8
-translation-type: ht
-source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '591'
+ht-degree: 82%
 
 ---
 
@@ -20,9 +23,9 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
 * 緯度、経度および Adobe Mobile Services で定義されている目標地点（POI）のロケーション。
 
-   この情報がモバイルソリューション変数に渡され、自動的にレポートが作成されます。
+   この情報は、自動レポートのためにモバイルソリューション変数に渡されます。
 
-* コンテキストデータとして渡された中心からの距離と精度。
+* 中心からの距離と、コンテキストデータとして渡される精度。
 
    これらの変数は、自動ではキャプチャされません。これらのコンテキストデータ変数は、以下の「*追加データの送信*」の節の手順に従ってマップする必要があります。
 
@@ -80,9 +83,9 @@ NSMutableDictionary *contextData = [NSMutableDictionary dictionary];
 
 ## 位置コンテキストデータ {#section_FFB71E6653F9410A89CC6ACC0C9164A9}
 
-緯度と経度はそれぞれ 3 種類のコンテキストデータパラメーターを使用して送信されます。各パラメーターは、6 つのコンテキストデータパラメーターの合計に対して、様々な精度を表します。
+緯度と経度は、それぞれ3つの異なるコンテキストデータパラメータを使用して送信され、各パラメータはそれぞれ異なる精度レベルを表し、合計6つのコンテキストデータパラメータが含まれます。
 
-例えば、座標の緯度 = 40.93231、経度 = -111.93152 は、精度 1 m のロケーションを表します。この位置は、次の変数に応じて様々なレベルの精度に分割されます。
+例えば、座標lat = 40.93231、lon = -111.93152は、1 mの精度の位置を表します。 この場所は、次の変数の精度のレベルに従って分割されます。
 
 * `a.loc.lat.a`= 040.9
 * `a.loc.lat.b` = 32
@@ -112,5 +115,5 @@ NSMutableDictionary *contextData = [NSMutableDictionary dictionary];
 
 * 2 つの POI の直径が重なっている場合は、現在のロケーションを含む最初の POI が使用されます。
 
-   POI が重複している場合は、粒度の大きい順に POI のリストを並べ替えて、粒度の最も大きい POI がレポートされるようにする必要があります。
+   POIが重複する場合、POIを最も精度の高いものから最も精度の低いものへと順にリストし、最も精度の高いPOIが確実にレポートされるようにする必要があります。
 
