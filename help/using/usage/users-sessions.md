@@ -1,14 +1,17 @@
 ---
 description: ユーザーとセッションレポートには、選択した期間の一意の訪問者に関する指標が表示されます。
-keywords: モバイル
+keywords: mobile
 seo-description: ユーザーとセッションレポートには、選択した期間の一意の訪問者に関する指標が表示されます。
 seo-title: ユーザーとセッションレポート
 solution: Experience Cloud,Analytics
 title: ユーザーとセッションレポート
-topic: レポート, 指標
+topic: Reports,Metrics
 uuid: 6d70d7f6-de81-4307-a4f3-14f18fc3c9b3
 translation-type: tm+mt
-source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '193'
+ht-degree: 100%
 
 ---
 
@@ -29,7 +32,7 @@ source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
    **[!UICONTROL 表示方法]** オプションを変更したり、指標およびフィルターを追加したり、追加のシリーズ（指標）を追加したりして、レポートをカスタマイズします。詳しくは、「[レポートのカスタマイズ](/help/using/usage/reports-customize/t-reports-customize.md)」を参照してください。
 
-* **[!UICONTROL フィルター]**
+* **[!UICONTROL Filter]**
 
    **[!UICONTROL フィルター]** をクリックし、様々なレポートにわたるフィルターを作成して、すべてのモバイルレポートにおけるセグメントのパフォーマンスを確認します。共通フィルターを定義すると、パス（画面遷移）レポート以外のすべてのレポートに適用できます。詳しくは、「[共通フィルターの追加](/help/using/usage/reports-customize/t-sticky-filter.md)」を参照してください。
 
