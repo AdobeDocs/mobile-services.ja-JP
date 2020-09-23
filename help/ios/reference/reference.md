@@ -1,13 +1,16 @@
 ---
-description: Experience Cloud ソリューションに iOS SDK を使用するのに役立つ参考資料です。
-seo-description: Experience Cloud ソリューションに iOS SDK を使用するのに役立つ参考資料です。
+description: このリファレンス資料は、iOS SDK forExperience Cloudソリューションの使用に役立ちます。
+seo-description: このリファレンス資料は、iOS SDK forExperience Cloudソリューションの使用に役立ちます。
 seo-title: iOS SDK リファレンス
 solution: Experience Cloud,Analytics
 title: iOS SDK リファレンス
-topic: 開発者と導入
+topic: Developer and implementation
 uuid: 4e80b0ce-d36e-440e-96ff-de5df6804e3e
-translation-type: ht
-source-git-commit: b690ec677cf5aedfb2673b707f82716af1851124
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '138'
+ht-degree: 81%
 
 ---
 
@@ -18,7 +21,7 @@ source-git-commit: b690ec677cf5aedfb2673b707f82716af1851124
 
 ## 新しい Adobe Experience Platform Mobile SDK リリース
 
-Adobe Experience Platform Mobile SDK に関する情報やドキュメントをお探しの場合、最新のドキュメントについては、[こちら](https://aep-sdks.gitbook.io/docs/)をクリックしてください。
+Adobe Experience Platform Mobile SDK に関する情報やドキュメントをお探しの場合[こちら](https://aep-sdks.gitbook.io/docs/)をクリックし、最新のドキュメントを参照してください。
 
 2018 年 9 月に、SDK の新しいメジャーバージョンをリリースしました。これらの新しい Adobe Experience Platform Mobile SDK は、[Experience Platform Launch](https://www.adobe.com/jp/experience-platform/launch.html) から設定できます。
 
