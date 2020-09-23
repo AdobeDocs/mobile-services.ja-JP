@@ -1,21 +1,21 @@
 ---
 description: この拡張機能を使用すると、Experience Cloudソリューション4.x Windows SDKの参照をプロジェクトに追加する際に、より簡単に利用できます。
 seo-description: この拡張機能を使用すると、Experience Cloudソリューション4.x Windows SDKの参照をプロジェクトに追加する際に、より簡単に利用できます。
-seo-title: Experience Cloudソリューション4.x SDK用Windows Visual Studio拡張機能
-solution: Marketing Cloud,Analytics
-title: Experience Cloudソリューション4.x SDK用Windows Visual Studio拡張機能
+seo-title: Experience Cloud ソリューション 4.x SDK 用 Windows Visual Studio 拡張機能
+solution: Experience Cloud,Analytics
+title: Experience Cloud ソリューション 4.x SDK 用 Windows Visual Studio 拡張機能
 topic: Developer and implementation
 uuid: 7d0ea312-340b-46ea-a737-b70a6766a536
 translation-type: tm+mt
-source-git-commit: 38e63d6f4f85c2ced6364baa47646241ac783c12
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '213'
-ht-degree: 2%
+ht-degree: 16%
 
 ---
 
 
-# Windows Visual Studio extensions for Experience Cloud Solutions 4.x SDK {#windows-visual-studio-extensions-for-experience-cloud-solutions-x-sdk}
+# Experience Cloud ソリューション 4.x SDK 用 Windows Visual Studio 拡張機能 {#windows-visual-studio-extensions-for-experience-cloud-solutions-x-sdk}
 
 この拡張機能を使用すると、Experience Cloudソリューション4.x Windows SDKの参照をプロジェクトに追加する際に、より簡単に利用できます。
 
