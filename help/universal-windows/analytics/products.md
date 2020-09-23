@@ -1,20 +1,23 @@
 ---
-description: products 変数は、処理ルールを使用して設定することができません。モバイル SDK では、コンテキストデータパラメーター内で特殊な構文を使用して、products をサーバー呼び出しで直接設定する必要があります。
-seo-description: products 変数は、処理ルールを使用して設定することができません。モバイル SDK では、コンテキストデータパラメーター内で特殊な構文を使用して、products をサーバー呼び出しで直接設定する必要があります。
-seo-title: 製品変数
-solution: Marketing Cloud,Analytics
-title: 製品変数
-topic: 開発者と導入
+description: products変数は処理ルールを使用して設定できません。 モバイルSDKでは、コンテキストデータパラメーター内で特別な構文を使用して、サーバーコール時に製品を直接設定する必要があります。
+seo-description: products変数は処理ルールを使用して設定できません。 モバイルSDKでは、コンテキストデータパラメーター内で特別な構文を使用して、サーバーコール時に製品を直接設定する必要があります。
+seo-title: products 変数
+solution: Experience Cloud,Analytics
+title: products 変数
+topic: Developer and implementation
 uuid: 607983d6-48ac-4274-bfc8-b1ca4e5dad1b
 translation-type: tm+mt
-source-git-commit: 7aff336586058302046a728a0b1b0ce12660c1ba
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '220'
+ht-degree: 7%
 
 ---
 
 
-# Products variable {#products-variable}
+# products 変数 {#products-variable}
 
-products 変数は、処理ルールを使用して設定することができません。モバイル SDK では、コンテキストデータパラメーター内で特殊な構文を使用して、products をサーバー呼び出しで直接設定する必要があります。
+products変数は処理ルールを使用して設定できません。 モバイルSDKでは、コンテキストデータパラメーター内で特別な構文を使用して、サーバーコール時に製品を直接設定する必要があります。
 
 To set the *`products`* variable, set a context data key to `"&&products"`, and set the value using the syntax defined for the *`products` variable:
 
@@ -42,13 +45,13 @@ ADB.Analytics.trackAction("purchase", cdata);
 ADB.Analytics.trackState("Order Confirmation", cdata);
 ```
 
-The *`products`* is set directly on the image request, and the other variables are set as context data. すべてのコンテキストデータ変数は、処理ルールを使用してマッピングする必要があります。
+The *`products`* is set directly on the image request, and the other variables are set as context data. すべてのコンテキストデータ変数は、次の処理ルールを使用してマッピングする必要があります。
 
 ![](assets/products-procrules.png)
 
-処理ルールを使用して変数をマッピ *`products`* ングする必要はありません。これは、SDKがイメージリクエストに直接設定するためです。
+処理ルールを使用して *`products`* 変数をマッピングする必要はありません。これは、変数がSDKによるイメージリクエストに直接設定されるためです。
 
-## Products variable with merchandising eVars and product-specific events {#section_685D53AD3D064F9A8E225F995A9BA545}
+## マーチャンダイジング eVar および製品固有のイベントを持つ products 変数 {#section_685D53AD3D064F9A8E225F995A9BA545}
 
 An example of the *`products`* variable with Merchandising eVars and product-specific events.
 
@@ -73,5 +76,5 @@ ADB.Analytics.trackState("Order Confirmation", cdata);
 
 >[!TIP]
 >
->変数を使用して製品固有のイベントをトリガーする場合は、そのイベントを変数に設定する必要もあります。設定しない場 *`&&products`**`&&events`* 合は、処理中にそのイベントが除外されます。
+>変数を使用して製品固有のイベントをトリガーする場合は、そのイベントを変数に設定する必要もあります。設定しない場合は、 *`&&products`**`&&events`* イベントが処理中に除外されます。
 
