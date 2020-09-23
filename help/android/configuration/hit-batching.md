@@ -1,14 +1,17 @@
 ---
 description: ヒットのバッチ処理では、キュー内のヒット数が設定済みの制限を超えるまで、ヒットの送信を抑制できます。
-keywords: Android, ライブラリ, モバイル, SDK
+keywords: android;library;mobile;sdk
 seo-description: ヒットのバッチ処理では、キュー内のヒット数が設定済みの制限を超えるまで、ヒットの送信を抑制できます。
 seo-title: ヒットのバッチ処理
 solution: Experience Cloud,Analytics
 title: ヒットのバッチ処理
-topic: 開発者と導入
+topic: Developer and implementation
 uuid: ada35be3-242b-4b2b-a828-9bf998dd58b5
-translation-type: ht
-source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '183'
+ht-degree: 89%
 
 ---
 
@@ -30,9 +33,9 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 }
 ```
 
-値に 0 より大きい数を設定すると、SDK は *`batchLimit`* の値と等しいヒット数をキューに追加します。このしきい値を超えると、キュー内のすべてのヒットが送信されます。
+値に 0 より大きい数を設定すると、SDK は *`batchLimit`* の値と等しいヒット数をキューに追加します。このしきい値が渡されると、キュー内のすべてのヒットが送信されます。
 
-ヒットのバッチ処理では、次のメソッドが使用されます。
+ヒットのバッチ処理では、次のメソッドを使用します。
 
 * `Analytics.getQueueSize` は、ヒットのバッチ処理キュー内の現在のヒット数を示す `long` を返します。
 
