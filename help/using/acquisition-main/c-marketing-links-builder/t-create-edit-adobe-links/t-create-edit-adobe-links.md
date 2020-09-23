@@ -1,14 +1,17 @@
 ---
 description: マーケティングリンクを作成または編集して、モバイルアプリまたは Web サイトへのディープリンクを提供できます。
-keywords: モバイル
+keywords: mobile
 seo-description: マーケティングリンクを作成または編集して、モバイルアプリまたは Web サイトへのディープリンクを提供できます。
 seo-title: マーケティングリンクの作成または編集
 solution: Experience Cloud,Analytics
 title: マーケティングリンクの作成または編集
-topic: 指標
+topic: Metrics
 uuid: 305a8265-38de-4d19-8c79-b3912f5aae7c
-translation-type: ht
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '633'
+ht-degree: 94%
 
 ---
 
@@ -35,7 +38,7 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
    * **[!UICONTROL トラッキングコンテキストデータを追加]**：
 
-      （**オプション**）**[!UICONTROL +]** アイコンをクリックし、コンテキストデータを使用してキャンペーンを追跡するための関連情報を入力します。**[!UICONTROL カスタムコンテキストデータ]**&#x200B;ドロップダウンリストで、プリセットタグまたはいずれかの独自のタグを選択します。コンテキストデータは、マーケティングリンクが表示される際のレポートに使用されます。
+      (**Optional**) Click the **[!UICONTROL +]** icon and type the relevant information to track your campaign using context data. **[!UICONTROL カスタムコンテキストデータ]**&#x200B;ドロップダウンリストで、プリセットタグまたはいずれかの独自のタグを選択します。コンテキストデータは、マーケティングリンクが表示される際のレポートに使用されます。
 
       次のプリセットタグを使用できます。
 
@@ -48,11 +51,11 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
       * **コンテンツ**：リンクを持つ広告の名前または ID を指定します。
 
       * **用語**：広告に対する有料検索キーワードまたは他の検索キーワードを指定します。
-1. **[!UICONTROL 保存]**&#x200B;をクリックします。
+1. 「**[!UICONTROL 保存]**」をクリックします。
 1. 次のフィールドに情報を入力します。
 
    * （**必須**）**[!UICONTROL フォールバック URL]**&#x200B;で、リンク先が一致しない場合にユーザーが転送される URL を指定します（例えば、ユーザーがデスクトップにいるか、リンク先ルールに一致しない別のプラットフォームにいる場合）。
-   * **[!UICONTROL マーケティングリンクオプション]** で、**[!UICONTROL インタースティシャル]** または **[!UICONTROL ユニバーサルリンクとアプリリンク**] を選択します。
+   * **[!UICONTROL マーケティングリンクオプション]** で、**[!UICONTROL インタースティシャル]** または **[!UICONTROL ユニバーサルリンクとアプリリンク]** を選択します。
 
       詳しくは、「[インタースティシャル](/help/using/acquisition-main/c-marketing-links-builder/t-create-edit-adobe-links/t-interstitials.md)」または「[Apple ユニバーサルリンクと Android アプリリンク](/help/using/c-manage-app-settings/c-mob-confg-app/c-universal-app-links.md)」を参照してください。
 
@@ -60,9 +63,9 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
 1. **[!UICONTROL ディープリンクインタースティシャルを編集]** をクリックして、リンクを設定します。
 
-   （**オプション**）複数のリンク先がある場合、モバイルアプリをインストールしているかどうかに応じてユーザーをルーティングできます。アプリがインストールされている場合、インタースティシャルランディングページが表示されます。
+   （**オプション**）複数のリンク先がある場合、モバイルアプリをインストールしているかどうかに応じてユーザーをルーティングできます。アプリケーションがインストールされている場合は、インタースティシャルランディングページが表示されます。
 
-   詳しくは、「[インタースティシャル](/help/using/acquisition-main/c-marketing-links-builder/t-create-edit-adobe-links/t-interstitials.md)」を参照してください。
+   For more information, see [Interstitials](/help/using/acquisition-main/c-marketing-links-builder/t-create-edit-adobe-links/t-interstitials.md).
 
 1. **[!UICONTROL 保存]** をクリックしてから、**[!UICONTROL 次へ]** をクリックします。
 1. リンク先ページで、リンクを設定します。
@@ -77,7 +80,7 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
          サポートされるオペレーティングシステムには、iOS、Android、AMX などが含まれます。
 
-      * **[!UICONTROL デバイスタイプ]**
+      * **[!UICONTROL Device Type]**
 
          デバイスタイプには、デスクトップ、電子書籍リーダー、ゲームコンソール、携帯電話、セットトップボックスなどのデバイスが含まれます。
    1. **[!UICONTROL リンク先]**&#x200B;アイコン（![正方形アイコン](assets/icon_square.png)）をクリックして、次のいずれかのリンク先タイプを選択します。
@@ -86,6 +89,7 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
       * **[!UICONTROL Web リンク]**
       * **[!UICONTROL アプリのディープリンク]**
       * **[!UICONTROL ハイブリッドリンク]**
+
       >[!TIP]
       >
       >アプリストアへのリンクのリンク先タイプとして **[!UICONTROL Web リンク]** を使用すると、獲得が計測されません。獲得を計測するには、**[!UICONTROL アプリストア]** をリンク先のタイプとして使用します。
