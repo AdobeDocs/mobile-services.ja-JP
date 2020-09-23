@@ -1,14 +1,17 @@
 ---
 description: マーケターは、トラッキング可能なマーケティングリンクの構築中に使用できるリンク先（Web、ディープリンクまたはその他のリンクなど）を作成、保存および編集できます。
-keywords: モバイル
+keywords: mobile
 seo-description: マーケターは、トラッキング可能なマーケティングリンクの構築中に使用できるリンク先（Web、ディープリンクまたはその他のリンクなど）を作成、保存および編集できます。
 seo-title: 宛先
 solution: Experience Cloud,Analytics
 title: 宛先
-topic: 指標
+topic: Metrics
 uuid: 0e0e7d22-067c-4a59-abcb-a4826800944d
-translation-type: ht
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '195'
+ht-degree: 79%
 
 ---
 
@@ -27,7 +30,7 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
 * **[!UICONTROL Web リンク]**
 
-   Web リンク先は、特定の URL にユーザーを誘導します。例えば、ユーザーをオンライン小売業者の Web サイト上の製品ラインに誘導できます。
+   Webリンク先は、特定のURLにユーザーを誘導します。 例えば、オンライン小売業者のWebサイト上の製品ラインにユーザーを誘導できます。
 
    >[!IMPORTANT]
    >
@@ -37,4 +40,4 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
    ハイブリッドリンクは、iOS Universal Links または Android App Links をサポートします。
 
-各タイプのリンクの作成方法について詳しくは、「[新しいリンク先の作成](/help/using/acquisition-main/c-manage-link-destinations/t-create-new-app-deep-link-destination.md)」を参照してください。
+各タイプのリンクの作成方法について詳しくは、「新しいリンク先を [作成する](/help/using/acquisition-main/c-manage-link-destinations/t-create-new-app-deep-link-destination.md)」を参照してください。
