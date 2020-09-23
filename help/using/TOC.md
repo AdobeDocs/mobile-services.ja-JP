@@ -4,9 +4,9 @@ audience: end-user
 user-guide-title: Mobile Services ガイド
 breadcrumb-title: Mobile Services Guide
 user-guide-description: Mobile Services is an end-to-end solution that helps you acquire and engage mobile app users and optimize their experiences.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 18ef20df0a32741685e35cee98a1adf4a1b823a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '321'
 ht-degree: 100%
 
@@ -93,8 +93,8 @@ ht-degree: 100%
          + [ダウンロード計測用リンクの読み込み／書き出し](acquisition-main/c-marketing-links-builder/t-create-edit-adobe-links/c-use-legacy-acquisition-links/c-manage-acquisition-links/t-acquisition-import.md)
          + [マーケティングリンクを管理](acquisition-main/c-marketing-links-builder/c-manage-adobe-links.md)
          + [ダウンロード計測用リンクの手動作成](acquisition-main/c-marketing-links-builder/acquisition-link-manual.md)
-+ 場所 {#location-ug}
-   + [場所の概要](location/location-overview.md)
++ ロケーション {#location-ug}
+   + [ロケーションの概要](location/location-overview.md)
    + [概要（ロケーション）](location/c-location-overview.md)
    + [マップ](location/c-map-points.md)
    + [目標地点の設定](location/t-manage-points.md)
