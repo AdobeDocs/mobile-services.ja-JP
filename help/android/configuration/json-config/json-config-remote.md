@@ -4,10 +4,13 @@ seo-description: アプリケーションの起動時に、別の ADBMobile JSON
 seo-title: ADBMobile JSON 設定パスのオーバーライド
 solution: Experience Cloud,Analytics
 title: ADBMobile JSON 設定パスのオーバーライド
-topic: 開発者と導入
+topic: Developer and implementation
 uuid: 6872a5d7-0c5a-4fdc-b7bf-ad1534763a6a
-translation-type: ht
-source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '116'
+ht-degree: 100%
 
 ---
 
