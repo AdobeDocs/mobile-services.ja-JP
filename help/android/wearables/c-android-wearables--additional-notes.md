@@ -1,22 +1,25 @@
 ---
-description: この情報は、Android ウェアラブルアプリからデータを収集できる Android 拡張機能を設定する場合に役立ちます。
-seo-description: この情報は、Android ウェアラブルアプリからデータを収集できる Android 拡張機能を設定する場合に役立ちます。
+description: Androidウェアラブルアプリからデータを収集できるAndroid拡張機能の設定に役立つ情報を以下に示します。
+seo-description: Androidウェアラブルアプリからデータを収集できるAndroid拡張機能の設定に役立つ情報を以下に示します。
 seo-title: Android ウェアラブル：追加の注意事項
 solution: Experience Cloud,Analytics
 title: Android ウェアラブル：追加の注意事項
-topic: 開発者と導入
+topic: Developer and implementation
 uuid: 3bcf352b-4d46-4ab3-81ec-c27e86fe9be3
-translation-type: ht
-source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '161'
+ht-degree: 51%
 
 ---
 
 
 # Android ウェアラブル：追加の注意事項{#android-wearables-additional-notes}
 
-この情報は、Android ウェアラブルアプリからデータを収集できる Android 拡張機能を設定する場合に役立ちます。
+Androidウェアラブルアプリからデータを収集できるAndroid拡張機能の設定に役立つ情報を以下に示します。
 
-* Adobe Mobile Android ウェアラブル拡張機能を使用するには、Android バージョン 4.4（KitKat）以上が必要です。
+* AdobeモバイルAndroid Wearables拡張機能を使用するには、Androidバージョン4.4(KitKat)以降が必要です。
 * データの取得元が収容アプリか拡張機能かを示す `A.RunMode` という追加のコンテキスト値が 1 つ追加されています。
 
    * `RunMode` = `Application`
