@@ -4,10 +4,13 @@ seo-description: アプリでモバイル Web コンテンツを開く場合は�
 seo-title: アプリとモバイル Web にまたがる訪問者トラッキング
 solution: Experience Cloud,Analytics
 title: アプリとモバイル Web にまたがる訪問者トラッキング
-topic: 開発者と導入
+topic: Developer and implementation
 uuid: 2d951de6-3954-4379-a4ff-99b9695b9869
-translation-type: ht
-source-git-commit: 9257d6b6c2c14d0422cda65fcc9c677ac5ac47a9
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '528'
+ht-degree: 89%
 
 ---
 
@@ -18,7 +21,7 @@ source-git-commit: 9257d6b6c2c14d0422cda65fcc9c677ac5ac47a9
 
 ## アプリの訪問者 ID
 
-アプリをインストールすると、iOS SDK が一意の訪問者 ID を生成します。この ID はモバイルデバイスの持続メモリに保存され、各ヒットとともに送信されます。この ID が削除されるのは、ユーザーがアプリをアンインストールしたときだけです.
+アプリがインストールされると、iOS SDKは一意の訪問者IDを生成します。 このIDはモバイルデバイスの永続的なメモリに保存され、ヒットのたびに送信されます。 この ID が削除されるのは、ユーザーがアプリをアンインストールしたときだけです.
 
 >[!TIP]
 >
@@ -56,7 +59,7 @@ source-git-commit: 9257d6b6c2c14d0422cda65fcc9c677ac5ac47a9
    }];
    ```
 
-アドビに新しい ID のリクエストを送信するのではなく、宛先ドメインの ID サービスコードによって、URL から MID が抽出されます。宛先ページの ID サービスコードは、MID で渡された値を使用して訪問者を追跡します。
+宛先ドメインのIDサービスコードは、新しいIDの要求をAdobeに送信する代わりに、URLからMIDを抽出します。 宛先ページの ID サービスコードは、MID で渡された値を使用して訪問者を追跡します。
 
 モバイル Web コンテンツからのヒットが発生したら、各ヒットに `mid` パラメーターが存在することと、この値がアプリのコードによって送信される `mid` と一致していることを確認します。
 
@@ -76,7 +79,7 @@ source-git-commit: 9257d6b6c2c14d0422cda65fcc9c677ac5ac47a9
 
    開く URL に ID が追加されていることを確認するには、`adobe_mc` クエリパラメーターを調べてください。
 
-### アプリと Web ビューの 'mid' が同一ではありません。*
+### アプリと Web ビューの &#39;mid&#39; が同一ではありません。*
 
 以下を確認します。
 
