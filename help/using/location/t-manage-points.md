@@ -1,14 +1,17 @@
 ---
-description: 目標地点を作成および管理できます。目標地点では、地理的な場所を定義して、相関関係を分析したり、アプリ内メッセージを使用してターゲット設定したりするのに使用できます。ヒットが目標地点内で送信されると、その目標地点がヒットに追加されます。
-keywords: モバイル
-seo-description: 目標地点を作成および管理できます。目標地点では、地理的な場所を定義して、相関関係を分析したり、アプリ内メッセージを使用してターゲット設定したりするのに使用できます。ヒットが目標地点内で送信されると、その目標地点がヒットに追加されます。
+description: 目標地点を作成および管理できます。目標地点を使用すると、相関関係の目的に使用できる地理的な場所を定義したり、アプリ内メッセージを使用するターゲットを定義したりできます。 ヒットが目標地点で送信されると、目標地点がヒットに関連付けられます。
+keywords: mobile
+seo-description: 目標地点を作成および管理できます。目標地点を使用すると、相関関係の目的に使用できる地理的な場所を定義したり、アプリ内メッセージを使用するターゲットを定義したりできます。 ヒットが目標地点で送信されると、目標地点がヒットに関連付けられます。
 seo-title: 目標地点の設定
 solution: Experience Cloud,Analytics
 title: 目標地点の設定
-topic: 指標
+topic: Metrics
 uuid: 7b362534-54fb-43a3-b6b2-dfc8f45ff7c6
-translation-type: ht
-source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '580'
+ht-degree: 82%
 
 ---
 
@@ -30,7 +33,7 @@ source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
 場所を使用するには、次のタスクを実行します。
 
 1. 目的のアプリの名前をクリックして、そのアプリのアプリ設定ページに移動します。
-1. **[!UICONTROL 場所]**／**[!UICONTROL 目標地点の管理]**&#x200B;をクリックします。
+1. Click **[!UICONTROL Location]** > **[!UICONTROL Manage Points of Interest]**.
 
    ![手順の結果](assets/poi.png)
 
@@ -62,8 +65,8 @@ source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
 
    追加する目標地点は 5,000 個以下にすることをお勧めします。5,000 個を超える目標地点を追加した場合、保存することはできますが、目標地点は 5,000 個未満にすることがベストプラクティスであると知らせる警告メッセージを受け取ることになります。
 
-1. **[!UICONTROL 保存]**&#x200B;をクリックします。
+1. 「**[!UICONTROL 保存]**」をクリックします。
 
 1 つまたは複数の目標値点を削除するには、該当するチェックボックスを選択して、**[!UICONTROL 選択項目を削除]** をクリックします。
 
-Adobe Mobile ユーザーインターフェイスを使用する代わりに `.csv`ァイルを使用してデータを処理するには、**[!UICONTROL 読み込み]** または **[!UICONTROL 書き出し]** をクリックします。
+Adobe Mobile ユーザーインターフェイスを使用する代わりに **[!UICONTROL ァイルを使用してデータを処理するには、]**&#x200B;読み込み&#x200B;**[!UICONTROL または]**&#x200B;書き出し`.csv` をクリックします。
