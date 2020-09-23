@@ -1,14 +1,17 @@
 ---
 description: Web またはアプリ内のディープリンクにユーザーを導く、新しいリンク先を作成できます。
-keywords: モバイル
+keywords: mobile
 seo-description: Web またはアプリ内のディープリンクにユーザーを導く、新しいリンク先を作成できます。
 seo-title: 新しいリンク先の作成
 solution: Experience Cloud,Analytics
 title: 新しいリンク先の作成
-topic: 指標
+topic: Metrics
 uuid: 390e3dea-0221-4f97-980d-a90ca9f162fa
-translation-type: ht
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '417'
+ht-degree: 85%
 
 ---
 
@@ -32,11 +35,11 @@ Web またはアプリ内のディープリンクにユーザーを導く、新�
 
       * **[!UICONTROL アプリのディープリンク]**
 
-         URI スキーマのディープリンクを提供します（例：`yourapp://section`）。アプリのディープリンク先は、アプリ内のディープリンクにユーザーを誘導する、URI スキーマのディープリンクです。例えば、ユーザーをオンライン小売業者のモバイルアプリにある特定の製品ラインに誘導できます。
+         URI スキーマのディープリンクを提供します（例：`yourapp://section`）。アプリのディープリンク先は、アプリ内のディープリンクにユーザーを誘導するURIスキーマのディープリンクです。 例えば、オンライン小売業者のモバイルアプリで、特定の製品ラインにユーザーを誘導できます。
 
       * **[!UICONTROL Web リンク]**
 
-         Web の HTTP または HTTPS URL を入力します（例：`https://adobe.com`）。Web リンク先は、URL にユーザーを誘導します。例えば、ユーザーをオンライン小売業者の Web サイト上の製品ラインに誘導できます。
+         Web の HTTP または HTTPS URL を入力します（例：`https://adobe.com`）。Webリンク先は、ユーザーをURLに誘導します。 例えば、オンライン小売業者のWebサイト上の製品ラインにユーザーを誘導できます。
 
       * **[!UICONTROL ハイブリッドリンク]**
 
@@ -45,7 +48,7 @@ Web またはアプリ内のディープリンクにユーザーを導く、新�
 
       >[!TIP]
       >
-      >この情報は、**[!UICONTROL リンクタイプ]** で「アプリのディープリンク」または「ハイブリッドリンク」を選択した場合にのみ必要です。アプリが選択リストに表示されない場合、**[!UICONTROL 新しいアプリを追加**] をクリックして、アプリストアから新しいアプリを参照します。
+      >この情報は、**[!UICONTROL リンクタイプ]** で「アプリのディープリンク」または「ハイブリッドリンク」を選択した場合にのみ必要です。アプリが選択リストに表示されない場合、**[!UICONTROL 新しいアプリを追加]** をクリックして、アプリストアから新しいアプリを参照します。
 
    * **[!UICONTROL リンクタイプ]**
 
