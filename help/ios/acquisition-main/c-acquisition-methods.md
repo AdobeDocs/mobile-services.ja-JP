@@ -5,8 +5,11 @@ seo-title: 獲得メソッド
 solution: Experience Cloud,Analytics
 title: 獲得メソッド
 uuid: 6f88de57-793d-4d33-9a54-f6714289fd2c
-translation-type: ht
-source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '93'
+ht-degree: 100%
 
 ---
 
