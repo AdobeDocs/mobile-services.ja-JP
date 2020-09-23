@@ -4,10 +4,13 @@ seo-description: iOS ライブラリが提供する Audience Manager メソッ�
 seo-title: Audience Manager メソッド
 solution: Experience Cloud,Analytics
 title: Audience Manager メソッド
-topic: 開発者と導入
+topic: Developer and implementation
 uuid: 97658bd6-4c4f-4875-abe9-36dad4ec8bae
-translation-type: ht
-source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '363'
+ht-degree: 80%
 
 ---
 
@@ -70,14 +73,14 @@ JSON ファイル内で Audience Manager が設定されている場合は、ラ
 
 * **audienceSetDpid:&#x200B;dpuuid:**
 
-   DPID および DPUUID を設定します。設定すると、両方が各シグナルに追加されます。
+   DPID および DPUUID を設定します。設定した場合、両方が各シグナルに追加されます。
 
-   * **データプロバイダー ID（DPID）**&#x200B;は、Audience Manager によって割り当てられるデータパートナー ID です。
-   * **データプロバイダー個別ユーザー ID（DPUUID）**&#x200B;は、データプロバイダーにおける一意のユーザー ID です。
+   * **Data Provider ID(DPID)** は、Audience Managerによって割り当てられるデータパートナーIDです。
+   * **Data Provider Unique User ID(DPUUID)** は、ユーザーに対するデータプロバイダーの一意のIDです。
 
       >[!IMPORTANT]
       >
-      >4.13.x より前のバージョンでは、DPUUID は自動的にエンコードされませんでした。バージョン 4.13.x 以降の SDK は、渡された値のエンコードを解除してから、この値を再エンコードします。このプロセスにより、後方互換性が確保されます。
+      >4.13.x より前のバージョンでは、DPUUID は自動的にエンコードされませんでした。バージョン4.13.x以降、SDKは、渡された値のエンコードを最初に解除し、次にこの値を再エンコードします。 このプロセスにより、SDKが後方互換性を損なうことがなくなります。
 
    * このメソッドの構文を次に示します。
 
