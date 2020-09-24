@@ -98,6 +98,6 @@ Adobe Experience Platform Mobile SDK に関する情報やドキュメントを�
 
 ## Adobe Mobile の概要に関する Web セミナー {#section_420EA66F39FE44B9B531ADF5F5465543}
 
-*Adobe Mobile の概要に関する Web セミナー*&#x200B;を視聴する（[再生](  https://adobe.ly/PsxCFn)）
+*Adobe Mobile の概要に関する Web セミナー*&#x200B;を視聴する（[再生](https://adobe.ly/PsxCFn)）
 
-[  ![](assets/webinar.png) ](  https://adobe.ly/PsxCFn)
+[  ![](assets/webinar.png) ](https://adobe.ly/PsxCFn)
