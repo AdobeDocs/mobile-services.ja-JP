@@ -8,7 +8,7 @@ title: Experience Cloud ソリューション用 Android SDK 4.x
 topic: Developer and implementation
 uuid: 56f1ff41-0365-41dd-bdde-245c823dff07
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: bc11c1e7a4a11657ee89c40ddcbd37377ce50bb5
 workflow-type: tm+mt
 source-wordcount: '447'
 ht-degree: 100%
