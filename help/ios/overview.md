@@ -7,7 +7,7 @@ title: Experience Cloud ソリューション用 iOS SDK 4.x
 topic: Developer and implementation
 uuid: 8b374cee-1432-460b-aac2-70623dd80a04
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: bc11c1e7a4a11657ee89c40ddcbd37377ce50bb5
 workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 97%
