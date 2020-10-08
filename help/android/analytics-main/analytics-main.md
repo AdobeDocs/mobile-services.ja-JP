@@ -8,7 +8,7 @@ title: Analytics の概要
 topic: Developer and implementation
 uuid: cc9fa1d9-bc48-4d03-854a-f7b263580a91
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: bc11c1e7a4a11657ee89c40ddcbd37377ce50bb5
 workflow-type: tm+mt
 source-wordcount: '323'
 ht-degree: 73%
@@ -34,8 +34,8 @@ Adobe Experience Platform Mobile SDK に関する情報やドキュメントを�
 SDKでは、識別子を使用してユーザーを追跡します。識別子は次の階層にあります。
 
 1. カスタム訪問者識別子(VID)
-2. Analytics追跡識別子(AID)
-3. Experience Cloud識別子(MID)
+1. Analytics追跡識別子(AID)
+1. Experience Cloud識別子(MID)
 
 >[!TIP]
 >
