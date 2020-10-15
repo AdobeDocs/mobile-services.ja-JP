@@ -7,16 +7,16 @@ solution: Experience Cloud,Analytics
 title: アプリストアの概要レポート
 topic: Metrics
 uuid: ac066f31-ec4b-4b67-b839-780c2cd1574e
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '517'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
 
-# アプリストアの概要レポート{#app-store-overview-report}
+# アプリストアの概要レポート {#app-store-overview-report}
 
 **[!UICONTROL アプリストアの概要]**&#x200B;レポートは、アプリストア指標のスナップショットを提供します（アプリストア指標には、ダウンロード数、アプリ内購入、アプリストア評価平均、ダウンロードの売上高、アプリ内での売上高、国別ダウンロード数、アプリストア別ダウンロード数、名前別アプリ内購入数が含まれます）。
 
@@ -28,7 +28,7 @@ ht-degree: 84%
 
 ![](assets/app_store_metrics.png)
 
-任意の指標をクリックして、対応する行の表示/非表示を切り替えることができます。 ある日のデータを表示するには、その日の上にマウスポインターを置きます。
+任意の指標をクリックして、対応する行の表示と非表示を切り替えることができます。ある日のデータを表示するには、その日の上にマウスポインターを置きます。
 
 >[!IMPORTANT]
 >
@@ -62,11 +62,11 @@ ht-degree: 84%
 
 ![](assets/country.png)
 
-国ごとの日別ダウンロード数を示すグラフおよび表を表示するには、**[!UICONTROL 国別ダウンロード数]** をクリックします。日付の上にマウスポインターを置くと、1日分のデータを表示できます。
+国ごとの日別ダウンロード数を示すグラフおよび表を表示するには、**[!UICONTROL 国別ダウンロード数]** をクリックします。日付の上にマウスポインターを置くと、その日のデータを表示できます。
 
 ![](assets/downloads_by_country.png)
 
-## App Store別ダウンロード数 {#section_F1CD1A3F0105469D879E4F280CE32484}
+## App Store 別のダウンロード数 {#section_F1CD1A3F0105469D879E4F280CE32484}
 
 このレポートには、アプリストアごとにグループ化したアプリのダウンロード数が表示されます。
 
@@ -76,6 +76,6 @@ ht-degree: 84%
 
 ![](assets/app_store_downloads_detail.png)
 
-## 名前別アプリ内購入数 {#section_D747A64F9F6449E0A02EF31D56C92F83}
+## 名名前別アプリ内購入数 {#section_D747A64F9F6449E0A02EF31D56C92F83}
 
 このレポートには、すべてのアプリ内購入が名前ごとに表示されます。
