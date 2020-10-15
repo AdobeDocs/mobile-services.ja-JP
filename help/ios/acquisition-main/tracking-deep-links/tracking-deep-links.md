@@ -5,16 +5,16 @@ seo-title: ディープリンクの追跡
 solution: Experience Cloud,Analytics
 title: ディープリンクの追跡
 uuid: 08dc2820-7fd3-419f-ac2d-dcf12532578a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '321'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 
-# ディープリンクの追跡{#tracking-deep-links}
+# ディープリンクの追跡 {#tracking-deep-links}
 
 Adobe Mobile iOS SDK を使用することで、モバイルアプリ内のディープリンクおよびディファードディープリンクを追跡できます。
 
@@ -29,7 +29,7 @@ Adobe Mobile iOS SDK を使用することで、モバイルアプリ内のデ�
 
    詳しくは、「[アプリ間通信](https://developer.apple.com/library/ios/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/Inter-AppCommunication/Inter-AppCommunication.html#//apple_ref/doc/uid/TP40007072-CH6-SW10)」または「[ユニバーサルリンクのサポート](https://developer.apple.com/library/ios/documentation/General/Conceptual/AppSearch/UniversalLinks.html)」を参照してください。
 
-1. openURLのディープリンクを追跡します。
+1. openURL でディープリンクを追跡します。
 
    以下に、ディープリンクの追跡例を示します。
 
@@ -61,7 +61,7 @@ Adobe Mobile SDK は、任意のディープリンクまたはユニバーサル
 * `a.launch.campaign.term`
 * `a.launch.campaign.content`
 
-これらのキーは、Adobe Analytics でのレポート用にあらかじめマッピングされている変数です。マッピングと処理ルールについて詳しくは、[処理ルールとコンテキストデータ](/help/ios/getting-started/proc-rules.md)を参照してください。
+これらのキーは、Adobe Analytics でのレポート用にあらかじめマッピングされている変数です。マッピングと処理ルールについて詳しくは、「[処理ルールとコンテキストデータ](/help/ios/getting-started/proc-rules.md)」を参照してください。
 
 ### ディファードディープリンクの追跡
 
