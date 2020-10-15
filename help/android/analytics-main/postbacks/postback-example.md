@@ -7,16 +7,16 @@ solution: Experience Cloud,Analytics
 title: ポストバックの例
 topic: Developer and implementation
 uuid: 8010cd00-d42b-4e16-8403-692fab2550f1
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '141'
 ht-degree: 100%
 
 ---
 
 
-# ポストバックの例{#postbacks-example}
+# ポストバックの例 {#postbacks-example}
 
 この情報は、ポストバックの機能とそのしくみを理解するのに役立ちます。
 
