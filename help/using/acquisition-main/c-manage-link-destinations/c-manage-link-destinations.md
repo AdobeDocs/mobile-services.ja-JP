@@ -7,16 +7,16 @@ solution: Experience Cloud,Analytics
 title: リンク先の作成と管理
 topic: Metrics
 uuid: 43930e3a-6a11-40c6-8a61-6732a673dac7
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '166'
 ht-degree: 100%
 
 ---
 
 
-# リンク先の作成と管理{#create-and-manage-link-destinations}
+# リンク先の作成と管理 {#create-and-manage-link-destinations}
 
 リンク先を管理ページで、リンク先を作成、編集、アーカイブ／アーカイブ解除および削除できます。これらのリンク先は、マーケティングリンク、プッシュ通知またはアプリ内メッセージを構築する際に呼び出すことができます。
 
