@@ -7,16 +7,16 @@ solution: Experience Cloud,Analytics
 title: Audience Manager オプションの設定
 topic: Metrics
 uuid: 471270ca-cee5-401e-aac1-e48146ee8399
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '129'
 ht-degree: 100%
 
 ---
 
 
-# Audience Manager オプションの設定{#configure-audience-manager-options}
+# Audience Manager オプションの設定 {#configure-audience-manager-options}
 
 新しいアプリの作成中または既存のアプリの編集中に、アプリ設定ページで Audience Manager SDK の設定をおこなうことができます。
 
