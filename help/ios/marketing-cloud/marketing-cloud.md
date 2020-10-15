@@ -1,16 +1,16 @@
 ---
-description: この情報は、iOS SDKをAdobe Experience Cloudで使用する際に役立ちます。
-seo-description: この情報は、iOS SDKをAdobe Experience Cloudで使用する際に役立ちます。
+description: この情報は、Adobe Experience Cloud で iOS SDK を使用するのに役立ちます。
+seo-description: この情報は、Adobe Experience Cloud で iOS SDK を使用するのに役立ちます。
 seo-title: Experience Cloud
 solution: Experience Cloud,Analytics
 title: Experience Cloud
 topic: Developer and implementation
 uuid: fb498937-b263-4cff-adde-8d709f51b950
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '136'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
