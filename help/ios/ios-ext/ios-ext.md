@@ -6,11 +6,11 @@ solution: Experience Cloud,Analytics
 title: iOS エクステンション実装
 topic: Developer and implementation
 uuid: 8afc03fe-403e-4643-ada1-30e403ede238
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '721'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ Adobe Experience Platform Mobile SDK に関する情報やドキュメントを�
 >
 >独自のラッパーではなく、iOS SDK を使用することをお勧めします。
 
-Appleは、Watchアプリが含まれるアプリにリクエストを送信し、レスポンスを受信することで、含まれるアプリと通信できるAPIを一式提供しています。 ウォッチアプリからそのアプリに追跡データをディクショナリとして送信し、それを含むアプリに対して任意の追跡メソッドを呼び出してデータを送信できますが、このソリューションには制限があります。
+Apple は、本体アプリにリクエストを送信し、応答を受信することで、Watch アプリが本体アプリとやり取りできるようにする API を一式提供しています。Watch アプリから本体アプリにディクショナリとしてトラッキングデータを送信し、本体アプリで任意のトラッキングメソッドを呼び出してデータを送信できますが、このソリューションには制限があります。
 
 ほとんどの場合、Watch アプリの使用時には本体アプリがバックグラウンドで実行されているので、安全に呼び出せるメソッドは `TrackLocation`、`TrackActionInBackground`、`TrackBeacon` の 3 つのみとなります。他のトラッキングメソッドはライフサイクルデータに干渉するので、Watch アプリからデータを送信する際には使用できません。
 
@@ -46,28 +46,28 @@ Watch アプリ向けの SDK には、アプリ内メッセージ以外のすべ
 >
 >少なくとも以下のターゲットを持つプロジェクトがあることを確認します。
 >
->* アプリを含む1つのターゲット。
->* 拡張の1ターゲット。
+>* アプリを含めるためのターゲットが 1 つ。
+>* 拡張用のターゲットが 1 つ。
 
 >
 
 
 
-WatchKitアプリケーションを使用する場合は、3つ目のターゲットが必要です。 Apple Watch 用の開発について詳しくは、「[Apple Watch 用の開発](https://developer.apple.com/library/ios/documentation/General/Conceptual/WatchKitProgrammingGuide/index.html#//apple_ref/doc/uid/TP40014969-CH8-SW1)」を参照してください。
+WatchKit アプリを使用する場合は、3 つ目のターゲットが必要です。Apple Watch 用の開発について詳しくは、「[Apple Watch 用の開発](https://developer.apple.com/library/ios/documentation/General/Conceptual/WatchKitProgrammingGuide/index.html#//apple_ref/doc/uid/TP40014969-CH8-SW1)」を参照してください。
 
-## 含まれるアプリの設定 {#section_0BAB0842E4C04A62B5E03DFC4BA77851}
+## 本体アプリの設定 {#section_0BAB0842E4C04A62B5E03DFC4BA77851}
 
 次の手順を Xcode プロジェクトで実行します。
 
 1. AdobeMobileLibrary フォルダーをプロジェクトにドラッグします。
 1. `ADBMobileConfig.json` ファイルが本体アプリのターゲットのメンバーであることを確認します。
-1. 本体アプリのターゲットの&#x200B;**[!UICONTROL Build Phases]**&#x200B;タブで、**[!UICONTROL Link Binary with Libraries]**&#x200B;セクションを展開して、以下のライブラリを追加します。
+1. 本体アプリのターゲットの「**[!UICONTROL Build Phases]**」タブで、「**[!UICONTROL Link Binary with Libraries]**」セクションを展開して、以下のライブラリを追加します。
 
    * `AdobeMobileLibrary.a`
    * `libsqlite3.dylib`
    * `SystemConfiguration.framework`
 
-1. 本体アプリのターゲットの&#x200B;**[!UICONTROL Capabilities]**&#x200B;タブを開き、**[!UICONTROL App Groups]**&#x200B;を有効にして、新しいアプリグループ（例：`group.com.adobe.testAp`）を追加します。
+1. 本体アプリのターゲットの「**[!UICONTROL Capabilities]**」タブを開き、「**[!UICONTROL App Groups]**」を有効にして、新しいアプリグループ（例：`group.com.adobe.testAp`）を追加します。
 
 1. AppDelegate で、Adobe Mobile ライブラリとやり取りをおこなう前に、アプリグループを `application:didFinishLaunchingWithOptions` に設定します。
 
@@ -78,16 +78,16 @@ WatchKitアプリケーションを使用する場合は、3つ目のターゲ�
 
 1. アプリが予期せぬエラーなくビルドされることを確認します。
 
-##  拡張機能の設定{#section_28C994B7892340AC8D1F07AF26FF3946}
+## 拡張機能の設定 {#section_28C994B7892340AC8D1F07AF26FF3946}
 
 1. `ADBMobileConfig.json` ファイルがエクステンションのターゲットのメンバーであることを確認します。
-1. エクステンションのターゲットの&#x200B;**[!UICONTROL Build Phases]**&#x200B;タブで、**[!UICONTROL Link Binary with Libraries]**&#x200B;セクションを展開して、以下のライブラリを追加します。
+1. エクステンションのターゲットの「**[!UICONTROL Build Phases]**」タブで、「**[!UICONTROL Link Binary with Libraries]**」セクションを展開して、以下のライブラリを追加します。
 
    * `AdobeMobileLibrary_Extension.a`
    * `libsqlite3.dylib`
    * `SystemConfiguration.framework`
 
-1. エクステンションのターゲットの&#x200B;**[!UICONTROL Capabilities]**&#x200B;タブを開き、**[!UICONTROL App Groups]**&#x200B;を有効にして、上記の「*本体アプリの設定*」の手順 4 で追加したアプリグループを選択します。
+1. エクステンションのターゲットの「**[!UICONTROL Capabilities]**」タブを開き、「**[!UICONTROL App Groups]**」を有効にして、上記の「*本体アプリの設定*」の手順 4 で追加したアプリグループを選択します。
 
 1. InterfaceController で、Adobe Mobile ライブラリとその他のやり取りをおこなう前に、アプリグループを `awakeWithContext:` に設定します。
 
@@ -109,10 +109,10 @@ WatchKitアプリケーションを使用する場合は、3つ目のターゲ�
       この値は、ヒット元が本体アプリであることを意味します。
    * `a.RunMode = Extension`
 
-      この値は、ヒットが拡張子から発生したことを意味します。
+      この値は、ヒット元が拡張機能であることを示します。
 
-* 古いバージョンのSDKからアップグレードした場合、含まれるアプリが起動すると、Adobeによって、すべてのユーザーのデフォルトとキャッシュされたファイルが、含まれるアプリのフォルダーからアプリグループの共有フォルダーに自動的に移行されます。
-* 含まれているアプリが起動されない場合、拡張機能からのヒットは破棄されます。
-* バージョン番号とビルド番号は、使用しているアプリと拡張機能アプリの間で同じにする必要があります。
-* iOS拡張機能アプリでは、ライフサイクル呼び出しはトリガーされません。
+* 古いバージョンの SDK からアップグレードした場合、本体アプリが起動されると、Adobe によって、すべてのユーザーのデフォルトとキャッシュされたファイルが、本体アプリのフォルダーからアプリグループの共有フォルダーへと自動的に移行されます。
+* 本体アプリが起動されない場合、拡張機能からのヒットは破棄されます。
+* 本体アプリと拡張アプリの間では、バージョン番号とビルド番号を同じにする必要があります。
+* iOS 拡張アプリに対しては、ライフサイクルコールはトリガーされません。
 
