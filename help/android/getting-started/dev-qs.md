@@ -7,9 +7,9 @@ solution: Experience Cloud,Analytics
 title: コア実装とライフサイクル
 topic: Developer and implementation
 uuid: af4d11ac-8245-46a0-9b3a-4a0a29cfbbb2
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '560'
 ht-degree: 100%
 
