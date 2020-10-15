@@ -7,16 +7,16 @@ solution: Experience Cloud,Analytics
 title: Mobile SDK およびツールのダウンロード
 topic: Developer and implementation,Metrics
 uuid: 4af757f7-4e4d-4939-9b6a-49a29c220192
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '176'
 ht-degree: 100%
 
 ---
 
 
-# Mobile SDK およびツールのダウンロード{#download-mobile-sdks-and-tools}
+# Mobile SDK およびツールのダウンロード {#download-mobile-sdks-and-tools}
 
 この情報は、Mobile Services SDK およびツールのダウンロードに役立ちます。
 
@@ -35,5 +35,5 @@ ht-degree: 100%
 * [iOS の手順](/help/ios/getting-started/requirements.md)
 * [Android の手順](/help/android/getting-started/requirements.md)
 
-Windows Phone 8、Blackberry、Xamarin などのネイティブライブラリのドキュメントを確認するには、[Adobe Mobile Services](/help/using/home.md)　の「*SDK ドキュメント*」の節を参照してください。.
+Windows Phone 8、Blackberry、Xamarin などのネイティブライブラリのドキュメントを確認するには、[Adobe Mobile Services](/help/using/home.md) の「*SDK ドキュメント*」の節を参照してください。.
 
