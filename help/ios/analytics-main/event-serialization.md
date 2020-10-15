@@ -1,23 +1,23 @@
 ---
-description: イベントシリアル化は処理ルールではサポートされていません。 Mobile SDKでは、コンテキストデータパラメーターで特殊な構文を使用して、シリアル化されたイベントをサーバーコールで直接設定する必要があります。
-seo-description: イベントシリアル化は処理ルールではサポートされていません。 Mobile SDKでは、コンテキストデータパラメーターで特殊な構文を使用して、シリアル化されたイベントをサーバーコールで直接設定する必要があります。
+description: 処理ルールではイベントのシリアル化はサポートされていません。Mobile SDK では、コンテキストデータパラメーターで特殊な構文を使用して、サーバーコールでシリアル化されたイベントを直接設定する必要があります。
+seo-description: 処理ルールではイベントのシリアル化はサポートされていません。Mobile SDK では、コンテキストデータパラメーターで特殊な構文を使用して、サーバーコールでシリアル化されたイベントを直接設定する必要があります。
 seo-title: イベントのシリアル化
 solution: Experience Cloud,Analytics
 title: イベントのシリアル化
 topic: Developer and implementation
 uuid: 19a27df4-0998-403d-800c-26ff61149208
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '104'
-ht-degree: 7%
+ht-degree: 100%
 
 ---
 
 
-# イベントのシリアル化{#event-serialization}
+# イベントのシリアル化 {#event-serialization}
 
-イベントシリアル化は処理ルールではサポートされていません。 Mobile SDKでは、コンテキストデータパラメーターで特殊な構文を使用して、シリアル化されたイベントをサーバーコールで直接設定する必要があります。
+処理ルールではイベントのシリアル化はサポートされていません。Mobile SDK では、コンテキストデータパラメーターで特殊な構文を使用して、サーバーコールでシリアル化されたイベントを直接設定する必要があります。
 
 ```objective-c
 [contextData setObject:@"eventN:serial number" forKey:@"&&events"];
