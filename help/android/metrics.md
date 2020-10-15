@@ -7,16 +7,16 @@ solution: Experience Cloud,Analytics
 title: ライフサイクル指標
 topic: Developer and implementation
 uuid: a8f3ebac-be3b-4948-82bb-105d46cfff6d
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1240'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
 
-# ライフサイクル指標{#lifecycle-metrics}
+# ライフサイクル指標 {#lifecycle-metrics}
 
 この節では、ライフサイクルの実装後にモバイルライブラリによって自動的に測定可能な指標およびディメンションと、ライフサイクルデータのトラブルシューティングに関するページへのリンクに関する情報を提供します。トラブルシューティングの詳細については、「[ライフサイクルデータのトラブルシューティング](https://helpx.adobe.com/jp/analytics/kb/troubleshoot-lifecycle-data.html)」を参照してください。
 
@@ -31,7 +31,7 @@ Adobe Experience Platform Mobile SDK に関する情報やドキュメントを�
 
 ## ライフサイクル指標およびディメンション {#section_78F036C4296F4BA3A47C2044F79C86C1}
 
-設定した場合、ライフサイクル指標は、コンテキストデータパラメーターでAnalyticsに、mbox呼び出しのたびにターゲットするパラメーターで、オーディエンス管理へのシグナルとして送信されます。 Analyticsとターゲットは同じ形式を使用しますが、オーディエンス管理では各指標に異なるプレフィックスを使用します。
+ライフサイクル指標は設定されると、Analytics にはコンテキストデータパラメーターの形で送信され、Target にはパラメーターの形で mbox コールごとに、Audience management へのシグナルとして送信されます。Analytics および Target は同じ形式を使用しますが、Audience management は、各指標に異なるプレフィックスを使用します。
 
 Analytics の場合、各ライフサイクルトラッキングコールとともに送信されるコンテキストデータは、自動的にキャプチャされ、先頭の列の指標またはディメンションを使用してレポートされ、例外が指摘されます。
 
@@ -75,7 +75,7 @@ Analytics の場合、各ライフサイクルトラッキングコールとと�
 
 * **起動回数**
 
-   クラッシュやインストールを含め、実行のたびにトリガーされます。 また、ライフサイクルセッションのタイムアウトを超えた場合に、バックグラウンドからの再開時にもトリガーされます。
+   実行のたびに（クラッシュおよびインストールを含む）トリガーされます。また、ライフサイクルセッションのタイムアウトを超えた場合に、SignatureInfo オブジェクトのバックグラウンドからの再開時にもトリガーされます。
 
    >[!IMPORTANT]
    >
@@ -106,56 +106,56 @@ Analytics の場合、各ライフサイクルトラッキングコールとと�
    インストール後の初回起動日。日付フォーマットは MM/DD/YYYY です。
 
    * Analytics コンテキストデータ／Target パラメーター：`a.InstallDate`
-   * Audience Manager: `c_a_InstallDate`
+   * Audience Manager：`c_a_InstallDate`
 
 * **アプリ ID**
 
    アプリケーションの名前とバージョンを `[AppName] [BundleVersion]` 形式で格納します。例えば、`myapp 1.1` です。
 
    * Analytics コンテキストデータ／Target パラメーター：`a.AppID`
-   * Audience Manager: `c_a_AppID`
+   * Audience Manager：`c_a_AppID`
 
 * **起動回数**
 
    アプリケーションが起動したか、またはバックグラウンドから復帰した回数。
 
    * Analytics コンテキストデータ／Target パラメーター：`a.Launches`
-   * Audience Manager: `c_a_Launches`
+   * Audience Manager：`c_a_Launches`
 
 * **初回使用からの日数**
 
    初回実行時からの日数。
 
    * Analytics コンテキストデータ／Target パラメーター：`a.DaysSinceFirstUse`
-   * Audience Manager: `c_a_DaysSinceFirstUse`
+   * Audience Manager：`c_a_DaysSinceFirstUse`
 
 * **前回使用からの日数**
 
    前回使用時からの経過日数。
 
    * Analytics コンテキストデータ／Target パラメーター：`a.DaysSinceLastUse`
-   * Audience Manager: `c_a_DaysSinceLastUse`
+   * Audience Manager：`c_a_DaysSinceLastUse`
 
 * **時刻**
 
    アプリが起動された時刻を測定します。この指標では 24 時間形式を使用し、ピーク使用時を調べるための時間分割に使用されます。
 
    * Analytics コンテキストデータ／Target パラメーター：`a.HourOfDay`
-   * Audience Manager: `c_a_HourOfDay`
+   * Audience Manager：`c_a_HourOfDay`
 
 * **曜日**
 
    アプリが起動された週の曜日の数。
 
    * Analytics コンテキストデータ／Target パラメーター：`a.DayOfWeek`
-   * Audience Manager: `c_a_DayOfWeek`
+   * Audience Manager：`c_a_DayOfWeek`
 
 * **オペレーティングシステムのバージョン**
 
    OS のバージョン。
 
    * Analytics コンテキストデータ／Target パラメーター：`a.OSVersion`
-   * Audience Manager: `c_a_OSVersion`
+   * Audience Manager：`c_a_OSVersion`
 
 * **前回アップグレードからの日数**
 
@@ -166,7 +166,7 @@ Analytics の場合、各ライフサイクルトラッキングコールとと�
    >この指標は Analytics 指標に自動的には格納されません。レポート用にこの値を Analytics 変数にコピーする処理ルールを作成する必要があります。
 
    * Analytics コンテキストデータ／Target パラメーター：`a.DaysSinceLastUpgrade`
-   * Audience Manager: `c_a_DaysSinceLastUpgrade`
+   * Audience Manager：`c_a_DaysSinceLastUpgrade`
 
 * **前回アップグレードからの起動回数**
 
@@ -177,14 +177,14 @@ Analytics の場合、各ライフサイクルトラッキングコールとと�
    >この指標は Analytics 指標に自動的には格納されません。レポート用にこの値を Analytics 変数にコピーする処理ルールを作成する必要があります。
 
    * Analytics コンテキストデータ／Target パラメーター：`a.LaunchesSinceUpgrade`
-   * Audience Manager: `c_a_LaunchesSinceUpgrade`
+   * Audience Manager：`c_a_LaunchesSinceUpgrade`
 
 * **デバイス名**
 
    デバイス名が格納されます。
 
    * Analytics コンテキストデータ／Target パラメーター：`a.DeviceName`
-   * Audience Manager: `c_a_DeviceName`
+   * Audience Manager：`c_a_DeviceName`
 
 * **通信事業者名**
 
@@ -195,14 +195,14 @@ Analytics の場合、各ライフサイクルトラッキングコールとと�
    >この指標は Analytics 指標に自動的には格納されません。レポート用にこの値を Analytics 変数にコピーする処理ルールを作成する必要があります。
 
    * Analytics コンテキストデータ／Target パラメーター：`a.CarrierName`
-   * Audience Manager: `c_a_CarrierName`
+   * Audience Manager：`c_a_CarrierName`
 
 * **解像度**
 
    実際のピクセル単位での幅 x 高さ。
 
    * Analytics コンテキストデータ／Target パラメーター：`a.Resolution`
-   * Audience Manager: `c_a_Resolution`
+   * Audience Manager：`c_a_Resolution`
 
 ## その他のモバイル指標およびディメンション {#section_0B32BBF9CA734103BEDB5E755FFE5B31}
 
@@ -312,28 +312,28 @@ Analytics の場合、各ライフサイクルトラッキングコールとと�
 
 * **キャンペーンの内容**
 
-   リンクを表示したコンテンツの名前またはID。 モバイルアプリの獲得によって設定されます。
+   リンクを表示したコンテンツの名前または ID。モバイルアプリの獲得によって設定されます。
 
    * Analytics コンテキストデータ／Target パラメーター：`a.referrer.campaign.content`
    * Audience Managerの特性：`c_a_referrer_campaign_content`
 
 * **キャンペーンのメディア**
 
-   マーケティングメディア（バナー、電子メールなど）。 モバイルアプリの獲得によって設定されます。
+   マーケティングメディア（バナー、電子メールなど）。モバイルアプリの獲得によって設定されます。
 
    * Analytics コンテキストデータ／Target パラメーター：`a.referrer.campaign.medium`
    * Audience Managerの特性：`c_a_referrer_campaign_medium`
 
 * **キャンペーンのソース**
 
-   ニュースレターやソーシャルメディアネットワークなど、元の転送者。 モバイルアプリの獲得によって設定されます。
+   オリジナルリファラー（ニュースレターやソーシャルメディアネットワークなど）。モバイルアプリの獲得によって設定されます。
 
    * Analytics コンテキストデータ／Target パラメーター：`a.referrer.campaign.source`
    * Audience Managerの特性：`c_a_referrer_campaign_source`
 
 * **キャンペーンのキーワード**
 
-   有料キーワードまたはこの獲得で追跡する他のキーワード。 モバイルアプリの獲得によって設定されます。
+   この獲得で追跡する有料キーワードまたはその他の用語。モバイルアプリの獲得によって設定されます。
 
    * Analytics コンテキストデータ／Target パラメーター：`a.referrer.campaign.term`
    * Audience Managerの特性：`c_a_referrer_campaign_term`
