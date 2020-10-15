@@ -6,16 +6,16 @@ solution: Experience Cloud,Analytics
 title: tvOS を使用した Apple TV 実装
 topic: Developer and implementation
 uuid: d1571ea2-a5de-4b96-a527-72abbf51fab8
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '402'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
 
-# tvOS を使用した Apple TV 実装{#apple-tv-implementation-with-tvos}
+# tvOS を使用した Apple TV 実装 {#apple-tv-implementation-with-tvos}
 
 tvOS を使用した Apple TV を実装するのに役立つ情報です。
 
@@ -30,7 +30,7 @@ Adobe Experience Platform Mobile SDK に関する情報やドキュメントを�
 
 ## 概要
 
-Apple TVを使用して、ネイティブtvOS環境で実行するアプリケーションを作成できるようになりました。 ネイティブアプリは、iOSで複数のフレームワークを使用して作成するか、XMLテンプレートとJavaScriptを使用して作成することができます。
+新しい Apple TV では、アプリケーションを作成してネイティブ tvOS 環境で実行できるようになりました。iOS で利用可能ないくつかのフレームワークを使用してネイティブなアプリを作成するか、XML テンプレートおよび JavaScript を使用してアプリを作成できます。
 
 >[!TIP]
 >
@@ -48,7 +48,7 @@ Apple TVを使用して、ネイティブtvOS環境で実行するアプリケ�
 
 1. AdobeMobileLibrary フォルダーをプロジェクトにドラッグします。
 1. `ADBMobileConfig.json` ファイルがターゲットのメンバーであることを確認します。
-1. tvOS アプリのターゲットの&#x200B;**[!UICONTROL Build Phases]**&#x200B;タブで、**[!UICONTROL Link Binary with Libraries]**&#x200B;セクションを展開して、以下のライブラリを追加します。
+1. tvOS アプリのターゲットの「**[!UICONTROL Build Phases]**」タブで、「**[!UICONTROL Link Binary with Libraries]**」セクションを展開して、以下のライブラリを追加します。
 
    * `AdobeMobileLibrary_TV.a`
    * `libsqlite3.0.tbd`
@@ -60,7 +60,7 @@ Apple TVを使用して、ネイティブtvOS環境で実行するアプリケ�
 
 1. `AdobeMobileLibrary` フォルダーをプロジェクトにドラッグします。
 1. `ADBMobileConfig.json` ファイルがターゲットのメンバーであることを確認します。
-1. tvOS アプリのターゲットの&#x200B;**[!UICONTROL Build Phases]**&#x200B;タブで、**[!UICONTROL Link Binary with Libraries]**&#x200B;セクションを展開して、以下のライブラリを追加します。
+1. tvOS アプリのターゲットの「**[!UICONTROL Build Phases]**」タブで、「**[!UICONTROL Link Binary with Libraries]**」セクションを展開して、以下のライブラリを追加します。
 
    * `AdobeMobileLibrary_TV.a`
    * `libsqlite3.0.tbd`
