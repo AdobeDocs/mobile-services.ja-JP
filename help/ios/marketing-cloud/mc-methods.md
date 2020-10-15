@@ -6,9 +6,9 @@ solution: Experience Cloud,Analytics
 title: Adobe Experience Platform ID サービスのメソッド
 topic: Developer and implementation
 uuid: cdd307bc-8b7d-47a8-b77e-00902b9e2968
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '461'
 ht-degree: 100%
 
@@ -23,7 +23,7 @@ SDK は現在、Analytics、Target、Audience Manager、Experience Cloud ID サ�
 
 メソッドには、ソリューションに応じたプレフィックスが付きます。Experience Cloud ID メソッドの場合、プレフィックスは「`visitor`」です。詳しくは、[Experience Cloud ID の有効化](/help/ios/marketing-cloud/mcvid.md)を参照してください。
 
-* **`+`(nullable NSURL`*`)visitorAppendToURL:(nullable NSURL`*`)url;**
+* **`+`(nullable NSURL `*`)visitorAppendToURL:(nullable NSURL `*`)url;**
 
    アドビ JavaScript ライブラリで使用するために、アドビ訪問者データを URL 文字列に追加します。このメソッドを使用するには、Mobile SDK 4.12 以降が必要です。詳しくは、[訪問者 ID ヘルパー関数の追加](https://docs.adobe.com/content/help/ja-JP/id-service/using/id-service-api/methods/appendvisitorid.html)を参照してください。
 
@@ -167,7 +167,7 @@ SDK は現在、Analytics、Target、Audience Manager、Experience Cloud ID サ�
 - (ADBMobileVisitorAuthenticationState) authenticationState; 
 ```
 
-## ADBMobileVisitorAuthenticationState enum    {#section_A55A3F336DDF4F838900632087F51430}
+## ADBMobileVisitorAuthenticationState enum {#section_A55A3F336DDF4F838900632087F51430}
 
 ```objective-c
 ADBMobileVisitorAuthenticationStateUnknown, 
