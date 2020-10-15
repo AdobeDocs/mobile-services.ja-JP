@@ -1,23 +1,23 @@
 ---
-description: products変数は、処理ルールを使用して設定することはできません。 iOS 4.x SDKでは、コンテキストデータパラメーターで特殊な構文を使用して、サーバーコールで直接製品を設定する必要があります。
-seo-description: products変数は、処理ルールを使用して設定することはできません。 iOS 4.x SDKでは、コンテキストデータパラメーターで特殊な構文を使用して、サーバーコールで直接製品を設定する必要があります。
+description: products 変数は、処理ルールを使用して設定することはできません。iOS 4.x SDK では、コンテキストデータパラメーターで特殊な構文を使用し、サーバーコールで直接製品を設定する必要があります。
+seo-description: products 変数は、処理ルールを使用して設定することはできません。iOS 4.x SDK では、コンテキストデータパラメーターで特殊な構文を使用し、サーバーコールで直接製品を設定する必要があります。
 seo-title: products 変数
 solution: Experience Cloud,Analytics
 title: products 変数
 topic: Developer and implementation
 uuid: 6ece4d27-ef86-435c-a6f7-bd76be1c95ca
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '184'
-ht-degree: 44%
+ht-degree: 100%
 
 ---
 
 
-# products 変数{#products-variable}
+# products 変数 {#products-variable}
 
-products変数は、処理ルールを使用して設定することはできません。 iOS 4.x SDKでは、コンテキストデータパラメーターで特殊な構文を使用して、サーバーコールで直接製品を設定する必要があります。
+products 変数は、処理ルールを使用して設定することはできません。iOS 4.x SDK では、コンテキストデータパラメーターで特殊な構文を使用し、サーバーコールで直接製品を設定する必要があります。
 
 *`products`* 変数を設定するには、コンテキストデータキーを `"&&products"` に設定し、*`products`* 変数用に定義された構文を使用して値を設定します。
 
