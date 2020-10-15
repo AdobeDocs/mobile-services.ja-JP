@@ -7,9 +7,9 @@ solution: Experience Cloud,Analytics
 title: Analytics メソッド
 topic: Developer and implementation
 uuid: ac7c640e-9dcc-4724-b561-019cc025d5a7
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '740'
 ht-degree: 100%
 
@@ -26,7 +26,7 @@ SDK は現在、Analytics、Target、Audience Manager、Adobe Experience Platfor
 
 * **trackState**
 
-   オプションのコンテキストデータを使用してアプリの状態を追跡します。状態とは、アプリで使用可能なビューのことで、`home dashboard`、`app settings`、`cart` などがあります。これらの状態は Web サイト上のページによく似ており、`trackState` コールはページビュー数を増分します。
+   オプションのコンテキストデータを使用してアプリの状態を追跡します。状態とは、アプリで使用可能なビューのことで、`home dashboard`、`app settings`、`cart` などがあります。これらの状態は Web サイト上のページによく似ており、`trackState` コールにより、ページビュー数が増分されます。
 
    `state` が空の場合、`app name app version (build)` がレポートに表示されます。レポートにこの値がある場合、各 `state` 呼び出しで `trackState` を設定していることを確認してください。
 
