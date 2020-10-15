@@ -7,16 +7,16 @@ solution: Experience Cloud,Analytics
 title: プッシュメッセージの設定
 topic: Metrics
 uuid: 6763858d-6046-4d36-87c0-cf3600a44fb1
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '318'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
 
-# プッシュメッセージの設定{#configure-push-messaging}
+# プッシュメッセージの設定 {#configure-push-messaging}
 
 この情報を使用すると、新しいアプリの作成中または既存のアプリを編集する際に、アプリ設定ページでプッシュサービスオプションを設定するのに役立ちます。
 
@@ -30,7 +30,7 @@ ht-degree: 99%
 >
 >新しいレポートスイートへのアプリの移行はサポートされていません。新しいレポートスイートに移行すると、プッシュ設定が破損し、メッセージが送信されない可能性があります。
 
-1. **[!UICONTROL プッシュサービス]** の次のフィールドに情報を入力します。
+1. 「**[!UICONTROL プッシュサービス]**」で次のフィールドに情報を入力します。
 
    * Apple
 
