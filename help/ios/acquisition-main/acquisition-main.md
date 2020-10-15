@@ -1,23 +1,23 @@
 ---
-description: この情報は、iOSアプリで獲得追跡リンクを使用する際に役立ちます。
-seo-description: この情報は、iOSアプリで獲得追跡リンクを使用する際に役立ちます。
+description: この情報は、iOS アプリで獲得トラッキングリンクを使用するのに役立ちます。
+seo-description: この情報は、iOS アプリで獲得トラッキングリンクを使用するのに役立ちます。
 seo-title: 獲得
 solution: Experience Cloud,Analytics
 title: 獲得
 topic: Developer and implementation
 uuid: e22d2785-58f1-4841-9163-912c5e0f5d61
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '137'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
 
 # 獲得 {#acquisition}
 
-このセクションの情報は、iOS アプリで獲得追跡リンクを使用するのに役立ちます。
+このセクションの情報は、iOS アプリで獲得トラッキングリンクを使用するのに役立ちます。
 
 ## 新しい Adobe Experience Platform Mobile SDK リリース
 
