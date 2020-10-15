@@ -7,20 +7,20 @@ solution: Experience Cloud,Analytics
 title: 従来の獲得のテスト
 topic: Developer and implementation
 uuid: bb7ace96-68eb-4f43-b3cf-af80730b9cee
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '320'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
 
-# 従来の獲得のテスト{#testing-legacy-acquisition}
+# 従来の獲得のテスト {#testing-legacy-acquisition}
 
 この情報は、Android デバイスで従来の獲得キャンペーンリンクをラウンドトリップする場合に役立ちます。
 
-モバイルアプリがまだ Google Play に登録されていない場合は、マーケティングリンクを作成するときに任意のモバイルアプリをリンク先として選択できます。これは、ダウンロード計測用リンクのクリック後に獲得サーバーによってリダイレクトされるアプリにのみ影響を与えます。ダウンロード計測用リンクのテスト機能には影響を与えません。クエリ文字列パラメーターは、Google Play ストアに渡され、キャンペーンブロードキャストの一環としてインストール時にアプリに渡されます。ラウンドトリップモバイルアプリの獲得テストでは、このタイプのブロードキャストのシミュレーションが必要です。
+モバイルアプリがまだ Google Play に登録されていない場合は、キャンペーンリンクを作成するときに任意のモバイルアプリをリンク先として選択できます。これは、ダウンロード計測用リンクのクリック後に獲得サーバーによってリダイレクトされるアプリにのみ影響を与えます。ダウンロード計測用リンクのテスト機能には影響を与えません。クエリ文字列パラメーターは、Google Play ストアに渡され、キャンペーンブロードキャストの一環としてインストール時にアプリに渡されます。ラウンドトリップモバイルアプリの獲得テストでは、このタイプのブロードキャストのシミュレーションが必要です。
 
 テストを実行するたびに、アプリを新しくインストールするか、アプリのデータを&#x200B;**[!UICONTROL 設定]**&#x200B;でクリアする必要があります。そうすることで、アプリが最初に起動したときに、キャンペーンクエリ文字列パラメーターに関連付けられている初期ライフサイクル指標が送信されます。
 
@@ -45,4 +45,4 @@ ht-degree: 82%
 Broadcasting: Intent { act=com.android.vending.INSTALL_REFERRER cmp=com.example.analyticsecommtest/com.google.analytics.tracking.android.AnalyticsReceiver has extras) } Broadcast completed: result=0
 ```
 
-また、Adobeのデータ収集サーバーに送信されたイメージリクエストも表示されます。 手順1で設定した転送者タイムアウトの完了時間(キャンペーンパラメーターを含まないイメージリクエスト)を待つと、SDKはブロードキャストに失敗します。
+また、Adobe のデータ収集サーバーに送信されたイメージリクエストも表示されます。キャンペーンパラメーターを含まないイメージリクエストを使用して、手順 1 で設定したリファラータイムアウトの完了時間が経過すると、SDK はブロードキャストに失敗します。
