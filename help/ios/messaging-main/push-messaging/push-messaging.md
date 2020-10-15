@@ -1,23 +1,23 @@
 ---
-description: AdobeモバイルとAdobeモバイルSDKを使用して、ユーザーにプッシュメッセージを送信できます。 また、SDKを使用すると、プッシュメッセージをクリックスルーした結果としてアプリを開いたユーザーを簡単にレポートできます。
-seo-description: AdobeモバイルとAdobeモバイルSDKを使用して、ユーザーにプッシュメッセージを送信できます。 また、SDKを使用すると、プッシュメッセージをクリックスルーした結果としてアプリを開いたユーザーを簡単にレポートできます。
+description: Adobe Mobile および Adobe Mobile SDK を使用すると、ユーザーにプッシュメッセージを送信できます。また、SDK では、プッシュメッセージをクリックした結果としてアプリを開いたユーザーを簡単に報告できます。
+seo-description: Adobe Mobile および Adobe Mobile SDK を使用すると、ユーザーにプッシュメッセージを送信できます。また、SDK では、プッシュメッセージをクリックした結果としてアプリを開いたユーザーを簡単に報告できます。
 seo-title: プッシュメッセージ
 solution: Experience Cloud,Analytics
 title: プッシュメッセージ
 topic: Developer and implementation
 uuid: 2e2d8175-d7d0-4b6b-a14e-d419da1f9615
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '526'
-ht-degree: 65%
+ht-degree: 100%
 
 ---
 
 
-# プッシュメッセージ{#push-messaging}
+# プッシュメッセージ {#push-messaging}
 
-AdobeモバイルとAdobeモバイルSDKを使用して、ユーザーにプッシュメッセージを送信できます。 また、SDKを使用すると、プッシュメッセージをクリックスルーした結果としてアプリを開いたユーザーを簡単にレポートできます。
+Adobe Mobile および Adobe Mobile SDK を使用すると、ユーザーにプッシュメッセージを送信できます。また、SDK では、プッシュメッセージをクリックした結果としてアプリを開いたユーザーを簡単に報告できます。
 
 >[!IMPORTANT]
 >
@@ -27,7 +27,7 @@ AdobeモバイルとAdobeモバイルSDKを使用して、ユーザーにプッ�
 
 >[!IMPORTANT]
 >
->アプリ内部の Experience Cloud ID を手動で設定しないでください。これにより、新しい一意のユーザーが作成されます。このユーザーはオプトイン状態のため、プッシュメッセージを受信しません。 例えば、アプリにログインするプッシュメッセージの受信をオプトインしたユーザーを想定します。 ログイン後、アプリ内で手動でIDを設定すると、プッシュメッセージの受信を選択しない新しい一意のユーザーが作成されます。 この新しいユーザーは、プッシュメッセージを受信しません。
+>アプリ内部の Experience Cloud ID を手動で設定しないでください。これにより、新しいユニークユーザーが作成されます。このユーザーはオプトイン状態のため、プッシュメッセージを受信しません。例えば、プッシュメッセージの通知をオプトインしたユーザーが、アプリにログインしたと想定します。ログイン後、アプリ内で手動で ID を設定すると、プッシュメッセージの受信を選択しない新しいユニークユーザーが作成されます。この新しいユーザーは、プッシュメッセージを受信しません。
 
 ## 前提条件 {#section_06655ABE973743DC965897B229A2118D}
 
@@ -54,7 +54,7 @@ AdobeモバイルとAdobeモバイルSDKを使用して、ユーザーにプッ�
    }
    ```
 
-1. ライブラリを `AppDelegate` にインポートします。
+1. ライブラリを `AppDelegate` に読み込みます。
 
    ```objective-c
    #import "ADBMobile.h"
