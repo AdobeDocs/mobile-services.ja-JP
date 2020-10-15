@@ -7,22 +7,22 @@ solution: Experience Cloud,Analytics
 title: ダウンロード計測用リンクの読み込み／書き出し
 topic: Metrics
 uuid: 94ea008a-473a-40c3-9fa8-a94eb0208c8f
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '131'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 
-# ダウンロード計測用リンクの読み込み／書き出し{#import-or-export-acquisition-links}
+# ダウンロード計測用リンクの読み込み／書き出し {#import-or-export-acquisition-links}
 
 Adobe Mobile Services ユーザーインターフェイスの代わりに .csv ファイルを使用してリンクを操作する場合は、ダウンロード計測用リンクの読み込みまたは書き出しをおこなうことができます。
 
-1. Click **[!UICONTROL Acquisition]** > **[!UICONTROL Manage Acquisition Links]**.
-1. **[!UICONTROL 読み込み]** をクリックし、次のどちらかの作業を実行します。
+1. **[!UICONTROL 獲得]**／**[!UICONTROL ダウンロード計測用リンクの管理]**&#x200B;をクリックします。
+1. 「**[!UICONTROL 読み込み]**」をクリックし、次のどちらかの作業を実行します。
 
    * Mobile Services にアップロードするファイルを参照して選択します。
-   * **[!UICONTROL エクスポート]** をクリックし、ファイルを開くか保存します。
+   * 「**[!UICONTROL エクスポート]**」をクリックし、ファイルを開くか保存します。
 
