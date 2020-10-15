@@ -7,9 +7,9 @@ solution: Experience Cloud,Analytics
 title: ディープリンクの追跡
 topic: Developer and implementation
 uuid: ebb1c08c-a246-40b3-9ac6-4606a14b4c5a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '330'
 ht-degree: 100%
 
@@ -55,7 +55,7 @@ Adobe Mobile SDK は、任意のディープリンクまたはユニバーサル
 * `a.launch.campaign.term`
 * `a.launch.campaign.content`
 
-これらのキーは、Adobe Analytics でのレポート用にあらかじめマッピングされている変数です。マッピングと処理ルールについて詳しくは、[処理ルールとコンテキストデータ](https://docs.adobe.com/content/help/ja-JP/analytics/admin/admin-tools/processing-rules/processing-rules.html)を参照してください。
+これらのキーは、Adobe Analytics でのレポート用にあらかじめマッピングされている変数です。マッピングと処理ルールについて詳しくは、「[処理ルールとコンテキストデータ](https://docs.adobe.com/content/help/ja-JP/analytics/admin/admin-tools/processing-rules/processing-rules.html)」を参照してください。
 
 ## ディファードディープリンクのトラッキング（マーケティングリンクで使用）
 
