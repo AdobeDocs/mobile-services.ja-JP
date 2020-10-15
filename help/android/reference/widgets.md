@@ -1,26 +1,26 @@
 ---
-description: Androidウィジェットは、アプリと同じメソッドを使用して追跡できます。 ウィジェットはアプリケーションコンテキストをアプリと共有するので、ヒットの順序と訪問者IDは保持されます。
+description: Android ウィジェットは、アプリと同じメソッドを使用して追跡できます。ウィジェットはアプリケーションコンテキストをアプリと共有するので、ヒットの順序と訪問者 ID が保持されます。
 keywords: android;library;mobile;sdk
-seo-description: Androidウィジェットは、アプリと同じメソッドを使用して追跡できます。 ウィジェットはアプリケーションコンテキストをアプリと共有するので、ヒットの順序と訪問者IDは保持されます。
+seo-description: Android ウィジェットは、アプリと同じメソッドを使用して追跡できます。ウィジェットはアプリケーションコンテキストをアプリと共有するので、ヒットの順序と訪問者 ID が保持されます。
 seo-title: Android ウィジェット
 solution: Experience Cloud,Analytics
 title: Android ウィジェット
 topic: Developer and implementation
 uuid: 1a3718ff-967b-4c8e-ae0b-ba15bddbda0a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '179'
-ht-degree: 46%
+ht-degree: 100%
 
 ---
 
 
 # Android ウィジェット {#android-widgets}
 
-Androidウィジェットは、アプリと同じメソッドを使用して追跡できます。 ウィジェットはアプリケーションコンテキストをアプリと共有するので、ヒットの順序と訪問者IDは保持されます。
+Android ウィジェットは、アプリと同じメソッドを使用して追跡できます。ウィジェットはアプリケーションコンテキストをアプリと共有するので、ヒットの順序と訪問者 ID が保持されます。
 
-次のガイドラインは、Androidウィジェットの追跡に役立ちます。
+次のガイドラインは、Android ウィジェットの追跡に役立ちます。
 
 * ウィジェットに、ライフサイクル指標（`startActivity`/`stopActivity`）呼び出しを実装しないでください。
 
