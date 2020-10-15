@@ -6,22 +6,22 @@ solution: Experience Cloud,Analytics
 title: アプリとモバイル Web にまたがる訪問者トラッキング
 topic: Developer and implementation
 uuid: 073572e4-4c55-4b27-b4a7-e4349ccde7bf
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '508'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
 
-# アプリとモバイル Web にまたがる訪問者トラッキング{#visitor-tracking-between-an-app-and-mobile-web}
+# アプリとモバイル Web にまたがる訪問者トラッキング {#visitor-tracking-between-an-app-and-mobile-web}
 
 アプリでモバイル Web コンテンツを開く場合は、ネイティブとモバイル Web の間を移動する訪問者が別々に識別されないようにします。
 
 ## アプリの訪問者 ID
 
-Android SDKは、アプリがインストールされると一意の訪問者IDを生成します。 このIDはモバイルデバイスの永続的なメモリに保存され、ヒットのたびに送信され、ユーザーがアプリをアンインストールした場合にのみ削除されます。
+アプリがインストールされると、Android SDK は、一意の訪問者 ID を生成します。この ID はモバイルデバイスの永続的なメモリに保存され、ヒットのたびに送信され、ユーザーがアプリをアンインストールした場合にのみ削除されます。
 
 >[!TIP]
 >
@@ -31,7 +31,7 @@ Android SDKは、アプリがインストールされると一意の訪問者ID�
 
 一般的なモバイル Web 実装では、デスクトップサイトで使用されているのと同じ標準の Analytics `s_code.js` または `AppMeasurement.js` を使用します。JavaScript ライブラリには、一意の訪問者 ID を生成する独自メソッドがあり、アプリからモバイル Web コンテンツを開くと、異なる訪問者 ID が生成される原因となります。
 
-## アプリとモバイル Web にまたがる訪問者トラッキング{#section_1755BCCFD42D456EB2319141030FDDFF}
+## アプリとモバイル Web にまたがる訪問者トラッキング {#section_1755BCCFD42D456EB2319141030FDDFF}
 
 アプリとモバイル Web で同じ訪問者 ID を使用するには、以下のようにします。
 
@@ -62,7 +62,7 @@ Android SDKは、アプリがインストールされると一意の訪問者ID�
    });
    ```
 
-宛先ドメインのIDサービスコードは、新しいIDの要求をAdobeに送信する代わりに、URLからMIDを抽出します。 コードは、MIDで渡された値を使用して訪問者を追跡します。
+アドビに新しい ID のリクエストを送信するのではなく、宛先ドメインの ID サービスコードによって、URL から MID が抽出されます。コードは、MID で渡された値を使用して訪問者を追跡します。
 
 モバイル Web コンテンツからヒットがあったら、各ヒットに `mid` パラメーターが存在すること、およびこの値がアプリコードによって送信された `mid` パラメーターと一致することを確認します。
 
