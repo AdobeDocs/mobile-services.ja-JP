@@ -6,16 +6,16 @@ solution: Experience Cloud,Analytics
 title: ADBMobile JSON 設定パスのオーバーライド
 topic: Developer and implementation
 uuid: 0d1be674-c634-4a48-aa31-5701681911b9
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '120'
 ht-degree: 100%
 
 ---
 
 
-# ADBMobile JSON 設定パスのオーバーライド{#override-the-adbmobile-json-config-path}
+# ADBMobile JSON 設定パスのオーバーライド {#override-the-adbmobile-json-config-path}
 
 アプリケーションの起動時に、別の ADBMobile JSON 設定ファイルを読み込むことができます。
 
