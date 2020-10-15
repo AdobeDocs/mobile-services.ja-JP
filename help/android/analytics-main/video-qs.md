@@ -7,11 +7,11 @@ solution: Experience Cloud,Analytics
 title: ビデオ分析
 topic: Developer and implementation
 uuid: a137cc27-dc28-48c0-b08e-2ca17d2c7e1d
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '881'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -31,9 +31,9 @@ ht-degree: 85%
 * **a.media.name**
    * 変数型：eVar
       * デフォルトの有効期限：訪問
-      * Custom Insight（s.prop、ビデオパスに使用）
-   * (**必須**)訪問者が何らかの方法でビデオを表示すると、このコンテキストデータ変数によって、実装で指定されているとおりにビデオの名前が収集されます。 この変数に分類を追加できます。
-   * (**Optional**) The Custom Insight variable provides video pathing information.
+      * カスタムインサイト（s.prop、ビデオパスに使用）
+   * （**必須**）訪問者が何らかの方法でビデオを視聴すると、このコンテキストデータ変数は、実装で指定されているとおりにビデオの名前を収集します。この変数に分類を追加できます。
+   * （**オプション**）カスタムインサイト変数はビデオパス情報を提供します。
 
 * **a.media.name**
    * 変数タイプ：カスタムインサイト（s.prop）
@@ -47,7 +47,7 @@ ht-degree: 85%
 * **a.media.segment**
    * 変数型：eVar
    * デフォルトの有効期限：ページビュー
-   * (**Required**) Collects video segment data, including the segment name and the order in which the segment occurs in the video.
+   * （**必須**）セグメント名や、ビデオ内でのセグメントの発生順序を含め、ビデオセグメントデータを収集します。
 
       この変数を入力するには、プレーヤーイベントを自動的に追跡する場合に `segmentByMilestones` 変数を有効にするか、プレーヤーイベントを手動で追跡する場合にカスタムセグメント名を設定します。例えば、訪問者がビデオの最初のセグメントを表示すると、SiteCatalyst によって Segments eVar に次の情報が収集されます`1:M:0-25`。
 
@@ -70,7 +70,7 @@ ht-degree: 85%
 * **a.media.timePlayed**
    * 変数型：イベント
    * タイプ：カウンター
-   * 最後のデータ収集プロセス（イメージ要求）以降のビデオ視聴に費やした時間を秒単位でカウントします。
+   * 前回のデータ収集プロセス（イメージリクエスト）以降のビデオ視聴秒数をカウントします。
 
 * **a.media.view**
    * 変数型：イベント
@@ -91,7 +91,7 @@ ht-degree: 85%
    * タイプ：カウンター
    * ユーザーがビデオを最後まで視聴したことを示します。
 
-      デフォルトでは、完了イベントはビデオが終了する 1 秒前に測定されます。導入時に、表示が完了したと見なすビデオの最後からの秒数を指定できます。 終わりが定義されていないライブビデオや他のストリームの場合は、完了を測定するカスタムポイントを指定できます（例えば、特定の視聴後）。
+      デフォルトでは、完了イベントはビデオが終了する 1 秒前に測定されます。実装時に、ビデオの終わりから何秒経過すれば視聴完了と見なすかを指定できます。終わりが定義されていないライブビデオや他のストリームの場合は、カスタムポイントを指定して（例えば、特定の時間視聴した後に）完了を測定できます。
 
 
 ## メディア設定の指定 {#section_929945D4183C428AAF3B983EFD3E2500}
