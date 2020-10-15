@@ -7,11 +7,11 @@ solution: Experience Cloud,Analytics
 title: Android 4.x ライブラリへの移行
 topic: Developer and implementation
 uuid: 906e83bb-2faf-4aa2-ac9b-3fba6b833c7e
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '880'
-ht-degree: 59%
+ht-degree: 100%
 
 ---
 
@@ -22,19 +22,19 @@ ht-degree: 59%
 
 >[!IMPORTANT]
 >
->SDK では、個別ユーザー数の計算に必要なデータ、ライフサイクル指標、SDK の中心機能に関連するその他のデータを保存するために、`SharedPreferences` が使用されます。SDK で想定されている `SharedPreferences` の値を変更または削除すると予期しない動作が発生し、データの不整合が生じる可能性があります。
+>SDK では、ユニークユーザー数の計算に必要なデータ、ライフサイクル指標、SDK の中心機能に関連するその他のデータを保存するために、`SharedPreferences` が使用されます。SDK で想定されている `SharedPreferences` の値を変更または削除すると予期しない動作が発生し、データの不整合が生じる可能性があります。
 
-バージョン4.xライブラリでは、パブリックメソッドは1つのヘッダーに統合されています。 また、すべての機能はクラスレベルメソッドを通じてアクセスできるようになったので、ポインタ、インスタンス、シングルトンを追跡する必要はありません。
+バージョン 4.x ライブラリでは、パブリックメソッドは 1 つのヘッダーに統合されます。また、クラスレベルのメソッドからすべての機能にアクセスできるようになり、ポインター、インスタンスまたはシングルトンを追跡する必要がなくなりました。
 
 ## event、prop、eVar {#section_76EA6F5611184C5CAE6E62956D84D7B6}
 
-バージョン4では、アプリ内のイベント、eVar、prop、相続人、リストなどの変数を割り当てることができなくなりました。 代わりに、SDKは、コンテキストデータと処理ルールを使用して、レポート用にアプリデータをAnalytics変数にマッピングします。
+バージョン 4 では、イベント、eVar、prop、heir、リストなどの変数をアプリに割り当てることができなくなりました。代わりに、SDK は、コンテキストデータと処理ルールを使用して、レポート用にアプリデータを Analytics 変数へとマッピングします。
 
 処理ルールには次の利点があります。
 
-* データマッピングは、更新をApp Storeに送信しなくても変更できます。
+* アプリストアにアップデートを送信しなくてもデータマッピングを変更できます。
 * データには、レポートスイートに固有の変数を設定する代わりに、意味のある名前を付けることができます。
-* 追加のデータを送信する場合、影響はほとんどありません。
+* 追加のデータを送信しても、影響はほとんどありません。
 
    これらの値は、処理ルールを使用してマッピングされるまで、レポートに表示されません。
 
@@ -78,7 +78,7 @@ ht-degree: 59%
 
 ### 設定ファイルの移動
 
-1. 1列目の変数に設定されている値を2列目の変数に移動します。
+1. 1 列目の変数に設定されている値を 2 列目の変数に移動します。
 1. コードから古い設定変数を削除します。
 
 ### バージョン 3.x からの移行
@@ -106,8 +106,8 @@ ht-degree: 59%
 | trackOffline | &quot;offlineEnabled&quot; |
 | offlineLimit | &quot;batchLimit&quot; |
 | account | &quot;rsids&quot; |
-| trackingServer | &quot;server&quot;, remove the `"https://"` prefix. 「ssl」設定に基づいて、プロトコルプレフィックスが自動的に追加されます。 |
-| trackingServerSecure | 削除. 安全な接続の場合は、「server」を定義し、「ssl」を有効にします。 |
+| trackingServer | &quot;server&quot;（`"https://"` プレフィックスを削除）。&quot;ssl&quot; 設定に基づいて、プロトコルプレフィックスが自動的に追加されます。 |
+| trackingServerSecure | 削除。セキュア接続の場合は、&quot;server&quot; を定義してから &quot;ssl&quot; を有効にします。 |
 | charSet | &quot;charset&quot; |
 | currencyCode | &quot;currency&quot; |
 | ssl | &quot;ssl&quot; |
@@ -119,15 +119,15 @@ ht-degree: 59%
 | dynamicVariablePrefix | 削除（使用終了） |
 | visitorNamespace | 削除（使用終了） |
 | usePlugins | 削除（使用終了） |
-| useBestPracticesは、測定をチャーン化する(getChurnInstance)ためのすべての呼び出しを行います。 | ライフサイクル指標による削除、置き換え |
+| useBestPractices チャーン測定に対するすべての呼び出し（getChurnInstance） | ライフサイクル指標による削除、置き換え |
 
 ## トラッキングコールとトラッキング変数の更新 {#section_96E7D9B3CDAC444789503B7E7F139AB9}
 
-バージョン 4 の SDK では、Web に焦点を当てた `track` 呼び出しと `trackLink` 呼び出しを使用する代わりに、次のメソッドを使用します。
+バージョン 4 の SDK では、Web に焦点を当てた `track` コールと `trackLink` コールを使用する代わりに、次のメソッドを使用します。
 
 * `trackState`：アプリ内で使用可能なビューのことで、`cart`、`home dashboard`、`app settings` などがあります。
 
-   これらの状態は Web サイト上のページによく似ており、`trackState` コールはページビュー数を増分します。
+   これらの状態は Web サイト上のページによく似ており、`trackState` コールにより、ページビュー数が増分されます。
 
 * `trackAction`：アプリ内で発生し、測定の対象となる `feed subscriptions`、`logons`、`banner taps` などのアクションを追跡します。
 
@@ -135,15 +135,15 @@ ht-degree: 59%
 
 ## event、prop、eVar 
 
-バージョン4では、イベント、eVar、prop、相続人、リストなどの変数を直接アプリに割り当てることができなくなりました。 SDKは、コンテキストデータと処理ルールを使用して、レポートのためにアプリデータをAnalytics変数にマップするようになりました。
+バージョン 4 では、イベント、eVar、prop、heir、リストなどの変数を直接アプリに割り当てることができなくなりました。SDK は、コンテキストデータと処理ルールを使用して、レポート用にアプリデータを Analytics 変数へとマッピングするようになりました。
 
 処理ルールには次の利点があります。
 
-* データマッピングは、更新をApp Storeに送信しなくても変更できます。
+* アプリストアにアップデートを送信しなくてもデータマッピングを変更できます。
 * データには、レポートスイートに固有の変数を設定する代わりに、意味のある名前を付けることができます。
-* 追加のデータを送信する場合、影響はほとんどありません。
+* 追加のデータを送信しても、影響はほとんどありません。
 
-   これらの値は、処理ルールを使用してマッピングされるまで、レポートに表示されません。 詳しくは、 [処理ルールとコンテキストデータを参照してください](/help/android/getting-started/proc-rules.md)。
+   これらの値は、処理ルールを使用してマッピングされるまで、レポートに表示されません。詳しくは、「[処理ルールとコンテキストデータ](/help/android/getting-started/proc-rules.md)」を参照してください。
 
 変数に直接代入していた値を `data` HashMap に追加する必要があります。つまり、`setEvar` や `setProp` の呼び出し、永続コンテキストデータへの代入を削除し、値を `data` パラメーターに追加する必要があります。
 
@@ -171,9 +171,9 @@ ht-degree: 59%
 
 `visitorID` 変数を `setUserIdentifier` の呼び出しで置き換えます。
 
-## オフライン追跡 {#section_5D4CD8CD1BE041A79A8657E31C0D24C6}
+## オフライントラッキング {#section_5D4CD8CD1BE041A79A8657E31C0D24C6}
 
-オフライン追跡は `ADBMobileConfig.json` で有効に設定されます。他のすべてのオフライン設定は自動的におこなわれます。
+オフライントラッキング は `ADBMobileConfig.json` で有効に設定されます。他のすべてのオフライン設定は自動的におこなわれます。
 
 次のメソッドへの呼び出しを削除します。
 
@@ -187,7 +187,7 @@ ht-degree: 59%
 * `forceOffline`
 * `forceOnline`
 
-## products 変数{#section_AFBA36F3718C44D29AF81B9E1056A1B4}
+## products 変数 {#section_AFBA36F3718C44D29AF81B9E1056A1B4}
 
 products 変数について詳しくは、「[product 変数](/help/android/analytics-main/products/products.md)」を参照してください。
 
