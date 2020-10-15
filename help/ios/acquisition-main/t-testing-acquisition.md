@@ -5,20 +5,20 @@ seo-title: 従来の獲得のテスト
 solution: Experience Cloud,Analytics
 title: 従来の獲得のテスト
 uuid: e0591f4a-e26b-4fe4-97c1-a6831a926fa5
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '272'
 ht-degree: 100%
 
 ---
 
 
-# 従来の獲得のテスト{#testing-legacy-acquisition}
+# 従来の獲得のテスト {#testing-legacy-acquisition}
 
 デバイスのフィンガープリントに基づく従来の獲得キャンペーンリンクのラウンドトリップに役立つ情報です。
 
-モバイルアプリがまだ Google Play に登録されていない場合は、マーケティングリンクを作成するときに任意のモバイルアプリをリンク先として選択できます。これは、ダウンロード計測用リンクのクリック後に獲得サーバーによってリダイレクトされるアプリにのみ影響を与えます。ダウンロード計測用リンクのテスト機能には影響を与えません。
+モバイルアプリがまだ Google Play に登録されていない場合は、キャンペーンリンクを作成するときに任意のモバイルアプリをリンク先として選択できます。これは、ダウンロード計測用リンクのクリック後に獲得サーバーによってリダイレクトされるアプリにのみ影響を与えます。ダウンロード計測用リンクのテスト機能には影響を与えません。
 
 1. Adobe Mobile Services の&#x200B;**[!UICONTROL 従来のダウンロード計測用リンクの使用]**&#x200B;に移動して、獲得キャンペーン URL を生成します。
 
