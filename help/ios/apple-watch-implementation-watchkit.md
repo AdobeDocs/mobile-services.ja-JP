@@ -1,21 +1,21 @@
 ---
-description: WatchOS 2以降、WatchKit拡張機能はApple Watchデバイスで実行されます。 この環境で実行するアプリケーションでは、WatchConnectivityフレームワークで、データを含むiOSアプリと共有する必要があります。
-seo-description: WatchOS 2以降、WatchKit拡張機能はApple Watchデバイスで実行されます。 この環境で実行するアプリケーションでは、WatchConnectivityフレームワークで、データを含むiOSアプリと共有する必要があります。
+description: WatchOS 2 以降、Apple Watch で WatchKit エクステンションを実行できます。この環境で動作するアプリケーションが iOS 本体アプリとデータを共有するには、WatchConnectivity フレームワークが必要です。
+seo-description: WatchOS 2 以降、Apple Watch で WatchKit エクステンションを実行できます。この環境で動作するアプリケーションが iOS 本体アプリとデータを共有するには、WatchConnectivity フレームワークが必要です。
 seo-title: WatchOS 2 を使用した Apple Watch 実装
 solution: Experience Cloud,Analytics
 title: WatchOS 2 を使用した Apple Watch 実装
 topic: Developer and implementation
 uuid: 9498467e-db5e-411e-a00e-d19841f485de
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '542'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
 
-# WatchOS 2 を使用した Apple Watch 実装{#apple-watch-implementation-with-watchos}
+# WatchOS 2 を使用した Apple Watch 実装 {#apple-watch-implementation-with-watchos}
 
 WatchOS 2 以降、WatchKit エクステンションを Apple Watch で実行できます。この環境で動作するアプリケーションが iOS 本体アプリとデータを共有するには、`WatchConnectivity` フレームワークが必要です。
 
@@ -38,23 +38,23 @@ Adobe Experience Platform Mobile SDK に関する情報やドキュメントを�
 >
 >少なくとも以下のターゲットを持つプロジェクトがあることを確認します。
 >
->* 含まれるアプリ
->* WatchKitアプリケーション
->* WatchKit拡張
+>* 本体アプリ
+>* WatchKit アプリ
+>* WatchKit 拡張
 
 >
 
 
 
-WatchKitアプリの開発について詳しくは、「Watch App Architecture [」を参照してください](https://developer.apple.com/library/ios/documentation/General/Conceptual/WatchKitProgrammingGuide/DesigningaWatchKitApp.html#//apple_ref/doc/uid/TP40014969-CH3-SW1)。
+WatchKit アプリの開発について詳しくは、「[Watch App アーキテクチャ](https://developer.apple.com/library/ios/documentation/General/Conceptual/WatchKitProgrammingGuide/DesigningaWatchKitApp.html#//apple_ref/doc/uid/TP40014969-CH3-SW1)」を参照してください。
 
-## 含まれるアプリの設定 {#section_0A2A3995575B4E2ABD12E426BA06AEFF}
+## 本体アプリの設定 {#section_0A2A3995575B4E2ABD12E426BA06AEFF}
 
 次の手順を Xcode プロジェクトで実行します。
 
 1. `AdobeMobileLibrary` フォルダーをプロジェクトにドラッグします。
 1. `ADBMobileConfig.json` ファイルが本体アプリのターゲットのメンバーであることを確認します。
-1. 本体アプリのターゲットの&#x200B;**[!UICONTROL Build Phases]**&#x200B;タブで、**[!UICONTROL Link Binary with Libraries]**&#x200B;セクションを展開して、以下のライブラリを追加します。
+1. 本体アプリのターゲットの「**[!UICONTROL Build Phases]**」タブで、「**[!UICONTROL Link Binary with Libraries]**」セクションを展開して、以下のライブラリを追加します。
 
    * `AdobeMobileLibrary.a`
    * `libsqlite3.tbd`
@@ -106,19 +106,19 @@ WatchKitアプリの開発について詳しくは、「Watch App Architecture [
 ## WatchKit エクステンションの設定 {#section_5ADE31741E514330A381F2E3CFD4A814}
 
 1. `ADBMobileConfig.json` ファイルが WatchKit エクステンションのターゲットのメンバーであることを確認します。
-1. WatchKit エクステンションのターゲットの&#x200B;**[!UICONTROL Build Phases]**&#x200B;タブで、**[!UICONTROL Link Binary with Libraries]**&#x200B;セクションを展開して、以下のライブラリを追加します。
+1. WatchKit エクステンションのターゲットの「**[!UICONTROL Build Phases]**」タブで、「**[!UICONTROL Link Binary with Libraries]**」セクションを展開して、以下のライブラリを追加します。
 
    * `AdobeMobileLibrary_Watch.a`
    * `libsqlite3.tbd`
 
-1. `WKExtensionDelegate` プロトコルを実装するクラスで、`WatchConnectivity` をインポートし、`WCSessionDelegate` プロトコルを追加します。
+1. `WKExtensionDelegate` プロトコルを実装するクラスで、`WatchConnectivity` を読み込み、`WCSessionDelegate` プロトコルを追加します。
 
    ```objective-c
    #import <WatchConnectivity/WatchConnectivity.h> 
    @interface ExtensionDelegate : NSObject <WKExtensionDelegate, WCSessionDelegate>
    ```
 
-1. ExtensionDelegate クラスの実装ファイル内で、`AdobeMobileLibrary` をインポートします。
+1. ExtensionDelegate クラスの実装ファイル内で、`AdobeMobileLibrary` を読み込みます。
 
    ```objective-c
    #import “ADBMobile.h”
