@@ -7,16 +7,16 @@ solution: Experience Cloud,Analytics
 title: 獲得の前提条件
 topic: Metrics
 uuid: a224499a-5a51-4ca5-a37b-06792b774671
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '197'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
 
-# 獲得の前提条件{#acquisition-prerequisites}
+# 獲得の前提条件 {#acquisition-prerequisites}
 
 ダウンロード計測用リンクを使用する前に、次の前提条件を満たします。
 
@@ -36,12 +36,12 @@ ht-degree: 85%
    |--- |--- |--- |--- |
    | 4.1 ～ 4.5 | ○ | × | × |
    | 4.6 ～ 4.9 | ○ | ○ | × |
-   | 4.9以降 | ○ | ○ | ○ |
+   | 4.9 以降 | ○ | ○ | ○ |
 
 1. SDK からの獲得データ送信オプションの有効化
 
-   リンクのトラッキングとレポートをおこなう前に、トラッキングが SDK 設定で有効にされている必要があります。詳しくは、「[獲得の設定](/help/using/acquisition-main/t-enable-acquisition.md)」を参照してください。
+   リンクのトラッキングとレポートをおこなう前に、トラッキングが SDK 設定で有効にされている必要があります。詳しくは、[獲得の設定](/help/using/acquisition-main/t-enable-acquisition.md)を参照してください。
 
 1. アプリストアのアプリを追加
 
-   アプリは、Apple App StoreまたはGoogle Playから追加する必要があります。 詳しくは、App Store [から追加のアプリの参照を参照してください](/help/using/manage-apps/c-app-store/t-app-store-app.md)。
+   Apple App Store または Google Play からアプリを追加する必要があります。詳しくは、[App Store からのアプリの追加](/help/using/manage-apps/c-app-store/t-app-store-app.md)を参照してください。
