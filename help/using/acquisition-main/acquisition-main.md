@@ -1,24 +1,24 @@
 ---
-description: マーケターは、アプリをプロモーションし、アクセスを促進するトラッキングリンクを作成できます。これらのトラッキングリンクは、アプリストア、アプリ内ディープリンクおよびインタースティシャルにユーザーを導くことができ、アプリ内の行動に関連付けることができます。マーケターは、ユーザーをiOS、Androidまたはその他のプラットフォームにルーティングする1つのリンクを作成できます。
+description: マーケターは、アプリをプロモーションし、アクセスを促進するトラッキングリンクを作成できます。これらのトラッキングリンクは、アプリストア、アプリ内ディープリンクおよびインタースティシャルにユーザーを導くことができ、アプリ内の行動に関連付けることができます。マーケターは、ユーザーを iOS、Android またはその他のプラットフォームに適宜ルーティングする 1 つのリンクを作成できます。
 keywords: mobile
-seo-description: マーケターは、アプリをプロモーションし、アクセスを促進するトラッキングリンクを作成できます。これらのトラッキングリンクは、アプリストア、アプリ内ディープリンクおよびインタースティシャルにユーザーを導くことができ、アプリ内の行動に関連付けることができます。マーケターは、ユーザーをiOS、Androidまたはその他のプラットフォームにルーティングする1つのリンクを作成できます。
+seo-description: マーケターは、アプリをプロモーションし、アクセスを促進するトラッキングリンクを作成できます。これらのトラッキングリンクは、アプリストア、アプリ内ディープリンクおよびインタースティシャルにユーザーを導くことができ、アプリ内の行動に関連付けることができます。マーケターは、ユーザーを iOS、Android またはその他のプラットフォームに適宜ルーティングする 1 つのリンクを作成できます。
 seo-title: 獲得
 solution: Experience Cloud,Analytics
 title: 獲得
 topic: Metrics
 uuid: 987146e4-2cca-46e7-88aa-74b62d9f1dc5
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '499'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
 
 # 獲得 {#acquisition}
 
-マーケターは、アプリをプロモーションし、アクセスを促進するトラッキングリンクを作成できます。これらのトラッキングリンクは、アプリストア、アプリ内ディープリンクおよびインタースティシャルにユーザーを導くことができ、アプリ内の行動に関連付けることができます。マーケターは、ユーザーをiOS、Androidまたはその他のプラットフォームにルーティングする1つのリンクを作成できます。
+マーケターは、アプリをプロモーションし、アクセスを促進するトラッキングリンクを作成できます。これらのトラッキングリンクは、アプリストア、アプリ内ディープリンクおよびインタースティシャルにユーザーを導くことができ、アプリ内の行動に関連付けることができます。マーケターは、ユーザーを iOS、Android またはその他のプラットフォームに適宜ルーティングする 1 つのリンクを作成できます。
 
 ## 新しい Adobe Experience Cloud SDK リリース
 
@@ -26,7 +26,7 @@ Adobe Experience Platform Mobile SDK に関する情報やドキュメントを�
 
 2018 年 9 月に、SDK の新しいメジャーバージョンをリリースしました。これらの新しい Adobe Experience Platform Mobile SDK は、[Experience Platform Launch](https://www.adobe.com/jp/experience-platform/launch.html) から設定できます。
 
-* To get started, go to [Launch](https://launch.adobe.com/).
+* 利用を開始するには、[Launch](https://launch.adobe.com/) にアクセスしてください。
 * Experience Platform SDK リポジトリの内容については、[Github: Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks) を参照してください。
 
 >[!IMPORTANT]
@@ -45,7 +45,7 @@ Adobe Experience Platform Mobile SDK に関する情報やドキュメントを�
 
 次の獲得レポートで、マーケティングリンクの効果に関するインサイトを得ることができます。
 
-* **概要** {#section_5B2BA47F22694919A472AB591101237E}
+* **概要**{#section_5B2BA47F22694919A472AB591101237E}
 
    このレポートには、ユーザーをアプリに導いた上位のキャンペーンと、他のトラッキングメタデータ（獲得参照元、メディア、期間およびコンテンツなど）でのキャンペーンの効果に関する情報が表示されます。
 
@@ -58,5 +58,5 @@ Adobe Experience Platform Mobile SDK に関する情報やドキュメントを�
    次の情報に留意してください。
 
    * 列ヘッダーの矢印アイコンをクリックして、データを昇順または降順で並べ替えることができます。
-   * データを PDF 文書に書き出すには、**[!UICONTROL ダウンロード]** をクリックします。
+   * データを PDF 文書に書き出すには、「**[!UICONTROL ダウンロード]**」をクリックします。
    ![](assets/acquisition_name.png)
