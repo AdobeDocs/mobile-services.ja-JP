@@ -6,16 +6,16 @@ solution: Experience Cloud,Analytics
 title: 設定
 topic: Developer and implementation
 uuid: 63261b61-e70a-42be-a56f-5943173c041e
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '144'
 ht-degree: 100%
 
 ---
 
 
-# 設定{#configuration}
+# 設定 {#configuration}
 
 この節の情報は、JSON 設定、ヒットのバッチ処理、SDK メソッドなど、iOS SDK を設定する場合に役立ちます。
 
