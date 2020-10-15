@@ -7,9 +7,9 @@ solution: Experience Cloud,Analytics
 title: 獲得の設定
 topic: Metrics
 uuid: e996e43e-8a77-47a3-a6fb-53f676f92bef
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '214'
 ht-degree: 100%
 
@@ -27,7 +27,7 @@ ht-degree: 100%
 
       このチェックボックスを選択すると、**[!UICONTROL 送信タイムアウト]** フィールドがアクティブになり、値が 0 から 5 に変更されます。
 
-   * **[!UICONTROL 送信タイムアウト（秒）]** フィールドに値を入力します。
+   * **[!UICONTROL 送信タイムアウト（秒）]** フィールドに値を入力します。
 
       （**オプション**）**[!UICONTROL 有効にする]** チェックボックスを有効にした場合、このフィールドはオプションです。タイムアウト値を変更できます。秒単位で指定します。この設定には、初回起動ヒットの送信前に、獲得情報を待機する時間を指定します。
    >[!IMPORTANT]
