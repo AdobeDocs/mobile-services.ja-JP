@@ -6,16 +6,16 @@ solution: Experience Cloud,Analytics
 title: 位置情報と目標地点
 topic: Developer and implementation
 uuid: c800ec85-a33f-425d-b28f-bfe8bf229ae8
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '591'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
 
-# 位置情報と目標地点{#geo-location-and-points-of-interest}
+# 位置情報と目標地点 {#geo-location-and-points-of-interest}
 
 位置情報を利用すると、緯度と経度およびアプリ内にあらかじめ定義されている目標地点を用いてロケーションデータを測定することができます。
 
@@ -23,7 +23,7 @@ ht-degree: 82%
 
 * 緯度、経度および Adobe Mobile Services で定義されている目標地点（POI）のロケーション。
 
-   この情報は、自動レポートのためにモバイルソリューション変数に渡されます。
+   この情報は、自動レポート用としてモバイルソリューション変数に渡されます。
 
 * 中心からの距離と、コンテキストデータとして渡される精度。
 
@@ -83,9 +83,9 @@ NSMutableDictionary *contextData = [NSMutableDictionary dictionary];
 
 ## 位置コンテキストデータ {#section_FFB71E6653F9410A89CC6ACC0C9164A9}
 
-緯度と経度は、それぞれ3つの異なるコンテキストデータパラメータを使用して送信され、各パラメータはそれぞれ異なる精度レベルを表し、合計6つのコンテキストデータパラメータが含まれます。
+合計 6 つのコンテキストデータパラメーターに対し、緯度と経度はそれぞれ 3 つの異なるコンテキストデータパラメータを使用して送信されます。各パラメーターは異なる精度を表します。
 
-例えば、座標lat = 40.93231、lon = -111.93152は、1 mの精度の位置を表します。 この場所は、次の変数の精度のレベルに従って分割されます。
+例えば、座標「lat = 40.93231, lon = -111.93152」は、1 mの精度で位置を表します。この場所は、次の変数の精度のレベルに従って分割されます。
 
 * `a.loc.lat.a`= 040.9
 * `a.loc.lat.b` = 32
@@ -115,5 +115,5 @@ NSMutableDictionary *contextData = [NSMutableDictionary dictionary];
 
 * 2 つの POI の直径が重なっている場合は、現在のロケーションを含む最初の POI が使用されます。
 
-   POIが重複する場合、POIを最も精度の高いものから最も精度の低いものへと順にリストし、最も精度の高いPOIが確実にレポートされるようにする必要があります。
+   POI が重複する場合、最も精度の高い POI が確実に報告されるように、POI を精度の高いものから精度の低いものへとリストする必要があります。
 
