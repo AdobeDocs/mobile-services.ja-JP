@@ -6,16 +6,16 @@ solution: Experience Cloud,Analytics
 title: Audience Manager
 topic: Developer and implementation
 uuid: a1f86814-6b1e-4fe1-9400-f443b92405f1
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '133'
 ht-degree: 100%
 
 ---
 
 
-# Audience Manager{#audience-manager}
+# Audience Manager {#audience-manager}
 
 この情報は、Audience Manager からシグナルを送信し、訪問者セグメントを取得する場合に役立ちます。
 
