@@ -6,9 +6,9 @@ solution: Experience Cloud,Analytics
 title: コア実装とライフサイクル
 topic: Developer and implementation
 uuid: 96d06325-e424-4770-8659-4b5431318ee3
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '656'
 ht-degree: 100%
 
@@ -55,7 +55,7 @@ SDK をダウンロードするには
 >
 >SDK を Adobe Mobile Services UI 以外でダウンロードした場合は、`ADBMobileConfig.json` ファイルを手動で設定する必要があります。Analytics と Mobile SDK を使い始めたばかりのユーザーが開発レポートスイートを設定して、事前に構成された設定ファイルをダウンロードする場合は、「[事前準備](/help/ios/getting-started/requirements.md)」を参照してください。
 
-## プロジェクトへの SDK と設定ファイルの追加{#section_93C25D893B4A4CD3B996CF3C5590C8DC}
+## プロジェクトへの SDK と設定ファイルの追加 {#section_93C25D893B4A4CD3B996CF3C5590C8DC}
 
 1. Xcode IDE を起動して、アプリを開きます。
 1. プロジェクトナビゲーターで、`AdobeMobileLibrary` フォルダーをドラッグして、プロジェクトにドロップします。
