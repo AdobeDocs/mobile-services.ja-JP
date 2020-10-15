@@ -1,27 +1,27 @@
 ---
-description: アクションとは、測定するAndroidアプリで発生するイベントです。
-seo-description: アクションとは、測定するAndroidアプリで発生するイベントです。
+description: アクションは、Android アプリ内で発生し、測定対象となるイベントです。
+seo-description: アクションは、Android アプリ内で発生し、測定対象となるイベントです。
 seo-title: アプリのアクションの追跡
 solution: Experience Cloud,Analytics
 title: アプリのアクションの追跡
 topic: Developer and implementation
 uuid: fe01c1df-f6bb-4b32-b3ef-959d2c724af6
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '379'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
 
 # アプリのアクションの追跡 {#track-app-actions}
 
-アクションとは、測定するAndroidアプリで発生するイベントです。
+アクションは、Android アプリ内で発生し、測定対象となるイベントです。
 
-各アクションは、イベントが発生するたびに増分される、1 つ以上の対応する指標を持ちます。例えば、新規サブスクリプションごとに、記事が表示されるたびに、レベルが完了するたびに、`trackAction` 呼び出しを送信します。アクションは自動的には追跡されないので、追跡するイベントが発生したときに `trackAction` を呼び出し、アクションをカスタムイベントにマップする必要があります。
+各アクションには、イベントが発生するたびに増分される、1 つ以上の対応する指標があります。例えば、新規サブスクリプションごとに、記事が表示されるたびに、レベルが完了するたびに、`trackAction` 呼び出しを送信します。アクションは自動的には追跡されないので、追跡するイベントが発生したときに `trackAction` を呼び出し、アクションをカスタムイベントにマップする必要があります。
 
-## アクションの追跡 {#section_380DF56C4EE4432A823940E4AE4C9E91}
+## アクションのトラッキング {#section_380DF56C4EE4432A823940E4AE4C9E91}
 
 1. ライブラリをプロジェクトに追加し、ライフサイクルを実装します。
 
@@ -39,14 +39,14 @@ ht-degree: 88%
    Analytics.trackAction("myapp.ActionName", null);
    ```
 
-1. Adobe Mobile Services UI で、アプリを選択し、**[!UICONTROL アプリ設定]**&#x200B;をクリックします。
-1. **[!UICONTROL 変数と指標の設定]**&#x200B;をクリックし、**[!UICONTROL カスタム指標]**&#x200B;タブをクリックします。
+1. Adobe Mobile Services UI で、アプリを選択し、「**[!UICONTROL アプリ設定]**」をクリックします。
+1. 「**[!UICONTROL 変数と指標の設定]**」をクリックしてから、「**[!UICONTROL カスタム指標]**」タブをクリックします。
 
-1. コードに定義されているコンテキストデータ名（例えば、`myapp.ActionName`）をカスタムイベントにマップします。
+1. コードに定義されているコンテキストデータ名（例えば、`myapp.ActionName`）をカスタムイベントにマッピングします。
 
    ![](assets/map-event-context-data.png)
 
-すべてのアクション値を保持する prop を設定することもできます。そのためには、カスタム prop を&#x200B;**[!UICONTROL Custom Actions]**&#x200B;などの名前にマッピングし、値を `a.action` に設定します。
+すべてのアクション値を保持する prop を設定することもできます。そのためには、「**[!UICONTROL カスタムアクション]**」などの名前のカスタム prop をマッピングし、値を `a.action` に設定します。
 
 ![](assets/map-custom-prop.png)
 
@@ -68,7 +68,7 @@ Analytics.trackAction("myapp.SocialShare", exampleContextData);
 
 | インターフェイス | レポート |
 |--- |--- |
-| Adobe Mobile Services | **[!UICONTROL アクションパス]**&#x200B;レポート。アプリでアクションが発生する順序を表示します。任意のレポートで&#x200B;**[!UICONTROL カスタマイズ]**&#x200B;をクリックすると、ランク付け、トレンド表示または分類レポートでアクションを表示したり、フィルターを適用して特定のセグメントのアクションを表示したりできます。 |
-| Marketing reports &amp; analytics | **[!UICONTROL カスタムイベント]**&#x200B;レポート。アクションがカスタムイベントにマップされた後、他のすべての Analytics イベントと同様にモバイルイベントを表示できます。 |
-| ad hoc analysis | **[!UICONTROL カスタムイベント]**&#x200B;レポート。アクションがカスタムイベントにマップされた後、他のすべての Analytics イベントと同様にモバイルイベントを表示できます。 |
+| Adobe Mobile Services | **[!UICONTROL アクションパス]**&#x200B;レポート。アプリでアクションが発生する順序を表示します。任意のレポートで「**[!UICONTROL カスタマイズ]**」をクリックすると、ランク付け、トレンド表示または分類レポートでアクションを表示したり、フィルターを適用して特定のセグメントのアクションを表示したりできます。 |
+| マーケティングレポートと分析 | **[!UICONTROL カスタムイベント]**&#x200B;レポート。アクションがカスタムイベントにマップされた後、他のすべての Analytics イベントと同様にモバイルイベントを表示できます。 |
+| アドホック分析 | **[!UICONTROL カスタムイベント]**&#x200B;レポート。アクションがカスタムイベントにマップされた後、他のすべての Analytics イベントと同様にモバイルイベントを表示できます。 |
 
