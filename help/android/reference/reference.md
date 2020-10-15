@@ -1,16 +1,16 @@
 ---
-description: このリファレンス資料は、Experience Cloudソリューション用のAndroid SDKの使用に役立ちます。
-seo-description: このリファレンス資料は、Experience Cloudソリューション用のAndroid SDKの使用に役立ちます。
+description: この参考資料は、Experience Cloud ソリューション用 Android SDK を使用する場合に役立ちます。
+seo-description: この参考資料は、Experience Cloud ソリューション用 Android SDK を使用する場合に役立ちます。
 seo-title: Android SDK リファレンスの概要
 solution: Experience Cloud,Analytics
 title: Android SDK リファレンスの概要
 topic: Developer and implementation
 uuid: ce8f6dcb-0e2b-47eb-99f2-fbdb97079161
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '141'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
