@@ -1,24 +1,24 @@
 ---
-description: ビーコン追跡では、iBeacon と Bluetooth Low Energy を使用して、マイクロ位置を測定し、ターゲットにすることができます。
+description: ビーコントラッキングでは、iBeacon と Bluetooth Low Energy を使用して、マイクロ位置を測定し、ターゲットにすることができます。
 keywords: android;library;mobile;sdk
-seo-description: ビーコン追跡では、iBeacon と Bluetooth Low Energy を使用して、マイクロ位置を測定し、ターゲットにすることができます。
-seo-title: ビーコン追跡
+seo-description: ビーコントラッキングでは、iBeacon と Bluetooth Low Energy を使用して、マイクロ位置を測定し、ターゲットにすることができます。
+seo-title: ビーコントラッキング
 solution: Experience Cloud,Analytics
-title: ビーコン追跡
+title: ビーコントラッキング
 topic: Developer and implementation
 uuid: 16c1d267-85f4-4a6a-a6d3-d6ffb0f80b29
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '240'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
 
-# ビーコン追跡 {#beacon-tracking}
+# ビーコントラッキング {#beacon-tracking}
 
-ビーコン追跡では、iBeacon と Bluetooth Low Energy を使用して、マイクロ位置を測定し、ターゲットにすることができます。
+ビーコントラッキングでは、iBeacon と Bluetooth Low Energy を使用して、マイクロ位置を測定し、ターゲットにすることができます。
 
 `trackBeacon` が呼び出されると、次のビーコンデータが Analytics と Target に送信されます。
 
@@ -27,12 +27,12 @@ ht-degree: 81%
 * `a.beacon.minor` - ビーコンのマイナー番号（ストア内の一意の番号など）
 * `a.beacon.prox` - 0 ～ 3 の値でユーザーとビーコンの距離を表します。
 
-次に、これらの値の意味を示します。
+これらの値の意味は次のとおりです：
 
-* 0 =不明
-* 1 =即時
-* 2 =近い
-* 3 =遠い
+* 0 = 不明
+* 1 = 即時
+* 2 = 近い
+* 3 = 遠い
 
 このビーコンデータは、モバイルソリューションの変数にキャプチャされます。
 
@@ -50,7 +50,7 @@ ht-degree: 81%
 
 1. ビーコンの場所を収集します。
 
-   ビーコンの製造元に応じて、Bluetooth LEビーコンをスキャンするために複数のサードパーティライブラリを使用できます。
+   ビーコンの製造元に応じて、Bluetooth LE ビーコンをスキャンする複数のサードパーティライブラリを使用できます。
 1. ビーコン情報を取得したら、次の呼び出しを使用して場所を追跡します。
 
    ```java
@@ -64,7 +64,7 @@ ht-degree: 81%
    Analytics.trackBeacon(beaconUUID, major, minor, proximity, null);
    ```
 
-1. ユーザーがビーコンの Proximity を離れたら、現在のビーコンをクリアします。
+1. ユーザーがビーコンの付近から離れたら、現在のビーコンをクリアします。
 
    ```java
    Analytics.clearBeacon();
@@ -80,7 +80,7 @@ cdata.put("myapp.ImageLiked", imageName);
 Analytics.trackBeacon(beaconUUID, major, minor, proximity, cdata);
 ```
 
-コンテキストデータ値は、Adobe Mobile Services でカスタム変数にマップする必要があります。
+コンテキストデータ値は、Adobe Mobile Services でカスタム変数にマッピングする必要があります。
 
 ![](assets/map-variable-context-ltv.png)
 
