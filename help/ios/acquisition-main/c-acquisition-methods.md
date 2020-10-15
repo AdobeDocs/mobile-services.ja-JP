@@ -5,16 +5,16 @@ seo-title: 獲得メソッド
 solution: Experience Cloud,Analytics
 title: 獲得メソッド
 uuid: 6f88de57-793d-4d33-9a54-f6714289fd2c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '93'
 ht-degree: 100%
 
 ---
 
 
-# 獲得メソッド{#acquisition-methods}
+# 獲得メソッド {#acquisition-methods}
 
 iOS ライブラリは、以下の獲得メソッドを提供します。
 
