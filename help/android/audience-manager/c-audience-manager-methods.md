@@ -7,16 +7,16 @@ solution: Experience Cloud,Analytics
 title: Audience Manager メソッド
 topic: Developer and implementation
 uuid: 2f6e4664-1306-41d4-9fa7-e3a99f1df4ab
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '292'
 ht-degree: 100%
 
 ---
 
 
-# Audience Manager メソッド{#audience-manager-methods}
+# Audience Manager メソッド {#audience-manager-methods}
 
 Android ライブラリによって提供される Audience Manager メソッドのリストを示します。
 
