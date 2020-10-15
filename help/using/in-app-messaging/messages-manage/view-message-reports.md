@@ -7,9 +7,9 @@ solution: Experience Cloud,Analytics
 title: メッセージレポートの表示
 topic: Metrics
 uuid: 0ac73a81-388f-4dfd-84d5-21b8db4b8c83
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '490'
 ht-degree: 100%
 
