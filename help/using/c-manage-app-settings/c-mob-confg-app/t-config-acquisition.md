@@ -7,16 +7,16 @@ solution: Experience Cloud,Analytics
 title: SDK からの獲得データ送信の設定
 topic: Metrics
 uuid: 50ce51ad-39bf-4ac7-bd94-757443d11ca7
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '174'
 ht-degree: 100%
 
 ---
 
 
-# SDK からの獲得データ送信の設定{#configure-sdk-acquisition-options}
+# SDK からの獲得データ送信の設定 {#configure-sdk-acquisition-options}
 
 新しいアプリの作成中または既存のアプリの編集中に、アプリ設定ページで SDK からの獲得データ送信を設定できます。
 
