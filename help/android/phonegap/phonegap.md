@@ -7,11 +7,11 @@ solution: Experience Cloud,Analytics
 title: PhoneGap プラグインの概要
 topic: Developer and implementation
 uuid: c5c32357-d8df-458a-b0e8-e0c56040241d
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '395'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -44,11 +44,11 @@ cordova plugin add adobe-mobile-services
 
 1. `ADBMobile_PhoneGap.java` ファイルを `src` フォルダーにドラッグします。
 
-   このファイルを移動するには、**[!UICONTROL OK]**&#x200B;をクリックします。
+   このファイルを移動するには、「**[!UICONTROL OK]**」をクリックします。
 
 1. `ADB_Helper.js` ファイルを、`index.html` ファイルを含むフォルダーにドラッグします。
 
-   このファイルを移動するには、**[!UICONTROL OK]**&#x200B;をクリックします。
+   このファイルを移動するには、「**[!UICONTROL OK]**」をクリックします。
 
 1. `res/xml` フォルダーで、`config.xml` を開き、以下の行を追加して新しいプラグインを登録します。
 
@@ -69,14 +69,14 @@ cordova plugin add adobe-mobile-services
 1. AppMeasurement ライブラリをダウンロードするには、「[SDK の取得](/help/android/getting-started/dev-qs.md)」を参照してください。
 1. `adobeMobileLibrary.jar` ファイルを `src` フォルダーにドラッグします。
 
-   このファイルを移動するには、**[!UICONTROL OK]**&#x200B;をクリックします。
+   このファイルを移動するには、「**[!UICONTROL OK]**」をクリックします。
 
-1. 「adobeMobileLibrary.jar」ファイルを右クリックし、**[!UICONTROL ライブラリとして追加]**&#x200B;を参照してください。
+1. 「adobeMobileLibrary.jar」ファイルを右クリックし、「**[!UICONTROL ライブラリとして追加]**」を選択します。
 1. プロジェクトの要件に基づいて、ライブラリの名前、レベルおよび位置を入力します。
 1. `ADBMobileConfig.json` ファイルを、アプリケーションルートの `assets` フォルダーにドラッグします。
 1. アプリケーション内のアプリケーション&#x200B;**ではなく**、ルートアプリケーションを選択していることを確認します。
 
-   このファイルを移動するには、**[!UICONTROL OK]**&#x200B;をクリックします。
+   このファイルを移動するには、「**[!UICONTROL OK]**」をクリックします。
 
 ## アプリの権限の追加
 
