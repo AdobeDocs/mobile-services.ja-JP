@@ -6,18 +6,18 @@ solution: Experience Cloud,Analytics
 title: Apple Search Ads
 topic: Developer and implementation
 uuid: 790080e8-067e-4bfd-a169-0027db4fdff3
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '280'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 
 # Apple Search Ads {#apple-search-ads}
 
-Adobe SDK は、Apple Search Ads アプリのアトリビューション API を利用して、開発者とマーケターが Apple App Store の Search Ads キャンペーンからのアプリのダウンロード数を追跡し、アトリビューションをおこなえるようにします。Search Ads キャンペーンについて詳しくは、[Apple Search Ads](https://searchads.apple.com/jp/) / を参照してください。
+Adobe SDK は、Apple Search Ads アプリのアトリビューション API を利用して、開発者とマーケターが Apple App Store の Search Ads キャンペーンからのアプリのダウンロード数を追跡し、アトリビューションをおこなえるようにします。Search Ads キャンペーンについて詳しくは、[Apple Search Ads](https://searchads.apple.com/jp/) を参照してください。
 
 ## メリット {#section_CEA30C652AC8470784B8054E299B80FA}
 
@@ -34,13 +34,13 @@ Apple Ads を使用する利点には以下のものがあります。
 
 Search Ads アトリビューションに対してアプリを有効にするには
 
-1. AdobeSDKバージョン4.13.2以降を実装します。
+1. Adobe SDK バージョン 4.13.2 以降を実装します。
 
-   For more information, see [Core implementation and lifecycle](/help/ios/getting-started/dev-qs.md).
+   詳しくは、「[コア実装とライフサイクルい](/help/ios/getting-started/dev-qs.md)」を参照してくださ。
 
 1. iAd フレームワークをアプリの Xcode プロジェクトファイルに追加します。
 
-## Search Ads アトリビューションのレポート {#section_1AF4E0B4F8E94F36B38CA3D3E384D0A4}
+## Search Ads アトリビューションのレポート{#section_1AF4E0B4F8E94F36B38CA3D3E384D0A4}
 
 1. Apple Search Ads のアトリビューションデータは、獲得名、ソースおよび項値として提供されます。
 
