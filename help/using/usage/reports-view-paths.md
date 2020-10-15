@@ -7,11 +7,11 @@ solution: Experience Cloud,Analytics
 title: パスレポートの表示
 topic: Reports,Metrics
 uuid: bc73edce-0cc0-4349-9a48-e0a40cbe1b67
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '522'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
@@ -26,16 +26,16 @@ ht-degree: 73%
 
 ![ビューパス](assets/view_paths.png)
 
-ボックスのような形状をした各ノードは、ユーザーがアプリを操作したときにたどったパスの特定の状態を表しています。例えば、上の図では、一番上のノードは、アプリを起動し、メイン表示に移動したユーザーの数を表しています。
+ボックスのような形状をした各ノードは、ユーザーがアプリを操作したときにたどったパスの特定の状態を表しています。例えば、上の図では、一番上のノードは、アプリを起動してからメイン表示に移動したユーザーの数を表しています。
 
-ノードをクリックすると、**[!UICONTROL フォーカス]** や **[!UICONTROL 展開]** など、チャートを変更するための追加のオプションが表示されます。例えば、一番上のノードの **[!UICONTROL MainView]** 状態をクリックすると、 **[!UICONTROL フォーカス]** アイコンと **[!UICONTROL 展開]** アイコンが表示されます。
+ノードをクリックすると、**[!UICONTROL フォーカス]** や **[!UICONTROL 展開]** など、チャートを変更するための追加のオプションが表示されます。例えば、一番上のノードの **[!UICONTROL MainView]** 状態をクリックすると、**[!UICONTROL フォーカス]**&#x200B;アイコンと&#x200B;**[!UICONTROL 展開]**&#x200B;アイコンが表示されます。
 
-To expand the view, click the **[!UICONTROL +]** icon to display the additional paths that come in to or go from the node. 下の図では、状態1がアプリを起動し、状態2がアプリのメインページを表示しています。状態3には、ユーザーがたどった次のパスが含まれています。
+ビューを展開するには、**[!UICONTROL +]** アイコンをクリックして、ノードに入る、またはノードから出る追加のパスを表示します。下の図では、状態 1 はアプリを起動し、状態 2 はアプリのメインページを表示しています。状態 3 には、ユーザーがたどった次のパスが含まれています。
 
-* カメラロールへの移動
-* アイテムセレクターへの移動
+* カメラロールへのナビゲーション
+* アイテムセレクターへのナビゲーション
 * カメラへのナビゲーション
-* 項目情報ページへの移動
+* 項目情報ページへのナビゲーション
 
 ![](assets/view_paths_expand.png)
 
@@ -48,7 +48,7 @@ To expand the view, click the **[!UICONTROL +]** icon to display the additional 
 
 ![パスフォーカスの表示](assets/view_paths_focus.png)
 
-複数のノードに焦点を合わせたり、ノードを展開したりして、ユーザーがアプリ内でたどるパスを詳細に表示できます。 以下に例を示します。
+複数のノードに焦点を合わせたり、ノードを展開したりして、ユーザーがアプリ内でたどるパスを詳細に表示できます。以下に例を示します。
 
 ![ビューパスマルチ](assets/view_paths_mult.png)
 
@@ -57,8 +57,8 @@ To expand the view, click the **[!UICONTROL +]** icon to display the additional 
 * **[!UICONTROL 期間]**
 **[!UICONTROL カレンダー]**&#x200B;アイコンをクリックしてカスタムの期間を選択するか、またはドロップダウンリストからあらかじめ設定されている期間を選択します。
 * **[!UICONTROL カスタマイズ]**
-**[!UICONTROL 表示方法]** オプションを変更したり、指標およびフィルターを追加したり、追加のシリーズ（指標）を追加したりして、レポートをカスタマイズします。詳しくは、「[レポートのカスタマイズ](/help/using/usage/reports-customize/reports-customize.md)」を参照してください。
+「**[!UICONTROL 表示方法]**」オプションを変更したり、指標およびフィルターを追加したり、追加のシリーズ（指標）を追加したりして、レポートをカスタマイズします。詳しくは、「[レポートのカスタマイズ](/help/using/usage/reports-customize/reports-customize.md)」を参照してください。
 * **[!UICONTROL フィルター]**
-**[!UICONTROL フィルター]** をクリックし、様々なレポートにわたるフィルターを作成して、すべてのモバイルレポートにおけるセグメントのパフォーマンスを確認します。共通フィルターを定義すると、パス（画面遷移）レポート以外のすべてのレポートに適用できます。詳しくは、「[共通フィルターの追加](/help/using/usage/reports-customize/t-sticky-filter.md)」を参照してください。
+「**[!UICONTROL フィルター]**」をクリックし、様々なレポートにわたるフィルターを作成して、すべてのモバイルレポートにおけるセグメントのパフォーマンスを確認します。共通フィルターを定義すると、パス（画面遷移）レポート以外のすべてのレポートに適用できます。詳しくは、「[共通フィルターの追加](/help/using/usage/reports-customize/t-sticky-filter.md)」を参照してください。
 * **[!UICONTROL ダウンロード]**
-**[!UICONTROL PDF]** または **[!UICONTROL CSV]** をクリックして、ドキュメントをダウンロードするか開いて Mobile Services へのアクセス権を持たないユーザーと共有したり、プレゼンテーションで使用したりします。
+「**[!UICONTROL PDF]**」または「**[!UICONTROL CSV]**」をクリックして、ドキュメントをダウンロードするか開いて Mobile Services へのアクセス権を持たないユーザーと共有したり、プレゼンテーションで使用したりします。
