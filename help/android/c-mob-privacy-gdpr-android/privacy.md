@@ -6,16 +6,16 @@ solution: Experience Cloud,Analytics
 title: ユーザーのオプトステータスの設定
 topic: Developer and implementation
 uuid: f8a3e6be-44dd-494e-9cda-dbbac86d6772
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '266'
-ht-degree: 67%
+ht-degree: 100%
 
 ---
 
 
-# ユーザーのオプトステータスの設定{#setting-the-user-s-opt-status}
+# ユーザーのオプトステータスの設定 {#setting-the-user-s-opt-status}
 
 この情報は、GDPR のデータ削除要求に対処する場合に役立ちます。
 
@@ -31,23 +31,23 @@ ht-degree: 67%
 
 * `Config.setPrivacyStatus` メソッド。
 
-   この方法を使用してプライバシー設定を変更した後も、この設定を再度変更するか、アプリをアンインストールして再びインストールするまで、この設定は有効です。 メソッドについて詳しくは、「 [設定メソッド](/help/android/configuration/methods.md)」を参照してください。
+   この方法を使用してプライバシー設定を変更すると、再び変更するか、アプリをアンインストールして再びインストールするまで、変更は有効となります。メソッドについて詳しくは、「[設定メソッド](/help/android/configuration/methods.md)」を参照してください。
 
 次の表に、各プライバシーステータスを示します。
 
 * **オプトイン**
 
-   * **解析**:ヒットが送信されます。
-   * **ターゲット**:mboxリクエストが送信されます。
-   * **Audience Manager**:シグナルとID同期が送信されます。
+   * **Analytics**：ヒットが送信されます。
+   * **Target**：mbox リクエストが送信されます。
+   * **Audience Manager**：シグナルと ID 同期が送信されます。
    * JSON 設定ファイルの値：`optedin`
    * `setPrivacyStatus` の値：`MOBILE_PRIVACY_STATUS_OPT_IN`
 
 * **オプトアウト**
 
-   * **解析**:ヒットは破棄されます。
-   * **ターゲット**:mboxリクエストは許可されません。
-   * **Audience Manager**:シグナルとIDの同期は許可されません。
+   * **Analytics**：ヒットが破棄されます。
+   * **Target**：mbox リクエストは許可されません。
+   * **Audience Manager**：シグナルと ID 同期は許可されません。
    * JSON 設定ファイルの値：`optedout`
    * `setPrivacyStatus` の値：`MOBILE_PRIVACY_STATUS_OPT_OUT`
 
@@ -56,8 +56,8 @@ ht-degree: 67%
    * **Analytics**：オフライン追跡が&#x200B;**有効**&#x200B;である場合、プライバシーステータスがオプトイン（ヒットが送信される）またはオプトアウト（ヒットが破棄される）に変更されるまで、ヒットは保存されます。
 
       オフライン追跡が<b>有効になっていない</b>場合、プライバシーステータスがオプトインに変更されるまで、ヒットは破棄されます。
-   * **ターゲット**:mboxリクエストが送信されます。
-   * **Audience Manager**:シグナルとID同期が送信されます。
+   * **Target**：mbox リクエストが送信されます。
+   * **Audience Manager**：シグナルと ID 同期が送信されます。
    * JSON 設定ファイルの値：`optunknown`
    * `setPrivacyStatus` の値：`MOBILE_PRIVACY_STATUS_UNKNOWN`
 
