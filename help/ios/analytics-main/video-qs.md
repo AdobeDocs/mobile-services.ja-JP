@@ -6,9 +6,9 @@ solution: Experience Cloud,Analytics
 title: ビデオ分析
 topic: Developer and implementation
 uuid: d75fa415-78f6-4f50-a563-76949f040138
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '952'
 ht-degree: 100%
 
@@ -33,11 +33,11 @@ ht-degree: 100%
 
    （必須）訪問者がビデオを何らかの方法で表示した場合に、実装で指定されているビデオの名前を収集します。この変数に分類を追加できます。
 
-   （オプション）Custom Insight 変数はビデオパス情報を提供します。
+   （オプション）カスタムインサイト変数はビデオパス情報を提供します。
 
    * 変数型：eVar
    * デフォルトの有効期限：訪問
-   * Custom Insight（s.prop、ビデオパスに使用）
+   * カスタムインサイト（s.prop、ビデオパスに使用）
 
 * **a.media.name**
 
