@@ -7,16 +7,16 @@ solution: Experience Cloud,Analytics
 title: トップ 50 の記事
 topic: Metrics
 uuid: 341370d1-fa87-43ca-8135-425b3bba272f
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '256'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
 
-# トップ 50 の記事レポート{#top-articles}
+# トップ 50 の記事レポート {#top-articles}
 
 **[!UICONTROL トップ 50 の記事]**&#x200B;レポートには、アプリを使用して最も読まれた記事を示す棒グラフとランクレポートが表示されます。このレポートは、DPS のユーザーのみが利用できます。
 
@@ -24,7 +24,7 @@ ht-degree: 95%
 
 ![](assets/dps_top_50.png)
 
-このレポートでは、デフォルトで記事のタイトルと読者数が表示されます。
+このレポートには、デフォルトで記事のタイトルと読者数が表示されます。
 
 このレポートでは、次のオプションを設定できます。
 
@@ -33,12 +33,12 @@ ht-degree: 95%
 
 * **[!UICONTROL カスタマイズ]**
 
-   **[!UICONTROL 表示方法]** オプションを変更したり、指標およびフィルターを追加したり、追加のシリーズ（指標）を追加したりして、レポートをカスタマイズします。詳しくは、「[レポートのカスタマイズ](/help/using/usage/reports-customize/reports-customize.md)」を参照してください。
+   「**[!UICONTROL 表示方法]**」オプションを変更したり、指標およびフィルターを追加したり、追加のシリーズ（指標）を追加したりして、レポートをカスタマイズします。詳しくは、「[レポートのカスタマイズ](/help/using/usage/reports-customize/reports-customize.md)」を参照してください。
 
-* **[!UICONTROL Filter]**
+* **[!UICONTROL フィルター]**
 
-   **[!UICONTROL フィルター]** をクリックし、様々なレポートにわたるフィルターを作成して、すべてのモバイルレポートにおけるセグメントのパフォーマンスを確認します。共通フィルターを定義すると、パス（画面遷移）レポート以外のすべてのレポートに適用できます。詳しくは、「[共通フィルターの追加](/help/using/usage/reports-customize/t-sticky-filter.md)」を参照してください。
+   「**[!UICONTROL フィルター]**」をクリックし、様々なレポートにわたるフィルターを作成して、すべてのモバイルレポートにおけるセグメントのパフォーマンスを確認します。共通フィルターを定義すると、パス（画面遷移）レポート以外のすべてのレポートに適用できます。詳しくは、「[共通フィルターの追加](/help/using/usage/reports-customize/t-sticky-filter.md)」を参照してください。
 
 * **[!UICONTROL ダウンロード]**
 
-   **[!UICONTROL PDF]** または **[!UICONTROL CSV]** をクリックして、ドキュメントをダウンロードするか開いて Mobile Services へのアクセス権を持たないユーザーと共有したり、プレゼンテーションで使用したりします。
+   「**[!UICONTROL PDF]**」または「**[!UICONTROL CSV]**」をクリックして、ドキュメントをダウンロードするか開いて Mobile Services へのアクセス権を持たないユーザーと共有したり、プレゼンテーションで使用したりします。
