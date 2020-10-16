@@ -1,31 +1,31 @@
 ---
-description: アプリをApple App StoreやGoogle Playから直接ダウンロードできるアプリストアリンクを作成できます。 作成したリンクは、ダウンロードの成功イベントを表します。
+description: ユーザーが Apple App Store や Google Play からアプリを直接ダウンロードできるアプリストアリンクを作成できます。作成したリンクを使用すると、成功したイベントをダウンロードに関連付けることができます。
 keywords: mobile
-seo-description: アプリをApple App StoreやGoogle Playから直接ダウンロードできるアプリストアリンクを作成できます。 作成したリンクは、ダウンロードの成功イベントを表します。
+seo-description: ユーザーが Apple App Store や Google Play からアプリを直接ダウンロードできるアプリストアリンクを作成できます。作成したリンクを使用すると、成功したイベントをダウンロードに関連付けることができます。
 seo-title: ダウンロード計測用リンクの作成
 solution: Experience Cloud,Analytics
 title: ダウンロード計測用リンクの作成
 topic: Metrics
 uuid: bb603013-fca9-44a2-820a-59e1c85d9444
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '506'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
 
-# ダウンロード計測用リンクの作成{#create-an-acquisition-link}
+# ダウンロード計測用リンクの作成 {#create-an-acquisition-link}
 
-アプリをApple App StoreやGoogle Playから直接ダウンロードできるアプリストアリンクを作成できます。 作成したリンクは、ダウンロードの成功イベントを表します。
+ユーザーが Apple App Store や Google Play からアプリを直接ダウンロードできるアプリストアリンクを作成できます。作成したリンクを使用すると、成功したイベントをダウンロードに関連付けることができます。
 
-1. Click **[!UICONTROL Acquisition]** > **[!UICONTROL Manage Acquisition Links]** > **[!UICONTROL Create New]**.
+1. **[!UICONTROL 獲得]**／**[!UICONTROL ダウンロード計測用リンク設定]**／**[!UICONTROL 新規作成]**&#x200B;をクリックします。
 1. **[!UICONTROL リンク情報]** セクションに次の情報を入力します。
 
    * （**必須**）アプリのリンクを説明する&#x200B;**[!UICONTROL 名前]**&#x200B;を指定します。
    * **[!UICONTROL トラッキングコード]**
-目的のトラッキングコードを指定するか、**[!UICONTROL 生成]** をクリックして新しいトラッキングコードを作成します。
+目的のトラッキングコードを指定するか、「**[!UICONTROL 生成]**」をクリックして新しいトラッキングコードを作成します。
    * （**必須**）**[!UICONTROL ソース]**：「ニュースレター」または「ホームページ」など元のリファラーを指定します。
    * **[!UICONTROL メディア]**：「バナー」または「電子メール」など、マーケティングメディアを指定します。
    * **[!UICONTROL コンテンツ]**：リンクを持つ広告の名前または ID を指定します。
@@ -60,7 +60,7 @@ ht-degree: 74%
 
       * Apple App Store では、アプリ ID がわからない場合、名前でアプリを検索できます。
 
-         **[!UICONTROL 地域]** ドロップダウンリストからオプションの地域を選択して、検索を制限できます。
+         「**[!UICONTROL 地域]**」ドロップダウンリストからオプションの地域を選択して、検索を制限できます。
 
       * Google Play では、パッケージ名がわからない場合、名前でアプリを検索できます。
    * **[!UICONTROL アプリ ID（Apple App Store のみ）]**
@@ -73,7 +73,7 @@ ht-degree: 74%
 
 
 
-1. To save your configuration and to generate the link, click **[!UICONTROL Add]** > **[!UICONTROL Save]**.
+1. 設定を保存して、リンクを生成するには、**[!UICONTROL 追加]**／**[!UICONTROL 保存]**&#x200B;をクリックします。
 
    新規作成されたリンクが **[!UICONTROL App Store リンク]** セクションに表示されます。
 
