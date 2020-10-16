@@ -7,16 +7,16 @@ solution: Experience Cloud,Analytics
 title: PhoneGap プラグイン
 topic: Developer and implementation
 uuid: f88bcf10-1f9e-4c97-b348-40db797c9923
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '327'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 
-# PhoneGap プラグイン{#phonegap-plug-in}
+# PhoneGap プラグイン {#phonegap-plug-in}
 
 このプラグインを使用すると、PhoneGap プロジェクトから iOS AppMeasurement コールを送信できます。
 
@@ -51,7 +51,7 @@ AppMeasurement を取り込むには：
 1. `ADBMobile_PhoneGap.h` と `ADBMobile_PhoneGap.m` を Xcode プロジェクトの **[!UICONTROL Plugins]** フォルダーにドラッグします。
 1. 以下の設定を実行します。
 
-   1. **[!UICONTROL Copy items into destination group&#39;s folder (if needed)（必要に応じて保存先グループのフォルダーにアイテムをコピーする）]**&#x200B;を選択します。
+   1. 「**[!UICONTROL Copy items into destination group&#39;s folder (if needed)（必要に応じて保存先グループのフォルダーにアイテムをコピーする）]**」を選択します。
    1. AppMeasurement コードを使用するターゲットを選択します。
 
 1. `ADB_Helper.js` をプロジェクトの `www` フォルダーにドラッグします。
@@ -65,18 +65,18 @@ AppMeasurement を取り込むには：
 
 ### アプリの権限の追加
 
-AppMeasurementライブラリには、以下が必要です。
+AppMeasurement ライブラリには、以下が必要です。
 
 1. Xcode IDE を起動して、アプリを開きます。
 1. **[!UICONTROL Adobe Mobile]** フォルダーを Xcode プロジェクトにドラッグして、以下の設定を実行します。
 
-   1. **[!UICONTROL Copy items into destination group&#39;s folder (if needed)（必要に応じて保存先グループのフォルダーにアイテムをコピーする）]**&#x200B;を選択します。
-   1. **[!UICONTROL Create groups for any added folders（追加されたフォルダーに対してグループを再帰的に作成する）]**&#x200B;を選択します。
-   1. AppMeasurement コードを使用するターゲットを選択して、**[!UICONTROL Finish]**&#x200B;をクリックします。
+   1. 「**[!UICONTROL Copy items into destination group&#39;s folder (if needed)（必要に応じて保存先グループのフォルダーにアイテムをコピーする）]**」を選択します。
+   1. 「**[!UICONTROL Create groups for any added folders（追加されたフォルダーに対してグループを再帰的に作成する）]**」を選択します。
+   1. AppMeasurement コードを使用するターゲットを選択して、「**[!UICONTROL 終了]**」をクリックします。
 
    ![](assets/xcode-settings.png){width=&quot;672&quot;}
 
-1. プロジェクトのターゲットの&#x200B;**[!UICONTROL Build Phases]**&#x200B;タブで、**[!UICONTROL Link Binary with Libraries]**&#x200B;セクションを展開して、以下のライブラリを追加します。
+1. プロジェクトのターゲットの「**[!UICONTROL Build Phases]**」タブで、「**[!UICONTROL Link Binary with Libraries]**」セクションを展開して、以下のライブラリを追加します。
 
    * `libsqlite3.dylib`
    * `SystemConfiguration.framework`
