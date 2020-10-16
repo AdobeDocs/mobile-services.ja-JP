@@ -25,7 +25,7 @@ SDK は現在、Analytics、Target、Audience Manager、Adobe Experience Platfor
 
 * **trackState:&#x200B;data:**
 
-   状態とは、アプリで使用可能なビューのことで、`home dashboard`、`app settings`、`cart` などがあります。これらの状態は Web サイト上のページによく似ており、`trackState` コールはページビュー数を増分します。`state` が空の場合は、レポートに「*app name app version (build)*」と表示されます。レポートにこの値が表示される場合は、各 `state` コールで `trackState` を設定しているかを確認してください。
+   状態とは、アプリで使用可能なビューのことで、`home dashboard`、`app settings`、`cart` などがあります。これらの状態は Web サイト上のページによく似ており、`trackState` コールにより、ページビュー数が増分されます。`state` が空の場合は、レポートに「*app name app version (build)*」と表示されます。レポートにこの値が表示される場合は、各 `state` コールで `trackState` を設定しているかを確認してください。
 
    >[!TIP]
    >
