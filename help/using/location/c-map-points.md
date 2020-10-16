@@ -4,14 +4,14 @@ keywords: mobile
 seo-description: 目標地点およびその他のデータのマーカーを示すインタラクティブマップを表示できます。
 seo-title: マップ
 solution: Experience Cloud,Analytics
-title: Map
+title: マップ
 topic: Metrics
 uuid: 3c271738-eb8d-4c26-baaf-54b247bfc4da
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '313'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
@@ -26,12 +26,12 @@ ht-degree: 74%
 
 * マップのサイズは増減できます。
 
-   この機能は、例えば、2つの目標地点が近い場合に便利です。 マップを拡大すると、マップを詳細に表示できます。
+   この機能は、2 つの目標地点が近い場合などに便利です。マップを拡大すると、詳細を表示できます。
 * 目標地点は青色で表示されます。
 
-   起動回数など、その他のデータのマーカーは黒で表示されます。 マーカーをクリックして詳細を表示します。
+   その他のデータのマーカー（起動回数など）は黒で表示されます。マーカーをクリックすると詳細が表示されます。
 
-![レイヤーす。](assets/map_layers.png)をクリックして、次のオプションを選択します。
+![レイヤー](assets/map_layers.png)をクリックして、次のオプションを選択します。
 
 * **[!UICONTROL マップ]**
 
@@ -45,7 +45,7 @@ ht-degree: 74%
 
 * **[!UICONTROL ヒートマップ]**
 
-   ヒートマップマーカーを表示するかどうかを選択します。 色の強度が高いほど、より頻繁に条件（起動など）が満たされます。
+   ヒートマップマーカーを表示するかどうかを選択します。色が濃いほど、条件（起動など）を満たした頻度が高くなります。
 
 * **[!UICONTROL 目標地点]**
 
@@ -59,12 +59,12 @@ ht-degree: 74%
 
 * **[!UICONTROL カスタマイズ]**
 
-   **[!UICONTROL 表示方法]** オプションを変更したり、指標およびフィルターを追加したり、追加のシリーズ（指標）を追加したりして、レポートをカスタマイズします。詳しくは、「[レポートのカスタマイズ](/help/using/usage/reports-customize/t-reports-customize.md)」を参照してください。
+   「**[!UICONTROL 表示方法]**」オプションを変更したり、指標およびフィルターを追加したり、追加のシリーズ（指標）を追加したりして、レポートをカスタマイズします。詳しくは、「[レポートのカスタマイズ](/help/using/usage/reports-customize/t-reports-customize.md)」を参照してください。
 
-* **[!UICONTROL Filter]**
+* **[!UICONTROL フィルター]**
 
-   **[!UICONTROL フィルター]** をクリックし、様々なレポートにわたるフィルターを作成して、すべてのモバイルレポートにおけるセグメントのパフォーマンスを確認します。共通フィルターを定義すると、パス（画面遷移）レポート以外のすべてのレポートに適用できます。詳しくは、「[共通フィルターの追加](/help/using/usage/reports-customize/t-sticky-filter.md)」を参照してください。
+   「**[!UICONTROL フィルター]**」をクリックし、様々なレポートにわたるフィルターを作成して、すべてのモバイルレポートにおけるセグメントのパフォーマンスを確認します。共通フィルターを定義すると、パス（画面遷移）レポート以外のすべてのレポートに適用できます。詳しくは、「[共通フィルターの追加](/help/using/usage/reports-customize/t-sticky-filter.md)」を参照してください。
 
 * **[!UICONTROL ダウンロード]**
 
-   **[!UICONTROL PDF]** または **[!UICONTROL CSV]** をクリックして、ドキュメントをダウンロードするか開いて Mobile Services へのアクセス権を持たないユーザーと共有したり、プレゼンテーションで使用したりします。
+   「**[!UICONTROL PDF]**」または「**[!UICONTROL CSV]**」をクリックして、ドキュメントをダウンロードするか開いて Mobile Services へのアクセス権を持たないユーザーと共有したり、プレゼンテーションで使用したりします。
