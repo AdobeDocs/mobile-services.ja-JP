@@ -5,16 +5,16 @@ seo-title: V3 による獲得のテスト
 solution: Experience Cloud,Analytics
 title: V3 による獲得のテスト
 uuid: 89137ccf-4839-4b37-926e-303cf8e511a5
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '620'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 
-# V3 による獲得のテスト{#testing-v-acquisition}
+# V3 による獲得のテスト {#testing-v-acquisition}
 
 デバイスのフィンガープリントに基づいた V3 による獲得キャンペーンリンクのラウンドトリップに役立つ情報です。
 
@@ -66,7 +66,7 @@ ht-degree: 97%
    `"Analytics - Trying to fetch referrer data from <acquisition end url>"`
    `"Analytics - Received Referrer Data(<Json Object>)"`
 
-   上記のログが表示されない場合は、手順4と5を実行済みであることを確認してください。
+   上記のログが表示されない場合は、手順 4 と 5 を実行済みであることを確認してください。
 
    考えられるエラーに関する情報を次に示します。
 
