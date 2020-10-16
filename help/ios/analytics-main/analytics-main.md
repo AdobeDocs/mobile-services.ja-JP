@@ -1,6 +1,6 @@
 ---
-description: この情報は、Adobe AnalyticsでiOS SDKを使用する際に役立ちます。
-seo-description: この情報は、Adobe AnalyticsでiOS SDKを使用する際に役立ちます。
+description: この情報は、iOS SDK を Adobe Analytics で使用する場合に役立ちます。
+seo-description: この情報は、iOS SDK を Adobe Analytics で使用する場合に役立ちます。
 seo-title: Analytics の概要
 solution: Experience Cloud,Analytics
 title: Analytics の概要
@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: bc11c1e7a4a11657ee89c40ddcbd37377ce50bb5
 workflow-type: tm+mt
 source-wordcount: '322'
-ht-degree: 67%
+ht-degree: 100%
 
 ---
 
@@ -30,16 +30,16 @@ Adobe Experience Platform Mobile SDK に関する情報やドキュメントを�
 
 ## Analytics トラッキング識別子の生成
 
-SDKでは、識別子を使用してユーザーを追跡します。識別子は次の階層にあります。
+SDK では、識別子を使用してユーザーを追跡します。識別子の階層は次のとおりです。
 
-1. カスタム訪問者識別子(VID)
-1. Analytics追跡識別子(AID)
-1. Experience Cloud識別子(MID)
+1. カスタム訪問者識別子（VID）
+1. Analytics トラッキング識別子（AID）
+1. Experience Cloud 識別子（MID）
 
 >[!TIP]
 >
->Experience Cloud 識別子の正しい頭字語は ECID です。SDK ではまだ MID を使用していますが、古い名称です。
+>Experience Cloud 識別子の正しい頭字語は「ECID」です。SDK ではまだ、古い名称である「MID」を使用しています。
 
-AID はトラッキング識別子とも呼ばれ、アプリが MID を使用するように設定されていない場合に SDK によって生成されます。その値は、起動からアプリのアップグレードまでの間、`NSUserDefaults` で保持されます。ユーザーがデバイスからアプリを削除してから再インストールした場合、またはアプリ開発者が `NSUserDefaults` をクリアした場合、SDK によって新しい識別子が生成されます。このプロセスにより、Analyticsレポートに新しいユーザーが作成されます。
+AID はトラッキング識別子とも呼ばれ、アプリが MID を使用するように設定されていない場合に SDK によって生成されます。その値は、起動からアプリのアップグレードまでの間、`NSUserDefaults` で保持されます。ユーザーがデバイスからアプリを削除してから再インストールした場合、またはアプリ開発者が `NSUserDefaults` をクリアした場合、SDK によって新しい識別子が生成されます。このプロセスにより、Analytics レポートに新しいユーザーが作成されます。
 
-IDサービスのサポート(MID)を導入するアプリのユーザーの場合、既存のAID値がAnalyticsのヒットと共に送信され、AnalyticsのヒットにAIDとMIDが含まれます。 IDサービスがサポートされるアプリの新規ユーザーの場合、AnalyticsリクエストにはMIDのみが含まれます。 訪問者の識別について詳しくは、「[訪問者の識別](https://docs.adobe.com/content/help/ja-JP/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-visid.html)」を参照してください。
+ID サービスのサポート（MID）を導入するアプリのユーザーの場合、既存の AID 値が Analytics のヒットと共に送信され、Analytics のヒットには AID と MID が含まれます。ID サービスがサポートされるアプリの新規ユーザーの場合、Analytics リクエストには MID のみが含まれます。訪問者の識別について詳しくは、「[訪問者の識別](https://docs.adobe.com/content/help/ja-JP/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-visid.html)」を参照してください。
