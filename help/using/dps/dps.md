@@ -7,16 +7,16 @@ solution: Experience Cloud,Analytics
 title: Digital Publishing Suite の概要
 topic: Metrics
 uuid: ca335891-5d73-47dc-811f-374a0844109f
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '130'
 ht-degree: 100%
 
 ---
 
 
-# Digital Publishing Suite の概要{#digital-publishing-solution}
+# Digital Publishing Suite の概要 {#digital-publishing-solution}
 
 Digital Publishing Suite（DPS）のユーザーが利用できるレポートを表示できます。
 
