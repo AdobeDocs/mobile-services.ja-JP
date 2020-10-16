@@ -1,23 +1,23 @@
 ---
-description: Adobe Mobile Services で一意のトラッキングコードを持つダウンロード計測用リンクを生成できます。ユーザーが生成されたリンクをクリックした後にApple App Storeからアプリをダウンロードして実行すると、SDKは獲得データを自動的に収集し、AdobeのMobileサービスに送信します。
-seo-description: Adobe Mobile Services で一意のトラッキングコードを持つダウンロード計測用リンクを生成できます。ユーザーが生成されたリンクをクリックした後にApple App Storeからアプリをダウンロードして実行すると、SDKは獲得データを自動的に収集し、AdobeのMobileサービスに送信します。
+description: Adobe Mobile Services で一意のトラッキングコードを持つダウンロード計測用リンクを生成できます。生成されたリンクをユーザーがクリックした後で AppleApp Store からアプリをダウンロードして実行すると、SDK が自動的に獲得データを収集し、Adobe Mobile Services へと送信します。
+seo-description: Adobe Mobile Services で一意のトラッキングコードを持つダウンロード計測用リンクを生成できます。生成されたリンクをユーザーがクリックした後で AppleApp Store からアプリをダウンロードして実行すると、SDK が自動的に獲得データを収集し、Adobe Mobile Services へと送信します。
 seo-title: モバイルアプリの獲得
 solution: Experience Cloud,Analytics
 title: モバイルアプリの獲得
 topic: Developer and implementation
 uuid: 5fece619-e4b8-4d06-9250-dcb66fa32ce0
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '414'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
 
 # モバイルアプリの獲得 {#mobile-app-acquisition}
 
-Adobe Mobile Services で一意のトラッキングコードを持つダウンロード計測用リンクを生成できます。ユーザーが生成されたリンクをクリックした後にApple App Storeからアプリをダウンロードして実行すると、SDKは獲得データを自動的に収集し、AdobeのMobileサービスに送信します。
+Adobe Mobile Services で一意のトラッキングコードを持つダウンロード計測用リンクを生成できます。生成されたリンクをユーザーがクリックした後で AppleApp Store からアプリをダウンロードして実行すると、SDK が自動的に獲得データを収集し、Adobe Mobile Services へと送信します。
 
 獲得を使用するには、SDK バージョン 4.1 以降が&#x200B;**必要**&#x200B;です。
 
@@ -70,4 +70,4 @@ Xcode で、アドビのマーケティングリンクドメインを「関連�
 2. 下にスクロールして&#x200B;**[!UICONTROL 関連ドメイン]**&#x200B;セクションに移動し、オンに切り替えます。
 3. マーケティングリンク URL から、マーケティングリンクドメインの&#x200B;**[!UICONTROL ドメイン]**&#x200B;リストにエントリを追加します。
 
-入力内容は次のようになります`applinks:5848561889a02a6996aea62b.c00.adobe.com`。 
+入力内容は次のようになります`applinks:5848561889a02a6996aea62b.c00.adobe.com`。
