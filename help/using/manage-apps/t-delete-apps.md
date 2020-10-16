@@ -7,16 +7,16 @@ solution: Experience Cloud,Analytics
 title: アプリの削除
 topic: Metrics
 uuid: 1721cce5-b368-4f05-a40b-e3f2348d96d8
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '104'
 ht-degree: 100%
 
 ---
 
 
-# アプリの削除{#delete-an-app}
+# アプリの削除 {#delete-an-app}
 
 Mobile Services UI からアプリを削除できます。
 
