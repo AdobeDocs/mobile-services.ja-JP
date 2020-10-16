@@ -7,16 +7,16 @@ solution: Experience Cloud,Analytics
 title: マーケティングリンクを管理
 topic: Metrics
 uuid: 98ac3520-89ed-4513-83f6-120dda9d0157
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '201'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
 
-# マーケティングリンクを管理{#manage-marketing-links}
+# マーケティングリンクを管理 {#manage-marketing-links}
 
 マーケティングリンクページを使用して、マーケティングリンクを作成、使用およびアーカイブできます。
 
@@ -28,14 +28,14 @@ ht-degree: 91%
 
 * **マーケティングリンクの表示**
 
-   To display the list of Marketing Links, in the Mobile Services home page, click **[!UICONTROL Acquisition]** > **[!UICONTROL Marketing Links Builder]**.
+   マーケティングリンクのリストを表示するには、Mobile Services ホームページで、**[!UICONTROL 獲得]**／**[!UICONTROL マーケティングリンクビルダー]**&#x200B;をクリックします。
 
-   **[!UICONTROL クリック数]** 列には、マーケティングリンクをクリックしたユーザーの数が表示されます。**[!UICONTROL 初回起動]** 列には、アプリの初回起動数が表示されます。この値には、マーケティングリンクをクリックした後にアプリのインストールを選択して起動したユーザーの数が反映されます。
+   「**[!UICONTROL クリック数]**」列には、マーケティングリンクをクリックしたユーザーの数が表示されます。「**[!UICONTROL 初回起動]**」列には、アプリの初回起動数が表示されます。この値には、マーケティングリンクをクリックした後にアプリのインストールを選択して起動したユーザーの数が反映されます。
 
 * **マーケティングリンクのアーカイブまたはアーカイブ解除**
 
-   * マーケティングリンクをアーカイブするには、リンクの横にあるチェックボックスを選択して、**[!UICONTROL 選択項目をアーカイブ]** をクリックします。
-   * マーケティングリンクをアーカイブ解除するには、**[!UICONTROL アーカイブを表示]** をクリックし、リンクを選択して、**[!UICONTROL 選択項目のアーカイブを解除]** をクリックします。
+   * マーケティングリンクをアーカイブするには、リンクの横にあるチェックボックスを選択して、「**[!UICONTROL 選択項目をアーカイブ]**」をクリックします。
+   * マーケティングリンクをアーカイブ解除するには、「**[!UICONTROL アーカイブを表示]**」をクリックし、リンクを選択して、「**[!UICONTROL 選択項目のアーカイブを解除]**」をクリックします。
 
       以前にアーカイブしたマーケティングリンクのみ、アーカイブを表示ページに表示されます。
 
