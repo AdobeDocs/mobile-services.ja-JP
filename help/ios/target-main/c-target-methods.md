@@ -6,9 +6,9 @@ solution: Experience Cloud,Analytics
 title: iOS の Target メソッド
 topic: Developer and implementation
 uuid: 692bcda1-02ba-4902-bd65-15888adf1952
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '656'
 ht-degree: 100%
 
@@ -56,8 +56,9 @@ NSString *const ADBTargetParameterMboxHost;
 >[!IMPORTANT]
 >
 >* バージョン 4.14.0 より&#x200B;**前の** SDK を使用している場合、パラメーターの制限については、「[Input Parameters](https://developers.adobetarget.com/api/#input-parameters)」を参照してください。
->
->* SDK バージョン 4.14.0 **以降**&#x200B;の SDK を使用している場合、パラメーターの制限については、「[Batch Input Parameters](https://developers.adobetarget.com/api/#batch-input-parameters)」を参照してください。
+   >
+   >
+* SDK バージョン 4.14.0 **以降**&#x200B;の SDK を使用している場合、パラメーターの制限については、「[Batch Input Parameters](https://developers.adobetarget.com/api/#batch-input-parameters)」を参照してください。
 
 
 ### メソッド
