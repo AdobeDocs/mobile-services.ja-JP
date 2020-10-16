@@ -6,9 +6,9 @@ solution: Experience Cloud,Analytics
 title: アプリのクラッシュの追跡
 topic: Developer and implementation
 uuid: 3ab98c14-ccdf-4060-ad88-ec07c1c6bf07
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '487'
 ht-degree: 100%
 
@@ -33,9 +33,9 @@ ht-degree: 100%
 
 Android アクティビティのライフサイクルについて詳しくは、「[アクティビティ](https://developer.android.com/guide/components/activities.html)」を参照してください。
 
-*この Android のライフサイクルの図は、[Android Open Source Project](https://source.android.com/)によって作成および共有され、[Creative Commons 2.5 Attribution License](https://creativecommons.org/licenses/by/2.5/)の条項に従って使用されています。*
+*この Android のライフサイクルの図は、[Android Open Source Project](https://source.android.com/) によって作成および共有され、[Creative Commons 2.5 Attribution License](https://creativecommons.org/licenses/by/2.5/) の条項に従って使用されています。*
 
-## 誤ったクラッシュがレポートされる原因
+## 誤ったクラッシュが報告される原因
 
 1. Android Studio などの IDE を使用してデバッグしている場合、アプリがフォアグラウンドにあるときに IDE からアプリを再度起動するとクラッシュが発生します。
 
