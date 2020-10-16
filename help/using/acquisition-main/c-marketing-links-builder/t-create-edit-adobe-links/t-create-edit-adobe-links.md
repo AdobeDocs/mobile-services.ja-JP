@@ -7,16 +7,16 @@ solution: Experience Cloud,Analytics
 title: マーケティングリンクの作成または編集
 topic: Metrics
 uuid: 305a8265-38de-4d19-8c79-b3912f5aae7c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '633'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 
-# マーケティングリンクの作成または編集{#create-or-edit-marketing-links}
+# マーケティングリンクの作成または編集 {#create-or-edit-marketing-links}
 
 マーケティングリンクを作成または編集して、モバイルアプリまたは Web サイトへのディープリンクを提供できます。詳しくは、「[Apple ユニバーサルリンクと Android アプリリンク](/help/using/c-manage-app-settings/c-mob-confg-app/c-universal-app-links.md)」を参照してください。
 
@@ -34,11 +34,11 @@ ht-degree: 94%
 
    * **[!UICONTROL 一意のトラッキングコード]**：
 
-      （**必須**）目的のトラッキングコードを指定するか、![生成アイコン](assets/icon_generate.png) をクリックして新しいトラッキングコードを作成します。トラッキングコードの使用を説明するレポートを表示できます。
+      （**必須**）目的のトラッキングコードを指定するか、（![生成アイコン](assets/icon_generate.png)）をクリックして新しいトラッキングコードを作成します。トラッキングコードの使用を説明するレポートを表示できます。
 
    * **[!UICONTROL トラッキングコンテキストデータを追加]**：
 
-      (**Optional**) Click the **[!UICONTROL +]** icon and type the relevant information to track your campaign using context data. **[!UICONTROL カスタムコンテキストデータ]**&#x200B;ドロップダウンリストで、プリセットタグまたはいずれかの独自のタグを選択します。コンテキストデータは、マーケティングリンクが表示される際のレポートに使用されます。
+      （**オプション**）**[!UICONTROL +]** アイコンをクリックし、コンテキストデータを使用してキャンペーンを追跡するための関連情報を入力します。**[!UICONTROL カスタムコンテキストデータ]**&#x200B;ドロップダウンリストで、プリセットタグまたはいずれかの独自のタグを選択します。コンテキストデータは、マーケティングリンクが表示される際のレポートに使用されます。
 
       次のプリセットタグを使用できます。
 
@@ -59,15 +59,15 @@ ht-degree: 94%
 
       詳しくは、「[インタースティシャル](/help/using/acquisition-main/c-marketing-links-builder/t-create-edit-adobe-links/t-interstitials.md)」または「[Apple ユニバーサルリンクと Android アプリリンク](/help/using/c-manage-app-settings/c-mob-confg-app/c-universal-app-links.md)」を参照してください。
 
-   * **（条件付き）****[!UICONTROL ユニバーサルリンクまたはアプリリンク]** が選択されている場合、**[!UICONTROL カスタムパス]**&#x200B;では、ユーザーは、クエリパラメーターと共に、ドメインに続いて URL パスを定義できます。詳しくは、「[Apple ユニバーサルリンクと Android アプリリンク](/help/using/c-manage-app-settings/c-mob-confg-app/c-universal-app-links.md)」を参照してください。
+   * **（条件付き）**「**[!UICONTROL ユニバーサルリンクまたはアプリリンク]**」 が選択されている場合、**[!UICONTROL カスタムパス]**&#x200B;では、ユーザーは、クエリパラメーターと共に、ドメインに続いて URL パスを定義できます。詳しくは、「[Apple ユニバーサルリンクと Android アプリリンク](/help/using/c-manage-app-settings/c-mob-confg-app/c-universal-app-links.md)」を参照してください。
 
 1. **[!UICONTROL ディープリンクインタースティシャルを編集]** をクリックして、リンクを設定します。
 
    （**オプション**）複数のリンク先がある場合、モバイルアプリをインストールしているかどうかに応じてユーザーをルーティングできます。アプリケーションがインストールされている場合は、インタースティシャルランディングページが表示されます。
 
-   For more information, see [Interstitials](/help/using/acquisition-main/c-marketing-links-builder/t-create-edit-adobe-links/t-interstitials.md).
+   詳しくは、「[インタースティシャル](/help/using/acquisition-main/c-marketing-links-builder/t-create-edit-adobe-links/t-interstitials.md)」を参照してください。
 
-1. **[!UICONTROL 保存]** をクリックしてから、**[!UICONTROL 次へ]** をクリックします。
+1. **[!UICONTROL 保存]**／**[!UICONTROL 次へ]**&#x200B;をクリックします。
 1. リンク先ページで、リンクを設定します。
 
    1. **[!UICONTROL 決定]**&#x200B;アイコン（![決定アイコン](assets/icon_decision.png)）をクリックして、次のいずれかの決定の場所を選択します。
@@ -80,7 +80,7 @@ ht-degree: 94%
 
          サポートされるオペレーティングシステムには、iOS、Android、AMX などが含まれます。
 
-      * **[!UICONTROL Device Type]**
+      * **[!UICONTROL デバイスタイプ]**
 
          デバイスタイプには、デスクトップ、電子書籍リーダー、ゲームコンソール、携帯電話、セットトップボックスなどのデバイスが含まれます。
    1. **[!UICONTROL リンク先]**&#x200B;アイコン（![正方形アイコン](assets/icon_square.png)）をクリックして、次のいずれかのリンク先タイプを選択します。
@@ -92,11 +92,11 @@ ht-degree: 94%
 
       >[!TIP]
       >
-      >アプリストアへのリンクのリンク先タイプとして **[!UICONTROL Web リンク]** を使用すると、獲得が計測されません。獲得を計測するには、**[!UICONTROL アプリストア]** をリンク先のタイプとして使用します。
+      >アプリストアへのリンクのリンク先タイプとして **[!UICONTROL Web リンク]**&#x200B;を使用すると、獲得が計測されません。獲得を計測するには、**[!UICONTROL アプリストア]**&#x200B;をリンク先のタイプとして使用します。
 
       詳しくは、「[新しいリンク先を作成する](/help/using/acquisition-main/c-manage-link-destinations/t-create-new-app-deep-link-destination.md)」を参照してください。
 
 
 
 
-1. マーケティングリンクを保存するには、「![省略記号](assets/icon_elipses.png)」をクリックしてから、**[!UICONTROL 保存]** をクリックします。
+1. マーケティングリンクを保存するには、「![省略記号](assets/icon_elipses.png)」をクリックしてから、「**[!UICONTROL 保存]**」をクリックします。
