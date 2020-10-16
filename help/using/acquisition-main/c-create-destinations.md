@@ -7,16 +7,16 @@ solution: Experience Cloud,Analytics
 title: 宛先
 topic: Metrics
 uuid: 0e0e7d22-067c-4a59-abcb-a4826800944d
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '195'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
 
-# 宛先{#destinations}
+# 宛先 {#destinations}
 
 マーケターは、トラッキング可能なマーケティングリンクの構築中に使用できるリンク先（Web、ディープリンクまたはその他のリンクなど）を作成、保存および編集できます。
 
@@ -30,7 +30,7 @@ ht-degree: 79%
 
 * **[!UICONTROL Web リンク]**
 
-   Webリンク先は、特定のURLにユーザーを誘導します。 例えば、オンライン小売業者のWebサイト上の製品ラインにユーザーを誘導できます。
+   Web リンクの宛先は、特定の URL にユーザーを誘導します。例えば、ユーザーをオンライン小売業者の Web サイトにある製品ラインに誘導できます。
 
    >[!IMPORTANT]
    >
@@ -40,4 +40,4 @@ ht-degree: 79%
 
    ハイブリッドリンクは、iOS Universal Links または Android App Links をサポートします。
 
-各タイプのリンクの作成方法について詳しくは、「新しいリンク先を [作成する](/help/using/acquisition-main/c-manage-link-destinations/t-create-new-app-deep-link-destination.md)」を参照してください。
+各タイプのリンクの作成方法について詳しくは、「[新しいリンク先の作成](/help/using/acquisition-main/c-manage-link-destinations/t-create-new-app-deep-link-destination.md)」を参照してください。
