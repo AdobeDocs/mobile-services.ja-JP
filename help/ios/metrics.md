@@ -1,21 +1,21 @@
 ---
-description: 次の表に、ライフサイクルが実装された後、モバイルライブラリによって自動的に測定される指標とディメンションを示します。
-seo-description: 次の表に、ライフサイクルが実装された後、モバイルライブラリによって自動的に測定される指標とディメンションを示します。
+description: 以下の表に、ライフサイクルを実装した後、モバイルアリブラリで自動的に測定可能な指標とディメンションを示します。
+seo-description: 以下の表に、ライフサイクルを実装した後、モバイルアリブラリで自動的に測定可能な指標とディメンションを示します。
 seo-title: ライフサイクル指標
 solution: Experience Cloud,Analytics
 title: ライフサイクル指標
 topic: Developer and implementation
 uuid: b795e383-d59b-4a3c-9e14-ffe8fb58412c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1108'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
 
-# ライフサイクル指標{#lifecycle-metrics}
+# ライフサイクル指標 {#lifecycle-metrics}
 
 ライフサイクル実装後にモバイルライブラリで自動的に測定できる指標とディメンションの一覧を示します。
 
@@ -100,92 +100,92 @@ Analytics の場合、各ライフサイクルトラッキングコールとと�
 
    インストール後の初回起動日。日付の形式は `MM/DD/YYYY` です。
 
-   * Analytics コンテキストデータ／Target: `a.InstallDate`
-   * Audience Management: `c_a_InstallDate`
+   * Analytics コンテキストデータ／Target：`a.InstallDate`
+   * Audience Management：`c_a_InstallDate`
 
 * **アプリ ID**
 
    アプリケーションの名前とバージョンを `[AppName] [BundleVersion]` 形式で格納します。例：`myapp 1.1`。
 
-   * Analytics コンテキストデータ／Target: `a.AppID`
-   * Audience Management: `c_a_AppID`
+   * Analytics コンテキストデータ／Target：`a.AppID`
+   * Audience Management：`c_a_AppID`
 
 * **起動回数**
 
    アプリケーションが起動したか、またはバックグラウンドから復帰した回数。
 
-   * Analytics コンテキストデータ／Target: `a.Launches`
-   * Audience Management: `c_a_Launches`
+   * Analytics コンテキストデータ／Target：`a.Launches`
+   * Audience Management：`c_a_Launches`
 
 * **初回使用からの日数**
 
    初回起動時からの日数。
 
-   * Analytics コンテキストデータ／Target: `a.DaysSinceFirstUse`
-   * Audience Management: `c_a_DaysSinceFirstUse`
+   * Analytics コンテキストデータ／Target：`a.DaysSinceFirstUse`
+   * Audience Management：`c_a_DaysSinceFirstUse`
 
 * **前回使用からの日数**
 
    前回使用時からの経過日数。
 
-   * Analytics コンテキストデータ／Target: `a.DaysSinceLastUse`
-   * Audience Management: `c_a_DaysSinceLastUse`
+   * Analytics コンテキストデータ／Target：`a.DaysSinceLastUse`
+   * Audience Management：`c_a_DaysSinceLastUse`
 
 * **時刻**
 
-   アプリが起動された時間を測定し、24時間形式を使用します。 利用のピーク時間を判定するために使用します。
+   アプリケーションが起動された時間を測定します。24 時間形式が使用されます。利用のピーク時間を判定するために使用します。
 
-   * Analytics コンテキストデータ／Target: `a.HourOfDay`
-   * Audience Management: `c_a_HourOfDay`
+   * Analytics コンテキストデータ／Target：`a.HourOfDay`
+   * Audience Management：`c_a_HourOfDay`
 
 * **曜日**
 
    アプリケーションが起動された曜日を表す数値。
 
-   * Analytics コンテキストデータ／Target: `a.DayOfWeek`
-   * Audience Management: `c_a_DayOfWeek`
+   * Analytics コンテキストデータ／Target：`a.DayOfWeek`
+   * Audience Management：`c_a_DayOfWeek`
 
 * **オペレーティングシステムのバージョン**
 
    アプリのバージョン番号が変更されてからの日数。
 
-   * Analytics コンテキストデータ／Target: `a.OSVersion`
-   * Audience Management: `c_a_OSVersion|OS version`
+   * Analytics コンテキストデータ／Target：`a.OSVersion`
+   * Audience Management：`c_a_OSVersion|OS version`
 
 * **前回アップグレードからの日数**
 
    前回アップグレードからの日数。
 
-   * Analytics コンテキストデータ／Target: `a.DaysSinceLastUpgrade`
-   * Audience Management: `c_a_DaysSinceLastUpgrade`
+   * Analytics コンテキストデータ／Target：`a.DaysSinceLastUpgrade`
+   * Audience Management：`c_a_DaysSinceLastUpgrade`
 
 * **前回アップグレードからの起動回数**
 
    アプリのバージョン番号が変更されてからの起動回数。
 
-   * Analytics コンテキストデータ／Target: `a.LaunchesSinceUpgrade`
-   * Audience Management: `c_a_LaunchesSinceUpgrade`
+   * Analytics コンテキストデータ／Target：`a.LaunchesSinceUpgrade`
+   * Audience Management：`c_a_LaunchesSinceUpgrade`
 
 * **デバイス名**
 
-   デバイス名が格納されます。iOSデバイスを識別する、コンマ区切りの2桁の文字列。 最初の番号は通常、デバイスの世代を表します。次の番号は通常、デバイスファミリー内の個々のメンバーのバージョン番号です。一般的なデバイス名の一覧は、    iOS デバイスのバージョンを参照してください。
+   デバイス名が格納されます。iOS デバイスを識別するコンマ区切りの 2 桁の文字列。最初の番号は通常、デバイスの世代を表します。次の番号は通常、デバイスファミリー内の個々のメンバーのバージョン番号です。一般的なデバイス名の一覧は、  iOS デバイスのバージョンを参照してください。
 
-   * Analytics コンテキストデータ／Target: `a.DeviceName`
-   * Audience Management: `c_a_DeviceName`
+   * Analytics コンテキストデータ／Target：`a.DeviceName`
+   * Audience Management：`c_a_DeviceName`
 
 * **通信事業者名**
 
    デバイスによって提供された携帯キャリアの名前が格納されます。
 
-   * Analytics コンテキストデータ／Target: `a.CarrierName`
-   * Audience Management: `c_a_CarrierName`
+   * Analytics コンテキストデータ／Target：`a.CarrierName`
+   * Audience Management：`c_a_CarrierName`
 
 * **解像度**
 
    実際のピクセル単位での幅 x 高さ。
 
-   * Analytics コンテキストデータ／Target: `a.Resolution`
-   * Audience Management: `c_a_Resolution`
+   * Analytics コンテキストデータ／Target：`a.Resolution`
+   * Audience Management：`c_a_Resolution`
    >[!IMPORTANT]
    >
    >*前回アップグレードからの日数*、*前回アップグレードからの起動回数*、および&#x200B;*通信事業者名*&#x200B;ディメンションは、Analytics 変数に自動的には保存されません。レポート用にこの値を Analytics 変数にコピーする処理ルールを作成する必要があります。
@@ -286,7 +286,7 @@ Analytics の場合、各ライフサイクルトラッキングコールとと�
 
 * **トラッキングコード**
 
-   モバイルアプリの獲得によって設定されます。Adobeのモバイルサービスによって自動的に生成されます。
+   モバイルアプリの獲得によって設定されます。Adobe Mobile Services によって自動的に生成されます。
 
    * Analytics コンテキストデータ／Target パラメーター：`a.referrer.campaign.trackingcode`
    * Audience Management の特性：`c_a_referrer_campaign_trackingcode`
@@ -300,28 +300,28 @@ Analytics の場合、各ライフサイクルトラッキングコールとと�
 
 * **キャンペーンの内容**
 
-   リンクを表示したコンテンツの名前またはID。 モバイルアプリの獲得によって設定されます。
+   リンクを表示したコンテンツの名前または ID。モバイルアプリの獲得によって設定されます。
 
    * Analytics コンテキストデータ／Target パラメーター：`a.referrer.campaign.content`
    * Audience Management の特性：`c_a_referrer_campaign_content`
 
 * **キャンペーンのメディア**
 
-   マーケティングメディア（バナー、電子メールなど）。 モバイルアプリの獲得によって設定されます。
+   マーケティングメディア（バナー、電子メールなど）。モバイルアプリの獲得によって設定されます。
 
    * Analytics コンテキストデータ／Target パラメーター：`a.referrer.campaign.medium`
    * Audience Management の特性：`c_a_referrer_campaign_medium`
 
 * **キャンペーンのソース**
 
-   ニュースレターやソーシャルメディアネットワークなど、元の転送者。 モバイルアプリの獲得によって設定されます。
+   オリジナルリファラー（ニュースレターやソーシャルメディアネットワークなど）。モバイルアプリの獲得によって設定されます。
 
    * Analytics コンテキストデータ／Target パラメーター：`a.referrer.campaign.source`
    * Audience Management の特性：`c_a_referrer_campaign_source`
 
 * **キャンペーンのキーワード**
 
-   この獲得で追跡する有料キーワードまたはその他の用語。 モバイルアプリの獲得によって設定されます。
+   この獲得で追跡する有料キーワードまたはその他の用語。モバイルアプリの獲得によって設定されます。
 
    * Analytics コンテキストデータ／Target パラメーター：`a.referrer.campaign.term`
    * Audience Management の特性：`c_a_referrer_campaign_term`
