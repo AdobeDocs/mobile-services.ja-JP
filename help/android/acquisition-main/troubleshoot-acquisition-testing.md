@@ -6,16 +6,16 @@ seo-title: 獲得テストのトラブルシューティング
 solution: Experience Cloud,Analytics
 title: 獲得テストのトラブルシューティング
 topic: Developer and implementation
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '248'
 ht-degree: 100%
 
 ---
 
 
-# 獲得テストのトラブルシューティング{#troubleshoot-acquisition-testing}
+# 獲得テストのトラブルシューティング {#troubleshoot-acquisition-testing}
 
 このトピックでは、獲得テスト中に直面する可能性のある問題のトラブルシューティング方法について説明します。
 
