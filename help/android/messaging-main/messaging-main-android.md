@@ -1,16 +1,16 @@
 ---
-description: この情報は、Androidアプリでのメッセージの使用に役立ちます。
-seo-description: この情報は、Androidアプリでのメッセージの使用に役立ちます。
+description: Android アプリでメッセージを使用するのに役立つ情報です。
+seo-description: Android アプリでメッセージを使用するのに役立つ情報です。
 seo-title: メッセージの概要
 solution: Experience Cloud,Analytics
 title: メッセージの概要
 topic: Developer and implementation
 uuid: c6475ab4-015d-46b0-af28-5d0df3f4459e
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '127'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
