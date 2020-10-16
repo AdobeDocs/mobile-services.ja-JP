@@ -7,9 +7,9 @@ solution: Experience Cloud,Analytics
 title: PhoneGap プラグインのメソッド
 topic: Developer and implementation
 uuid: bd830fe5-804a-4d0a-bbb6-99a6d8da6a03
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1730'
 ht-degree: 100%
 
@@ -285,7 +285,7 @@ iOS PhoneGap プラグインメソッドを使用して、様々なタスクを�
 
 * **trackState**
 
-   オプションのコンテキストデータを使用してアプリの状態を追跡します。状態とは、アプリで使用可能なビューのことで、`home dashboard`、`app settings`、`cart` などがあります。これらの状態は Web サイト上のページによく似ており、`trackState` コールはページビュー数を増分します。cData は、コンテキストデータで送信されるキーと値のペアを持つ JSON オブジェクトです。
+   オプションのコンテキストデータを使用してアプリの状態を追跡します。状態とは、アプリで使用可能なビューのことで、`home dashboard`、`app settings`、`cart` などがあります。これらの状態は Web サイト上のページによく似ており、`trackState` コールにより、ページビュー数が増分されます。cData は、コンテキストデータで送信されるキーと値のペアを持つ JSON オブジェクトです。
 
    * このメソッドの構文を次に示します。
 
