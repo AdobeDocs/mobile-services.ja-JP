@@ -6,16 +6,16 @@ solution: Experience Cloud,Analytics
 title: ユーザーのオプトステータスの設定
 topic: Developer and implementation
 uuid: 44a09a25-93c6-4e1a-b69e-710018e8b6c3
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '270'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
 
-# ユーザーのオプトステータスの設定{#setting-the-user-s-opt-status}
+# ユーザーのオプトステータスの設定 {#setting-the-user-s-opt-status}
 
 この情報は、GDPR のデータ削除要求に対処する場合に役立ちます。
 
@@ -31,9 +31,9 @@ ht-degree: 84%
 
 * `setPrivacyStatus`メソッド。
 
-   この方法を使用してプライバシー設定を変更すると、この方法を使用して再び変更するか、アプリをアンインストールして再びインストールするまで、変更は永久的に反映されます。
+   この方法を使用してプライバシー設定を変更すると、この方法を使用して再び変更するか、アプリをアンインストールして再びインストールするまで、変更は永続的になります。
 
-   メソッドについて詳しくは、「 [設定メソッド](/help/ios/configuration/json-config/json-config.md)」を参照してください。
+   メソッドについて詳しくは、「[設定メソッド](/help/ios/configuration/json-config/json-config.md)」を参照してください。
 
 各プライバシーステータスに関する情報を次に示します。
 
@@ -48,8 +48,8 @@ ht-degree: 84%
 * **オプトアウト**
 
    * Analytics：ヒットが破棄されます。
-   * Target：mbox リクエストが許可されません。
-   * Audience Manager：シグナルと ID 同期が許可されません。
+   * Target：mbox リクエストは許可されません。
+   * Audience Manager：シグナルと ID 同期は許可されません。
    * JSON 設定ファイルの値：`optedout`
    * `setPrivacyStatus` の値：`ADBMobilePrivacyStatusOptOut`
 
