@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: bc11c1e7a4a11657ee89c40ddcbd37377ce50bb5
 workflow-type: tm+mt
 source-wordcount: '454'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ Adobe Experience Platform Mobile SDK に関する情報やドキュメントを�
 
 * iOS 8 以降がサポートされています。
 
-   iOS 11以降の場合は、SDKバージョン4.13.8以降 **が必要です** 。
+   iOS 11 以降の場合は、SDK バージョン 4.13.8 以降が&#x200B;**必要です**。
 
 * この SDK のバージョン 4.2 以降では、すべてのヒットが HTTP POST を使用して送信されるようになりました。
 
