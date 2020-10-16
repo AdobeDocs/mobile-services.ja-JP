@@ -7,11 +7,11 @@ solution: Experience Cloud,Analytics
 title: バージョン 3 の獲得のテスト
 topic: Developer and implementation
 uuid: 5e38b43d-389e-4412-99e5-3e6223b6ad28
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '820'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -22,9 +22,9 @@ ht-degree: 85%
 
 >[!IMPORTANT]
 >
->V3 での獲得とは、Adobe Mobile Services UI でダウンロード計測ビルダーを使用して作成したダウンロード計測用リンクを指します。この機能を使用するには、Android SDK 4.x forExperience Cloudソリューション4.6.0以降にアップグレードする必要があります。
+>V3 での獲得とは、Adobe Mobile Services UI でダウンロード計測ビルダーを使用して作成したダウンロード計測用リンクを指します。この機能を使用するには、Android SDK 4.x for Experience Cloud ソリューション 4.6.0 以降にアップグレードする必要があります。
 
-モバイルアプリがまだGoogle Playにない場合、キャンペーンリンクを作成する際に、目的のモバイルアプリを選択できます。 これは、ダウンロード計測用リンクをクリックした後にダウンロード計測用サーバーがリダイレクトするアプリにのみ影響しますが、リンクのテスト機能には影響しません。クエリ文字列パラメーターは、Google Play ストアに渡され、キャンペーンブロードキャストの一環としてインストール時にアプリに渡されます。ラウンドトリップモバイルアプリの獲得テストでは、このタイプのブロードキャストのシミュレーションが必要です。
+モバイルアプリがまだ Google Playにない場合、キャンペーンリンクを作成する際に、任意のモバイルアプリを宛先として選択できます。これは、ダウンロード計測用リンクをクリックした後にダウンロード計測用サーバーがリダイレクトするアプリにのみ影響しますが、リンクのテスト機能には影響しません。クエリ文字列パラメーターは、Google Play ストアに渡され、キャンペーンブロードキャストの一環としてインストール時にアプリに渡されます。ラウンドトリップモバイルアプリの獲得テストでは、このタイプのブロードキャストのシミュレーションが必要です。
 
 >[!IMPORTANT]
 >
@@ -97,7 +97,7 @@ Broadcast completed: result=0`
 
 `"Analytics - Received referrer information(<referrer content>)"   "Analytics - Trying to fetch referrer data from (acquisition end url)"; "Analytics - Received Referrer Data(<A JSON Response>)"`
 
-上記のログが表示されない場合は、手順6 ～ 12を実行したことを確認します。
+上記のログが表示されない場合は、手順 6 から 12 を実行したことを確認してください。
 
 次の表に、考えられるエラーに関する追加情報を示します。
 
@@ -111,16 +111,16 @@ Broadcast completed: result=0`
 
 次の情報に留意してください。
 
-* HTTP監視ツールを使用して獲得属性を検証することで、アプリから送信されるヒットを監視できます。
+* HTTP 監視ツールを使用して獲得属性を検証することで、アプリから送信されるヒットを監視できます。
 * `INSTALL_REFERRER` のブロードキャスト方法について詳しくは、Google Developers ガイドの [Google Play キャンペーン測定のテスト](https://developers.google.com/analytics/solutions/testing-play-campaigns)を参照してください。
 
-* Android 4.8.2での獲得に関するバグ修正がリリースされました。
+* Android 4.8.2 での獲得に関するバグ修正がリリースされました。
 
-   テストを行う前に、SDKを最新バージョンにアップグレードします。
+   テストを行う前に、SDK を最新バージョンにアップグレードしてください。
 
 * アドビが提供する `acquisitionTest.jar` Java ツールを使用して、一意の ID を取得し、インストールリファラーをブロードキャストできます。そのため、手順 3 ～ 12 における情報の取得に役立ちます。
 
-   **Javaツールのインストール**
+   **Java ツールのインストール**
 
 この Java ツールをインストールするには：
 
