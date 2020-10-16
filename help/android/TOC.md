@@ -2,12 +2,12 @@
 product: mobile-services
 audience: end-user
 user-guide-title: Mobile Services Android ガイド
-breadcrumb-title: Android Guide
-translation-type: ht
+breadcrumb-title: Androidガイド
+translation-type: tm+mt
 source-git-commit: 18ef20df0a32741685e35cee98a1adf4a1b823a1
-workflow-type: ht
-source-wordcount: '271'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '273'
+ht-degree: 99%
 
 ---
 
