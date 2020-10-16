@@ -1,24 +1,24 @@
 ---
-description: products変数は、処理ルールを使用して設定することはできません。 Mobile SDKでは、コンテキストデータパラメーターで特殊な構文を使用して、サーバーコールに製品を設定する必要があります。
+description: products 変数は、処理ルールを使用して設定することはできません。Mobile SDK では、コンテキストデータパラメーターで特殊な構文を使用して、サーバーコールで製品を設定する必要があります。
 keywords: android;library;mobile;sdk
-seo-description: products変数は、処理ルールを使用して設定することはできません。 Mobile SDKでは、コンテキストデータパラメーターで特殊な構文を使用して、サーバーコールに製品を設定する必要があります。
+seo-description: products 変数は、処理ルールを使用して設定することはできません。Mobile SDK では、コンテキストデータパラメーターで特殊な構文を使用して、サーバーコールで製品を設定する必要があります。
 seo-title: products 変数
 solution: Experience Cloud,Analytics
 title: products 変数
 topic: Developer and implementation
 uuid: f4484022-cb8b-4dea-9209-5a110ba607df
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '185'
-ht-degree: 48%
+ht-degree: 100%
 
 ---
 
 
-# products 変数{#products-variable}
+# products 変数 {#products-variable}
 
-products変数は、処理ルールを使用して設定することはできません。 Mobile SDKでは、コンテキストデータパラメーターで特殊な構文を使用して、サーバーコールに製品を設定する必要があります。
+products 変数は、処理ルールを使用して設定することはできません。Mobile SDK では、コンテキストデータパラメーターで特殊な構文を使用して、サーバーコールで製品を設定する必要があります。
 
 *product* 変数を設定するには、コンテキストデータキーを `"&&products"` に設定し、*products* 変数用に定義された構文を使用して値を設定します。
 
