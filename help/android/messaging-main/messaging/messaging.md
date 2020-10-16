@@ -1,23 +1,23 @@
 ---
-description: 解析データやイベントからトリガーされるアプリ内メッセージを配信できます。 実装後、メッセージはアプリに動的に配信され、コードを更新する必要はありません。
-seo-description: 解析データやイベントからトリガーされるアプリ内メッセージを配信できます。 実装後、メッセージはアプリに動的に配信され、コードを更新する必要はありません。
+description: 解析データやイベントからトリガーされるアプリ内メッセージを配信できます。実装後、メッセージはアプリへと動的に配信され、コードを更新する必要はありません。
+seo-description: 解析データやイベントからトリガーされるアプリ内メッセージを配信できます。実装後、メッセージはアプリへと動的に配信され、コードを更新する必要はありません。
 seo-title: アプリ内メッセージ
 solution: Experience Cloud,Analytics
 title: アプリ内メッセージ
 topic: Developer and implementation
 uuid: 351ee3d2-80b9-4f2d-9696-21f274d89f5a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '803'
-ht-degree: 61%
+ht-degree: 100%
 
 ---
 
 
 # アプリ内メッセージ {#in-app-messaging}
 
-解析データやイベントからトリガーされるアプリ内メッセージを配信できます。 実装後、メッセージはアプリに動的に配信され、コードを更新する必要はありません。
+解析データやイベントからトリガーされるアプリ内メッセージを配信できます。実装後、メッセージはアプリへと動的に配信され、コードを更新する必要はありません。
 
 ## 新しい Adobe Experience Cloud SDK リリース
 
@@ -27,7 +27,7 @@ Adobe Experience Platform Mobile SDK に関する情報やドキュメントを�
 >
 >2018 年 9 月に、SDK の新しいメジャーバージョンをリリースしました。これらの新しい Adobe Experience Platform Mobile SDK は、[Experience Platform Launch](https://www.adobe.com/jp/experience-platform/launch.html) から設定できます。
 
-* To get started, go to [Launch](https://launch.adobe.com/).
+* 利用を開始するには、[Launch](https://launch.adobe.com/) にアクセスしてください。
 * Experience Platform SDK リポジトリの内容については、[Github: Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks) を参照してください。
 
 >[!IMPORTANT]
@@ -36,9 +36,9 @@ Adobe Experience Platform Mobile SDK に関する情報やドキュメントを�
 
 >[!IMPORTANT]
 >
->To use in-app messaging, you **must** have SDK version 4.2 or later.
+>アプリ内メッセージを使用するには、SDK バージョン 4.2 以降が&#x200B;**必要**&#x200B;です。
 
-Adobeと、メッセージを表示するタイミングを定義するMobile Servicesのルールを作成できます。 For more information, see [Create an in-app message](/help/using/in-app-messaging/t-in-app-message/t-in-app-message.md). アプリ内メッセージを表示するには、SDKを更新する必要があります。 メッセージをまだ定義していない場合でも、これらの手順を実行できます。 定義したメッセージは、アプリに動的に配信され、アプリストアを更新しなくても表示されます。
+メッセージ自体と、Adobe Mobile Services でメッセージを表示するタイミングを定義するルールを作成できます。詳しくは、「[アプリ内メッセージの作成](/help/using/in-app-messaging/t-in-app-message/t-in-app-message.md)」を参照してください。アプリ内メッセージを表示するには、SDK を更新する必要があります。メッセージをまだ定義していない場合でも、これらの手順を実行できます。定義したメッセージは、アプリへと動的に配信され、アプリストアを更新しなくても表示されます。
 
 ## アプリ内メッセージの有効化 {#section_380DF56C4EE4432A823940E4AE4C9E91}
 
@@ -117,15 +117,15 @@ Adobeと、メッセージを表示するタイミングを定義するMobile Se
    }
    ```
 
-   このオブジェクトが設定されていない場合は、更新された `ADBMobileConfig.json` ファイルを Adobe Mobile Services からダウンロードしてください。詳しくは、[事前準備](/help/android/getting-started/requirements.md)を参照してください。
+   このオブジェクトが設定されていない場合は、更新された `ADBMobileConfig.json` ファイルを Adobe Mobile Services からダウンロードしてください。詳しくは、「[事前準備](/help/android/getting-started/requirements.md)」を参照してください。
 
-## アプリ内メッセージの追跡 {#section_B85CDF6929564AAEA79338B55E5CB1E8}
+## アプリ内メッセージのトラッキング {#section_B85CDF6929564AAEA79338B55E5CB1E8}
 
-AndroidモバイルSDKは、アプリ内メッセージに関する以下の指標を追跡します。
+Android Mobile SDK は、アプリ内メッセージに関する以下の指標を追跡します。
 
-* アプリ内メッセージのフルスクリーンおよび警告スタイルの場合：
+* アプリ内メッセージの全画面およびアラートスタイルの場合：
 
-   * **インプレッション**:ユーザーがアプリ内メッセージをトリガーしたとき。
+   * **インプレッション**：ユーザーがアプリ内メッセージをトリガーしたとき。
    * **クリックスルー**：ユーザーが&#x200B;**[!UICONTROL クリックスルー]**&#x200B;ボタンを押したとき。
    * **キャンセル**：ユーザーが&#x200B;**[!UICONTROL キャンセル]**&#x200B;を押したとき。
 
@@ -140,7 +140,7 @@ AndroidモバイルSDKは、アプリ内メッセージに関する以下の指�
 
 ## ローカルフォールバック画像 {#section_DEACC1CE549B4573B556A44A52409941}
 
-フルスクリーンメッセージを作成する場合、必要に応じてフォールバック画像を指定できます。 メッセージがWebから目的の画像を取得できない場合、SDKは、アプリケーションのアセットフォルダーから同じ名前の画像を読み込もうとします。 これにより、ユーザーがオフラインの場合や、事前に決められている画像が未到達の場合でも、メッセージを元の形式で表示できます。
+全画面メッセージを作成する際には、必要に応じてフォールバック画像を指定できます。メッセージが Web から目的の画像を取得できない場合、SDK は、アプリケーションのアセットフォルダーをから同じ名前の画像を読み込もうとします。これにより、ユーザーがオフラインの場合や、事前に定義されている画像にアクセスできない場合でも、メッセージを元の形式で表示できます。
 
 >[!IMPORTANT]
 >
@@ -152,7 +152,7 @@ AndroidモバイルSDKは、アプリ内メッセージに関する以下の指�
 
 * **Config.setSmallIconResourceId(int resourceId)**
 
-   SDKで作成される通知に使用する小さいアイコンを設定します。 このアイコンは、ステータスバーに表示され、ユーザーが通知センターで通知を完了したときに表示されるセカンダリイメージです。
+   SDK で作成される通知で使用する小アイコンを設定します。このアイコンはステータスバーに表示され、ユーザーが通知センターで完全な通知を表示する際に表示されるセカンダリ画像です。
 
    * このメソッドの構文を次に示します。
 
