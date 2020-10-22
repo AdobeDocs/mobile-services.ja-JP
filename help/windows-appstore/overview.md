@@ -6,9 +6,9 @@ solution: Experience Cloud,Analytics
 title: 'Experience Cloud ソリューション用 Windows 8.1 Universal アプリストア SDK 4.x '
 topic: Developer and implementation
 uuid: a06d8cf2-5d2d-49a8-86ac-102e2934ea59
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: bc11c1e7a4a11657ee89c40ddcbd37377ce50bb5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '234'
 ht-degree: 100%
 
