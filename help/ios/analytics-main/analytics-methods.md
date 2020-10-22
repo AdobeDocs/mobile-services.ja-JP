@@ -6,9 +6,9 @@ solution: Experience Cloud,Analytics
 title: Analytics メソッド
 topic: Developer and implementation
 uuid: d49fe6de-cb32-4b96-9891-c567310e59a6
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: bc11c1e7a4a11657ee89c40ddcbd37377ce50bb5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '784'
 ht-degree: 100%
 
@@ -125,7 +125,7 @@ SDK は現在、Analytics、Target、Audience Manager、Adobe Experience Platfor
 
 * **trackBeacon:&#x200B;data:**
 
-   ユーザーがいつビーコンの Proximit (圏内) に入ったかを追跡します。
+   ユーザーがいつビーコンの Proximity (圏内) に入ったかを追跡します。
 
    * このメソッドの構文を次に示します。
 
