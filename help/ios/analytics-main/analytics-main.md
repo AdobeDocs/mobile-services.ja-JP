@@ -6,9 +6,9 @@ solution: Experience Cloud,Analytics
 title: Analytics の概要
 topic: Developer and implementation
 uuid: 8c7fb76a-be0b-4465-8151-ece7bad11b55
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: bc11c1e7a4a11657ee89c40ddcbd37377ce50bb5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '322'
 ht-degree: 100%
 
@@ -42,4 +42,4 @@ SDK では、識別子を使用してユーザーを追跡します。識別子�
 
 AID はトラッキング識別子とも呼ばれ、アプリが MID を使用するように設定されていない場合に SDK によって生成されます。その値は、起動からアプリのアップグレードまでの間、`NSUserDefaults` で保持されます。ユーザーがデバイスからアプリを削除してから再インストールした場合、またはアプリ開発者が `NSUserDefaults` をクリアした場合、SDK によって新しい識別子が生成されます。このプロセスにより、Analytics レポートに新しいユーザーが作成されます。
 
-ID サービスのサポート（MID）を導入するアプリのユーザーの場合、既存の AID 値が Analytics のヒットと共に送信され、Analytics のヒットには AID と MID が含まれます。ID サービスがサポートされるアプリの新規ユーザーの場合、Analytics リクエストには MID のみが含まれます。訪問者の識別について詳しくは、「[訪問者の識別](https://docs.adobe.com/content/help/ja-JP/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-visid.html)」を参照してください。
+ID サービスのサポート（MID）を導入するアプリのユーザーの場合、既存の AID 値が Analytics のヒットと共に送信され、Analytics のヒットには AID と MID が含まれます。ID サービスがサポートされるアプリの新規ユーザーの場合、Analytics リクエストには MID のみが含まれます。訪問者の識別について詳しくは、「[訪問者の識別](https://docs.adobe.com/content/help/ja-JP/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-calculate.html)」を参照してください。
