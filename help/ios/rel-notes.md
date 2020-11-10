@@ -6,11 +6,11 @@ solution: Experience Cloud,Analytics
 title: リリースノート
 topic: Developer and implementation
 uuid: e1613dc5-02a4-43a7-997a-29b4de98b4d1
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 6c8020b88d22489f86853274d29dbceee504aa06
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '469'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -19,10 +19,10 @@ ht-degree: 89%
 
 Experience Cloud ソリューション用 iOS SDK 4.x のリリースノート、既知の問題およびホットフィックス情報を次に示します。
 
-**2020年11月4日：バージョン4.20.0**
+**2020 年 11 月 5 日：バージョン 4.20.0**
 
-* 訪問者IDサービス — 広告トラッキングが有効/無効にされた後にsetAdvertisingIdentifierが呼び出された場合に、device_consentステータスパラメーターが追加されました。
-* 解析 — iAd.frameworkがリンクされ、デバイスで「制限付き広告追跡」が有効になっている場合に、Analyticsのヒットがインストール時に送信されないバグが修正されました。
+* 訪問者 ID サービス - 広告トラッキングが有効化／無効化された後で setAdvertisingIdentifier が呼び出された際の、device_consent ステータスパラメーターを追加しました。
+* Analytics - iAd.framework がリンクされ、デバイスで「制限付き広告トラッキング」が有効になっている場合、インストール時に Analytics のヒットが送信されないバグを修正しました。
 
 **2020 年 7 月 16 日：バージョン 4.19.3**
 
