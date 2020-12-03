@@ -7,9 +7,9 @@ solution: Experience Cloud,Analytics
 title: パスレポートの表示
 topic: Reports,Metrics
 uuid: bc73edce-0cc0-4349-9a48-e0a40cbe1b67
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '522'
 ht-degree: 100%
 
