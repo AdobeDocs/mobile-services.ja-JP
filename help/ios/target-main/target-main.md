@@ -6,9 +6,9 @@ solution: Experience Cloud,Analytics
 title: Target
 topic: Developer and implementation
 uuid: c2b134bb-1c29-4617-bd9e-fa3940483361
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '124'
 ht-degree: 100%
 
