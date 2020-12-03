@@ -7,9 +7,9 @@ solution: Experience Cloud,Analytics
 title: SDK Analytics オプションの設定
 topic: Metrics
 uuid: fd3a21d2-6560-4e96-92fe-b99caac5e834
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '390'
 ht-degree: 100%
 
