@@ -7,9 +7,9 @@ solution: Experience Cloud,Analytics
 title: ダウンロード計測用リンクの削除
 topic: Metrics
 uuid: e7362348-ca24-4f1c-b37f-eca6d2b0da6d
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '106'
 ht-degree: 100%
 
