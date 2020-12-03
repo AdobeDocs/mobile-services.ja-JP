@@ -5,9 +5,9 @@ seo-title: ディープリンクの追跡
 solution: Experience Cloud,Analytics
 title: ディープリンクの追跡
 uuid: 08dc2820-7fd3-419f-ac2d-dcf12532578a
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '321'
 ht-degree: 100%
 
