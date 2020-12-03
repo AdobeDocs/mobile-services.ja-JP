@@ -5,9 +5,9 @@ seo-title: 従来の獲得のテスト
 solution: Experience Cloud,Analytics
 title: 従来の獲得のテスト
 uuid: e0591f4a-e26b-4fe4-97c1-a6831a926fa5
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '272'
 ht-degree: 100%
 
