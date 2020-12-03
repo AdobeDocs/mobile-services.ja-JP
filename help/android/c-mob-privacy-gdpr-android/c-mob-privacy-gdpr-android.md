@@ -4,8 +4,11 @@ seo-description: データ管理事業者は Experience Cloud Mobile SDK で提�
 seo-title: プライバシーと EU 一般データ保護規則の概要
 title: プライバシーと EU 一般データ保護規則の概要
 uuid: 56d6f155-efec-4b3f-a972-a63155729167
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 718e336b9002fe3d5282697d4302d12a89297181
+workflow-type: tm+mt
+source-wordcount: '361'
+ht-degree: 78%
 
 ---
 
@@ -16,7 +19,7 @@ source-git-commit: 718e336b9002fe3d5282697d4302d12a89297181
 
 ## 新しい Adobe Experience Platform Mobile SDK リリース
 
-Adobe Experience Platform Mobile SDK に関する情報やドキュメントをお探しの場合、最新のドキュメントについては、[こちら](https://aep-sdks.gitbook.io/docs/)をクリックしてください。
+Adobe Experience Platform Mobile SDK に関する情報やドキュメントをお探しの場合[こちら](https://aep-sdks.gitbook.io/docs/)をクリックし、最新のドキュメントを参照してください。
 
 2018 年 9 月に、SDK の新しいメジャーバージョンをリリースしました。これらの新しい Adobe Experience Platform Mobile SDK は、[Experience Platform Launch](https://www.adobe.com/jp/experience-platform/launch.html) から設定できます。
 
@@ -29,9 +32,9 @@ Adobe Experience Platform Mobile SDK に関する情報やドキュメントを�
 >
 >GDPR は Mobile SDK バージョン 4.16.0 以降で&#x200B;**のみ**&#x200B;サポートされています。
 
-アドビが企業に対してソフトウェアやサービスを提供する場合、アドビはサービス提供の一環として同社が処理または保管する個人データのデータ処理事業者に該当します。データ処理事業者に位置付けられるアドビはお客様の許可と指示（アドビとお客様の間で定められた合意など）に基づき個人データを処理します。
+Adobeが企業にソフトウェアやサービスを提供する場合、Adobeは、個人データの処理や保存の一環として、個人データのデータ処理装置としての役割を果たします。 データ処理装置として、Adobeは、会社の許可と指示に従って個人データを処理します(例えば、Adobeとの契約に基づいて設定されたもの)。
 
-データ管理事業者に位置付けられるお客様は Adobe Mobile Services SDK を使用することでお客様のモバイルアプリケーションから送信された GDPR 取得要求や GDPR 削除要求に対処できます。
+データコントローラーは、AdobeMobile Services SDKを使用して、GDPRによるモバイルアプリの取得および削除のリクエストをサポートできます。
 
 モバイルアプリケーションの Adobe Mobile SDK 部分に関しては、次の設定とメソッドを使用できます。
 
