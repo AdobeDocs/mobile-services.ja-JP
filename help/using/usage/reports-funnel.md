@@ -7,9 +7,9 @@ solution: Experience Cloud,Analytics
 title: ファネルレポート
 topic: Reports,Metrics
 uuid: 268b4ab9-2e29-4423-9f79-ad93f5231ede
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '522'
 ht-degree: 100%
 
