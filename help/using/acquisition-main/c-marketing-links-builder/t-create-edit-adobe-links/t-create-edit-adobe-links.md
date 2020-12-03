@@ -7,9 +7,9 @@ solution: Experience Cloud,Analytics
 title: マーケティングリンクの作成または編集
 topic: Metrics
 uuid: 305a8265-38de-4d19-8c79-b3912f5aae7c
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '633'
 ht-degree: 100%
 
