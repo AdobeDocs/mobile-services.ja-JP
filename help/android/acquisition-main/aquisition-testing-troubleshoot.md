@@ -5,9 +5,9 @@ seo-description: 次の情報は、獲得テストの問題のトラブルシュ
 seo-title: 獲得テストのトラブルシューティング
 solution: Experience Cloud,Analytics
 title: 獲得テストのトラブルシューティング
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '251'
 ht-degree: 100%
 
