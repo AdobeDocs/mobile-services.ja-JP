@@ -1,18 +1,21 @@
 ---
-description: .xml ファイルと直接置き換えることによって、TVML／TVJS アプリで Adobe Target を利用できます。カスタムの ADBTarget XML 要素を使用して、Target コンテンツで置き換えるページのエリアを指定します。
-seo-description: .xml ファイルと直接置き換えることによって、TVML／TVJS アプリで Adobe Target を利用できます。カスタムの ADBTarget XML 要素を使用して、Target コンテンツで置き換えるページのエリアを指定します。
+description: .xmlファイルを直接置き換えることで、TVML/TVJSアプリでAdobe Targetを活用できます。 カスタムのADBTarget XML要素を使用して、ターゲットコンテンツに置き換えるページ領域を指定します。
+seo-description: .xmlファイルを直接置き換えることで、TVML/TVJSアプリでAdobe Targetを活用できます。 カスタムのADBTarget XML要素を使用して、ターゲットコンテンツに置き換えるページ領域を指定します。
 seo-title: TVML／TVJS 対応の Adobe Target
 title: TVML／TVJS 対応の Adobe Target
 uuid: afd5a583-5266-43f2-8cb0-0ace89c53a57
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+workflow-type: tm+mt
+source-wordcount: '502'
+ht-degree: 70%
 
 ---
 
 
 # TVML／TVJS 対応の Adobe Target{#adobe-target-for-tvml-tvjs}
 
-.xml ファイルと直接置き換えることによって、TVML／TVJS アプリで Adobe Target を利用できます。カスタムの ADBTarget XML 要素を使用して、Target コンテンツで置き換えるページのエリアを指定します。
+.xmlファイルを直接置き換えることで、TVML/TVJSアプリでAdobe Targetを活用できます。 カスタムのADBTarget XML要素を使用して、ターゲットコンテンツに置き換えるページ領域を指定します。
 
 >[!IMPORTANT]
 >
@@ -111,7 +114,7 @@ Target から返されたコンテンツで、`<ADBTarget>` と `</ADBTarget>` �
 
 #### landingPage.xml.js の設定
 
-* landingPage.xml.js の設定を以下に示します。
+* landingPage.xml.jsの設定を次に示します。
 
    ```js
    <alertTemplate> 
@@ -122,7 +125,7 @@ Target から返されたコンテンツで、`<ADBTarget>` と `</ADBTarget>` �
    </alertTemplate> 
    ```
 
-* Target へのリクエストが成功し、オファーコンテンツが返された場合、ページは次のようになります。
+* ターゲットへのリクエストが成功し、オファーのコンテンツが返された場合、ページの結果は次のようになります。
 
    ```objective-c
    <alertTemplate> 
@@ -131,7 +134,7 @@ Target から返されたコンテンツで、`<ADBTarget>` と `</ADBTarget>` �
    </alertTemplate>
    ```
 
-* Target サーバーに到達できなかったり、リクエストがタイムアウトした場合、ページは次のようになります。
+* ターゲットサーバーに到達できない場合、または要求がタイムアウトした場合、ページは次の結果になります。
 
    ```objective-c
    <alertTemplate> 
