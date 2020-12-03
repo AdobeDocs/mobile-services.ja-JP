@@ -7,9 +7,9 @@ solution: Experience Cloud,Analytics
 title: アプリ設定
 topic: Metrics
 uuid: 2ca93f92-f812-434c-add0-5bdf1442eb20
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '88'
 ht-degree: 100%
 
