@@ -6,9 +6,9 @@ solution: Experience Cloud,Analytics
 title: 4.x iOS ライブラリへの移行
 topic: Developer and implementation
 uuid: 5668972b-f355-4e03-9df0-8c82ddf6809b
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '895'
 ht-degree: 100%
 
