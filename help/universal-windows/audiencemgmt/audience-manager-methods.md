@@ -15,7 +15,7 @@ ht-degree: 43%
 ---
 
 
-# Audience Manager メソッド{#audience-manager-methods}
+# Audience Manager メソッド {#audience-manager-methods}
 
 ユニバーサルWindowsプラットフォームライブラリが提供するAudience Managerメソッドのリスト。
 
