@@ -1,35 +1,38 @@
 ---
-description: 画像ファイルを Apple の通知に添付することができます。視覚的なコンポーネントを追加することによって、ユーザーのプッシュ通知とのエンゲージメントを大幅に向上させることができます。
-seo-description: 画像ファイルを Apple の通知に添付することができます。視覚的なコンポーネントを追加することによって、ユーザーのプッシュ通知とのエンゲージメントを大幅に向上させることができます。
+description: 画像ファイルをAppleの通知に添付できます。 ビジュアルコンポーネントを追加すると、プッシュ通知を使用したユーザーの関与が大幅に増加する可能性があります。
+seo-description: 画像ファイルをAppleの通知に添付できます。 ビジュアルコンポーネントを追加すると、プッシュ通知を使用したユーザーの関与が大幅に増加する可能性があります。
 seo-title: リッチプッシュ通知の受信
 title: リッチプッシュ通知の受信
 uuid: 0dbda409-cf49-4eb8-90ee-baf27911dc07
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
+workflow-type: tm+mt
+source-wordcount: '228'
+ht-degree: 35%
 
 ---
 
 
 # リッチプッシュ通知の受信{#receive-rich-push-notifications}
 
-画像ファイルを Apple の通知に添付することができます。視覚的なコンポーネントを追加することによって、ユーザーのプッシュ通知とのエンゲージメントを大幅に向上させることができます。
+画像ファイルをAppleの通知に添付できます。 ビジュアルコンポーネントを追加すると、プッシュ通知を使用したユーザーの関与が大幅に増加する可能性があります。
 
-リッチプッシュ通知を iOS アプリで受信するには：
+iOSアプリでリッチプッシュ通知を受信するには：
 
 1. アプリにプッシュメッセージを実装するため、[プッシュメッセージ](/help/ios/messaging-main/push-messaging/push-messaging.md)の手順を完了します。
 1. テキストのプッシュメッセージをアプリに送信できることを確認します。
-1. 以下の手順を実行して、Notification Service Extension を追加します。
+1. Notification Service追加の拡張機能を使用するには、次の手順を実行します。
 
-   1. Xcode プロジェクトで、**[!UICONTROL File]**／**[!UICONTROL New]**／**[!UICONTROL Target]** を選択します。
+   1. In your Xcode project, select  **[!UICONTROL File]** > **[!UICONTROL New]** > **[!UICONTROL Target]**.
    1. **[!UICONTROL Notification Service Extension]** を選択します。
    1. `NotificationService.m` ファイルが存在することを確認します。
 
 1. `NotificationService.m` ファイルを開き、以下の Delegate メソッドが存在することを確認します。
 
-   * 通知リクエストを受信する 1 つのメソッド。
-   * サービスエクステンションの有効期限を扱う 1 つのメソッド。
+   * 通知要求を受け取る1つのメソッド。
+   * サービス拡張の有効期限を処理する1つのメソッド。
 
-      リッチプッシュ通知を受信するには、最初のメソッドを使用します。
+      リッチプッシュ通知を受信するには、最初の方法を使用します。
 
       ```objective-c
       (void)didReceiveNotificationRequest:(UNNotificationRequest *)request withContentHandler:(void (^)(UNNotificationContent *contentToDeliver))contentHandler;
@@ -72,4 +75,4 @@ source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
       ```
 
 
-iOS を使用したリッチプッシュ通知について詳しくは、[UNNotificationAttachment](https://developer.apple.com/documentation/usernotifications/unnotificationattachment) を参照してください。
+For more information about rich push notifications with iOS, see [UNNotificationAttachment](https://developer.apple.com/documentation/usernotifications/unnotificationattachment).
