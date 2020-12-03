@@ -6,9 +6,9 @@ solution: Experience Cloud,Analytics
 title: TVJS メソッド
 topic: Developer and implementation
 uuid: a7bfa85a-0d6e-4f51-9a9e-70429c2a9806
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2013'
 ht-degree: 100%
 
