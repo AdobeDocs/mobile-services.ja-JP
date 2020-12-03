@@ -4,8 +4,11 @@ seo-description: 仮想レポートスイート（VRS）は、1 つまたは複�
 seo-title: 仮想レポートスイート
 title: 仮想レポートスイート
 uuid: 3f467cad-43e7-4cd0-889b-89f8c61febbd
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
+workflow-type: tm+mt
+source-wordcount: '1055'
+ht-degree: 77%
 
 ---
 
@@ -17,12 +20,12 @@ source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
 VRS を使用するアプリは、次の機能の管理を除いて、通常のレポートスイートを使用するアプリと同じ機能です。
 
 * 処理ルール
-* evars/props/listvars/events
+* evars/props/listvars/イベント
 * タイムスタンプ対応オプション
-* ディメンションフラグ（ライフサイクル、ロケーションなど）
-* 分類 
+* Dimensionフラグ（ライフサイクル、場所など）
+* 分類
 
-これらの値は、親レポートスイートで管理され、同じ親レポートスイートに属する VRS と共有されます。
+これらの値は親レポートスイートで管理され、同じ親レポートスイートに属するVRSと共有されます。
 
 次の領域は、親レポートスイートとは独立して、Adobe Mobile Services UI でアクセスできます。
 
@@ -37,7 +40,7 @@ VRS は、次のタスクを実行するのに役立ちます。
 
 * データアクセスの制限
 
-   ある多国籍企業には、すべての地域用の 1 つのレポートスイートにデータを送信するアプリがあります。ただし、その企業はビジネスユーザーを 1 つの地域に制限して、別の地域のデータを表示できないようにしたいと考えています。会社の管理者は、ユーザーを地域でセグメント化する VRS を作成して、その地域を管理するビジネスユーザーに対する VRS にのみ権限を付与できます。
+   複数国籍の会社には、すべての地域に関するデータをレポートスイートに送信するアプリがあります。 ただし、その企業はビジネスユーザーを 1 つの地域に制限して、別の地域のデータを表示できないようにしたいと考えています。会社の管理者は、ユーザーを地域でセグメント化する VRS を作成して、その地域を管理するビジネスユーザーに対する VRS にのみ権限を付与できます。
 
    この制限は、ビジネスユーザーが自分の地域と無関係のデータを表示できないようにします。例えば、EMEA のビジネスユーザーは、APAC 地域のデータを確認する必要はありません。
 
@@ -55,13 +58,13 @@ VRS は、次のタスクを実行するのに役立ちます。
 
 各 VRS には一意の ID があります。親レポートスイート ID を Adobe Mobile Services UI で表示するには、アプリ設定ページの **[!UICONTROL アプリ情報]** セクションで、**[!UICONTROL さらに詳細を表示]** をクリックします。
 
-Adobe Mobile Services UI で、VRS を使用して、組織の特定のグループに対するアプリおよびセグメントデータを作成できます。これにより、例えば、スペインのビジネスユーザーは、日本のビジネスユーザーに関連するデータを確認できません。
+AdobeのMobile Services UIでは、VRSを使用してアプリを作成し、データを組織内の特定のグループにセグメント化できます。 例えば、スペインのビジネスユーザーは、日本のビジネスユーザーに関連するデータを見ることができません。
 
 >[!TIP]
 >
 >親レポートスイートから継承された値は変更できません。
 
-VRS は、親レポートスイートに添付されたサーバー側セグメント定義です。SDK は親レポートスイートにのみヒットを送信し、次々にヒットを記録するので、結果として、VRS に対するデータ収集を実行できません。
+VRSは、親レポートスイートに関連付けられるサーバー側のセグメント定義です。 その結果、SDKは親レポートスイートにのみヒットを送信し、その親レポートスイートはヒットを記録するので、VRSに対してデータ収集を実行できません。
 
 ## Adobe Mobile Services の仮想レポートスイートとデータ収集 {#section_8ED8FBA5B44044D9ABC2151A39C577D4}
 
@@ -71,7 +74,7 @@ Adobe Mobile Services では、親レポートスイートまたは仮想レポ�
 >
 >プッシュ証明書は、Mobile Services UI のアプリレベルで添付されます。
 
-プッシュメッセージが正しく送信されたことを確認するには、オーディエンスセグメントが適切に定義されている必要があります。詳しくは、「[オーディエンス：プッシュメッセージ用のオーディエンスセグメントの定義および設定](/help/using/in-app-messaging/t-create-push-message/c-audience-push-message.md)」を参照してください。
+プッシュメッセージが正しく送信されるように、オーディエンスセグメントを正しく定義する必要があります。 For more information, see [Audience: Define and Configure Audience Segments for Push Messages](/help/using/in-app-messaging/t-create-push-message/c-audience-push-message.md).
 
 ## タイムゾーンについて {#section_498E1EED22D741C3BDED44F01FACA72A}
 
@@ -83,7 +86,7 @@ Adobe Mobile Services では、親レポートスイートまたは仮想レポ�
 
 >[!IMPORTANT]
 >
->リストから VRS を選択するには、青い点が付き、`vrs_` *`<company_name>`* `_` *`<unique name>`* 命名規則を使用しているオプションを見つけます。
+>リストから VRS を選択するには、青い点が付き、`vrs_` *`<company_name>`*`_`*`<unique name>`*   命名規則を使用しているオプションを見つけます。
 
 ## 仮想レポートスイートのプロパティ {#section_20ECE6243F664C4FB4347ADB4FF0458A}
 
@@ -93,7 +96,7 @@ Adobe Mobile Services では、親レポートスイートまたは仮想レポ�
 >
 >読み取り専用プロパティは、親レポートスイートから継承されます。
 
-| プロパティ | 親レポートスイートから継承 | 編集可能？ | メモ |
+| プロパティ | 親レポートスイートから継承 | 編集可能？ | 備考 |
 |--- |--- |--- |--- |
 | `target.clientCode` | × | ○ |  |
 | `target.timeout` | × | ○ |  |
@@ -107,10 +110,10 @@ Adobe Mobile Services では、親レポートスイートまたは仮想レポ�
 | `analytics.ssl` | × | ○ |  |
 | `analytics.offlineEnabled` | ○ |  |  |
 | `analytics.charset` | ○ | × |  |
-| `analytics.lifecycleTimeout` | × | ○ | ユーザーがデータの不整合を避けたい場合、親レポートスイートである必要があります。 |
+| `analytics.lifecycleTimeout` | × | ○ | 親レポートスイートにする必要があります。 |
 | `analytics.privacyDefault` | × | ○ |  |
 | `analytics.batchLimit` | × | ○ |  |
-| `analytics.timezone` | ○ | ○（最初にアプリを作成する場合） | このタイムゾーンプロパティは、Adobe Analytics にデータを送信するために使用され、VRS の作成時に設定されたタイムゾーンプロパティとは異なります。 |
+| `analytics.timezone` | ○ | はい、最初にアプリを作成したとき。 | このタイムゾーンプロパティは、データをAdobe Analyticsに送信するために使用され、VRSの作成時に設定されるタイムゾーンプロパティとは異なります。 |
 | `analytics.timezoneOffset` | ○ | × |  |
 | `analytics.referrerTimeout` | × | ○ |  |
 | `analytics.backdateSessionInfo` | ○ | ○ |  |
