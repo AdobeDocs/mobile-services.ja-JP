@@ -293,7 +293,7 @@ experience cloudソリューション4.x SDK用のXamarinコンポーネント�
 
 * **TrackBeacon**
 
-   ユーザーがいつビーコンの Proximit (圏内) に入ったかを追跡します。
+   ユーザーがいつビーコンの Proximity (圏内) に入ったかを追跡します。
 
    * このメソッドの構文を次に示します。
 
