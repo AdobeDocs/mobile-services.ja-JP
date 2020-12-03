@@ -6,9 +6,9 @@ solution: Experience Cloud,Analytics
 title: イベントのシリアル化
 topic: Developer and implementation
 uuid: 19a27df4-0998-403d-800c-26ff61149208
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '104'
 ht-degree: 100%
 
