@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '898'
-ht-degree: 71%
+ht-degree: 72%
 
 ---
 
@@ -27,11 +27,11 @@ ht-degree: 71%
 
    （必須）訪問者が何らかの方法でビデオを表示した場合に、実装で指定されているビデオの名前を収集します。この変数に分類を追加できます。
 
-   (**Optional**) The Custom Insight variable provides video pathing information.
+   （**オプション**）カスタムインサイト変数はビデオパス情報を提供します。
 
    * 変数型：eVar
    * デフォルトの有効期限：訪問
-   * Custom Insight（s.prop、ビデオパスに使用）
+   * カスタムインサイト（s.prop、ビデオパスに使用）
 
 * **a.media.name**
 
