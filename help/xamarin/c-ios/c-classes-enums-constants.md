@@ -1,18 +1,21 @@
 ---
-description: Xamarin アプリケーションで使用するクラスおよび列挙型のリスト。
-seo-description: Xamarin アプリケーションで使用するクラスおよび列挙型のリスト。
+description: Xamarinアプリケーションで使用するクラスと定義済みリストのリスト。
+seo-description: Xamarinアプリケーションで使用するクラスと定義済みリストのリスト。
 seo-title: クラスと列挙
 title: クラスと列挙
 uuid: 410d27ee-ce2b-4183-971e-39a7031d1bd5
 translation-type: tm+mt
 source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
+workflow-type: tm+mt
+source-wordcount: '50'
+ht-degree: 24%
 
 ---
 
 
-# Classes and enums{#classes-and-enums}
+# クラスと列挙{#classes-and-enums}
 
-Xamarin アプリケーションで使用するクラスおよび列挙型のリスト。
+Xamarinアプリケーションで使用するクラスと定義済みリストのリスト。
 
 ## クラス {#section_E28D6156EB0F4A84AAA7749DF7D3E193}
 
@@ -265,7 +268,7 @@ public static class Constants
 }
 ```
 
-## 列挙型 {#section_A78A5A305FBF4E478EAF0492E0DFD102}
+## 列挙 {#section_A78A5A305FBF4E478EAF0492E0DFD102}
 
 ### ADBMobileVisitorAuthenticationState
 
