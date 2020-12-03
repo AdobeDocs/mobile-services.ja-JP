@@ -4,8 +4,11 @@ seo-description: Adobe Mobile Services UI で設定したディープリンク U
 seo-title: ディープリンクを使用したプッシュメッセージの実装
 title: ディープリンクを使用したプッシュメッセージの実装
 uuid: e24f9248-8d48-4e57-84af-3a05b72e2a09
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 13ff2cb549c4b82a4e0285e1c7c6b3f9c1a5bd4b
+workflow-type: tm+mt
+source-wordcount: '186'
+ht-degree: 75%
 
 ---
 
@@ -26,7 +29,7 @@ URL は、`FirebaseMessagingService` の `remoteMessage.getData().get("adb_deepl
 
       ユーザーがプッシュメッセージをクリックすると、ディープリンクがトリガーされます。
 
-   * ディープリンク URL がプッシュペイロードに&#x200B;**含まれていない**&#x200B;場合、いずれかのアクティビティを開くインテントを作成します。
+   * ディープリンクURL **がプッシュペイロードに含まれていない場合** 、アクティビティの1つを開くインテントを作成します。
 
 ## 例
 
