@@ -6,9 +6,9 @@ solution: Experience Cloud,Analytics
 title: モバイルアプリの獲得
 topic: Developer and implementation
 uuid: 5fece619-e4b8-4d06-9250-dcb66fa32ce0
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '414'
 ht-degree: 100%
 
