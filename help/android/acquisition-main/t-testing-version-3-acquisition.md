@@ -7,9 +7,9 @@ solution: Experience Cloud,Analytics
 title: バージョン 3 の獲得のテスト
 topic: Developer and implementation
 uuid: 5e38b43d-389e-4412-99e5-3e6223b6ad28
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '820'
 ht-degree: 100%
 
