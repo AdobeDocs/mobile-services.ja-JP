@@ -1,11 +1,14 @@
 ---
 description: Android SDK を使用して、サードパーティのディファードディープリンクの追跡を実装します。
 seo-description: Android SDK を使用して、サードパーティのディファードディープリンクの追跡を実装します。
-seo-title: サードパーティのディファードディープリンクの追跡
-title: サードパーティのディファードディープリンクの追跡
+seo-title: サードパーティの据え置きディープリンクの追跡
+title: サードパーティの据え置きディープリンクの追跡
 uuid: 4c798e47-7988-4a06-a191-6c4d05f6ee61
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
+workflow-type: tm+mt
+source-wordcount: '513'
+ht-degree: 80%
 
 ---
 
@@ -16,13 +19,13 @@ Android SDK を使用して、サードパーティのディファードディ�
 
 ## 従来の Adobe Mobile SDK ディープリンク {#section_D114FA1EB9664EAA82E036A990694B26}
 
-現在、Adobe Mobile SDK では、ディープリンクをサポートしています。アプリ開発者は、ディープリンクされたアクティビティから `collectLifecycleData` SDK API を使用する必要があります。SDK は、ディープリンク URL パラメーターからディープリンクデータを追加します。Adobe Mobile SDK でのディープリンクの機能について詳しくは、[ディープリンクの追跡](/help/android/acquisition-main/tracking-deep-links/tracking-deep-links.md)を参照してください。
+現在、Adobe Mobile SDK では、ディープリンクをサポートしています。アプリ開発者は、ディープリンクされたアクティビティから `collectLifecycleData` SDK API を使用する必要があります。SDK は、ディープリンク URL パラメーターからディープリンクデータを追加します。AdobeモバイルSDKでのディープリンクの機能について詳しくは、「ディープリンクの [追跡](/help/android/acquisition-main/tracking-deep-links/tracking-deep-links.md)」を参照してください。
 
 ## Facebook ディープリンク {#section_6A9DACB54A2F4CDEBE9C744DEFADFDED}
 
-広告作成者は、Facebook 上に広告をディープリンクとして作成することができます。ユーザーが広告をクリックすると、ユーザーが関心を持っている情報にアプリ内で直接移動します。ディープリンクはフィンガープリンターの URL **ではありません**。ただし、広告の設定時にサードパーティのディープリンク URL を指定するオプションがあります。Adobe Mobile SDK および Services を使用しているアプリ開発者は、このフィールドに Adobe Mobile Services によって設定されたフィンガープリンターの URL を入力する必要があります。すべてが正しく設定されている場合、Facebook SDK は、アプリがインストールまたは起動されたときにこの URL をアプリケーションに渡します。
+広告作成者は、Facebook 上に広告をディープリンクとして作成することができます。ユーザーが広告をクリックすると、アプリに興味を持った情報に直接移動します。ディープリンクはフィンガープリンターの URL では&#x200B;**ありません**。ただし、広告の設定時にサードパーティのディープリンク URL を指定するオプションがあります。Adobe Mobile SDK およびサービスを使用しているアプリ開発者は、このフィールドに Adobe Mobile Services によって設定されたフィンガープリンターの URL を入力する必要があります。すべてが正しく設定されている場合、Facebook SDK は、アプリがインストールまたは起動されたときにこの URL をアプリケーションに渡します。
 
-## SDK の設定{#section_834CD3109175432B8173ECB6EA7DE315}
+## Setting up the SDKs {#section_834CD3109175432B8173ECB6EA7DE315}
 
 Adobe Mobile SDK によって Facebook ディープリンクのサポートを追加する準備をするには、アプリ開発者は以下のタスクを完了します。
 
@@ -34,13 +37,13 @@ Adobe Mobile SDK によって Facebook ディープリンクのサポートを�
 
    詳しくは、「[ディープリンクの設定](https://developers.facebook.com/docs/app-ads/deep-linking#os)」を参照してください。
 
-アプリケーションが正しく設定されている場合、`trackAdobeDeepLink()` API を使用して、Facebook 獲得キャンペーンからディープリンク情報を収集して Adobe Mobile Service に送信できます。最初の起動時にインストールヒットが Adobe Mobile Service に送信されなかった場合、この情報はライフサイクルヒットに追加されます。それ以外の場合は、アドビディープリンクヒットとして送信されます。
+アプリケーションが正しく設定されている場合、`trackAdobeDeepLink()` API を使用して、Facebook 獲得キャンペーンからディープリンク情報を収集して Adobe Mobile Service に送信できます。初回起動時にインストールのヒットがAdobeのMobile Serviceに送信されなかった場合、この情報はLifecycleのヒットに追加されます。 それ以外の場合は、Adobeのディープリンクヒットとして送信されます。
 
 >[!TIP]
 >
 >ディープリンクに `a.deeplink.id` という名前のキーがあることを確認してください。URL にディープリンク ID パラメーターがない場合、URL パラメーターはコンテキストデータに追加されません。
 
-リンクが獲得に起因する可能性がある場合、Adobe Mobile SDK は、`trackAdobeDeepLink()` () を呼び出すために使用された Facebook ディープリンクからの獲得データを保存します。このデータは、将来の Adobe Mobile SDK リリースで使用できます。コールバックが登録されている場合は、データをクライアントに送り返すためにアドビコールバックも使用されます。
+リンクが獲得に起因する可能性がある場合、Adobe Mobile SDK は、`trackAdobeDeepLink()` () を呼び出すために使用された Facebook ディープリンクからの獲得データを保存します。このデータは、将来の起動時にAdobeのモバイルSDKで使用できるようになります。 コールバックが登録されている場合、Adobeコールバックは、データをクライアントに送り返すためにも使用されます。
 
 ## Android アプリケーションでのディープリンクの有効化 {#section_64C15E269E89424B8E3D029F88094620}
 
