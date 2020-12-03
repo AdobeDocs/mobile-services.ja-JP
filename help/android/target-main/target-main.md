@@ -7,9 +7,9 @@ solution: Experience Cloud,Analytics
 title: Target の概要
 topic: Developer and implementation
 uuid: 3501b76d-f83f-45eb-b56d-39e64717772e
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '127'
 ht-degree: 100%
 
