@@ -6,9 +6,9 @@ solution: Experience Cloud,Analytics
 title: Swift 統合
 topic: Developer and implementation
 uuid: 5fb77b57-cbf9-4bcf-8b41-65a933bf9336
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '129'
 ht-degree: 100%
 
