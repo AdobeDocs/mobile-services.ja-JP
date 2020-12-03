@@ -7,9 +7,9 @@ solution: Experience Cloud,Analytics
 title: ディープリンクの追跡
 topic: Developer and implementation
 uuid: ebb1c08c-a246-40b3-9ac6-4606a14b4c5a
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e28340249c22d9f121d5c21205227ee758fb9e1b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 100%
 
