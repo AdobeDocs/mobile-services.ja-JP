@@ -1,20 +1,23 @@
 ---
 description: 場所セクションの概要です。
-keywords: モバイル
+keywords: mobile
 seo-description: 場所セクションの概要です。
 seo-title: 場所の概要
-title: 場所の概要
-translation-type: ht
+title: ロケーションの概要
+translation-type: tm+mt
 source-git-commit: 41aa0a994bd0ad1e6f5421cf368d78b616ff9170
+workflow-type: tm+mt
+source-wordcount: '105'
+ht-degree: 100%
 
 ---
 
 
 # 場所の概要 {#location-overview}
 
-## Adobe Experience Cloud SDK の新規リリース
+## 新しい Adobe Experience Cloud SDK リリース
 
-Adobe Experience Platform Mobile SDK に関する情報やドキュメントをお探しの場合、最新のドキュメントについては、[こちら](https://aep-sdks.gitbook.io/docs/)をクリックしてください。
+Adobe Experience Platform Mobile SDK に関する情報やドキュメントをお探しの場合[こちら](https://aep-sdks.gitbook.io/docs/)をクリックし、最新のドキュメントを参照してください。
 
 >[!IMPORTANT]
 >
