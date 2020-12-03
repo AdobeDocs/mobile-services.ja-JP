@@ -1,11 +1,14 @@
 ---
 description: iOS SDK を使用して、サードパーティのディファードディープリンクの追跡を実装します。
 seo-description: iOS SDK を使用して、サードパーティのディファードディープリンクの追跡を実装します。
-seo-title: サードパーティのディファードディープリンクの追跡
-title: サードパーティのディファードディープリンクの追跡
+seo-title: サードパーティの据え置きディープリンクの追跡
+title: サードパーティの据え置きディープリンクの追跡
 uuid: 5525b609-e926-44b9-b0f5-38e9dd7c9761
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 4b5be6c51c716114e597a80d475f838e23abb1b1
+workflow-type: tm+mt
+source-wordcount: '413'
+ht-degree: 89%
 
 ---
 
@@ -20,15 +23,15 @@ iOS SDK を使用して、サードパーティのディファードディープ
 
 ## Facebook ディープリンク {#section_6A9DACB54A2F4CDEBE9C744DEFADFDED}
 
-広告作成者は、Facebook 上に広告をディープリンクとして作成することができます。ユーザーが Facebook 上の広告をクリックすると、アプリ内で興味を持った情報に直接移動します。ディープリンクはフィンガープリンターの URL **ではありません**。ただし、広告の設定時にサードパーティのディープリンク URL を指定するオプションがあります。Experience Cloud Mobile SDK および Services を使用しているアプリ開発者は、このフィールドに Mobile Services によって設定されたフィンガープリンターの URL を入力する必要があります。すべてが正しく設定されている場合、Facebook SDK は、アプリがインストールまたは起動されたときにこの URL をアプリケーションに渡します。
+広告作成者は、Facebook 上に広告をディープリンクとして作成することができます。ユーザーが Facebook 上の広告をクリックすると、アプリに興味を持った情報に直接移動します。ディープリンクはフィンガープリンターの URL では&#x200B;**ありません**。ただし、広告の設定時にサードパーティのディープリンク URL を指定するオプションがあります。Experience CloudのMobile SDKとサービスを使用するアプリ開発者は、Mobile Servicesで設定されたフィンガープリンターのURLをこのフィールドに入力する必要があります。 すべてが正しく設定されている場合、Facebook SDK は、アプリがインストールまたは起動されたときにこの URL をアプリケーションに渡します。
 
-## SDK の設定{#section_834CD3109175432B8173ECB6EA7DE315}
+## Setting up the SDKs {#section_834CD3109175432B8173ECB6EA7DE315}
 
 1. Facebook SDK を設定します。
 
    詳しくは、以下を参照してください。
 
-   * [iOS 向け Facebook SDK の概要](https://developers.facebook.com/docs/ios/getting-started)
+   * [Getting Started with the Facebook SDK for iOS](https://developers.facebook.com/docs/ios/getting-started)
    * [ディープリンクの設定](https://developers.facebook.com/docs/app-ads/deep-linking#os)
 
 1. SDK を設定するには、`trackAdobeDeepLink` を呼び出して URL を SDK に渡します。
@@ -51,7 +54,7 @@ iOS SDK を使用して、サードパーティのディファードディープ
 
 1. URL スキームを登録します。
 
-   URL スキームが登録され、ディープリンク URL と同じであることを確認します。
+   ディープリンク URL と同じ URL スキームを登録したことを確認します。
 
    ```objective-c
    <key>CFBundleURLTypes</key> 
