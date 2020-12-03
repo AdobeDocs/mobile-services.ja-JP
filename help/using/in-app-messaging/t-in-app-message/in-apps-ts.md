@@ -7,9 +7,9 @@ solution: Experience Cloud,Analytics
 title: アプリ内メッセージのトラブルシューティング
 topic: Metrics
 uuid: 8813e8d8-bb1e-46ad-83cd-98ae68f73ce6
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '637'
 ht-degree: 100%
 
