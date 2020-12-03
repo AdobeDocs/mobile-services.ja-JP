@@ -6,9 +6,9 @@ solution: Experience Cloud,Analytics
 title: Android ウェアラブル：はじめに
 topic: Developer and implementation
 uuid: bfe5d41e-b17c-4634-80ac-7a38671ecb81
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '291'
 ht-degree: 100%
 
