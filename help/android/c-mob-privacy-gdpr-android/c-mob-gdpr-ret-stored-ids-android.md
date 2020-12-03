@@ -4,8 +4,11 @@ seo-description: この情報は、GDPR のデータアクセス要求に関連�
 seo-title: 保存されている ID の取得
 title: 保存されている ID の取得
 uuid: 6fd3d202-b0a1-4c80-96f4-369fc24ac0a3
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
+workflow-type: tm+mt
+source-wordcount: '153'
+ht-degree: 76%
 
 ---
 
@@ -16,17 +19,17 @@ source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 >[!IMPORTANT]
 >
->SDK に保存されている ID を取得するには `getAllIdentifiersAsync` メソッドを使用します。このメソッドは、ユーザーがオプトアウトする&#x200B;**前**&#x200B;に呼び出す必要があります。
+>SDK に保存されている ID を取得するには `getAllIdentifiersAsync` メソッドを使用します。You must call this method **before** the user opts-out.
 
-（存在する場合）SDK ID はローカルに保存され、JSON 文字列で返されます。この文字列には次の情報が含まれている可能性があります。
+SDKのID（該当する場合）は、ローカルに保存され、JSON文字列として返されます。SDKには次の情報が含まれます。
 
 * 会社コンテキスト - IMS 組織 ID
 * ユーザー ID
 * Experience Cloud ID（MID）、旧称 Experience Cloud ID
-* 統合コード（ADID、プッシュ ID）
+* 統合コード（ADID、プッシュID）
 * データソース ID（DPID、DPUUID）
 * Analytics ID（AVID、AID、VID、関連する RSID）
-* ターゲットレガシー ID（TNTID、TNT3rdpartyID）
+* ターゲットのレガシーID(TNTID、TNT3rdpartyID)
 * Audience Manager ID（UUID）
 
 Android の `ADBMobile getAllIdentifiersAsync` メソッドの例を次に示します。
