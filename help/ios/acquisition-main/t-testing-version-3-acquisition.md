@@ -5,9 +5,9 @@ seo-title: V3 による獲得のテスト
 solution: Experience Cloud,Analytics
 title: V3 による獲得のテスト
 uuid: 89137ccf-4839-4b37-926e-303cf8e511a5
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '620'
 ht-degree: 100%
 
