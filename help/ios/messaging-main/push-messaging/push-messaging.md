@@ -6,9 +6,9 @@ solution: Experience Cloud,Analytics
 title: プッシュメッセージ
 topic: Developer and implementation
 uuid: 2e2d8175-d7d0-4b6b-a14e-d419da1f9615
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '526'
 ht-degree: 100%
 
