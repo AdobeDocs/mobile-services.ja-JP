@@ -7,9 +7,9 @@ solution: Experience Cloud,Analytics
 title: トップ 10 の記事
 topic: Metrics
 uuid: cf53cc0b-7c84-41c8-97d5-d9ee833a916b
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '137'
 ht-degree: 100%
 
