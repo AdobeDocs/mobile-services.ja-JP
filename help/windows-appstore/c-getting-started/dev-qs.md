@@ -23,7 +23,7 @@ SDKを実装するには、Visual Studio 2013以降が必要です。
 
 SDKダウンロードを解凍すると [](https://github.com/Adobe-Marketing-Cloud/mobile-services/releases)、サポートされるアーキテクチャとプラットフォームの組み合わせごとに別々のフォルダーが作成されます。 また、このガイドで後ほど説明する `ADBMobileConfig.json` ファイルも用意されています。
 
-## 正しいバージョンを選択します {#section_E53C5AA7D5474824A89BB32C003865A1}
+## Select the correct version {#section_E53C5AA7D5474824A89BB32C003865A1}
 
 ターゲットプラットフォーム(Windows 8.1、Windows Phone 8.1)およびサポートされるアーキテクチャ(x86、x64、ARM)ごとに異なる `.dll`/ `.winmd` ファイルが提供されます。 ファイルは、次の手順に従ってフォルダー構造に分けられます。
 
@@ -178,7 +178,7 @@ The following is an example of an `ADBMobileConfig.json` file:
 
 * **解析**: `rsids` と `server`
 * **Target**: `clientCode`
-* **Audience Management**: `server`
+* **オーディエンス管理**: `server`
 
 詳しくは、ADBMobileConfig.json config [を参照してください](/help/windows-appstore/c-configuration/methods.md)。
 
