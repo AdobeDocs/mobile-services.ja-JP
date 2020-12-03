@@ -7,9 +7,9 @@ solution: Experience Cloud,Analytics
 title: リリースノート
 topic: Metrics
 uuid: 522b0589-d61f-4a9f-952e-ba7ce11af2f9
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '80'
 ht-degree: 100%
 
