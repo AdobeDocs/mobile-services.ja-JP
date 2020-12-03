@@ -4,9 +4,9 @@ seo-description: ポストバックでは、SDK によって収集されたデ�
 seo-title: ポストバックの設定
 title: ポストバックの設定
 uuid: a026575c-057b-4868-b6c8-9514cbc32b4d
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '474'
 ht-degree: 100%
 
