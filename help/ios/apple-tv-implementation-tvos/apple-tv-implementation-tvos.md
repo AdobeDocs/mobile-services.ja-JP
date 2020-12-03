@@ -6,9 +6,9 @@ solution: Experience Cloud,Analytics
 title: tvOS を使用した Apple TV 実装
 topic: Developer and implementation
 uuid: d1571ea2-a5de-4b96-a527-72abbf51fab8
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '402'
 ht-degree: 100%
 
