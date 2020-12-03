@@ -7,9 +7,9 @@ solution: Experience Cloud,Analytics
 title: エクスペリエンス：プッシュメッセージ
 topic: Metrics
 uuid: 1a8baf3e-9fea-452c-b0fc-4ba8ac270861
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '799'
 ht-degree: 100%
 
