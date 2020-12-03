@@ -6,9 +6,9 @@ solution: Experience Cloud,Analytics
 title: アプリの状態の追跡
 topic: Developer and implementation
 uuid: 12cca4eb-1f15-4cec-a58f-76b69eaff99d
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '397'
 ht-degree: 100%
 
