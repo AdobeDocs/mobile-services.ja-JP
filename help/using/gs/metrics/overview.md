@@ -7,9 +7,9 @@ solution: Experience Cloud,Analytics
 title: モバイル指標の表示
 topic: Metrics
 uuid: 57db0b77-6b0a-4a0c-9aad-0731275233fd
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '486'
 ht-degree: 100%
 
