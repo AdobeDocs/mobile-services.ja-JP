@@ -260,7 +260,7 @@ ht-degree: 66%
 
 * **TrackState**
 
-   オプションのコンテキストデータを使用してアプリの状態を追跡します。状態とは、「title screen」、「level 1」、「pause」など、アプリで使用できる表示です。 これらの状態は Web サイト上のページによく似ており、`TrackState` コールはページビュー数を増分します。
+   オプションのコンテキストデータを使用してアプリの状態を追跡します。状態とは、「title screen」、「level 1」、「pause」など、アプリで使用できる表示です。 これらの状態は Web サイト上のページによく似ており、`TrackState` コールにより、ページビュー数が増分されます。
 
    状態が空の場合は、レポート *`app name app version (build)`* に表示されます。 If you see this value in reports, make sure you are setting state in each `TrackState` call.
 
@@ -340,7 +340,7 @@ ht-degree: 66%
 
 * **TrackBeacon**
 
-   ユーザーがいつビーコンの Proximit (圏内) に入ったかを追跡します。
+   ユーザーがいつビーコンの Proximity (圏内) に入ったかを追跡します。
 
    * このメソッドの構文を次に示します。
 
