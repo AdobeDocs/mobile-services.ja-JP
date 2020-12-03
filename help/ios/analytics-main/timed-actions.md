@@ -6,9 +6,9 @@ solution: Experience Cloud,Analytics
 title: 時間計測アクション
 topic: Developer and implementation
 uuid: dbcbac5a-6345-49f6-b050-0db05292f005
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '403'
 ht-degree: 100%
 
