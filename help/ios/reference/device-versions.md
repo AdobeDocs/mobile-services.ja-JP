@@ -6,9 +6,9 @@ solution: Experience Cloud,Analytics
 title: iOS デバイスのバージョン
 topic: Developer and implementation
 uuid: 8b8a9bc3-0737-4de2-9792-0b112aa4cf65
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '361'
 ht-degree: 100%
 
