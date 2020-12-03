@@ -6,9 +6,9 @@ solution: Experience Cloud,Analytics
 title: Analytics メソッド
 topic: Developer and implementation
 uuid: d49fe6de-cb32-4b96-9891-c567310e59a6
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: bc11c1e7a4a11657ee89c40ddcbd37377ce50bb5
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '784'
 ht-degree: 100%
 
