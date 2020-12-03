@@ -7,9 +7,9 @@ solution: Experience Cloud,Analytics
 title: プッシュメッセージの作成
 topic: Metrics
 uuid: fb2a6026-f7e6-40e6-999e-b43db35d6c69
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '187'
 ht-degree: 100%
 
