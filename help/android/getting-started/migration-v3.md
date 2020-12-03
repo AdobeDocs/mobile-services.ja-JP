@@ -7,9 +7,9 @@ solution: Experience Cloud,Analytics
 title: Android 4.x ライブラリへの移行
 topic: Developer and implementation
 uuid: 906e83bb-2faf-4aa2-ac9b-3fba6b833c7e
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '880'
 ht-degree: 100%
 
