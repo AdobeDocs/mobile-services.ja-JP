@@ -7,9 +7,9 @@ solution: Experience Cloud,Analytics
 title: リンク先の作成と管理
 topic: Metrics
 uuid: 43930e3a-6a11-40c6-8a61-6732a673dac7
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '166'
 ht-degree: 100%
 
