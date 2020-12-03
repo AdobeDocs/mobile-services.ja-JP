@@ -11,12 +11,12 @@ translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '888'
-ht-degree: 61%
+ht-degree: 63%
 
 ---
 
 
-# ライフサイクル指標{#lifecycle-metrics}
+# ライフサイクル指標 {#lifecycle-metrics}
 
 リストは、モバイルライブラリによって自動的に測定される指標とディメンションです。
 
@@ -68,7 +68,7 @@ Analyticsでは、各ライフサイクル追跡呼び出しと共に送信さ�
 
 * **起動回数**
 
-   クラッシュやインストールを含め、実行のたびにトリガーされます。 また、ライフサイクルセッションのタイムアウトを超えた場合に、バックグラウンドからの再開時にもトリガーされます。
+   実行のたびに（クラッシュおよびインストールを含む）トリガーされます。また、ライフサイクルセッションのタイムアウトを超えた場合に、SignatureInfo オブジェクトのバックグラウンドからの再開時にもトリガーされます。
 
    * Analytics context data/Target parameter: `a.LaunchEvent`
    * Audience Manager のシグナル：`c_a_LaunchEvent`
@@ -94,56 +94,56 @@ Analyticsでは、各ライフサイクル追跡呼び出しと共に送信さ�
    インストール後の初回起動日。日付の形式は `MM/DD/YYYY` です。
 
    * Analytics context data/Target: `a.InstallDate`
-   * Audience Manager: `c_a_InstallDate`
+   * Audience Manager：`c_a_InstallDate`
 
 * **アプリ ID**
 
    アプリケーションの名前とバージョンを `[AppName] [BundleVersion]` 形式で格納します。例えば、`myapp 1.1` です。
 
    * Analytics context data/Target: `a.AppID`
-   * Audience Manager: `c_a_AppID`
+   * Audience Manager：`c_a_AppID`
 
 * **起動回数**
 
    アプリケーションが起動したか、またはバックグラウンドから復帰した回数。
 
    * Analytics context data/Target: `a.Launches`
-   * Audience Manager: `c_a_Launches`
+   * Audience Manager：`c_a_Launches`
 
 * **初回使用からの日数**
 
    初回実行時からの日数。
 
    * Analytics context data/Target: `a.DaysSinceFirstUse`
-   * Audience Manager: `c_a_DaysSinceFirstUse`
+   * Audience Manager：`c_a_DaysSinceFirstUse`
 
 * **前回使用からの日数**
 
    前回使用時からの経過日数。
 
    * Analytics context data/Target: `a.DaysSinceLastUse`
-   * Audience Manager: `c_a_DaysSinceLastUse`
+   * Audience Manager：`c_a_DaysSinceLastUse`
 
 * **時刻**
 
    アプリが起動された時刻を測定します。この指標では 24 時間形式を使用し、ピーク使用時を調べるための時間分割に使用されます。
 
    * Analytics context data/Target: `a.HourOfDay`
-   * Audience Manager: `c_a_HourOfDay`
+   * Audience Manager：`c_a_HourOfDay`
 
 * **曜日**
 
    アプリが起動された週の曜日の数。
 
    * Analytics context data/Target: `a.DayOfWeek`
-   * Audience Manager: `c_a_DayOfWeek`
+   * Audience Manager：`c_a_DayOfWeek`
 
 * **オペレーティングシステムのバージョン**
 
    OS のバージョン。
 
    * Analytics context data/Target: `a.OSVersion`
-   * Audience Manager: `c_a_OSVersion`
+   * Audience Manager：`c_a_OSVersion`
 
 * **前回アップグレードからの日数**
 
@@ -154,7 +154,7 @@ Analyticsでは、各ライフサイクル追跡呼び出しと共に送信さ�
    >この指標は Analytics 指標に自動的には格納されません。レポート用にこの値を Analytics 変数にコピーする処理ルールを作成する必要があります。
 
    * Analytics context data/Target: `a.DaysSinceLastUpgrade`
-   * Audience Manager: `c_a_DaysSinceLastUpgrade`
+   * Audience Manager：`c_a_DaysSinceLastUpgrade`
 
 * **前回アップグレードからの起動回数**
 
@@ -165,14 +165,14 @@ Analyticsでは、各ライフサイクル追跡呼び出しと共に送信さ�
    >この指標は Analytics 指標に自動的には格納されません。レポート用にこの値を Analytics 変数にコピーする処理ルールを作成する必要があります。
 
    * Analytics context data/Target: `a.LaunchesSinceUpgrade`
-   * Audience Manager: `c_a_LaunchesSinceUpgrade`
+   * Audience Manager：`c_a_LaunchesSinceUpgrade`
 
 * **デバイス名**
 
    デバイス名が格納されます。
 
    * Analytics context data/Target: `a.DeviceName`
-   * Audience Manager: `c_a_DeviceName`
+   * Audience Manager：`c_a_DeviceName`
 
 * **通信事業者名**
 
@@ -183,14 +183,14 @@ Analyticsでは、各ライフサイクル追跡呼び出しと共に送信さ�
    >この指標は Analytics 指標に自動的には格納されません。レポート用にこの値を Analytics 変数にコピーする処理ルールを作成する必要があります。
 
    * Analytics context data/Target: `a.CarrierName`
-   * Audience Manager: `c_a_CarrierName`
+   * Audience Manager：`c_a_CarrierName`
 
 * **解像度**
 
    実際のピクセル単位での幅 x 高さ。
 
    * Analytics context data/Target: `a.Resolution`
-   * Audience Manager: `c_a_Resolution`
+   * Audience Manager：`c_a_Resolution`
 
 
 ## その他のモバイル指標およびディメンション {#section_0B32BBF9CA734103BEDB5E755FFE5B31}
