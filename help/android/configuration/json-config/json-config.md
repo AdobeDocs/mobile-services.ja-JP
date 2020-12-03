@@ -6,9 +6,9 @@ solution: Experience Cloud,Analytics
 title: ADBMobile JSON 設定
 topic: Developer and implementation
 uuid: 1decf605-7bc3-4e73-ad52-1ecd5821599e
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1678'
 ht-degree: 100%
 
