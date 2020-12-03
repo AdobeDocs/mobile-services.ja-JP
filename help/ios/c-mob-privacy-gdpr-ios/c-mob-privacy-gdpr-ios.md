@@ -4,8 +4,11 @@ seo-description: データ管理事業者は Experience Cloud Mobile SDK で提�
 seo-title: プライバシーと一般データ保護規則
 title: プライバシーと一般データ保護規則
 uuid: 69bb82de-1993-440c-a1b0-8d37919b48b6
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: b690ec677cf5aedfb2673b707f82716af1851124
+workflow-type: tm+mt
+source-wordcount: '392'
+ht-degree: 74%
 
 ---
 
@@ -20,7 +23,7 @@ source-git-commit: b690ec677cf5aedfb2673b707f82716af1851124
 
 ## 新しい Adobe Experience Platform Mobile SDK リリース
 
-Adobe Experience Platform Mobile SDK に関する情報やドキュメントをお探しの場合、最新のドキュメントについては、[こちら](https://aep-sdks.gitbook.io/docs/)をクリックしてください。
+Adobe Experience Platform Mobile SDK に関する情報やドキュメントをお探しの場合[こちら](https://aep-sdks.gitbook.io/docs/)をクリックし、最新のドキュメントを参照してください。
 
 2018 年 9 月に、SDK の新しいメジャーバージョンをリリースしました。これらの新しい Adobe Experience Platform Mobile SDK は、[Experience Platform Launch](https://www.adobe.com/jp/experience-platform/launch.html) から設定できます。
 
@@ -29,9 +32,9 @@ Adobe Experience Platform Mobile SDK に関する情報やドキュメントを�
 
 ## 概要
 
-アドビが企業に対してソフトウェアやサービスを提供する場合、アドビはサービス提供の一環として同社が処理または保管する個人データのデータ処理事業者に該当します。データ処理事業者に位置付けられるアドビはお客様の許可と指示（アドビとお客様の間で定められた合意など）に基づき個人データを処理します。
+Adobeが企業にソフトウェアやサービスを提供する場合、Adobeは、個人データの処理や保存の一環として、個人データのデータ処理装置としての役割を果たします。 データ処理装置として、Adobeは、会社の許可と指示に従って個人データを処理します(例えば、Adobeとの契約に基づいて設定されたもの)。
 
-データ管理事業者に位置付けられるお客様は Adobe Mobile Services SDK を使用することでお客様のモバイルアプリケーションから送信された GDPR 取得要求や GDPR 削除要求に対処できます。
+データコントローラーは、AdobeMobile Services SDKを使用して、GDPRによるモバイルアプリの取得および削除のリクエストをサポートできます。
 
 モバイルアプリケーションの Adobe Mobile SDK 部分に関しては、次の設定とメソッドを使用できます。
 
@@ -43,10 +46,11 @@ Adobe Experience Platform Mobile SDK に関する情報やドキュメントを�
 
    * `privacyDefault`
    * `setPrivacyStatus`
+
    詳しくは、「[ユーザーのオプトステータスの設定](/help/ios/c-mob-privacy-gdpr-ios/privacy.md)」を参照してください。
 
 ## 追加情報 {#section_7C7124C50D85469C8C8714533FB1A37D}
 
-* GDPR について詳しくは、[GDPR とビジネス](https://www.adobe.com/jp/privacy/general-data-protection-regulation.html)を参照してください。
-* GDPR API ドキュメントについて詳しくは、[一般データ保護規則 API](https://adobe.io/apis/cloudplatform/gdpr.html) を参照してください。
+* GDPRの詳細については、「 [GDPRとYour Business](https://www.adobe.com/jp/privacy/general-data-protection-regulation.html)」を参照してください。
+* To see the GDPR API documentation, go to [General Data Protection Regulation API](https://adobe.io/apis/cloudplatform/gdpr.html).
 
