@@ -6,9 +6,9 @@ solution: Experience Cloud,Analytics
 title: ビデオ分析
 topic: Developer and implementation
 uuid: d75fa415-78f6-4f50-a563-76949f040138
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '952'
 ht-degree: 100%
 
