@@ -6,9 +6,9 @@ solution: Experience Cloud,Analytics
 title: リリースノート
 topic: Developer and implementation
 uuid: 9c164e5c-ce2c-4eda-bba6-71324e4954fa
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '105'
 ht-degree: 100%
 
