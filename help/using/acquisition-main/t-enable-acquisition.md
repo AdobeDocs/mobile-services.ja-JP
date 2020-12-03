@@ -7,9 +7,9 @@ solution: Experience Cloud,Analytics
 title: 獲得の設定
 topic: Metrics
 uuid: e996e43e-8a77-47a3-a6fb-53f676f92bef
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '214'
 ht-degree: 100%
 
