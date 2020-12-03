@@ -7,9 +7,9 @@ solution: Experience Cloud,Analytics
 title: ライフサイクル指標
 topic: Developer and implementation
 uuid: a8f3ebac-be3b-4948-82bb-105d46cfff6d
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1240'
 ht-degree: 100%
 
