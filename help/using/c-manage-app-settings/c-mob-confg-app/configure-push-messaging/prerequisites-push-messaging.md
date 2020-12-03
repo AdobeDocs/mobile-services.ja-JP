@@ -7,9 +7,9 @@ solution: Experience Cloud,Analytics
 title: プッシュメッセージを有効にするための前提条件
 topic: Metrics
 uuid: 194e6e07-b794-4152-a838-a4125c3292d4
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '646'
 ht-degree: 100%
 
