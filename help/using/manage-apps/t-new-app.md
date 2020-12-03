@@ -7,9 +7,9 @@ solution: Experience Cloud,Analytics
 title: 新しいアプリの追加
 topic: Metrics
 uuid: 706b5e4d-1318-4a9e-8c69-ffabf51fa02c
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '709'
 ht-degree: 100%
 
