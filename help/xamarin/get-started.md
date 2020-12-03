@@ -6,9 +6,9 @@ seo-title: Experience Cloud ソリューション 4.x SDK 用 Xamarin コンポ�
 solution: Experience Cloud
 title: Experience Cloud ソリューション 4.x SDK 用 Xamarin コンポーネント
 uuid: e7a48107-bd0e-47d6-b49c-dfdae189ac37
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '199'
 ht-degree: 100%
 
