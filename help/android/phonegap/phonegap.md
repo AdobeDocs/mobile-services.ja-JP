@@ -7,9 +7,9 @@ solution: Experience Cloud,Analytics
 title: PhoneGap プラグインの概要
 topic: Developer and implementation
 uuid: c5c32357-d8df-458a-b0e8-e0c56040241d
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '395'
 ht-degree: 100%
 
