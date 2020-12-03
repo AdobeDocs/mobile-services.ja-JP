@@ -7,9 +7,9 @@ solution: Experience Cloud,Analytics
 title: レポート
 topic: Reports,Metrics
 uuid: 2abc2bd1-dbae-4af1-9b8d-1df2f6d3a81f
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '173'
 ht-degree: 100%
 
