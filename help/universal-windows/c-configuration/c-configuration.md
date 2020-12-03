@@ -15,6 +15,6 @@ ht-degree: 5%
 ---
 
 
-# 設定{#configuration}
+# 設定 {#configuration}
 
 JSON設定、ヒットバッチ処理、SDKメソッドなど、ユニバーサルWindowsプラットフォームSDKを設定するのに役立つ情報です。
