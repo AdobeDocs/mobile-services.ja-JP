@@ -7,9 +7,9 @@ solution: Experience Cloud,Analytics
 title: スケジュール：アプリ内メッセージ
 topic: Metrics
 uuid: d10e691b-105a-4165-a49d-d046ce250acd
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '223'
 ht-degree: 100%
 
