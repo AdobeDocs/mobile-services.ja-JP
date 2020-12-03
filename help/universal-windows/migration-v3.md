@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '705'
-ht-degree: 15%
+ht-degree: 26%
 
 ---
 
@@ -77,7 +77,7 @@ ht-degree: 15%
 
 バージョン4 SDKでは、Web中心の呼び出し `Track``TrackLink` と呼び出しを使用する代わりに、モバイル業界で少し意味のある2つのメソッドを使用します。
 
-* `TrackState` 状態は、「ホームダッシュボード」、「アプリ設定」、「カート」など、アプリで使用できる表示です。 これらの状態は Web サイト上のページによく似ており、`trackState` コールはページビュー数を増分します。
+* `TrackState` 状態は、「ホームダッシュボード」、「アプリ設定」、「カート」など、アプリで使用できる表示です。 これらの状態は Web サイト上のページによく似ており、`trackState` コールにより、ページビュー数が増分されます。
 
 * `TrackAction` アクションとは、「ログオン」、「バナーのタップ」、「フィード購読」など、測定対象のアプリで発生する操作です。 これらの呼び出しでは、ページ表示は増えません。
 
@@ -85,13 +85,13 @@ The `contextData` parameter for both of these methods contains name-value pairs 
 
 ### event、prop、eVar
 
-SDKの [メソッドを見たことがある場合は](/help/universal-windows/c-configuration/methods.md)、イベント、eVar、prop、履歴、リストの設定場所を不思議に思っているでしょう。 バージョン4では、これらのタイプの変数を直接アプリで割り当てることはできなくなりました。 代わりに、SDKは、コンテキストデータと処理ルールを使用して、レポート用にアプリデータをAnalytics変数にマッピングします。
+SDKの [メソッドを見たことがある場合は](/help/universal-windows/c-configuration/methods.md)、イベント、eVar、prop、履歴、リストの設定場所を不思議に思っているでしょう。 バージョン4では、これらのタイプの変数を直接アプリで割り当てることはできなくなりました。 代わりに、SDK は、コンテキストデータと処理ルールを使用して、レポート用にアプリデータを Analytics 変数へとマッピングします。
 
 処理ルールには次の利点があります。
 
-* データマッピングは、更新をApp Storeに送信しなくても変更できます。
+* アプリストアにアップデートを送信しなくてもデータマッピングを変更できます。
 * データには、レポートスイートに固有の変数を設定する代わりに、意味のある名前を付けることができます。
-* 追加のデータを送信する場合、影響はほとんどありません。 これらの値は、処理ルールを使用してマッピングされるまで、レポートに表示されません。
+* 追加のデータを送信しても、影響はほとんどありません。これらの値は、処理ルールを使用してマッピングされるまで、レポートに表示されません。
 
 詳しくは、 *Analyticsの概要の「* 処理ルール [」の節を参照してください](/help/universal-windows/analytics/analytics.md)。
 
@@ -116,7 +116,7 @@ Throughout your code, replace the following methods with a call to `trackState` 
 
 `visitorID` 変数を `setUserIdentifier` の呼び出しで置き換えます。
 
-## オフライン追跡 {#section_5D4CD8CD1BE041A79A8657E31C0D24C6}
+## オフライントラッキング {#section_5D4CD8CD1BE041A79A8657E31C0D24C6}
 
 Offline tracking is enabled in the `ADBMobileConfig.json` file. All other offline configuration is done automatically.
 
@@ -127,7 +127,7 @@ Offline tracking is enabled in the `ADBMobileConfig.json` file. All other offlin
 * SetOnline
 * SetOffline
 
-## products 変数{#section_AFBA36F3718C44D29AF81B9E1056A1B4}
+## products 変数 {#section_AFBA36F3718C44D29AF81B9E1056A1B4}
 
  変数は処理ルールでは使用できないので、以下の構文を使用して `products` を設定することができます。
 
