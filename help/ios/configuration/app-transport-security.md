@@ -6,9 +6,9 @@ solution: Experience Cloud,Analytics
 title: App Transport Security
 topic: Developer and implementation
 uuid: e9ee13cf-9802-492e-8b11-95f028e34e61
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '486'
 ht-degree: 100%
 
