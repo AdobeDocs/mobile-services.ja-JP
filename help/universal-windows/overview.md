@@ -6,9 +6,9 @@ solution: Experience Cloud,Analytics
 title: Experience Cloud ソリューション用 Universal Windows Platform SDK 4.x
 topic: Developer and implementation
 uuid: 23a5bc0a-54f0-42a7-af1e-c8cbb509dfce
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: bc11c1e7a4a11657ee89c40ddcbd37377ce50bb5
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '214'
 ht-degree: 100%
 
