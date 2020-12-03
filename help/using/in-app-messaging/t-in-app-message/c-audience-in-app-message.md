@@ -7,9 +7,9 @@ solution: Experience Cloud,Analytics
 title: オーディエンス：アプリ内メッセージ
 topic: Metrics
 uuid: 6c815d4c-7626-4cf4-9158-3f059c79317a
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '583'
 ht-degree: 100%
 
