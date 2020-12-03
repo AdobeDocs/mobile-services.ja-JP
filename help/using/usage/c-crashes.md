@@ -4,8 +4,11 @@ seo-description: クラッシュレポートには、アプリのクラッシュ
 seo-title: クラッシュレポート
 title: クラッシュレポート
 uuid: 0c96190f-e16b-49d5-aaa5-b651780a7266
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 3b744229b3fc288363be74c3c4adcd71ecc4fad4
+workflow-type: tm+mt
+source-wordcount: '256'
+ht-degree: 100%
 
 ---
 
@@ -32,6 +35,6 @@ source-git-commit: 3b744229b3fc288363be74c3c4adcd71ecc4fad4
 
 * **[!UICONTROL フィルター]**
 
-   **[!UICONTROL フィルター]** をクリックし、様々なレポートにわたるフィルターを作成して、すべてのモバイルレポートにおけるセグメントのパフォーマンスを確認します。共通フィルターを定義すると、パス（画面遷移）レポート以外のすべてのレポートに適用できます。
+   「**[!UICONTROL フィルター]**」をクリックし、様々なレポートにわたるフィルターを作成して、すべてのモバイルレポートにおけるセグメントのパフォーマンスを確認します。共通フィルターを定義すると、パス（画面遷移）レポート以外のすべてのレポートに適用できます。
 
    詳しくは、「[共通フィルターの追加](/help/using/usage/reports-customize/t-sticky-filter.md)」を参照してください。
