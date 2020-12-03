@@ -6,9 +6,9 @@ solution: Experience Cloud,Analytics
 title: ウェアラブルの概要
 topic: Developer and implementation
 uuid: f9a5d692-0ef6-4cdf-831e-e50be291f083
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '171'
 ht-degree: 100%
 
