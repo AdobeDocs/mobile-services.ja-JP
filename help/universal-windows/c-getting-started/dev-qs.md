@@ -27,7 +27,7 @@ ht-degree: 4%
 
 SDKダウンロード [ファイルを解凍すると](https://github.com/Adobe-Marketing-Cloud/mobile-services/releases) 、サポートされるアーキテクチャとプラットフォームの組み合わせごとに別々のフォルダーが作成されます。 また、 `ADBMobileConfig.json` ファイルも作成されます。 このファイルについて詳しくは、ADBMobileConfig.json設定ファイルを参照して [ください](/help/universal-windows/c-configuration/c.json.md)。
 
-## 正しいバージョンを選択します {#section_E53C5AA7D5474824A89BB32C003865A1}
+## Select the correct version {#section_E53C5AA7D5474824A89BB32C003865A1}
 
 サポートされるアーキテクチャ(x86、x64、ARM)ごとに異なる `.dll/.winmd` ファイルが提供されます。
 
