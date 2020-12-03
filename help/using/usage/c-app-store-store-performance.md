@@ -7,9 +7,9 @@ solution: Experience Cloud,Analytics
 title: アプリストアの概要レポート
 topic: Metrics
 uuid: ac066f31-ec4b-4b67-b839-780c2cd1574e
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '517'
 ht-degree: 100%
 
