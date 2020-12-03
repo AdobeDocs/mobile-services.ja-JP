@@ -1,18 +1,21 @@
 ---
-description: Android の通知に画像ファイルを添付することができます。ビジュアルコンポーネントを追加すると、プッシュ通知に対するユーザーのエンゲージメントが大幅に高まる可能性があります。
-seo-description: Android の通知に画像ファイルを添付することができます。ビジュアルコンポーネントを追加すると、プッシュ通知に対するユーザーのエンゲージメントが大幅に高まる可能性があります。
+description: Android通知には、画像ファイルを添付できます。 ビジュアルコンポーネントを追加すると、プッシュ通知を使用したユーザーの関与が大幅に向上する可能性があります。
+seo-description: Android通知には、画像ファイルを添付できます。 ビジュアルコンポーネントを追加すると、プッシュ通知を使用したユーザーの関与が大幅に向上する可能性があります。
 seo-title: リッチプッシュ通知の受信
 title: リッチプッシュ通知の受信
 uuid: 4a0340a6-666b-49b6-907a-9afc966dfdba
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: dca3663986b3ecc6e9fb736cc99513279715225c
+workflow-type: tm+mt
+source-wordcount: '216'
+ht-degree: 60%
 
 ---
 
 
 # リッチプッシュ通知の受信{#receive-rich-push-notifications}
 
-Android の通知に画像ファイルを添付することができます。ビジュアルコンポーネントを追加すると、プッシュ通知に対するユーザーのエンゲージメントが大幅に高まる可能性があります。
+Android通知には、画像ファイルを添付できます。 ビジュアルコンポーネントを追加すると、プッシュ通知を使用したユーザーの関与が大幅に向上する可能性があります。
 
 ## 受信リッチプッシュメッセージ（GCM）の処理{#section_AF1A3BC2312C4E1DA517CC90296C11E2}
 
@@ -98,4 +101,4 @@ private void sendNotification(RemoteMessage message) {
 
 ![](assets/rich-push-notification_example.png)
 
-Android でのリッチプッシュ通知について詳しくは、[リッチ通知によるエンゲージメント](https://developer.android.com/distribute/best-practices/engage/rich-notifications.html)を参照してください。
+For more information about rich push notifications with Android, see [Engage with Rich Notifications](https://developer.android.com/distribute/best-practices/engage/rich-notifications.html).
