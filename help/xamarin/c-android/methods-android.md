@@ -230,7 +230,7 @@ Experience Cloudソリューション4.x SDK用のXamarinコンポーネント�
 
 * **TrackState**
 
-   オプションのコンテキストデータを使用してアプリの状態を追跡します。`States` は、「title screen」、「level 1」、「pause」など、アプリで使用できる表示です。 これらの状態は Web サイト上のページによく似ており、`TrackState` コールはページビュー数を増分します。状態が空の場合、レポートに「app name app version (build)」と表示されます。 If you see this value in reports, make sure you are setting state in each `TrackState` call.
+   オプションのコンテキストデータを使用してアプリの状態を追跡します。`States` は、「title screen」、「level 1」、「pause」など、アプリで使用できる表示です。 これらの状態は Web サイト上のページによく似ており、`TrackState` コールにより、ページビュー数が増分されます。状態が空の場合、レポートに「app name app version (build)」と表示されます。 If you see this value in reports, make sure you are setting state in each `TrackState` call.
 
    >[!TIP]
    >
@@ -297,7 +297,7 @@ Experience Cloudソリューション4.x SDK用のXamarinコンポーネント�
 
 * **TrackBeacon**
 
-   ユーザーがいつビーコンの Proximit (圏内) に入ったかを追跡します。
+   ユーザーがいつビーコンの Proximity (圏内) に入ったかを追跡します。
 
    * このメソッドの構文を次に示します。
 
