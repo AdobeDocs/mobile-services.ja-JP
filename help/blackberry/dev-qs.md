@@ -1,23 +1,26 @@
 ---
-title: 開発者クイックスタート
-seo-title: BlackBerry Developer Quick Start for Adobe Mobile Services
-description: 『BlackBerry開発者クイックスタートガイド』は、Adobe Mobile Services用BlackBerryライブラリを実装するプロセスを理解するのに役立ちます。
-seo-description: The BlackBerry Developer Quick Start Guide helps you understand the process to implement the BlackBerry library for Adobe Mobile Services.
+title: 開発者クイック開始
+seo-title: AdobeMobile Services用BlackBerry開発者クイック開始
+description: 『BlackBerry開発者クイック開始ガイド』は、AdobeMobile Services用のBlackBerryライブラリを実装するプロセスを理解するのに役立ちます。
+seo-description: 『BlackBerry開発者クイック開始ガイド』は、AdobeMobile Services用のBlackBerryライブラリを実装するプロセスを理解するのに役立ちます。
 translation-type: tm+mt
 source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
+workflow-type: tm+mt
+source-wordcount: '371'
+ht-degree: 5%
 
 ---
 
 
-# 開発者クイックスタート
+# 開発者向けクイックスタート
 
-この情報は、BlackBerry ライブラリの実装プロセスを理解するために役立ちます。
+この情報は、BlackBerryライブラリを実装するプロセスを理解するうえで役立ちます。
 
 ## SDK の取得
 
-**この SDK を使用するには、BlackBerry 10 以降が必要です。**
+**SDKにはBlackBerry 10以降が必要です。**
 
-ダウンロードした SDK を解凍したら、`AdobeMobile` フォルダーに次のファイルがあることを確認してください。
+ダウンロードしたSDKを解凍した後、次のファイルがフォルダーに存在することを確認し `AdobeMobile` ます。
 
 * `Device-Coverage/libADBMobileShared.so`
 * `Device-Debug/libADBMobileShared.so`
@@ -31,46 +34,46 @@ source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
 * `Simulator-Debug/libADBMobileShared.so`
 * `Simulator-Profile/libADBMobileShared.so`
 
-## プロジェクトへの SDK の追加
+## プロジ追加ェクトへのSDK
 
-1. Right-click on your project and select **[!UICONTROL Configure]** &gt; **[!UICONTROL Add Library]**.
-1. Select **[!UICONTROL External library]** and click **[!UICONTROL Next]**.
-1. 「**[!UICONTROL デバイスライブラリ]」フィールドの横にある「****参照[!UICONTROL 」をクリックします。]**
-1. Navigate to the `ADBMobile-4.0.0BETA-BlackBerry` folder.
-1. In the `Device-Debug` folder, select `libADBMobileShared.so` and click **[!UICONTROL Open]**.
-1. 「**[!UICONTROL シミュレーターライブラリ]」フィールドの横にある「****参照[!UICONTROL 」をクリックします。]**
-1. Navigate to the `ADBMobile-4.0.0BETA-BlackBerry` folder.
-1. In the `Device-Debug` folder, select `libADBMobileShared.so` and click **[!UICONTROL Open]**.
-1. 「**[!UICONTROL フォルダーを含める]」フィールドの横にある「****参照[!UICONTROL 」をクリックします。]**
-1. Navigate to the `ADBMobile-4.0.0BETA-BlackBerry` folder.
-1. 含めるフォルダーに `public` フォルダーを追加します。
-1. In the `ADBMobile-4.0.0BETA-BlackBerry` folder, there is a `.json` config file named `ADBMobileConfig.json`.
+1. プロジェクトを右クリックし、 **[!UICONTROL 設定]** / **[!UICONTROL 追加ライブラリを選択します]**。
+1. 「 **[!UICONTROL 外部ライブラリ]** 」を選択し、「 **[!UICONTROL 次へ]**」をクリックします。
+1. 「 **[!UICONTROL デバイスライブラリ]** 」フィールドの横にある「参照 **** 」をクリックします。
+1. `ADBMobile-4.0.0BETA-BlackBerry` フォルダーに移動し、
+1. フォルダーでを選択し、「 `Device-Debug` 開く `libADBMobileShared.so`****」をクリックします。
+1. 「 **[!UICONTROL シミュレーターライブラリ]** 」フィールドの横にある「参照 **** 」をクリックします。
+1. `ADBMobile-4.0.0BETA-BlackBerry` フォルダーに移動し、
+1. フォルダーでを選択し、「 `Device-Debug` 開く `libADBMobileShared.so`****」をクリックします。
+1. 「フォルダを **[!UICONTROL 含める]** 」 **[!UICONTROL フィールドの横にあるをクリックします]** 。
+1. `ADBMobile-4.0.0BETA-BlackBerry` フォルダーに移動し、
+1. 含め追加る `public` フォルダー。
+1. この `ADBMobile-4.0.0BETA-BlackBerry` フォルダーには、という名前の `.json` 設定ファイルがあり `ADBMobileConfig.json`ます。
 
    そのファイルをプロジェクトのルートにコピーします。
-1. Right-click on your project and select **[!UICONTROL Refresh]**.
+1. プロジェクトを右クリックし、「 **[!UICONTROL 更新]**」を選択します。
 
-   The `.json` file should now be visible in your **[!UICONTROL Project Explorer]**.
+   これで、 `.json` ファイルが **[!UICONTROL プロジェクトエクスプローラに表示されます]**。
 1. プロジェクトの `bar-descriptor.xml` ファイルを開きます。
-1. ウィンドウの下部にある「**[!UICONTROL アセット]」タブを選択します。**
-1. 「**[!UICONTROL （すべての設定）]**」が選択されていることを確認し、ウィンドウの「**[!UICONTROL アセット]」セクションで「**&#x200B;ファイルを追加&#x200B;**」をクリックします。**
+1. ウィンドウの下部で、「 **[!UICONTROL アセット]** 」タブを選択します。
+1. 「 **[!UICONTROL (All Configurations)]** 」が選択されていることを確認し、ウィンドウの「 **[!UICONTROL Assets]** 」セクションで「ファイル **** 」をクリックします。
    >[!TIP]
    >
-   >There is a bug in the QNX Momentics IDE that sometimes prevents those buttons from being visible. If you can't see the buttons, resize the windows until they appear.
+   >QNX Momentics IDEには、ボタンが表示されないことがあるバグがあります。 ボタンが表示されない場合は、ウィンドウが表示されるまでサイズを変更します。
 
-1. 「ワークスペ **[!UICONTROL ース]**」をクリック
-1. Find the `ADBMobileConfig.json` file in your project and click **[!UICONTROL OK]**.
+1. 「 **[!UICONTROL ワークスペース]**」をクリックします。
+1. プロジェクト内の `ADBMobileConfig.json` ファイルを探し、「 **[!UICONTROL OK]**」をクリックします。
 
-Your application can import the classes/interfaces from the `adobeMobileLibrary.jar` library by using `#include <ADBMobile.hpp>`.
+アプリケーションは、を使用して、ライブラリからクラス/インターフェイスをインポ `adobeMobileLibrary.jar` ートでき `#include <ADBMobile.hpp>`ます。
 
 ## アプリの権限の追加
 
-In `bar-descriptor.xml` in the project directory, add the line `<permission>access_internet</permission>`, or in the QNX Momentics IDE, select the **[!UICONTROL Internet]** box on the permissions section of the **[!UICONTROL Application]** tab.
+プロジェクトディレクトリ `bar-descriptor.xml` で行を追加 `<permission>access_internet</permission>`するか、QNX Momentics IDEで、「 **[!UICONTROL Application]** (アプリケーション **[!UICONTROL )」タブの権限セクションの「Internet]** （インターネット）」ボックスを選択します。
 
-## Update the `ADBMobileConfig.json` config file
+## 設定ファイルの `ADBMobileConfig.json` 更新
 
-`ADBMobileConfig.json` ファイルには、グローバルな SDK 設定が含まれています。最初に、いくつかの値を更新する必要があります。
+この `ADBMobileConfig.json` ファイルには、グローバルSDK設定が含まれています。 開始するには、いくつかの値を更新する必要があります。
 
-`ADBMobileConfig.json` ファイルの例を次に示します。
+The following is an example of an `ADBMobileConfig.json` file:
 
 ```json
 {
@@ -87,6 +90,6 @@ In `bar-descriptor.xml` in the project directory, add the line `<permission>acce
 }
 ```
 
-You must at least update the `rsids` and `server` parameters. 詳しくは、 [Adobe mobileクラスおよびメソッドリファレンスを参照してください](/help/blackberry/methods.md)。
+とのパラメーターは、少なくとも更新する必要 `rsids` があり `server` ます。 詳しくは、「 [AdobeMobileクラスとメソッドリファレンス](/help/blackberry/methods.md)」を参照してください。
 
-これで、BlackBerry 10 アプリに Analytics を実装できるようになりました。
+BlackBerry 10アプリでAnalyticsを実装できるようになりました。
