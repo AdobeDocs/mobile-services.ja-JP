@@ -8,7 +8,7 @@ translation-type: tm+mt
 source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
 workflow-type: tm+mt
 source-wordcount: '866'
-ht-degree: 60%
+ht-degree: 66%
 
 ---
 
@@ -29,7 +29,7 @@ For more information about Video measurement, see the [Measuring audio and video
 
    * 変数名：eVar
       * デフォルトの有効期限：訪問
-      * Custom Insight（s.prop、ビデオパスに使用）
+      * カスタムインサイト（s.prop、ビデオパスに使用）
 
 * **a.media.name**
 
@@ -40,11 +40,11 @@ For more information about Video measurement, see the [Measuring audio and video
 
 * **a.media.segment**
 
-   (**Required**) Collects video segment data, including the segment name and the order in which the segment occurs in the video. この変数を入力するには、プレーヤーイベントを自動的に追跡する場合に `segmentByMilestones` 変数を有効にするか、プレーヤーイベントを手動で追跡する場合にカスタムセグメント名を設定します。
+   （**必須**）セグメント名や、ビデオ内でのセグメントの発生順序を含め、ビデオセグメントデータを収集します。この変数を入力するには、プレーヤーイベントを自動的に追跡する場合に `segmentByMilestones` 変数を有効にするか、プレーヤーイベントを手動で追跡する場合にカスタムセグメント名を設定します。
 
    For example, when a visitor views the first segment in a video, SiteCatalyst might collect `1:M:0-25` in the Segments eVar. デフォルトのビデオデータ収集方法では、ビデオ開始（再生）、セグメントの開始、ビデオの終了（停止）ポイントでデータが収集されます。
 
-   Analyticsは、訪問者開始が視聴しているときに、最初のセグメント表示をセグメントの開始でカウントします。 後続のセグメント表示は、セグメントの開始時に行われます。
+   Analytics は、訪問者開始が視聴しているときに、最初のセグメント表示をセグメントの開始でカウントします。後続のセグメントは、セグメントの開始時に表示されます。
 
    * 変数型：eVar
    * デフォルトの有効期限：ページビュー
