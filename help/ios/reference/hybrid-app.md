@@ -6,9 +6,9 @@ solution: Experience Cloud,Analytics
 title: アプリとモバイル Web にまたがる訪問者トラッキング
 topic: Developer and implementation
 uuid: 2d951de6-3954-4379-a4ff-99b9695b9869
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '528'
 ht-degree: 100%
 
