@@ -7,9 +7,9 @@ solution: Experience Cloud,Analytics
 title: Audience Manager オプションの設定
 topic: Metrics
 uuid: 471270ca-cee5-401e-aac1-e48146ee8399
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '129'
 ht-degree: 100%
 
