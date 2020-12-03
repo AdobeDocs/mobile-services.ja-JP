@@ -7,9 +7,9 @@ solution: Experience Cloud,Analytics
 title: Audience Manager の概要
 topic: Developer and implementation
 uuid: cfa4106d-13c1-45ba-bee6-6f992aaf9919
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '139'
 ht-degree: 100%
 
