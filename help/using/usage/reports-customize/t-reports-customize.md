@@ -7,9 +7,9 @@ solution: Experience Cloud,Analytics
 title: レポートへのフィルターの追加
 topic: Reports,Metrics
 uuid: 19c395cc-2e07-4588-825b-f2f8b10a87c1
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '384'
 ht-degree: 100%
 
