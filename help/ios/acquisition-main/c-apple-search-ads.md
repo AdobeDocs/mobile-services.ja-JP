@@ -6,9 +6,9 @@ solution: Experience Cloud,Analytics
 title: Apple Search Ads
 topic: Developer and implementation
 uuid: 790080e8-067e-4bfd-a169-0027db4fdff3
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '280'
 ht-degree: 100%
 
@@ -26,7 +26,7 @@ Apple Ads を使用する利点には以下のものがあります。
 * 数行のコードをアプリに追加することによって、Search Ads によるアプリダウンロードキャンペーンの効果を簡単に測定できる。
 * 開発者が、ダウンロード日時およびコンバージョンにつながった入札キーワードを利用できる。
 
-## Apple Ads の実装 {#section_F1094676793540CFA1DBB540174EEB6A}
+## Apple Ads の実装  {#section_F1094676793540CFA1DBB540174EEB6A}
 
 >[!TIP]
 >
@@ -40,7 +40,7 @@ Search Ads アトリビューションに対してアプリを有効にするに
 
 1. iAd フレームワークをアプリの Xcode プロジェクトファイルに追加します。
 
-## Search Ads アトリビューションのレポート{#section_1AF4E0B4F8E94F36B38CA3D3E384D0A4}
+## Search Ads アトリビューションのレポート {#section_1AF4E0B4F8E94F36B38CA3D3E384D0A4}
 
 1. Apple Search Ads のアトリビューションデータは、獲得名、ソースおよび項値として提供されます。
 
