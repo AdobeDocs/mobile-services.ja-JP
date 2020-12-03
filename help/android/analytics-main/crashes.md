@@ -6,9 +6,9 @@ solution: Experience Cloud,Analytics
 title: アプリのクラッシュの追跡
 topic: Developer and implementation
 uuid: 3ab98c14-ccdf-4060-ad88-ec07c1c6bf07
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '487'
 ht-degree: 100%
 
