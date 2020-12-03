@@ -1,19 +1,19 @@
 ---
 description: BlackBerryライブラリが提供するクラスとメソッド。
 seo-description: BlackBerryライブラリが提供するクラスとメソッド。
-seo-title: AdobeMobileクラスおよびメソッドの参照
-title: AdobeMobileクラスおよびメソッドの参照
+seo-title: Adobe Mobile クラスおよびメソッドの参照
+title: Adobe Mobile クラスおよびメソッドの参照
 uuid: 1e42d759-be43-4bb3-ac1a-c7d64133d61c
 translation-type: tm+mt
 source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
 workflow-type: tm+mt
 source-wordcount: '988'
-ht-degree: 54%
+ht-degree: 58%
 
 ---
 
 
-# AdobeMobileクラスおよびメソッドの参照 {#adobe-mobile-class-and-method-reference}
+# Adobe Mobile クラスおよびメソッドの参照 {#adobe-mobile-class-and-method-reference}
 
 BlackBerryライブラリが提供するクラスとメソッド。
 
@@ -152,7 +152,7 @@ SDKは現在、Adobe Analyticsをサポートしており、メソッドはソ�
 
 * **trackState**
 
-   オプションのコンテキストデータを使用してアプリの状態を追跡します。状態は、「ホームダッシュボード」、「アプリ設定」、「カート」など、アプリで使用できる表示です。 これらの状態は Web サイト上のページによく似ており、`trackState` コールはページビュー数を増分します。
+   オプションのコンテキストデータを使用してアプリの状態を追跡します。状態は、「ホームダッシュボード」、「アプリ設定」、「カート」など、アプリで使用できる表示です。 これらの状態は Web サイト上のページによく似ており、`trackState` コールにより、ページビュー数が増分されます。
 
    >[!TIP]
    >
@@ -246,7 +246,7 @@ The `ADBMobileConfig.json` file must be placed in the *assets* folder.
 
 * **lifecycleTimeout**
 
-   アプリが起動してからその起動が新しいセッションと見なされるまでに経過する必要がある時間（秒単位）を指定します。 このタイムアウトは、アプリケーションがバックグラウンドに移行し、再びアクティブになる場合にも適用されます。アプリケーションがバックグラウンドになっている時間はセッションの長さには含まれません。
+   アプリケーションが起動されてから、新しいセッションであると見なされるまでに経過する必要がある時間を秒数で指定します。このタイムアウトは、アプリケーションがバックグラウンドに移行し、再びアクティブになる場合にも適用されます。アプリケーションがバックグラウンドになっている時間はセッションの長さには含まれません。
 
    デフォルト値は 300 秒です。
 
