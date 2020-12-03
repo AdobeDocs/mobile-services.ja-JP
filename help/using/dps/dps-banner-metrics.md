@@ -7,9 +7,9 @@ solution: Experience Cloud,Analytics
 title: バナー指標
 topic: Metrics
 uuid: 50638c55-f10d-43d7-8d12-e48908572766
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 100%
 
