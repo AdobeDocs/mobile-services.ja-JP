@@ -4,8 +4,11 @@ seo-description: Adobe Mobile Services UI で設定したディープリンク U
 seo-title: ディープリンクを使用したプッシュメッセージの実装
 title: ディープリンクを使用したプッシュメッセージの実装
 uuid: ee9590fc-8bd3-4111-9221-9011d9edbd84
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
+workflow-type: tm+mt
+source-wordcount: '192'
+ht-degree: 93%
 
 ---
 
