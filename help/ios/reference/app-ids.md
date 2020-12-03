@@ -6,9 +6,9 @@ solution: Experience Cloud,Analytics
 title: アプリ ID
 topic: Developer and implementation
 uuid: 24ebc716-23c7-4ee8-8256-b534210367e0
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '219'
 ht-degree: 100%
 
