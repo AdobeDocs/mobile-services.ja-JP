@@ -7,9 +7,9 @@ solution: Experience Cloud,Analytics
 title: ヒットのバッチ処理
 topic: Developer and implementation
 uuid: ada35be3-242b-4b2b-a828-9bf998dd58b5
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '183'
 ht-degree: 100%
 
