@@ -7,9 +7,9 @@ solution: Experience Cloud,Analytics
 title: 設定メソッド
 topic: Developer and implementation
 uuid: 663aeb6c-1b97-4a3a-8c0e-dd4c2ec28c01
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '985'
 ht-degree: 100%
 
