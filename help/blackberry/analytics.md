@@ -8,7 +8,7 @@ translation-type: tm+mt
 source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
 workflow-type: tm+mt
 source-wordcount: '684'
-ht-degree: 5%
+ht-degree: 14%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 5%
 
 1. 「最新のアプリレポートを **[!UICONTROL 有効にする]**」をクリックします。
 
-   必要に応じて、「モバイルロケーショントラッキングを **[!UICONTROL 有効にする]** 」をクリックし **[!UICONTROL 、バックグラウンドヒットに対して「従来のレポートとアトリビューションを]**&#x200B;有効にする」をクリックすることもできます。
+   必要に応じて、「モバイルロケーショントラッキングを **[!UICONTROL 有効にする]** 」および「従来のレポートとアトリビューションを有効にする」をクリックしてバックグラウンドヒットを追跡することもでき ****&#x200B;ます。
 
    ![](assets/enable-lifecycle.png)
 
@@ -39,7 +39,7 @@ ht-degree: 5%
 
 1. アプリでライフサイクル指標を収集するには、コンストラクター `collectLifecycleData()` を呼び出し `ApplicationUI` ます。
 
-   以下に例を示します。
+   次に例を示します。
 
    ```java
    ApplicationUI::ApplicationUI(bb::cascades::Application *app): QObject(app) { 
@@ -53,13 +53,13 @@ ht-degree: 5%
 ## event、prop、eVar {#concept_B885D5A71A5D45129CE7C1C3426A7D28}
 
 
-ADBMobileクラスおよびメソッドリファレンスを参照している場合 [](/help/blackberry/methods.md)、イベント、eVar、prop、ヒーラーおよびリストを設定する場所をお考えの方は、おそらくお考えでしょう。 バージョン4では、これらのタイプの変数を直接アプリで割り当てることはできなくなりました。 代わりに、SDKは、コンテキストデータと処理ルールを使用して、レポート用にアプリデータをAnalytics変数にマッピングします。
+ADBMobileクラスおよびメソッドリファレンスを参照している場合 [](/help/blackberry/methods.md)、イベント、eVar、prop、ヒーラーおよびリストを設定する場所をお考えの方は、おそらくお考えでしょう。 バージョン4では、これらのタイプの変数を直接アプリで割り当てることはできなくなりました。 代わりに、SDK は、コンテキストデータと処理ルールを使用して、レポート用にアプリデータを Analytics 変数へとマッピングします。
 
 処理ルールには、次のようないくつかの利点があります。
 
-* データマッピングは、更新をApp Storeに送信しなくても変更できます。
+* アプリストアにアップデートを送信しなくてもデータマッピングを変更できます。
 * データには、レポートスイートに固有の変数を設定する代わりに、意味のある名前を付けることができます。
-* 追加のデータを送信する場合、影響はほとんどありません。 これらの値は、処理ルールを使用してマッピングされるまで、レポートに表示されません。
+* 追加のデータを送信しても、影響はほとんどありません。これらの値は、処理ルールを使用してマッピングされるまで、レポートに表示されません。
 
 Any values that you were assigning directly to variables should be added to the `data` HashMap instead.
 
@@ -119,4 +119,4 @@ This might make it *slightly* easier when you perform the one time mapping in pr
 
 ## Analytics メソッド
 
-BlackBerryで使用できるAnalyticsメソッドのリストについては、『 *Adobeモバイルクラス* 』の「 [Analyticsメソッド」および『メソッドリファレンス』を参照してください](/help/blackberry/methods.md)。
+BlackBerryで使用できるAnalyticsメソッドのリストについては、『 *Adobeモバイルクラス* 』の「 [Analyticsメソッド」および『メソッドリファレンス](/help/blackberry/methods.md)』を参照してください。
