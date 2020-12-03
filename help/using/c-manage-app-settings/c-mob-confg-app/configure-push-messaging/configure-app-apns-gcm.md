@@ -7,9 +7,9 @@ solution: Experience Cloud,Analytics
 title: APNS または FCM を使用するアプリ設定
 topic: Metrics
 uuid: fa411f2a-ba47-4499-bbe5-1aedef6b49ad
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '652'
 ht-degree: 100%
 
@@ -68,7 +68,7 @@ Apple Push Notification Service（APNS）または Firebase Cloud Messaging（FC
 
 1. 「**[!UICONTROL クラウドメッセージング]**」タブをクリックします。
 
-1. 後で使用するために、**[!UICONTROL レガシーサーバーキー]**&#x200B;と **[!UICONTROL 送信者 ID]** をコピーします。
+1. 後で使用するために、**[!UICONTROL レガシーサーバーキー]**&#x200B;と&#x200B;**[!UICONTROL 送信者 ID]** をコピーします。
 
    以下に例を示します。
 
