@@ -4,8 +4,11 @@ seo-description: Adobe Analytics では、管理ツールホームページで�
 seo-title: 役割と権限
 title: 役割と権限
 uuid: ad350f8d-ef51-4519-98aa-3025bc0f5588
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: c7cac006340e01d0fd1f6afe3419e6fd17294a98
+workflow-type: tm+mt
+source-wordcount: '597'
+ht-degree: 59%
 
 ---
 
@@ -20,7 +23,7 @@ Adobe Analytics では、管理ツールホームページで役割を管理で�
 
 ### Analytics 管理者
 
-Analytics 管理者は、ユーザーグループを管理したり、権限を割り当てたりします（その内の 1 つはモバイルアプリ管理）。Experience Cloud 管理者は、Adobe ID を Adobe Analytics アカウントとリンクします。これにより、Adobe ID を使用して Mobile Services UI にログインできます。Experience Cloud 管理者について詳しくは、[管理 - ユーザー管理と FAQ](https://docs.adobe.com/content/help/ja-JP/core-services/interface/manage-users-and-products/admin-getting-started.html) を参照してください。
+Analytics 管理者は、ユーザーグループを管理したり、権限を割り当てたりします（その内の 1 つはモバイルアプリ管理）。Experience Cloud管理者は、Adobe IDをAdobe Analyticsアカウントにリンクします。アカウントでは、Adobe IDを使用してMobile Services UIにログインできます。 Experience Cloud 管理者について詳しくは、[管理 - ユーザー管理と FAQ](https://docs.adobe.com/content/help/ja-JP/core-services/interface/manage-users-and-products/admin-getting-started.html) を参照してください。
 
 >[!TIP]
 >
@@ -46,7 +49,7 @@ Analytics 管理者は、ユーザーグループを管理したり、権限を�
 
 ### アプリおよびレポートスイート
 
-すべての Mobile Services アプリは、レポートスイートに結び付けられています。ユーザーにレポートスイートへのアクセス権がない場合、そのレポートスイートに関連付けられたアプリにアクセスできません。
+すべてのMobile Serviceアプリはレポートスイートに結び付けられています。 ユーザーがレポートスイートにアクセスできない場合、そのレポートスイートに関連付けられたアプリにはアクセスできません。
 
 ### Mobile Services と Analytics の機能
 
@@ -59,8 +62,8 @@ Analytics 管理者は、ユーザーグループを管理したり、権限を�
 ### Analytics 管理者
 
 * すべてのユーザーおよびモバイルアプリ管理権限
-* 新しいレポートスイートを使用したアプリの作成
-* Mobile Services からのアプリの削除
+* 新しいレポートスイートでアプリを作成する
+* Mobile Servicesからのアプリの削除
 
    >[!IMPORTANT]
    >
@@ -69,8 +72,8 @@ Analytics 管理者は、ユーザーグループを管理したり、権限を�
 * アプリ設定
 
    * ライフサイクルレポートを有効にする
-   * ロケーションレポートを有効にする
-   * 変数および指標の作成／更新／削除
+   * 場所レポートを有効にする
+   * 変数と指標の作成、更新、削除
 
 ### モバイルアプリ管理者
 
@@ -78,47 +81,47 @@ Analytics 管理者は、ユーザーグループを管理したり、権限を�
 * 既存のレポートスイートを使用したアプリの作成
 * アプリ設定
 
-   * アプリの Mobile SDK オプションの設定
-   * アプリの UI 設定
-   * リンクしたアプリストアアプリの設定
+   * アプリのモバイルSDKオプションの設定
+   * アプリのUI設定の指定
+   * リンクされたApp Storeアプリの設定
    * アプリのユニバーサルリンクオプションの設定
-   * プッシュサービス証明書および API キーの設定
-   * ポストバックの作成／更新／アクティブ化／非アクティブ化／複製／アーカイブ／削除
-   * リンク先の作成／更新／アーカイブ／削除
+   * プッシュサービス証明書とAPIキーの設定
+   * ポストバックの作成/更新/アクティブ化/非アクティブ化/重複/アーカイブ/削除
+   * リンク先を作成/更新/アーカイブ/削除
 
-* マーケティングリンクの作成／更新／アーカイブ
-* 従来のダウンロード計測用リンクの作成／読み込み／更新／削除
-* 場所（目標地点）設定の作成／読み込み／更新／削除
-* プッシュメッセージの作成／更新／送信／スケジュール／キャンセル／複製／アーカイブ／削除
-* アプリ内メッセージの作成／更新／アクティブ化／非アクティブ化／複製／アーカイブ／削除
+* マーケティングリンクの作成/更新/アーカイブ
+* 従来のダウンロード計測用リンクの作成/読み込み/更新/削除
+* 場所（目標地点）設定の作成/読み込み/更新/削除
+* プッシュメッセージの作成/更新/送信/スケジュール/キャンセル/重複/アーカイブ/削除
+* アプリ内メッセージの作成/更新/アクティブ化/非アクティブ化/重複/アーカイブ/削除
 
-グループおよびユーザーについて詳しくは、次を参照してください。
+グループとユーザーの詳細については、次を参照してください。
 
 * [ユーザーグループの設定](https://docs.adobe.com/content/help/ja-JP/analytics/admin/user-product-management/user-groups/groups.html)
 * [グループにユーザーを追加する](https://docs.adobe.com/content/help/ja-JP/analytics/admin/user-product-management/user-management/t-add-user-to-group.html)
 
 ### Mobile Services ユーザー
 
-この役割には、表示のみの権限があり、Mobile Services UI でフィードバックを提供できます。
+このロールには表示のみの権限があり、Mobile Services UIでフィードバックを提供できます。
 
-* Mobile Services UI 上でフィードバックを提供
-* アプリを表示
+* Mobile Services UIに関するフィードバックの提供
+* 表示アプリ
 
    >[!IMPORTANT]
    >
    >ユーザーは、Adobe Analytics でアクセス権のあるレポートスイートのみ表示できます。
 
-* アプリ設定の表示
+* 表示アプリの設定
 
-   * アプリ SDK 設定のダウンロード
-   * すべての UI および SDK 設定の表示
-   * 変数および指標設定の表示
-   * ポストバックの表示
-   * リンク先の表示
+   * アプリSDK設定のダウンロード
+   * すべてのUIとSDKの設定を表示
+   * 表示変数と指標の設定
+   * 表示ポストバック
+   * 表示リンク先
 
 * レポートの表示と実行
 * マーケティングリンクの表示
-* 従来のダウンロード計測用リンクの表示および書き出し
-* 場所（目標地点）設定の表示および書き出し
-* プッシュメッセージの表示
-* アプリ内メッセージの表示
+* 従来のダウンロード計測用リンクの表示と書き出し
+* 表示と書き出しの場所（目標地点）の設定
+* 表示プッシュメッセージ
+* 表示のアプリ内メッセージ
