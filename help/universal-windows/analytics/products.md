@@ -25,7 +25,7 @@ To set the *`products`* variable, set a context data key to `"&&products"`, and 
 cdata["&&products"] = "Category;Product;Quantity;Price[,Category;Product;Quantity;Price]";
 ```
 
-以下に例を示します。
+次に例を示します。
 
 ```js
 //create a context data dictionary 
