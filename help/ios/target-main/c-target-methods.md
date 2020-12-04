@@ -56,9 +56,8 @@ NSString *const ADBTargetParameterMboxHost;
 >[!IMPORTANT]
 >
 >* バージョン 4.14.0 より&#x200B;**前の** SDK を使用している場合、パラメーターの制限については、「[Input Parameters](https://developers.adobetarget.com/api/#input-parameters)」を参照してください。
-   >
-   >
-* SDK バージョン 4.14.0 **以降**&#x200B;の SDK を使用している場合、パラメーターの制限については、「[Batch Input Parameters](https://developers.adobetarget.com/api/#batch-input-parameters)」を参照してください。
+>
+>* SDK バージョン 4.14.0 **以降**&#x200B;の SDK を使用している場合、パラメーターの制限については、「[Batch Input Parameters](https://developers.adobetarget.com/api/#batch-input-parameters)」を参照してください。
 
 
 ### メソッド

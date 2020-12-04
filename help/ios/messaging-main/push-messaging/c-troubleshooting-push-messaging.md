@@ -39,9 +39,8 @@ Mobile Services のプッシュメッセージは、次のタイプの遅延を�
    >プッシュサービスでは、メッセージが送信されることは保証されません。サービスの信頼性について詳しくは、適切なドキュメントを参照してください。
    >
    >* **APNS**：[サービス品質](https://developer.apple.com/documentation/usernotifications)
-      >
-      >
-   * **GCM**：[メッセージのライフタイム](https://developers.google.com/cloud-messaging/concept-options)
+   >
+   >* **GCM**：[メッセージのライフタイム](https://developers.google.com/cloud-messaging/concept-options)
 
 
 ## Apple のプッシュサービス証明書を更新する方法を教えてください。
