@@ -1,7 +1,7 @@
 ---
 source-git-commit: b743d87d8b9a590a6a488a077ac0a16ad19a6964
-workflow-type: tm+mt
-translation-type: tm+mt
+workflow-type: ht
+translation-type: ht
 source-wordcount: '435'
 ht-degree: 100%
 
@@ -12,17 +12,17 @@ ht-degree: 100%
 
 ## Adobe Open Source Code of Practice
 
-このプロジェクトでは、[Adobe Open Source Code of Actions](code-of-conduct.md) または. NET Foundation [Code の実施を採用してい](https://dotnetfoundation.org/code-of-conduct)ます。詳しくは、[投稿](contributing.md)の記事を参照してください。
+このプロジェクトでは、[Adobe Open Source Code of Actions](code-of-conduct.md) または [.NET Foundation Code の実施を採用してい](https://dotnetfoundation.org/code-of-conduct)ます。詳しくは、[投稿](contributing.md)の記事を参照してください。
 
 ## アドビのコンテンツへの投稿について
 
-「[Adobe Docs寄稿者ガイド](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html)」を参照してください。
+「[Adobe Docs寄稿者ガイド](https://docs.adobe.com/content/help/ja-JP/contributor/contributor-guide/introduction.html)」を参照してください。
 
 投稿方法は、誰がどのような変更を投稿するかに応じて異なります。
 
 ### マイナーな変更
 
-厳選されたマイナーな更新をおこなう場合は、記事にアクセスし、記事の GitHub ソースに移動する記事の&#x200B;**「編集」**&#x200B;リンクをクリックしてください。その後、GitHub UI を使用してアップデートをおこないます。詳しくは、一般的[アドビドキュメントのコントリビューターガイド](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html)を参照してください。
+厳選されたマイナーな更新をおこなう場合は、記事にアクセスし、記事の GitHub ソースに移動する記事の&#x200B;**「編集」**&#x200B;リンクをクリックしてください。その後、GitHub UI を使用してアップデートをおこないます。詳しくは、一般的[アドビドキュメントのコントリビューターガイド](https://docs.adobe.com/content/help/ja-JP/contributor/contributor-guide/introduction.html)を参照してください。
 
 このリポジトリのドキュメントおよびコード例については、マイナーな修正または詳細な説明をアドビの利用条件で説明しています。
 
@@ -42,7 +42,7 @@ If you submit a pull request with significant changes to documentation and code 
 
 コミュニティ寄稿者は、基本的な編集に GitHub UI を使用したり、レポをフォークしてメジャー貢献度を確保したりできます。
 
-詳しくは、[Adobe Docs 寄稿者ガイド](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html)を参照してください。
+詳しくは、[Adobe Docs 寄稿者ガイド](https://docs.adobe.com/content/help/ja-JP/contributor/contributor-guide/introduction.html)を参照してください。
 
 ## markdown を使用してトピックをフォーマットする方法
 
