@@ -7,10 +7,10 @@ title: コア実装とライフサイクル
 topic: Developer and implementation
 uuid: 96d06325-e424-4770-8659-4b5431318ee3
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: b2fce063a2c97eecb2abc1a21ad8e8ab56fc151b
 workflow-type: tm+mt
-source-wordcount: '656'
-ht-degree: 100%
+source-wordcount: '885'
+ht-degree: 72%
 
 ---
 
@@ -23,13 +23,42 @@ iOS ライブラリの実装や、起動、アップグレード、セッショ�
 
 >[!IMPORTANT]
 >
->SDK をダウンロードするには、iOS 6 以降を使用する&#x200B;**必要があります**。
+>SDKにはiOS 8以降が必要です。
 
 **前提条件**
 
 SDK をダウンロードする前に、「[コア実装およびライフサイクル](/help/ios/getting-started/requirements.md)」の「*レポートスイートの作成*」の手順を実行して、開発レポートスイートを設定し、設定ファイルの事前入力バージョンをダウンロードします。
 
 SDK をダウンロードするには
+
+>[!IMPORTANT]
+>
+>バージョン4.21.0以降、SDKはXCFrameworksを介して配布されます。 4.21.0以降を使用する場合は、次の手順に従います。
+>
+>SDKのバージョン4.21.0にはXcode 12.0以降が必要で、該当する場合はCocodes 1.10.0以降が必要です。
+
+1. `[Your_App_Name_]AdobeMobileLibrary-4.*-iOS.zip`ファイルをダウンロードして解凍し、`AdobeMobileLibrary`ディレクトリに次のソフトウェアコンポーネントがあることを確認します。
+
+   * `ADBMobileConfig.json`  — アプリ用にカスタマイズされたSDK設定ファイル。
+   * `AdobeMobile.xcframework` - 2つの大きなバイナリが含まれ、それぞれiOSデバイス(armv7、armv7s、arm64)とシミュレーター(i386、x86_64、arm64)用に1つずつ含まれます。SDKの`ADBMobile.h`ヘッダーファイルも含みます。
+
+      iOSアプリをターゲット設定する際は、このXCFrameworkをリンクする必要があります。
+
+   * `AdobeMobileExtension.xcframework` - 2つの大きなバイナリが含まれ、それぞれiOSデバイス(armv7、armv7s、arm64)とシミュレーター(i386、x86_64、arm64)用に1つずつ含まれます。SDKの`ADBMobile.h`ヘッダーファイルも含みます。
+
+      iOS拡張機能を対象にする場合、このXCFrameworkをリンクする必要があります。
+
+   * `AdobeMobileWatch.xcframework` - 2つの大きなバイナリが含まれ、それぞれwatchOSデバイス(arm64_32、armv7k)とシミュレータ(i386、x86_64、arm64)用に1つずつ)が含まれます。SDKの`ADBMobile.h`ヘッダーファイルも含みます。
+
+      このXCFrameworkは、Apple Watch(watchOS)アプリをターゲット設定する際にリンクする必要があります。
+
+   * `AdobeMobileTV.xcframework` - 2つの大きなバイナリが含まれ、それぞれtvOSデバイス(arm64)とシミュレータ(x86_64、arm64)用に1つずつ含まれます。SDKの`ADBMobile.h`ヘッダーファイルも含みます。
+
+      このXCFrameworkは、Apple TV(tvOS)アプリをターゲット設定する際にリンクする必要があります。
+
+>[!IMPORTANT]
+>
+>4.21.0より前のバージョンでは、SDKはバイナリ経由で配布されます。 4.21.0より古いバージョンを使用する場合は、次の手順に従います。
 
 1. `[Your_App_Name_]AdobeMobileLibrary-4.*-iOS.zip`ファイルをダウンロードして展開し、以下のソフトウェアコンポーネントがあることを確認します。
 
@@ -102,6 +131,12 @@ SDK をダウンロードするには
    >
    > 同じターゲット内で複数の `AdobeMobileLibrary*.a` ファイルをリンクすると、予期せぬ動作が発生したり、ビルドできなくなったりすることがあります。
 
+   >[!IMPORTANT]
+   >
+   > バージョン4.21.0以降を使用している場合は、AdobeXCFrameworksが埋め込まれていないことを確認してください。
+
+   ![](assets/no-embed.png)
+
 1. アプリがエラーなくビルドされることを確認します。
 
 ## ライフサイクル指標の実装 {#section_532702562A7A43809407C9A2CBA80E1E}
@@ -115,9 +150,9 @@ SDK をダウンロードするには
 `application:didFinishLaunchingWithOptions` に `collectLifecycleData`／`collectLifecycleDataWithAdditionalData` 呼び出しを追加します。
 
 ```objective-c
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions { 
- [ADBMobile collectLifecycleData]; 
-    return YES; 
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+ [ADBMobile collectLifecycleData];
+    return YES;
 }
 ```
 
@@ -130,11 +165,11 @@ SDK をダウンロードするには
 >`collectLifecycleDataWithAdditionalData:` を使用して SDK に渡されたデータはすべて、SDK によって `NSUserDefaults` に保持されます。SDK は、`NSDictionary` 型または `NSString` 型ではない `NSNumber` パラメーターの値を削除します。
 
 ```objective-c
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions { 
-    NSMutableDictionary *contextData = [NSMutableDictionary dictionary]; 
-    [contextData setObject:@"Game" forKey:@"myapp.category"]; 
-    [ADBMobile collectLifecycleDataWithAdditionalData:contextData]; 
-    return YES; 
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    NSMutableDictionary *contextData = [NSMutableDictionary dictionary];
+    [contextData setObject:@"Game" forKey:@"myapp.category"];
+    [ADBMobile collectLifecycleDataWithAdditionalData:contextData];
+    return YES;
 }
 ```
 
