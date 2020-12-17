@@ -7,10 +7,10 @@ title: リリースノート
 topic: Developer and implementation
 uuid: e1613dc5-02a4-43a7-997a-29b4de98b4d1
 translation-type: tm+mt
-source-git-commit: 6c8020b88d22489f86853274d29dbceee504aa06
+source-git-commit: b6c9154e925ce0a0530d4c8f0871a97198ecd840
 workflow-type: tm+mt
-source-wordcount: '469'
-ht-degree: 100%
+source-wordcount: '518'
+ht-degree: 90%
 
 ---
 
@@ -18,6 +18,12 @@ ht-degree: 100%
 # リリースノート {#release-notes}
 
 Experience Cloud ソリューション用 iOS SDK 4.x のリリースノート、既知の問題およびホットフィックス情報を次に示します。
+
+**2020年12月15日：バージョン4.21.0**
+
+* 一般 — SDKは、既存のインテルアーキテクチャのサポートを維持しながら、新しいApple M1アーキテクチャでハードウェアをサポートするために、XCFrameworksを使用して配布されました。
+   * 重要：AdobeMobile XCFrameworksにアップグレードするには、Xcode 12.0以降が必要です
+   * 重要：Cocoapodsを使用している場合、AdobeMobile XCFrameworksにアップグレードするには、Cocoapods 1.10.0以降が必要です
 
 **2020 年 11 月 5 日：バージョン 4.20.0**
 
