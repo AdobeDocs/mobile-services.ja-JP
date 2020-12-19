@@ -7,10 +7,10 @@ title: コア実装とライフサイクル
 topic: Developer and implementation
 uuid: 96d06325-e424-4770-8659-4b5431318ee3
 translation-type: tm+mt
-source-git-commit: b2fce063a2c97eecb2abc1a21ad8e8ab56fc151b
+source-git-commit: c7400359bc19150926a67b991ba219a7fa187442
 workflow-type: tm+mt
-source-wordcount: '885'
-ht-degree: 72%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -39,20 +39,21 @@ SDK をダウンロードするには
 
 1. `[Your_App_Name_]AdobeMobileLibrary-4.*-iOS.zip`ファイルをダウンロードして解凍し、`AdobeMobileLibrary`ディレクトリに次のソフトウェアコンポーネントがあることを確認します。
 
+   * `ADBMobile.h` - iOS SDKで使用されるObjective-Cヘッダーファイル。
    * `ADBMobileConfig.json`  — アプリ用にカスタマイズされたSDK設定ファイル。
-   * `AdobeMobile.xcframework` - 2つの大きなバイナリが含まれ、それぞれiOSデバイス(armv7、armv7s、arm64)とシミュレーター(i386、x86_64、arm64)用に1つずつ含まれます。SDKの`ADBMobile.h`ヘッダーファイルも含みます。
+   * `AdobeMobile.xcframework` - 2つの大きなバイナリが含まれ、それぞれiOSデバイス(armv7、armv7s、arm64)とシミュレーター(i386、x86_64、arm64)用に1つずつ含まれます。
 
       iOSアプリをターゲット設定する際は、このXCFrameworkをリンクする必要があります。
 
-   * `AdobeMobileExtension.xcframework` - 2つの大きなバイナリが含まれ、それぞれiOSデバイス(armv7、armv7s、arm64)とシミュレーター(i386、x86_64、arm64)用に1つずつ含まれます。SDKの`ADBMobile.h`ヘッダーファイルも含みます。
+   * `AdobeMobileExtension.xcframework` - 2つの大きなバイナリが含まれ、それぞれiOSデバイス(armv7、armv7s、arm64)とシミュレーター(i386、x86_64、arm64)用に1つずつ含まれます。
 
       iOS拡張機能を対象にする場合、このXCFrameworkをリンクする必要があります。
 
-   * `AdobeMobileWatch.xcframework` - 2つの大きなバイナリが含まれ、それぞれwatchOSデバイス(arm64_32、armv7k)とシミュレータ(i386、x86_64、arm64)用に1つずつ)が含まれます。SDKの`ADBMobile.h`ヘッダーファイルも含みます。
+   * `AdobeMobileWatch.xcframework` - 2つの大きなバイナリが含まれ、それぞれwatchOSデバイス(arm64_32、armv7k)とシミュレータ(i386、x86_64、arm64)用に1つずつ)が含まれます。
 
       このXCFrameworkは、Apple Watch(watchOS)アプリをターゲット設定する際にリンクする必要があります。
 
-   * `AdobeMobileTV.xcframework` - 2つの大きなバイナリが含まれ、それぞれtvOSデバイス(arm64)とシミュレータ(x86_64、arm64)用に1つずつ含まれます。SDKの`ADBMobile.h`ヘッダーファイルも含みます。
+   * `AdobeMobileTV.xcframework` - 2つの大きなバイナリが含まれ、それぞれtvOSデバイス(arm64)とシミュレータ(x86_64、arm64)用に1つずつ含まれます。
 
       このXCFrameworkは、Apple TV(tvOS)アプリをターゲット設定する際にリンクする必要があります。
 
