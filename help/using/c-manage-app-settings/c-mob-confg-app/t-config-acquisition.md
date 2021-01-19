@@ -8,10 +8,10 @@ title: SDK からの獲得データ送信の設定
 topic: Metrics
 uuid: 50ce51ad-39bf-4ac7-bd94-757443d11ca7
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: aab04abeb5edb6be886002e27ef1c5340b0a8f0d
 workflow-type: tm+mt
-source-wordcount: '174'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 100%
 
    * **[!UICONTROL 有効にする]**
 
-      ユーザーが Apple App Store や Google Play からアプリを直接ダウンロードできるアプリストアリンクを作成します。これにより、単なるダウンロード回数に加えて、このリンク経由でアプリをダウンロードした後のユーザー行動（ライフサイクル系指標や成功イベント）を長期で追えるようになります。詳しくは、「[獲得](//help/using/acquisition-main/acquisition-main.md)」を参照してください。
+      ユーザーが Apple App Store や Google Play からアプリを直接ダウンロードできるアプリストアリンクを作成します。これにより、単なるダウンロード回数に加えて、このリンク経由でアプリをダウンロードした後のユーザー行動（ライフサイクル系指標や成功イベント）を長期で追えるようになります。詳しくは、「[獲得](/help/using/acquisition-main/acquisition-main.md)」を参照してください。
 
    * **[!UICONTROL 送信タイムアウト（秒）]**
 
