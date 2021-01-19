@@ -7,7 +7,7 @@ title: 4.x iOS ライブラリへの移行
 topic: Developer and implementation
 uuid: 5668972b-f355-4e03-9df0-8c82ddf6809b
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: aab04abeb5edb6be886002e27ef1c5340b0a8f0d
 workflow-type: tm+mt
 source-wordcount: '895'
 ht-degree: 100%
@@ -122,7 +122,7 @@ iOS ライブラリのバージョン 3.x または 2.x からバージョン 4.
 | dynamicVariablePrefix | 削除（使用終了） |
 | visitorNamespace | 削除（使用終了） |
 | usePlugins | 削除（使用終了） |
-| useBestPractices チャーン測定に対するすべての呼び出し（getChurnInstance） | 削除（ライフサイクル指標に置き換えられました）詳しくは、「[ライフサイクル指標](//help/ios/metrics.md)」を参照してください。 |
+| useBestPractices チャーン測定に対するすべての呼び出し（getChurnInstance） | 削除（ライフサイクル指標に置き換えられました）詳しくは、「[ライフサイクル指標](/help/ios/metrics.md)」を参照してください。 |
 
 
 ## トラッキングコールとトラッキング変数の更新 {#section_96E7D9B3CDAC444789503B7E7F139AB9}
