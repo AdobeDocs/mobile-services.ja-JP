@@ -6,11 +6,11 @@ solution: Experience Cloud,Analytics
 title: リリースノート
 topic: Developer and implementation
 uuid: e1613dc5-02a4-43a7-997a-29b4de98b4d1
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 53d407056dd89dcf32d1895231999b2d92e879ec
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '533'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -19,9 +19,9 @@ ht-degree: 97%
 
 Experience Cloud ソリューション用 iOS SDK 4.x のリリースノート、既知の問題およびホットフィックス情報を次に示します。
 
-**2021年1月13日：バージョン4.21.1**
+**2021 年 1 月 13 日：バージョン 4.21.1**
 
-* 一般 — アプリのシャットダウン中にSQLite例外が発生する可能性がある問題を修正しました。
+* 一般 - アプリのシャットダウン中に SQLite 例外が発生する可能性がある問題を修正しました。
 
 **2020 年 12 月 15 日：バージョン 4.21.0**
 
