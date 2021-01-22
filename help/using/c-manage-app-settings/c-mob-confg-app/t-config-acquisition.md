@@ -7,11 +7,11 @@ solution: Experience Cloud,Analytics
 title: SDK からの獲得データ送信の設定
 topic: Metrics
 uuid: 50ce51ad-39bf-4ac7-bd94-757443d11ca7
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: aab04abeb5edb6be886002e27ef1c5340b0a8f0d
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '174'
+ht-degree: 100%
 
 ---
 
