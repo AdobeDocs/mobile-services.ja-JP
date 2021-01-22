@@ -7,9 +7,9 @@ solution: Experience Cloud,Analytics
 title: ソーシャルシェア
 topic: Metrics
 uuid: 900e58aa-c1d3-4590-af44-df67575214a4
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: aab04abeb5edb6be886002e27ef1c5340b0a8f0d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '142'
 ht-degree: 100%
 
