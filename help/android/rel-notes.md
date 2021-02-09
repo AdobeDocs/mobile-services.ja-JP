@@ -6,11 +6,11 @@ solution: Experience Cloud,Analytics
 title: リリースノート
 topic: Developer and implementation
 uuid: 16bb4de8-a216-47a8-928c-0b1e1421adcf
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 8b5842068c602f3f9b1c020c1c9a686eb0e56b74
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '303'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -19,25 +19,25 @@ ht-degree: 98%
 
 Experience Cloud ソリューション用 Android SDK 4.x のリリースノート、既知の問題およびホットフィックス情報を次に示します。
 
-**2020 年 4 月 4 日：4.18.2**
+**2020 年 4 月 3 日（PT）：4.18.2**
 
 * アプリ内メッセージ：セキュリティ上の理由から、SDK によって作成された WebViews で、プロパティ「setAllowFileAccess」が false に設定されるようになりました。
 
-**2020 年 3 月 13 日：4.18.1**
+**2020 年 3 月 12 日（PT）：4.18.1**
 
 * Target：Target セッション ID は、Adobe Analytics に送信される Target 用内部 Analytics ヒットで、コンテキストデータパラメーター「a.target.sessionId」として追加されるようになりました。
 
-**2020 年 1 月 16 日：4.18.0**
+**2020 年 1 月 16 日（PT）：4.18.0**
 
 * 獲得 - Google Play インストールリファラー API をサポートするため、新しい API である `Analytics.processGooglePlayInstallReferrerUrl(final String url)` を追加しました。
 
-   リファラー API のインストールについて詳しくは、「[まだ InstallBroadcast を使用している場合は、2020 年 3 月 1 日までに再生リファラー API に切り替えてください](https://android-developers.googleblog.com/2019/11/still-using-installbroadcast-switch-to.html)」を参照してください。
+   リファラー API のインストールについて詳しくは、「[まだ InstallBroadcast を使用している場合は、2020 年 3 月 1 日（PT）までに再生リファラー API に切り替えてください](https://android-developers.googleblog.com/2019/11/still-using-installbroadcast-switch-to.html)」を参照してください。
 
-**2019 年 9 月 21 日：バージョン 4.17.10**
+**2019 年 9 月 20 日（PT）：バージョン 4.17.10**
 
 * 全般：Android API レベル 21 以降における、一部の地域のロケール文字列の生成を修正しました。
 
-**2019 年 7 月 19 日：バージョン 4.17.8**
+**2019 年 7 月 18 日（PT）：バージョン 4.17.8**
 
 * Adobe Target：すべてのリクエストで、URL クエリパラメーターにクライアントおよび sessionId が含まれるようになりました。
 * アプリ内メッセージ：空のクリックスルー URL でメッセージがトリガーされた場合に Android アプリがクラッシュする問題を修正しました。
@@ -45,12 +45,12 @@ Experience Cloud ソリューション用 Android SDK 4.x のリリースノー�
 
    二重エンコードが原因で、API からの戻り値がセキュリティ診断によってリスクありと判断されることがありました。
 
-**2019 年 6 月 6 日：バージョン 4.17.7**
+**2019 年 6 月 6 日（PT）：バージョン 4.17.7**
 
 * 全般 - Android API のレベル 20 未満でのネットワーク呼び出しで、TLS 1.1 または TLS 1.2 が使用されるようになりました。
 * Analytics - プッシュ通知が有効な場合に、ライフサイクルデータにプッシュオプトインステータスを追加します。
 
-**2019 年 5 月 24 日：バージョン 4.17.6**
+**2019 年 5 月 24 日（PT）：バージョン 4.17.6**
 
 * 訪問者 ID サービス - 
    `setPushIdentifier` API I呼び出しは、呼び出されるたびに同期呼び出しを訪問者IDサービスへと送信するようになりました。
@@ -58,4 +58,4 @@ Experience Cloud ソリューション用 Android SDK 4.x のリリースノー�
 * 訪問者 ID サービス - 接続と読み取りのタイムアウトを 2 秒から 5 秒に増やしました。
 
 
-すべてのソリューションに関する現在および過去のリリースノートについては、[Adobe Experience Cloud リリースノート](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html)を参照してください。
+すべてのソリューションに関する現在および過去のリリースノートについては、[Adobe Experience Cloud リリースノート](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=ja)を参照してください。
