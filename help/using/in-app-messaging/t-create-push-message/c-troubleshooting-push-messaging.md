@@ -1,20 +1,20 @@
 ---
 description: この情報は、プッシュメッセージのトラブルシューティングに役立ちます。
-keywords: mobile
+keywords: モバイル
 seo-description: この情報は、プッシュメッセージのトラブルシューティングに役立ちます。
 seo-title: プッシュメッセージのトラブルシューティング
 solution: Experience Cloud,Analytics
 title: プッシュメッセージのトラブルシューティング
-topic: Metrics
+topic-fix: Metrics
 uuid: c7be4ab7-0cfe-4296-84a8-01412f4fd93f
+exl-id: 56feb8e1-e196-4b70-8240-6e41581ca602
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '735'
+source-wordcount: '736'
 ht-degree: 100%
 
 ---
-
 
 # プッシュメッセージのトラブルシューティング {#troubleshooting-push-messaging}
 
