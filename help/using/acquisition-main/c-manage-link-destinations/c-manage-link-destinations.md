@@ -1,20 +1,20 @@
 ---
 description: リンク先を管理ページで、リンク先を作成、編集、アーカイブ／アーカイブ解除および削除できます。これらのリンク先は、マーケティングリンク、プッシュ通知またはアプリ内メッセージを構築する際に呼び出すことができます。
-keywords: mobile
+keywords: モバイル
 seo-description: リンク先を管理ページで、リンク先を作成、編集、アーカイブ／アーカイブ解除および削除できます。これらのリンク先は、マーケティングリンク、プッシュ通知またはアプリ内メッセージを構築する際に呼び出すことができます。
 seo-title: リンク先の作成と管理
 solution: Experience Cloud,Analytics
 title: リンク先の作成と管理
-topic: Metrics
+topic-fix: Metrics
 uuid: 43930e3a-6a11-40c6-8a61-6732a673dac7
+exl-id: 53e9f970-e53c-4c0d-9214-abb01a9b144b
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '166'
+source-wordcount: '167'
 ht-degree: 100%
 
 ---
-
 
 # リンク先の作成と管理 {#create-and-manage-link-destinations}
 
@@ -31,4 +31,3 @@ ht-degree: 100%
 以下に例を示します。
 
 ![](assets/link_destinations_list.png)
-
