@@ -1,20 +1,20 @@
 ---
 description: Digital Publishing Suite（DPS）のユーザーが利用できるレポートを表示できます。
-keywords: mobile
+keywords: モバイル
 seo-description: Digital Publishing Suite（DPS）のユーザーが利用できるレポートを表示できます。
 seo-title: Digital Publishing Suite の概要
 solution: Experience Cloud,Analytics
 title: Digital Publishing Suite の概要
-topic: Metrics
+topic-fix: Metrics
 uuid: ca335891-5d73-47dc-811f-374a0844109f
+exl-id: 5f5e09a3-c634-480c-863d-f9a34cd01464
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '130'
+source-wordcount: '131'
 ht-degree: 100%
 
 ---
-
 
 # Digital Publishing Suite の概要 {#digital-publishing-solution}
 
