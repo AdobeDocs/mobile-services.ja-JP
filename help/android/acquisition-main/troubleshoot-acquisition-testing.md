@@ -1,19 +1,19 @@
 ---
 description: このトピックでは、獲得テスト中に直面する可能性のある問題のトラブルシューティング方法について説明します。
-keywords: android;library;mobile;sdk
+keywords: Android, ライブラリ, モバイル, SDK
 seo-description: このトピックでは、獲得テスト中に直面する可能性のある問題のトラブルシューティング方法について説明します。
 seo-title: 獲得テストのトラブルシューティング
 solution: Experience Cloud,Analytics
 title: 獲得テストのトラブルシューティング
-topic: Developer and implementation
+topic-fix: Developer and implementation
+exl-id: 1ed2ad89-4e89-43da-aa21-f688b4d1c0d1
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '252'
 ht-degree: 100%
 
 ---
-
 
 # 獲得テストのトラブルシューティング {#troubleshoot-acquisition-testing}
 
@@ -50,4 +50,3 @@ ht-degree: 100%
 >[!IMPORTANT]
 >
 >リファラーインテントを正しく処理するには、次の 2 つのコマンドを個別に実行する必要があります。`adb`そうしないと、リファラー情報がダブルエスケープされ、ブロードキャストレシーバーは不完全なデータを受信することになります。
-
