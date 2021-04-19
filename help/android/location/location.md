@@ -1,20 +1,20 @@
 ---
 description: この情報は、Android アプリでロケーション機能を使用する場合に役立ちます。
-keywords: android;library;mobile;sdk
+keywords: Android, ライブラリ, モバイル, SDK
 seo-description: この情報は、Android アプリでロケーション機能を使用する場合に役立ちます。
 seo-title: ロケーションの概要
 solution: Experience Cloud,Analytics
 title: ロケーションの概要
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 15180bd6-616b-477d-a106-96a52c974d7d
+exl-id: 687a3b2c-ee74-46d8-a732-b3a0bec6e798
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '133'
+source-wordcount: '137'
 ht-degree: 100%
 
 ---
-
 
 # ロケーションの概要 {#location}
 
@@ -28,4 +28,3 @@ Adobe Experience Platform Mobile SDK に関する情報やドキュメントを�
 
 * 開始するには、Adobe Experience Platform Launch に移動します。
 * Experience Platform SDK リポジトリの内容については、[Github: Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks) を参照してください。
-
