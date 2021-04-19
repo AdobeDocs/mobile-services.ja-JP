@@ -4,16 +4,16 @@ seo-description: この情報は、iOS SDK を Adobe Analytics で使用する�
 seo-title: Analytics の概要
 solution: Experience Cloud,Analytics
 title: Analytics の概要
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 8c7fb76a-be0b-4465-8151-ece7bad11b55
+exl-id: 7c383b1d-2e59-4473-9de5-80c84d896f6d
 translation-type: tm+mt
-source-git-commit: bc11c1e7a4a11657ee89c40ddcbd37377ce50bb5
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '322'
 ht-degree: 100%
 
 ---
-
 
 # Analytics の概要 {#analytics}
 
