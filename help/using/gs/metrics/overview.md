@@ -1,20 +1,20 @@
 ---
 description: 最近表示したアプリの主要業績評価指標を表示できます。デフォルトでは、最大 12 個のアプリを表示できます。日付範囲を変更し、フィルターを作成して、データをセグメント化し、概要ページで任意のアプリを編集できます。
-keywords: mobile
+keywords: モバイル
 seo-description: 最近表示したアプリの主要業績評価指標を表示できます。デフォルトでは、最大 12 個のアプリを表示できます。日付範囲を変更し、フィルターを作成して、データをセグメント化し、概要ページで任意のアプリを編集できます。
 seo-title: モバイル指標の表示
 solution: Experience Cloud,Analytics
 title: モバイル指標の表示
-topic: Metrics
+topic-fix: Metrics
 uuid: 57db0b77-6b0a-4a0c-9aad-0731275233fd
+exl-id: aab6448d-4362-4c75-949a-7a519da76606
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '487'
 ht-degree: 100%
 
 ---
-
 
 # モバイル指標の表示 {#display-mobile-metrics}
 
