@@ -4,16 +4,16 @@ seo-description: WatchOS 2 以降、Apple Watch で WatchKit エクステンシ�
 seo-title: WatchOS 2 を使用した Apple Watch 実装
 solution: Experience Cloud,Analytics
 title: WatchOS 2 を使用した Apple Watch 実装
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 9498467e-db5e-411e-a00e-d19841f485de
+exl-id: 9fc9b799-1081-42e4-acf3-569fdeb07aff
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '542'
 ht-degree: 100%
 
 ---
-
 
 # WatchOS 2 を使用した Apple Watch 実装 {#apple-watch-implementation-with-watchos}
 
@@ -41,6 +41,7 @@ Adobe Experience Platform Mobile SDK に関する情報やドキュメントを�
 >* 本体アプリ
 >* WatchKit アプリ
 >* WatchKit 拡張
+
 >
 
 
@@ -166,4 +167,3 @@ WatchKit アプリの開発について詳しくは、「[Watch App アーキテ
 * WatchKit アプリの場合、`a.RunMode` は `Extension` に設定されます。
 * WatchKit アプリは腕時計で実行されるので、`a.AppID` に名前が正しくレポートされます。
 * WatchOS2 アプリに対しては、ライフサイクルコールはトリガーされません。
-
