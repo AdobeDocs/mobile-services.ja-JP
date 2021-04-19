@@ -4,16 +4,16 @@ seo-description: Experience Cloud ソリューション用 Android SDK 4.x の�
 seo-title: リリースノート
 solution: Experience Cloud,Analytics
 title: リリースノート
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 16bb4de8-a216-47a8-928c-0b1e1421adcf
-translation-type: ht
-source-git-commit: 8b5842068c602f3f9b1c020c1c9a686eb0e56b74
-workflow-type: ht
+exl-id: 5cc3d031-5952-4e9b-b551-9402d3c05ccb
+translation-type: tm+mt
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+workflow-type: tm+mt
 source-wordcount: '303'
 ht-degree: 100%
 
 ---
-
 
 # リリースノート {#release-notes}
 
