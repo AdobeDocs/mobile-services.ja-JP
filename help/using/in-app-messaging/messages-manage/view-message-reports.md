@@ -1,20 +1,20 @@
 ---
 description: アプリ内およびプッシュメッセージのメッセージレポートを表示できます。
-keywords: mobile
+keywords: モバイル
 seo-description: アプリ内およびプッシュメッセージのメッセージレポートを表示できます。
 seo-title: メッセージレポートの表示
 solution: Experience Cloud,Analytics
 title: メッセージレポートの表示
-topic: Metrics
+topic-fix: Metrics
 uuid: 0ac73a81-388f-4dfd-84d5-21b8db4b8c83
+exl-id: b8a2dd7a-02e1-47ce-9e8e-c1419b707b44
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '491'
 ht-degree: 100%
 
 ---
-
 
 # メッセージレポートの表示 {#view-message-reports}
 
