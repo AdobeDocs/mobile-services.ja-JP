@@ -1,20 +1,20 @@
 ---
 description: リンク先ページを使用して、既存の宛先を編集、アーカイブ／アーカイブ解除または削除できます。
-keywords: mobile
+keywords: モバイル
 seo-description: リンク先ページを使用して、既存の宛先を編集、アーカイブ／アーカイブ解除または削除できます。
 seo-title: リンク先を管理
 solution: Experience Cloud,Analytics
 title: リンク先を管理
-topic: Metrics
+topic-fix: Metrics
 uuid: 3a38d40d-b4c7-4f9f-aa6e-979613faaba2
+exl-id: 5d2ab0db-6371-434e-bf92-6013e78c8d8f
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '296'
+source-wordcount: '297'
 ht-degree: 100%
 
 ---
-
 
 # リンク先を管理 {#manage-link-destinations}
 
@@ -62,6 +62,3 @@ ht-degree: 100%
       >[!IMPORTANT]
       >
       >リンク先の削除は&#x200B;**永続的的**&#x200B;です。リンク先を削除してもよいか不確かな場合は、アーカイブオプションを使用します。
-
-
-
