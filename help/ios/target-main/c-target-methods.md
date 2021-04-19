@@ -4,16 +4,16 @@ seo-description: iOS ライブラリが提供する Adobe Target メソッドの
 seo-title: Adobe Mobile Services の iOS Target メソッド
 solution: Experience Cloud,Analytics
 title: iOS の Target メソッド
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 692bcda1-02ba-4902-bd65-15888adf1952
+exl-id: ba03f865-970c-4b48-af35-749f05b273d8
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '656'
 ht-degree: 100%
 
 ---
-
 
 # iOS の Target メソッド {#target-methods}
 
@@ -56,8 +56,9 @@ NSString *const ADBTargetParameterMboxHost;
 >[!IMPORTANT]
 >
 >* バージョン 4.14.0 より&#x200B;**前の** SDK を使用している場合、パラメーターの制限については、「[Input Parameters](https://developers.adobetarget.com/api/#input-parameters)」を参照してください。
->
->* SDK バージョン 4.14.0 **以降**&#x200B;の SDK を使用している場合、パラメーターの制限については、「[Batch Input Parameters](https://developers.adobetarget.com/api/#batch-input-parameters)」を参照してください。
+   >
+   >
+* SDK バージョン 4.14.0 **以降**&#x200B;の SDK を使用している場合、パラメーターの制限については、「[Batch Input Parameters](https://developers.adobetarget.com/api/#batch-input-parameters)」を参照してください。
 
 
 ### メソッド
