@@ -1,20 +1,20 @@
 ---
 description: URL パラメーターを手作業で設定することで、新しいモバイルアプリユーザーをその場で獲得するためのマーケティングリンクを作成できます。
-keywords: mobile
+keywords: モバイル
 seo-description: URL パラメーターを手作業で設定することで、新しいモバイルアプリユーザーをその場で獲得するためのマーケティングリンクを作成できます。
 seo-title: ダウンロード計測用リンクの手動作成
 solution: Experience Cloud,Analytics
 title: ダウンロード計測用リンクの手動作成
-topic: Metrics
+topic-fix: Metrics
 uuid: d7709203-f793-4982-adaa-9c3c914aca2b
+exl-id: aef9fe3e-32dc-4ec0-9eda-f64cc5e486a3
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '496'
+source-wordcount: '497'
 ht-degree: 100%
 
 ---
-
 
 # ダウンロード計測用リンクの手動作成 {#create-acquisition-link-manually}
 
@@ -146,4 +146,3 @@ iOS の場合、次の正しいプロトコルを使用していることを確�
    ストア ID の例として、`a_i_id`／`a_g_id` があります。
 
 * 宛先のストアを自動的に判定できず、デフォルトも指定されていない場合は、404 エラーが返されます。
-
