@@ -1,20 +1,20 @@
 ---
 description: 新しいアプリの作成および主要指標の設定をおこなったり、Adobe Analytics および Adobe Audience Manager の SDK オプションを設定したり、獲得および ID サービスオプションを設定したり、設定ファイル、SDK、開発者およびテスター向けツールをダウンローするための情報です。
-keywords: mobile
+keywords: モバイル
 seo-description: 新しいアプリの作成および主要指標の設定をおこなったり、Adobe Analytics および Adobe Audience Manager の SDK オプションを設定したり、獲得および ID サービスオプションを設定したり、設定ファイル、SDK、開発者およびテスター向けツールをダウンローするための情報です。
 seo-title: 新しいアプリの追加
 solution: Experience Cloud,Analytics
 title: 新しいアプリの追加
-topic: Metrics
+topic-fix: Metrics
 uuid: 706b5e4d-1318-4a9e-8c69-ffabf51fa02c
+exl-id: 30dca517-61ac-495b-aa91-3febd1cb8639
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '709'
+source-wordcount: '710'
 ht-degree: 100%
 
 ---
-
 
 # 新しいアプリの追加 {#add-a-new-app}
 
