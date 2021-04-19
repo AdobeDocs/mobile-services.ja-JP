@@ -1,20 +1,20 @@
 ---
 description: この情報は、Adobe Mobile Services の理解と使用に役立ちます。
-keywords: mobile
+keywords: モバイル
 seo-description: この情報は、Adobe Mobile Services の理解と使用に役立ちます。
 seo-title: はじめに
 solution: Experience Cloud,Analytics
 title: はじめに
-topic: Metrics
+topic-fix: Metrics
 uuid: a7ae7c5a-dab8-4603-b4cd-af73a2f09f71
+exl-id: 0c08e154-8747-45dc-9731-ab2a3e78bc5a
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '1373'
+source-wordcount: '1374'
 ht-degree: 100%
 
 ---
-
 
 # はじめに {#getting-started}
 
