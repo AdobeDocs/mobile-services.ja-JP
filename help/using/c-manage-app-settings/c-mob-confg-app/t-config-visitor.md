@@ -1,20 +1,20 @@
 ---
 description: 新しいアプリの作成中または既存のアプリの編集中に、アプリ設定ページで Adobe Experience Platform ID サービスオプションを設定できます。
-keywords: mobile
+keywords: モバイル
 seo-description: 新しいアプリの作成中または既存のアプリの編集中に、アプリ設定ページで Adobe Experience Platform ID サービスオプションを設定できます。
 seo-title: SDK ID サービスオプションの設定
 solution: Experience Cloud,Analytics
 title: SDK ID サービスオプションの設定
-topic: Metrics
+topic-fix: Metrics
 uuid: e69b57f7-153a-4a95-9c1e-c07fe29dea2d
+exl-id: e44ca332-9723-4ffc-ac24-52a620f32783
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '206'
+source-wordcount: '207'
 ht-degree: 100%
 
 ---
-
 
 # SDK ID サービスオプションの設定 {#configure-sdk-id-service-options}
 
