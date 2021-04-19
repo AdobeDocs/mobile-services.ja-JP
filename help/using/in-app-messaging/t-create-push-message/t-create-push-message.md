@@ -1,20 +1,20 @@
 ---
 description: Mobile Services UI から Analytics で作成されたセグメントに対してプッシュメッセージを送信できます。
-keywords: mobile
+keywords: モバイル
 seo-description: Mobile Services UI から Analytics で作成されたセグメントに対してプッシュメッセージを送信できます。
 seo-title: プッシュメッセージの作成
 solution: Experience Cloud,Analytics
 title: プッシュメッセージの作成
-topic: Metrics
+topic-fix: Metrics
 uuid: fb2a6026-f7e6-40e6-999e-b43db35d6c69
+exl-id: e7ad3797-17c7-41ad-8b65-d9f8e5b01960
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '187'
+source-wordcount: '188'
 ht-degree: 100%
 
 ---
-
 
 # プッシュメッセージの作成 {#create-a-push-message}
 
