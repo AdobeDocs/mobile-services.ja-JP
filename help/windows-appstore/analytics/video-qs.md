@@ -4,22 +4,22 @@ seo-description: ビデオ分析で役立つ情報です。
 seo-title: ビデオ分析
 solution: Experience Cloud,Analytics
 title: ビデオ分析
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 7d4e6668-a1d9-41da-96c8-8baac860c5b0
+exl-id: 86d70a6f-db12-4f94-a37f-4b1d4b99e0f1
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '898'
 ht-degree: 72%
 
 ---
 
-
 # ビデオ分析 {#video-analytics}
 
 ビデオ分析で役立つ情報です。
 
-ビデオ測定について詳しくは、『Adobe Analyticsでのオーディオとビデオの [測定](https://docs.adobe.com/content/help/ja-JP/media-analytics/using/media-overview.html/) 』ガイドを参照してください。 ビデオ測定の一般的なプロセスは、すべてのAppMeasurementプラットフォームで非常に似ています。 このクイック開始では、開発者タスクの基本的な概要とコードサンプルについて説明します。
+ビデオ測定の詳細については、『[Adobe Analyticsでのオーディオとビデオの測定](https://docs.adobe.com/content/help/ja-JP/media-analytics/using/media-overview.html/)』ガイドを参照してください。 ビデオ測定の一般的なプロセスは、すべてのAppMeasurementプラットフォームで非常に似ています。 このクイック開始では、開発者タスクの基本的な概要とコードサンプルについて説明します。
 
 次の表に、Analytics に送信されるメディアデータのリストを示します。処理ルールを使用して、コンテキストデータを Analytics 変数にマッピングします。
 
@@ -43,7 +43,7 @@ ht-degree: 72%
 
 * **a.media.segment**
 
-   （必須）セグメント名や、ビデオ内でのセグメントの発生順序を含め、ビデオセグメントデータを収集します。この変数を入力するには、プレーヤーイベントを自動的に追跡する場合に `segmentByMilestones` 変数を有効にするか、プレーヤーイベントを手動で追跡する場合にカスタムセグメント名を設定します。For example, when a visitor views the first segment in a video, SiteCatalyst might collect the following in the `1:M:0-25` segment eVar.
+   （必須）セグメント名や、ビデオ内でのセグメントの発生順序を含め、ビデオセグメントデータを収集します。この変数を入力するには、プレーヤーイベントを自動的に追跡する場合に `segmentByMilestones` 変数を有効にするか、プレーヤーイベントを手動で追跡する場合にカスタムセグメント名を設定します。例えば、訪問者がビデオの最初のセグメントを表示した場合、SiteCatalystは次の情報を`1:M:0-25`セグメントeVarに収集することがあります。
 
    デフォルトのビデオデータ収集方法では、次の時点でデータが収集されます。
 
@@ -166,7 +166,7 @@ property bool isMediaAd;
 
 * **開く(winJS:開く)**
 
-   で定義された設定を使用して、開いているメディアを追跡し `settings`ます。
+   `settings`で定義された設定を使用して、メディアを開いているかどうかを追跡します。
 
    * このメソッドの構文を次に示します。
 
@@ -182,7 +182,7 @@ property bool isMediaAd;
 
 * **閉じる(winJS:終了)**
 
-   指定された *名前のメディアのメディア終了を追跡します*。
+   *名前*&#x200B;のメディア終了を追跡します。
 
    * このメソッドの構文を次に示します。
 
@@ -198,7 +198,7 @@ property bool isMediaAd;
 
 * **再生(winJS:再生)**
 
-   指定された *`name`* オフセット（秒）でのメディアの再生 ** を追跡します。
+   *`name`*&#x200B;という名前のメディアの再生を、指定された&#x200B;*オフセット*&#x200B;で追跡します（秒）。
 
    * このメソッドの構文を次に示します。
 
@@ -275,4 +275,3 @@ property bool isMediaAd;
       ```js
       ADB.Media.track("mediaName", null);
       ```
-
