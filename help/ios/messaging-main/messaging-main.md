@@ -4,16 +4,16 @@ seo-description: iOS アプリでメッセージを使用するのに役立つ�
 seo-title: メッセージ
 solution: Experience Cloud,Analytics
 title: メッセージ
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: c6475ab4-015d-46b0-af28-5d0df3f4459e
+exl-id: e7be8760-6daf-42c8-9c3d-1de29d62ad0b
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '121'
 ht-degree: 100%
 
 ---
-
 
 # メッセージ {#messaging}
 
@@ -27,4 +27,3 @@ Adobe Experience Platform Mobile SDK に関する情報やドキュメントを�
 
 * 開始するには、Adobe Experience Platform Launch に移動します。
 * Experience Platform SDK リポジトリの内容については、[Github: Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks) を参照してください。
-
