@@ -4,16 +4,16 @@ seo-description: ライフタイム値を使用して、各 Android ユーザー
 seo-title: 訪問者のライフタイム値
 solution: Experience Cloud,Analytics
 title: 訪問者のライフタイム値
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: ba0308de-282e-46f9-a14c-19fb6d5c363e
+exl-id: 93c6d711-c7c0-4fca-93b2-6a6fc19377bd
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '232'
 ht-degree: 100%
 
 ---
-
 
 # 訪問者のライフタイム値 {#visitor-lifetime-value}
 
@@ -51,4 +51,3 @@ Analytics.trackLifetimeValueIncrease(BigDecimal.valueOf(5.0), cdata);
 コンテキストデータ値は、Adobe Mobile Services のカスタム変数にマッピングする必要があります。
 
 ![](assets/map-variable-context-ltv.png)
-
