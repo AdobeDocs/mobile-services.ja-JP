@@ -4,16 +4,16 @@ seo-description: この参考資料は、Experience Cloud ソリューション�
 seo-title: iOS SDK リファレンス
 solution: Experience Cloud,Analytics
 title: iOS SDK リファレンス
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 4e80b0ce-d36e-440e-96ff-de5df6804e3e
+exl-id: 681a2df7-b942-4039-a635-1b649837d64f
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '138'
 ht-degree: 100%
 
 ---
-
 
 # iOS SDK リファレンス {#ios-sdk-reference}
 
