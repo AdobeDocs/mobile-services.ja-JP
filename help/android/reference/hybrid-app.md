@@ -4,16 +4,16 @@ seo-description: アプリでモバイル Web コンテンツを開く場合は�
 seo-title: アプリとモバイル Web にまたがる訪問者トラッキング
 solution: Experience Cloud,Analytics
 title: アプリとモバイル Web にまたがる訪問者トラッキング
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 073572e4-4c55-4b27-b4a7-e4349ccde7bf
+exl-id: 7ca98572-138d-48f8-aa2a-d376eebb0b2c
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '508'
 ht-degree: 100%
 
 ---
-
 
 # アプリとモバイル Web にまたがる訪問者トラッキング {#visitor-tracking-between-an-app-and-mobile-web}
 
@@ -93,4 +93,3 @@ ht-degree: 100%
 >[!IMPORTANT]
 >
 >アドビが実装を検証できるようにするには、サンプルアプリケーションおよび関連するサイトを共有する必要があります。
-
