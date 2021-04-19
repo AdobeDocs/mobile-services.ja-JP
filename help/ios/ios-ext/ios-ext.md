@@ -4,16 +4,16 @@ seo-description: iOS エクステンションを使用して、Apple Watch ア�
 seo-title: iOS エクステンション実装
 solution: Experience Cloud,Analytics
 title: iOS エクステンション実装
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 8afc03fe-403e-4643-ada1-30e403ede238
+exl-id: 741b0cd5-6245-480a-b5bf-a33a1f82a425
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '721'
 ht-degree: 100%
 
 ---
-
 
 # iOS エクステンション実装 {#ios-extension-implementation}
 
@@ -48,6 +48,7 @@ Watch アプリ向けの SDK には、アプリ内メッセージ以外のすべ
 >
 >* アプリを含めるためのターゲットが 1 つ。
 >* 拡張用のターゲットが 1 つ。
+
 >
 
 
@@ -114,4 +115,3 @@ WatchKit アプリを使用する場合は、3 つ目のターゲットが必要
 * 本体アプリが起動されない場合、拡張機能からのヒットは破棄されます。
 * 本体アプリと拡張アプリの間では、バージョン番号とビルド番号を同じにする必要があります。
 * iOS 拡張アプリに対しては、ライフサイクルコールはトリガーされません。
-
