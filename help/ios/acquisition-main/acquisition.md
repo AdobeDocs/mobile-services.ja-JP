@@ -4,16 +4,16 @@ seo-description: Adobe Mobile Services で一意のトラッキングコード�
 seo-title: モバイルアプリの獲得
 solution: Experience Cloud,Analytics
 title: モバイルアプリの獲得
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 5fece619-e4b8-4d06-9250-dcb66fa32ce0
+exl-id: a90dcb2f-babb-4c97-b67a-8468925ee5c8
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '414'
 ht-degree: 100%
 
 ---
-
 
 # モバイルアプリの獲得 {#mobile-app-acquisition}
 
