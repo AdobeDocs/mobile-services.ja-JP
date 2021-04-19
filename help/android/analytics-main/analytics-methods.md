@@ -1,20 +1,20 @@
 ---
 description: Android ライブラリによって提供される Adobe Analytics メソッドのリストを示します。
-keywords: android;library;mobile;sdk
+keywords: Android, ライブラリ, モバイル, SDK
 seo-description: Android ライブラリによって提供される Adobe Analytics メソッドのリストを示します。
 seo-title: Analytics メソッド
 solution: Experience Cloud,Analytics
 title: Analytics メソッド
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: ac7c640e-9dcc-4724-b561-019cc025d5a7
+exl-id: 7914d13e-40a2-4ae2-b759-2660817c2058
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '740'
+source-wordcount: '744'
 ht-degree: 100%
 
 ---
-
 
 # Analytics メソッド {#analytics-methods}
 
