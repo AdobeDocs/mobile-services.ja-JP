@@ -1,20 +1,20 @@
 ---
 description: ビューパスレポートはパス分析に基づいたもので、アプリ内の状態間の移行時にたどったパスを表す遷移チャートを表示します。
-keywords: mobile
+keywords: モバイル
 seo-description: ビューパスレポートはパス分析に基づいたもので、アプリ内の状態間の移行時にたどったパスを表す遷移チャートを表示します。
 seo-title: パスレポートの表示
 solution: Experience Cloud,Analytics
 title: パスレポートの表示
-topic: Reports,Metrics
+topic-fix: Reports,Metrics
 uuid: bc73edce-0cc0-4349-9a48-e0a40cbe1b67
+exl-id: 475dbe01-fa4d-433c-ac77-68f2a6972c0c
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '522'
+source-wordcount: '523'
 ht-degree: 100%
 
 ---
-
 
 # パスレポートの表示 {#view-paths}
 
