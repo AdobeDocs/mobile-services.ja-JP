@@ -1,26 +1,26 @@
 ---
 description: リストは、モバイルライブラリによって自動的に測定される指標とディメンションです。
-keywords: android;library;mobile;sdk
+keywords: Android, ライブラリ, モバイル, SDK
 seo-description: リストは、モバイルライブラリによって自動的に測定される指標とディメンションです。
 seo-title: ライフサイクル指標
 solution: Experience Cloud,Analytics
 title: ライフサイクル指標
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: f958c3ef-1d79-4b30-8966-ef74bd48a5d6
+exl-id: 19572f15-c5df-40fe-9979-3a5bdd581f2b
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '917'
+source-wordcount: '921'
 ht-degree: 83%
 
 ---
-
 
 # ライフサイクル指標 {#lifecycle-metrics}
 
 リストは、モバイルライブラリによって自動的に測定される指標とディメンションです。
 
-詳しくは、「ライフサイクルデータの [トラブルシューティング](https://helpx.adobe.com/jp/analytics/kb/troubleshoot-lifecycle-data.html)」を参照してください。
+詳しくは、[ライフサイクルデータのトラブルシューティング](https://helpx.adobe.com/jp/analytics/kb/troubleshoot-lifecycle-data.html)を参照してください。
 
 
 ## ライフサイクル指標およびディメンション {#section_78F036C4296F4BA3A47C2044F79C86C1}
@@ -267,21 +267,21 @@ Analyticsでは、各ライフサイクル追跡呼び出しと共に送信さ�
 
 * **目標点名**
 
-   Populated by `trackLocation` methods when device is in a defined POI.
+   デバイスが定義されたPOIにある場合に`trackLocation`メソッドによって入力されます。
 
    * Analytics コンテキストデータ／Target パラメーター：`a.loc.poi`
-   * Audience Manager trait: `c_a_loc_poi`
+   * Audience Manager特性：`c_a_loc_poi`
 
 * **目標地点の中心までの距離**
 
-   Populated by `trackLocation` methods when device is within a defined POI.
+   デバイスが定義されたPOI内にある場合に`trackLocation`メソッドによって入力されます。
 
    * Analytics コンテキストデータ／Target パラメーター：`a.loc.dist`
-   * Audience Manager trait: `c_a_loc_dist`
+   * Audience Manager特性：`c_a_loc_dist`
 
 * **ライフタイム値（コンバージョン変数）**
 
    `trackLifetimeValue` メソッドによって設定されます。
 
-   * Analytics コンテキストデータ／Target パラメーター： `a.ltv.amount`
-   * Audience Manager trait: `c_a_ltv_amount`
+   * Analytics コンテキストデータ／Target パラメーター：  `a.ltv.amount`
+   * Audience Manager特性：`c_a_ltv_amount`
