@@ -1,20 +1,20 @@
 ---
 description: マーケティングリンクページを使用して、マーケティングリンクを作成、使用およびアーカイブできます。
-keywords: mobile
+keywords: モバイル
 seo-description: マーケティングリンクページを使用して、マーケティングリンクを作成、使用およびアーカイブできます。
 seo-title: マーケティングリンクを管理
 solution: Experience Cloud,Analytics
 title: マーケティングリンクを管理
-topic: Metrics
+topic-fix: Metrics
 uuid: 98ac3520-89ed-4513-83f6-120dda9d0157
+exl-id: 678c18fe-b282-4eab-a248-e00dfd53cecd
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '201'
+source-wordcount: '202'
 ht-degree: 100%
 
 ---
-
 
 # マーケティングリンクを管理 {#manage-marketing-links}
 
@@ -38,4 +38,3 @@ ht-degree: 100%
    * マーケティングリンクをアーカイブ解除するには、「**[!UICONTROL アーカイブを表示]**」をクリックし、リンクを選択して、「**[!UICONTROL 選択項目のアーカイブを解除]**」をクリックします。
 
       以前にアーカイブしたマーケティングリンクのみ、アーカイブを表示ページに表示されます。
-
