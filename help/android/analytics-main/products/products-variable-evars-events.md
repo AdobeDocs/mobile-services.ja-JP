@@ -1,20 +1,20 @@
 ---
 description: マーチャンダイジング eVar および製品固有のイベントを持つ products 変数の例を以下に示します。
-keywords: android;library;mobile;sdk
+keywords: Android, ライブラリ, モバイル, SDK
 seo-description: マーチャンダイジング eVar および製品固有のイベントを持つ products 変数の例を以下に示します。
 seo-title: マーチャンダイジング eVar および製品固有のイベントを持つ products 変数
 solution: Experience Cloud,Analytics
 title: マーチャンダイジング eVar および製品固有のイベントを持つ products 変数
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 64f822a0-6ccf-48e7-8886-31b93d8198a3
+exl-id: 2ede6341-3068-4423-a509-c0ec3a2db5e8
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '98'
+source-wordcount: '102'
 ht-degree: 100%
 
 ---
-
 
 # マーチャンダイジング eVar および製品固有のイベントを持つ products 変数 {#products-variable-with-merchandising-evars-and-product-specific-events}
 
@@ -41,4 +41,3 @@ Analytics.trackState("Order Confirmation", cdata);
 >[!TIP]
 >
 >変数を使用して製品固有のイベントをトリガーする場合は、*`&&products`* 変数を使用して製品固有のイベントをトリガーする場合は、*`&&events`* 変数でもイベントを設定する必要があります。設定しなかった場合、そのイベントは処理中に除外されます。
-
