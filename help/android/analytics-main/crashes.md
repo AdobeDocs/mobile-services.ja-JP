@@ -4,16 +4,16 @@ seo-description: この情報は、クラッシュの追跡方法と、誤った
 seo-title: アプリのクラッシュの追跡
 solution: Experience Cloud,Analytics
 title: アプリのクラッシュの追跡
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 3ab98c14-ccdf-4060-ad88-ec07c1c6bf07
+exl-id: d8d59b4e-0231-446d-9ba1-8a9809be9c61
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '487'
 ht-degree: 100%
 
 ---
-
 
 # アプリのクラッシュの追跡 {#track-app-crashes}
 
@@ -111,4 +111,3 @@ protected void onResume() {
     super.onResume(); 
 }
 ```
-
