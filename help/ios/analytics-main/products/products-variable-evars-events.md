@@ -4,16 +4,16 @@ seo-description: マーチャンダイジング eVar および製品固有のイ
 seo-title: マーチャンダイジング eVar および製品固有のイベントを持つ products 変数
 solution: Experience Cloud,Analytics
 title: マーチャンダイジング eVar および製品固有のイベントを持つ products 変数
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: f913211e-97ad-4237-bfe4-7ded01295caf
+exl-id: f438190d-0d2d-4bcd-a1c7-156e46e61162
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '98'
 ht-degree: 100%
 
 ---
-
 
 # マーチャンダイジング eVar および製品固有のイベントを持つ products 変数 {#products-variable-with-merchandising-evars-and-product-specific-events}
 
@@ -40,4 +40,3 @@ NSMutableDictionary *contextData = [NSMutableDictionary dictionary];
 >[!TIP]
 >
 >変数を使用して製品固有のイベントをトリガーする場合は、*`&&products`* 変数を使用して製品固有のイベントをトリガーする場合は、*`&&events`* 変数でもイベントを設定する必要があります。設定しなかった場合、そのイベントは処理中に除外されます。
-
