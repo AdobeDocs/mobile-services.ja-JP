@@ -1,20 +1,20 @@
 ---
 description: マーケターは、トラッキング可能なマーケティングリンクの構築中に使用できるリンク先（Web、ディープリンクまたはその他のリンクなど）を作成、保存および編集できます。
-keywords: mobile
+keywords: モバイル
 seo-description: マーケターは、トラッキング可能なマーケティングリンクの構築中に使用できるリンク先（Web、ディープリンクまたはその他のリンクなど）を作成、保存および編集できます。
 seo-title: 宛先
 solution: Experience Cloud,Analytics
 title: 宛先
-topic: Metrics
+topic-fix: Metrics
 uuid: 0e0e7d22-067c-4a59-abcb-a4826800944d
+exl-id: e30128de-5b2d-4617-a871-44fe489ea6e7
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '195'
+source-wordcount: '196'
 ht-degree: 100%
 
 ---
-
 
 # 宛先 {#destinations}
 
