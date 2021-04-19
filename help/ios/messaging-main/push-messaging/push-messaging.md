@@ -4,16 +4,16 @@ seo-description: Adobe Mobile および Adobe Mobile SDK を使用すると、�
 seo-title: プッシュメッセージ
 solution: Experience Cloud,Analytics
 title: プッシュメッセージ
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 2e2d8175-d7d0-4b6b-a14e-d419da1f9615
+exl-id: 89796668-e0e7-45d2-8391-3c26a7ac8496
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '526'
 ht-degree: 100%
 
 ---
-
 
 # プッシュメッセージ {#push-messaging}
 
