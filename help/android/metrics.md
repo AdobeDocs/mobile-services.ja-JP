@@ -1,20 +1,20 @@
 ---
 description: 以下では、ライフサイクルの実装後にモバイルライブラリによって自動的に測定可能な指標およびディメンションと、ライフサイクルデータのトラブルシューティングに関するページへのリンクを示します。
-keywords: android;library;mobile;sdk
+keywords: Android, ライブラリ, モバイル, SDK
 seo-description: 以下では、ライフサイクルの実装後にモバイルライブラリによって自動的に測定可能な指標およびディメンションと、ライフサイクルデータのトラブルシューティングに関するページへのリンクを示します。
 seo-title: ライフサイクル指標
 solution: Experience Cloud,Analytics
 title: ライフサイクル指標
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: a8f3ebac-be3b-4948-82bb-105d46cfff6d
+exl-id: 1e50318d-894c-4039-ba45-71cb9edbc5b5
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '1240'
+source-wordcount: '1244'
 ht-degree: 100%
 
 ---
-
 
 # ライフサイクル指標 {#lifecycle-metrics}
 
