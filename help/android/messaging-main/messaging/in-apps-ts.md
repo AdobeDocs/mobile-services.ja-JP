@@ -1,20 +1,20 @@
 ---
 description: この情報は、アプリ内メッセージのトラブルシューティングに役立ちます。
-keywords: mobile
+keywords: モバイル
 seo-description: この情報は、アプリ内メッセージのトラブルシューティングに役立ちます。
 seo-title: アプリ内メッセージのトラブルシューティング
 solution: Experience Cloud,Analytics
 title: アプリ内メッセージのトラブルシューティング
-topic: Metrics
+topic-fix: Metrics
 uuid: 39c3a21d-92c2-4004-b00f-99b6f91d3696
+exl-id: 6c7d97ed-3b0a-48ff-b761-1485aea5e96d
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '528'
+source-wordcount: '529'
 ht-degree: 100%
 
 ---
-
 
 # アプリ内メッセージのトラブルシューティング {#troubleshooting-in-app-messaging}
 
@@ -70,6 +70,4 @@ ht-degree: 100%
 * **横**
    * 画像は、デバイスの高さの 100% に合わせて拡大縮小されます。
    * 幅はデバイスの 75% で、右側にフェードアウトが表示されます。
-
    フルスクリーンテンプレートに問題がある場合は、カスタム HTML テンプレートをダウンロードして使用できます。このテンプレートは、画像をより柔軟に表示でき、テンプレートを完全に制御できます。
-
