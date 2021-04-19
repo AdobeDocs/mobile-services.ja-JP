@@ -4,16 +4,16 @@ seo-description: tvOS を使用した Apple TV を実装するのに役立つ情
 seo-title: tvOS を使用した Apple TV 実装
 solution: Experience Cloud,Analytics
 title: tvOS を使用した Apple TV 実装
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: d1571ea2-a5de-4b96-a527-72abbf51fab8
+exl-id: 35b7f02d-ae48-4c6f-9a3a-6d106a1026ad
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '402'
 ht-degree: 100%
 
 ---
-
 
 # tvOS を使用した Apple TV 実装 {#apple-tv-implementation-with-tvos}
 
@@ -83,4 +83,3 @@ Adobe Experience Platform Mobile SDK に関する情報やドキュメントを�
 1. JavaScript ファイル内で、`ADBMobile` オブジェクトを使用して、Adobe SDK のネイティブメソッドにアクセスします。
 
    使用可能なメソッドの詳細な一覧は、「[TVJS メソッド](/help/ios/apple-tv-implementation-tvos/tvjs-methods.md)」を参照してください。
-
