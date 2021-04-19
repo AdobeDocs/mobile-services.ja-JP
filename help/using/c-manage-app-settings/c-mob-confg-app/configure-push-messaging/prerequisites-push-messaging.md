@@ -1,20 +1,20 @@
 ---
 description: アプリケーションでプッシュメッセージを設定する前に、いくつかのタスクを完了する必要があります。
-keywords: mobile
+keywords: モバイル
 seo-description: アプリケーションでプッシュメッセージを設定する前に、いくつかのタスクを完了する必要があります。
 seo-title: プッシュメッセージを有効にするための前提条件
 solution: Experience Cloud,Analytics
 title: プッシュメッセージを有効にするための前提条件
-topic: Metrics
+topic-fix: Metrics
 uuid: 194e6e07-b794-4152-a838-a4125c3292d4
+exl-id: 543155a4-f687-48a6-8690-5c8da8490c62
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '646'
+source-wordcount: '647'
 ht-degree: 100%
 
 ---
-
 
 # プッシュメッセージを有効にするための前提条件 {#prerequisites-to-enable-push-messaging}
 
