@@ -1,26 +1,26 @@
 ---
 description: 以下では、ライフサイクルの実装後にモバイルライブラリによって自動的に測定可能な指標およびディメンションと、ライフサイクルデータのトラブルシューティングに関するページへのリンクを示します。
-keywords: android;library;mobile;sdk
+keywords: Android, ライブラリ, モバイル, SDK
 seo-description: 以下では、ライフサイクルの実装後にモバイルライブラリによって自動的に測定可能な指標およびディメンションと、ライフサイクルデータのトラブルシューティングに関するページへのリンクを示します。
 seo-title: ライフサイクル指標
 solution: Experience Cloud,Analytics
 title: ライフサイクル指標
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 5a371f11-6521-410f-a01f-fc3b285b050f
+exl-id: d7436411-65bd-4cf7-ae3e-cec829a7690a
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '888'
+source-wordcount: '892'
 ht-degree: 78%
 
 ---
-
 
 # ライフサイクル指標 {#lifecycle-metrics}
 
 以下では、ライフサイクルの実装後にモバイルライブラリによって自動的に測定可能な指標およびディメンションと、ライフサイクルデータのトラブルシューティングに関するページへのリンクを示します。
 
-詳細については、ライフサイクルデータの [トラブルシューティングのナレッジベースを参照してください](https://helpx.adobe.com/jp/analytics/kb/troubleshoot-lifecycle-data.html)。
+詳しくは、[ライフサイクルデータのトラブルシューティング](https://helpx.adobe.com/jp/analytics/kb/troubleshoot-lifecycle-data.html)のナレッジベースを参照してください。
 
 ## ライフサイクル指標およびディメンション {#section_78F036C4296F4BA3A47C2044F79C86C1}
 
@@ -34,14 +34,14 @@ Analyticsでは、各ライフサイクル追跡呼び出しと共に送信さ�
 
    インストール後または再インストール後の最初の実行時にトリガーされます。
 
-   * Analytics context data/Target parameter: `a.InstallEvent`
+   * Analyticsコンテキストデータ/ターゲットパラメーター：`a.InstallEvent`
    * Audience Manager のシグナル：`c_a_InstallEvent`
 
 * **アップグレード**
 
    アップグレード後またはバージョン番号の変更時の最初の実行時にトリガーされます。
 
-   * Analytics context data/Target parameter: `a.UpgradeEvent`
+   * Analyticsコンテキストデータ/ターゲットパラメーター：`a.UpgradeEvent`
    * Audience Manager のシグナル：`c_a_UpgradeEvent`
 
 * **日別関与ユーザー数**
@@ -52,7 +52,7 @@ Analyticsでは、各ライフサイクル追跡呼び出しと共に送信さ�
    >
    >この指標は Analytics 指標に自動的には格納されません。この指標を取得するためのカスタムイベントを設定する処理ルールを作成する必要があります。
 
-   * Analytics context data/Target parameter: `a.DailyEngUserEvent`
+   * Analyticsコンテキストデータ/ターゲットパラメーター：`a.DailyEngUserEvent`
    * Audience Manager のシグナル：`c_a_DailyEngUserEvent`
 
 * **月別関与ユーザー数**
@@ -63,28 +63,28 @@ Analyticsでは、各ライフサイクル追跡呼び出しと共に送信さ�
    >
    >この指標は Analytics 指標に自動的には格納されません。この指標を取得するためのカスタムイベントを設定する処理ルールを作成する必要があります。
 
-   * Analytics context data/Target parameter: `a.MonthlyEngUserEvent`
+   * Analyticsコンテキストデータ/ターゲットパラメーター：`a.MonthlyEngUserEvent`
    * Audience Manager のシグナル：`c_a_MonthlyEngUserEvent`
 
 * **起動回数**
 
    実行のたびに（クラッシュおよびインストールを含む）トリガーされます。また、ライフサイクルセッションのタイムアウトを超えた場合に、SignatureInfo オブジェクトのバックグラウンドからの再開時にもトリガーされます。
 
-   * Analytics context data/Target parameter: `a.LaunchEvent`
+   * Analyticsコンテキストデータ/ターゲットパラメーター：`a.LaunchEvent`
    * Audience Manager のシグナル：`c_a_LaunchEvent`
 
 * **クラッシュ**
 
    アプリケーションが終了前にバックグラウンドにならなかった場合にトリガーされます。このイベントは、アプリケーションがクラッシュした後の起動時に送信されます。Adobe Mobile クラッシュレポートには、キャッチできないグローバルな例外ハンドラーは実装されていません。
 
-   * Analytics context data/Target parameter: `a.CrashEvent`
+   * Analyticsコンテキストデータ/ターゲットパラメーター：`a.CrashEvent`
    * Audience Manager のシグナル：`c_a_CrashEvent`
 
 * **以前のセッションの長さ**
 
    アプリケーションが開かれ、フォアグラウンドにあった時間に基づいて、以前のアプリケーションセッションが持続した秒数をレポートします。
 
-   * Analytics context data/Target parameter: `a.PrevSessionLength`
+   * Analyticsコンテキストデータ/ターゲットパラメーター：`a.PrevSessionLength`
    * Audience Manager のシグナル：`c_a_PrevSessionLength`
 
 ### ディメンション
@@ -93,7 +93,7 @@ Analyticsでは、各ライフサイクル追跡呼び出しと共に送信さ�
 
    インストール後の初回起動日。日付の形式は `MM/DD/YYYY` です。
 
-   * Analytics context data/Target parameter: `a.InstallDate`
+   * Analyticsコンテキストデータ/ターゲットパラメーター：`a.InstallDate`
    * Audience Manager のシグナル：`c_a_InstallDate`
 
 * **アプリ ID**
@@ -103,49 +103,49 @@ Analyticsでは、各ライフサイクル追跡呼び出しと共に送信さ�
 
    例えば、`myapp 1.1` です。
 
-   * Analytics context data/Target parameter: `a.AppID`
+   * Analyticsコンテキストデータ/ターゲットパラメーター：`a.AppID`
    * Audience Manager のシグナル：`c_a_AppID`
 
 * **起動回数**
 
    アプリケーションが起動したか、またはバックグラウンドから復帰した回数。
 
-   * Analytics context data/Target parameter: `a.Launches`
+   * Analyticsコンテキストデータ/ターゲットパラメーター：`a.Launches`
    * Audience Manager のシグナル：`c_a_Launches`
 
 * **初回使用からの日数**
 
    初回実行時からの日数。
 
-   * Analytics context data/Target parameter: `a.DaysSinceFirstUse`
+   * Analyticsコンテキストデータ/ターゲットパラメーター：`a.DaysSinceFirstUse`
    * Audience Manager のシグナル：`c_a_DaysSinceFirstUse`
 
 * **前回使用からの日数**
 
    前回使用時からの経過日数。
 
-   * Analytics context data/Target parameter: `a.DaysSinceLastUse`
+   * Analyticsコンテキストデータ/ターゲットパラメーター：`a.DaysSinceLastUse`
    * Audience Manager のシグナル：`c_a_DaysSinceLastUse`
 
 * **時刻**
 
    アプリが起動された時刻を測定します。この指標では 24 時間形式を使用し、ピーク使用時を調べるための時間分割に使用されます。
 
-   * Analytics context data/Target parameter: `a.HourOfDay`
+   * Analyticsコンテキストデータ/ターゲットパラメーター：`a.HourOfDay`
    * Audience Manager のシグナル：`c_a_HourOfDay`
 
 * **曜日**
 
    アプリが起動された週の曜日の数。
 
-   * Analytics context data/Target parameter: `a.DayOfWeek`
+   * Analyticsコンテキストデータ/ターゲットパラメーター：`a.DayOfWeek`
    * Audience Manager のシグナル：`c_a_DayOfWeek`
 
 * **オペレーティングシステムのバージョン**
 
    OSのバージョン。
 
-   * Analytics context data/Target parameter: `a.OSVersion`
+   * Analyticsコンテキストデータ/ターゲットパラメーター：`a.OSVersion`
    * Audience Manager のシグナル：`c_a_OSVersion`
 
 * **前回アップグレードからの日数**
@@ -156,7 +156,7 @@ Analyticsでは、各ライフサイクル追跡呼び出しと共に送信さ�
    >
    >この指標は Analytics 指標に自動的には格納されません。レポート用にこの値を Analytics 変数にコピーする処理ルールを作成する必要があります。
 
-   * Analytics context data/Target parameter: `a.DaysSinceLastUpgrade`
+   * Analyticsコンテキストデータ/ターゲットパラメーター：`a.DaysSinceLastUpgrade`
    * Audience Manager のシグナル：`c_a_DaysSinceLastUpgrade`
 
 * **前回アップグレードからの起動回数**
@@ -167,14 +167,14 @@ Analyticsでは、各ライフサイクル追跡呼び出しと共に送信さ�
    >
    >この指標は Analytics 指標に自動的には格納されません。レポート用にこの値を Analytics 変数にコピーする処理ルールを作成する必要があります。
 
-   * Analytics context data/Target parameter: `a.LaunchesSinceUpgrade`
+   * Analyticsコンテキストデータ/ターゲットパラメーター：`a.LaunchesSinceUpgrade`
    * Audience Manager のシグナル：`c_a_LaunchesSinceUpgrade`
 
 * **デバイス名**
 
    デバイス名が格納されます。
 
-   * Analytics context data/Target parameter: `a.DeviceName`
+   * Analyticsコンテキストデータ/ターゲットパラメーター：`a.DeviceName`
    * Audience Manager のシグナル：`c_a_DeviceName`
 
 * **通信事業者名**
@@ -185,14 +185,14 @@ Analyticsでは、各ライフサイクル追跡呼び出しと共に送信さ�
    >
    >この指標は Analytics 指標に自動的には格納されません。レポート用にこの値を Analytics 変数にコピーする処理ルールを作成する必要があります。
 
-   * Analytics context data/Target parameter: `a.CarrierName`
+   * Analyticsコンテキストデータ/ターゲットパラメーター：`a.CarrierName`
    * Audience Manager のシグナル：`c_a_CarrierName`
 
 * **解像度**
 
    実際のピクセル単位での幅 x 高さ。
 
-   * Analytics context data/Target parameter: `a.Resolution`
+   * Analyticsコンテキストデータ/ターゲットパラメーター：`a.Resolution`
    * Audience Manager のシグナル：`c_a_Resolution`
 
 ## その他のモバイル指標およびディメンション {#section_0B32BBF9CA734103BEDB5E755FFE5B31}
@@ -243,7 +243,7 @@ Analyticsでは、各ライフサイクル追跡呼び出しと共に送信さ�
 
 * **目標点名**
 
-   Populated by `trackLocation` methods when device is within a defined POI.
+   デバイスが定義されたPOI内にある場合に`trackLocation`メソッドによって入力されます。
 
    * Analyticsコンテキストデータ/ターゲットパラメーター：
 
@@ -255,7 +255,7 @@ Analyticsでは、各ライフサイクル追跡呼び出しと共に送信さ�
 
 * **目標地点の中心までの距離**
 
-   Populated by `trackLocation` methods when device is within a defined POI.
+   デバイスが定義されたPOI内にある場合に`trackLocation`メソッドによって入力されます。
 
    * Analyticsコンテキストデータ/ターゲットパラメーター：
 
