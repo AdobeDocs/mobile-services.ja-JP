@@ -1,20 +1,20 @@
 ---
 description: アプリストアの概要レポートは、アプリストア指標のスナップショットを提供します（アプリストア指標には、ダウンロード数、アプリ内購入、アプリストア評価平均、ダウンロードの売上高、アプリ内での売上高、国別ダウンロード数、アプリストア別ダウンロード数、名前別アプリ内購入数が含まれます）。
-keywords: mobile
+keywords: モバイル
 seo-description: アプリストアの概要レポートは、アプリストア指標のスナップショットを提供します（アプリストア指標には、ダウンロード数、アプリ内購入、アプリストア評価平均、ダウンロードの売上高、アプリ内での売上高、国別ダウンロード数、アプリストア別ダウンロード数、名前別アプリ内購入数が含まれます）。
 seo-title: アプリストアの概要レポート
 solution: Experience Cloud,Analytics
 title: アプリストアの概要レポート
-topic: Metrics
+topic-fix: Metrics
 uuid: ac066f31-ec4b-4b67-b839-780c2cd1574e
+exl-id: da8663d6-9da8-440b-b7b8-06ff11e74b9f
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '517'
+source-wordcount: '518'
 ht-degree: 100%
 
 ---
-
 
 # アプリストアの概要レポート {#app-store-overview-report}
 
