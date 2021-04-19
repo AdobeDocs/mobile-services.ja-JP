@@ -4,18 +4,18 @@ seo-description: ADBMobile JSON設定ファイルの使用に役立つ情報で�
 seo-title: ADBMobileConfig.json config
 solution: Experience Cloud,Analytics
 title: ADBMobileConfig.json config
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: cbcb54a3-4b8f-4651-8ce9-2731ac988545
+exl-id: 57d50d30-651c-4943-835e-1cbce7467baf
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '620'
 ht-degree: 43%
 
 ---
 
-
-# ADBMobileConfig.json config file {#adbmobileconfig-json-config}
+# ADBMobileConfig.json構成ファイル{#adbmobileconfig-json-config}
 
 ADBMobile JSON設定ファイルの使用に役立つ情報です。
 
@@ -23,7 +23,7 @@ SDKは、現在、Analytics、ターゲット、Audience Managerを含む複数�
 
 * **rsids**
 
-   (Analytics **で必須**)Analyticsデータを受け取るための1つ以上のレポートスイート。 レポートスイート ID を複数指定する場合は、スペースを入れずにレポートスイート ID をコンマで区切る必要があります。
+   （**Analytics**&#x200B;で必須）Analyticsデータを受け取るための1つ以上のレポートスイート。 レポートスイート ID を複数指定する場合は、スペースを入れずにレポートスイート ID をコンマで区切る必要があります。
 
    * このメソッドの構文を次に示します。
 
@@ -37,7 +37,7 @@ SDKは、現在、Analytics、ターゲット、Audience Managerを含む複数�
 
 * **server**
 
-   (Analyticsおよびオーディエンス管理で&#x200B;**必須**)。 親ノードに基づくAnalyticsまたはオーディエンス管理サーバー。 この変数は、`"https://"` または `"https://"` プロトコルプレフィックスを付けずに、サーバードメインを設定する必要があります。プロトコルのプレフィックスは、 `ssl` 変数に基づいてライブラリによって自動的に処理されます。
+   (**Analyticsとオーディエンス管理で必須**)。 親ノードに基づくAnalyticsまたはオーディエンス管理サーバー。 この変数は、`"https://"` または `"https://"` プロトコルプレフィックスを付けずに、サーバードメインを設定する必要があります。プロトコルプレフィックスは、`ssl`変数に基づいてライブラリによって自動的に処理されます。
 
    `ssl` が `true` の場合、このサーバーとの安全な接続が確立されます。`ssl` が `false` の場合、このサーバーとの安全でない接続が確立されます。
 
@@ -47,15 +47,15 @@ SDKは、現在、Analytics、ターゲット、Audience Managerを含む複数�
 
 * **ssl**
 
-   SSLを介して測定データを送信する設定を、有効(`true`)または無効(`false`)にし`HTTPS`ます()。 デフォルト値は `false` です。
+   SSLを介して測定データを送信する設定を、有効(`true`)または無効(`false`)にします(`HTTPS`)。 デフォルト値は `false` です。
 
 * **offlineEnabled**
 
-   When enabled (`true`), hits are queued while the device is offline and sent later when the device is online. オフライン追跡を使用するには、レポートスイートでタイムスタンプを有効にする必要があります。
+   有効にする(`true`)と、デバイスがオフラインの間、ヒットはキューに入れられ、デバイスがオンラインの間、後で送信されます。 オフライン追跡を使用するには、レポートスイートでタイムスタンプを有効にする必要があります。
 
-   If time stamps are enabled on your report suite, your `offlineEnabled` configuration property *must* be `true`. if your report suite is not timestamp enabled, your `offlineEnabled` configuration property *must* be `false`.
+   レポートスイートでタイムスタンプが有効な場合、`offlineEnabled`設定プロパティ&#x200B;*は*&#x200B;でなければなりません。 `true`レポートスイートでタイムスタンプが有効になっていない場合、`offlineEnabled`設定プロパティ&#x200B;*は*&#x200B;でなければなりません。`false`
 
-   このプロパティを適切に設定しなければ、データが失われます。レポートスイートでタイムスタンプが有効になっているかどうかがわからない場合は、カスタマーケアにお問い合わせください。 If you are currently reporting AppMeasurement data to a report suite that also collects data from JavaScript, you might need to set up a separate report suite for mobile data or include a custom timestamp on all JavaScript hits using the `s.timestamp` variable.
+   このプロパティを適切に設定しなければ、データが失われます。レポートスイートでタイムスタンプが有効になっているかどうかがわからない場合は、カスタマーケアにお問い合わせください。 現在、JavaScriptからもデータを収集するレポートスイートにAppMeasurementデータをレポートしている場合は、モバイルデータ用に個別のレポートスイートを設定するか、`s.timestamp`変数を使用してすべてのJavaScriptヒットにカスタムタイムスタンプを含める必要があります。
 
    デフォルト値は `false` です。
 
@@ -69,7 +69,7 @@ SDKは、現在、Analytics、ターゲット、Audience Managerを含む複数�
 
    ヒットをバッチで送信します。
 
-   例えば、に設定した場合、50件のヒットが格納されるまでキューに入れられ、 `50`その後、キューに入れられたすべてのヒットが送信されます。 が必要 `offlineEnabled=true`で、デフォルト値は `0` （バッチ処理なし）です。
+   例えば、`50`に設定した場合、50件のヒットが格納されるまでキューに入れられ、キューに入れられたすべてのヒットが送信されます。 `offlineEnabled=true`が必要で、デフォルト値は`0`です（バッチ処理なし）。
 
 * **privacyDefault**
 
@@ -77,7 +77,7 @@ SDKは、現在、Analytics、ターゲット、Audience Managerを含む複数�
 
    * `optedin`：ヒットは即座に送信されます。
    * `optedout`：ヒットは破棄されます。
-   * `optunknown`  — レポートスイートでタイムスタンプが有効になっている場合、プライバシーステータスがオプトイン（ヒットが送信される）またはオプトアウト（ヒットが破棄される）に変わるまで、ヒットは保存されます。 レポートスイートのタイムスタンプが有効になっていない場合、プライバシーステータスがオプトインに変更されるまで、ヒットは破棄されます。
+   * `optunknown`  — レポートスイートでタイムスタンプが有効になっている場合、プライバシーステータスがオプトイン（ヒットが送信される）またはオプトアウト（ヒットが破棄される）に変わるまで、ヒットは保存されます。レポートスイートのタイムスタンプが有効になっていない場合、プライバシーステータスがオプトインに変更されるまで、ヒットは破棄されます。
 
       これにより、デフォルト値のみが設定されます。 この値がコード内で設定または変更された場合、コードによって設定された値はローカルストレージに保存され、変更されるまで使用されます。または、アプリがアンインストールされてから再インストールされます。
 
@@ -98,13 +98,13 @@ SDKは、現在、Analytics、ターゲット、Audience Managerを含む複数�
 
 * **clientCode**
 
-   (**ターゲットが必要**)割り当てたクライアントコード。
+   (**ターゲット**&#x200B;に必須)割り当てられたクライアントコード。
 
 * **timeout**
 
    ターゲットが応答を待機する時間を指定します。
 
-The following is an example of an `ADBMobileConfig.json` file:
+次に`ADBMobileConfig.json`ファイルの例を示します。
 
 ```js
 { 
