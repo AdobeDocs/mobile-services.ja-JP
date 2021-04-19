@@ -4,28 +4,28 @@ seo-description: ビデオ分析で役立つ情報です。
 seo-title: ビデオ分析
 solution: Experience Cloud,Analytics
 title: ビデオ分析
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: f45dac3b-cd2e-4fba-a3b2-c243640ecfa4
+exl-id: bf7a2936-4a90-4630-8a0c-df41baa1d6a8
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '899'
 ht-degree: 71%
 
 ---
 
-
 # ビデオ分析 {#video-analytics}
 
 ビデオ分析で役立つ情報です。
 
-ビデオ測定について詳しくは、『Adobe Analyticsでのビデオとオーディオの [測定](https://docs.adobe.com/content/help/ja-JP/media-analytics/using/media-overview.html) 』ガイドを参照してください。 ビデオ測定の一般的なプロセスは、すべてのAppMeasurementプラットフォームで非常に似ています。 このクイック開始では、開発者タスクの基本的な概要とコードサンプルについて説明します。
+ビデオ測定の詳細については、『[Adobe Analyticsでのビデオとオーディオの測定](https://docs.adobe.com/content/help/ja-JP/media-analytics/using/media-overview.html)』ガイドを参照してください。 ビデオ測定の一般的なプロセスは、すべてのAppMeasurementプラットフォームで非常に似ています。 このクイック開始では、開発者タスクの基本的な概要とコードサンプルについて説明します。
 
 次の表に、Analytics に送信されるメディアデータのリストを示します。処理ルールを使用して、コンテキストデータを Analytics 変数にマッピングします。
 
 * **a.media.name**
 
-   (**必須**)訪問者が何らかの方法でビデオを表示した場合に、実装に指定されているビデオの名前を収集します。この変数に分類を追加できます。
+   （**必須**）訪問者が何らかの方法でビデオを表示した場合に、実装に指定されているビデオの名前を収集します。この変数に分類を追加できます。
 
    （**オプション**）カスタムインサイト変数はビデオパス情報を提供します。
 
@@ -44,7 +44,7 @@ ht-degree: 71%
 
    （**必須**）セグメント名や、ビデオ内でのセグメントの発生順序を含め、ビデオセグメントデータを収集します。
 
-   この変数を入力するには、プレーヤーイベントを自動的に追跡する場合に `segmentByMilestones` 変数を有効にするか、プレーヤーイベントを手動で追跡する場合にカスタムセグメント名を設定します。For example, when a visitor views the first segment in a video, SiteCatalyst might collect the following in the `1:M:0-25` segments eVar.
+   この変数を入力するには、プレーヤーイベントを自動的に追跡する場合に `segmentByMilestones` 変数を有効にするか、プレーヤーイベントを手動で追跡する場合にカスタムセグメント名を設定します。例えば、訪問者がビデオの最初のセグメントを表示した場合、SiteCatalystは次の情報を`1:M:0-25`セグメントeVarに収集することがあります。
 
    デフォルトのビデオデータ収集方法では、次の時点でデータが収集されます。ビデオ開始（再生）、セグメントの開始、ビデオの終了（停止）。 Analytics は、訪問者開始が視聴しているときに、最初のセグメント表示をセグメントの開始でカウントします。後続のセグメントは、セグメントの開始時に表示されます。
 
@@ -161,7 +161,7 @@ property bool isMediaAd;
 
 * **開く(winJS:開く)**
 
-   で定義された設定を使用して、開いているメディアを追跡し `settings`ます。
+   `settings`で定義された設定を使用して、メディアを開いているかどうかを追跡します。
 
    * このメソッドの構文を次に示します。
 
@@ -177,7 +177,7 @@ property bool isMediaAd;
 
 * **閉じる(winJS:終了)**
 
-   指定されたメディア名のメディア終了を追跡し *`name`*&#x200B;ます。
+   *`name`*&#x200B;という名前のメディアの終了を追跡します。
 
    * このメソッドの構文を次に示します。
 
@@ -193,7 +193,7 @@ property bool isMediaAd;
 
 * **再生(winJS:再生)**
 
-   指定された *`name`* オフセット（秒）でのメディアの再生 ** を追跡します。
+   *`name`*&#x200B;という名前のメディアの再生を、指定された&#x200B;*オフセット*&#x200B;で追跡します（秒）。
 
    * このメソッドの構文を次に示します。
 
