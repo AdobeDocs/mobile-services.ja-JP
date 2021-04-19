@@ -4,16 +4,16 @@ seo-description: 'レポートスイートを設定して Android アプリデ�
 seo-title: 事前準備
 solution: Experience Cloud,Analytics
 title: 事前準備
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 0ca9e937-8d40-4570-9dbf-9aecc6ecedf6
+exl-id: e9c0fd94-b61d-4f56-97b8-f71aac096c93
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '760'
 ht-degree: 100%
 
 ---
-
 
 # 事前準備 {#before-you-start}
 
@@ -44,7 +44,7 @@ Analytics 管理者およびアプリ開発者は、次のタスクを完了す�
 
 役割と権限について詳しくは、[役割と権限](/help/using/gs/c-mob-roles-and-permissions.md)を参照してください。
 
-## Adobe Mobile Services UI へのログイン  {#section_690A2EC4572E47869F183974E932A6A8}
+## Adobe Mobile Services UI へのログイン   {#section_690A2EC4572E47869F183974E932A6A8}
 
 Adobe Mobile Services は、モバイルアプリの分析およびターゲティングのための主要レポートインターフェイスです。これらの手順を完了すると、データ収集サーバー、レポートスイートなど、様々な設定が事前に構成された設定ファイルをダウンロードできます。
 
