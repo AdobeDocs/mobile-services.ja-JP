@@ -4,16 +4,16 @@ seo-description: Adobe Mobile および Adobe Mobile SDK を使用すると、�
 seo-title: プッシュメッセージ
 solution: Experience Cloud,Analytics
 title: プッシュメッセージ
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 729d4010-3733-4dff-b188-ad45bd3e7cc4
+exl-id: 4472e0b9-1d00-4e1a-8653-f3976b74c078
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '439'
 ht-degree: 100%
 
 ---
-
 
 # プッシュメッセージ {#push-messaging}
 
@@ -77,6 +77,3 @@ Adobe Mobile および Adobe Mobile SDK を使用すると、ユーザーにプ�
       * `Config.collectLifecycleData(this)` または `Config.collectLifecycleData(this, contextData)` を使用する。
 
       * `Config.collectLifecycleData()` は使用&#x200B;**しない**。
-
-
-
