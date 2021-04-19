@@ -1,20 +1,20 @@
 ---
 description: この情報は、プッシュメッセージのトラブルシューティングに役立ちます。
-keywords: mobile
+keywords: モバイル
 seo-description: この情報は、プッシュメッセージのトラブルシューティングに役立ちます。
 seo-title: プッシュメッセージのトラブルシューティング
 solution: Experience Cloud,Analytics
 title: プッシュメッセージのトラブルシューティング
-topic: Metrics
+topic-fix: Metrics
 uuid: 87d7dcb6-82a8-46e3-a6ed-7f895a22f2af
+exl-id: dda84d30-2a7b-496c-b8f3-3bd6b97076aa
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '363'
+source-wordcount: '364'
 ht-degree: 100%
 
 ---
-
 
 # プッシュメッセージのトラブルシューティング {#troubleshooting-push-messaging}
 
@@ -39,8 +39,9 @@ Mobile Services のプッシュメッセージは、次のタイプの遅延を�
    >プッシュサービスでは、メッセージが送信されることは保証されません。サービスの信頼性について詳しくは、適切なドキュメントを参照してください。
    >
    >* **APNS**：[サービス品質](https://developer.apple.com/documentation/usernotifications)
-   >
-   >* **GCM**：[メッセージのライフタイム](https://developers.google.com/cloud-messaging/concept-options)
+      >
+      >
+   * **GCM**：[メッセージのライフタイム](https://developers.google.com/cloud-messaging/concept-options)
 
 
 ## Apple のプッシュサービス証明書を更新する方法を教えてください。
