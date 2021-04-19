@@ -4,16 +4,16 @@ seo-description: 'この情報は、Experience Cloud ソリューション用 An
 seo-title: はじめに
 solution: Experience Cloud,Analytics
 title: はじめに
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 39c642e2-60f0-4bbe-b0d1-2635ee2c6d01
+exl-id: 895f3986-5e6a-4bb1-b11f-a4dad0ba6bc7
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '141'
 ht-degree: 100%
 
 ---
-
 
 # はじめに {#getting-started}
 
