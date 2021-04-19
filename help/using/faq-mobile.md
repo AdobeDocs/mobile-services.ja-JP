@@ -1,20 +1,20 @@
 ---
 description: Adobe Mobile Services のよくある質問と回答、および一般的な機能説明です。
-keywords: mobile
+keywords: モバイル
 seo-description: Adobe Mobile Services のよくある質問と回答、および一般的な機能説明です。
 seo-title: よくある質問
 solution: Experience Cloud,Analytics
 title: よくある質問
-topic: Metrics
+topic-fix: Metrics
 uuid: 62a9241c-2ada-483a-a594-b023916cb0b6
+exl-id: d7dfc36e-56f0-498a-ad50-93fee90cb6ff
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '1118'
+source-wordcount: '1119'
 ht-degree: 100%
 
 ---
-
 
 # よくある質問 {#frequently-asked-questions}
 
@@ -28,7 +28,7 @@ ht-degree: 100%
 
 ### どの SDK バージョンを使用すべきですか？
 
-現在の SDK は、バージョン 4.11 です。詳しくは、[リリースノート](https://docs.adobe.com/content/help/ja-JP/release-notes/experience-cloud/current.html)を参照してください。
+現在の SDK は、バージョン 4.11 です。詳しくは、[リリースノート](https://docs.adobe.com/content/help/en/release-notes/experience-cloud/current.html)を参照してください。
 
 ### SDK はどこからダウンロードできますか？
 
