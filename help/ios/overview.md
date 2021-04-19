@@ -4,16 +4,16 @@ seo-description: Experience Cloud ソリューション用 iOS SDK 4.x を使用
 seo-title: Experience Cloud ソリューション用 iOS SDK 4.x
 solution: Experience Cloud,Analytics
 title: Experience Cloud ソリューション用 iOS SDK 4.x
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 8b374cee-1432-460b-aac2-70623dd80a04
-translation-type: ht
-source-git-commit: c7400359bc19150926a67b991ba219a7fa187442
-workflow-type: ht
+exl-id: d4dbddf7-c8be-4936-adfb-2f7aa07a0dd4
+translation-type: tm+mt
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+workflow-type: tm+mt
 source-wordcount: '530'
 ht-degree: 100%
 
 ---
-
 
 # Experience Cloud ソリューション用 iOS SDK 4.x {#ios-sdk-x-for-experience-cloud-solutions}
 
