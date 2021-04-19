@@ -1,20 +1,20 @@
 ---
 description: Android アプリケーションでターゲットコンテンツを配信できます。
-keywords: android;library;mobile;sdk
+keywords: Android, ライブラリ, モバイル, SDK
 seo-description: Android アプリケーションでターゲットコンテンツを配信できます。
 seo-title: Target の設定
 solution: Experience Cloud,Analytics
 title: Target の設定
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 09fe2c9c-7b60-49c3-bb9d-36a30ce7c350
+exl-id: dbcc3114-e76b-4b18-a418-ac46a21a593e
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '72'
+source-wordcount: '76'
 ht-degree: 100%
 
 ---
-
 
 # Target の設定 {#target-configuration}
 
