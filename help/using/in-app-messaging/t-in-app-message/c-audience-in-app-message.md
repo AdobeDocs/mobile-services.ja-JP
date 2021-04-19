@@ -1,20 +1,20 @@
 ---
 description: 表示、トリガーおよび特徴オプションを含む、アプリ内メッセージのオーディエンスオプションを設定できます。
-keywords: mobile
+keywords: モバイル
 seo-description: 表示、トリガーおよび特徴オプションを含む、アプリ内メッセージのオーディエンスオプションを設定できます。
 seo-title: オーディエンス：アプリ内メッセージ
 solution: Experience Cloud,Analytics
 title: オーディエンス：アプリ内メッセージ
-topic: Metrics
+topic-fix: Metrics
 uuid: 6c815d4c-7626-4cf4-9158-3f059c79317a
+exl-id: c85f2c0d-9c88-4d5a-8247-d8a101195d3a
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '583'
+source-wordcount: '584'
 ht-degree: 100%
 
 ---
-
 
 # オーディエンス：アプリ内メッセージ {#audience-in-app-message}
 
@@ -84,7 +84,7 @@ Mobile Services UI でこれらのキー値ペアのマッピングを表示し�
 
 ### 変数
 
-変数はテキスト文字列からなる一意の識別子であり、例には国、空港などがあります。
+変数はテキスト文字列からなる一意の ID であり、例には国、空港などがあります。
 
 1. **[!UICONTROL メッセージを管理]**／**[!UICONTROL メッセージを作成]**&#x200B;をクリックします。
 1. 「**[!UICONTROL オーディエンス]**」タブの「**[!UICONTROL トリガー]**」セクションで以下の手順を実行します。
