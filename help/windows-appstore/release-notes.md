@@ -4,16 +4,16 @@ seo-description: Experience Cloud ソリューション用 Windows 8.1 Universal
 seo-title: リリースノート
 solution: Experience Cloud,Analytics
 title: リリースノート
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 45634319-7949-4e24-b193-4f876af97a69
+exl-id: 21bd2e72-cc9e-4fc0-940f-dfc560d7a536
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '248'
 ht-degree: 100%
 
 ---
-
 
 # リリースノート {#release-notes}
 
