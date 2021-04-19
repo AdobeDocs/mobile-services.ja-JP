@@ -1,20 +1,20 @@
 ---
 description: 概要レポートには、主要指標のスナップショットが表示されます。
-keywords: mobile
+keywords: モバイル
 seo-description: 概要レポートには、主要指標のスナップショットが表示されます。
 seo-title: 概要レポート
 solution: Experience Cloud,Analytics
 title: 概要レポート
-topic: Reports,Metrics
+topic-fix: Reports,Metrics
 uuid: 5f7088af-4b25-4fe5-afda-4844597c78f9
+exl-id: db681d0e-b784-4415-b248-f92df5b780cc
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '115'
+source-wordcount: '116'
 ht-degree: 100%
 
 ---
-
 
 # 概要レポート {#overview}
 
@@ -29,4 +29,3 @@ ht-degree: 100%
 >[!TIP]
 >
 >アプリの作成時に、このレポートの主要指標を設定できます。詳しくは、「[アプリの設定](/help/using/c-manage-app-settings/c-mob-confg-app/c-mob-confg-app.md)」を参照してください。
-
