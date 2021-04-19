@@ -4,16 +4,16 @@ seo-description: マーチャンダイジングeVarおよび製品固有のイ�
 seo-title: マーチャンダイジング eVar および製品固有のイベントを持つ products 変数
 solution: Experience Cloud,Analytics
 title: マーチャンダイジング eVar および製品固有のイベントを持つ products 変数
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 94e882e4-b19d-4c48-9dfb-331465490347
+exl-id: 3a90f624-da13-4c26-9e4c-3a4af33bc5ee
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '86'
 ht-degree: 27%
 
 ---
-
 
 # マーチャンダイジング eVar および製品固有のイベントを持つ products 変数{#products-variable-with-merchandising-evars-and-product-specific-events}
 
@@ -40,5 +40,4 @@ ADB.Analytics.trackState("Order Confirmation", cdata);
 
 >[!TIP]
 >
->変数を使用して製品固有のイベントをトリガーする場合は、そのイベントを変数に設定する必要もあります。設定しない場合は、 *`&&products`**`&&events`* イベントが処理中に除外されます。
-
+>*`&&products`*&#x200B;変数を使用して製品固有のイベントをトリガーする場合は、そのイベントを&#x200B;*`&&events`*&#x200B;変数に設定する必要もあります。設定しない場合、イベントは処理中に除外されます。
