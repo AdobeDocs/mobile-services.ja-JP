@@ -4,16 +4,16 @@ seo-description: ユニバーサルリンク（iOS）およびアプリリンク
 seo-title: Apple ユニバーサルリンクと Android アプリリンク
 solution: Experience Cloud,Analytics
 title: ユニバーサルリンクとアプリリンクガイド
-topic: 指標
+topic-fix: Metrics
 uuid: 8d6441dc-4307-4454-95ea-d77ec796f918
+exl-id: 6613189f-7a14-4066-89e9-996d4fe7f128
 translation-type: tm+mt
-source-git-commit: bb41caaecaefe8168d9b19e151d43ec792e24db8
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '1146'
+source-wordcount: '1145'
 ht-degree: 96%
 
 ---
-
 
 # ユニバーサルリンクとアプリリンクの比較：どうやって動くの？{#universal-links-and-app-links}
 
@@ -157,4 +157,3 @@ ht-degree: 96%
 >[!IMPORTANT]
 >
 >ユニバーサルリンクまたはアプリリンクを使用したクリックの追跡カウントは表示されず、インタースティシャルも使用できません。
-
