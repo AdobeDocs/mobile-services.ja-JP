@@ -4,16 +4,16 @@ seo-description: Adobe AnalyticsでユニバーサルWindowsプラットフォ�
 seo-title: Analytics メソッド
 solution: Experience Cloud,Analytics
 title: Analytics メソッド
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: cc299bb5-ec61-49bf-869a-f3c3bc83359f
+exl-id: 3ceaedfa-274f-4dc7-9e4c-15233d09f935
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '632'
 ht-degree: 57%
 
 ---
-
 
 # Analytics メソッド {#analytics-methods}
 
@@ -25,11 +25,11 @@ SDKは、現在、Analytics、ターゲット、Audience Managerを含む複数�
 
 >[!TIP]
 >
->winJS (JavaScript)から `winmd` メソッドを使用する場合、すべてのメソッドの先頭文字が自動的に小文字に変換されます。
+>winJS (JavaScript)から`winmd`メソッドを使用する場合、すべてのメソッドの最初の文字が自動的に小文字に変換されます。
 
 * **TrackState(winJS:trackState)**
 
-   オプションのコンテキストデータを使用してアプリの状態を追跡します。状態は、「ホームダッシュボード」、「アプリ設定」、「カート」など、アプリで使用できる表示です。 これらの状態は Web サイト上のページによく似ており、`TrackState` コールにより、ページビュー数が増分されます。If `state` is empty, it displays as &quot;app name app version (build)&quot; in reports. If you see this value in reports, make sure you are setting `state` in each `TrackState` call.
+   オプションのコンテキストデータを使用してアプリの状態を追跡します。状態は、「ホームダッシュボード」、「アプリ設定」、「カート」など、アプリで使用できる表示です。 これらの状態は Web サイト上のページによく似ており、`TrackState` コールにより、ページビュー数が増分されます。`state`が空の場合、レポートには「app name app version (build)」と表示されます。 レポートにこの値が表示される場合は、各`TrackState`呼び出しで`state`を設定していることを確認してください。
 
    >[!TIP]
    >
