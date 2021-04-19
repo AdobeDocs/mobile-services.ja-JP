@@ -1,20 +1,20 @@
 ---
 description: この情報は、Android SDK を Adobe Analytics で使用する場合に役立ちます。
-keywords: android;library;mobile;sdk
+keywords: Android, ライブラリ, モバイル, SDK
 seo-description: この情報は、Android SDK を Adobe Analytics で使用する場合に役立ちます。
 seo-title: Analytics の概要
 solution: Experience Cloud,Analytics
 title: Analytics の概要
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: cc9fa1d9-bc48-4d03-854a-f7b263580a91
+exl-id: ed9f55e6-f3ab-4c1e-9a2f-1ee67a7b4c03
 translation-type: tm+mt
-source-git-commit: bc11c1e7a4a11657ee89c40ddcbd37377ce50bb5
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '327'
 ht-degree: 100%
 
 ---
-
 
 # Analytics の概要 {#analytics}
 
