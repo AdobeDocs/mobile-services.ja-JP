@@ -4,16 +4,16 @@ seo-description: アプリでモバイル Web コンテンツを開く場合は�
 seo-title: アプリとモバイル Web にまたがる訪問者トラッキング
 solution: Experience Cloud,Analytics
 title: アプリとモバイル Web にまたがる訪問者トラッキング
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 2d951de6-3954-4379-a4ff-99b9695b9869
+exl-id: d8459d59-0edd-42c4-81b5-529b250accb4
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '528'
 ht-degree: 100%
 
 ---
-
 
 # アプリとモバイル Web にまたがる訪問者トラッキング {#visitor-tracking-between-an-app-and-mobile-web}
 
