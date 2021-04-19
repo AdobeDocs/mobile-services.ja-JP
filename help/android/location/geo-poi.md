@@ -4,16 +4,16 @@ seo-description: 位置情報は、緯度と経度に加え、事前定義され
 seo-title: 位置情報と目標地点
 solution: Experience Cloud,Analytics
 title: 位置情報と目標地点
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: b8209370-cbc4-40f9-97d8-017e2d74a377
+exl-id: e1fed35b-5ce9-48ee-ade0-b1701cf2a3a9
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '596'
 ht-degree: 100%
 
 ---
-
 
 # 位置情報と目標地点 {#geo-location-and-points-of-interest}
 
@@ -120,4 +120,3 @@ Analytics.trackLocation(currentLocation, locationContextData);
 * 2 つの POI の直径が重なっている場合は、現在のロケーションを含む最初の POI が使用されます。
 
    POI が重複する場合、最も精度の高い POI が確実に報告されるように、POI を精度の高い順にリストする必要があります。
-
