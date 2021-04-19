@@ -1,20 +1,20 @@
 ---
 description: この情報は、組み込みのレポートを理解し、カスタマイズするのに役立ちます。
-keywords: mobile
+keywords: モバイル
 seo-description: この情報は、組み込みのレポートを理解し、カスタマイズするのに役立ちます。
 seo-title: レポートのカスタマイズ
 solution: Experience Cloud,Analytics
 title: レポートのカスタマイズ
-topic: Reports,Metrics
+topic-fix: Reports,Metrics
 uuid: 39ba9af3-eaee-44b9-bea4-c8f43a0d2a6c
+exl-id: 287b12fb-96f8-4fa9-a4f4-7325e30e1797
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '487'
 ht-degree: 100%
 
 ---
-
 
 # レポートのカスタマイズ {#customize-reports}
 
@@ -45,4 +45,3 @@ ht-degree: 100%
 | 6 | **[!UICONTROL 共通フィルター]**&#x200B;を使用して、様々なレポートにわたるフィルターを作成できます。例えば、すべてのモバイルレポートにおいて、特定のセグメントのパフォーマンスを確認することもできます。共通フィルターを定義すると、パス（画面遷移）レポート以外のすべてのレポートに適用されます。詳しくは、「[共通フィルターの追加](/help/using/usage/reports-customize/t-sticky-filter.md)」を参照してください。 |
 | 7 | **[!UICONTROL データのグラフ]**&#x200B;には、選択した指標に基づく適切なグラフでデータが表示されます。グラフの種類には、折れ線グラフ、棒グラフ、ドーナツグラフなどがあります。 |
 | 8 | **[!UICONTROL データの表]**&#x200B;には、データが表形式で表示されます。列ヘッダーをクリックして、昇順または降順でデータを並べ替えることができます。 |
-
