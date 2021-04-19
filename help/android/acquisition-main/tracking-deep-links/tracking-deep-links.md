@@ -1,20 +1,20 @@
 ---
 description: この情報は、Adobe Mobile Android SDK を使用して、モバイルアプリのディープリンクおよびディファードディープリンクを追跡する場合に役立ちます。
-keywords: android;library;mobile;sdk
+keywords: Android, ライブラリ, モバイル, SDK
 seo-description: この情報は、Adobe Mobile Android SDK を使用して、モバイルアプリのディープリンクおよびディファードディープリンクを追跡する場合に役立ちます。
 seo-title: Adobe Mobile Services でのディープリンクの追跡
 solution: Experience Cloud,Analytics
 title: ディープリンクの追跡
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: ebb1c08c-a246-40b3-9ac6-4606a14b4c5a
+exl-id: 4f59b77d-3cac-4853-bb6b-50a403036771
 translation-type: tm+mt
-source-git-commit: e28340249c22d9f121d5c21205227ee758fb9e1b
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '334'
 ht-degree: 100%
 
 ---
-
 
 # ディープリンクの追跡
 
@@ -72,4 +72,3 @@ Adobe Mobile SDK は、任意のディープリンクまたはユニバーサル
  */
 public static final String ADB_MESSAGE_DEEPLINK_KEY = "adb_deeplink";
 ```
-
