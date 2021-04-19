@@ -1,20 +1,20 @@
 ---
 description: appFigures データコネクタ統合は、appFigures 統合モバイルアプリストア分析と、Adobe Analytics の直接のアプリ追跡機能を組み合わせることによって、組織にとって強力な分析および最適化の機会を提供します。
-keywords: mobile
+keywords: モバイル
 seo-description: appFigures データコネクタ統合は、appFigures 統合モバイルアプリストア分析と、Adobe Analytics の直接のアプリ追跡機能を組み合わせることによって、組織にとって強力な分析および最適化の機会を提供します。
 seo-title: アプリストア
 solution: Experience Cloud,Analytics
 title: アプリストア
-topic: Metrics
+topic-fix: Metrics
 uuid: a194364d-faaf-4995-befd-cf48f9c1f11b
+exl-id: 27c65823-49ca-4bd4-b929-ba3df86e0a13
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '199'
+source-wordcount: '200'
 ht-degree: 100%
 
 ---
-
 
 # アプリストア {#app-store}
 
