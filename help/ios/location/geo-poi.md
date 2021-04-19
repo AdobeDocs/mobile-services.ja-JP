@@ -4,16 +4,16 @@ seo-description: 位置情報を利用すると、緯度と経度およびアプ
 seo-title: 位置情報と目標地点
 solution: Experience Cloud,Analytics
 title: 位置情報と目標地点
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: c800ec85-a33f-425d-b28f-bfe8bf229ae8
+exl-id: 732c3863-2010-4d04-a17b-a656e857f567
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '591'
 ht-degree: 100%
 
 ---
-
 
 # 位置情報と目標地点 {#geo-location-and-points-of-interest}
 
@@ -116,4 +116,3 @@ NSMutableDictionary *contextData = [NSMutableDictionary dictionary];
 * 2 つの POI の直径が重なっている場合は、現在のロケーションを含む最初の POI が使用されます。
 
    POI が重複する場合、最も精度の高い POI が確実に報告されるように、POI を精度の高いものから精度の低いものへとリストする必要があります。
-
