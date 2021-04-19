@@ -4,16 +4,16 @@ seo-description: この情報は、クラッシュの追跡方法と、誤った
 seo-title: アプリのクラッシュの追跡
 solution: Experience Cloud,Analytics
 title: アプリのクラッシュの追跡
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 4f81988b-198a-4ba9-ad53-78af90e43856
+exl-id: d6b4c763-7e02-42d0-aaf2-cda8640e5b9f
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '529'
 ht-degree: 100%
 
 ---
-
 
 # アプリのクラッシュの追跡 {#track-app-crashes}
 
@@ -70,4 +70,3 @@ Apteligent（旧 Crittercism）などの企業が提供するクラッシュレ�
 * Adobe Mobile SDK が `NSUserDefaults` に設定する値を削除または変更しないでください。
 
    これらの値を SDK 外で変更した場合、レポートされるデータは無効になります。
-
