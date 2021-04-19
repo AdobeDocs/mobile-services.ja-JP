@@ -1,20 +1,20 @@
 ---
 description: Android ライブラリによって提供される Adobe Target メソッドのリストを示します。
-keywords: android;library;mobile;sdk
+keywords: Android, ライブラリ, モバイル, SDK
 seo-description: Android ライブラリによって提供される Adobe Target メソッドのリストを示します。
 seo-title: Android の Target メソッド
 solution: Experience Cloud,Analytics
 title: Android の Target メソッド
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 8e9808b2-ba80-4646-ba05-8e62d4fde065
+exl-id: 0c7a6718-d078-4a2b-a2c9-d5cd50263939
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '603'
+source-wordcount: '607'
 ht-degree: 100%
 
 ---
-
 
 # Android の Target メソッド {#target-methods}
 
@@ -57,8 +57,9 @@ public static final String TARGET_PARAMETER_MBOX_HOST           = "mboxHost";
 >[!IMPORTANT]
 >
 >* バージョン 4.14.0 より&#x200B;**前の** SDK を使用している場合、パラメーターの制限については、「[https://developers.adobetarget.com/api/#input-parameters](https://developers.adobetarget.com/api/#input-parameters)」を参照してください。
->
->* SDKバージョン 4.14.0 **以降**&#x200B;を使用している場合は、パラメーターの制限について [https://developers.adobetarget.com/api/#batch-input-parameters](https://developers.adobetarget.com/api/#batch-input-parameters) を参照してください。
+   >
+   >
+* SDKバージョン 4.14.0 **以降**&#x200B;を使用している場合は、パラメーターの制限について [https://developers.adobetarget.com/api/#batch-input-parameters](https://developers.adobetarget.com/api/#batch-input-parameters) を参照してください。
 
 
 * **loadRequest**
