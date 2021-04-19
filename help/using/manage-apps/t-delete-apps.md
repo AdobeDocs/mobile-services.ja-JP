@@ -1,20 +1,20 @@
 ---
 description: Adobe Mobile からアプリを削除できます。
-keywords: mobile
+keywords: モバイル
 seo-description: Adobe Mobile からアプリを削除できます。
 seo-title: アプリの削除
 solution: Experience Cloud,Analytics
 title: アプリの削除
-topic: Metrics
+topic-fix: Metrics
 uuid: 1721cce5-b368-4f05-a40b-e3f2348d96d8
+exl-id: 70b95aed-9e22-470b-b278-6c015334e92a
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '104'
+source-wordcount: '105'
 ht-degree: 100%
 
 ---
-
 
 # アプリの削除 {#delete-an-app}
 
