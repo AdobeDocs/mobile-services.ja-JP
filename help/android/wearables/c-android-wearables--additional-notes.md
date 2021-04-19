@@ -4,16 +4,16 @@ seo-description: Android ウェアラブルアプリからデータを収集で�
 seo-title: Android ウェアラブル：追加の注意事項
 solution: Experience Cloud,Analytics
 title: Android ウェアラブル：追加の注意事項
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 3bcf352b-4d46-4ab3-81ec-c27e86fe9be3
+exl-id: ae8cf2d1-d2b0-456b-bbd3-3980e00bbc84
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '161'
 ht-degree: 100%
 
 ---
-
 
 # Android ウェアラブル：追加の注意事項 {#android-wearables-additional-notes}
 
@@ -26,10 +26,9 @@ Android ウェアラブルアプリからデータを収集できる Android 拡
 
       ヒットはハンドヘルドアプリから取得されます。
 
-   * `RunMode` = `Extension`
+   * `RunMode` =  `Extension`
 
       ヒットはウェアラブルアプリから取得されます。
 
 * SDK はハンドヘルドアプリから `aid`/`vid`/`visitor` `service id`/`privacy` ステータスを自動的に同期するので、ウェアラブルアプリから `setPrivacyStatus`/`setUserIdentifier`/`idSync` を呼び出さないでください。
 * [アプリ内メッセージ](/help/android/messaging-main/messaging/messaging.md)、[Target](/help/android/target-main/target.md)、および [Audience Manager](/help/android/audience-manager/audiencemgmt.md) はウェアラブルアプリでは無効化されています。
-
