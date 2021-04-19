@@ -1,20 +1,20 @@
 ---
 description: この情報は、Android ライブラリのバージョン 3.x または 2.x をバージョン 4.x に移行する場合に役立ちます。
-keywords: android;library;mobile;sdk
+keywords: Android, ライブラリ, モバイル, SDK
 seo-description: この情報は、Android ライブラリのバージョン 3.x または 2.x をバージョン 4.x に移行する場合に役立ちます。
 seo-title: Android 4.x ライブラリへの移行
 solution: Experience Cloud,Analytics
 title: Android 4.x ライブラリへの移行
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 906e83bb-2faf-4aa2-ac9b-3fba6b833c7e
+exl-id: 8061c1ab-aaaf-4d4c-9bd5-b2f80b6b06a3
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '880'
+source-wordcount: '884'
 ht-degree: 100%
 
 ---
-
 
 # Android 4.x ライブラリへの移行 {#migrating-to-the-android-x-library}
 
@@ -190,4 +190,3 @@ ht-degree: 100%
 ## products 変数 {#section_AFBA36F3718C44D29AF81B9E1056A1B4}
 
 products 変数について詳しくは、「[product 変数](/help/android/analytics-main/products/products.md)」を参照してください。
-
