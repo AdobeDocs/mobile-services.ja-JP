@@ -1,20 +1,20 @@
 ---
 description: Apple App Store または Google Play からアプリを追加できます。
-keywords: mobile
+keywords: モバイル
 seo-description: Apple App Store または Google Play からアプリを追加できます。
 seo-title: アプリストアからのアプリの追加
 solution: Experience Cloud,Analytics
 title: アプリストアからのアプリの追加
-topic: Metrics
+topic-fix: Metrics
 uuid: 94c8a924-5156-4742-8b5b-88d9ea13bfed
+exl-id: 874a132b-42d3-4074-8f14-22310fa60ec0
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '158'
+source-wordcount: '159'
 ht-degree: 100%
 
 ---
-
 
 # アプリストアからのアプリの追加 {#add-an-app-from-an-app-store}
 
