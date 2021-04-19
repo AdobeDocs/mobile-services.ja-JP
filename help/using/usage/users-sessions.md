@@ -1,24 +1,24 @@
 ---
-description: ユーザーとセッションレポートには、選択した期間の一意の訪問者に関する指標が表示されます。
-keywords: mobile
-seo-description: ユーザーとセッションレポートには、選択した期間の一意の訪問者に関する指標が表示されます。
+description: ユーザーとセッションレポートには、選択した期間のユニーク訪問者に関する指標が表示されます。
+keywords: モバイル
+seo-description: ユーザーとセッションレポートには、選択した期間のユニーク訪問者に関する指標が表示されます。
 seo-title: ユーザーとセッションレポート
 solution: Experience Cloud,Analytics
 title: ユーザーとセッションレポート
-topic: Reports,Metrics
+topic-fix: Reports,Metrics
 uuid: 6d70d7f6-de81-4307-a4f3-14f18fc3c9b3
+exl-id: a764a8a9-6490-4cb7-ad4f-68c9dd41c774
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '193'
+source-wordcount: '194'
 ht-degree: 100%
 
 ---
 
-
 # ユーザーとセッションレポート {#users-and-sessions}
 
-ユーザーとセッションレポートには、選択した期間の一意の訪問者に関する指標が表示されます。
+ユーザーとセッションレポートには、選択した期間のユニーク訪問者に関する指標が表示されます。
 
 ![ユーザーとセッションレポート](assets/users_sessions.png)
 
