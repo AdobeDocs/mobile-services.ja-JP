@@ -4,16 +4,16 @@ seo-description: iOS 9 の一連の新しいセキュリティ要件である Ap
 seo-title: App Transport Security
 solution: Experience Cloud,Analytics
 title: App Transport Security
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: e9ee13cf-9802-492e-8b11-95f028e34e61
+exl-id: 2fe94e76-06d6-4ad1-95ba-193ae3df4d58
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '486'
 ht-degree: 100%
 
 ---
-
 
 # App Transport Security {#app-transport-security}
 
@@ -39,4 +39,3 @@ Adobe Mobile Servicesで、アプリ設定の&#x200B;**[!UICONTROL HTTPS を使�
 >[!TIP]
 >
 >これらの検討事項は、Adobe Mobile SDK が作成する接続に影響しますが、アプリが作成する Web ビューまたはその他の接続には影響しません。
-
