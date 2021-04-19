@@ -1,20 +1,20 @@
 ---
 description: ファネルレポートは、顧客がモバイルアプリの操作中にマーケティングキャンペーンを放棄した地点や、定義済みのコンバージョンパスからそれた地点を特定します。また、ファネルレポートを使用して、様々なセグメントのアクションを比較できます。
-keywords: mobile
+keywords: モバイル
 seo-description: ファネルレポートは、顧客がモバイルアプリの操作中にマーケティングキャンペーンを放棄した地点や、定義済みのコンバージョンパスからそれた地点を特定します。また、ファネルレポートを使用して、様々なセグメントのアクションを比較できます。
 seo-title: ファネルレポート
 solution: Experience Cloud,Analytics
 title: ファネルレポート
-topic: Reports,Metrics
+topic-fix: Reports,Metrics
 uuid: 268b4ab9-2e29-4423-9f79-ad93f5231ede
+exl-id: 43f9d0aa-0651-42c6-85ea-307ed253cf8d
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '522'
+source-wordcount: '523'
 ht-degree: 100%
 
 ---
-
 
 # ファネルレポート {#funnel}
 
