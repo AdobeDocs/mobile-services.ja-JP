@@ -4,16 +4,16 @@ seo-description: Experience Cloud ソリューション用 Windows 8.1 ユニバ
 seo-title: 'Experience Cloud ソリューション用 Windows 8.1 Universal アプリストア SDK 4.x '
 solution: Experience Cloud,Analytics
 title: 'Experience Cloud ソリューション用 Windows 8.1 Universal アプリストア SDK 4.x '
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: a06d8cf2-5d2d-49a8-86ac-102e2934ea59
+exl-id: 5c511dea-99d8-40e9-a98f-8bc3cad937b8
 translation-type: tm+mt
-source-git-commit: bc11c1e7a4a11657ee89c40ddcbd37377ce50bb5
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '234'
 ht-degree: 100%
 
 ---
-
 
 # Experience Cloud ソリューション用 Windows 8.1 Universal アプリストア SDK 4.x {#windows-universal-app-store-sdk-x-for-experience-cloud-solutions}
 
