@@ -1,20 +1,20 @@
 ---
 description: この情報は、Mobile Services SDK および Mobile Services 実装を支援するツールをダウンロードする際に役立ちます。
-keywords: mobile;android;ios;sdk
+keywords: モバイル;android;ios;sdk
 seo-description: この情報は、Mobile Services SDK および Mobile Services 実装を支援するツールをダウンロードする際に役立ちます。
 seo-title: Mobile SDK およびツールのダウンロード
 solution: Experience Cloud,Analytics
 title: Mobile SDK およびツールのダウンロード
-topic: Developer and implementation,Metrics
+topic-fix: Developer and implementation,Metrics
 uuid: 4af757f7-4e4d-4939-9b6a-49a29c220192
+exl-id: 34ec76fa-3bcb-4b77-9d1e-7160941deb44
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '176'
+source-wordcount: '180'
 ht-degree: 100%
 
 ---
-
 
 # Mobile SDK およびツールのダウンロード {#download-mobile-sdks-and-tools}
 
@@ -36,4 +36,3 @@ ht-degree: 100%
 * [Android の手順](/help/android/getting-started/requirements.md)
 
 Windows Phone 8、Blackberry、Xamarin などのネイティブライブラリのドキュメントを確認するには、[Adobe Mobile Services](/help/using/home.md) の「*SDK ドキュメント*」の節を参照してください。.
-
