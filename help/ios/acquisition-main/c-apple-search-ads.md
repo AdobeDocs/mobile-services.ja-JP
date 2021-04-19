@@ -3,17 +3,17 @@ description: Adobe SDK は、Apple Search Ads アプリのアトリビューシ�
 seo-description: Adobe SDK は、Apple Search Ads アプリのアトリビューション API を利用して、開発者とマーケターが Apple App Store の Search Ads キャンペーンからのアプリのダウンロード数を追跡し、アトリビューションをおこなえるようにします。
 seo-title: Apple Search Ads
 solution: Experience Cloud,Analytics
-title: Apple Search Ads
-topic: Developer and implementation
+title: Apple検索広告
+topic-fix: Developer and implementation
 uuid: 790080e8-067e-4bfd-a169-0027db4fdff3
+exl-id: efcdd430-f08d-4ee2-85f3-2697c3bd72db
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '280'
 ht-degree: 100%
 
 ---
-
 
 # Apple Search Ads {#apple-search-ads}
 
@@ -26,7 +26,7 @@ Apple Ads を使用する利点には以下のものがあります。
 * 数行のコードをアプリに追加することによって、Search Ads によるアプリダウンロードキャンペーンの効果を簡単に測定できる。
 * 開発者が、ダウンロード日時およびコンバージョンにつながった入札キーワードを利用できる。
 
-## Apple Ads の実装  {#section_F1094676793540CFA1DBB540174EEB6A}
+## Apple Ads の実装   {#section_F1094676793540CFA1DBB540174EEB6A}
 
 >[!TIP]
 >
@@ -40,7 +40,7 @@ Search Ads アトリビューションに対してアプリを有効にするに
 
 1. iAd フレームワークをアプリの Xcode プロジェクトファイルに追加します。
 
-## Search Ads アトリビューションのレポート {#section_1AF4E0B4F8E94F36B38CA3D3E384D0A4}
+## Search Ads アトリビューションのレポート  {#section_1AF4E0B4F8E94F36B38CA3D3E384D0A4}
 
 1. Apple Search Ads のアトリビューションデータは、獲得名、ソースおよび項値として提供されます。
 
@@ -49,7 +49,7 @@ Search Ads アトリビューションに対してアプリを有効にするに
    さらに、以下の値が `"iad"` 辞書から一般的な獲得コンテキストデータフィールドにマッピングされます。
 
    * `"iad-campaign-id"` --> `"a.referrer.campaign.trackingcode"`
-   * `"iad-campaign-name"` --> `"a.referrer.campaign.name"`
-   * `"iad-adgroup-id"` --> `"a.referrer.campaign.content"`
-   * `"iad-keyword"` --> `"a.referrer.campaign.term"`
+   * `"iad-campaign-name"` —>  `"a.referrer.campaign.name"`
+   * `"iad-adgroup-id"` —>  `"a.referrer.campaign.content"`
+   * `"iad-keyword"` —>  `"a.referrer.campaign.term"`
    このマッピングは、標準のレポートで値を使用できるようにします。
