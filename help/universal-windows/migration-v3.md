@@ -4,16 +4,16 @@ seo-description: この節では、以前のWindowsモバイルSDK 3.xバージ�
 seo-title: 4.x への移行
 solution: Experience Cloud,Analytics
 title: 4.x への移行
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: bdd6c5cd-3892-4e99-b69e-77105ad66e25
+exl-id: 68de505b-dcff-4a78-9f01-b1d103846281
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '705'
 ht-degree: 26%
 
 ---
-
 
 # 4.x SDKへの移行{#migrate-to-x}
 
@@ -25,7 +25,7 @@ ht-degree: 26%
 
 ## 使用されないプロパティの削除 {#section_145222EAA20F4CC2977DD883FDDBBFC5}
 
-ダウンロードに新しい `ADBMobileConfig.json` ファイルが含まれていることに気付いたかもしれません。 このファイルには、アプリケーション固有のグローバル設定が含まれ、以前のバージョンで使用されていた設定変数のほとんどが置き換えられます。
+新しい`ADBMobileConfig.json`ファイルがダウンロードに含まれているのに気づいたかもしれません。 このファイルには、アプリケーション固有のグローバル設定が含まれ、以前のバージョンで使用されていた設定変数のほとんどが置き換えられます。
 
 `ADBMobileConfig.json` ファイルの例を次に示します。
 
@@ -61,7 +61,7 @@ ht-degree: 26%
 
 次の表に、3.x SDKの変数のリストと4.x SDKの新しい名前を示します。
 
-| 設定変数/方法 | Variable in the `ADBMobileConfig.json` file. |
+| 設定変数/方法 | `ADBMobileConfig.json`ファイル内の変数。 |
 |--- |--- |
 | offlineTrackingEnabled | &quot;offlineEnabled&quot; |
 | reportSuiteIDs | &quot;rsids&quot; |
@@ -75,17 +75,17 @@ ht-degree: 26%
 
 ## トラッキングコールとトラッキング変数の更新 {#section_96E7D9B3CDAC444789503B7E7F139AB9}
 
-バージョン4 SDKでは、Web中心の呼び出し `Track``TrackLink` と呼び出しを使用する代わりに、モバイル業界で少し意味のある2つのメソッドを使用します。
+バージョン4 SDKは、Web中心の`Track`呼び出しと`TrackLink`呼び出しを使用する代わりに、モバイル業界で少し意味のある2つのメソッドを使用します。
 
-* `TrackState` 状態は、「ホームダッシュボード」、「アプリ設定」、「カート」など、アプリで使用できる表示です。 これらの状態は Web サイト上のページによく似ており、`trackState` コールにより、ページビュー数が増分されます。
+* `TrackState` 状態は、「ホームダッシュボード」、「アプリ設定」、「カート」など、アプリで使用できる表示です。これらの状態は Web サイト上のページによく似ており、`trackState` コールにより、ページビュー数が増分されます。
 
-* `TrackAction` アクションとは、「ログオン」、「バナーのタップ」、「フィード購読」など、測定対象のアプリで発生する操作です。 これらの呼び出しでは、ページ表示は増えません。
+* `TrackAction` アクションとは、「ログオン」、「バナーのタップ」、「フィード購読」など、測定対象のアプリで発生する操作です。これらの呼び出しでは、ページ表示は増えません。
 
-The `contextData` parameter for both of these methods contains name-value pairs that are sent as context data.
+これらの両方のメソッドの`contextData`パラメーターには、コンテキストデータとして送信される名前と値のペアが含まれています。
 
 ### event、prop、eVar
 
-SDKの [メソッドを見たことがある場合は](/help/universal-windows/c-configuration/methods.md)、イベント、eVar、prop、履歴、リストの設定場所を不思議に思っているでしょう。 バージョン4では、これらのタイプの変数を直接アプリで割り当てることはできなくなりました。 代わりに、SDK は、コンテキストデータと処理ルールを使用して、レポート用にアプリデータを Analytics 変数へとマッピングします。
+[SDKメソッド](/help/universal-windows/c-configuration/methods.md)を参照した場合、イベント、eVar、prop、ヒーラー、リストの設定場所を考えているでしょう。 バージョン4では、これらのタイプの変数を直接アプリで割り当てることはできなくなりました。 代わりに、SDK は、コンテキストデータと処理ルールを使用して、レポート用にアプリデータを Analytics 変数へとマッピングします。
 
 処理ルールには次の利点があります。
 
@@ -93,17 +93,17 @@ SDKの [メソッドを見たことがある場合は](/help/universal-windows/c
 * データには、レポートスイートに固有の変数を設定する代わりに、意味のある名前を付けることができます。
 * 追加のデータを送信しても、影響はほとんどありません。これらの値は、処理ルールを使用してマッピングされるまで、レポートに表示されません。
 
-詳しくは、 *Analyticsの概要の「* 処理ルール [」の節を参照してください](/help/universal-windows/analytics/analytics.md)。
+詳しくは、[Analyticsの概要](/help/universal-windows/analytics/analytics.md)の&#x200B;*処理ルール*&#x200B;の節を参照してください。
 
-変数に直接割り当てた値は、代わりにコンテキストデータに追加する必要があります。 This means that calls to `SetProp`, `SetEvar`, and assignments to persistent context data should all be removed and the values added to context data.
+変数に直接割り当てた値は、代わりにコンテキストデータに追加する必要があります。 つまり、`SetProp`、`SetEvar`への呼び出し、および永続的なコンテキストデータへの割り当ては、すべて削除され、コンテキストデータに追加された値が追加されます。
 
 ### AppSection／server、GeoZip、トランザクション ID、Campaign、その他の標準的な変数
 
-測定オブジェクトに設定したその他のデータ（上記の変数を含む）は、コンテキストデータに追加する必要があります。 つまり、 `TrackState` または `TrackAction` 呼び出しで送信されるデータは、パラ `data` メーター内のペイロードのみです。
+測定オブジェクトに設定したその他のデータ（上記の変数を含む）は、コンテキストデータに追加する必要があります。 つまり、`TrackState`または`TrackAction`呼び出しで送信されるデータは、`data`パラメーターのペイロードのみです。
 
 **トラッキングコールの置き換え**
 
-Throughout your code, replace the following methods with a call to `trackState` or `trackAction`:
+コード全体で、次のメソッドを`trackState`または`trackAction`への呼び出しで置き換えます。
 
 **3.xからの移行：**
 
@@ -112,13 +112,13 @@ Throughout your code, replace the following methods with a call to `trackState` 
 * Track (TrackAction)
 * TrackLinkURL (TrackAction)
 
-## カスタムIDサービス {#section_2CF930C13BA64F04959846E578B608F3}
+## カスタムIDサービス{#section_2CF930C13BA64F04959846E578B608F3}
 
 `visitorID` 変数を `setUserIdentifier` の呼び出しで置き換えます。
 
 ## オフライントラッキング {#section_5D4CD8CD1BE041A79A8657E31C0D24C6}
 
-Offline tracking is enabled in the `ADBMobileConfig.json` file. All other offline configuration is done automatically.
+オフライン追跡は`ADBMobileConfig.json`ファイルで有効になっています。その他すべてのオフライン設定は自動的に行われます。
 
 コード全体で、次のメソッドの呼び出しを削除します。
 
@@ -141,4 +141,4 @@ ADB.Analytics.trackAction("product view", cdata);
 
 ![](assets/prod-view.png)
 
-の値 `"&&products"` （この例では、値は「」）は、追跡するイベントのタイプに対する製品文字列の構文に従う必要があり `";Cool Shoe`ます。
+`"&&products"`の値（この例では、値は`";Cool Shoe`&quot;）は、追跡するイベントのタイプの製品文字列構文に従う必要があります。
