@@ -1,20 +1,20 @@
 ---
 description: リテンションレポート（以前の初回起動コホート）は、アプリを初めて起動した後の数ヶ月間にそのアプリを 1 回以上再度起動したユニークユーザー数を示すコホートレポートです。
-keywords: mobile
+keywords: モバイル
 seo-description: リテンションレポート（以前の初回起動コホート）は、アプリを初めて起動した後の数ヶ月間にそのアプリを 1 回以上再度起動したユニークユーザー数を示すコホートレポートです。
 seo-title: リテンションレポート
 solution: Experience Cloud,Analytics
 title: リテンションレポート
-topic: Reports,Metrics
+topic-fix: Reports,Metrics
 uuid: e7639e7f-c9ed-4b19-9ac5-b36774ea9dd6
+exl-id: de68f00a-5de0-4e9a-9255-207a1a44df6e
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '309'
+source-wordcount: '310'
 ht-degree: 100%
 
 ---
-
 
 # リテンションレポート {#retention}
 
