@@ -1,20 +1,20 @@
 ---
 description: Android ライブラリによって提供される Experience Cloud ID メソッドを示します。
-keywords: android;library;mobile;sdk
+keywords: Android, ライブラリ, モバイル, SDK
 seo-description: Android ライブラリによって提供される Experience Cloud ID メソッドを示します。
 seo-title: Adobe Experience Platform ID サービスのメソッド
 solution: Experience Cloud,Analytics
 title: Adobe Experience Platform ID サービスのメソッド
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: c5107a7e-273b-4f71-8738-4c603479b24c
+exl-id: 8eb98c3f-c6ef-4593-ad3a-f566f4d4b6a2
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '453'
 ht-degree: 100%
 
 ---
-
 
 # Adobe Experience Platform ID サービスのメソッド {#experience-cloud-id-service-methods}
 
