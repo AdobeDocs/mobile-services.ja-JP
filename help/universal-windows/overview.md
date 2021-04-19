@@ -4,16 +4,16 @@ seo-description: Experience Cloud ソリューション用ユニバーサル Win
 seo-title: Experience Cloud ソリューション用 Universal Windows Platform SDK 4.x
 solution: Experience Cloud,Analytics
 title: Experience Cloud ソリューション用 Universal Windows Platform SDK 4.x
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 23a5bc0a-54f0-42a7-af1e-c8cbb509dfce
+exl-id: 3ae13dfc-a5ad-46d9-90e1-1e5e11b39f42
 translation-type: tm+mt
-source-git-commit: bc11c1e7a4a11657ee89c40ddcbd37377ce50bb5
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '214'
 ht-degree: 100%
 
 ---
-
 
 # Experience Cloud ソリューション用 Universal Windows Platform SDK 4.x {#universal-windows-platform-sdk-x-for-experience-cloud-solutions}
 
