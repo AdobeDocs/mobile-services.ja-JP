@@ -4,16 +4,16 @@ seo-description: アクションは、Android アプリ内で発生し、測定�
 seo-title: アプリのアクションの追跡
 solution: Experience Cloud,Analytics
 title: アプリのアクションの追跡
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: fe01c1df-f6bb-4b32-b3ef-959d2c724af6
+exl-id: 495a6aa8-781d-4499-ad46-e19d57cccf40
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '379'
 ht-degree: 100%
 
 ---
-
 
 # アプリのアクションの追跡 {#track-app-actions}
 
@@ -71,4 +71,3 @@ Analytics.trackAction("myapp.SocialShare", exampleContextData);
 | Adobe Mobile Services | **[!UICONTROL アクションパス]**&#x200B;レポート。アプリでアクションが発生する順序を表示します。任意のレポートで「**[!UICONTROL カスタマイズ]**」をクリックすると、ランク付け、トレンド表示または分類レポートでアクションを表示したり、フィルターを適用して特定のセグメントのアクションを表示したりできます。 |
 | マーケティングレポートと分析 | **[!UICONTROL カスタムイベント]**&#x200B;レポート。アクションがカスタムイベントにマップされた後、他のすべての Analytics イベントと同様にモバイルイベントを表示できます。 |
 | アドホック分析 | **[!UICONTROL カスタムイベント]**&#x200B;レポート。アクションがカスタムイベントにマップされた後、他のすべての Analytics イベントと同様にモバイルイベントを表示できます。 |
-
