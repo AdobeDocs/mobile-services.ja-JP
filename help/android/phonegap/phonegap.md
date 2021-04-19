@@ -1,20 +1,20 @@
 ---
 description: このプラグインを使用すると、PhoneGap プロジェクトから Android AppMeasurement コールを送信できます。
-keywords: android;library;mobile;sdk
+keywords: Android, ライブラリ, モバイル, SDK
 seo-description: このプラグインを使用すると、PhoneGap プロジェクトから Android AppMeasurement コールを送信できます。
 seo-title: PhoneGap プラグインの概要
 solution: Experience Cloud,Analytics
 title: PhoneGap プラグインの概要
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: c5c32357-d8df-458a-b0e8-e0c56040241d
+exl-id: ecd756ca-e333-4d28-bd1e-a75ffc6ebe22
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '395'
+source-wordcount: '399'
 ht-degree: 100%
 
 ---
-
 
 # PhoneGap プラグインの概要 {#phonegap-plug-in}
 
@@ -126,4 +126,3 @@ android:windowSoftInputMode="adjustUnspecified|stateHidden" />
 ```
 <script type="text/javascript" charset="utf-8" src="ADB_Helper.js"></script>
 ```
-
