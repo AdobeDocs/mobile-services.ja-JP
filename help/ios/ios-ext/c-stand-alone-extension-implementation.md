@@ -4,16 +4,16 @@ seo-description: Apple では iOS 10 以降、本体アプリなしで配布で�
 seo-title: スタンドアロンエクステンション実装
 solution: Experience Cloud,Analytics
 title: スタンドアロンエクステンション実装
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 9b47f082-b78f-4611-968d-014c32ede6bc
+exl-id: b51247b6-c4ba-4a00-9ba0-1824450ac067
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '268'
 ht-degree: 100%
 
 ---
-
 
 # スタンドアロンエクステンション実装 {#stand-alone-extension-implementation}
 
@@ -56,4 +56,3 @@ Apple では iOS 10 以降、本体アプリなしで配布できる、スタン
       この値は、ヒット元が拡張機能であることを示します。
 
 * iOS 拡張アプリに対しては、ライフサイクルコールはトリガーされません。
-
