@@ -4,16 +4,16 @@ seo-description: 処理ルールは、コンテキストデータ変数で送信
 seo-title: 処理ルールとコンテキストデータ
 solution: Experience Cloud,Analytics
 title: 処理ルールとコンテキストデータ
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 51338ccd-fa52-4d9c-97c4-947a4100465d
+exl-id: a3968160-42c4-4671-b541-c14639b8a451
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 100%
 
 ---
-
 
 # 処理ルールとコンテキストデータ {#processing-rules-and-context-data}
 
@@ -67,4 +67,3 @@ ht-degree: 100%
 >[!TIP]
 >
 >アドビは名前空間「`a.`」を予約します。この制約の他に、衝突を回避するために従うべき唯一の要件は、コンテキストデータ変数をログイン会社内で一意にすることです。
-
