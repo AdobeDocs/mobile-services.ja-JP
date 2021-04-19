@@ -4,16 +4,16 @@ seo-description: この情報は、iOS アプリでアプリ内メッセージ�
 seo-title: アプリ内メッセージ
 solution: Experience Cloud,Analytics
 title: アプリ内メッセージ
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 21fa6a94-bb7f-4c78-843b-a50f1974db22
+exl-id: 70b0ade4-dcd1-4e00-9800-352f11c4001d
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '420'
 ht-degree: 100%
 
 ---
-
 
 # アプリ内メッセージ {#in-app-messaging}
 
@@ -86,7 +86,7 @@ iOS Mobile Services SDK は、アプリ内メッセージに関する以下の�
 
 * カスタムの全画面アプリ内メッセージの場合は、メッセージ内の HTML コンテンツに次のボタンに関する SDK 追跡を通知する正しいコードが含まれている必要があります。
 
-   * **[!UICONTROL クリックスルー]**（リダイレクト）のトラッキング例： `adbinapp://confirm/?url=https://www.yoursite.com`
+   * **[!UICONTROL クリックスルー]**（リダイレクト）のトラッキング例：  `adbinapp://confirm/?url=https://www.yoursite.com`
    * **[!UICONTROL キャンセル]**（終了）追跡の例：`adbinapp://cancel`
 
 * ローカル（リモート）通知の場合：
@@ -118,4 +118,3 @@ Adobe Mobile Services で全画面メッセージを作成する際には、オ�
 >[!IMPORTANT]
 >
 >指定したリソースが使用可能であることを確認する必要があります。
-
