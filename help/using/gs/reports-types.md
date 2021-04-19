@@ -1,20 +1,20 @@
 ---
 description: レポートのカスタマイズは柔軟性が高いので、求めるデータを得るにはどのレポートタイプが最適なのか迷う場合があるかもしれません。
-keywords: mobile
+keywords: モバイル
 seo-description: レポートのカスタマイズは柔軟性が高いので、求めるデータを得るにはどのレポートタイプが最適なのか迷う場合があるかもしれません。
 seo-title: レポートタイプ
 solution: Experience Cloud,Analytics
 title: レポートタイプ
-topic: Reports,Metrics
+topic-fix: Reports,Metrics
 uuid: 8747b11e-31b1-47bc-ad55-db5ab4ef7078
+exl-id: ba7af2f5-8c84-4c49-a793-5fbaa8947566
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '771'
+source-wordcount: '772'
 ht-degree: 100%
 
 ---
-
 
 # レポートタイプ {#report-types}
 
