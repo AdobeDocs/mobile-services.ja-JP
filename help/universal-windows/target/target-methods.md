@@ -4,16 +4,16 @@ seo-description: ユニバーサルWindowsプラットフォームライブラ�
 seo-title: Target メソッド
 solution: Experience Cloud,Analytics
 title: Target メソッド
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 2ad5953b-7850-446a-8053-b3715b86329b
+exl-id: d7aeee41-1c34-4f98-8455-e9f429287cfc
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '265'
 ht-degree: 36%
 
 ---
-
 
 # Target メソッド {#target-methods}
 
@@ -21,11 +21,11 @@ ht-degree: 36%
 
 SDKは、現在、Analytics、ターゲット、Audience Managerを含む複数のAdobe Experience Cloudソリューションをサポートしています。
 
-[ライフサイクル指標](/help/universal-windows/metrics.md) は、各mboxが読み込むパラメーターとして送信されます。
+[ライフサイクル](/help/universal-windows/metrics.md) 指標は、各mboxが読み込まれるたびにパラメーターとして送信されます。
 
 >[!TIP]
 >
->winJS (JavaScript)から `winmd` メソッドを使用する場合、すべてのメソッドの先頭文字が自動的に小文字に変換されます。
+>winJS (JavaScript)から`winmd`メソッドを使用する場合、すべてのメソッドの最初の文字が自動的に小文字に変換されます。
 
 ## クラス参照：TargetLocationRequest
 
@@ -73,7 +73,7 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
 
 * **LoadRequest (winJS:loadRequest)**
 
-   Sends `request` to your configured Target server and returns the string value of the offer generated in a block `callback`.
+   `request`を設定したターゲットサーバに送信し、ブロック`callback`で生成されたオファーの文字列値を返します。
 
    * このメソッドの構文を次に示します。
 
@@ -92,7 +92,7 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
 
 * **CreateRequest (winJS:createRequest)**
 
-   Creates a `TargetLocationRequest` object with the given parameters.
+   指定したパラメーターを持つ`TargetLocationRequest`オブジェクトを作成します。
 
    * このメソッドの構文を次に示します。
 
@@ -109,7 +109,7 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
 
 * **CreateOrder &#x200B; ConfirmRequest (winJS:createOrder &#x200B; ConfirmRequest)**
 
-   Creates a `TargetLocationRequest` object with the given parameters.
+   指定したパラメーターを持つ`TargetLocationRequest`オブジェクトを作成します。
 
    * このメソッドの構文を次に示します。
 
