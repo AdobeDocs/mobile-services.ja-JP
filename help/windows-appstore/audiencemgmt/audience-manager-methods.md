@@ -4,16 +4,16 @@ seo-description: Windows 8.1ユニバーサルアプリストアライブラリ�
 seo-title: Audience Manager メソッド
 solution: Experience Cloud,Analytics
 title: Audience Manager メソッド
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: e39c9c3e-fd53-4b46-8fff-88101a064a9c
+exl-id: b10d7274-0fc6-4822-a40b-1192b71592b9
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '280'
 ht-degree: 45%
 
 ---
-
 
 # Audience Manager メソッド {#audience-manager-methods}
 
@@ -29,7 +29,7 @@ SDKは、現在、Analytics、ターゲット、Audience Managerを含む複数�
 
 * **GetVisitorProfile (winJS:getVisitorProfile)**
 
-   取得された最も直近の訪問者プロファイルを返します。Returns `null` if no signal has been submitted yet. Visitor profile is saved in `SharedPreferences` for easy access across multiple launches of your app.
+   取得された最も直近の訪問者プロファイルを返します。まだシグナルが送信されていない場合は`null`を返します。 訪問者プロファイルは`SharedPreferences`に保存され、複数回の起動で簡単にアクセスできます。
 
    * このメソッドの構文を次に示します。
 
@@ -115,4 +115,3 @@ SDKは、現在、Analytics、ターゲット、Audience Managerを含む複数�
         // segments come back here in "visitorProfile", normally found in the "segs" object of your json 
       }); 
       ```
-
