@@ -4,16 +4,16 @@ seo-description: この情報は、ADBMobile.json 設定ファイルを使用す
 seo-title: ADBMobile JSON 設定
 solution: Experience Cloud,Analytics
 title: ADBMobile JSON 設定
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: d9708d59-e30a-4f6c-ab1b-d9499855d0c2
+exl-id: e3515de3-3aec-4dd0-996d-9c561ad1b1de
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '1715'
 ht-degree: 100%
 
 ---
-
 
 # ADBMobile JSON 設定 {#adbmobile-json-config}
 
@@ -465,4 +465,4 @@ messages ノードは Adobe Mobile Services によって自動的に生成され
 
    * &quot;key&quot;
    * &quot;matches&quot;
-   * &quot;values&quot;
+   * &quot;値&quot;
