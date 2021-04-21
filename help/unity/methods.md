@@ -1,19 +1,17 @@
 ---
-description: 'null'
+description: ADBMobile.cs設定メソッド
 keywords: Unity
-seo-description: 'null'
-seo-title: ADBMobile.cs メソッド
 solution: Experience Cloud
 title: ADBMobile.cs メソッド
 uuid: af504934-febd-45d9-81e2-2a310f4c65dc
+exl-id: d12c16f1-c25c-4698-8943-a660d9c08faf
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: b9ee49ba26d4726b1f97ef36f5c2e9923361b1ee
 workflow-type: tm+mt
 source-wordcount: '1324'
 ht-degree: 66%
 
 ---
-
 
 # ADBMobile.cs メソッド {#adbmobile-cs-methods}
 
@@ -90,7 +88,7 @@ ht-degree: 66%
    * `MOBILE_PRIVACY_STATUS_OPT_OUT`：ヒットが破棄されます。
    * `MOBILE_PRIVACY_STATUS_UNKNOWN`:オフライン追跡が有効な場合、プライバシーステータスがオプトイン（ヒットが送信される）またはオプトアウト（ヒットが破棄される）に変わるまで、ヒットは保存されます。
 
-      オフライン追跡が有効になっていない場合、プライバシーステータスがオプトインに変更されるまで、ヒットは破棄されます。The default value is set in the [ADBMobileConfig.json](/help/ios/configuration/json-config/json-config.md) file.
+      オフライン追跡が有効になっていない場合、プライバシーステータスがオプトインに変更されるまで、ヒットは破棄されます。デフォルト値は[ADBMobileConfig.json](/help/ios/configuration/json-config/json-config.md)ファイルに設定されます。
 
    * このメソッドの構文を次に示します。
 
@@ -210,7 +208,7 @@ ht-degree: 66%
 
    * `MOBILE_PRIVACY_STATUS_OPT_IN`：ヒットは即座に送信されます。
    * `MOBILE_PRIVACY_STATUS_OPT_OUT`：ヒットが破棄されます。
-   * `MOBILE_PRIVACY_STATUS_UNKNOWN`:オフライン追跡が有効な場合、プライバシーステータスがオプトイン（ヒットが送信される）またはオプトアウト（ヒットが破棄される）に変わるまで、ヒットは保存されます。 オフライン追跡が有効になっていない場合、プライバシーステータスがオプトインに変更されるまで、ヒットは破棄されます。
+   * `MOBILE_PRIVACY_STATUS_UNKNOWN`:オフライン追跡が有効な場合、プライバシーステータスがオプトイン（ヒットが送信される）またはオプトアウト（ヒットが破棄される）に変わるまで、ヒットは保存されます。オフライン追跡が有効になっていない場合、プライバシーステータスがオプトインに変更されるまで、ヒットは破棄されます。
 
    * このメソッドの構文を次に示します。
 
@@ -262,7 +260,7 @@ ht-degree: 66%
 
    オプションのコンテキストデータを使用してアプリの状態を追跡します。状態とは、「title screen」、「level 1」、「pause」など、アプリで使用できる表示です。 これらの状態は Web サイト上のページによく似ており、`TrackState` コールにより、ページビュー数が増分されます。
 
-   状態が空の場合は、レポート *`app name app version (build)`* に表示されます。 If you see this value in reports, make sure you are setting state in each `TrackState` call.
+   状態が空の場合、レポートには&#x200B;*`app name app version (build)`*&#x200B;と表示されます。 レポートにこの値が表示される場合は、各`TrackState`呼び出しで状態を設定していることを確認してください。
 
    >[!TIP]
    >
@@ -540,7 +538,7 @@ ht-degree: 66%
 
 ## 獲得メソッド
 
-* **ProcessGooglePlayInstallReferrerUrl***（Androidのみ）*
+* **ProcessGooglePlayInstallReferrerUrl** *（Androidのみ）*
 
    Google Play Install転送者APIへの呼び出しから返された転送者URLをこのメソッドに渡します。
 
