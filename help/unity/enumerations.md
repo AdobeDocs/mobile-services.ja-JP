@@ -1,19 +1,17 @@
 ---
-description: 'null'
+description: 定義済みリストに関する情報
 keywords: Unity
-seo-description: 'null'
-seo-title: 列挙
 solution: Experience Cloud
 title: 列挙
 uuid: 7109cd0b-554f-4c4a-9acc-4b60812fb747
+exl-id: 6c88bb24-9c6a-4f7b-befe-213a320ead78
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: b9ee49ba26d4726b1f97ef36f5c2e9923361b1ee
 workflow-type: tm+mt
-source-wordcount: '7'
-ht-degree: 71%
+source-wordcount: '8'
+ht-degree: 37%
 
 ---
-
 
 # 列挙 {#enumerations}
 
@@ -29,4 +27,3 @@ ht-degree: 71%
 * `PROXIMITY_IMMEDIATE`
 * `PROXIMITY_NEAR`
 * `PROXIMITY_FAR`
-
