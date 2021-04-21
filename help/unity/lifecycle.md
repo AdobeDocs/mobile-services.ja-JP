@@ -1,23 +1,21 @@
 ---
-description: 'null'
+description: モバイルライブラリによって自動的に測定される指標とディメンションを測定します。
 keywords: Unity
-seo-description: 'null'
-seo-title: ライフサイクルの実装
 solution: Experience Cloud
 title: ライフサイクルの実装
 uuid: 7ff2c194-569c-42a6-922d-dccd2aa9eb8d
+exl-id: eca0cebb-6c69-4b0f-b003-c7fc422d0383
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: b9ee49ba26d4726b1f97ef36f5c2e9923361b1ee
 workflow-type: tm+mt
-source-wordcount: '85'
-ht-degree: 11%
+source-wordcount: '95'
+ht-degree: 7%
 
 ---
 
-
 # ライフサイクルの実装{#implement-lifecycle}
 
-ライフサイクルを実装した後、モバイルライブラリによって自動的に測定される指標とディメンションについて詳しくは、Androidの [ライフサイクル指標](/help/android/metrics.md) (Lifecycle Metrics in Android [)またはiOSの](/help/ios/metrics.md)ライフサイクル(Lifecycle)を参照してください。
+ライフサイクルの実装後、モバイルライブラリによって自動的に測定される指標とディメンションについて詳しくは、[Androidのライフサイクル指標](/help/android/metrics.md)または[iOSのライフサイクル](/help/ios/metrics.md)を参照してください。
 
 ## iOS
 
@@ -25,7 +23,7 @@ ht-degree: 11%
 
 ## Android
 
-Unityスクリプトで、Android SDKのアプリケーションコンテキストを設定します。 最初のシーンの `Awake()` 関数に対する追加次のコード：
+Unityスクリプトで、Android SDKのアプリケーションコンテキストを設定します。 最初の追加シーンの`Awake()`関数に対する次のコード：
 
 ```java
 void Awake()
@@ -65,4 +63,3 @@ void OnEnable()
   ...
  }
 ```
-
