@@ -8,16 +8,20 @@ topic-fix: Developer and implementation
 uuid: e1613dc5-02a4-43a7-997a-29b4de98b4d1
 exl-id: dd1e6bab-65e7-4a68-b3ec-21fb1a08aca2
 translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: a6663bf682f0a4283978f2f07277a4d4d43615f6
 workflow-type: tm+mt
-source-wordcount: '533'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # リリースノート {#release-notes}
 
 Experience Cloud ソリューション用 iOS SDK 4.x のリリースノート、既知の問題およびホットフィックス情報を次に示します。
+
+**2021年4月13日：バージョン4.21.2**
+
+* 訪問者IDサービス — 空の広告識別子が訪問者IDサービスと同期される問題を修正しました。
 
 **2021 年 1 月 13 日：バージョン 4.21.1**
 
