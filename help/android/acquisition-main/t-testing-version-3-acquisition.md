@@ -8,8 +8,7 @@ title: バージョン 3 の獲得のテスト
 topic-fix: Developer and implementation
 uuid: 5e38b43d-389e-4412-99e5-3e6223b6ad28
 exl-id: 2ce78e2e-da51-4af8-a461-ec6c642a7854
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: bb2459e57274183e55c1facd1a510cf55a83ddb4
 workflow-type: tm+mt
 source-wordcount: '824'
 ht-degree: 100%
@@ -87,9 +86,11 @@ ht-degree: 100%
 
    ブロードキャストが成功すると、次の例のような応答が返されます。
 
-   `Broadcasting: Intent
-{ act=com.android.vending.INSTALL_REFERRER cmp=com.adobe.adms.tests/.ReferralReceiver (has extras) }
-Broadcast completed: result=0`
+   ```
+   Broadcasting: Intent
+   { act=com.android.vending.INSTALL_REFERRER cmp=com.adobe.adms.tests/.ReferralReceiver (has extras) }
+   Broadcast completed: result=0
+   ```
 
 1. （オプション）SDK のデバッグログを有効にして、追加の情報を取得することができます。
 
