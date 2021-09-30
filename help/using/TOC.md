@@ -3,11 +3,10 @@ audience: end-user
 user-guide-title: Mobile Services ガイド
 breadcrumb-title: Mobile Services ガイド
 user-guide-description: Mobile Services は、モバイルアプリのユーザーを獲得して惹きつけ、エクスペリエンスを最適化するのに役立つエンドツーエンドのソリューションです。
-translation-type: tm+mt
-source-git-commit: b9ee49ba26d4726b1f97ef36f5c2e9923361b1ee
+source-git-commit: 8c74c479c357e008dbbaaee8eb11097582072470
 workflow-type: tm+mt
 source-wordcount: '343'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -15,36 +14,36 @@ ht-degree: 100%
 # Mobile Services ガイド {#using}
 
 + [Adobe Mobile Services](home.md)
-+ [リリースノート](whatsnew.md)
++ [提供終了のお知らせ](eol.md)
 + はじめに {#get-started-ug}
    + [はじめに](gs/gs.md)
    + [役割と権限](gs/c-mob-roles-and-permissions.md)
    + [ログイン](gs/gs-signin.md)
    + [レポートタイプ](gs/reports-types.md)
    + モバイル指標 {#mobile-metrics}
-      + [モバイル指標](gs/metrics/metrics.md)
+      + [モバイル指標 ](gs/metrics/metrics.md)
       + [モバイル指標の表示](gs/metrics/overview.md)
       + [モバイル指標およびディメンションのリファレンス](gs/metrics/metrics-reference.md)
 + アプリの管理 {#manage-apps-ug}
    + [アプリの管理の概要](manage-apps/manage-apps.md)
-   + [新しいアプリの追加](manage-apps/t-new-app.md)
+   + [新しいアプリの追加 ](manage-apps/t-new-app.md)
    + [仮想レポートスイート](manage-apps/c-mob-vrs.md)
    + アプリストア {#app-store}
       + [アプリストアの概要](manage-apps/c-app-store/c-app-store.md)
       + [アプリストアからのアプリの追加](manage-apps/c-app-store/t-app-store-app.md)
-      + [アプリの削除](manage-apps/t-delete-apps.md)
+      + [アプリの削除 ](manage-apps/t-delete-apps.md)
 + アプリ設定 {#manage-app-settings-ug}
    + [アプリ設定](c-manage-app-settings/c-manage-app-settings.md)
    + アプリの設定 {#configuring-app}
       + [アプリの設定](c-manage-app-settings/c-mob-confg-app/c-mob-confg-app.md)
-      + [SDK Analytics オプションの設定 ](c-manage-app-settings/c-mob-confg-app/t-config-analytics/t-config-analytics.md)
-      + [Mobile SDK およびツールのダウンロード](c-manage-app-settings/c-mob-confg-app/t-config-analytics/download-sdk.md)
+      + [SDK Analytics オプションの設定](c-manage-app-settings/c-mob-confg-app/t-config-analytics/t-config-analytics.md)
+      + [Mobile SDK およびツールのダウンロード ](c-manage-app-settings/c-mob-confg-app/t-config-analytics/download-sdk.md)
       + [Audience Manager オプションの設定](c-manage-app-settings/c-mob-confg-app/t-config-aam.md)
-      + [SDK からの獲得データ送信の設定](c-manage-app-settings/c-mob-confg-app/t-config-acquisition.md)
+      + [SDK からの獲得データ送信の設定 ](c-manage-app-settings/c-mob-confg-app/t-config-acquisition.md)
       + [Apple ユニバーサルリンクと Android アプリリンク](c-manage-app-settings/c-mob-confg-app/c-universal-app-links.md)
       + [SDK ID サービスオプションの設定](c-manage-app-settings/c-mob-confg-app/t-config-visitor.md)
       + [ポストバックの設定](c-manage-app-settings/c-mob-confg-app/signals.md)
-      + [プッシュメッセージの設定](c-manage-app-settings/c-mob-confg-app/configure-push-messaging/configure-push-messaging.md)
+      + [プッシュメッセージの設定 ](c-manage-app-settings/c-mob-confg-app/configure-push-messaging/configure-push-messaging.md)
       + [プッシュメッセージを有効にするための前提条件](c-manage-app-settings/c-mob-confg-app/configure-push-messaging/prerequisites-push-messaging.md)
       + [APNS または FCM を使用するアプリ設定](c-manage-app-settings/c-mob-confg-app/configure-push-messaging/configure-app-apns-gcm.md)
    + [アプリの管理](c-manage-app-settings/c-mob-manage-app.md)
@@ -61,10 +60,10 @@ ht-degree: 100%
    + [クラッシュレポート](usage/c-crashes.md)
    + [アプリストアの概要レポート](usage/c-app-store-store-performance.md)
 + レポートの操作 {#work-with-reports-ug}
-   + [レポートのカスタマイズ](usage/reports-customize/reports-customize.md)
-   + [レポートへのフィルターの追加](usage/reports-customize/t-reports-customize.md)
-   + [レポートへのシリーズ（指標）の追加](usage/reports-customize/t-reports-series.md)
-   + [共通フィルターの追加](usage/reports-customize/t-sticky-filter.md)
+   + [レポートのカスタマイズ ](usage/reports-customize/reports-customize.md)
+   + [レポートへのフィルターの追加 ](usage/reports-customize/t-reports-customize.md)
+   + [レポートへのシリーズ（指標）の追加 ](usage/reports-customize/t-reports-series.md)
+   + [共通フィルターの追加 ](usage/reports-customize/t-sticky-filter.md)
 + Digital Publishing Suite {#dps-ug}
    + [Digital Publishing Suite の概要](dps/dps.md)
    + [トップ 10 の記事](dps/dps-top-ten-articles.md)
@@ -73,13 +72,13 @@ ht-degree: 100%
    + [バナー指標](dps/dps-banner-metrics.md)
 + 獲得 {#acquisition-main-ug}
    + [獲得の概要](acquisition-main/acquisition-main.md)
-   + [獲得の前提条件](acquisition-main/c-acquisition-prerequisites.md)
+   + [獲得の前提条件 ](acquisition-main/c-acquisition-prerequisites.md)
    + [獲得の設定](acquisition-main/t-enable-acquisition.md)
    + [宛先](acquisition-main/c-create-destinations.md)
    + リンク先の作成と管理 {#create-manage-link-destination}
-      + [リンク先の作成と管理](acquisition-main/c-manage-link-destinations/c-manage-link-destinations.md)
+      + [リンク先の作成と管理 ](acquisition-main/c-manage-link-destinations/c-manage-link-destinations.md)
       + [新しいリンク先の作成](acquisition-main/c-manage-link-destinations/t-create-new-app-deep-link-destination.md)
-      + [リンク先を管理](acquisition-main/c-manage-link-destinations/t-archive-unarchive-link-destinations.md)
+      + [リンク先を管理 ](acquisition-main/c-manage-link-destinations/t-archive-unarchive-link-destinations.md)
       + マーケティングリンクビルダー {#marketing-links-builder}
          + [マーケティングリンクビルダー](acquisition-main/c-marketing-links-builder/c-marketing-links-builder.md)
          + [マーケティングリンクの作成または編集](acquisition-main/c-marketing-links-builder/t-create-edit-adobe-links/t-create-edit-adobe-links.md)
@@ -112,6 +111,6 @@ ht-degree: 100%
       + [オーディエンス：アプリ内メッセージ](in-app-messaging/t-in-app-message/c-audience-in-app-message.md)
       + [エクスペリエンス：アプリ内メッセージ](in-app-messaging/t-in-app-message/c-experience-in-app-message.md)
       + [スケジュール：アプリ内メッセージ](in-app-messaging/t-in-app-message/c-schedule-in-app-message.md)
-      + [アプリ内メッセージのトラブルシューティング](in-app-messaging/t-in-app-message/in-apps-ts.md)
+      + [アプリ内メッセージのトラブルシューティング ](in-app-messaging/t-in-app-message/in-apps-ts.md)
       + [プッシュメッセージからアプリを開いたときにアプリ内メッセージをトリガー](in-app-messaging/t-mob-trig-in-app-open-app-from-push.md)
 + [よくある質問](faq-mobile.md)
