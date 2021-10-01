@@ -1,21 +1,18 @@
 ---
 description: 解析データやイベントからトリガーされるアプリ内メッセージを配信できます。実装後、メッセージはアプリへと動的に配信され、コードを更新する必要はありません。
-seo-description: 解析データやイベントからトリガーされるアプリ内メッセージを配信できます。実装後、メッセージはアプリへと動的に配信され、コードを更新する必要はありません。
-seo-title: アプリ内メッセージ
 solution: Experience Cloud,Analytics
 title: アプリ内メッセージ
 topic-fix: Developer and implementation
 uuid: 351ee3d2-80b9-4f2d-9696-21f274d89f5a
 exl-id: ca9414d1-86e6-4bb2-a2d6-57df37df2403
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '803'
+source-wordcount: '770'
 ht-degree: 100%
 
 ---
 
-# アプリ内メッセージ {#in-app-messaging}
+# アプリ内メッセージ  {#in-app-messaging}
 
 解析データやイベントからトリガーされるアプリ内メッセージを配信できます。実装後、メッセージはアプリへと動的に配信され、コードを更新する必要はありません。
 
@@ -95,25 +92,25 @@ Adobe Experience Platform Mobile SDK に関する情報やドキュメントを�
    起動時にアプリ内メッセージを動的に更新するには、`remotes` オブジェクトが存在し、正しく設定されている必要があります。
 
    ```js
-   “messages”: [ 
+   "messages": [ 
        { 
-           “messageId”: “de45c43c-37bf-441f-8cbd-cc3ba3469ebe”, 
-           “template”: “fullscreen”, 
-           “showOffline”: false, 
-           “showRule”: “always”, 
-           “endDate”: 2524730400, 
-           “startDate”: 0, 
-           “audiences”: [], 
-           “triggers”: [], 
-           “payload”: { // contents change depending on template 
-               “html”: “<html>html code goes here</html>” 
+           "messageId": "de45c43c-37bf-441f-8cbd-cc3ba3469ebe", 
+           "template": "fullscreen", 
+           "showOffline": false, 
+           "showRule": "always", 
+           "endDate": 2524730400, 
+           "startDate": 0, 
+           "audiences": [], 
+           "triggers": [], 
+           "payload": { // contents change depending on template 
+               "html": "<html>html code goes here</html>" 
            }, 
        }, 
        … 
    ] 
-   “remotes” : { 
-       “analytics.poi”: “https://assets.adobedtm.com/…/yourfile.json”, 
-       “messages”: “https://assets.adobedtm.com/…/yourfile.json” 
+   "remotes" : { 
+       "analytics.poi": "https://assets.adobedtm.com/…/yourfile.json", 
+       "messages": "https://assets.adobedtm.com/…/yourfile.json" 
    }
    ```
 

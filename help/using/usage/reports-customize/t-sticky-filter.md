@@ -1,17 +1,14 @@
 ---
 description: 様々なレポートにわたるフィルターを作成して、すべてのモバイルレポートをまたいだ特定のセグメントのパフォーマンスを確認します。共通フィルターを定義すると、パス（画面遷移）レポート以外のすべてのレポートに適用されます。
 keywords: モバイル
-seo-description: 様々なレポートにわたるフィルターを作成して、すべてのモバイルレポートをまたいだ特定のセグメントのパフォーマンスを確認します。共通フィルターを定義すると、パス（画面遷移）レポート以外のすべてのレポートに適用されます。
-seo-title: 共通フィルターの追加
 solution: Experience Cloud,Analytics
 title: 共通フィルターの追加
 topic-fix: Reports,Metrics
 uuid: f3935c8a-811d-4080-8468-b8850202dd1e
 exl-id: 5f6f725a-a1ae-40c2-abe0-87ebabdc582a
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '205'
+source-wordcount: '168'
 ht-degree: 100%
 
 ---

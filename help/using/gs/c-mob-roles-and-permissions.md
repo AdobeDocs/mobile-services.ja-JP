@@ -1,17 +1,14 @@
 ---
 description: Adobe Analytics では、管理ツールホームページで役割を管理できます。
-seo-description: Adobe Analytics では、管理ツールホームページで役割を管理できます。
-seo-title: 役割と権限
 title: 役割と権限
 uuid: ad350f8d-ef51-4519-98aa-3025bc0f5588
-translation-type: tm+mt
-source-git-commit: c7cac006340e01d0fd1f6afe3419e6fd17294a98
+exl-id: 70f0b427-60d5-4a79-a8d3-e03274edd917
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '597'
-ht-degree: 59%
+source-wordcount: '596'
+ht-degree: 45%
 
 ---
-
 
 # 役割と権限{#roles-and-permissions}
 
@@ -23,17 +20,16 @@ Adobe Analytics では、管理ツールホームページで役割を管理で�
 
 ### Analytics 管理者
 
-Analytics 管理者は、ユーザーグループを管理したり、権限を割り当てたりします（その内の 1 つはモバイルアプリ管理）。Experience Cloud管理者は、Adobe IDをAdobe Analyticsアカウントにリンクします。アカウントでは、Adobe IDを使用してMobile Services UIにログインできます。 Experience Cloud 管理者について詳しくは、[管理 - ユーザー管理と FAQ](https://docs.adobe.com/content/help/ja-JP/core-services/interface/manage-users-and-products/admin-getting-started.html) を参照してください。
+Analytics 管理者は、ユーザーグループを管理したり、権限を割り当てたりします（その内の 1 つはモバイルアプリ管理）。Experience Cloud管理者は、Adobe IDをAdobe Analyticsアカウントにリンクします。このアカウントを使用すると、Adobe IDを使用して Mobile Services UI にログインできます。 Experience Cloud管理者の詳細については、『Experience Cloud中央インターフェイスコンポーネントガイド』の「[Experience Cloudユーザーと製品の管理 ](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html)」を参照してください。
 
 >[!TIP]
 >
 >既存の Analytics 管理者は、Analytics 管理者の役割を任意のユーザーに割り当てることができます。
 
-この役割について詳しくは、次のコンテンツを参照してください。
+この役割について詳しくは、 Adobe Analyticsドキュメントの次のコンテンツを参照してください。
 
-* [ユーザー管理の概要](https://docs.adobe.com/content/help/ja-JP/analytics/admin/user-product-management/user-management/users.html)
-
-* [ユーザーおよびグループ権限の変更](https://docs.adobe.com/content/help/ja-JP/analytics/admin/user-product-management/user-management/permissions-changes.html)
+* [ユーザー管理の概要](https://experienceleague.adobe.com/docs/analytics/admin/user-product-management/user-management/users.html)
+* [ユーザーおよびグループ権限の変更](https://experienceleague.adobe.com/docs/analytics/admin/user-product-management/user-management/permissions-changes.html)
 
 ### モバイルアプリ管理者
 
@@ -49,21 +45,21 @@ Analytics 管理者は、ユーザーグループを管理したり、権限を�
 
 ### アプリおよびレポートスイート
 
-すべてのMobile Serviceアプリはレポートスイートに結び付けられています。 ユーザーがレポートスイートにアクセスできない場合、そのレポートスイートに関連付けられたアプリにはアクセスできません。
+すべての Mobile Service アプリはレポートスイートに結び付けられます。 ユーザーがレポートスイートにアクセスできない場合、そのレポートスイートに関連付けられたアプリにはアクセスできません。
 
 ### Mobile Services と Analytics の機能
 
 プッシュメッセージなどの UI の機能にアクセスするための Analytics 契約が会社にない場合、権限レベルにかかわらず、会社のユーザーにはその機能へのアクセス権がありません。
 
-## 役割と権限{#section_20AA029D5B8C413C8659777E79B11620}
+## 役割と権限 {#section_20AA029D5B8C413C8659777E79B11620}
 
 次に、Mobile Services UI の役割と関連する権限を示します。
 
-### Analytics 管理者
+### Analytics 管理者 permissions
 
 * すべてのユーザーおよびモバイルアプリ管理権限
-* 新しいレポートスイートでアプリを作成する
-* Mobile Servicesからのアプリの削除
+* 新しいレポートスイートを使用したアプリの作成
+* Mobile Services からのアプリの削除
 
    >[!IMPORTANT]
    >
@@ -71,57 +67,57 @@ Analytics 管理者は、ユーザーグループを管理したり、権限を�
 
 * アプリ設定
 
-   * ライフサイクルレポートを有効にする
-   * 場所レポートを有効にする
-   * 変数と指標の作成、更新、削除
+   * ライフサイクルレポートの有効化
+   * 場所のレポートを有効にする
+   * 変数および指標の作成/更新/削除
 
-### モバイルアプリ管理者
+### モバイルアプリ管理者 権限
 
 * すべてのユーザー権限
 * 既存のレポートスイートを使用したアプリの作成
 * アプリ設定
 
-   * アプリのモバイルSDKオプションの設定
-   * アプリのUI設定の指定
-   * リンクされたApp Storeアプリの設定
+   * アプリの Mobile SDK オプションの設定
+   * アプリの UI 設定
+   * リンクされたアプリストアアプリの設定
    * アプリのユニバーサルリンクオプションの設定
-   * プッシュサービス証明書とAPIキーの設定
-   * ポストバックの作成/更新/アクティブ化/非アクティブ化/重複/アーカイブ/削除
-   * リンク先を作成/更新/アーカイブ/削除
+   * プッシュサービスの証明書と API キーの設定
+   * ポストバックの作成/更新/アクティブ化/非アクティブ化/複製/アーカイブ/削除
+   * リンク先の作成/更新/アーカイブ/削除
 
 * マーケティングリンクの作成/更新/アーカイブ
 * 従来のダウンロード計測用リンクの作成/読み込み/更新/削除
 * 場所（目標地点）設定の作成/読み込み/更新/削除
-* プッシュメッセージの作成/更新/送信/スケジュール/キャンセル/重複/アーカイブ/削除
-* アプリ内メッセージの作成/更新/アクティブ化/非アクティブ化/重複/アーカイブ/削除
+* プッシュメッセージの作成/更新/送信/スケジュール/キャンセル/複製/アーカイブ/削除
+* アプリ内メッセージの作成/更新/アクティブ化/非アクティブ化/複製/アーカイブ/削除
 
-グループとユーザーの詳細については、次を参照してください。
+グループとユーザーについて詳しくは、 Adobe Analyticsドキュメントの次のコンテンツを参照してください。
 
-* [ユーザーグループの設定](https://docs.adobe.com/content/help/ja-JP/analytics/admin/user-product-management/user-groups/groups.html)
-* [グループにユーザーを追加する](https://docs.adobe.com/content/help/ja-JP/analytics/admin/user-product-management/user-management/t-add-user-to-group.html)
+* [ユーザーグループ設定（レガシー）](https://experienceleague.adobe.com/docs/analytics/admin/user-product-management/user-groups/groups.html)
+* [グループにユーザーを追加する](https://experienceleague.adobe.com/docs/analytics/admin/user-product-management/user-management/t-add-user-to-group.html)
 
 ### Mobile Services ユーザー
 
-このロールには表示のみの権限があり、Mobile Services UIでフィードバックを提供できます。
+この役割には表示のみの権限があり、Mobile Services UI でフィードバックを提供できます。
 
-* Mobile Services UIに関するフィードバックの提供
-* 表示アプリ
+* Mobile Services UI に関するフィードバックの提供
+* アプリを表示
 
    >[!IMPORTANT]
    >
    >ユーザーは、Adobe Analytics でアクセス権のあるレポートスイートのみ表示できます。
 
-* 表示アプリの設定
+* アプリ設定の表示
 
-   * アプリSDK設定のダウンロード
-   * すべてのUIとSDKの設定を表示
-   * 表示変数と指標の設定
-   * 表示ポストバック
-   * 表示リンク先
+   * アプリの SDK 設定のダウンロード
+   * すべての UI および SDK 設定を表示
+   * 変数と指標の設定の表示
+   * ポストバックを表示
+   * リンク先の表示
 
 * レポートの表示と実行
 * マーケティングリンクの表示
 * 従来のダウンロード計測用リンクの表示と書き出し
-* 表示と書き出しの場所（目標地点）の設定
-* 表示プッシュメッセージ
-* 表示のアプリ内メッセージ
+* 場所（目標地点）設定の表示と書き出し
+* プッシュメッセージの表示
+* アプリ内メッセージの表示

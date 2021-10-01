@@ -1,17 +1,14 @@
 ---
 description: この情報は、Audience Manager からシグナルを送信し、訪問者セグメントを取得する場合に役立ちます。
 keywords: Android, ライブラリ, モバイル, SDK
-seo-description: この情報は、Audience Manager からシグナルを送信し、訪問者セグメントを取得する場合に役立ちます。
-seo-title: Audience Manager の概要
 solution: Experience Cloud,Analytics
 title: Audience Manager の概要
 topic-fix: Developer and implementation
 uuid: cfa4106d-13c1-45ba-bee6-6f992aaf9919
 exl-id: b6cbe410-3ee4-44d4-a4e6-74291f45be81
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '143'
+source-wordcount: '127'
 ht-degree: 100%
 
 ---

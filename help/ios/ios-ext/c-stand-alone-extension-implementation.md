@@ -1,16 +1,13 @@
 ---
 description: Apple では iOS 10 以降、本体アプリなしで配布できる、スタンドアロンエクステンションと呼ばれる拡張機能を作成できます。この拡張機能にはデータを共有する本体アプリがないので、アプリグループは必要ありません。
-seo-description: Apple では iOS 10 以降、本体アプリなしで配布できる、スタンドアロンエクステンションと呼ばれる拡張機能を作成できます。この拡張機能にはデータを共有する本体アプリがないので、アプリグループは必要ありません。
-seo-title: スタンドアロンエクステンション実装
 solution: Experience Cloud,Analytics
 title: スタンドアロンエクステンション実装
 topic-fix: Developer and implementation
 uuid: 9b47f082-b78f-4611-968d-014c32ede6bc
 exl-id: b51247b6-c4ba-4a00-9ba0-1824450ac067
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '268'
+source-wordcount: '222'
 ht-degree: 100%
 
 ---

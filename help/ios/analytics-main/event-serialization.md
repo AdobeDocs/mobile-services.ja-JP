@@ -1,16 +1,13 @@
 ---
 description: 処理ルールではイベントのシリアル化はサポートされていません。Mobile SDK では、コンテキストデータパラメーターで特殊な構文を使用して、サーバーコールでシリアル化されたイベントを直接設定する必要があります。
-seo-description: 処理ルールではイベントのシリアル化はサポートされていません。Mobile SDK では、コンテキストデータパラメーターで特殊な構文を使用して、サーバーコールでシリアル化されたイベントを直接設定する必要があります。
-seo-title: イベントのシリアル化
 solution: Experience Cloud,Analytics
 title: イベントのシリアル化
 topic-fix: Developer and implementation
 uuid: 19a27df4-0998-403d-800c-26ff61149208
 exl-id: c34331a4-bfe2-4955-807b-92a3303f8d81
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '104'
+source-wordcount: '70'
 ht-degree: 100%
 
 ---

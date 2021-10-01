@@ -1,19 +1,16 @@
 ---
 description: スクリプトからプラグインを呼び出すのに役立つ情報です。
 keywords: Xamarin
-seo-description: スクリプトからプラグインを呼び出すのに役立つ情報です。
-seo-title: ライブラリへの呼び出し
 solution: Experience Cloud
 title: ライブラリへの呼び出し
 uuid: a480201a-4090-4662-8dd8-56f62144cd93
-translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+exl-id: a5ec1e1b-e29a-42c9-bcc9-bee05c427044
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '108'
-ht-degree: 13%
+source-wordcount: '92'
+ht-degree: 10%
 
 ---
-
 
 # ライブラリへの呼び出し{#making-calls-to-the-library}
 
@@ -21,9 +18,8 @@ ht-degree: 13%
 
 スクリプトからプラグインを呼び出す場合は、名前空間を読み込む必要があります。
 
-使用方法 `Com.Adobe.Mobile`:
+`Com.Adobe.Mobile` を使用：
 
-* **iOS**:名前空間を読み込んだ後、クラス内の静的メソッドを使用してSDKを直接呼び出すことができ `ADBMobile` ます。
+* **iOS**:名前空間を読み込むと、クラスの静的メソッドを使用して SDK を直接呼び出すことがで `ADBMobile` きます。
 
-* **Android**:クラス内の静的メソッドを使用して、SDKを直接呼び出すことができ `Config/Analytics/Target/AudienceManager/Media`ます。
-
+* **Android**:クラスの静的メソッドを使用して、SDK を直接呼び出すことがで `Config/Analytics/Target/AudienceManager/Media`きます。

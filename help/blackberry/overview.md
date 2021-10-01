@@ -1,17 +1,14 @@
 ---
 description: Experience Cloud ソリューション用 BlackBerry 10 SDK 4.x を使用すると、Adobe Analytics を使用してネイティブの BlackBerry 10 アプリケーションを測定できます。
-seo-description: Experience Cloud ソリューション用 BlackBerry 10 SDK 4.x を使用すると、Adobe Analytics を使用してネイティブの BlackBerry 10 アプリケーションを測定できます。
-seo-title: Experience Cloud ソリューション用 BlackBerry 10 SDK 4
 title: Experience Cloud ソリューション用 BlackBerry 10 SDK 4
 uuid: c336db33-2cb5-48fe-a3f5-2d3ced6c3966
-translation-type: tm+mt
-source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
+exl-id: 4ecd9cdd-bca5-4a30-bc22-0e38918eefd3
+source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
 workflow-type: tm+mt
-source-wordcount: '186'
-ht-degree: 100%
+source-wordcount: '158'
+ht-degree: 84%
 
 ---
-
 
 # Experience Cloud ソリューション用 BlackBerry 10 SDK 4 {#blackberry-sdk-x-for-experience-cloud-solutions}
 
@@ -37,10 +34,10 @@ BlackBerry 10 以降。
 |--- |--- |
 | オプトイン／オプトアウト | 分析をすばやく有効または無効にします。 |
 
-すべてのソリューションのリリースノートについて詳しくは、[Adobe Experience Cloud リリースノート](https://docs.adobe.com/content/help/ja-JP/release-notes/experience-cloud/current.html)を参照してください。
+すべてのソリューションのリリースノートについて詳しくは、[Adobe Experience Cloud リリースノート](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=ja)を参照してください。
 
 ## Bloodhound の使用
 
 >[!IMPORTANT]
 >
->Adobe Bloodhound は、**2017 年 4 月 30 日**&#x200B;をもって廃止されました。2017 年 5 月 1 日以降、追加の機能強化や追加のエンジニアリングまたは Adobe Expert Care のサポートは提供されません。
+>**2017 年 4 月 30 日** の時点で、AdobeBloodhound は廃止されました。 2017 年 5 月 1 日以降、追加の機能強化や追加のエンジニアリングまたはAdobeエキスパートケアのサポートは提供されません。

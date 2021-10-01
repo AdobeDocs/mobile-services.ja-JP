@@ -1,21 +1,18 @@
 ---
 description: 'この情報は、JSON 設定、ヒットのバッチ処理、SDK メソッドなど、iOS SDK を設定する場合に役立ちます。 '
-seo-description: 'この情報は、JSON 設定、ヒットのバッチ処理、SDK メソッドなど、iOS SDK を設定する場合に役立ちます。 '
-seo-title: 設定
 solution: Experience Cloud,Analytics
 title: 設定
 topic-fix: Developer and implementation
 uuid: 63261b61-e70a-42be-a56f-5943173c041e
 exl-id: ff1f7fcd-1dc9-49b4-aead-46134600f3ab
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '144'
+source-wordcount: '126'
 ht-degree: 100%
 
 ---
 
-# 設定 {#configuration}
+# 設定{#configuration}
 
 この節の情報は、JSON 設定、ヒットのバッチ処理、SDK メソッドなど、iOS SDK を設定する場合に役立ちます。
 

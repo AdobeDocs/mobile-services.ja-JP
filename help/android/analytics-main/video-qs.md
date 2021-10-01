@@ -1,18 +1,15 @@
 ---
 description: ビデオ測定ソリューションを使用して Android でビデオを測定する方法について説明します。
 keywords: Android, ライブラリ, モバイル, SDK
-seo-description: ビデオ測定ソリューションを使用して Android でビデオを測定する方法について説明します。
-seo-title: ビデオ分析
 solution: Experience Cloud,Analytics
 title: ビデオ分析
 topic-fix: Developer and implementation
 uuid: a137cc27-dc28-48c0-b08e-2ca17d2c7e1d
 exl-id: 1b7f5523-767a-45e8-b2e7-ecf9984849e4
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '885'
-ht-degree: 100%
+source-wordcount: '866'
+ht-degree: 98%
 
 ---
 
@@ -22,7 +19,7 @@ ht-degree: 100%
 
 >[!TIP]
 >
->ビデオの再生中に、頻繁な「ハートビート」コールが送信され、再生時間を測定します。これらのハートビート呼び出しは、10 秒ごとに送信されるので、ビデオエンゲージメント指標やビデオフォールアウトレポートがより正確になります。アドビのビデオ測定ソリューションについて詳しくは、「[Adobe Analytics でのオーディオとビデオの測定](https://docs.adobe.com/content/help/ja-JP/media-analytics/using/media-overview.html)」を参照してください。
+>ビデオの再生中に、頻繁な「ハートビート」コールが送信され、再生時間を測定します。これらのハートビート呼び出しは、10 秒ごとに送信されるので、ビデオエンゲージメント指標やビデオフォールアウトレポートがより正確になります。Adobeのビデオ測定ソリューションについて詳しくは、[Adobe Analyticsでのストリーミングメディアの測定 ](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=ja) を参照してください。
 
 ビデオを測定する一般的なプロセスは、どのプラットフォームでも同様です。ここでは、開発者タスクの概要とコードサンプルを提示します。次の表に、Analytics に送信されるメディアデータのリストを示します。処理ルールは、コンテキストデータを Analytics 変数にマッピングするために使用されます。
 

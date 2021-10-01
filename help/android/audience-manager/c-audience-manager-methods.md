@@ -1,22 +1,19 @@
 ---
 description: Android ライブラリによって提供される Audience Manager メソッドのリストを示します。
 keywords: Android, ライブラリ, モバイル, SDK
-seo-description: Android ライブラリによって提供される Audience Manager メソッドのリストを示します。
-seo-title: Audience Manager メソッド
 solution: Experience Cloud,Analytics
 title: Audience Manager メソッド
 topic-fix: Developer and implementation
 uuid: 2f6e4664-1306-41d4-9fa7-e3a99f1df4ab
 exl-id: 707b40b8-e56e-4c26-8b59-87c5d71cad0c
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '296'
+source-wordcount: '277'
 ht-degree: 100%
 
 ---
 
-# Audience Manager メソッド {#audience-manager-methods}
+# Audience Manager メソッド{#audience-manager-methods}
 
 Android ライブラリによって提供される Audience Manager メソッドのリストを示します。
 

@@ -1,19 +1,16 @@
 ---
 description: Adobe Mobile Services UI で設定したディープリンク URL は、プッシュペイロードの adb_deeplink キーに含まれます。
-seo-description: Adobe Mobile Services UI で設定したディープリンク URL は、プッシュペイロードの adb_deeplink キーに含まれます。
-seo-title: ディープリンクを使用したプッシュメッセージの実装
 title: ディープリンクを使用したプッシュメッセージの実装
 uuid: e24f9248-8d48-4e57-84af-3a05b72e2a09
-translation-type: tm+mt
-source-git-commit: 13ff2cb549c4b82a4e0285e1c7c6b3f9c1a5bd4b
+exl-id: ab97db32-d9d2-41ec-aae8-a951c7745df8
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '186'
-ht-degree: 75%
+source-wordcount: '154'
+ht-degree: 74%
 
 ---
 
-
-# ディープリンクを使用したプッシュメッセージの実装{#implement-push-messaging-with-deep-linking}
+# ディープリンクを使用したプッシュメッセージの実装 {#implement-push-messaging-with-deep-linking}
 
 Adobe Mobile Services UI で設定したディープリンク URL は、プッシュペイロードの adb_deeplink キーに含まれます。
 
@@ -29,7 +26,7 @@ URL は、`FirebaseMessagingService` の `remoteMessage.getData().get("adb_deepl
 
       ユーザーがプッシュメッセージをクリックすると、ディープリンクがトリガーされます。
 
-   * ディープリンクURL **がプッシュペイロードに含まれていない場合** 、アクティビティの1つを開くインテントを作成します。
+   * ディープリンク URL **がプッシュペイロードで** でない場合は、アクティビティの 1 つを開くインテントを作成します。
 
 ## 例
 

@@ -1,18 +1,15 @@
 ---
 description: この情報は、ポストバックの機能とそのしくみを理解するのに役立ちます。
 keywords: Android, ライブラリ, モバイル, SDK
-seo-description: この情報は、ポストバックの機能とそのしくみを理解するのに役立ちます。
-seo-title: ポストバックの例
 solution: Experience Cloud,Analytics
 title: ポストバックの例
 topic-fix: Developer and implementation
 uuid: 8010cd00-d42b-4e16-8403-692fab2550f1
 exl-id: 2ff41066-e2ee-425f-8aff-e5e3f3e5f0f5
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '145'
-ht-degree: 100%
+source-wordcount: '128'
+ht-degree: 99%
 
 ---
 
@@ -24,7 +21,7 @@ ht-degree: 100%
 >
 >このサンプルは、参照用としてのみ提供されています。`ADBMobileConfig.json` ファイルは、Adobe Mobile UI で設定する必要があります。手動で変更しないでください。リモートメッセージの設定が有効になっている場合、手動で編集した設定ファイルは危険を招く可能性があります。
 
-## `ADBMobileConfig.json` の定義 {#section_8751E8176F3546C09420341A39758AFF}
+## `ADBMobileConfig.json` 定義 {#section_8751E8176F3546C09420341A39758AFF}
 
 ```js
 "messages": [ 
@@ -64,6 +61,6 @@ contextData.put("user.zip", "90210");
 Analytics.trackState("MainMenu", contextData);
 ```
 
-状態が `“MainMenu”` なので、このトラッキングコールは上記のポストバックメッセージをトリガーします。この URL では、すべてのテンプレート変数が、ヒットから取得した値に置き換えられます。ユーザーの前のセッションの時間が 132 秒で、そのユーザーが Android SDK バージョン 4.6.0 を使用していたと仮定すると、URL は次のようになります。
+状態が `"MainMenu"` なので、このトラッキングコールは上記のポストバックメッセージをトリガーします。この URL では、すべてのテンプレート変数が、ヒットから取得した値に置き換えられます。ユーザーの前のセッションの時間が 132 秒で、そのユーザーが Android SDK バージョン 4.6.0 を使用していたと仮定すると、URL は次のようになります。
 
 `https://my.server.com/?user=bob&zip=90210&c16=4.6.0-AN&c27=cln,132`

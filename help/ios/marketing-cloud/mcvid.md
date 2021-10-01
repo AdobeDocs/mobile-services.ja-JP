@@ -1,31 +1,28 @@
 ---
 description: Adobe Experience Platform ID サービスは、Experience Cloud ソリューション全体に汎用の訪問者 ID を提供します。Analytics は、Target、ビデオのハートビート、将来の Experience Cloud 統合に ID サービスを必要とします。
-seo-description: Adobe Experience Platform ID サービスは、Experience Cloud ソリューション全体に汎用の訪問者 ID を提供します。Analytics は、Target、ビデオのハートビート、将来の Experience Cloud 統合に ID サービスを必要とします。
-seo-title: Experience Cloud ID
 solution: Experience Cloud,Analytics
-title: Experience CloudID
+title: Experience Cloud ID
 topic-fix: Developer and implementation
 uuid: 13628ea8-3cd4-4cfc-8ff6-722c33f7813a
 exl-id: aa7db365-ad21-431f-bff6-2a6da212dd0c
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
 workflow-type: tm+mt
-source-wordcount: '261'
-ht-degree: 100%
+source-wordcount: '230'
+ht-degree: 91%
 
 ---
 
-# Experience Cloud ID {#experience-cloud-id}
+# Experience CloudID {#experience-cloud-id}
 
 Adobe Experience Platform ID サービスは、Experience Cloud ソリューション全体に汎用の訪問者 ID を提供します。Analytics は、Target、ビデオのハートビート、将来の Experience Cloud 統合に ID サービスを必要とします。
 
 >[!TIP]
 >
->Adobe Experience Platform ID サービスを使用しない場合は、Experience Cloud ID を設定する必要はありません。詳しくは、「[Adobe Experience Platform ID サービス](https://docs.adobe.com/content/help/ja-JP/id-service/using/home.html)」を参照してください。
-
-**SDK バージョン 4.3 以降が必要**
+>Adobe Experience Platform ID サービスを使用しない場合は、Experience Cloud ID を設定する必要はありません。詳しくは、[Adobe Experience Platform ID サービス ](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=ja) のドキュメントを参照してください。
 
 ## Experience Cloud ID の有効化 {#section_79F984271C3B4366B7B04F864F4FF8C2}
+
+これらの手順には、SDK バージョン 4.3 以降が必要です。
 
 1. ライブラリをプロジェクトに追加し、ライフサイクルを実装します。
 

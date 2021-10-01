@@ -1,23 +1,20 @@
 ---
-description: Android通知には、画像ファイルを添付できます。 ビジュアルコンポーネントを追加すると、プッシュ通知を使用したユーザーの関与が大幅に向上する可能性があります。
-seo-description: Android通知には、画像ファイルを添付できます。 ビジュアルコンポーネントを追加すると、プッシュ通知を使用したユーザーの関与が大幅に向上する可能性があります。
-seo-title: リッチプッシュ通知の受信
+description: Android 通知に画像ファイルを添付できます。 ビジュアルコンポーネントを追加すると、プッシュ通知に対するユーザーのエンゲージメントが大幅に向上する可能性があります。
 title: リッチプッシュ通知の受信
 uuid: 4a0340a6-666b-49b6-907a-9afc966dfdba
-translation-type: tm+mt
-source-git-commit: dca3663986b3ecc6e9fb736cc99513279715225c
+exl-id: 5776411c-aa0e-4e67-83aa-e78f5d1ed4f7
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '216'
-ht-degree: 60%
+source-wordcount: '191'
+ht-degree: 68%
 
 ---
 
+# リッチプッシュ通知の受信 {#receive-rich-push-notifications}
 
-# リッチプッシュ通知の受信{#receive-rich-push-notifications}
+Android 通知に画像ファイルを添付できます。 ビジュアルコンポーネントを追加すると、プッシュ通知に対するユーザーのエンゲージメントが大幅に向上する可能性があります。
 
-Android通知には、画像ファイルを添付できます。 ビジュアルコンポーネントを追加すると、プッシュ通知を使用したユーザーの関与が大幅に向上する可能性があります。
-
-## 受信リッチプッシュメッセージ（GCM）の処理{#section_AF1A3BC2312C4E1DA517CC90296C11E2}
+## 受信リッチプッシュメッセージ（GCM）の処理 {#section_AF1A3BC2312C4E1DA517CC90296C11E2}
 
 アプリがフォアグラウンドにある場合、プッシュメッセージは `FirebaseMessagingService` クラスを拡張するアプリによって処理されます。このクラスは、マニフェストファイルで次のように宣言します。
 
@@ -101,4 +98,4 @@ private void sendNotification(RemoteMessage message) {
 
 ![](assets/rich-push-notification_example.png)
 
-For more information about rich push notifications with Android, see [Engage with Rich Notifications](https://developer.android.com/distribute/best-practices/engage/rich-notifications.html).
+Android でのリッチプッシュ通知について詳しくは、[ リッチ通知を使用したエンゲージ ](https://developer.android.com/distribute/best-practices/engage/rich-notifications.html) を参照してください。

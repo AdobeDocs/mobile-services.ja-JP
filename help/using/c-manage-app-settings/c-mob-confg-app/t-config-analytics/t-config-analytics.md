@@ -1,17 +1,14 @@
 ---
 description: 新しいアプリの作成中または既存のアプリの編集中に、アプリ設定ページで Analytics SDK の設定をおこなうことができます。
 keywords: モバイル
-seo-description: 新しいアプリの作成中または既存のアプリの編集中に、アプリ設定ページで Analytics SDK の設定をおこなうことができます。
-seo-title: SDK Analytics オプションの設定
 solution: Experience Cloud,Analytics
 title: SDK Analytics オプションの設定
 topic-fix: Metrics
 uuid: fd3a21d2-6560-4e96-92fe-b99caac5e834
 exl-id: f2c35b65-1052-4bfc-af9d-8778e4ff0522
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '391'
+source-wordcount: '364'
 ht-degree: 100%
 
 ---

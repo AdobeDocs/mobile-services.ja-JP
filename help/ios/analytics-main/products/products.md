@@ -1,16 +1,13 @@
 ---
 description: products 変数は、処理ルールを使用して設定することはできません。iOS 4.x SDK では、コンテキストデータパラメーターで特殊な構文を使用し、サーバーコールで直接製品を設定する必要があります。
-seo-description: products 変数は、処理ルールを使用して設定することはできません。iOS 4.x SDK では、コンテキストデータパラメーターで特殊な構文を使用し、サーバーコールで直接製品を設定する必要があります。
-seo-title: products 変数
 solution: Experience Cloud,Analytics
 title: products 変数
 topic-fix: Developer and implementation
 uuid: 6ece4d27-ef86-435c-a6f7-bd76be1c95ca
 exl-id: c945add4-5358-44f6-b445-554b0df056c1
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '184'
+source-wordcount: '148'
 ht-degree: 100%
 
 ---

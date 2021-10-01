@@ -1,17 +1,14 @@
 ---
 description: 'レポートスイートを設定して Android アプリデータを収集する前に、前提条件のタスクを完了してください。 '
-seo-description: 'レポートスイートを設定して Android アプリデータを収集する前に、前提条件のタスクを完了してください。 '
-seo-title: 事前準備
 solution: Experience Cloud,Analytics
 title: 事前準備
 topic-fix: Developer and implementation
 uuid: 0ca9e937-8d40-4570-9dbf-9aecc6ecedf6
 exl-id: e9c0fd94-b61d-4f56-97b8-f71aac096c93
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '760'
-ht-degree: 100%
+source-wordcount: '731'
+ht-degree: 95%
 
 ---
 
@@ -44,7 +41,7 @@ Analytics 管理者およびアプリ開発者は、次のタスクを完了す�
 
 役割と権限について詳しくは、[役割と権限](/help/using/gs/c-mob-roles-and-permissions.md)を参照してください。
 
-## Adobe Mobile Services UI へのログイン   {#section_690A2EC4572E47869F183974E932A6A8}
+## Adobe Mobile Services UI へのログイン  {#section_690A2EC4572E47869F183974E932A6A8}
 
 Adobe Mobile Services は、モバイルアプリの分析およびターゲティングのための主要レポートインターフェイスです。これらの手順を完了すると、データ収集サーバー、レポートスイートなど、様々な設定が事前に構成された設定ファイルをダウンロードできます。
 
@@ -52,7 +49,7 @@ Adobe Mobile Services UI には、以下のいずれかの方法でログイン�
 
 ### Experience Cloud
 
-Adobe ID を使用して [Experience Cloud](https://experiencecloud.adobe.com) にログインします。この方法は、会社が Experience Cloud でプロビジョニングされていることと、お使いの Analytics アカウントがリンクされていることを前提としています。詳しくは、「[Experience Cloud ユーザーと製品の管理](https://docs.adobe.com/content/help/ja-JP/core-services/interface/manage-users-and-products/admin-getting-started.html)」を参照してください。
+Adobe ID を使用して [Experience Cloud](https://experiencecloud.adobe.com) にログインします。この方法は、会社が Experience Cloud でプロビジョニングされていることと、お使いの Analytics アカウントがリンクされていることを前提としています。詳細については、『Experience Cloud中央インターフェイスコンポーネントガイド』の「[Experience Cloudユーザーと製品の管理 ](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html)」を参照してください。
 
 >[!TIP]
 >
@@ -66,7 +63,7 @@ Adobe ID を使用して [Experience Cloud](https://experiencecloud.adobe.com) �
 
 アプリのデータを収集し、アプリを定義するレポートスイートを作成するには、以下のようにします。
 
-1. ブラウザーに「[https://mobilemarketing.adobe.com/](https://mobilemarketing.adobe.com/)」と入力して Mobile Services UI にログインします。
+1. [Mobile Services](https://mobilemarketing.adobe.com)Adobeにログインします。
 1. 「**[!UICONTROL アプリケーションを作成]**」をクリックします。
 
    このボタンが表示されない場合、**[!UICONTROL アプリ設定]**／**[!UICONTROL 追加]**&#x200B;をクリックします。
@@ -92,7 +89,7 @@ Adobe ID を使用して [Experience Cloud](https://experiencecloud.adobe.com) �
 
    >[!IMPORTANT]
    >
-   >右側のパネルにアプリケーションを表示するには、まずアプリケーションを作成する必要があります。アプリケーションの作成について詳しくは、[新しいアプリケーションの追加](https://docs.adobe.com/content/help/ja-JP/mobile-services/using/manage-apps-ug/t-new-app.html)を参照してください。
+   >右側のパネルにアプリケーションを表示するには、まずアプリケーションを作成する必要があります。アプリケーションの作成について詳しくは、[新しいアプリケーションの追加](/help/using/manage-apps/t-new-app.md)を参照してください。
 
 1. アプリケーションの左側のウィンドウで、「**[!UICONTROL アプリケーションの設定を管理]**」をクリックします。
 

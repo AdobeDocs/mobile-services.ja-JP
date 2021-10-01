@@ -1,16 +1,13 @@
 ---
 description: tvOS を使用した Apple TV を実装するのに役立つ情報です。
-seo-description: tvOS を使用した Apple TV を実装するのに役立つ情報です。
-seo-title: tvOS を使用した Apple TV 実装
 solution: Experience Cloud,Analytics
 title: tvOS を使用した Apple TV 実装
 topic-fix: Developer and implementation
 uuid: d1571ea2-a5de-4b96-a527-72abbf51fab8
 exl-id: 35b7f02d-ae48-4c6f-9a3a-6d106a1026ad
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '402'
+source-wordcount: '388'
 ht-degree: 100%
 
 ---
@@ -69,7 +66,7 @@ Adobe Experience Platform Mobile SDK に関する情報やドキュメントを�
 1. `TVApplicationControllerDelegate` クラスの実装ファイルで、SDK をインポートします。
 
    ```objective-c
-   #import “ADBMobile.h"
+   #import "ADBMobile.h"
    ```
 
 1. `TVApplicationControllerDelegate` クラスの `application:didFinishLaunchWithOptions:` メソッドで、`installTVMLHooks:` メソッドを使用して `TVApplicationController` オブジェクトを SDK に渡します。

@@ -1,17 +1,14 @@
 ---
 description: Experience Cloud ソリューション用 iOS SDK 4.x のリリースノートおよび既知の問題です。
-seo-description: Experience Cloud ソリューション用 iOS SDK 4.x のリリースノートおよび既知の問題です。
-seo-title: リリースノート
 solution: Experience Cloud,Analytics
 title: リリースノート
 topic-fix: Developer and implementation
 uuid: e1613dc5-02a4-43a7-997a-29b4de98b4d1
 exl-id: dd1e6bab-65e7-4a68-b3ec-21fb1a08aca2
-translation-type: tm+mt
-source-git-commit: a6663bf682f0a4283978f2f07277a4d4d43615f6
+source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '535'
+ht-degree: 99%
 
 ---
 
@@ -19,47 +16,47 @@ ht-degree: 0%
 
 Experience Cloud ソリューション用 iOS SDK 4.x のリリースノート、既知の問題およびホットフィックス情報を次に示します。
 
-**2021年4月13日：バージョン4.21.2**
+## 2021 年 4 月 14 日：バージョン4.21.2
 
-* 訪問者IDサービス — 空の広告識別子が訪問者IDサービスと同期される問題を修正しました。
+* 訪問者 ID サービス - 空の広告識別子が訪問者 ID サービスと同期される問題を修正しました。
 
-**2021 年 1 月 13 日：バージョン 4.21.1**
+## 2021 年 1 月 13 日：バージョン 4.21.1
 
 * 一般 - アプリのシャットダウン中に SQLite 例外が発生する可能性がある問題を修正しました。
 
-**2020 年 12 月 15 日：バージョン 4.21.0**
+## 2020 年 12 月 15 日：バージョン 4.21.0
 
 * 一般 - SDK は、既存の Intel アーキテクチャのサポートを維持しながら、新しい Apple M1 アーキテクチャでハードウェアをサポートするために、XCFrameworks を使用して配布されるようになりました。
    * 重要：AdobeMobile XCFrameworks にアップグレードするには、Xcode 12.0 以降が必要です
    * 重要：Cocoapods を使用している場合、AdobeMobile XCFrameworks にアップグレードするには、Cocoapods 1.10.0 以降が必要です
 
-**2020 年 11 月 4 日：バージョン 4.20.0**
+## 2020 年 11 月 4 日：バージョン 4.20.0
 
 * 訪問者 ID サービス - 広告トラッキングが有効化／無効化された後で setAdvertisingIdentifier が呼び出された際の、device_consent ステータスパラメーターを追加しました。
 * Analytics - iAd.framework がリンクされ、デバイスで「制限付き広告トラッキング」が有効になっている場合、インストール時に Analytics のヒットが送信されないバグを修正しました。
 
-**2020 年 7 月 16 日：バージョン 4.19.3**
+## 2020 年 7 月 16 日：バージョン 4.19.3
 
 * 一般：複数の等号ログインクエリパラメーターを含むディープリンク URL が正しく処理されない問題を修正しました。
 
-**2020 年 3 月 24 日：バージョン 4.19.2**
+## 2020 年 3 月 24 日：バージョン 4.19.2
 
 * 一般：Target コードの漏れを修正しました。
 
-**2020 年 3 月 12 日：バージョン 4.19.1**
+## 2020 年 3 月 12 日：バージョン 4.19.1
 
 * 一般：コール追跡のコンテキストデータに Swift Enum が含まれる場合に、クラッシュが発生する可能性があったを解決しました。
 * Target：Target セッション ID は、Adobe Analytics に送信される Target 用内部 Analytics ヒットで、コンテキストデータパラメーター「a.target.sessionId」として追加されるようになりました。
 
-**2020 年 2 月 4 日：バージョン 4.19.0**
+## 2020 年 2 月 4 日：バージョン 4.19.0
 
 * ライフサイクル：一部の古い iOS デバイスで報告されたセッション長の異常データを軽減するために、新しい API、pauseCollectingLifecycleData が追加されました。
 
-**2019 年 11 月 8 日：バージョン 4.18.9**
+## 2019 年 11 月 8 日：バージョン 4.18.9
 
 * アプリ内メッセージ：キャッシュされた画像またはバンドルされた画像をフルスクリーンメッセージに読み込めなかったバグを修正しました。
 
-**2019 年 9 月 20 日：バージョン 4.18.8**
+## 2019 年 9 月 20 日（PT）：バージョン 4.18.8
 
 * アプリ内メッセージ：
 
@@ -70,13 +67,13 @@ Experience Cloud ソリューション用 iOS SDK 4.x のリリースノート�
 
 * 一般：Analytics の呼び出しごとに SDK データがペアリングされた WatchOS アプリに同期されるバグを修正しました。
 
-**2019 年 8 月 2 日：バージョン 4.18.7**
+## 2019 年 8 月 2 日：バージョン 4.18.7
 
 * バージョン 4.18.6 で導入された変更を元に戻しました。一部の環境において、11.0 より前の iOS バージョンを実行しているデバイスでクラッシュが発生していました。
 
 * Adobe Target：`ADBTargetRequestObject` のプロパティ `requestLocationParameters` が追加され、インプレッション ID を Target のリクエストと共に送信できるようになりました。
 
-**2019 年 7 月 18 日：バージョン 4.18.6**
+## 2019 年 7 月 18 日（PT）：バージョン 4.18.6
 
 * Adobe Target：すべてのリクエストで、URL クエリパラメーターにクライアントおよび `sessionId` が含まれるようになりました。
 * Adobe Target：メモリリークを修正しました。
@@ -84,15 +81,15 @@ Experience Cloud ソリューション用 iOS SDK 4.x のリリースノート�
 
    二重エンコードが原因で、API からの戻り値がセキュリティ診断によってリスクありと判断されることがありました。
 
-**2019 年 5 月 25 日：バージョン 4.18.5**
+## 2019 年 5 月 25 日：バージョン 4.18.5
 
 * Analytics：プッシュ通知が有効な場合に、ライフサイクルデータにプッシュオプトインステータスを追加します。
 
-**2019 年 3 月 24 日：バージョン 4.18.4**
+## 2019 年 5 月 24 日（PT）：バージョン 4.18.4
 
 * 訪問者 ID サービス：
    `visitorGetUrlVariablesAsync` API の戻りタイムアウトを 30 秒に増やしました。
 
 * 訪問者 ID サービス：`setPushIdentifier` API 呼び出しは、呼び出されるたびに同期呼び出しを訪問者 ID サービスへと送信するようになりました。
 
-すべてのソリューションに関する現在および過去のリリースノートについては、[Adobe Experience Cloud リリースノート](https://docs.adobe.com/content/help/ja-JP/release-notes/experience-cloud/current.html)を参照してください。
+すべてのソリューションに関する現在および過去のリリースノートについては、[Adobe Experience Cloud リリースノート](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=ja)を参照してください。

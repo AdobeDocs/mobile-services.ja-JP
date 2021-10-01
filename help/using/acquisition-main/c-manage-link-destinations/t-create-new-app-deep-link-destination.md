@@ -1,17 +1,14 @@
 ---
 description: Web またはアプリ内のディープリンクにユーザーを導く、新しいリンク先を作成できます。
 keywords: モバイル
-seo-description: Web またはアプリ内のディープリンクにユーザーを導く、新しいリンク先を作成できます。
-seo-title: 新しいリンク先の作成
 solution: Experience Cloud,Analytics
 title: 新しいリンク先の作成
 topic-fix: Metrics
 uuid: 390e3dea-0221-4f97-980d-a90ca9f162fa
 exl-id: 2d2f5938-1461-43e2-a375-45c18afc9d5a
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '418'
+source-wordcount: '394'
 ht-degree: 100%
 
 ---

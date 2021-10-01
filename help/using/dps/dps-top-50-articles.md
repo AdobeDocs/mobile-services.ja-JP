@@ -1,22 +1,19 @@
 ---
 description: トップ 50 の記事レポートには、アプリを使用して最も読まれた記事を示す棒グラフとランクレポートが表示されます。このレポートは、Digital Publishing Suites（DPS）のユーザーのみが利用できます。
 keywords: モバイル
-seo-description: トップ 50 の記事レポートには、アプリを使用して最も読まれた記事を示す棒グラフとランクレポートが表示されます。このレポートは、Digital Publishing Suites（DPS）のユーザーのみが利用できます。
-seo-title: トップ 50 の記事
 solution: Experience Cloud,Analytics
 title: トップ 50 の記事
 topic-fix: Metrics
 uuid: 341370d1-fa87-43ca-8135-425b3bba272f
 exl-id: 8d5d6ab4-fcbb-42b2-b9bc-5ccb4f73522f
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '257'
+source-wordcount: '225'
 ht-degree: 100%
 
 ---
 
-# トップ 50 の記事レポート {#top-articles}
+# トップ 50 の記事レポート{#top-articles}
 
 **[!UICONTROL トップ 50 の記事]**&#x200B;レポートには、アプリを使用して最も読まれた記事を示す棒グラフとランクレポートが表示されます。このレポートは、DPS のユーザーのみが利用できます。
 

@@ -1,16 +1,13 @@
 ---
 description: この情報は、iOS アプリでロケーション機能を使用する場合に役立ちます。
-seo-description: この情報は、iOS アプリでロケーション機能を使用する場合に役立ちます。
-seo-title: ロケーション
 solution: Experience Cloud,Analytics
 title: ロケーション
 topic-fix: Developer and implementation
 uuid: a4e5650a-f5d3-4fb1-bd11-a27a3918d763
 exl-id: 0c524fb8-6b0d-4e59-87a8-a9e2beda633a
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '130'
+source-wordcount: '117'
 ht-degree: 100%
 
 ---

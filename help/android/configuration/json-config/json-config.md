@@ -1,16 +1,13 @@
 ---
 description: この情報は、ADBMobile.json 設定ファイルを使用する場合に役立ちます。
-seo-description: この情報は、ADBMobile.json 設定ファイルを使用する場合に役立ちます。
-seo-title: ADBMobile JSON 設定
 solution: Experience Cloud,Analytics
 title: ADBMobile JSON 設定
 topic-fix: Developer and implementation
 uuid: 1decf605-7bc3-4e73-ad52-1ecd5821599e
 exl-id: 652aeb05-b052-448d-98c8-d513d050a6f5
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '1678'
+source-wordcount: '1666'
 ht-degree: 100%
 
 ---
@@ -155,8 +152,8 @@ JSON ファイル内の変数と各変数に必要な最小限の SDK バージ�
       バージョン 4.2 以降、POI は Adobe Mobile インターフェイスで定義され、アプリ設定ファイルに動的に同期されます。この同期をおこなうには、`analytics.poi` 設定が必要です。
 
       ```javascript
-        “analytics.poi“: `https://assets.adobedtm.com/`
-      …/yourfile.json”`,
+        "analytics.poi": `https://assets.adobedtm.com/`
+      …/yourfile.json"`,
       ```
 
       これを設定しない場合は、`ADBMobile.json` ファイルを更新してこの行を含める必要があります。更新された設定ファイルをダウンロードするには、「[事前設定](/help/android/getting-started/requirements.md)」を参照してください。
@@ -397,4 +394,4 @@ messages ノードは Adobe Mobile Services によって自動的に生成され
    * audiences と同じ。audiences の代わりとなるアクション。
    * &quot;key&quot;
    * &quot;matches&quot;
-   * &quot;値&quot;
+   * &quot;values&quot;

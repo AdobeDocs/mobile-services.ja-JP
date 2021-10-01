@@ -1,16 +1,13 @@
 ---
 description: 状態とは、アプリケーションの様々な画面またはビューのことです。アプリケーションで新しい状態が表示されるたびに（例えば、ユーザーがホームページからニュースフィードに移動したとき）、トラックステートコールが送信されます。iOS では、状態は通常、各ビューの viewDidLoad メソッドで追跡されます。
-seo-description: 状態とは、アプリケーションの様々な画面またはビューのことです。アプリケーションで新しい状態が表示されるたびに（例えば、ユーザーがホームページからニュースフィードに移動したとき）、トラックステートコールが送信されます。iOS では、状態は通常、各ビューの viewDidLoad メソッドで追跡されます。
-seo-title: アプリの状態の追跡
 solution: Experience Cloud,Analytics
 title: アプリの状態の追跡
 topic-fix: Developer and implementation
 uuid: 12cca4eb-1f15-4cec-a58f-76b69eaff99d
 exl-id: 1b7d2fbb-d2df-4063-b923-e59fa3582830
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '397'
+source-wordcount: '339'
 ht-degree: 100%
 
 ---

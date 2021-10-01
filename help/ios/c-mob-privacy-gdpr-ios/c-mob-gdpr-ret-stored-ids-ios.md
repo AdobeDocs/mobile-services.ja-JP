@@ -1,37 +1,34 @@
 ---
 description: この情報は、GDPR のデータアクセス要求に関連してローカルに保存されている Experience Cloud SDK ID を iOS アプリから取得する場合に役立ちます。
-seo-description: この情報は、GDPR のデータアクセス要求に関連してローカルに保存されている Experience Cloud SDK ID を iOS アプリから取得する場合に役立ちます。
-seo-title: 格納された識別子の取得
-title: 格納された識別子の取得
+title: 保存されている ID の取得
 uuid: 4fb2c166-6700-4f8b-b60b-137b199e0509
-translation-type: tm+mt
-source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
+exl-id: ec8592af-fb08-4ab3-99a1-51ac5697a3d8
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '179'
-ht-degree: 69%
+source-wordcount: '155'
+ht-degree: 67%
 
 ---
-
 
 # 保存されている ID の取得{#retrieving-stored-identifiers}
 
 この情報は、GDPR のデータアクセス要求に関連してローカルに保存されている Experience Cloud SDK ID を iOS アプリから取得する場合に役立ちます。
 
-GDPRの詳細については、「 [GDPRとYour Business](https://www.adobe.com/jp/privacy/general-data-protection-regulation.html)」を参照してください。
+GDPR の詳細については、「[GDPR とお客様のビジネス ](https://www.adobe.com/jp/privacy/general-data-protection-regulation.html)」を参照してください。
 
 >[!IMPORTANT]
 >
->この `getAllIdentifiersAsync` メソッドは、Experience Cloud SDK に保存されている ID を取得します。You must call this method **before** the user opts-out.
+>この `getAllIdentifiersAsync` メソッドは、Experience Cloud SDK に保存されている ID を取得します。このメソッドは、**の前に** 呼び出す必要があります。
 
-Experience CloudSDK IDは（該当する場合に）ローカルに保存され、JSON文字列として返されます。この文字列には、次の情報が含まれます。
+Experience CloudSDK ID は（該当する場合）ローカルに保存され、JSON 文字列で返されます。この文字列には次の情報が含まれている可能性があります。
 
 * 会社コンテキスト - IMS 組織 ID
 * ユーザー ID
 * Experience Cloud ID（MID）、旧称 Experience Cloud ID
-* 統合コード（ADID、プッシュID）
+* 統合コード（ADID、プッシュ ID）
 * データソース ID（DPID、DPUUID）
 * Analytics ID（AVID、AID、VID、関連する RSID）
-* ターゲットのレガシーID(TNTID、TNT3rdpartyID)
+* Target の従来の ID(TNTID、TNT3rdpartyID)
 * Audience Manager ID（UUID）
 
 iOS の `ADBMobile getAllIdentifiersAsync` メソッドの例を次に示します。
@@ -41,4 +38,3 @@ iOS の `ADBMobile getAllIdentifiersAsync` メソッドの例を次に示しま�
       NSLog(content) 
 }]
 ```
-

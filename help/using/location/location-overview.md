@@ -1,19 +1,16 @@
 ---
 description: 場所セクションの概要です。
-keywords: mobile
-seo-description: 場所セクションの概要です。
-seo-title: 場所の概要
+keywords: モバイル
 title: ロケーションの概要
-translation-type: tm+mt
-source-git-commit: 41aa0a994bd0ad1e6f5421cf368d78b616ff9170
+exl-id: eaec9a06-8f5e-497e-8d03-d07374325909
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '105'
+source-wordcount: '98'
 ht-degree: 100%
 
 ---
 
-
-# 場所の概要 {#location-overview}
+# ロケーションの概要 {#location-overview}
 
 ## 新しい Adobe Experience Cloud SDK リリース
 

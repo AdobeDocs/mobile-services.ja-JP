@@ -1,21 +1,18 @@
 ---
 description: Experience Cloud ソリューション用 Windows 8.1 Universal App Store SDK 4.x のリリースノートと既知の問題です。
-seo-description: Experience Cloud ソリューション用 Windows 8.1 Universal App Store SDK 4.x のリリースノートと既知の問題です。
-seo-title: リリースノート
 solution: Experience Cloud,Analytics
 title: リリースノート
 topic-fix: Developer and implementation
 uuid: 45634319-7949-4e24-b193-4f876af97a69
 exl-id: 21bd2e72-cc9e-4fc0-940f-dfc560d7a536
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '228'
 ht-degree: 100%
 
 ---
 
-# リリースノート {#release-notes}
+# リリースノート{#release-notes}
 
 Experience Cloud ソリューション用 Windows 8.1 Universal App Store SDK 4.x のリリースノートと既知の問題です。
 
@@ -30,5 +27,4 @@ Experience Cloud ソリューション用 Windows 8.1 Universal App Store SDK 4.
 | 時間計測アクション | 時間計測アクションを使用すると、ユーザーがアプリ内でエンドツーエンドのプロセスを完了するまでにかかる時間を簡単に確認できます。時間計測アクションを使用すると、セッションの時間と、アクションが完了するまでにかかる合計時間（クロスセッション）を計算できます。詳しくは、[Analytics](/help/windows-appstore/analytics/analytics.md) の「*時間計測アクション*」を参照してください。 |
 | オプトイン／オプトアウト | 分析をすばやく有効または無効にします。 |
 
-
-すべてのソリューションのリリースノートについて詳しくは、[Adobe Experience Cloud リリースノート](https://docs.adobe.com/content/help/ja-JP/release-notes/experience-cloud/current.html)を参照してください。
+すべてのソリューションのリリースノートについて詳しくは、[Adobe Experience Cloud リリースノート](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=ja)を参照してください。

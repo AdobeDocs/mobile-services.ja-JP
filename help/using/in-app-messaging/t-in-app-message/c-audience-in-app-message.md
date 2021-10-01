@@ -1,17 +1,14 @@
 ---
 description: 表示、トリガーおよび特徴オプションを含む、アプリ内メッセージのオーディエンスオプションを設定できます。
 keywords: モバイル
-seo-description: 表示、トリガーおよび特徴オプションを含む、アプリ内メッセージのオーディエンスオプションを設定できます。
-seo-title: オーディエンス：アプリ内メッセージ
 solution: Experience Cloud,Analytics
 title: オーディエンス：アプリ内メッセージ
 topic-fix: Metrics
 uuid: 6c815d4c-7626-4cf4-9158-3f059c79317a
 exl-id: c85f2c0d-9c88-4d5a-8247-d8a101195d3a
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '584'
+source-wordcount: '567'
 ht-degree: 100%
 
 ---
@@ -48,7 +45,6 @@ ht-degree: 100%
 
    * **[!UICONTROL 特性]**
 オーディエンスをフィルタリング（セグメント化）して指定したデータを持つヒットに絞り込む際に、どのユーザーにアプリ内メッセージを表示するかを決定できます。例えば、目標地点にデンバーが含まれるルールを定義できます。このフィルターを使用すると、トリガー時に、名前に「デンバー」が入ったいずれかの目標地点にいる顧客に、メッセージを表示できます。
-
 
 
 ## 特性およびトリガーに関する追加情報 {#section_48C39EFB8CAA4F62B994FCC91DF588E6}

@@ -1,22 +1,19 @@
 ---
 description: 以下では、ライフサイクルの実装後にモバイルライブラリによって自動的に測定可能な指標およびディメンションと、ライフサイクルデータのトラブルシューティングに関するページへのリンクを示します。
 keywords: Android, ライブラリ, モバイル, SDK
-seo-description: 以下では、ライフサイクルの実装後にモバイルライブラリによって自動的に測定可能な指標およびディメンションと、ライフサイクルデータのトラブルシューティングに関するページへのリンクを示します。
-seo-title: ライフサイクル指標
 solution: Experience Cloud,Analytics
 title: ライフサイクル指標
 topic-fix: Developer and implementation
 uuid: a8f3ebac-be3b-4948-82bb-105d46cfff6d
 exl-id: 1e50318d-894c-4039-ba45-71cb9edbc5b5
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '1244'
+source-wordcount: '1216'
 ht-degree: 100%
 
 ---
 
-# ライフサイクル指標 {#lifecycle-metrics}
+# ライフサイクル指標{#lifecycle-metrics}
 
 この節では、ライフサイクルの実装後にモバイルライブラリによって自動的に測定可能な指標およびディメンションと、ライフサイクルデータのトラブルシューティングに関するページへのリンクに関する情報を提供します。トラブルシューティングの詳細については、「[ライフサイクルデータのトラブルシューティング](https://helpx.adobe.com/jp/analytics/kb/troubleshoot-lifecycle-data.html)」を参照してください。
 

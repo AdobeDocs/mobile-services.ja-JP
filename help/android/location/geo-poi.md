@@ -1,16 +1,13 @@
 ---
 description: 位置情報は、緯度と経度に加え、事前定義された目標地点を使用して Android アプリで位置データを測定する場合に役立ちます。
-seo-description: 位置情報は、緯度と経度に加え、事前定義された目標地点を使用して Android アプリで位置データを測定する場合に役立ちます。
-seo-title: 位置情報と目標地点
 solution: Experience Cloud,Analytics
 title: 位置情報と目標地点
 topic-fix: Developer and implementation
 uuid: b8209370-cbc4-40f9-97d8-017e2d74a377
 exl-id: e1fed35b-5ce9-48ee-ade0-b1701cf2a3a9
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '596'
+source-wordcount: '571'
 ht-degree: 100%
 
 ---
@@ -34,7 +31,7 @@ ht-degree: 100%
 バージョン 4.2 以降、POI は Adobe Mobile UI で定義され、アプリ設定ファイルに動的に同期されます。この同期をおこなうには、[ADBMobile JSON 設定](/help/android/configuration/json-config/json-config.md) で `analytics.poi` 設定をおこなう必要があります。
 
 ```js
-“analytics.poi”: “https://assets.adobedtm.com/…/yourfile.json”,
+"analytics.poi": "https://assets.adobedtm.com/…/yourfile.json",
 ```
 
 これを設定しない場合、`ADBMobile.json` ファイルの更新バージョンをダウンロードし、アプリに追加する必要があります。詳しくは、「[SDK およびテストツールのダウウンロード](/help/android/getting-started/requirements.md)」を参照してください。

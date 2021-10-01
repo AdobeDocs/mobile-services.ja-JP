@@ -1,23 +1,20 @@
 ---
 description: Target プレビューを使用すれば、Target アクティビティに対してエンドツーエンドの QA を容易に実行でき、お使いのデバイスでこうしたアクティビティをプレビューできます。
-seo-description: Target プレビューを使用すれば、Target アクティビティに対してエンドツーエンドの QA を容易に実行でき、お使いのデバイスでこうしたアクティビティをプレビューできます。
-seo-title: Android の Target プレビュー
 title: Android の Target プレビュー
 uuid: f3c82d64-009c-4929-a5e6-3677b2977889
-translation-type: tm+mt
-source-git-commit: 83e6968efb0ed1b4ef504286c6cb2e8e4d2eaf94
+exl-id: 69103f3a-9521-4808-8ecd-7b960efca04d
+source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
 workflow-type: tm+mt
-source-wordcount: '139'
-ht-degree: 87%
+source-wordcount: '120'
+ht-degree: 74%
 
 ---
-
 
 # Android の Target プレビュー {#target-preview-on-android}
 
 Target プレビューを使用すれば、Target アクティビティに対してエンドツーエンドの QA を容易に実行でき、お使いのデバイスでこうしたアクティビティをプレビューできます。
 
-For more information on how to set up and use Target Preview, go to [Target Mobile Preview](https://docs.adobe.com/content/help/ja-JP/target/using/implement-target/mobile-apps/target-mobile-preview.html).
+Target プレビューの設定および使用方法について詳しくは、Adobe Targetユーザーガイドの「[Target Mobile Preview](https://experienceleague.adobe.com/docs/target/using/implement-target/mobile-apps/target-mobile-preview.html)」を参照してください。
 
 >[!IMPORTANT]
 >
@@ -36,6 +33,5 @@ For more information on how to set up and use Target Preview, go to [Target Mobi
    * このメソッドのコードサンプルを次に示します。
 
       ```java
-      Target.setPreviewRestartDeeplink(“myapp://myhost”); 
+      Target.setPreviewRestartDeeplink("myapp://myhost"); 
       ```
-

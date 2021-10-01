@@ -1,16 +1,13 @@
 ---
 description: iOS ライブラリが提供する Audience Manager メソッドの一覧を以下に示します。
-seo-description: iOS ライブラリが提供する Audience Manager メソッドの一覧を以下に示します。
-seo-title: Audience Manager メソッド
 solution: Experience Cloud,Analytics
 title: Audience Manager メソッド
 topic-fix: Developer and implementation
 uuid: 97658bd6-4c4f-4875-abe9-36dad4ec8bae
 exl-id: b843a52f-2b83-4e19-9f43-895bd582d4ef
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '363'
+source-wordcount: '344'
 ht-degree: 100%
 
 ---

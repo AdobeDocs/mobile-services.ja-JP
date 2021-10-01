@@ -1,21 +1,19 @@
 ---
 description: この情報は、Android デバイスでバージョン 3 の獲得キャンペーンリンクをラウンドトリップする場合に役立ちます。
 keywords: Android, ライブラリ, モバイル, SDK
-seo-description: この情報は、Android デバイスでバージョン 3 の獲得キャンペーンリンクをラウンドトリップする場合に役立ちます。
-seo-title: バージョン 3 の獲得のテスト
 solution: Experience Cloud,Analytics
 title: バージョン 3 の獲得のテスト
 topic-fix: Developer and implementation
 uuid: 5e38b43d-389e-4412-99e5-3e6223b6ad28
 exl-id: 2ce78e2e-da51-4af8-a461-ec6c642a7854
-source-git-commit: bb2459e57274183e55c1facd1a510cf55a83ddb4
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '824'
+source-wordcount: '807'
 ht-degree: 100%
 
 ---
 
-# V3 による獲得のテスト {#testing-version-acquisition}
+# V3 による獲得のテスト  {#testing-version-acquisition}
 
 この情報は、Android デバイスでバージョン 3 の獲得キャンペーンリンクをラウンドトリップする場合に役立ちます。
 

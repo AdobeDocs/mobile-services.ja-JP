@@ -1,17 +1,14 @@
 ---
 description: リンク先を管理ページで、リンク先を作成、編集、アーカイブ／アーカイブ解除および削除できます。これらのリンク先は、マーケティングリンク、プッシュ通知またはアプリ内メッセージを構築する際に呼び出すことができます。
 keywords: モバイル
-seo-description: リンク先を管理ページで、リンク先を作成、編集、アーカイブ／アーカイブ解除および削除できます。これらのリンク先は、マーケティングリンク、プッシュ通知またはアプリ内メッセージを構築する際に呼び出すことができます。
-seo-title: リンク先の作成と管理
 solution: Experience Cloud,Analytics
 title: リンク先の作成と管理
 topic-fix: Metrics
 uuid: 43930e3a-6a11-40c6-8a61-6732a673dac7
 exl-id: 53e9f970-e53c-4c0d-9214-abb01a9b144b
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '167'
+source-wordcount: '131'
 ht-degree: 100%
 
 ---

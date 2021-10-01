@@ -1,22 +1,19 @@
 ---
 description: この情報は、プッシュメッセージのトラブルシューティングに役立ちます。
 keywords: モバイル
-seo-description: この情報は、プッシュメッセージのトラブルシューティングに役立ちます。
-seo-title: プッシュメッセージのトラブルシューティング
 solution: Experience Cloud,Analytics
 title: プッシュメッセージのトラブルシューティング
 topic-fix: Metrics
 uuid: c7be4ab7-0cfe-4296-84a8-01412f4fd93f
 exl-id: 56feb8e1-e196-4b70-8240-6e41581ca602
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '736'
+source-wordcount: '725'
 ht-degree: 100%
 
 ---
 
-# プッシュメッセージのトラブルシューティング {#troubleshooting-push-messaging}
+# プッシュメッセージのトラブルシューティング{#troubleshooting-push-messaging}
 
 この情報は、プッシュメッセージのトラブルシューティングに役立ちます。
 
@@ -94,13 +91,13 @@ Mobile Services のプッシュメッセージは、次のタイプの遅延を�
 * アプリ名：PhotoShop_app_iOS
    * 親 RSID：AllAdobe PhotoShop_apps
    * VRSID：PhotoShop_iOS_app_SF
-   * VRSID 定義セグメント：`a.appid contains “PhotoShop_iOS_app_SF”`
+   * VRSID 定義セグメント：`a.appid contains "PhotoShop_iOS_app_SF"`
 * アプリ名：PhotoShop_app_iOS
    * 親 RSID：AllAdobe PhotoShop_apps
    * RSID：PhotoShop_iOS_app_LA
-   * VRSID 定義セグメント：`a.os contains “iOS”`
+   * VRSID 定義セグメント：`a.os contains "iOS"`
 
-この例では、Photoshop ユーザーが *PhotoShop_iOS_app_SF* アプリにプッシュを送信すると、すべての *PhotoShop_iOS_app_SF*&#x200B;アプリユーザーが期待どおりにプッシュメッセージを受け取ります。しかし、ユーザーが *PhotoShop_iOS_app_LA*&#x200B;アプリにメッセージを送信すると、その VRSID 定義セグメントが正しくない（`a.os contains "PhotoShop_iOS_app_LA"` ではなく `iOS` となっている）ので、*AllAdobe PhotoShop_apps* の&#x200B;**すべての** iOS ユーザーにメッセージが送信されます。メッセージは依然として *PhotoShop_iOS_app_LA* ユーザーに届きますが、*PhotoShop_iOS_app_SF* アプリの証明書が異なるので、メッセージは&#x200B;*PhotoShop_iOS_app_SF* ユーザーのプッシュ ID をブロックリストに記載します。セグメントが `a.os contains “PhotoShop_iOS_app_LA”` と定義されていた場合、プッシュメッセージは&#x200B;*PhotoShop_iOS_app_LA*&#x200B;ユーザーにのみ送信されていました。
+この例では、Photoshop ユーザーが *PhotoShop_iOS_app_SF* アプリにプッシュを送信すると、すべての *PhotoShop_iOS_app_SF*&#x200B;アプリユーザーが期待どおりにプッシュメッセージを受け取ります。しかし、ユーザーが *PhotoShop_iOS_app_LA*&#x200B;アプリにメッセージを送信すると、その VRSID 定義セグメントが正しくない（`a.os contains "PhotoShop_iOS_app_LA"` ではなく `iOS` となっている）ので、*AllAdobe PhotoShop_apps* の&#x200B;**すべての** iOS ユーザーにメッセージが送信されます。メッセージは依然として *PhotoShop_iOS_app_LA* ユーザーに届きますが、*PhotoShop_iOS_app_SF* アプリの証明書が異なるので、メッセージは&#x200B;*PhotoShop_iOS_app_SF* ユーザーのプッシュ ID をブロックリストに記載します。セグメントが `a.os contains "PhotoShop_iOS_app_LA"` と定義されていた場合、プッシュメッセージは&#x200B;*PhotoShop_iOS_app_LA*&#x200B;ユーザーにのみ送信されていました。
 
 *PhotoShop_IOS_app_LA* プッシュ証明書を使用して渡された場合、*PhotoShop_iOS_app_SF* のプッシュ ID は `invalid` として復活します。
 

@@ -1,17 +1,14 @@
 ---
 description: 以下では、ライフサイクルの実装後にモバイルライブラリによって自動的に測定可能な指標およびディメンションと、ライフサイクルデータのトラブルシューティングに関するページへのリンクを示します。
 keywords: Android, ライブラリ, モバイル, SDK
-seo-description: 以下では、ライフサイクルの実装後にモバイルライブラリによって自動的に測定可能な指標およびディメンションと、ライフサイクルデータのトラブルシューティングに関するページへのリンクを示します。
-seo-title: ライフサイクル指標
 solution: Experience Cloud,Analytics
 title: ライフサイクル指標
 topic-fix: Developer and implementation
 uuid: 5a371f11-6521-410f-a01f-fc3b285b050f
 exl-id: d7436411-65bd-4cf7-ae3e-cec829a7690a
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '892'
+source-wordcount: '864'
 ht-degree: 78%
 
 ---
@@ -20,13 +17,13 @@ ht-degree: 78%
 
 以下では、ライフサイクルの実装後にモバイルライブラリによって自動的に測定可能な指標およびディメンションと、ライフサイクルデータのトラブルシューティングに関するページへのリンクを示します。
 
-詳しくは、[ライフサイクルデータのトラブルシューティング](https://helpx.adobe.com/jp/analytics/kb/troubleshoot-lifecycle-data.html)のナレッジベースを参照してください。
+詳細については、ナレッジベース（[ ライフサイクルデータのトラブルシューティング ](https://helpx.adobe.com/jp/analytics/kb/troubleshoot-lifecycle-data.html)）を参照してください。
 
 ## ライフサイクル指標およびディメンション {#section_78F036C4296F4BA3A47C2044F79C86C1}
 
 ライフサイクル指標は設定されると、Analytics にはコンテキストデータパラメーターの形で送信され、Target にはパラメーターの形で mbox コールごとに、Audience management へのシグナルとして送信されます。Analytics および Target は同じ形式を使用しますが、Audience management は、各指標に異なるプレフィックスを使用します。
 
-Analyticsでは、各ライフサイクル追跡呼び出しと共に送信されるコンテキストデータは、指標またはディメンションを使用して、自動的に取り込まれ、レポートされます。
+Analytics の場合、各ライフサイクルトラッキングコールと共に送信されるコンテキストデータは、自動的にキャプチャされ、指標またはディメンションを使用してレポートされます。
 
 ### 指標
 
@@ -34,14 +31,14 @@ Analyticsでは、各ライフサイクル追跡呼び出しと共に送信さ�
 
    インストール後または再インストール後の最初の実行時にトリガーされます。
 
-   * Analyticsコンテキストデータ/ターゲットパラメーター：`a.InstallEvent`
+   * Analytics コンテキストデータ/Target パラメーター：`a.InstallEvent`
    * Audience Manager のシグナル：`c_a_InstallEvent`
 
 * **アップグレード**
 
    アップグレード後またはバージョン番号の変更時の最初の実行時にトリガーされます。
 
-   * Analyticsコンテキストデータ/ターゲットパラメーター：`a.UpgradeEvent`
+   * Analytics コンテキストデータ/Target パラメーター：`a.UpgradeEvent`
    * Audience Manager のシグナル：`c_a_UpgradeEvent`
 
 * **日別関与ユーザー数**
@@ -52,7 +49,7 @@ Analyticsでは、各ライフサイクル追跡呼び出しと共に送信さ�
    >
    >この指標は Analytics 指標に自動的には格納されません。この指標を取得するためのカスタムイベントを設定する処理ルールを作成する必要があります。
 
-   * Analyticsコンテキストデータ/ターゲットパラメーター：`a.DailyEngUserEvent`
+   * Analytics コンテキストデータ/Target パラメーター：`a.DailyEngUserEvent`
    * Audience Manager のシグナル：`c_a_DailyEngUserEvent`
 
 * **月別関与ユーザー数**
@@ -63,28 +60,28 @@ Analyticsでは、各ライフサイクル追跡呼び出しと共に送信さ�
    >
    >この指標は Analytics 指標に自動的には格納されません。この指標を取得するためのカスタムイベントを設定する処理ルールを作成する必要があります。
 
-   * Analyticsコンテキストデータ/ターゲットパラメーター：`a.MonthlyEngUserEvent`
+   * Analytics コンテキストデータ/Target パラメーター：`a.MonthlyEngUserEvent`
    * Audience Manager のシグナル：`c_a_MonthlyEngUserEvent`
 
 * **起動回数**
 
    実行のたびに（クラッシュおよびインストールを含む）トリガーされます。また、ライフサイクルセッションのタイムアウトを超えた場合に、SignatureInfo オブジェクトのバックグラウンドからの再開時にもトリガーされます。
 
-   * Analyticsコンテキストデータ/ターゲットパラメーター：`a.LaunchEvent`
+   * Analytics コンテキストデータ/Target パラメーター：`a.LaunchEvent`
    * Audience Manager のシグナル：`c_a_LaunchEvent`
 
 * **クラッシュ**
 
    アプリケーションが終了前にバックグラウンドにならなかった場合にトリガーされます。このイベントは、アプリケーションがクラッシュした後の起動時に送信されます。Adobe Mobile クラッシュレポートには、キャッチできないグローバルな例外ハンドラーは実装されていません。
 
-   * Analyticsコンテキストデータ/ターゲットパラメーター：`a.CrashEvent`
+   * Analytics コンテキストデータ/Target パラメーター：`a.CrashEvent`
    * Audience Manager のシグナル：`c_a_CrashEvent`
 
 * **以前のセッションの長さ**
 
    アプリケーションが開かれ、フォアグラウンドにあった時間に基づいて、以前のアプリケーションセッションが持続した秒数をレポートします。
 
-   * Analyticsコンテキストデータ/ターゲットパラメーター：`a.PrevSessionLength`
+   * Analytics コンテキストデータ/Target パラメーター：`a.PrevSessionLength`
    * Audience Manager のシグナル：`c_a_PrevSessionLength`
 
 ### ディメンション
@@ -93,59 +90,59 @@ Analyticsでは、各ライフサイクル追跡呼び出しと共に送信さ�
 
    インストール後の初回起動日。日付の形式は `MM/DD/YYYY` です。
 
-   * Analyticsコンテキストデータ/ターゲットパラメーター：`a.InstallDate`
+   * Analytics コンテキストデータ/Target パラメーター：`a.InstallDate`
    * Audience Manager のシグナル：`c_a_InstallDate`
 
 * **アプリ ID**
 
-   アプリケーションの名前とバージョンを次の形式で格納します。
+   アプリケーションの名前とバージョンを次の形式で格納します。 
    `[AppName] [BundleVersion]`。
 
    例えば、`myapp 1.1` です。
 
-   * Analyticsコンテキストデータ/ターゲットパラメーター：`a.AppID`
+   * Analytics コンテキストデータ/Target パラメーター：`a.AppID`
    * Audience Manager のシグナル：`c_a_AppID`
 
 * **起動回数**
 
    アプリケーションが起動したか、またはバックグラウンドから復帰した回数。
 
-   * Analyticsコンテキストデータ/ターゲットパラメーター：`a.Launches`
+   * Analytics コンテキストデータ/Target パラメーター：`a.Launches`
    * Audience Manager のシグナル：`c_a_Launches`
 
 * **初回使用からの日数**
 
    初回実行時からの日数。
 
-   * Analyticsコンテキストデータ/ターゲットパラメーター：`a.DaysSinceFirstUse`
+   * Analytics コンテキストデータ/Target パラメーター：`a.DaysSinceFirstUse`
    * Audience Manager のシグナル：`c_a_DaysSinceFirstUse`
 
 * **前回使用からの日数**
 
    前回使用時からの経過日数。
 
-   * Analyticsコンテキストデータ/ターゲットパラメーター：`a.DaysSinceLastUse`
+   * Analytics コンテキストデータ/Target パラメーター：`a.DaysSinceLastUse`
    * Audience Manager のシグナル：`c_a_DaysSinceLastUse`
 
 * **時刻**
 
    アプリが起動された時刻を測定します。この指標では 24 時間形式を使用し、ピーク使用時を調べるための時間分割に使用されます。
 
-   * Analyticsコンテキストデータ/ターゲットパラメーター：`a.HourOfDay`
+   * Analytics コンテキストデータ/Target パラメーター：`a.HourOfDay`
    * Audience Manager のシグナル：`c_a_HourOfDay`
 
 * **曜日**
 
    アプリが起動された週の曜日の数。
 
-   * Analyticsコンテキストデータ/ターゲットパラメーター：`a.DayOfWeek`
+   * Analytics コンテキストデータ/Target パラメーター：`a.DayOfWeek`
    * Audience Manager のシグナル：`c_a_DayOfWeek`
 
 * **オペレーティングシステムのバージョン**
 
-   OSのバージョン。
+   OS のバージョン。
 
-   * Analyticsコンテキストデータ/ターゲットパラメーター：`a.OSVersion`
+   * Analytics コンテキストデータ/Target パラメーター：`a.OSVersion`
    * Audience Manager のシグナル：`c_a_OSVersion`
 
 * **前回アップグレードからの日数**
@@ -156,7 +153,7 @@ Analyticsでは、各ライフサイクル追跡呼び出しと共に送信さ�
    >
    >この指標は Analytics 指標に自動的には格納されません。レポート用にこの値を Analytics 変数にコピーする処理ルールを作成する必要があります。
 
-   * Analyticsコンテキストデータ/ターゲットパラメーター：`a.DaysSinceLastUpgrade`
+   * Analytics コンテキストデータ/Target パラメーター：`a.DaysSinceLastUpgrade`
    * Audience Manager のシグナル：`c_a_DaysSinceLastUpgrade`
 
 * **前回アップグレードからの起動回数**
@@ -167,14 +164,14 @@ Analyticsでは、各ライフサイクル追跡呼び出しと共に送信さ�
    >
    >この指標は Analytics 指標に自動的には格納されません。レポート用にこの値を Analytics 変数にコピーする処理ルールを作成する必要があります。
 
-   * Analyticsコンテキストデータ/ターゲットパラメーター：`a.LaunchesSinceUpgrade`
+   * Analytics コンテキストデータ/Target パラメーター：`a.LaunchesSinceUpgrade`
    * Audience Manager のシグナル：`c_a_LaunchesSinceUpgrade`
 
 * **デバイス名**
 
    デバイス名が格納されます。
 
-   * Analyticsコンテキストデータ/ターゲットパラメーター：`a.DeviceName`
+   * Analytics コンテキストデータ/Target パラメーター：`a.DeviceName`
    * Audience Manager のシグナル：`c_a_DeviceName`
 
 * **通信事業者名**
@@ -185,14 +182,14 @@ Analyticsでは、各ライフサイクル追跡呼び出しと共に送信さ�
    >
    >この指標は Analytics 指標に自動的には格納されません。レポート用にこの値を Analytics 変数にコピーする処理ルールを作成する必要があります。
 
-   * Analyticsコンテキストデータ/ターゲットパラメーター：`a.CarrierName`
+   * Analytics コンテキストデータ/Target パラメーター：`a.CarrierName`
    * Audience Manager のシグナル：`c_a_CarrierName`
 
 * **解像度**
 
    実際のピクセル単位での幅 x 高さ。
 
-   * Analyticsコンテキストデータ/ターゲットパラメーター：`a.Resolution`
+   * Analytics コンテキストデータ/Target パラメーター：`a.Resolution`
    * Audience Manager のシグナル：`c_a_Resolution`
 
 ## その他のモバイル指標およびディメンション {#section_0B32BBF9CA734103BEDB5E755FFE5B31}
@@ -203,7 +200,7 @@ Analyticsでは、各ライフサイクル追跡呼び出しと共に送信さ�
 
    `trackLocation` メソッドによって設定されます。
 
-   * Analyticsコンテキストデータ/ターゲットパラメーター：
+   * Analytics コンテキストデータ/Target パラメーター：
 
       * `a.loc.lat.a`
       * `a.loc.lon.a`
@@ -217,7 +214,7 @@ Analyticsでは、各ライフサイクル追跡呼び出しと共に送信さ�
 
    `trackLocation` メソッドによって設定されます。
 
-   * Analyticsコンテキストデータ/ターゲットパラメーター：
+   * Analytics コンテキストデータ/Target パラメーター：
 
       * `a.loc.lat.b`
       * `a.loc.lon.b`
@@ -231,7 +228,7 @@ Analyticsでは、各ライフサイクル追跡呼び出しと共に送信さ�
 
    `trackLocation` メソッドによって設定されます。
 
-   * Analyticsコンテキストデータ/ターゲットパラメーター：
+   * Analytics コンテキストデータ/Target パラメーター：
 
       * `a.loc.lat.c`
       * `a.loc.lon.c`
@@ -243,9 +240,9 @@ Analyticsでは、各ライフサイクル追跡呼び出しと共に送信さ�
 
 * **目標点名**
 
-   デバイスが定義されたPOI内にある場合に`trackLocation`メソッドによって入力されます。
+   デバイスが定義された目標地点内にある場合に `trackLocation` メソッドによって設定されます。
 
-   * Analyticsコンテキストデータ/ターゲットパラメーター：
+   * Analytics コンテキストデータ/Target パラメーター：
 
       * `a.loc.poi`
    * Audience Management の特性：
@@ -255,9 +252,9 @@ Analyticsでは、各ライフサイクル追跡呼び出しと共に送信さ�
 
 * **目標地点の中心までの距離**
 
-   デバイスが定義されたPOI内にある場合に`trackLocation`メソッドによって入力されます。
+   デバイスが定義された目標地点内にある場合に `trackLocation` メソッドによって設定されます。
 
-   * Analyticsコンテキストデータ/ターゲットパラメーター：
+   * Analytics コンテキストデータ/Target パラメーター：
 
       * `a.loc.dist`
    * Audience Management の特性：

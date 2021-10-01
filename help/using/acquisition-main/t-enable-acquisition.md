@@ -1,17 +1,14 @@
 ---
 description: マーケティングリンクのトラッキングとレポートをおこなう前に、SDK 設定で獲得トラッキングを有効にしておく必要があります。
 keywords: モバイル
-seo-description: マーケティングリンクのトラッキングとレポートをおこなう前に、SDK 設定で獲得トラッキングを有効にしておく必要があります。
-seo-title: 獲得の設定
 solution: Experience Cloud,Analytics
 title: 獲得の設定
 topic-fix: Metrics
 uuid: e996e43e-8a77-47a3-a6fb-53f676f92bef
 exl-id: 3a12dfab-70d0-41e6-8d4e-5aba21bb8606
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '215'
+source-wordcount: '195'
 ht-degree: 100%
 
 ---

@@ -1,23 +1,20 @@
 ---
 description: Target プレビューを使用すれば、Target アクティビティに対してエンドツーエンドの QA を容易に実行でき、お使いのデバイスでこうしたアクティビティをプレビューできます。
-seo-description: Target プレビューを使用すれば、Target アクティビティに対してエンドツーエンドの QA を容易に実行でき、お使いのデバイスでこうしたアクティビティをプレビューできます。
-seo-title: iOS の Target プレビュー
 title: iOS の Target プレビュー
 uuid: d92867a4-0569-4732-a928-28f9e2f8b21e
-translation-type: tm+mt
-source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+exl-id: d5695156-59cd-42c5-b9a3-d8e0ebbb89d0
+source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
 workflow-type: tm+mt
-source-wordcount: '141'
-ht-degree: 100%
+source-wordcount: '121'
+ht-degree: 76%
 
 ---
 
-
-# iOS の Target プレビュー {#target-preview-on-ios}
+# iOS の Target プレビュー{#target-preview-on-ios}
 
 Target プレビューを使用すれば、Target アクティビティに対してエンドツーエンドの QA を容易に実行でき、お使いのデバイスでこうしたアクティビティをプレビューできます。
 
-Target プレビューの設定と使用方法について詳しくは、[Target モバイルプレビュー](https://docs.adobe.com/content/help/ja-JP/target/using/implement-target/mobile-apps/target-mobile-preview.html)を参照してください。
+Target プレビューの設定および使用方法について詳しくは、Adobe Targetドキュメントの [Target モバイルプレビュー ](https://experienceleague.adobe.com/docs/target/using/implement-target/mobile-apps/target-mobile-preview.html) を参照してください。
 
 >[!IMPORTANT]
 >
@@ -38,5 +35,5 @@ Target プレビューの設定と使用方法について詳しくは、[Target
    * このメソッドのコードサンプルを次に示します。
 
       ```objective-c
-      [ADBMobile targetPreviewRestartDeepLink:@" myapp://myhost"]; 
+      [ADBMobile targetPreviewRestartDeepLink:@"myapp://myhost"]; 
       ```

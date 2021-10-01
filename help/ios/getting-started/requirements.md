@@ -1,17 +1,14 @@
 ---
 description: iOS アプリデータを収集するようにレポートスイートを設定するには、次の手順を実行します。
-seo-description: iOS アプリデータを収集するようにレポートスイートを設定するには、次の手順を実行します。
-seo-title: 事前準備
 solution: Experience Cloud,Analytics
 title: 事前準備
 topic-fix: Developer and implementation
 uuid: 04133f68-3618-41fd-8a13-aec5b6f04df6
 exl-id: 83da7cf5-3211-484d-bfe8-7b3b4999eea2
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
 workflow-type: tm+mt
-source-wordcount: '595'
-ht-degree: 100%
+source-wordcount: '584'
+ht-degree: 91%
 
 ---
 
@@ -45,7 +42,7 @@ Analytics 管理者およびアプリ開発者は、次のタスクを完了す�
 
 役割と権限について詳しくは、[役割と権限](/help/using/gs/c-mob-roles-and-permissions.md)を参照してください。
 
-## Adobe Mobile Services UI へのログイン   {#section_690A2EC4572E47869F183974E932A6A8}
+## Adobe Mobile Services UI へのログイン  {#section_690A2EC4572E47869F183974E932A6A8}
 
 Adobe Mobile Services は、モバイルアプリの分析およびターゲティングのための主要レポートインターフェイスです。これらの手順を完了すると、データ収集サーバー、レポートスイートなど、様々な設定が事前に構成された設定ファイルをダウンロードできます。
 
@@ -53,9 +50,9 @@ Adobe Mobile Services には、以下のいずれかの方法でログインで�
 
 * **Experience Cloud**
 
-   Adobe ID を使用して [Experience Cloud](https://marketing.adobe.com) にログインします。
+   Adobe ID を使用して [Experience Cloud](https://experience.adobe.com) にログインします。
 
-   この方法は、会社がプロビジョニングされていることと、お使いの Analytics アカウントがリンクされていることを前提としています。プロビジョニングについて詳しくは、「[Experience Cloud のユーザーと製品の管理](https://docs.adobe.com/content/help/ja-JP/core-services/interface/manage-users-and-products/admin-getting-started.html)」を参照してください。アカウントのリンクについて詳しくは、「[組織とアカウントのリンク](https://docs.adobe.com/content/help/ja-JP/core-services/interface/manage-users-and-products/organizations.html)」を参照してください。
+   この方法は、会社がプロビジョニングされていることと、お使いの Analytics アカウントがリンクされていることを前提としています。プロビジョニングの詳細については、『Experience Cloud中央インターフェイスコンポーネントガイド』の「[Experience Cloudユーザーと製品の管理 ](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html)」を参照してください。 アカウントのリンクについて詳しくは、[Experience Cloudの組織 ](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html) を参照してください。
 
    >[!TIP]
    >

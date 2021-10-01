@@ -1,16 +1,13 @@
 ---
 description: Android SDK バージョン 4.5 から新しい Android 拡張機能が追加され、Android ウェアラブルアプリからデータを収集できるようになりました。
-seo-description: Android SDK バージョン 4.5 から新しい Android 拡張機能が追加され、Android ウェアラブルアプリからデータを収集できるようになりました。
-seo-title: Android ウェアラブル：はじめに
 solution: Experience Cloud,Analytics
 title: Android ウェアラブル：はじめに
 topic-fix: Developer and implementation
 uuid: bfe5d41e-b17c-4634-80ac-7a38671ecb81
 exl-id: 79cfaa48-d9b2-4518-8b31-d7041898a71b
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '291'
+source-wordcount: '265'
 ht-degree: 100%
 
 ---
@@ -19,7 +16,7 @@ ht-degree: 100%
 
 Android SDK バージョン 4.5 から新しい Android 拡張機能が追加され、Android ウェアラブルアプリからデータを収集できるようになりました。
 
-## ハンドヘルドアプリ用の SDK の設定（Android Studio） {#section_262237484EC44C58953891B105F0D000}
+## ハンドヘルドアプリ用の SDK の設定（Android Studio）  {#section_262237484EC44C58953891B105F0D000}
 
 SDK をプロジェクトに読み込む方法について詳しくは、「[コア実装とライフサイクル](/help/android/getting-started/dev-qs.md)」を参照してください。
 
@@ -120,7 +117,7 @@ SDK をプロジェクトに読み込む方法について詳しくは、「[コ
    Permalink Edit
    ```
 
-## ウェアラブルアプリ用の SDK の設定（Android Studio） {#section_2268EC03E20B4A228A28BDCFEA2E9AE4}
+## ウェアラブルアプリ用の SDK の設定（Android Studio）  {#section_2268EC03E20B4A228A28BDCFEA2E9AE4}
 
 1. 次のどちらかのタスクを実行します。
 

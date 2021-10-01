@@ -1,17 +1,14 @@
 ---
 description: ここでは、デフォルトのモバイル指標およびディメンションに関する参照情報を示します。
 keywords: モバイル
-seo-description: ここでは、デフォルトのモバイル指標およびディメンションに関する参照情報を示します。
-seo-title: モバイル指標およびディメンションのリファレンス
 solution: Experience Cloud,Analytics
 title: モバイル指標およびディメンションのリファレンス
 topic-fix: Metrics
 uuid: 96170ae7-8553-4f3e-ae01-65e5b664adf4
 exl-id: ddfbf11e-a4c3-4d59-92b3-1d192dc3e7cd
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '621'
 ht-degree: 100%
 
 ---

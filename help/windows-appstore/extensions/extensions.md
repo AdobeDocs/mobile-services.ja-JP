@@ -1,23 +1,20 @@
 ---
-description: Windows 8.1 Universal App Store SDK forExperience Cloudソリューションで拡張機能を使用するのに役立つ情報です。
-seo-description: Windows 8.1 Universal App Store SDK forExperience Cloudソリューションで拡張機能を使用するのに役立つ情報です。
-seo-title: 拡張機能
+description: Experience Cloudソリューション用 Windows 8.1 ユニバーサルアプリストア SDK で拡張機能を使用する際に役立つ情報です。
 solution: Experience Cloud,Analytics
 title: 拡張機能
 topic-fix: Developer and implementation
 uuid: 2823b22c-d9a1-4724-9020-dfc6614691be
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '66'
-ht-degree: 22%
+source-wordcount: '48'
+ht-degree: 29%
 
 ---
 
 
 # 拡張機能{#extensions}
 
-Windows 8.1 Universal App Store SDK forExperience Cloudソリューションで拡張機能を使用するのに役立つ情報です。
+Experience Cloudソリューション用 Windows 8.1 ユニバーサルアプリストア SDK で拡張機能を使用する際に役立つ情報です。
 
 ## 追加情報
 

@@ -1,17 +1,14 @@
 ---
 description: iOS ライブラリが提供する Adobe Target メソッドの一覧を以下に示します。
-seo-description: iOS ライブラリが提供する Adobe Target メソッドの一覧を以下に示します。
-seo-title: Adobe Mobile Services の iOS Target メソッド
 solution: Experience Cloud,Analytics
 title: iOS の Target メソッド
 topic-fix: Developer and implementation
 uuid: 692bcda1-02ba-4902-bd65-15888adf1952
 exl-id: ba03f865-970c-4b48-af35-749f05b273d8
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '656'
-ht-degree: 100%
+source-wordcount: '629'
+ht-degree: 95%
 
 ---
 
@@ -82,7 +79,7 @@ NSString *const ADBTargetParameterMboxHost;
                           }];
       ```
 
-* **targetLoadRequestWithName:defaultContent:profileParameters:orderParameters:mboxParameters:requestLocationParameters:callback:**
+* **:defaultContent::orderParameters::requestLocationParameters:targetLoadRequestWithNameprofileParametersmboxParameterscallback:**
 
    設定した Target サーバーにリクエストを送信し、生成されたオファーの文字列値をブロック callback に返します。
 
@@ -154,7 +151,7 @@ NSString *const ADBTargetParameterMboxHost;
                                  }];
       ```
 
-      基になる Target API について詳しくは、[Adobe Target Developers](https://docs.adobe.com/dev/products/target/reference/delivery.html) を参照してください。
+      基になる Target API について詳しくは、[Target API リファレンス ](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-target/target-api-reference-deprecated) を参照してください。
 
 
 
@@ -162,7 +159,7 @@ NSString *const ADBTargetParameterMboxHost;
 
 
 
-* **targetLoadRequestWithName:defaultContent:profileParameters:orderParameters:mboxParameters:callback**
+* **:defaultContent::orderParameters:targetLoadRequestWithNameprofileParametersmboxParameters:callback**
 
    設定した Target サーバーに request を送信し、ブロック callback で生成されたオファーの文字列値を返します。
 

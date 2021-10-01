@@ -1,21 +1,18 @@
 ---
 description: アプリでモバイル Web コンテンツを開く場合は、訪問者がネイティブアプリからモバイル Web に移動したり、その逆に移動したりしても、別の訪問者として識別されないようにする必要があります。
-seo-description: アプリでモバイル Web コンテンツを開く場合は、訪問者がネイティブアプリからモバイル Web に移動したり、その逆に移動したりしても、別の訪問者として識別されないようにする必要があります。
-seo-title: アプリとモバイル Web にまたがる訪問者トラッキング
 solution: Experience Cloud,Analytics
 title: アプリとモバイル Web にまたがる訪問者トラッキング
 topic-fix: Developer and implementation
 uuid: 2d951de6-3954-4379-a4ff-99b9695b9869
 exl-id: d8459d59-0edd-42c4-81b5-529b250accb4
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '528'
+source-wordcount: '494'
 ht-degree: 100%
 
 ---
 
-# アプリとモバイル Web にまたがる訪問者トラッキング {#visitor-tracking-between-an-app-and-mobile-web}
+# アプリとモバイル Web にまたがる訪問者トラッキング   {#visitor-tracking-between-an-app-and-mobile-web}
 
 アプリでモバイル Web コンテンツを開く場合は、訪問者がネイティブアプリからモバイル Web に移動したり、その逆に移動したりしても、別の訪問者として識別されないようにする必要があります。
 
@@ -41,7 +38,7 @@ ht-degree: 100%
 1. Web ビューを開くために使用される URL に訪問者情報を追加するために、`visitorAppendToURL` を呼び出します。
 
    ```objective-c
-   NSURL *url = [NSURL URLWithString:@”https://www.mydomain.com/index.php"]; 
+   NSURL *url = [NSURL URLWithString:@"https://www.mydomain.com/index.php"]; 
    NSURL *urlWithVisitorData = [ADBMobile visitorAppendToURL:url]; 
    [[UIApplication sharedApplication] openURL:urlWithVisitorData];
    ```

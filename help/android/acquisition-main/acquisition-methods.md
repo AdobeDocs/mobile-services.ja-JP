@@ -1,22 +1,19 @@
 ---
 description: 'Android ライブラリでは、次の獲得メソッドが提供されています。 '
 keywords: Android, ライブラリ, モバイル, SDK
-seo-description: 'Android ライブラリでは、次の獲得メソッドが提供されています。 '
-seo-title: 獲得メソッド
 solution: Experience Cloud,Analytics
 title: 獲得メソッド
 topic-fix: Developer and implementation
 uuid: 22ec432f-e7ae-4e89-be07-26206bbeacf8
 exl-id: 0ce1b8fb-fd45-45de-8f97-e297e4c6529f
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '86'
+source-wordcount: '74'
 ht-degree: 100%
 
 ---
 
-# 獲得メソッド {#acquisition-methods}
+# 獲得メソッド{#acquisition-methods}
 
 Android ライブラリでは、次の獲得メソッドが提供されています。
 

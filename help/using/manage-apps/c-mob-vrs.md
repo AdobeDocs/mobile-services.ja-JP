@@ -1,31 +1,28 @@
 ---
 description: 仮想レポートスイート（VRS）は、1 つまたは複数のセグメント定義をレポートスイートに適用することで作成されたレポートスイートです。これにより、ユーザーは、1 つのレポートスイートにデータを維持して、別のレポートスイートにあるようにデータを管理できます。
-seo-description: 仮想レポートスイート（VRS）は、1 つまたは複数のセグメント定義をレポートスイートに適用することで作成されたレポートスイートです。これにより、ユーザーは、1 つのレポートスイートにデータを維持して、別のレポートスイートにあるようにデータを管理できます。
-seo-title: 仮想レポートスイート
 title: 仮想レポートスイート
 uuid: 3f467cad-43e7-4cd0-889b-89f8c61febbd
-translation-type: tm+mt
-source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
+exl-id: c9ce7f7c-2023-4a9d-9e4d-bacc21f9ad40
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '1055'
-ht-degree: 77%
+source-wordcount: '1006'
+ht-degree: 71%
 
 ---
 
-
-# 仮想レポートスイート{#virtual-report-suites}
+# 仮想レポートスイート {#virtual-report-suites}
 
 仮想レポートスイート（VRS）は、1 つまたは複数のセグメント定義をレポートスイートに適用することで作成されたレポートスイートです。これにより、ユーザーは、1 つのレポートスイートにデータを維持して、別のレポートスイートにあるようにデータを管理できます。
 
 VRS を使用するアプリは、次の機能の管理を除いて、通常のレポートスイートを使用するアプリと同じ機能です。
 
 * 処理ルール
-* evars/props/listvars/イベント
+* eVars/props/listvars/events
 * タイムスタンプ対応オプション
 * Dimensionフラグ（ライフサイクル、場所など）
 * 分類
 
-これらの値は親レポートスイートで管理され、同じ親レポートスイートに属するVRSと共有されます。
+これらの値は親レポートスイートで管理され、同じ親レポートスイートに属する VRS と共有されます。
 
 次の領域は、親レポートスイートとは独立して、Adobe Mobile Services UI でアクセスできます。
 
@@ -40,7 +37,7 @@ VRS は、次のタスクを実行するのに役立ちます。
 
 * データアクセスの制限
 
-   複数国籍の会社には、すべての地域に関するデータをレポートスイートに送信するアプリがあります。 ただし、その企業はビジネスユーザーを 1 つの地域に制限して、別の地域のデータを表示できないようにしたいと考えています。会社の管理者は、ユーザーを地域でセグメント化する VRS を作成して、その地域を管理するビジネスユーザーに対する VRS にのみ権限を付与できます。
+   ある多国籍企業は、すべての地域用のレポートスイートにデータを送信するアプリを持っています。 ただし、その企業はビジネスユーザーを 1 つの地域に制限して、別の地域のデータを表示できないようにしたいと考えています。会社の管理者は、ユーザーを地域でセグメント化する VRS を作成して、その地域を管理するビジネスユーザーに対する VRS にのみ権限を付与できます。
 
    この制限は、ビジネスユーザーが自分の地域と無関係のデータを表示できないようにします。例えば、EMEA のビジネスユーザーは、APAC 地域のデータを確認する必要はありません。
 
@@ -54,17 +51,17 @@ VRS は、次のタスクを実行するのに役立ちます。
 
 >[!IMPORTANT]
 >
->Adobe Analytics 管理者のみ、Adobe Analytics で仮想レポートスイートを作成および変更できます。仮想レポートスイートを作成するには、「[仮想レポートスイートの作成](https://docs.adobe.com/content/help/ja-JP/analytics/components/virtual-report-suites/vrs-workflow/vrs-create.html)」を参照してください。
+>Adobe Analytics 管理者のみ、Adobe Analytics で仮想レポートスイートを作成および変更できます。仮想レポートスイートを作成するには、Adobe Analyticsのドキュメントの [ 仮想レポートスイートの作成 ](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-workflow/vrs-create.html) を参照してください。
 
 各 VRS には一意の ID があります。親レポートスイート ID を Adobe Mobile Services UI で表示するには、アプリ設定ページの **[!UICONTROL アプリ情報]** セクションで、**[!UICONTROL さらに詳細を表示]** をクリックします。
 
-AdobeのMobile Services UIでは、VRSを使用してアプリを作成し、データを組織内の特定のグループにセグメント化できます。 例えば、スペインのビジネスユーザーは、日本のビジネスユーザーに関連するデータを見ることができません。
+Adobeの Mobile Services UI では、VRS を使用して、アプリを作成し、組織の特定のグループにデータをセグメント化できます。 これにより、例えば、スペインのビジネスユーザーは、日本のビジネスユーザーに関連するデータを見ることができません。
 
 >[!TIP]
 >
 >親レポートスイートから継承された値は変更できません。
 
-VRSは、親レポートスイートに関連付けられるサーバー側のセグメント定義です。 その結果、SDKは親レポートスイートにのみヒットを送信し、その親レポートスイートはヒットを記録するので、VRSに対してデータ収集を実行できません。
+VRS は、親レポートスイートに関連付けられるサーバー側のセグメント定義です。 その結果、SDK は親レポートスイートにのみヒットを送信し、次にヒットを記録するので、VRS に対してデータ収集を実行できません。
 
 ## Adobe Mobile Services の仮想レポートスイートとデータ収集 {#section_8ED8FBA5B44044D9ABC2151A39C577D4}
 
@@ -74,7 +71,7 @@ Adobe Mobile Services では、親レポートスイートまたは仮想レポ�
 >
 >プッシュ証明書は、Mobile Services UI のアプリレベルで添付されます。
 
-プッシュメッセージが正しく送信されるように、オーディエンスセグメントを正しく定義する必要があります。 For more information, see [Audience: Define and Configure Audience Segments for Push Messages](/help/using/in-app-messaging/t-create-push-message/c-audience-push-message.md).
+プッシュメッセージが正しく送信されるようにするには、オーディエンスセグメントを正しく定義する必要があります。 詳しくは、[ オーディエンス：プッシュメッセージ用のオーディエンスセグメントの定義と設定 ](/help/using/in-app-messaging/t-create-push-message/c-audience-push-message.md) を参照してください。
 
 ## タイムゾーンについて {#section_498E1EED22D741C3BDED44F01FACA72A}
 
@@ -110,10 +107,10 @@ Adobe Mobile Services では、親レポートスイートまたは仮想レポ�
 | `analytics.ssl` | × | ○ |  |
 | `analytics.offlineEnabled` | ○ |  |  |
 | `analytics.charset` | ○ | × |  |
-| `analytics.lifecycleTimeout` | × | ○ | 親レポートスイートにする必要があります。 |
+| `analytics.lifecycleTimeout` | × | ○ | ユーザーがデータの一貫性を保ちたくない場合、親レポートスイートにする必要があります。 |
 | `analytics.privacyDefault` | × | ○ |  |
 | `analytics.batchLimit` | × | ○ |  |
-| `analytics.timezone` | ○ | はい、最初にアプリを作成したとき。 | このタイムゾーンプロパティは、データをAdobe Analyticsに送信するために使用され、VRSの作成時に設定されるタイムゾーンプロパティとは異なります。 |
+| `analytics.timezone` | ○ | はい。アプリを初めて作成するときに使用します。 | このタイムゾーンプロパティは、データをAdobe Analyticsに送信するために使用され、VRS の作成時に設定されるタイムゾーンプロパティとは異なります。 |
 | `analytics.timezoneOffset` | ○ | × |  |
 | `analytics.referrerTimeout` | × | ○ |  |
 | `analytics.backdateSessionInfo` | ○ | ○ |  |
@@ -122,5 +119,5 @@ Adobe Mobile Services では、親レポートスイートまたは仮想レポ�
 
 仮想レポートスイートに関する追加情報を以下に示します。
 
-* VRS について詳しくは、[仮想レポートスイート](https://docs.adobe.com/content/help/ja-JP/analytics/components/virtual-report-suites/vrs-about.html)を参照してください。
-* VRS の実装計画について詳しくは、「[仮想レポートスイートのワークフロー](https://docs.adobe.com/content/help/ja-JP/analytics/components/virtual-report-suites/vrs-workflow/vrs-workflow.html)」を参照してください。
+* VRS について詳しくは、「[ 仮想レポートスイートの概要 ](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-about.html)」を参照してください。
+* VRS の実装計画について詳しくは、「[仮想レポートスイートのワークフロー](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-workflow/vrs-workflow.html)」を参照してください。

@@ -1,17 +1,14 @@
 ---
 description: タイプ（フルスクリーン、アラートまたは通知）および表示、テキストおよびボタンオプションを含む、アプリ内メッセージのエクスペリエンスオプションを設定します。
 keywords: モバイル
-seo-description: タイプ（フルスクリーン、アラートまたは通知）および表示、テキストおよびボタンオプションを含む、アプリ内メッセージのエクスペリエンスオプションを設定します。
-seo-title: エクスペリエンス：アプリ内メッセージ
 solution: Experience Cloud,Analytics
 title: エクスペリエンス：アプリ内メッセージ
 topic-fix: Metrics
 uuid: 4c6d6756-47fb-4f1b-8338-0b0c9b0fceb0
 exl-id: eeb1527d-c546-4951-9947-db810fdb8eee
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '687'
+source-wordcount: '665'
 ht-degree: 100%
 
 ---

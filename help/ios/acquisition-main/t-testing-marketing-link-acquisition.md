@@ -1,17 +1,14 @@
 ---
 description: デバイスのフィンガープリントに基づくマーケティングリンクを使用した獲得キャンペーンのラウンドトリップに役立つ情報です。
 keywords: Android, ライブラリ, モバイル, SDK
-seo-description: デバイスのフィンガープリントに基づくマーケティングリンクを使用した獲得キャンペーンのラウンドトリップに役立つ情報です。
-seo-title: マーケティングリンクによる獲得のテスト
 solution: Experience Cloud,Analytics
 title: マーケティングリンクによる獲得のテスト
 topic-fix: Developer and implementation
 uuid: 69503e01-182d-44c6-b0fb-e1c012ffa3bd
 exl-id: 2fb02b36-172e-4c16-9ef9-13f8288ab8a4
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '566'
+source-wordcount: '542'
 ht-degree: 100%
 
 ---

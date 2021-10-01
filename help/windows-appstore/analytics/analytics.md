@@ -1,56 +1,51 @@
 ---
-description: プロジェクトにライブラリを追加した後、アプリ内の任意の場所でAnalyticsメソッドの呼び出しを行うことができます。
+description: プロジェクトにライブラリを追加した後、アプリケーションの任意の場所で任意の Analytics メソッドを呼び出すことができます。
 solution: Experience Cloud,Analytics
 title: Analytics
 topic-fix: Developer and implementation
 uuid: fa0ef6c4-c04d-4695-9eb4-ada4e9920e6c
 exl-id: 1a7b32b8-731d-4ae3-9feb-dafbb7495590
-translation-type: tm+mt
-source-git-commit: b9ee49ba26d4726b1f97ef36f5c2e9923361b1ee
+source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
 workflow-type: tm+mt
-source-wordcount: '961'
-ht-degree: 20%
+source-wordcount: '952'
+ht-degree: 18%
 
 ---
 
 # Analytics {#analytics}
 
-プロジェクトにライブラリを追加した後、アプリ内の任意の場所でAnalyticsメソッドの呼び出しを行うことができます。
+プロジェクトにライブラリを追加した後、アプリケーションの任意の場所で任意の Analytics メソッドを呼び出すことができます。
 
 >[!TIP]
 >
->`ADBMobile.h`をクラスにインポートしてください。
+>必ず `ADBMobile.h` をクラスに読み込んでください。
 
-## Analyticsでのモバイルアプリケーションレポートの有効化{#section_F2F9234009184F20BA36B5CDE872B424}
+## Analytics でのモバイルアプリレポートの有効化 {#section_F2F9234009184F20BA36B5CDE872B424}
 
-コードを追加する前に、Analytics管理者に次の情報を入力して、モバイルアプリのライフサイクル追跡を有効にしてもらいます。 これにより、開発を開始する際に、レポートスイートで指標を取り込む準備が整います。
+コードを追加する前に、Analytics 管理者に次の手順を完了させて、モバイルアプリのライフサイクル追跡を有効にしてもらいます。 これにより、開発を開始する際に、レポートスイートで指標をキャプチャする準備が整います。
 
-1. **[!UICONTROL 管理ツール]**/**[!UICONTROL レポートスイート]**&#x200B;を開き、モバイルレポートスイートを選択します。
-1. **[!UICONTROL 設定を編集]**/**[!UICONTROL モバイルレポート]**/**[!UICONTROL モバイルアプリケーション管理]**&#x200B;をクリックします。
+1. **[!UICONTROL 管理ツール]** / **[!UICONTROL レポートスイート]** を開き、モバイルレポートスイートを選択します。
+1. **[!UICONTROL 設定を編集]** / **[!UICONTROL モバイル管理]** / **[!UICONTROL モバイルアプリケーションレポート]** をクリックします。
 
-   ![](assets/mobile-settings.png)
+   ![モバイル設定](assets/mobile-settings.png)
 
 1. 「**[!UICONTROL 最新のアプリレポートを有効にする]**」をクリックします。
 
-   必要に応じて、「**[!UICONTROL モバイルロケーション追跡を有効にする]**」および「**[!UICONTROL バックグラウンドヒットに対する従来のレポートとアトリビューションを有効にする]**」をクリックすることもできます。
+   必要に応じて、「**[!UICONTROL モバイルロケーションの追跡を有効にする]**」および「**[!UICONTROL バックグラウンドヒットの従来のレポートと属性を有効にする]**」をクリックすることもできます。
 
-   ![](assets/enable-lifecycle.png)
+   ![ライフサイクルの有効化](assets/enable-lifecycle.png)
 
-これで、ライフサイクル指標を取り込む準備が整い、モバイルアプリケーションレポートがマーケティングレポートインターフェイスの&#x200B;**[!UICONTROL レポート]**&#x200B;メニューに表示されます。
-
+これで、ライフサイクル指標を取り込む準備が整い、モバイルアプリケーションレポートがマーケティングレポートインターフェイスの **[!UICONTROL レポート]** メニューに表示されます。
 
 ### 新しいバージョン
 
-定期的に、モバイルアプリケーションレポートの新しいバージョンがリリースされます。 新しいバージョンはレポートスイートに自動的に適用されないので、これらの手順を繰り返してアップグレードを実行する必要があります。 アプリに新しいExperience Cloud機能を追加するたびに、これらの手順を繰り返して最新の設定にすることをお勧めします。
-
+定期的に、新しいバージョンのモバイルアプリケーションレポートがリリースされています。 新しいバージョンはレポートスイートに自動的に適用されないので、アップグレードを実行するには、これらの手順を繰り返す必要があります。 アプリに新しいExperience Cloud機能を追加するたびに、これらの手順を繰り返して最新の設定を使用することをお勧めします。
 
 ## ライフサイクル指標 {#section_532702562A7A43809407C9A2CBA80E1E}
 
-アプリ内のライフサイクル指標を収集するには、次の例に示すように、アプリがアクティブ化されたときのコールを追加します。
+アプリでライフサイクル指標を収集するには、次の例に示すように、アプリケーションがアクティブ化されたときにへの呼び出しを追加します。
 
-
-### default.jsのWinJS
-
+### default.js の WinJS
 
 ```js
 app.onactivated = function (args) { 
@@ -65,7 +60,7 @@ app.oncheckpoint = function (args) {
 }
 ```
 
-### App.xaml.csのC#
+### App.xaml.cs の C#
 
 ```js
 public App() 
@@ -94,7 +89,7 @@ private void OnSuspending(object sender, SuspendingEventArgs e)
 }
 ```
 
-### App.xaml.cpp内のC/CX
+### App.xaml.cpp 内の C/CX
 
 ```js
 App::App() 
@@ -123,13 +118,11 @@ void App::OnLaunched(Windows::ApplicationModel::Activation::LaunchActivatedEvent
 }
 ```
 
-同じセッションで`CollectLifecycleData()`が2回呼び出された場合、最初の呼び出しの後に毎回クラッシュが報告されます。 SDKは、アプリケーションがシャットダウンされたときに、終了が成功したことを示すフラグを設定します。 このフラグが設定されていない場合、`CollectLifecyleData()`はクラッシュを報告します。
+`CollectLifecycleData()` が同じセッションで 2 回呼び出された場合、最初の呼び出しの後、アプリケーションは呼び出しごとにクラッシュを報告します。 アプリケーションがシャットダウンされると、SDK は終了が成功したことを示すフラグを設定します。 このフラグが設定されていない場合、`CollectLifecyleData()` はクラッシュを報告します。
 
+## event、prop、eVar  {#section_76EA6F5611184C5CAE6E62956D84D7B6}
 
-## event、prop、eVar {#section_76EA6F5611184C5CAE6E62956D84D7B6}
-
-
-[ADBMobileクラスとメソッドリファレンス](/help/windows-appstore/c-configuration/methods.md)を見たことがある場合、イベント、eVar、prop、ヒーラー、リストの設定場所を考えているでしょう。 バージョン4では、これらのタイプの変数を直接アプリで割り当てることはできなくなりました。 代わりに、SDK は、コンテキストデータと処理ルールを使用して、レポート用にアプリデータを Analytics 変数へとマッピングします。
+[ADBMobile クラスとメソッドのリファレンス ](/help/windows-appstore/c-configuration/methods.md) を見てみると、イベント、eVar、prop、heir、リストを設定する場所がわかるでしょう。 バージョン 4 では、これらのタイプの変数を直接アプリに割り当てることができなくなりました。 代わりに、SDK は、コンテキストデータと処理ルールを使用して、レポート用にアプリデータを Analytics 変数へとマッピングします。
 
 処理ルールには、次のようないくつかの利点があります。
 
@@ -137,20 +130,17 @@ void App::OnLaunched(Windows::ApplicationModel::Activation::LaunchActivatedEvent
 * データには、レポートスイートに固有の変数を設定する代わりに、意味のある名前を付けることができます。
 * 追加のデータを送信しても、影響はほとんどありません。これらの値は、処理ルールを使用してマッピングされるまで、レポートに表示されません。
 
-変数に直接割り当てた値は、代わりにコンテキストデータに追加する必要があります。
-
+変数に直接割り当てていた値は、代わりにコンテキストデータに追加する必要があります。
 
 ## 処理ルール {#section_66EE762EEA5E4728864166201617DEBF}
 
-処理ルールは、コンテキストデータ変数で送信するデータをeVar、propおよびその他の変数にコピーしてレポートするために使用します。
+処理ルールは、コンテキストデータ変数で送信したデータを、レポート用に eVar、prop およびその他の変数にコピーするために使用します。
 
 [処理ルールトレーニング](https://tv.adobe.com/embed/1181/16506/) @ Summit 2013
 
-[処理ルールの概要](https://docs.adobe.com/content/help/ja-JP/analytics/admin/admin-tools/processing-rules/processing-rules.html)
+[処理ルールの概要](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html)
 
-[処理ルールを使用するための承認の取得](https://helpx.adobe.com/analytics/kb/processing-rules-authorization.html)
-
-論理的な順序を維持するのに役立つため、コンテキストデータ変数を「名前空間」を使用してグループ化することをお勧めします。 例えば、製品に関する情報を収集する場合、次の変数を定義できます。
+論理的な順序を維持するのに役立つので、「名前空間」を使用してコンテキストデータ変数をグループ化することをお勧めします。 例えば、製品に関する情報を収集する場合、次の変数を定義できます。
 
 ```js
 "product.type":"hat" 
@@ -158,15 +148,15 @@ void App::OnLaunched(Windows::ApplicationModel::Activation::LaunchActivatedEvent
 "product.color":"blue"
 ```
 
-コンテキストデータ変数は、処理ルールインターフェイスではアルファベット順に並べ替えられるので、名前空間を使用すると、同じ名前空間内の変数をすばやく確認できます。
+コンテキストデータ変数は、処理ルールインターフェイスでアルファベット順に並べ替えられるので、名前空間を使用すると、同じ名前空間にある変数をすばやく確認できます。
 
-また、evarまたはprop番号を使用してコンテキストデータキーに名前を付ける方もいらっしゃいます。
+また、eVarや prop 番号を使用してコンテキストデータキーに名前を付ける方もいると聞きました。
 
 ```js
 "eVar1":"jimbo"
 ```
 
-これにより、処理ルールで1回のみマッピングを実行する場合に&#x200B;*少し*&#x200B;簡単になりますが、デバッグ中は読みやすさが低下し、今後のコードの更新はより難しくなる可能性があります。 代わりに、キーと値にはわかりやすい名前を使用することを強くお勧めします。
+これにより、処理ルールで 1 回限りのマッピングを実行すると *少し* の方が簡単になりますが、コードが読みにくくなるので、デバッグや将来のコード更新が困難になる可能性があります。 代わりに、キーと値にはわかりやすい名前を使用することを強くお勧めします。
 
 ```js
 "username":"jimbo"
@@ -178,7 +168,7 @@ void App::OnLaunched(Windows::ApplicationModel::Activation::LaunchActivatedEvent
 "logon":"1"
 ```
 
-増分イベントを定義するコンテキストデータ変数には、次の値を指定できます。
+増分イベントを定義するコンテキストデータ変数には、増分する値を設定できます。
 
 ```js
 "levels completed":"6"
@@ -186,31 +176,31 @@ void App::OnLaunched(Windows::ApplicationModel::Activation::LaunchActivatedEvent
 
 >[!NOTE]
 >
->アドビは名前空間「`a.`」を予約します。この小さな制限に加えて、コンテキストデータ変数は、競合を回避するために、ログイン会社内で一意である必要があります。
+>アドビは名前空間「`a.`」を予約します。この小さな制限に加え、コンテキストデータ変数は、衝突を回避するために、ログイン会社内で一意である必要があります。
 
 ## products 変数 {#section_AFBA36F3718C44D29AF81B9E1056A1B4}
 
-モバイルSDKで&#x200B;*`products`*&#x200B;を設定するには、特別な構文を使用する必要があります。 [製品変数](/help/windows-appstore/analytics/products/products.md)を参照してください。
+モバイル SDK で *`products`* を設定するには、特殊な構文を使用する必要があります。 [products 変数 ](/help/windows-appstore/analytics/products/products.md) を参照してください。
 
-## （オプション）オフライン追跡を有効にする{#section_955B2A03EB854742BDFC4A0A3C287009}
+## （オプション）オフライン追跡を有効にする {#section_955B2A03EB854742BDFC4A0A3C287009}
 
-デバイスがオフラインの場合にヒットを保存するには、[ADBMobileConfig.json config](/help/windows-appstore/c-configuration/methods.md)でオフライン追跡を有効にします。 オフライン追跡を有効にする前に、設定ファイルのリファレンスに記載されているタイムスタンプの要件に注意してください。
+デバイスがオフラインの場合にヒットを保存するには、[ADBMobileConfig.json config](/help/windows-appstore/c-configuration/methods.md) でオフライン追跡を有効にします。 オフライン追跡を有効にする前に、設定ファイルのリファレンスで説明されているタイムスタンプ要件に注意してください。
 
 ## 位置情報と目標地点 {#section_BAD34A8DD013454DB355121316BD7FD4}
 
-地域 — 位置情報を使用すると、位置データ（緯度/経度）と事前に定義された目標地点を測定できます。 `TrackLocation`の呼び出しごとに、次を送信します。
+位置情報を使用すると、位置データ（緯度/経度）および事前に定義された目標地点を測定できます。 `TrackLocation` 呼び出しごとに、次の情報が送信されます。
 
-* 緯度/経度、POI（`ADBMobileConfig.json`設定ファイルで定義されているPOI内の場合） これらは、自動レポートのためにモバイルソリューション変数に渡されます。
-* 中心からの距離と、コンテキストデータとして渡される精度。 処理ルールを使用したキャプチャ。
+* 緯度/経度および POI（`ADBMobileConfig.json` 設定ファイルで定義された POI 内の場合）。 これらは、自動レポート用にモバイルソリューション変数に渡されます。
+* 中心からの距離と精度がコンテキストデータとして渡されます。 処理ルールを使用してキャプチャします。
 
-場所を追跡するには：
+位置を追跡するには：
 
 ```js
 var ADB = ADBMobile; 
 ADB.Analytics.trackLocation(37.75345, -122.33207, null);
 ```
 
-次のPOIが`ADBMobileConfig.json` configファイルで定義されている場合：
+`ADBMobileConfig.json` 設定ファイルで次の POI が定義されている場合：
 
 ```js
 "poi" : [ 
@@ -218,9 +208,9 @@ ADB.Analytics.trackLocation(37.75345, -122.33207, null);
         ]
 ```
 
-デバイスの位置が定義された点の半径7000メートル以内であると判断された場合、`TrackLocation`ヒットと共に、値&quot;San Francisco&quot;の`a.loc.poi`コンテキストデータ変数が送信されます。 `a.loc.dist`コンテキスト変数は、定義された座標からの距離（メートル単位）と共に送信されます。
+デバイスの位置が定義した点から 7000 メートルの半径内にあると判断された場合、値が「San Francisco」の `a.loc.poi` コンテキストデータ変数が `TrackLocation` ヒットと共に送信されます。 `a.loc.dist` コンテキスト変数が、定義された座標からの距離（メートル単位）と共に送信されます。
 
-## ライフタイム値{#section_D2C6971545BA4D639FBE07F13EF08895}
+## ライフタイム値 {#section_D2C6971545BA4D639FBE07F13EF08895}
 
 ライフタイム値を使用して、各ユーザーのライフタイム値を測定し、ターゲットを設定できます。`TrackLifetimeValueIncrease` で値を送信するたびに、その値が既存の値に追加されます。ライフタイム値はデバイス上に保存され、`GetLifetimeValue` を呼び出していつでも取得することができます。この値を使用して、全期間の購入、広告ビュー、ビデオ完了、ソーシャル共有、写真のアップロードなどを保存できます。
 
@@ -237,7 +227,7 @@ ADB.Analytics.trackLifetimeValueIncrease(purchasePrice, cdata);
 
 ## 時間計測アクション {#section_7FF8B6A913A0460EAA4CAE835E32D8C1}
 
-時間計測アクションを使用すると、アプリ内時間と、開始からアクションの終了までの合計時間を計測できます。 SDKは、セッションの時間と、アクションが完了するまでに要する合計時間（セッション間）を計算します。 これは、購入、パスレベル、チェックアウトフローなどに合わせて比較するセグメントを定義するために使用できます。
+時間計測アクションを使用すると、アクションの開始から終了までのアプリ内時間と合計時間を測定できます。 SDK は、セッションの時間と、アクションが完了するまでにかかる合計時間（セッション間）を計算します。 これを使用して、購入までの時間、パスレベル、チェックアウトフローなどを比較するセグメントを定義できます。
 
 * 開始から終了までのアプリ内の合計秒数 - クロスセッション
 * 開始から終了までの合計秒数（時刻）

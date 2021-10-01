@@ -1,17 +1,14 @@
 ---
 description: マーケターは、アプリをプロモーションし、アクセスを促進するトラッキングリンクを作成できます。これらのトラッキングリンクは、アプリストア、アプリ内ディープリンクおよびインタースティシャルにユーザーを導くことができ、アプリ内の行動に関連付けることができます。マーケターは、ユーザーを iOS、Android またはその他のプラットフォームに適宜ルーティングする 1 つのリンクを作成できます。
 keywords: モバイル
-seo-description: マーケターは、アプリをプロモーションし、アクセスを促進するトラッキングリンクを作成できます。これらのトラッキングリンクは、アプリストア、アプリ内ディープリンクおよびインタースティシャルにユーザーを導くことができ、アプリ内の行動に関連付けることができます。マーケターは、ユーザーを iOS、Android またはその他のプラットフォームに適宜ルーティングする 1 つのリンクを作成できます。
-seo-title: 獲得
 solution: Experience Cloud,Analytics
 title: 獲得
 topic-fix: Metrics
 uuid: 987146e4-2cca-46e7-88aa-74b62d9f1dc5
 exl-id: ed0842a8-e3cb-4c5a-b001-c0ea3ca69583
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '500'
+source-wordcount: '448'
 ht-degree: 100%
 
 ---

@@ -1,35 +1,32 @@
 ---
-description: Windows 8.1ユニバーサルアプリストアライブラリが提供するAudience Managerメソッドのリスト。
-seo-description: Windows 8.1ユニバーサルアプリストアライブラリが提供するAudience Managerメソッドのリスト。
-seo-title: Audience Manager メソッド
+description: Windows 8.1 ユニバーサルアプリストアライブラリが提供するAudience Managerメソッドの一覧です。
 solution: Experience Cloud,Analytics
 title: Audience Manager メソッド
 topic-fix: Developer and implementation
 uuid: e39c9c3e-fd53-4b46-8fff-88101a064a9c
 exl-id: b10d7274-0fc6-4822-a40b-1192b71592b9
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '280'
-ht-degree: 45%
+source-wordcount: '264'
+ht-degree: 46%
 
 ---
 
 # Audience Manager メソッド {#audience-manager-methods}
 
-Windows 8.1ユニバーサルアプリストアライブラリが提供するAudience Managerメソッドのリスト。
+Windows 8.1 ユニバーサルアプリストアライブラリが提供するAudience Managerメソッドの一覧です。
 
-SDKは、現在、Analytics、ターゲット、Audience Managerを含む複数のAdobe Experience Cloudソリューションをサポートしています。 メソッドには、ソリューションに応じたプレフィックスが付きます。Audience Managerメソッドの先頭には「AudienceManager」が付きます。
+SDK は現在、Analytics、Target、Audience Managerを含む複数のAdobe Experience Cloudソリューションをサポートしています。 メソッドには、ソリューションに応じたプレフィックスが付きます。Audience Managerメソッドの場合、プレフィックスは「AudienceManager」です。
 
 >[!NOTE]
 >
->winJS (JavaScript)からwinmdメソッドを使用する場合、すべてのメソッドの最初の文字が自動的に小文字に変換されます。
+>winJS(JavaScript) から winmd メソッドを使用する場合、すべてのメソッドの最初の文字が自動的に小文字に変換されます。
 
-オーディエンスマネージャーがJSONファイル内に設定されている場合は、ライフサイクルヒットと共に、ライフサイクル指標を含むシグナルが送信されます。
+JSON ファイル内で Audience Manager が設定されている場合は、ライフサイクル指標を含むシグナルがライフサイクルヒットと共に送信されます。
 
 * **GetVisitorProfile (winJS:getVisitorProfile)**
 
-   取得された最も直近の訪問者プロファイルを返します。まだシグナルが送信されていない場合は`null`を返します。 訪問者プロファイルは`SharedPreferences`に保存され、複数回の起動で簡単にアクセスできます。
+   取得された最も直近の訪問者プロファイルを返します。まだシグナルが送信されていない場合は `null` を返します。 訪問者プロファイルは、複数回起動しても簡単にアクセスできるように、`SharedPreferences` に保存されます。
 
    * このメソッドの構文を次に示します。
 
@@ -97,7 +94,7 @@ SDKは、現在、Analytics、ターゲット、Audience Managerを含む複数�
 
 * **SignalWithData (winJS:signalWithData)**
 
-   特性を持つシグナルをAudience Managerに送信し、ブロックコールバックで返された一致するセグメントを取得します。
+   Audience Managerに特性を含むシグナルを送信し、ブロックコールバックで返された一致するセグメントを取得します。
 
    * このメソッドの構文を次に示します。
 

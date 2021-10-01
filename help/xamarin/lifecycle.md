@@ -1,37 +1,34 @@
 ---
-description: Android用のライフサイクル指標を実装するのに役立つ情報です。 ライフサイクル指標はiOS用に自動的に収集されます。
+description: Android 用のライフサイクル指標の実装に役立つ情報です。 ライフサイクル指標は iOS 用に自動的に収集されます。
 keywords: Xamarin
-seo-description: Android用のライフサイクル指標を実装するのに役立つ情報です。 ライフサイクル指標はiOS用に自動的に収集されます。
-seo-title: ライフサイクルの実装
 solution: Experience Cloud
 title: ライフサイクルの実装
 uuid: 6dccc12e-8b57-4231-9c74-d47bc0ac93ba
-translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+exl-id: c76e63d1-48a5-4831-85d5-f3d3e9798a43
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '102'
+source-wordcount: '85'
 ht-degree: 7%
 
 ---
 
-
 # ライフサイクルの実装 {#implement-lifecycle}
 
-この情報は、Android向けのライフサイクル指標の導入に役立ちます。
+この情報は、Android 用のライフサイクル指標の実装に役立ちます。
 
 >[!TIP]
 >
->ライフサイクル指標はiOS用に自動的に収集されます。
+>ライフサイクル指標は iOS 用に自動的に収集されます。
 
-ライフサイクルが実装された後、モバイルライブラリによって自動的に測定される指標とディメンションについては、 [ライフサイクル指標](/help/ios/metrics.md)（英語）を参照してください。
+ライフサイクルを実装した後、モバイルライブラリで自動的に測定できる指標とディメンションについては、[ ライフサイクル指標 ](/help/ios/metrics.md) を参照してください。
 
 ## iOS
 
-iOSでは、ライフサイクル指標が自動的に収集されます。
+iOS では、ライフサイクル指標が自動的に収集されます。
 
 ## Android
 
-メインアクティビティで、Android SDKのアプリケーションコンテキストを設定します。
+メインアクティビティで、Android SDK のアプリケーションコンテキストを設定します。
 
 ```java
 protected override void OnCreate (Bundle bundle) 

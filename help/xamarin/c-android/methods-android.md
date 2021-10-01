@@ -1,29 +1,26 @@
 ---
-description: Experience Cloudソリューション4.x SDK用のXamarinコンポーネントのAndroidメソッド。
+description: Experience Cloudソリューション 4.x SDK 用 Xamarin コンポーネントの Android メソッド。
 keywords: Xamarin
-seo-description: Experience Cloudソリューション4.x SDK用のXamarinコンポーネントのAndroidメソッド。
-seo-title: Android メソッド
 solution: Experience Cloud
 title: Android メソッド
 uuid: 860af1c4-f57e-4bcb-8308-4e316da9a27b
-translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+exl-id: 0de1fa11-37e9-49be-8d42-a13cb4a3f0e3
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '1767'
-ht-degree: 67%
+source-wordcount: '1755'
+ht-degree: 68%
 
 ---
 
-
 # Android メソッド{#android-methods}
 
-Experience Cloudソリューション4.x SDK用のXamarinコンポーネントのAndroidメソッド。
+Experience Cloudソリューション 4.x SDK 用 Xamarin コンポーネントの Android メソッド。
 
 ## 設定メソッド {#section_405AA09390E346E5BB7B1F4E0F65F51E}
 
 * **DebugLogging**
 
-   現在のデバッグログの環境設定を返し、デフォルトはfalseです。
+   現在のデバッグログの環境設定を返し、デフォルトは false です。
 
    * このメソッドの構文を次に示します。
 
@@ -61,7 +58,7 @@ Experience Cloudソリューション4.x SDK用のXamarinコンポーネント�
    * `ADBMobilePrivacyStatus.OptOut`：ヒットは破棄されます。
    * `ADBMobilePrivacyStatus.Unknown`：オフライン追跡が有効になっている場合、プライバシーステータスがオプトイン（ヒットが送信される）またはオプトアウト（ヒットが破棄される）に変更されるまで、ヒットは保存されます。オフライン追跡が有効になっていない場合、プライバシーステータスがオプトインに変更されるまで、ヒットは破棄されます。
 
-   The default value is set in the [ADBMobileConfig.json](/help/android/configuration/json-config/json-config.md) file.
+   デフォルト値は [ADBMobileConfig.json](/help/android/configuration/json-config/json-config.md) ファイルに設定されます。
 
    * このメソッドの構文を次に示します。
 
@@ -79,7 +76,7 @@ Experience Cloudソリューション4.x SDK用のXamarinコンポーネント�
 
 * **UserIdentifier**
 
-   カスタム識別子が設定されている場合、この識別子を返します。 カスタム識別子が設定されていない場合は、nullを返します。 デフォルト値は `null` です。
+   カスタム識別子が設定されている場合は、この識別子を返します。 カスタム識別子が設定されていない場合は、null を返します。 デフォルト値は `null` です。
 
    * このメソッドの構文を次に示します。
 
@@ -112,7 +109,7 @@ Experience Cloudソリューション4.x SDK用のXamarinコンポーネント�
 
 * **PauseCollectingLifecycleData**
 
-   ライフサイクル指標が正しく計算されるように、アプリが一時停止されたことを SDK に通知します。例えば、一時停止中にタイムスタンプを収集して、以前のセッションの長さを判断します。 また、これは、アプリがクラッシュしなかったことをライフサイクルが正しく認識できるようにフラグを設定します。 詳しくは、「[ライフサイクル指標](/help/android/metrics.md)」を参照してください。
+   ライフサイクル指標が正しく計算されるように、アプリが一時停止されたことを SDK に通知します。例えば、一時停止時に、タイムスタンプを収集して、以前のセッションの長さを決定します。 また、これは、アプリがクラッシュしなかったことをライフサイクルが正しく認識できるようにフラグを設定します。 詳しくは、「[ライフサイクル指標](/help/android/metrics.md)」を参照してください。
 
    * このメソッドの構文を次に示します。
 
@@ -126,9 +123,9 @@ Experience Cloudソリューション4.x SDK用のXamarinコンポーネント�
       Config.PauseCollectingLifecycleData();
       ```
 
-* **CollectLifecycleData(アクティビティアクティビティ)**
+* **CollectLifecycleData (Activity activity)**
 
-   （4.2以降）SDKのすべてのソリューションで使用するために、ライフサイクルデータが収集される必要があるSDKを示します。 詳しくは、「[ライフサイクル指標](/help/android/metrics.md)」を参照してください。
+   （4.2 以降）SDK のすべてのソリューションで使用するために、ライフサイクルデータを収集する必要があることを SDK に通知します。 詳しくは、「[ライフサイクル指標](/help/android/metrics.md)」を参照してください。
 
    * このメソッドの構文を次に示します。
 
@@ -142,9 +139,9 @@ Experience Cloudソリューション4.x SDK用のXamarinコンポーネント�
       Config.CollectLifecycleData (this);
       ```
 
-* **CollectLifecycleData(アクティビティアクティビティ)**
+* **CollectLifecycleData (Activity activity)**
 
-   （4.2以降）SDKのすべてのソリューションで使用するために、ライフサイクルデータが収集される必要があるSDKを示します。 詳しくは、「[ライフサイクル指標](/help/android/metrics.md)」を参照してください。
+   （4.2 以降）SDK のすべてのソリューションで使用するために、ライフサイクルデータを収集する必要があることを SDK に通知します。 詳しくは、「[ライフサイクル指標](/help/android/metrics.md)」を参照してください。
 
    * このメソッドの構文を次に示します。
 
@@ -163,7 +160,7 @@ Experience Cloudソリューション4.x SDK用のXamarinコンポーネント�
 
 * **OverrideConfigStream**
 
-   (4.2 or later) Lets you load a different `ADBMobile JSON` config file when the application starts. アプリケーションが閉じられるまで、この設定が使用されます。
+   （4.2 以降）アプリケーションの起動時に、別の `ADBMobile JSON` 設定ファイルを読み込むことができます。 アプリケーションが閉じられるまで、この設定が使用されます。
 
    * このメソッドの構文を次に示します。
 
@@ -180,7 +177,7 @@ Experience Cloudソリューション4.x SDK用のXamarinコンポーネント�
 
 * **SetLargeIconResourceId(int resourceId)**
 
-   （4.2以降）SDKで作成される通知に使用する大きいアイコンを設定します。 このアイコンは、ユーザーが通知センターで完全な通知を表示する際に表示されるプライマリ画像です。
+   （4.2 以降）SDK で作成される通知に使用する大きいアイコンを設定します。 このアイコンは、ユーザーが通知センターで完全な通知を表示する際に表示されるプライマリ画像です。
 
    * このメソッドの構文を次に示します。
 
@@ -196,7 +193,7 @@ Experience Cloudソリューション4.x SDK用のXamarinコンポーネント�
 
 * **SetSmallIconResourceId(int resourceId)**
 
-   （4.2以降）SDKで作成される通知に使用する小さいアイコンを設定します。 このアイコンは、ステータスバーに表示され、ユーザーが通知センターで通知を完了したときに表示されるセカンダリイメージです。
+   （4.2 以降）SDK で作成される通知に使用する小さいアイコンを設定します。 このアイコンはステータスバーに表示され、ユーザーが通知センターで完全な通知を表示する際に表示されるセカンダリ画像です。
 
    * このメソッドの構文を次に示します。
 
@@ -214,7 +211,7 @@ Experience Cloudソリューション4.x SDK用のXamarinコンポーネント�
 
 * **TrackingIdentifier**
 
-   Analytics用に自動的に生成されたIDを返します。 これは、初回起動時に生成され、その時点から保存されて使用される、アプリ固有の一意のIDです。 このIDは、アプリのアップグレード後も保持され、アンインストール時に削除されます。
+   Analytics 用に自動的に生成された ID を返します。 これは、初回起動時に生成され、その時点から保存および使用される、アプリ固有の一意の ID です。 この ID は、アプリをアップグレードしても保持され、アンインストール時に削除されます。
 
    * このメソッドの構文を次に示します。
 
@@ -230,7 +227,7 @@ Experience Cloudソリューション4.x SDK用のXamarinコンポーネント�
 
 * **TrackState**
 
-   オプションのコンテキストデータを使用してアプリの状態を追跡します。`States` は、「title screen」、「level 1」、「pause」など、アプリで使用できる表示です。 これらの状態は Web サイト上のページによく似ており、`TrackState` コールにより、ページビュー数が増分されます。状態が空の場合、レポートに「app name app version (build)」と表示されます。 If you see this value in reports, make sure you are setting state in each `TrackState` call.
+   オプションのコンテキストデータを使用してアプリの状態を追跡します。`States` は、「タイトル画面」、「レベル 1」、「一時停止」など、アプリで使用可能なビューです。これらの状態は Web サイト上のページによく似ており、`TrackState` コールにより、ページビュー数が増分されます。state が空の場合、レポートに「app name app version (build)」と表示されます。 レポートにこの値が表示される場合は、各 `TrackState` 呼び出しで状態を設定していることを確認してください。
 
    >[!TIP]
    >
@@ -253,7 +250,7 @@ Experience Cloudソリューション4.x SDK用のXamarinコンポーネント�
 
 * **TrackAction**
 
-   アプリのアクションを追跡します。アクションとは、アプリ内で測定したい、「deaths」、「level gained」、「feed購読」などの指標です。
+   アプリのアクションを追跡します。アクションとは、アプリ内で測定に価する重要な操作のことで、「deaths」、「level gained」、「feed subscriptions」などの指標があります。
 
    >[!TIP]
    >
@@ -277,7 +274,7 @@ Experience Cloudソリューション4.x SDK用のXamarinコンポーネント�
 
 * **TrackLocation**
 
-   現在地点の緯度と経度の座標を送信します。Also uses points of interest defined in the `ADBMobileConfig.json` file to determine whether the location that was provided as a parameter is in any of your POIs. 現在の座標が定義した目標地点内にある場合、コンテキストデータ変数に代入され、`TrackLocation` コールで送信されます。
+   現在地点の緯度と経度の座標を送信します。また、現在位置が `ADBMobileConfig.json` ファイルで定義された目標地点内にあるかどうかを判定します。 現在の座標が定義した目標地点内にある場合、コンテキストデータ変数に代入され、`TrackLocation` コールで送信されます。
 
    * このメソッドの構文を次に示します。
 
@@ -460,7 +457,7 @@ Experience Cloudソリューション4.x SDK用のXamarinコンポーネント�
 
 * **QueueSize**
 
-   現在オフラインキューにあるヒットの数を取得します。
+   現在オフラインキュー内にあるヒットの数を取得します。
 
    * このメソッドの構文を次に示します。
 
@@ -474,7 +471,7 @@ Experience Cloudソリューション4.x SDK用のXamarinコンポーネント�
       var queueSize = Analytics.QueueSize();
       ```
 
-## Experience Cloud ID methods {#section_157919E46030443DBB5CED60D656AD9F}
+## Experience CloudID メソッド {#section_157919E46030443DBB5CED60D656AD9F}
 
 * **MarketingCloudId**
 
@@ -494,7 +491,7 @@ Experience Cloudソリューション4.x SDK用のXamarinコンポーネント�
 
 * **SyncIdentifiers**
 
-   Experience CloudIDを使用して、各訪問者に関連付ける追加の顧客IDを設定できます。 訪問者 API は、同じ訪問者に対して複数の顧客 ID と、異なる顧客 ID の範囲を区別するための顧客タイプ識別子を受け取ります。このメソッドは、JavaScript ライブラリの `setCustomerIDs` に相当します。
+   Experience CloudID を使用して、各訪問者に関連付ける追加の顧客 ID を設定できます。 訪問者 API は、同じ訪問者に対して複数の顧客 ID と、異なる顧客 ID の範囲を区別するための顧客タイプ識別子を受け取ります。このメソッドは、JavaScript ライブラリの `setCustomerIDs` に相当します。
 
    * このメソッドの構文を次に示します。
 
@@ -514,7 +511,7 @@ Experience Cloudソリューション4.x SDK用のXamarinコンポーネント�
 
 * **LoadRequest**
 
-   Sends a request to your configured Target server and returns the string value of the offer generated in a `Action<NSDictionary>` callback.
+   設定した Target サーバーにリクエストを送信し、`Action<NSDictionary>` コールバックで生成されたオファーの文字列値を返します。
 
    * このメソッドの構文を次に示します。
 
@@ -537,7 +534,7 @@ Experience Cloudソリューション4.x SDK用のXamarinコンポーネント�
 
 * **CreateRequest**
 
-   Convenience constructor to create an `ADBTargetLocationRequest` object with the given parameters.
+   指定したパラメーターを持つ `ADBTargetLocationRequest` オブジェクトを作成する便利なコンストラクター。
 
    * このメソッドの構文を次に示します。
 
@@ -571,7 +568,7 @@ Experience Cloudソリューション4.x SDK用のXamarinコンポーネント�
 
 * **ClearCookies**
 
-   アプリからターゲットのcookieをクリアします。
+   アプリから Target の Cookie をクリアします。
 
    * このメソッドの構文を次に示します。
 
@@ -589,7 +586,7 @@ Experience Cloudソリューション4.x SDK用のXamarinコンポーネント�
 
 * **VisitorProfile**
 
-   取得された最も直近の訪問者プロファイルを返します。まだシグナルが送信されていない場合はnilを返します。 訪問者プロファイルは、次回以降のアプリ起動時も簡単にアクセスできるように、`NSUserDefaults` に保存されます。
+   取得された最も直近の訪問者プロファイルを返します。まだシグナルが送信されていない場合は、nil を返します。 訪問者プロファイルは、次回以降のアプリ起動時も簡単にアクセスできるように、`NSUserDefaults` に保存されます。
 
    * このメソッドの構文を次に示します。
 
@@ -605,7 +602,7 @@ Experience Cloudソリューション4.x SDK用のXamarinコンポーネント�
 
 * **Dpid**
 
-   Returns the current `DPID`.
+   現在の `DPID` を返します。
 
    * このメソッドの構文を次に示します。
 
@@ -621,7 +618,7 @@ Experience Cloudソリューション4.x SDK用のXamarinコンポーネント�
 
 * **Dpuuid**
 
-   Returns the current `DPUUID`.
+   現在の `DPUUID` を返します。
 
    * このメソッドの構文を次に示します。
 
@@ -637,7 +634,7 @@ Experience Cloudソリューション4.x SDK用のXamarinコンポーネント�
 
 * **AudienceSetDpidAndDpuuid**
 
-   とを設定 `dpid` し `dpuuid`ます。 とが設定され `dpid``dpuuid` ている場合、各シグナルと共に送信されます。
+   `dpid` と `dpuuid` を設定します。 `dpid` と `dpuuid` が設定されている場合は、各シグナルと共に送信されます。
 
    * このメソッドの構文を次に示します。
 
@@ -653,7 +650,7 @@ Experience Cloudソリューション4.x SDK用のXamarinコンポーネント�
 
 * **SignalWithData**
 
-   Sends audience management a signal with traits and get the matching segments returned in a `Action<NSDictionary>` callback.
+   特性を持つシグナルを Audience Management に送信し、`Action<NSDictionary>` コールバックで返された一致するセグメントを取得します。
 
    * このメソッドの構文を次に示します。
 
@@ -679,7 +676,7 @@ Experience Cloudソリューション4.x SDK用のXamarinコンポーネント�
 
 * **リセット**
 
-   Resets audience manager `UUID` and purges current visitor profile.
+   Audience Manager `UUID` をリセットし、現在の訪問者プロファイルを削除します。
 
    * このメソッドの構文を次に示します。
 
@@ -695,7 +692,7 @@ Experience Cloudソリューション4.x SDK用のXamarinコンポーネント�
 
 ## ビデオ {#section_CBCE1951CE204A108AD4CA7BB07C7F98}
 
-ビデオ分析について詳しくは、 [ビデオ分析を参照してください](/help/android/analytics-main/video-qs.md)。
+ビデオ分析について詳しくは、[ ビデオ分析 ](/help/android/analytics-main/video-qs.md) を参照してください。
 
 * **MediaSettings**
 
@@ -731,7 +728,7 @@ Experience Cloudソリューション4.x SDK用のXamarinコンポーネント�
       MediaSettings adSettings = Media.AdSettingsWith ("adName1", 2, "playerName1", "name1", "podName1", 4, "CPM1"); 
       ```
 
-* **Open**
+* **オープン**
 
    追跡する `ADBMediaSettings` オブジェクトを開きます。
 
@@ -817,7 +814,7 @@ Experience Cloudソリューション4.x SDK用のXamarinコンポーネント�
       Media.Stop (settings.Name, 3);
       ```
 
-* **クリック**
+* **Click**
 
    メディアアイテムがクリックされたことを記録します。
 

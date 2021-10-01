@@ -1,23 +1,20 @@
 ---
-description: experience cloudソリューション4.x SDK用のXamarinコンポーネントのiOSメソッド。
+description: Experience Cloudソリューション 4.x SDK 用 Xamarin コンポーネントの iOS メソッド。
 keywords: Xamarin
-seo-description: experience cloudソリューション4.x SDK用のXamarinコンポーネントのiOSメソッド。
-seo-title: iOS メソッド
 solution: Experience Cloud
 title: iOS メソッド
 uuid: d6a056db-80c1-44d0-970f-c961ad01b0bc
-translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+exl-id: 92897d08-2b66-4688-9870-c877bea53cfc
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '1749'
+source-wordcount: '1737'
 ht-degree: 70%
 
 ---
 
-
 # iOS メソッド{#ios-methods}
 
-experience cloudソリューション4.x SDK用のXamarinコンポーネントのiOSメソッド。
+Experience Cloudソリューション 4.x SDK 用 Xamarin コンポーネントの iOS メソッド。
 
 ## 設定メソッド {#section_405AA09390E346E5BB7B1F4E0F65F51E}
 
@@ -55,7 +52,7 @@ experience cloudソリューション4.x SDK用のXamarinコンポーネント�
 
 * **SetDebugLogging**
 
-   デバッグログの環境設定を有効に設定します。
+   デバッグログの環境設定を有効にします。
 
    * このメソッドの構文を次に示します。
 
@@ -90,9 +87,9 @@ experience cloudソリューション4.x SDK用のXamarinコンポーネント�
    現在のユーザーのプライバシーステータスの enum 表現を返します。
    * `ADBMobilePrivacyStatus.OptIn`：ヒットは即座に送信されます。
    * `ADBMobilePrivacyStatus.OptOut`：ヒットは破棄されます。
-   * ADBMobilePrivacyStatus.Unknown — オフライン追跡が有効な場合、プライバシーステータスがオプトイン（ヒットが送信される）またはオプトアウト（ヒットが破棄される）に変更されるまで、ヒットは保存されます。 オフライン追跡が無効になっている場合、プライバシーステータスがに変わるまで、ヒットは破棄されオプトインます。
+   * ADBMobilePrivacyStatus.Unknown — オフライン追跡が有効な場合、プライバシーステータスがオプトイン（ヒットが送信される）またはオプトアウト（ヒットが破棄される）に変更されるまで、ヒットは保存されます。 オフライン追跡が無効になっている場合、プライバシーステータスがオプトインに変更されるまで、ヒットは破棄されます。
 
-   The default value is set in the [ADBMobileConfig.json](/help/ios/configuration/json-config/json-config.md).
+   デフォルト値は [ADBMobileConfig.json](/help/ios/configuration/json-config/json-config.md) に設定されます。
 
    * このメソッドの構文を次に示します。
 
@@ -109,7 +106,7 @@ experience cloudソリューション4.x SDK用のXamarinコンポーネント�
 
 * **SetPrivacyStatus**
 
-   現在のユーザーのプライバシーステータスをステータスに設定します。 次のいずれかの値に設定します。
+   現在のユーザーのプライバシーステータスを「 」に設定します。 次のいずれかの値に設定します。
    * `ADBMobilePrivacyStatus.OptIn`：ヒットは即座に送信されます。
    * `ADBMobilePrivacyStatus.OptOut`：ヒットは破棄されます。
    * `ADBMobilePrivacyStatus.Unknown`：オフライン追跡が有効になっている場合、プライバシーステータスがオプトイン（ヒットが送信される）またはオプトアウト（ヒットが破棄される）に変更されるまで、ヒットは保存されます。オフライン追跡が有効になっていない場合、プライバシーステータスがオプトインに変更されるまで、ヒットは破棄されます。
@@ -128,7 +125,7 @@ experience cloudソリューション4.x SDK用のXamarinコンポーネント�
 
 * **UserIdentifier**
 
-   カスタム識別子が設定されている場合、カスタムユーザ識別子を返します。 カスタム識別子が設定されていない場合はnullを返します。 デフォルト値は `null` です。
+   カスタム識別子が設定されている場合、カスタムユーザー識別子を返します。 カスタム識別子が設定されていない場合は null を返します。 デフォルト値は `null` です。
 
    * このメソッドの構文を次に示します。
 
@@ -144,7 +141,7 @@ experience cloudソリューション4.x SDK用のXamarinコンポーネント�
 
 * **SetUserIdentifier**
 
-   カスタム識別子が設定されている場合、カスタムユーザ識別子を返します。 カスタム識別子が設定されていない場合はnullを返します。 デフォルト値は `null` です。
+   カスタム識別子が設定されている場合、カスタムユーザー識別子を返します。 カスタム識別子が設定されていない場合は null を返します。 デフォルト値は `null` です。
 
    * このメソッドの構文を次に示します。
 
@@ -155,7 +152,7 @@ experience cloudソリューション4.x SDK用のXamarinコンポーネント�
    * このメソッドのコードサンプルを次に示します。
 
       ```objective-c
-      ADBMobile.SetUserIdentifier ("customUserIdentifier”); 
+      ADBMobile.SetUserIdentifier ("customUserIdentifier"); 
       ```
 
 * **GetVersion**
@@ -174,7 +171,7 @@ experience cloudソリューション4.x SDK用のXamarinコンポーネント�
       var version = ADBMobile.Version();
       ```
 
-* **KeepLifecycleSessionAlive（iOSのみ）**
+* **KeepLifecycleSessionAlive （iOS のみ）**
 
    設定ファイル内のライフサイクルセッションのタイムアウト値にかかわらず、バックグラウンドから次に戻ったときに新しいセッションを開始しないように SDK に指示します。
 
@@ -214,7 +211,7 @@ experience cloudソリューション4.x SDK用のXamarinコンポーネント�
 
 * **TrackState**
 
-   オプションのコンテキストデータを使用してアプリの状態を追跡します。状態とは、「title screen」、「level 1」、「pause」など、アプリで使用できる表示です。 これらの状態は、Webサイト上のページと同様で、 `TrackState` 呼び出しはページ表示数を増分します。状態が空の場合、レポートに「app name app version (build)」と表示されます。 If you see this value in reports, make sure you are setting state in each `TrackState` call.
+   オプションのコンテキストデータを使用してアプリの状態を追跡します。状態とは、アプリで使用可能なビューのことで、「タイトル画面」、「レベル 1」、「一時停止」などがあります。 これらの状態は Web サイト上のページに似ており、`TrackState` 呼び出しはページビュー数を増分します。状態が空の場合、レポートに「app name app version (build)」と表示されます。 レポートにこの値が表示される場合は、各 `TrackState` 呼び出しで状態を設定していることを確認してください。
 
    >[!TIP]
    >
@@ -236,7 +233,7 @@ experience cloudソリューション4.x SDK用のXamarinコンポーネント�
 
 * **TrackAction**
 
-   アプリのアクションを追跡します。アクションとは、アプリ内で測定したい、「deaths」、「level gained」、「feed購読」などの指標です。
+   アプリのアクションを追跡します。アクションとは、アプリ内で測定に価する重要な操作のことで、「deaths」、「level gained」、「feed subscriptions」などの指標があります。
 
    >[!TIP]
    >
@@ -254,7 +251,7 @@ experience cloudソリューション4.x SDK用のXamarinコンポーネント�
       ADBMobile.TrackAction("level gained", null); 
       ```
 
-* **TrackActionFromBackground（iOSのみ）**
+* **TrackActionFromBackground（iOS のみ）**
 
    バックグラウンドで発生したアクションを追跡します。これにより、特定のシナリオでライフサイクルイベントが発生しないようにします。
 
@@ -330,7 +327,7 @@ experience cloudソリューション4.x SDK用のXamarinコンポーネント�
 
    * このメソッドの構文を次に示します。
 
-      public nbsp;static void TrackLifetimeValueIncrease(重複量， NSDictionary cdata);
+      public nbsp;static void TrackLifetimeValueIncrease(double amount, NSDictionary data);
 
    * このメソッドのコードサンプルを次に示します。
 
@@ -399,7 +396,7 @@ experience cloudソリューション4.x SDK用のXamarinコンポーネント�
 
 * **TrackingTimedActionExists**
 
-   時間計測が進行中かどうかを返します。
+   時間計測アクションが進行中かどうかを返します。
 
    * このメソッドの構文を次に示します。
 
@@ -464,7 +461,7 @@ experience cloudソリューション4.x SDK用のXamarinコンポーネント�
       var queueSize = ADBMobile.TrackingGetQueueSize(); 
       ```
 
-## Experience Cloud ID methods {#section_157919E46030443DBB5CED60D656AD9F}
+## Experience CloudID メソッド {#section_157919E46030443DBB5CED60D656AD9F}
 
 * **GetMarketingCloudID**
 
@@ -484,7 +481,7 @@ experience cloudソリューション4.x SDK用のXamarinコンポーネント�
 
 * **VisitorSyncIdentifiers**
 
-   Experience CloudIDを使用して、各訪問者に関連付ける追加の顧客IDを設定できます。 訪問者APIは、同じ訪問者に対して複数の顧客IDと、異なる顧客IDの範囲を区切るための顧客タイプ識別子を受け取ります。 このメソッドは、JavaScript ライブラリの setCustomerIDs に相当します。
+   Experience CloudID を使用して、各訪問者に関連付ける追加の顧客 ID を設定できます。 訪問者 API は、同じ訪問者に対して複数の顧客 ID と、異なる顧客 ID の範囲を区別するための顧客タイプ識別子を受け取ります。 このメソッドは、JavaScript ライブラリの setCustomerIDs に相当します。
 
    * このメソッドの構文を次に示します。
 
@@ -503,7 +500,7 @@ experience cloudソリューション4.x SDK用のXamarinコンポーネント�
 
 * **TargetLoadRequest**
 
-   Sends request to your configured Target server and returns the string value of the offer generated in a `Action<NSDictionary>` callback.
+   設定した Target サーバーにリクエストを送信し、`Action<NSDictionary>` コールバックで生成されたオファーの文字列値を返します。
 
    * このメソッドの構文を次に示します。
 
@@ -523,7 +520,7 @@ experience cloudソリューション4.x SDK用のXamarinコンポーネント�
 
 * **TargetCreateRequest**
 
-   Convenience constructor to create an `ADBTargetLocationRequest` object with the given parameters.
+   指定したパラメーターを持つ `ADBTargetLocationRequest` オブジェクトを作成する便利なコンストラクター。
 
    * このメソッドの構文を次に示します。
 
@@ -574,7 +571,7 @@ experience cloudソリューション4.x SDK用のXamarinコンポーネント�
 
 * **AudienceVisitorProfile**
 
-   取得された最も直近の訪問者プロファイルを返します。まだシグナルが送信されていない場合はnilを返します。 Visitor profile is saved in `NSUserDefaults` for easy access across multiple launches of your app.
+   取得された最も直近の訪問者プロファイルを返します。まだシグナルが送信されていない場合は、nil を返します。 訪問者プロファイルは、複数回起動しても簡単にアクセスできるように、`NSUserDefaults` に保存されます。
 
    * このメソッドの構文を次に示します。
 
@@ -622,7 +619,7 @@ experience cloudソリューション4.x SDK用のXamarinコンポーネント�
 
 * **AudienceSetDpidAndDpuuid**
 
-   dpidとdpuuidを設定します。 dpidとdpuuidが設定されている場合、各シグナルと共に送信されます。
+   dpid および dpuuid を設定します。 dpid と dpuuid が設定されている場合、各シグナルと共に送信されます。
 
    * このメソッドの構文を次に示します。
 
@@ -638,7 +635,7 @@ experience cloudソリューション4.x SDK用のXamarinコンポーネント�
 
 * **AudienceSignalWithData**
 
-   Sends audience management a signal with traits and get the matching segments returned in a `Action<NSDictionary>`  callback.
+   特性を持つシグナルを Audience Management に送信し、`Action<NSDictionary>` コールバックで返された一致するセグメントを取得します。
 
    * このメソッドの構文を次に示します。
 
@@ -673,7 +670,7 @@ experience cloudソリューション4.x SDK用のXamarinコンポーネント�
 
 ## ビデオ {#section_CBCE1951CE204A108AD4CA7BB07C7F98}
 
-詳しくは、 [ビデオ分析を参照してください](/help/ios/getting-started/dev-qs.md)。
+詳しくは、[ ビデオ分析 ](/help/ios/getting-started/dev-qs.md) を参照してください。
 
 * **MediaCreateSettings**
 

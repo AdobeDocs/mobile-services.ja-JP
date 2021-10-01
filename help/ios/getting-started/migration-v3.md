@@ -1,21 +1,18 @@
 ---
 description: iOS ライブラリのバージョン 3.x または 2.x からバージョン 4.x への移行に役立つ情報です。
-seo-description: iOS ライブラリのバージョン 3.x または 2.x からバージョン 4.x への移行に役立つ情報です。
-seo-title: 4.x iOS ライブラリへの移行
 solution: Experience Cloud,Analytics
 title: 4.x iOS ライブラリへの移行
 topic-fix: Developer and implementation
 uuid: 5668972b-f355-4e03-9df0-8c82ddf6809b
 exl-id: a58067e0-b6f4-4900-ba3f-7256d9259420
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '895'
+source-wordcount: '871'
 ht-degree: 100%
 
 ---
 
-# 4.x iOS ライブラリへの移行 {#migrating-to-the-x-ios-library}
+# 4.x iOS ライブラリへの移行{#migrating-to-the-x-ios-library}
 
 iOS ライブラリのバージョン 3.x または 2.x からバージョン 4.x への移行に役立つ情報です。
 
@@ -25,7 +22,7 @@ iOS ライブラリのバージョン 3.x または 2.x からバージョン 4.
 
 バージョン 4.x の iOS SDK ライブラリでは、パブリックメソッドが 1 つのヘッダーに統合されています。また、クラスレベルのメソッドから機能にアクセスできるようになり、ポインター、インスタンスまたはシングルトンを追跡する必要がなくなりました。
 
-## event、prop、eVar {#section_76EA6F5611184C5CAE6E62956D84D7B6}
+## event、prop、eVar  {#section_76EA6F5611184C5CAE6E62956D84D7B6}
 
 バージョン 4 では、イベント、eVar、prop、heir、リストなどの変数を直接アプリに割り当てることができなくなりました。代わりに、SDK は、コンテキストデータと処理ルールを使用して、レポート用にアプリデータを Analytics 変数へとマッピングします。
 

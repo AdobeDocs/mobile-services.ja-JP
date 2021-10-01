@@ -1,18 +1,15 @@
 ---
 description: マーケティングリンクを作成または編集して、モバイルアプリまたは Web サイトへのディープリンクを提供できます。
 keywords: モバイル
-seo-description: マーケティングリンクを作成または編集して、モバイルアプリまたは Web サイトへのディープリンクを提供できます。
-seo-title: マーケティングリンクの作成または編集
 solution: Experience Cloud,Analytics
 title: マーケティングリンクの作成または編集
 topic-fix: Metrics
 uuid: 305a8265-38de-4d19-8c79-b3912f5aae7c
 exl-id: a9b5c98d-77c1-4a40-96e5-f9e234d55ec5
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '634'
-ht-degree: 100%
+source-wordcount: '614'
+ht-degree: 96%
 
 ---
 
@@ -42,7 +39,7 @@ ht-degree: 100%
 
       次のプリセットタグを使用できます。
 
-      * **カスタムコンテキスト**：データキーと値を指定します。カスタムコンテキストデータを追加する場合、処理ルールを作成する必要があります。詳しくは、「[処理ルールの概要](https://docs.adobe.com/content/help/ja-JP/analytics/admin/admin-tools/processing-rules/processing-rules.html)」を参照してください。
+      * **カスタムコンテキスト**：データキーと値を指定します。カスタムコンテキストデータを追加する場合、処理ルールを作成する必要があります。詳しくは、Adobe Analyticsのドキュメントの [ 処理ルールの概要 ](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html) を参照してください。
 
       * **ソース**：「ニュースレター」または「ホームページ」など、元のリファラーを指定します。
 

@@ -1,14 +1,11 @@
 ---
 description: 次の情報は、獲得テストの問題のトラブルシューティングに役立ちます。
-keywords: android;Acquisition;testing
-seo-description: 次の情報は、獲得テストの問題のトラブルシューティングに役立ちます。
-seo-title: 獲得テストのトラブルシューティング
+keywords: Android; 獲得; テスト
 solution: Experience Cloud,Analytics
 title: 獲得テストのトラブルシューティング
-translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '251'
+source-wordcount: '224'
 ht-degree: 100%
 
 ---
@@ -22,7 +19,7 @@ ht-degree: 100%
 
 * 名前では大文字と小文字が区別されるので、名前には小文字を使用しないでください。
 
-   `Config.setContext(this.getApplicationContext())` がメインアクティビティから呼び出されていることを確認する必要があります。詳しくは、「[設定メソッド](https://docs.adobe.com/content/help/ja-JP/mobile-services/android/configuration-android/methods.html)」を参照してください。
+   `Config.setContext(this.getApplicationContext())` がメインアクティビティから呼び出されていることを確認する必要があります。詳しくは、「[設定メソッド](../configuration/methods.md)」を参照してください。
 
 * 提供された AndroidManifest.xml ファイルには、データの送信とオフラインのトラッキングコールの記録のために必要な、いくつかのユーザー権限が欠落しています。
 
@@ -38,7 +35,7 @@ ht-degree: 100%
 
    手動テストの場合は、インストールヒットが処理される前に、リファラー情報を送信するのに十分な時間を確保できるよう、`referrerTimeout` を 10～15 秒に増やします。
 
-* 「[マーケティングリンクの獲得のテスト](https://docs.adobe.com/content/help/ja-JP/mobile-services/android/acquisition-android/t-testing-marketing-link-acquisition.html)」のすべての手順を適切な順序で実行し、`adb` シェルを実行してから次の手順を必ず実行することが重要です。
+* 「[マーケティングリンクの獲得のテスト](t-t-testing-marketing-link-acquisition.md)」のすべての手順を適切な順序で実行し、`adb` シェルを実行してから次の手順を必ず実行することが重要です。
 
    ```java
    am broadcast -a com.android.vending.INSTALL_REFERRER -n 

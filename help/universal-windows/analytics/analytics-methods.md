@@ -1,35 +1,32 @@
 ---
-description: Adobe AnalyticsでユニバーサルWindowsプラットフォームSDKを使用する際に役立つ情報です。
-seo-description: Adobe AnalyticsでユニバーサルWindowsプラットフォームSDKを使用する際に役立つ情報です。
-seo-title: Analytics メソッド
+description: Adobe Analyticsで Universal Windows Platform SDK を使用する際に役立つ情報です。
 solution: Experience Cloud,Analytics
 title: Analytics メソッド
 topic-fix: Developer and implementation
 uuid: cc299bb5-ec61-49bf-869a-f3c3bc83359f
 exl-id: 3ceaedfa-274f-4dc7-9e4c-15233d09f935
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '632'
-ht-degree: 57%
+source-wordcount: '617'
+ht-degree: 58%
 
 ---
 
 # Analytics メソッド {#analytics-methods}
 
-Adobe AnalyticsでユニバーサルWindowsプラットフォームSDKを使用する際に役立つ情報です。
+Adobe Analyticsで Universal Windows Platform SDK を使用する際に役立つ情報です。
 
-SDKは、現在、Analytics、ターゲット、Audience Managerを含む複数のAdobe Experience Cloudソリューションをサポートしています。 メソッドには、ソリューションに応じたプレフィックスが付きます。Analyticsのメソッドの前には「Analytics」というプリフィックスが付きます。
+SDK は現在、Analytics、Target、Audience Managerを含む複数のAdobe Experience Cloudソリューションをサポートしています。 メソッドには、ソリューションに応じたプレフィックスが付きます。Analytics メソッドの場合、プレフィックスは「Analytics」です。
 
 これらの各メソッドを使用して、Adobe Analytics レポートスイートにデータを送信します。
 
 >[!TIP]
 >
->winJS (JavaScript)から`winmd`メソッドを使用する場合、すべてのメソッドの最初の文字が自動的に小文字に変換されます。
+>winJS(JavaScript) の `winmd` メソッドを使用すると、すべてのメソッドの最初の文字が自動的に小文字に変換されます。
 
 * **TrackState(winJS:trackState)**
 
-   オプションのコンテキストデータを使用してアプリの状態を追跡します。状態は、「ホームダッシュボード」、「アプリ設定」、「カート」など、アプリで使用できる表示です。 これらの状態は Web サイト上のページによく似ており、`TrackState` コールにより、ページビュー数が増分されます。`state`が空の場合、レポートには「app name app version (build)」と表示されます。 レポートにこの値が表示される場合は、各`TrackState`呼び出しで`state`を設定していることを確認してください。
+   オプションのコンテキストデータを使用してアプリの状態を追跡します。状態とは、「home dashboard」、「app settings」、「cart」など、アプリで使用可能なビューです。 これらの状態は Web サイト上のページによく似ており、`TrackState` コールにより、ページビュー数が増分されます。`state` が空の場合は、レポートに「app name app version (build)」と表示されます。 レポートにこの値が表示される場合は、各 `TrackState` 呼び出しで `state` を設定していることを確認してください。
 
    >[!TIP]
    >
@@ -48,9 +45,9 @@ SDKは、現在、Analytics、ターゲット、Audience Managerを含む複数�
       ADB.Analytics.trackState("loginScreen", null);
       ```
 
-* **TrackAction(winJS:trackAction)**
+* **TrackAction (winJS:trackAction)**
 
-   アプリのアクションを追跡します。アクションとは、「ログオン」、「バナーのタップ」、「フィード購読」など、測定対象のアプリで発生する操作です。
+   アプリのアクションを追跡します。アクションとは、アプリ内で測定に価する重要な操作のことで、「logons」、「banner taps」、「feed subscriptions」などの指標があります。
 
    * このメソッドの構文を次に示します。
 
@@ -67,7 +64,7 @@ SDKは、現在、Analytics、ターゲット、Audience Managerを含む複数�
 
 * **GetTrackingIdentifierAsync (winJS:getTrackingIdentifierAsync)**
 
-   Analytics用に自動的に生成された訪問者IDを返します。 これは、初回起動時に生成され、その時点から保存および使用される、アプリ固有の一意の訪問者IDです。 このIDは、アプリのアップグレード後も保持され、アンインストール時に削除されます。
+   Analytics 用に自動的に生成された訪問者 ID を返します。 これは、初回起動時に生成され、その時点から保存および使用される、アプリ固有の一意の訪問者 ID です。 この ID は、アプリをアップグレードしても保持され、アンインストール時に削除されます。
 
    * このメソッドの構文を次に示します。
 
@@ -84,7 +81,7 @@ SDKは、現在、Analytics、ターゲット、Audience Managerを含む複数�
       });
       ```
 
-* **TrackLocation(winJS:trackLocation)**
+* **TrackLocation (winJS:trackLocation)**
 
    現在の XY 座標を送信します。また、現在位置が `ADBMobileConfig.json` ファイルで定義された目標地点内にあるかどうかを判定します。現在の座標が定義した目標地点内にある場合、コンテキストデータ変数に代入され、`trackLocation` 呼び出しで送信されます。
 
@@ -101,7 +98,7 @@ SDKは、現在、Analytics、ターゲット、Audience Managerを含む複数�
       ADB.Analytics.trackLocation(47.60621,-122.33207,null);
       ```
 
-* **TrackLifetime &#x200B; ValueIncrease(winJS:trackLifetime &#x200B; ValueIncrease)**
+* **TrackLifetime &#x200B; ValueIncrease (winJS:trackLifetime &#x200B; ValueIncrease)**
 
    ユーザーのライフタイム値に `amount` を加算します。
 
@@ -118,7 +115,7 @@ SDKは、現在、Analytics、ターゲット、Audience Managerを含む複数�
       ADB.Analytics.trackLifetimeValueIncrease(10,null);
       ```
 
-* **TrackTimed &#x200B; ActionStart(winJS:trackTimed &#x200B; ActionStart)**
+* **TrackTimed ActionStart(&#x200B;winJS:trackTimed ActionStart&#x200B;)**
 
    `action` という名前の時間計測アクションを開始します。既に開始しているアクションでこのメソッドを呼び出すと、以前の時間計測アクションが上書きされます。
 
@@ -139,7 +136,7 @@ SDKは、現在、Analytics、ターゲット、Audience Managerを含む複数�
       ADB.Analytics.trackTimedActionStart("cartToCheckout",null); 
       ```
 
-* **TrackTimed &#x200B; ActionUpdate(winJS:trackTimed &#x200B; ActionUpdate)**
+* **TrackTimed ActionUpdate (&#x200B;winJS:trackTimed ActionUpdate&#x200B;)**
 
    `contextData` を渡して、特定の `action` に関連付けられているコンテキストデータを更新します。渡された `data` は、特定のアクションの既存のデータに追加され、同じキーが既に `action` に定義されている場合は、データを上書きします。
 
@@ -162,9 +159,9 @@ SDKは、現在、Analytics、ターゲット、Audience Managerを含む複数�
       ADB.Analytics.trackTimedActionUpdate("cartToCheckout",contextData);
       ```
 
-* **TrackTimedActionExistsAsync(winJS:trackTimedActionExistsAsync)**
+* **TrackTimedActionExistsAsync (winJS:trackTimedActionExistsAsync)**
 
-   渡された時間計測アクションが存在する場合はtrueを返し、存在しない場合はfalseを返します。
+   指定した時間計測アクションが存在する場合は true を返し、存在しない場合は false を返します。
 
    * このメソッドの構文を次に示します。
 
@@ -180,7 +177,7 @@ SDKは、現在、Analytics、ターゲット、Audience Managerを含む複数�
       });
       ```
 
-* **TrackTimed &#x200B; ActionEnd(winJS:trackTimed &#x200B; ActionEnd)**
+* **TrackTimed ActionEnd (&#x200B;winJS:trackTimed ActionEnd&#x200B;)**
 
    時間計測アクションを終了します。
 
@@ -199,7 +196,7 @@ SDKは、現在、Analytics、ターゲット、Audience Managerを含む複数�
 
 * **ClearTrackingQueue (winJS:clearTrackingQueue)**
 
-   Analyticsトラッキングキューに保存されているすべてのヒットをクリアします。
+   Analytics トラッキングキューから保存されているすべてのヒットをクリアします。
 
    * このメソッドの構文を次に示します。
 
@@ -215,7 +212,7 @@ SDKは、現在、Analytics、ターゲット、Audience Managerを含む複数�
 
 * **GetQueueSizeAsync (winJS:getQueueSizeAsync)**
 
-   現在Analyticsキューに格納されているヒットの数を返します。
+   現在 Analytics キューに保存されているヒット数を返します。
 
    * このメソッドの構文を次に示します。
 

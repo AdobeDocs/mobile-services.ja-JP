@@ -1,19 +1,16 @@
 ---
 description: iOS SDK を使用して、サードパーティのディファードディープリンクの追跡を実装します。
-seo-description: iOS SDK を使用して、サードパーティのディファードディープリンクの追跡を実装します。
-seo-title: サードパーティの据え置きディープリンクの追跡
-title: サードパーティの据え置きディープリンクの追跡
+title: サードパーティのディファードディープリンクの追跡
 uuid: 5525b609-e926-44b9-b0f5-38e9dd7c9761
-translation-type: tm+mt
-source-git-commit: 4b5be6c51c716114e597a80d475f838e23abb1b1
+exl-id: c6d2ec6e-cd2a-4670-96e9-cb5e09f7cc10
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '413'
-ht-degree: 89%
+source-wordcount: '396'
+ht-degree: 90%
 
 ---
 
-
-# サードパーティのディファードディープリンクの追跡{#tracking-third-party-deferred-deep-links}
+# サードパーティのディファードディープリンクの追跡 {#tracking-third-party-deferred-deep-links}
 
 iOS SDK を使用して、サードパーティのディファードディープリンクの追跡を実装します。
 
@@ -23,9 +20,9 @@ iOS SDK を使用して、サードパーティのディファードディープ
 
 ## Facebook ディープリンク {#section_6A9DACB54A2F4CDEBE9C744DEFADFDED}
 
-広告作成者は、Facebook 上に広告をディープリンクとして作成することができます。ユーザーが Facebook 上の広告をクリックすると、アプリに興味を持った情報に直接移動します。ディープリンクはフィンガープリンターの URL では&#x200B;**ありません**。ただし、広告の設定時にサードパーティのディープリンク URL を指定するオプションがあります。Experience CloudのMobile SDKとサービスを使用するアプリ開発者は、Mobile Servicesで設定されたフィンガープリンターのURLをこのフィールドに入力する必要があります。 すべてが正しく設定されている場合、Facebook SDK は、アプリがインストールまたは起動されたときにこの URL をアプリケーションに渡します。
+広告作成者は、Facebook 上に広告をディープリンクとして作成することができます。ユーザーが Facebook 上の広告をクリックすると、アプリに興味を持った情報に直接移動します。ディープリンクはフィンガープリンターの URL では&#x200B;**ありません**。ただし、広告の設定時にサードパーティのディープリンク URL を指定するオプションがあります。Experience Cloudの Mobile SDK およびサービスを使用しているアプリ開発者は、このフィールドに Mobile Services で設定されたフィンガープリンターの URL を入力する必要があります。 すべてが正しく設定されている場合、Facebook SDK は、アプリがインストールまたは起動されたときにこの URL をアプリケーションに渡します。
 
-## Setting up the SDKs {#section_834CD3109175432B8173ECB6EA7DE315}
+## SDK の設定 {#section_834CD3109175432B8173ECB6EA7DE315}
 
 1. Facebook SDK を設定します。
 
@@ -141,4 +138,3 @@ iOS SDK を使用して、サードパーティのディファードディープ
           return YES; 
       }
       ```
-

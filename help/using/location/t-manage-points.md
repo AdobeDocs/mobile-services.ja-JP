@@ -1,17 +1,14 @@
 ---
 description: 目標地点を作成および管理できます。目標地点を使用すると、地理的な場所を定義して相関関係を分析したり、アプリ内メッセージを使用してターゲットを設定したりできます。目標地点でヒットが送信されると、目標地点がヒットに関連付けられます。
 keywords: モバイル
-seo-description: 目標地点を作成および管理できます。目標地点を使用すると、地理的な場所を定義して相関関係を分析したり、アプリ内メッセージを使用してターゲットを設定したりできます。目標地点でヒットが送信されると、目標地点がヒットに関連付けられます。
-seo-title: 目標地点の設定
 solution: Experience Cloud,Analytics
 title: 目標地点の設定
 topic-fix: Metrics
 uuid: 7b362534-54fb-43a3-b6b2-dfc8f45ff7c6
 exl-id: 9598b06b-fb6a-436c-811c-f74015cc2ab0
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '529'
 ht-degree: 100%
 
 ---

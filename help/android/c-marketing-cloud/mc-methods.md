@@ -1,22 +1,19 @@
 ---
 description: Android ライブラリによって提供される Experience Cloud ID メソッドを示します。
 keywords: Android, ライブラリ, モバイル, SDK
-seo-description: Android ライブラリによって提供される Experience Cloud ID メソッドを示します。
-seo-title: Adobe Experience Platform ID サービスのメソッド
 solution: Experience Cloud,Analytics
 title: Adobe Experience Platform ID サービスのメソッド
 topic-fix: Developer and implementation
 uuid: c5107a7e-273b-4f71-8738-4c603479b24c
 exl-id: 8eb98c3f-c6ef-4593-ad3a-f566f4d4b6a2
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
 workflow-type: tm+mt
-source-wordcount: '453'
-ht-degree: 100%
+source-wordcount: '435'
+ht-degree: 97%
 
 ---
 
-# Adobe Experience Platform ID サービスのメソッド {#experience-cloud-id-service-methods}
+# Adobe Experience Platform ID サービスのメソッド{#experience-cloud-id-service-methods}
 
 Android ライブラリによって提供される Experience Cloud ID メソッドを示します。
 
@@ -26,7 +23,7 @@ SDK は現在、Analytics、Target、Audience Manager、Adobe Experience Platfor
 
 * **public static String appendToURL(final String URL)**
 
-   アドビ JavaScript ライブラリで使用するために、アドビ訪問者データを URL 文字列に追加します。このメソッドを使用するには、Mobile SDK 4.12 以降が必要です。詳しくは、[訪問者 ID ヘルパー関数の追加](https://docs.adobe.com/content/help/ja-JP/id-service/using/id-service-api/methods/appendvisitorid.html)を参照してください。
+   アドビ JavaScript ライブラリで使用するために、アドビ訪問者データを URL 文字列に追加します。このメソッドを使用するには、Mobile SDK 4.12 以降が必要です。詳しくは、 Adobe Experience Cloud ID サービスのドキュメントの [appendVisitorIDsTo](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/methods/appendvisitorid.html?lang=ja) を参照してください。
 
    >[!IMPORTANT]
    >

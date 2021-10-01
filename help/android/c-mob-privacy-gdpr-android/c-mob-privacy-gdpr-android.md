@@ -1,17 +1,14 @@
 ---
 description: データ管理事業者は Experience Cloud Mobile SDK で提供されている一般データ保護規則（GDPR）対応 API を利用することで、ユーザーがローカルに保存されている個人情報を取得したり、データ収集やデータ送信のオプトステータスフラグを設定したりできる環境を開発することができます。
-seo-description: データ管理事業者は Experience Cloud Mobile SDK で提供されている一般データ保護規則（GDPR）対応 API を利用することで、ユーザーがローカルに保存されている個人情報を取得したり、データ収集やデータ送信のオプトステータスフラグを設定したりできる環境を開発することができます。
-seo-title: プライバシーと EU 一般データ保護規則の概要
 title: プライバシーと EU 一般データ保護規則の概要
 uuid: 56d6f155-efec-4b3f-a972-a63155729167
-translation-type: tm+mt
-source-git-commit: 718e336b9002fe3d5282697d4302d12a89297181
+exl-id: 57696f2e-87f4-4f72-bec2-80c7192576f9
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '361'
-ht-degree: 78%
+source-wordcount: '322'
+ht-degree: 76%
 
 ---
-
 
 # プライバシーと EU 一般データ保護規則の概要 {#privacy-and-general-data-protection-regulation}
 
@@ -32,9 +29,9 @@ Adobe Experience Platform Mobile SDK に関する情報やドキュメントを�
 >
 >GDPR は Mobile SDK バージョン 4.16.0 以降で&#x200B;**のみ**&#x200B;サポートされています。
 
-Adobeが企業にソフトウェアやサービスを提供する場合、Adobeは、個人データの処理や保存の一環として、個人データのデータ処理装置としての役割を果たします。 データ処理装置として、Adobeは、会社の許可と指示に従って個人データを処理します(例えば、Adobeとの契約に基づいて設定されたもの)。
+Adobeが企業に対してソフトウェアやサービスを提供する場合、Adobeは、サービスの一部として処理および保存する個人データのデータ処理者としての役割を果たします。 Adobeはデータ処理者として、お客様の許可と指示 ( お客様とAdobeとの間で締結された契約の内容など ) に従って個人データを処理します。
 
-データコントローラーは、AdobeMobile Services SDKを使用して、GDPRによるモバイルアプリの取得および削除のリクエストをサポートできます。
+データ管理者は、AdobeMobile Services SDK を使用して、モバイルアプリからの GDPR の取得および削除要求をサポートできます。
 
 モバイルアプリケーションの Adobe Mobile SDK 部分に関しては、次の設定とメソッドを使用できます。
 

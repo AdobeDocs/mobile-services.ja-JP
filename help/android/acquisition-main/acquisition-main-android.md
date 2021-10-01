@@ -1,16 +1,13 @@
 ---
 description: この情報は、iOS アプリで獲得トラッキングリンクを使用するのに役立ちます。
-seo-description: この情報は、iOS アプリで獲得トラッキングリンクを使用するのに役立ちます。
-seo-title: 獲得の概要
 solution: Experience Cloud,Analytics
 title: 獲得の概要
 topic-fix: Developer and implementation
 uuid: e22d2785-58f1-4841-9163-912c5e0f5d61
 exl-id: 0315f8ed-41cb-4a2c-bfe0-56bdebf1af52
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '136'
+source-wordcount: '120'
 ht-degree: 100%
 
 ---

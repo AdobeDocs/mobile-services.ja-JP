@@ -1,22 +1,19 @@
 ---
 description: この情報は、Adobe Mobile Services の理解と使用に役立ちます。
 keywords: モバイル
-seo-description: この情報は、Adobe Mobile Services の理解と使用に役立ちます。
-seo-title: はじめに
 solution: Experience Cloud,Analytics
 title: はじめに
 topic-fix: Metrics
 uuid: a7ae7c5a-dab8-4603-b4cd-af73a2f09f71
 exl-id: 0c08e154-8747-45dc-9731-ab2a3e78bc5a
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '1374'
-ht-degree: 100%
+source-wordcount: '1344'
+ht-degree: 97%
 
 ---
 
-# はじめに {#getting-started}
+# はじめに{#getting-started}
 
 この情報は、Adobe Mobile Services の理解と使用に役立ちます。
 
@@ -29,7 +26,7 @@ Adobe Mobile Services は、次の要素で構成されています。
 
 現在、モバイルアプリの状況は、スマートフォンが初めてローンチされたときとは大きく異なっています。モバイルアプリを使用して顧客をブランドに結び付けるだけでは不十分です。今日では、様々なチャネルをまたいで、まとまりのある魅力的な顧客エクスペリエンスを推進し、最も忠実で価値の高い顧客を惹きつける戦略的なタッチポイントとして、モバイルアプリを使用する必要があります。しかし、これらのユーザーがアプリを操作できるようにするには、説得力のあるコンテンツ、コンテキスト通知、インテリジェントなパーソナライゼーション、統合されたアプリ分析などが必要です。
 
-## Adobe Mobile Services UI {#mobile-services-ui}
+## AdobeMobile Services UI {#mobile-services-ui}
 
 Mobile Services UI は次のブラウザーでサポートされています。
 
@@ -114,7 +111,7 @@ Adobe Mobile では、次のタイプのメッセージを設定できます。
 
 *最適化*&#x200B;では、コンバージョン（購読、コマース、広告収入など）を最適化して、顧客維持を強化します。アプリでのユーザーエクスペリエンスを最適化すると、コンテンツをパーソナライズして ROI とコンバージョンを最大限に高めることができます。
 
-テストおよび Adobe Target について詳しくは、[Adobe Target](https://docs.adobe.com/content/help/ja-JP/target/using/target-home.html) に移動してください。
+テストとAdobe Targetについて詳しくは、 [Adobe Target](https://docs.adobe.com/content/help/ja-JP/experience-cloud/user-guides/home.translate.html) のドキュメントを参照してください。
 
 ### 地域ターゲット設定
 
@@ -128,7 +125,7 @@ Adobe Target for Mobile アプリは、Adobe Analytics で利用できる強化�
 * [Android SDK ガイドの ロケーション](/help/android/location/location.md)
 * [iOS SDK ガイドの ロケーション](/help/ios/location/location.md)
 
-## Adobe Mobile SDK {#mobile-services-sdk}
+## Adobeモバイル SDK {#mobile-services-sdk}
 
 アドビでは、これらすべての領域にわたる顧客エンゲージメントを加速するエンドツーエンドのモバイルマーケティングソリューションを提供しています。1 つの SDK で Adobe Analytics、Adobe Campaign、Adobe Audience Manager の機能にアクセスできるので、複数の異なる SDK の管理に伴う技術的なコストを削減できます。
 
@@ -153,7 +150,7 @@ Adobe Mobile SDK は、次の機能を提供します。
 * 統合
 
    * 1 つの SDK を複数のソリューション（Analytics、Campaign および Audience Manager）に使用することで、開発者が実装にかかる時間と労力を削減できます。
-   * 「ベースライン」アプリのライフサイクル指標を収集するために必要なコードは 1 行のみです。
+   * 「ベースライン」アプリのライフサイクル指標を収集するために必要なコードは 1 行だけです。
    * モバイル戦略の発展に伴い、Adobe Experience Cloud の機能を容易に活用して、ユーザーを獲得および分析し、エンゲージメントを図ることができます。
 
 * 高速で軽量
@@ -161,4 +158,4 @@ Adobe Mobile SDK は、次の機能を提供します。
    * Adobe サーバーやサードパーティ製システムにデータを送信する際の、デバイスの処理負荷を最小限に抑えます。
    * フットプリントが小さいため、アプリストアに送信されるアプリパッケージのサイズを最小限に抑えます。
 
-Adobe Mobile SDK について詳しくは、[Experience ソリューション 用 Android SDK 4.x](https://docs.adobe.com/content/help/ja-JP/mobile-services/android/overview.html) および [Experience Cloud ソリューション 用 iOS SDK 4.x](https://docs.adobe.com/content/help/ja-JP/mobile-services/ios/rel-notes.html) を参照してください。
+Adobe Mobile SDK について詳しくは、[Experience ソリューション 用 Android SDK 4.x](/help/android/overview.md) および [Experience Cloud ソリューション 用 iOS SDK 4.x](/help/ios/overview.md) を参照してください。

@@ -1,19 +1,16 @@
 ---
 description: ここでは、Mobile ソリューション 4.x SDK 用 Xamarin コンポーネントの使用を開始する方法について説明します。
 keywords: Xamarin
-seo-description: ここでは、Mobile ソリューション 4.x SDK 用 Xamarin コンポーネントの使用を開始する方法について説明します。
-seo-title: Experience Cloud ソリューション 4.x SDK 用 Xamarin コンポーネント
 solution: Experience Cloud
 title: Experience Cloud ソリューション 4.x SDK 用 Xamarin コンポーネント
 uuid: e7a48107-bd0e-47d6-b49c-dfdae189ac37
-translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+exl-id: 39628548-5787-4022-8792-86b78214a1c0
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '199'
-ht-degree: 100%
+source-wordcount: '177'
+ht-degree: 99%
 
 ---
-
 
 # Experience Cloud ソリューション 4.x SDK 用 Xamarin コンポーネント {#xamarin-components-for-experience-cloud-solutions-x-sdk}
 

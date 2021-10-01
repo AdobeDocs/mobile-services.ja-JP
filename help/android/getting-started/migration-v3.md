@@ -1,18 +1,15 @@
 ---
 description: この情報は、Android ライブラリのバージョン 3.x または 2.x をバージョン 4.x に移行する場合に役立ちます。
 keywords: Android, ライブラリ, モバイル, SDK
-seo-description: この情報は、Android ライブラリのバージョン 3.x または 2.x をバージョン 4.x に移行する場合に役立ちます。
-seo-title: Android 4.x ライブラリへの移行
 solution: Experience Cloud,Analytics
 title: Android 4.x ライブラリへの移行
 topic-fix: Developer and implementation
 uuid: 906e83bb-2faf-4aa2-ac9b-3fba6b833c7e
 exl-id: 8061c1ab-aaaf-4d4c-9bd5-b2f80b6b06a3
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '884'
-ht-degree: 100%
+source-wordcount: '860'
+ht-degree: 99%
 
 ---
 
@@ -26,7 +23,7 @@ ht-degree: 100%
 
 バージョン 4.x ライブラリでは、パブリックメソッドは 1 つのヘッダーに統合されます。また、クラスレベルのメソッドからすべての機能にアクセスできるようになり、ポインター、インスタンスまたはシングルトンを追跡する必要がなくなりました。
 
-## event、prop、eVar {#section_76EA6F5611184C5CAE6E62956D84D7B6}
+## event、prop、eVar  {#section_76EA6F5611184C5CAE6E62956D84D7B6}
 
 バージョン 4 では、イベント、eVar、prop、heir、リストなどの変数をアプリに割り当てることができなくなりました。代わりに、SDK は、コンテキストデータと処理ルールを使用して、レポート用にアプリデータを Analytics 変数へとマッピングします。
 
@@ -72,7 +69,7 @@ ht-degree: 100%
 }
 ```
 
-## 設定ファイルの移動とバージョン 4 への移行 {#section_0B844235E0B04DD4B36976A73DB28FB5}
+## 設定ファイルの移動 バージョン 4 への移行 {#section_0B844235E0B04DD4B36976A73DB28FB5}
 
 次の表に、設定ファイルに移動する必要がある設定変数を示します。
 

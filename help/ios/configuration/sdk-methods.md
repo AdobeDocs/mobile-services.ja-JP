@@ -1,16 +1,13 @@
 ---
 description: iOS ライブラリが提供するメソッドの一覧を以下に示します。
-seo-description: iOS ライブラリが提供するメソッドの一覧を以下に示します。
-seo-title: 設定メソッド
 solution: Experience Cloud,Analytics
 title: 設定メソッド
 topic-fix: Developer and implementation
 uuid: 623c7b07-fbb3-4d39-a5c4-e64faec4ca29
 exl-id: b6841808-8fa8-4090-8cb3-ce647a3d5d08
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '1198'
+source-wordcount: '1183'
 ht-degree: 100%
 
 ---

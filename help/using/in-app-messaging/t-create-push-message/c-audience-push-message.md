@@ -1,17 +1,15 @@
 ---
 description: 日付範囲オプション、Analytics セグメントおよびカスタムセグメントを含む、プッシュメッセージのオーディエンスオプションを定義および設定できます。
 keywords: モバイル
-seo-description: 日付範囲オプション、Analytics セグメントおよびカスタムセグメントを含む、プッシュメッセージのオーディエンスオプションを定義および設定できます。
-seo-title: オーディエンス：プッシュメッセージ用のオーディエンスセグメントの定義および設定
 solution: Experience Cloud,Analytics
 title: オーディエンス：プッシュメッセージ用のオーディエンスセグメントの定義および設定
 topic-fix: Metrics
 uuid: efd410e7-3b6c-4cf4-a26f-b11688adc491
 exl-id: d1062a76-2e72-4649-8497-58617a7a47cb
-source-git-commit: af46d2ef6e8efaae32128384112fa5265d56de74
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '1020'
-ht-degree: 99%
+source-wordcount: '976'
+ht-degree: 98%
 
 ---
 
@@ -25,7 +23,7 @@ ht-degree: 99%
 
 Adobe Mobile Services では、マーケターはプラットフォームごとに 1 つのアプリにしかプッシュできません。マーケターが複数のアプリからのユーザーを含むセグメントにプッシュしようと試みると、処理を続行することで重大なプッシュエラーが発生し、ユーザーがブロックリストに追加される可能性があるという警告が表示されます。プッシュの失敗が発生した場合は、「*プッシュメッセージの失敗の解決*」（[プッシュメッセージのトラブルシューティング](/help/using/in-app-messaging/t-create-push-message/c-schedule-push-message.md)）を参照してください。
 
-セグメント定義で Audience Manager データを使用するには、[Audience Analytics](https://experienceleague.adobe.com/docs/analytics/integration/audience-analytics/mc-audiences-aam.html) を参照してください。
+セグメント定義で Audience Manager データを使用するには、[Audience Analytics](https://experienceleague.adobe.com/docs/analytics/integration/audience-analytics/mc-audiences-aam.html?lang=ja) を参照してください。
 
 >[!IMPORTANT]
 >
@@ -89,11 +87,10 @@ Adobe Mobile Services では、マーケターはプラットフォームごと�
 
    * プッシュメッセージのトラブルシューティングについては、次を参照してください。
 
-      * [iOS でのプッシュメッセージ](https://docs.adobe.com/content/help/ja-JP/mobile-services/ios/messaging-ios/push-messaging/push-messaging.html)
+      * [iOS でのプッシュメッセージ](/help/ios/messaging-main/push-messaging/push-messaging.md)
+      * [Android でのプッシュメッセージ](/help/android/messaging-main/push-messaging/push-messaging.md)
 
-      * [Android でのプッシュメッセージ](https://docs.adobe.com/content/help/ja-JP/mobile-services/android/messaging-android/push-messaging/push-messaging.html)
-
-1. 次のフィールドに情報を入力します。
+2. 次のフィールドに情報を入力します。
 
    * **[!UICONTROL 期間]**
 
@@ -109,7 +106,7 @@ Adobe Mobile Services では、マーケターはプラットフォームごと�
 
    * **[!UICONTROL Analytics セグメント]**
 
-      ドロップダウンリストから既存の Adobe Analytics セグメントを選択します。詳しくは、「[セグメントのビルド](https://docs.adobe.com/content/help/ja-JP/analytics/components/segmentation/segmentation-workflow/seg-build.html)」を参照してください。
+      ドロップダウンリストから既存の Adobe Analytics セグメントを選択します。詳しくは、Adobe Analyticsのドキュメントの [ セグメントビルダー ](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-build.html?lang=ja) を参照してください。
 
    * **[!UICONTROL カスタムセグメント]**
 

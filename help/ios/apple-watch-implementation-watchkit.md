@@ -1,16 +1,13 @@
 ---
 description: WatchOS 2 以降、Apple Watch で WatchKit エクステンションを実行できます。この環境で動作するアプリケーションが iOS 本体アプリとデータを共有するには、WatchConnectivity フレームワークが必要です。
-seo-description: WatchOS 2 以降、Apple Watch で WatchKit エクステンションを実行できます。この環境で動作するアプリケーションが iOS 本体アプリとデータを共有するには、WatchConnectivity フレームワークが必要です。
-seo-title: WatchOS 2 を使用した Apple Watch 実装
 solution: Experience Cloud,Analytics
 title: WatchOS 2 を使用した Apple Watch 実装
 topic-fix: Developer and implementation
 uuid: 9498467e-db5e-411e-a00e-d19841f485de
 exl-id: 9fc9b799-1081-42e4-acf3-569fdeb07aff
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '542'
+source-wordcount: '506'
 ht-degree: 100%
 
 ---
@@ -41,8 +38,8 @@ Adobe Experience Platform Mobile SDK に関する情報やドキュメントを�
 >* 本体アプリ
 >* WatchKit アプリ
 >* WatchKit 拡張
->
 
+>
 
 
 WatchKit アプリの開発について詳しくは、「[Watch App アーキテクチャ](https://developer.apple.com/library/ios/documentation/General/Conceptual/WatchKitProgrammingGuide/DesigningaWatchKitApp.html#//apple_ref/doc/uid/TP40014969-CH3-SW1)」を参照してください。
@@ -69,7 +66,7 @@ WatchKit アプリの開発について詳しくは、「[Watch App アーキテ
 1. AppDelegate クラスの実装ファイル内で、`AdobeMobileLibrary` をインポートします。
 
    ```objective-c
-   #import “ADBMobile.h”
+   #import "ADBMobile.h"
    ```
 
 1. `ADBMobile` ライブラリを呼び出す前に、AppDelegate の `application:didFinishLaunchingWithOptions:`で、`WCSession` を設定します。
@@ -120,7 +117,7 @@ WatchKit アプリの開発について詳しくは、「[Watch App アーキテ
 1. ExtensionDelegate クラスの実装ファイル内で、`AdobeMobileLibrary` を読み込みます。
 
    ```objective-c
-   #import “ADBMobile.h”
+   #import "ADBMobile.h"
    ```
 
 1. `applicationDidFinishLaunching` ライブラリへのコールをおこなう前に、ExtensionDelegate の `WCSession` で、`ADBMobile` を設定します。

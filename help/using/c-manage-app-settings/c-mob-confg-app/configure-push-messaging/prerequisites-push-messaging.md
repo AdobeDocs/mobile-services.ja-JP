@@ -1,18 +1,15 @@
 ---
 description: アプリケーションでプッシュメッセージを設定する前に、いくつかのタスクを完了する必要があります。
 keywords: モバイル
-seo-description: アプリケーションでプッシュメッセージを設定する前に、いくつかのタスクを完了する必要があります。
-seo-title: プッシュメッセージを有効にするための前提条件
 solution: Experience Cloud,Analytics
 title: プッシュメッセージを有効にするための前提条件
 topic-fix: Metrics
 uuid: 194e6e07-b794-4152-a838-a4125c3292d4
 exl-id: 543155a4-f687-48a6-8690-5c8da8490c62
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '647'
-ht-degree: 100%
+source-wordcount: '633'
+ht-degree: 94%
 
 ---
 
@@ -57,7 +54,7 @@ Adobe Analytics を使用する会社では、Experience Cloud を有効にす�
 
 各ユーザーは、Experience Cloud 組織から Analytics ソリューションアカウントをリンクする必要があります。
 
-1. Adobe ID を使用して Experience Cloud にサインインするには、ブラウザーで「[https://marketing.adobe.com](https://marketing.adobe.com)」と入力します。
+1. Adobe IDで [Adobe Experience Cloud](https://experience.adobe.com) にログインします。
 
 1. 右上隅で、Analytics 会社名を選択します。
 
@@ -67,7 +64,7 @@ Adobe Analytics を使用する会社では、Experience Cloud を有効にす�
 
    これで、Adobe ID が Analytics アカウント、会社およびログイン資格情報にリンクされました。
 
-詳しくは、[アカウントのリンクのトラブルシューティング](https://docs.adobe.com/content/help/ja-JP/core-services/interface/manage-users-and-products/organizations.html)を参照してください。
+詳細については、『Experience Cloud中央インターフェイスコンポーネントガイド』のExperience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html) の [ 組織を参照してください。
 
 ## Mobile ユーザーインターフェイスでのプッシュサービスおよび SDK ID サービスの設定
 

@@ -1,16 +1,13 @@
 ---
 description: iOS 9 の一連の新しいセキュリティ要件である App Transport Security（ATS）への対応に役立つ情報です。
-seo-description: iOS 9 の一連の新しいセキュリティ要件である App Transport Security（ATS）への対応に役立つ情報です。
-seo-title: App Transport Security
 solution: Experience Cloud,Analytics
 title: App Transport Security
 topic-fix: Developer and implementation
 uuid: e9ee13cf-9802-492e-8b11-95f028e34e61
 exl-id: 2fe94e76-06d6-4ad1-95ba-193ae3df4d58
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '463'
 ht-degree: 100%
 
 ---
@@ -31,7 +28,7 @@ Adobe Mobile Servicesで、アプリ設定の&#x200B;**[!UICONTROL HTTPS を使�
 |--- |--- |
 | Analytics | Analytics サーバーを許可するには、トラッキングサーバードメインを ATS 用の例外ドメインとして info.plist ファイルに追加します。トラッキングサーバードメインは、`ADBMobileConfig.json` ファイルの Analytics セクションまたはアプリ設定ページの Analytics セクションにあります。 |
 | Audience Manager | Audience Manager ドメインは、`ADBMobileConfig.json` ファイルの audienceManager オブジェクトの server プロパティにあります。アプリ内で Audience Manager を使用しており、SSL が有効になっていない場合は、このサーバーを ATS 用の例外ドメインとして `Info.plist` ファイルに追加します。 |
-| Target | Target エンドポイントを ATS 用の例外ドメインとして Info.plist ファイルに追加できます。Target エンドポイントを見つけるには、`clientCodeproperty` ファイルの target オブジェクト内にある `ADBMobileConfig.json` を探します。エンドポイントは `https://{clientCode}.tt.omtrdc.net` になります。例えば、`clientCodeproperty` が `“myCompany”` の場合、エンドポイントは `https://myCompany.tt.omtrdc.net` になります。 |
+| Target | Target エンドポイントを ATS 用の例外ドメインとして Info.plist ファイルに追加できます。Target エンドポイントを見つけるには、`clientCodeproperty` ファイルの target オブジェクト内にある `ADBMobileConfig.json` を探します。エンドポイントは `https://{clientCode}.tt.omtrdc.net` になります。例えば、`clientCodeproperty` が `"myCompany"` の場合、エンドポイントは `https://myCompany.tt.omtrdc.net` になります。 |
 | Adobe Experience Platform ID サービス | ATS の例外ドメインとして、Experience Cloud サーバーを `Info.plist` ファイルに追加できます。このドメインは `dpm.demdex.net` です。 |
 | Mobile Services：獲得 | `Info.plist` ファイルで、ATS の例外ドメインとして獲得サーバーをホワイトリストに許可します。このドメインは `c00.adobe.com` です。 |
 | Mobile Services：アプリ内メッセージ | アプリ内メッセージを使用する場合は、HTTPS 以外の URL を使用するたびに、ATS の例外ドメインにエントリを追加する必要が出ることがあります。このリストには、ホスティングされている画像と、カスタムの全画面表示メッセージ HTML に埋め込まれている URL が含まれます。`info.plist` ファイル内の例外ドメインの設定の詳細については、*Table 2: App Transport Security dictionary primary keys（表 2：App Transport Security 辞書プライマリキー）* の *NSExceptionDomains* 行を参照してください。詳しくは、「*Information Property List Key Reference（情報プロパティリストキーのリファレンス）*」の「[Table 3 Exception domains dictionary keys（表 3 例外ドメイン辞書キー）](https://developer.apple.com/library/prerelease/ios/technotes/App-Transport-Security-Technote/)」を参照してください。 |

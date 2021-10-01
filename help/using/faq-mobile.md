@@ -1,18 +1,15 @@
 ---
 description: Adobe Mobile Services のよくある質問と回答、および一般的な機能説明です。
 keywords: モバイル
-seo-description: Adobe Mobile Services のよくある質問と回答、および一般的な機能説明です。
-seo-title: よくある質問
 solution: Experience Cloud,Analytics
 title: よくある質問
 topic-fix: Metrics
 uuid: 62a9241c-2ada-483a-a594-b023916cb0b6
 exl-id: d7dfc36e-56f0-498a-ad50-93fee90cb6ff
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '1119'
-ht-degree: 100%
+source-wordcount: '1031'
+ht-degree: 96%
 
 ---
 
@@ -22,13 +19,9 @@ ht-degree: 100%
 
 ## Adobe Mobile SDK {#section_9C2181F7B39A4BEB8EE6BCEFCF14C72F}
 
-### SDK は頻繁に更新されますか？
-
-はい。最も機能が豊富で、標準に準拠し、安全な SDK を提供するために、継続的にアップデートを実施しています。通常は、毎月新しいバージョンをリリースします。これらの SDK アップデートは、容易に実装できるよう支援する、ドロップインの代替機能（バージョン 4x 向け）です。アップデートの詳細については、[リリースノート](https://docs.adobe.com/content/help/ja-JP/release-notes/experience-cloud/current.html)を参照してください。
-
 ### どの SDK バージョンを使用すべきですか？
 
-現在の SDK は、バージョン 4.11 です。詳しくは、[リリースノート](https://docs.adobe.com/content/help/en/release-notes/experience-cloud/current.html)を参照してください。
+現在の SDK は、バージョン 4.11 です。詳しくは、[ リリースノート ](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=ja) を参照してください。
 
 ### SDK はどこからダウンロードできますか？
 
@@ -44,7 +37,6 @@ Adobe Mobile SDK は、標準 iOS および Android ネットワークスタッ�
 
 *NSURLSession および CFNetwork フレームワークなどのハイレベルネットワーキング API を使用してクライアント側アプリを記述している場合で、名前で接続する場合、IPv6 アドレスで機能させるためにアプリを変更する必要はありません。* 詳細については、「[IPv6 DNS64／NAT64 ネットワークのサポート](https://developer.apple.com/library/content/documentation/NetworkingInternetWeb/Conceptual/NetworkingOverview/UnderstandingandPreparingfortheIPv6Transition/UnderstandingandPreparingfortheIPv6Transition.html#__/apple_ref/doc/uid/TP40010220-CH213-SW1)」を参照してください。
 
-
 ## Adobe Analytics {#section_78EC9D83791F477AAED678720CEBA9F6}
 
 ### ライフサイクル指標とは
@@ -53,7 +45,7 @@ Adobe Mobile SDK は、標準 iOS および Android ネットワークスタッ�
 
 ### 処理ルールをトラブルシューティングする方法を教えてください。
 
-詳しくは、「[処理ルールのヒントとテクニック](https://docs.adobe.com/content/help/ja-JP/analytics/admin/admin-tools/processing-rules/processing-rules-tips.html)」を参照してください。
+Adobe Analyticsのドキュメントの [ 処理ルールのヒントとテクニック ](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-tips.html) を参照してください。
 
 ### 解析データを複数のレポートスイートに送信することはできますか。
 
@@ -91,7 +83,7 @@ Adobe Mobile Services で作成された、公開済みのアクティブなア�
 
 同じ親レポートスイートまたは VRS を使用する複数のアプリで、同じアプリ内メッセージ、プッシュメッセージまたはマーケティングリンク名を使用することはできません。この問題を解決するには、アプリ内メッセージ、プッシュメッセージまたはマーケティングリンクに別の名前を入力します。
 
-## 場所 {#section_01208FE3B7764E0DADDCB9AD9E1FCD87}
+## ロケーション {#section_01208FE3B7764E0DADDCB9AD9E1FCD87}
 
 ### 目標地点（POI）の数に制限はありますか？
 

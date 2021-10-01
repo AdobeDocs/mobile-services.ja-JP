@@ -1,19 +1,16 @@
 ---
 description: Adobe Mobile Services UI で設定したディープリンク URL は、プッシュペイロードの adb_deeplink キーに含まれます。
-seo-description: Adobe Mobile Services UI で設定したディープリンク URL は、プッシュペイロードの adb_deeplink キーに含まれます。
-seo-title: ディープリンクを使用したプッシュメッセージの実装
 title: ディープリンクを使用したプッシュメッセージの実装
 uuid: ee9590fc-8bd3-4111-9221-9011d9edbd84
-translation-type: tm+mt
-source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
+exl-id: c9ca955c-506f-45fe-82d6-fad2f9a80130
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '192'
-ht-degree: 93%
+source-wordcount: '160'
+ht-degree: 96%
 
 ---
 
-
-# ディープリンクを使用したプッシュメッセージの実装{#implement-push-messaging-with-deep-linking}
+# ディープリンクを使用したプッシュメッセージの実装 {#implement-push-messaging-with-deep-linking}
 
 Adobe Mobile Services UI で設定したディープリンク URL は、プッシュペイロードの `adb_deeplink` キーに含まれます。
 
@@ -73,4 +70,3 @@ Adobe Mobile Services UI で設定したディープリンク URL は、プッ�
     ... 
 }
 ```
-

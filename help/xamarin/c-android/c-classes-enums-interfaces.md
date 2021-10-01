@@ -1,21 +1,18 @@
 ---
-description: Xamarinアプリケーションで使用するクラスと定義済みリストのリスト。
-seo-description: Xamarinアプリケーションで使用するクラスと定義済みリストのリスト。
-seo-title: クラス、列挙、およびインターフェイス
+description: Xamarin アプリケーションで使用するクラスと列挙のリスト。
 title: クラス、列挙、およびインターフェイス
 uuid: 2527b3ae-a447-4b2e-9e90-b3b8ec8cb47a
-translation-type: tm+mt
-source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
+exl-id: 72bc40f6-005c-4fb4-b41d-761d48fe78da
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '56'
-ht-degree: 25%
+source-wordcount: '42'
+ht-degree: 23%
 
 ---
 
-
 # クラス、列挙、およびインターフェイス{#classes-enums-and-interfaces}
 
-Xamarinアプリケーションで使用するクラスと定義済みリストのリスト。
+Xamarin アプリケーションで使用するクラスと列挙のリスト。
 
 ## クラス {#section_30E9E14CF38843B5B9792BBEC07667DC}
 

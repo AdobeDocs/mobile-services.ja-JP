@@ -1,22 +1,19 @@
 ---
 description: モバイルアプリをインストールしている（アプリのディープリンク）か、していない（Web サイトまたはアプリストア）かに応じてユーザーをリンク先にルーティングできます。
 keywords: モバイル
-seo-description: モバイルアプリをインストールしている（アプリのディープリンク）か、していない（Web サイトまたはアプリストア）かに応じてユーザーをリンク先にルーティングできます。
-seo-title: インタースティシャル
 solution: Experience Cloud,Analytics
 title: インタースティシャル
 topic-fix: Metrics
 uuid: 7dce8ab2-2a5d-4384-ac1e-e31dfaa33654
 exl-id: b6d4588f-4f28-4c1b-9291-f4b9154d84f7
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '356'
 ht-degree: 100%
 
 ---
 
-# インタースティシャル {#interstitials}
+# インタースティシャル{#interstitials}
 
 モバイルアプリをインストールしている（アプリのディープリンク）か、していない（Web サイトまたはアプリストア）かに応じてユーザーをリンク先にルーティングできます。ルーティングの選択は、ユーザーに任せるのが最適です。マーケターは、利用可能なランディング先をユーザーに表示するインタースティシャルページを設定することで、ユーザーに選択肢を提供できます。
 

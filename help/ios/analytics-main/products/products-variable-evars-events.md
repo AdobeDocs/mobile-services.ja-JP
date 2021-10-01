@@ -1,16 +1,13 @@
 ---
 description: マーチャンダイジング eVar および製品固有のイベントを持つ products 変数の例を以下に示します。
-seo-description: マーチャンダイジング eVar および製品固有のイベントを持つ products 変数の例を以下に示します。
-seo-title: マーチャンダイジング eVar および製品固有のイベントを持つ products 変数
 solution: Experience Cloud,Analytics
 title: マーチャンダイジング eVar および製品固有のイベントを持つ products 変数
 topic-fix: Developer and implementation
 uuid: f913211e-97ad-4237-bfe4-7ded01295caf
 exl-id: f438190d-0d2d-4bcd-a1c7-156e46e61162
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '98'
+source-wordcount: '76'
 ht-degree: 100%
 
 ---

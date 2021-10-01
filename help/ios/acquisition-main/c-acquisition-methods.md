@@ -1,18 +1,15 @@
 ---
 description: 'iOS ライブラリでは、次の獲得メソッドが提供されています。 '
-seo-description: 'iOS ライブラリでは、次の獲得メソッドが提供されています。 '
-seo-title: 獲得メソッド
 solution: Experience Cloud,Analytics
 title: 獲得メソッド
 uuid: 6f88de57-793d-4d33-9a54-f6714289fd2c
-translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+exl-id: dd2721ae-b9a6-48b9-bc92-8e12ee551929
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '93'
+source-wordcount: '80'
 ht-degree: 100%
 
 ---
-
 
 # 獲得メソッド {#acquisition-methods}
 
@@ -35,5 +32,3 @@ iOS ライブラリは、以下の獲得メソッドを提供します。
       ```objective-c
       [ADBMobile acquisitionCampaignStartForApp:@"0652024f-adcd-49f9-9bd7-2552a4564d2f" data:@{@"custom.key":@"value"}]; 
       ```
-
-

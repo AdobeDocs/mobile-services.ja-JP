@@ -1,16 +1,13 @@
 ---
 description: Experience Cloud ソリューション用 Universal Windows Platform SDK 4.x のリリースノートと既知の問題です。
-seo-description: Experience Cloud ソリューション用 Universal Windows Platform SDK 4.x のリリースノートと既知の問題です。
-seo-title: リリースノート
 solution: Experience Cloud,Analytics
 title: リリースノート
 topic-fix: Developer and implementation
 uuid: 9c164e5c-ce2c-4eda-bba6-71324e4954fa
 exl-id: c7478baf-9f16-441f-9899-3a16a9dc291b
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
 workflow-type: tm+mt
-source-wordcount: '105'
+source-wordcount: '86'
 ht-degree: 100%
 
 ---
@@ -27,5 +24,4 @@ Experience Cloud ソリューション用 Universal Windows Platform SDK 4.x の
 |--- |--- |
 | Experience Cloud ソリューション用 Universal Windows Platform SDK 4.x | 初回リリース。 |
 
-
-すべてのソリューション用のリリースノートについて詳しくは、[Adobe Experience Cloud リリースノート](https://docs.adobe.com/content/help/ja-JP/release-notes/experience-cloud/current.html)を参照してください。
+すべてのソリューション用のリリースノートについて詳しくは、[Adobe Experience Cloud リリースノート](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=ja)を参照してください。

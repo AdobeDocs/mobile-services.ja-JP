@@ -1,33 +1,30 @@
 ---
-description: リストは、モバイルライブラリによって自動的に測定される指標とディメンションです。
+description: モバイルライブラリによって自動的に測定される指標とディメンションを示します。
 keywords: Android, ライブラリ, モバイル, SDK
-seo-description: リストは、モバイルライブラリによって自動的に測定される指標とディメンションです。
-seo-title: ライフサイクル指標
 solution: Experience Cloud,Analytics
 title: ライフサイクル指標
 topic-fix: Developer and implementation
 uuid: f958c3ef-1d79-4b30-8966-ef74bd48a5d6
 exl-id: 19572f15-c5df-40fe-9979-3a5bdd581f2b
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '921'
-ht-degree: 83%
+source-wordcount: '905'
+ht-degree: 84%
 
 ---
 
 # ライフサイクル指標 {#lifecycle-metrics}
 
-リストは、モバイルライブラリによって自動的に測定される指標とディメンションです。
+モバイルライブラリによって自動的に測定される指標とディメンションを示します。
 
-詳しくは、[ライフサイクルデータのトラブルシューティング](https://helpx.adobe.com/jp/analytics/kb/troubleshoot-lifecycle-data.html)を参照してください。
+詳細については、「[ ライフサイクルデータのトラブルシューティング ](https://helpx.adobe.com/jp/analytics/kb/troubleshoot-lifecycle-data.html)」を参照してください。
 
 
 ## ライフサイクル指標およびディメンション {#section_78F036C4296F4BA3A47C2044F79C86C1}
 
 ライフサイクル指標は設定されると、Analytics にはコンテキストデータパラメーターの形で送信され、Target にはパラメーターの形で mbox コールごとに、Audience management へのシグナルとして送信されます。Analytics および Target は同じ形式を使用しますが、Audience management は、各指標に異なるプレフィックスを使用します。
 
-Analyticsでは、各ライフサイクル追跡呼び出しと共に送信されるコンテキストデータは、指標またはディメンションを使用して、自動的に取り込まれ、レポートされます。 例外は内容に記載されています。
+Analytics の場合、各ライフサイクルトラッキングコールと共に送信されるコンテキストデータは、自動的にキャプチャされ、指標またはディメンションを使用してレポートされます。 例外は内容に記載されています。
 
 ## 指標
 
@@ -197,7 +194,7 @@ Analyticsでは、各ライフサイクル追跡呼び出しと共に送信さ�
 
 ## その他のモバイル指標およびディメンション {#section_0B32BBF9CA734103BEDB5E755FFE5B31}
 
-以下の指標とディメンションは、モバイルソリューション変数で次の方法によって取り込まれます。
+次の指標およびディメンションは、次のメソッドによってモバイルソリューション変数にキャプチャされます。
 
 ### 指標
 
@@ -227,7 +224,7 @@ Analyticsでは、各ライフサイクル追跡呼び出しと共に送信さ�
 
    `trackLocation` メソッドによって設定されます。
 
-   * Analyticsコンテキストデータ/ターゲットパラメーター：
+   * Analytics コンテキストデータ/Target パラメーター：
 
       * `a.loc.lat.a`
       * `a.loc.lon.a`
@@ -241,7 +238,7 @@ Analyticsでは、各ライフサイクル追跡呼び出しと共に送信さ�
 
    `trackLocation` メソッドによって設定されます。
 
-   * Analyticsコンテキストデータ/ターゲットパラメーター：
+   * Analytics コンテキストデータ/Target パラメーター：
 
       * `a.loc.lat.b`
       * `a.loc.lon.b`
@@ -255,7 +252,7 @@ Analyticsでは、各ライフサイクル追跡呼び出しと共に送信さ�
 
    `trackLocation` メソッドによって設定されます。
 
-   * Analyticsコンテキストデータ/ターゲットパラメーター：
+   * Analytics コンテキストデータ/Target パラメーター：
 
       * `a.loc.lat.c`
       * `a.loc.lon.c`
@@ -267,14 +264,14 @@ Analyticsでは、各ライフサイクル追跡呼び出しと共に送信さ�
 
 * **目標点名**
 
-   デバイスが定義されたPOIにある場合に`trackLocation`メソッドによって入力されます。
+   デバイスが定義された目標地点内に入ると、`trackLocation` メソッドによって設定されます。
 
    * Analytics コンテキストデータ／Target パラメーター：`a.loc.poi`
    * Audience Manager特性：`c_a_loc_poi`
 
 * **目標地点の中心までの距離**
 
-   デバイスが定義されたPOI内にある場合に`trackLocation`メソッドによって入力されます。
+   デバイスが定義された目標地点内にある場合に `trackLocation` メソッドによって設定されます。
 
    * Analytics コンテキストデータ／Target パラメーター：`a.loc.dist`
    * Audience Manager特性：`c_a_loc_dist`

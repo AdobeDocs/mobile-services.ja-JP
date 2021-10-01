@@ -1,18 +1,15 @@
 ---
 description: Experience Cloud ソリューション用 Android SDK 4.x を使用すると、ネイティブ Android アプリケーションを測定したり、ターゲットコンテンツをアプリに配信したり、Audience Management を通じて視聴者データを活用および収集したりすることができます。
 keywords: Android, ライブラリ, モバイル, SDK
-seo-description: Experience Cloud ソリューション用 Android SDK 4.x を使用すると、ネイティブ Android アプリケーションを測定したり、ターゲットコンテンツをアプリに配信したり、Audience Management を通じて視聴者データを活用および収集したりすることができます。
-seo-title: Experience Cloud ソリューション用 Android SDK 4.x
 solution: Experience Cloud,Analytics
 title: Experience Cloud ソリューション用 Android SDK 4.x
 topic-fix: Developer and implementation
 uuid: 56f1ff41-0365-41dd-bdde-245c823dff07
 exl-id: c2454e94-a9af-42f3-ab45-14f68531faab
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
 workflow-type: tm+mt
-source-wordcount: '451'
-ht-degree: 100%
+source-wordcount: '397'
+ht-degree: 93%
 
 ---
 
@@ -52,14 +49,14 @@ SDK は、次のバージョンの Android をサポートしています。
 
 ## Adobe Mobile ユーザードキュメント {#section_7583FD5FDED143619048E9744A3F2D21}
 
-Adobe Mobile Services は、Adobe Experience Cloud の各種モバイルアプリケーションのモバイルマーケティング機能を統合する UI を提供します。UI の詳細を学習し、ユーザードキュメントを読むには、[Adobe Mobile Services](https://docs.adobe.com/content/help/ja-JP/mobile-services/using/home.html) を参照してください。
+Adobe Mobile Services は、Adobe Experience Cloud の各種モバイルアプリケーションのモバイルマーケティング機能を統合する UI を提供します。UI の詳細を学習し、ユーザードキュメントを読むには、[Adobe Mobile Services](/help/using/home.md) を参照してください。
 
 ## リリースノート {#section_F8181DC052D44DD2A99AB40A41F6792C}
 
-Experience Cloud リリースの最新情報については、[Experience Cloud リリースノート](https://docs.adobe.com/content/help/ja-JP/release-notes/experience-cloud/current.html)を参照してください。
+Experience Cloud リリースの最新情報については、[Experience Cloud リリースノート](/help/using/home.md)を参照してください。
 
 ## Bloodhound の使用
 
 >[!IMPORTANT]
 >
->Adobe Bloodhound は、**2017 年 4 月 30 日**&#x200B;をもって廃止されました。2017 年 5 月 1 日以降、追加の機能強化や追加のエンジニアリングまたは Adobe Expert Care のサポートは提供されません。
+>**2017 年 4 月 30 日** の時点で、AdobeBloodhound は廃止されました。 2017 年 5 月 1 日以降、追加の機能強化や追加のエンジニアリングまたはAdobeエキスパートケアのサポートは提供されません。
