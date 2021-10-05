@@ -6,9 +6,9 @@ title: プッシュメッセージのトラブルシューティング
 topic-fix: Metrics
 uuid: 87d7dcb6-82a8-46e3-a6ed-7f895a22f2af
 exl-id: dda84d30-2a7b-496c-b8f3-3bd6b97076aa
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 1fa6111d6bf1c2d36f15d2f037718646a035435a
 workflow-type: tm+mt
-source-wordcount: '354'
+source-wordcount: '369'
 ht-degree: 100%
 
 ---
@@ -35,9 +35,8 @@ Mobile Services のプッシュメッセージは、次のタイプの遅延を�
    >
    >プッシュサービスでは、メッセージが送信されることは保証されません。サービスの信頼性について詳しくは、適切なドキュメントを参照してください。
    >
-   >* **APNS**：[サービス品質](https://developer.apple.com/documentation/usernotifications)
-   >
-   >* **GCM**：[メッセージのライフタイム](https://developers.google.com/cloud-messaging/concept-options)
+   >* **APNS**：[サービス品質](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html#//apple_ref/doc/uid/TP40008194-CH8-SW5)
+   >* **FCM**：[メッセージの有効期間](https://firebase.google.com/docs/cloud-messaging/concept-options#lifetime)
 
 
 ## Apple のプッシュサービス証明書を更新する方法を教えてください。

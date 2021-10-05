@@ -6,9 +6,9 @@ title: プッシュメッセージのトラブルシューティング
 topic-fix: Metrics
 uuid: c7be4ab7-0cfe-4296-84a8-01412f4fd93f
 exl-id: 56feb8e1-e196-4b70-8240-6e41581ca602
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 1fa6111d6bf1c2d36f15d2f037718646a035435a
 workflow-type: tm+mt
-source-wordcount: '725'
+source-wordcount: '714'
 ht-degree: 100%
 
 ---
@@ -33,12 +33,11 @@ Mobile Services のプッシュメッセージは、次のタイプの遅延を�
 
    >[!TIP]
    >
-   >この数は、成功したプッシュサービスへの送信件数です。プッシュサービスでは、メッセージが送信されることは保証されません。
+   >プッシュサービスでは、メッセージが送信されることは保証されません。サービスの信頼性について詳しくは、適切なドキュメントを参照してください。
+   >
+   >* **APNS**：[サービス品質](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html#//apple_ref/doc/uid/TP40008194-CH8-SW5)
+   >* **FCM**：[メッセージの有効期間](https://firebase.google.com/docs/cloud-messaging/concept-options#lifetime)
 
-   サービスの信頼性について詳しくは、次を参照してください。
-
-   * [サービス品質](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html#//apple_ref/doc/uid/TP40008194-CH8-SW5l)
-   * [メッセージの有効期間](https://developers.google.com/cloud-messaging/concept-options#lifetime)
 
 ## Android GCM API キーが無効なのはなぜですか。
 
@@ -52,8 +51,6 @@ Mobile Services のプッシュメッセージは、次のタイプの遅延を�
 * **API キーの有効性の判断**
 
    API キーの有効性を判断するには、次のコマンドを実行します。
-
-   **Android**
 
    ```java
    # api_key=YOUR_API_KEY
@@ -81,8 +78,6 @@ Mobile Services のプッシュメッセージは、次のタイプの遅延を�
 * `.p8` ファイルではなく、`.p12` ファイルを使用しています。
 
 ## プッシュメッセージの失敗の解決
-
-**例**
 
 次の例は、VRS を使用した場合のプッシュ失敗の解決方法を示しています。
 

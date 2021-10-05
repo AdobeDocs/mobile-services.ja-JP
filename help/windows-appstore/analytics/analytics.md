@@ -5,10 +5,10 @@ title: Analytics
 topic-fix: Developer and implementation
 uuid: fa0ef6c4-c04d-4695-9eb4-ada4e9920e6c
 exl-id: 1a7b32b8-731d-4ae3-9feb-dafbb7495590
-source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
+source-git-commit: 1fa6111d6bf1c2d36f15d2f037718646a035435a
 workflow-type: tm+mt
-source-wordcount: '952'
-ht-degree: 18%
+source-wordcount: '945'
+ht-degree: 17%
 
 ---
 
@@ -62,7 +62,7 @@ app.oncheckpoint = function (args) {
 
 ### App.xaml.cs の C#
 
-```js
+```csharp
 public App() 
 { 
     this.InitializeComponent(); 
@@ -91,7 +91,7 @@ private void OnSuspending(object sender, SuspendingEventArgs e)
 
 ### App.xaml.cpp 内の C/CX
 
-```js
+```c
 App::App() 
 { 
  InitializeComponent(); 
@@ -136,16 +136,14 @@ void App::OnLaunched(Windows::ApplicationModel::Activation::LaunchActivatedEvent
 
 処理ルールは、コンテキストデータ変数で送信したデータを、レポート用に eVar、prop およびその他の変数にコピーするために使用します。
 
-[処理ルールトレーニング](https://tv.adobe.com/embed/1181/16506/) @ Summit 2013
-
 [処理ルールの概要](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html)
 
-論理的な順序を維持するのに役立つので、「名前空間」を使用してコンテキストデータ変数をグループ化することをお勧めします。 例えば、製品に関する情報を収集する場合、次の変数を定義できます。
+Adobeでは、論理的な順序を維持するのに役立つように、「名前空間」を使用してコンテキストデータ変数をグループ化することをお勧めします。 例えば、製品に関する情報を収集する場合、次の変数を定義できます。
 
 ```js
-"product.type":"hat" 
-"product.team":"mariners" 
-"product.color":"blue"
+"product.type":"hat";
+"product.team":"mariners";
+"product.color":"blue";
 ```
 
 コンテキストデータ変数は、処理ルールインターフェイスでアルファベット順に並べ替えられるので、名前空間を使用すると、同じ名前空間にある変数をすばやく確認できます。
@@ -153,25 +151,25 @@ void App::OnLaunched(Windows::ApplicationModel::Activation::LaunchActivatedEvent
 また、eVarや prop 番号を使用してコンテキストデータキーに名前を付ける方もいると聞きました。
 
 ```js
-"eVar1":"jimbo"
+"eVar1":"jimbo";
 ```
 
 これにより、処理ルールで 1 回限りのマッピングを実行すると *少し* の方が簡単になりますが、コードが読みにくくなるので、デバッグや将来のコード更新が困難になる可能性があります。 代わりに、キーと値にはわかりやすい名前を使用することを強くお勧めします。
 
 ```js
-"username":"jimbo"
+"username":"jimbo";
 ```
 
 カウンターイベントを定義するコンテキスト変数を「1」の値に設定します。
 
 ```js
-"logon":"1"
+"logon":"1";
 ```
 
 増分イベントを定義するコンテキストデータ変数には、増分する値を設定できます。
 
 ```js
-"levels completed":"6"
+"levels completed":"6";
 ```
 
 >[!NOTE]
