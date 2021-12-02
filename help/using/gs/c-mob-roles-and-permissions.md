@@ -3,10 +3,10 @@ description: Adobe Analytics では、管理ツールホームページで役割
 title: 役割と権限
 uuid: ad350f8d-ef51-4519-98aa-3025bc0f5588
 exl-id: 70f0b427-60d5-4a79-a8d3-e03274edd917
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: f6a62a46a90c30edaf999085873bf21f2a03a68e
 workflow-type: tm+mt
-source-wordcount: '596'
-ht-degree: 45%
+source-wordcount: '592'
+ht-degree: 49%
 
 ---
 
@@ -20,16 +20,16 @@ Adobe Analytics では、管理ツールホームページで役割を管理で�
 
 ### Analytics 管理者
 
-Analytics 管理者は、ユーザーグループを管理したり、権限を割り当てたりします（その内の 1 つはモバイルアプリ管理）。Experience Cloud管理者は、Adobe IDをAdobe Analyticsアカウントにリンクします。このアカウントを使用すると、Adobe IDを使用して Mobile Services UI にログインできます。 Experience Cloud管理者の詳細については、『Experience Cloud中央インターフェイスコンポーネントガイド』の「[Experience Cloudユーザーと製品の管理 ](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html)」を参照してください。
+Analytics 管理者は、ユーザーグループを管理したり、権限を割り当てたりします（その内の 1 つはモバイルアプリ管理）。Experience Cloud管理者は、Adobe IDをAdobe Analyticsアカウントにリンクします。このアカウントを使用すると、Adobe IDを使用して Mobile Services UI にログインできます。 Experience Cloud管理者の詳細は、 [Experience Cloudユーザーと製品を管理する](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html) (『Experience Cloud中央インターフェイスコンポーネント』ガイド ) を参照してください。
 
 >[!TIP]
 >
 >既存の Analytics 管理者は、Analytics 管理者の役割を任意のユーザーに割り当てることができます。
 
-この役割について詳しくは、 Adobe Analyticsドキュメントの次のコンテンツを参照してください。
+この役割について詳しくは、 Adobe Analyticsのドキュメントの次のコンテンツを参照してください。
 
-* [ユーザー管理の概要](https://experienceleague.adobe.com/docs/analytics/admin/user-product-management/user-management/users.html)
-* [ユーザーおよびグループ権限の変更](https://experienceleague.adobe.com/docs/analytics/admin/user-product-management/user-management/permissions-changes.html)
+* [ユーザー管理の概要](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html?lang=ja)
+* [ユーザーおよびグループ権限の変更](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html)
 
 ### モバイルアプリ管理者
 
@@ -45,7 +45,7 @@ Analytics 管理者は、ユーザーグループを管理したり、権限を�
 
 ### アプリおよびレポートスイート
 
-すべての Mobile Service アプリはレポートスイートに結び付けられます。 ユーザーがレポートスイートにアクセスできない場合、そのレポートスイートに関連付けられたアプリにはアクセスできません。
+すべての Mobile Services アプリはレポートスイートに結び付けられます。 ユーザーがレポートスイートにアクセスできない場合、そのレポートスイートに関連付けられているアプリにはアクセスできません。
 
 ### Mobile Services と Analytics の機能
 
@@ -58,8 +58,8 @@ Analytics 管理者は、ユーザーグループを管理したり、権限を�
 ### Analytics 管理者 permissions
 
 * すべてのユーザーおよびモバイルアプリ管理権限
-* 新しいレポートスイートを使用したアプリの作成
-* Mobile Services からのアプリの削除
+* 新しいレポートスイートでのアプリの作成
+* Mobile Services からアプリを削除
 
    >[!IMPORTANT]
    >
@@ -68,7 +68,7 @@ Analytics 管理者は、ユーザーグループを管理したり、権限を�
 * アプリ設定
 
    * ライフサイクルレポートの有効化
-   * 場所のレポートを有効にする
+   * ロケーションレポートを有効にする
    * 変数および指標の作成/更新/削除
 
 ### モバイルアプリ管理者 権限
@@ -79,9 +79,9 @@ Analytics 管理者は、ユーザーグループを管理したり、権限を�
 
    * アプリの Mobile SDK オプションの設定
    * アプリの UI 設定
-   * リンクされたアプリストアアプリの設定
+   * リンクされたApp Storeアプリの設定
    * アプリのユニバーサルリンクオプションの設定
-   * プッシュサービスの証明書と API キーの設定
+   * プッシュサービス証明書と API キーの設定
    * ポストバックの作成/更新/アクティブ化/非アクティブ化/複製/アーカイブ/削除
    * リンク先の作成/更新/アーカイブ/削除
 
@@ -91,10 +91,10 @@ Analytics 管理者は、ユーザーグループを管理したり、権限を�
 * プッシュメッセージの作成/更新/送信/スケジュール/キャンセル/複製/アーカイブ/削除
 * アプリ内メッセージの作成/更新/アクティブ化/非アクティブ化/複製/アーカイブ/削除
 
-グループとユーザーについて詳しくは、 Adobe Analyticsドキュメントの次のコンテンツを参照してください。
+グループとユーザーについて詳しくは、 Adobe Analyticsのドキュメントの次のコンテンツを参照してください。
 
-* [ユーザーグループ設定（レガシー）](https://experienceleague.adobe.com/docs/analytics/admin/user-product-management/user-groups/groups.html)
-* [グループにユーザーを追加する](https://experienceleague.adobe.com/docs/analytics/admin/user-product-management/user-management/t-add-user-to-group.html)
+* [ユーザーグループ設定（レガシー）](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html)
+* [グループにユーザーを追加する](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html)
 
 ### Mobile Services ユーザー
 
@@ -107,13 +107,13 @@ Analytics 管理者は、ユーザーグループを管理したり、権限を�
    >
    >ユーザーは、Adobe Analytics でアクセス権のあるレポートスイートのみ表示できます。
 
-* アプリ設定の表示
+* アプリ設定を表示
 
-   * アプリの SDK 設定のダウンロード
+   * アプリの SDK 設定をダウンロード
    * すべての UI および SDK 設定を表示
    * 変数と指標の設定の表示
    * ポストバックを表示
-   * リンク先の表示
+   * リンク先を表示
 
 * レポートの表示と実行
 * マーケティングリンクの表示
