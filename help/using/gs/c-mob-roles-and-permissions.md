@@ -3,9 +3,9 @@ description: Adobe Analytics では、管理ツールホームページで役割
 title: 役割と権限
 uuid: ad350f8d-ef51-4519-98aa-3025bc0f5588
 exl-id: 70f0b427-60d5-4a79-a8d3-e03274edd917
-source-git-commit: f6a62a46a90c30edaf999085873bf21f2a03a68e
+source-git-commit: 7b26c852dd9dba67a8b5e3228c1fecadfb465dca
 workflow-type: tm+mt
-source-wordcount: '592'
+source-wordcount: '555'
 ht-degree: 49%
 
 ---
@@ -20,16 +20,11 @@ Adobe Analytics では、管理ツールホームページで役割を管理で�
 
 ### Analytics 管理者
 
-Analytics 管理者は、ユーザーグループを管理したり、権限を割り当てたりします（その内の 1 つはモバイルアプリ管理）。Experience Cloud管理者は、Adobe IDをAdobe Analyticsアカウントにリンクします。このアカウントを使用すると、Adobe IDを使用して Mobile Services UI にログインできます。 Experience Cloud管理者の詳細は、 [Experience Cloudユーザーと製品を管理する](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html) (『Experience Cloud中央インターフェイスコンポーネント』ガイド ) を参照してください。
+Analytics 管理者は、ユーザーグループを管理したり、権限を割り当てたりします（その内の 1 つはモバイルアプリ管理）。The Experience Cloud Admin links your Adobe ID to your Adobe Analytics account, which allows you to log in to the Mobile Services UI by using your Adobe ID. [](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=ja)
 
 >[!TIP]
 >
 >既存の Analytics 管理者は、Analytics 管理者の役割を任意のユーザーに割り当てることができます。
-
-この役割について詳しくは、 Adobe Analyticsのドキュメントの次のコンテンツを参照してください。
-
-* [ユーザー管理の概要](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html?lang=ja)
-* [ユーザーおよびグループ権限の変更](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html)
 
 ### モバイルアプリ管理者
 
@@ -45,7 +40,7 @@ Analytics 管理者は、ユーザーグループを管理したり、権限を�
 
 ### アプリおよびレポートスイート
 
-すべての Mobile Services アプリはレポートスイートに結び付けられます。 ユーザーがレポートスイートにアクセスできない場合、そのレポートスイートに関連付けられているアプリにはアクセスできません。
+All Mobile Service apps are tied to report suites. If users do not have access to a report suite, they will not have access to that report suite&#39;s associated app.
 
 ### Mobile Services と Analytics の機能
 
@@ -58,8 +53,8 @@ Analytics 管理者は、ユーザーグループを管理したり、権限を�
 ### Analytics 管理者 permissions
 
 * すべてのユーザーおよびモバイルアプリ管理権限
-* 新しいレポートスイートでのアプリの作成
-* Mobile Services からアプリを削除
+* Create App with new report suite
+* Delete App from Mobile Services
 
    >[!IMPORTANT]
    >
@@ -67,57 +62,57 @@ Analytics 管理者は、ユーザーグループを管理したり、権限を�
 
 * アプリ設定
 
-   * ライフサイクルレポートの有効化
-   * ロケーションレポートを有効にする
-   * 変数および指標の作成/更新/削除
+   * Enable Lifecycle Reporting
+   * Enable Location Reporting
+   * Create/Update/Delete Variables and Metrics
 
-### モバイルアプリ管理者 権限
+### モバイルアプリ管理者 permissions
 
-* すべてのユーザー権限
-* 既存のレポートスイートを使用したアプリの作成
+* All User Permissions
+* Create App with existing report suite
 * アプリ設定
 
-   * アプリの Mobile SDK オプションの設定
-   * アプリの UI 設定
-   * リンクされたApp Storeアプリの設定
-   * アプリのユニバーサルリンクオプションの設定
-   * プッシュサービス証明書と API キーの設定
-   * ポストバックの作成/更新/アクティブ化/非アクティブ化/複製/アーカイブ/削除
-   * リンク先の作成/更新/アーカイブ/削除
+   * Configure App&#39;s Mobile SDK options
+   * Configure App&#39;s UI settings
+   * Configure linked App Store apps
+   * Configure App&#39;s Universal Link options
+   * Configure Push Services certs and API keys
+   * Create/Update/Activate/Deactivate/Duplicate/Archive/Delete Postbacks
+   * Create/Update/Archive/Delete Link Destinations
 
-* マーケティングリンクの作成/更新/アーカイブ
-* 従来のダウンロード計測用リンクの作成/読み込み/更新/削除
-* 場所（目標地点）設定の作成/読み込み/更新/削除
-* プッシュメッセージの作成/更新/送信/スケジュール/キャンセル/複製/アーカイブ/削除
-* アプリ内メッセージの作成/更新/アクティブ化/非アクティブ化/複製/アーカイブ/削除
+* Create/Update/Archive Marketing Links
+* Create/Import/Update/Delete Legacy Acquisition Links
+* Create/Import/Update/Delete Places (Points of Interest) configuration
+* Create/Update/Send/Schedule/Cancel/Duplicate/Archive/Delete Push Messages
+* Create/Update/Activate/Deactivate/Duplicate/Archive/Delete In-App Messages
 
-グループとユーザーについて詳しくは、 Adobe Analyticsのドキュメントの次のコンテンツを参照してください。
+For more information about groups and users, see the following content in the Adobe Analytics documentation:
 
-* [ユーザーグループ設定（レガシー）](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html)
+* [](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html?lang=ja)
 * [グループにユーザーを追加する](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html)
 
 ### Mobile Services ユーザー
 
-この役割には表示のみの権限があり、Mobile Services UI でフィードバックを提供できます。
+This role has view-only permissions and can provide feedback in the Mobile Services UI.
 
-* Mobile Services UI に関するフィードバックの提供
-* アプリを表示
+* Provide Feedback on Mobile Services UI
+* View Apps
 
    >[!IMPORTANT]
    >
    >ユーザーは、Adobe Analytics でアクセス権のあるレポートスイートのみ表示できます。
 
-* アプリ設定を表示
+* View App Settings
 
-   * アプリの SDK 設定をダウンロード
-   * すべての UI および SDK 設定を表示
-   * 変数と指標の設定の表示
-   * ポストバックを表示
-   * リンク先を表示
+   * Download App SDK configuration
+   * View all UI and SDK settings
+   * View Variables and Metrics configuration
+   * View Postbacks
+   * View Link Destinations
 
 * レポートの表示と実行
 * マーケティングリンクの表示
-* 従来のダウンロード計測用リンクの表示と書き出し
-* 場所（目標地点）設定の表示と書き出し
-* プッシュメッセージの表示
-* アプリ内メッセージの表示
+* View and Export Legacy Acquisition Links
+* View and Export Places (Points of Interest) configuration
+* View Push Messages
+* View In-App Messages
