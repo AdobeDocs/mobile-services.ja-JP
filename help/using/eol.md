@@ -1,39 +1,45 @@
 ---
-title: AdobeMobile Services の提供終了に関する FAQ
-description: AdobeMobile Services の提供終了のお知らせに関するよくある質問に対する回答を紹介します。
-source-git-commit: 08102faa8470645b4088bd8178ccb630d2368752
+title: Adobe Mobile Services end-of-life FAQ
+description: Get answers to commonly asked questions around the end-of-life announcement for Adobe Mobile Services.
+source-git-commit: 7c3886cbc33c155e527a1d77eccbd3d99609c3d1
 workflow-type: tm+mt
-source-wordcount: '332'
+source-wordcount: '438'
 ht-degree: 0%
 
 ---
 
-# AdobeMobile Services の提供終了に関する FAQ
+# Adobe Mobile Services end-of-life FAQ
 
-AdobeMobile Service の提供終了日は **2022 年 12 月 31 日** です。
+****
 
-## 何が起きてる？
+## What is happening?
 
-Mobile Services は 2022 年 12 月 31 日に提供終了となります。 モバイル中心の UI、獲得、ディープリンク、アプリ内メッセージ、プッシュ通知および地域をサポートする Mobile Services は、この日以降はサポートされなくなります。
+Mobile Services reaches end-of-life on December 31, 2022. Mobile Services, which supports a mobile-centric UI, acquisition, deep linking, in-app messaging, push notification, and geo-location is no longer supported after this date.
 
-## 含まれるもの、含まれないもの
+## What is included, and what is not included?
 
-この提供終了には、AdobeMobile Services（[mobilemarketing.adobe.com](https://mobilemarketing.adobe.com) のスタンドアロンプラットフォーム）のみが含まれます。 このインターフェイスに依存する Mobile バージョン 4 SDK は、2021 年 8 月 31 日に提供終了となりました。
+[](https://mobilemarketing.adobe.com)The Mobile version 4 SDKs that rely on this interface were sunset on August 31, 2021.
 
-この提供終了には、Adobe Experience Platform Mobile SDK の一部であるモバイルアプリ用のAdobe Analyticsは含まれません。 これらの機能（アプリ内の動作、ライフサイクル分析、メッセージングのインタラクション追跡、オーディエンスプロファイルなど）は、引き続きAdobeからサポートを受けます。
+This end-of-life does NOT include Adobe Analytics for mobile apps, part of the Adobe Experience Platform Mobile SDKs. These features, which include in-app behavior, lifecycle analysis, messaging interaction tracking, and audience profiles, continue to receive support from Adobe.
 
-## 機能が廃止される理由
+## Why is the capability being retired?
 
-Adobeがモバイルマーケティング機能を引き続き拡大するにつれ、以前 Mobile Services で使用可能だった機能は、Adobe Experience Cloudソリューションでリリースされるか、Adobe交換プレミアパートナーを通じて提供されます。 この移行により、より強力で柔軟なモバイルマーケティング機能が提供されます。
+As Adobe continues to expand its mobile marketing capabilities, features previously available in Mobile Services will be released in Adobe Experience Cloud solutions or offered through Adobe Exchange Premier Partners. This transition provides you with more powerful and flexible mobile marketing capabilities.
 
-## 使用可能な切り替えオプションは何ですか。
+## What happens to existing processing rules created in Mobile Services?
 
-Adobeでは、組織の使用例に応じて 3 つのトランジションパスを提供します。
+[](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html)Migrated processing rules behave similarly to other processing rules in Adobe Analytics, where you can freely view or edit them. No user action is required for this migration.
 
-1. **アプリ内メッセージおよびプッシュ通知**:Adobeは、メッセージングワークフローをAdobe Journey Optimizerに移行できます。この製品を使用すると、モバイルメッセージを含む、カスタマージャーニー全体にわたって、エクスペリエンスを最適化およびパーソナライズできます。
-1. **獲得およびディープリンク**:獲得およびディープリンクは、Exchange プレミアパートナーAdobeプログラムを通じて提供されます。Adjust、AppsFlyer、Branch など、広範な獲得機能を提供します。 Adobeのパートナーシップチームは、お客様のニーズに最適なソリューションを確実に見つけるために、適切な紹介を行うことができます。
-1. **Places サービス**:Places Service は、無料の位置情報機能を提供します。「[Places Service のドキュメント ](https://experienceleague.adobe.com/docs/places/using/home.html)」を参照してください。
+[](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/contextdata.html?lang=en)
 
-## 質問がある場合は、どこに行けばよいですか。
+## What transition options are available?
 
-詳しくは、[AdobeMobile Services の提供終了の Spark ページ ](https://spark.adobe.com/page/C6D30y09zaRpD/) を参照してください。 その他のご質問については、Adobe担当者にお問い合わせください。
+Adobe offers three transition paths depending on your organization&#39;s use case.
+
+1. **** This product helps organizations optimize and personalize experiences across the entire customer journey, including mobile messaging.
+1. **** These partners include Adjust, AppsFlyer, and Branch, who offer extensive acquisition capabilities. Adobe&#39;s partnership team can make appropriate introductions to ensure that you find the solution that best fits your needs.
+1. ****[](https://experienceleague.adobe.com/docs/places/using/home.html)
+
+## Where can I go if I have questions?
+
+[](https://spark.adobe.com/page/C6D30y09zaRpD/)Contact your Adobe representative with any additional questions.
