@@ -6,10 +6,10 @@ title: アプリストア
 topic-fix: Metrics
 uuid: a194364d-faaf-4995-befd-cf48f9c1f11b
 exl-id: 27c65823-49ca-4bd4-b929-ba3df86e0a13
-source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
+source-git-commit: bd55e3525488f24bc9845220f0df62706ec28f31
 workflow-type: tm+mt
-source-wordcount: '162'
-ht-degree: 95%
+source-wordcount: '154'
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 95%
 >
 >Mobile Services UI では、統合を設定すると、左側のナビゲーションパネルに&#x200B;**[!UICONTROL アプリストア]**&#x200B;のメニュー項目と関連レポートが表示されます。
 
-[Adobe Analytics 向け appFigures データコネクタ](https://experienceleague.adobe.com/docs/analytics/import/dataconnectors/appfigures/appfigures-overview.html)には、次の情報が含まれています。
+Adobe Analytics 向け appFigures データコネクタには、次の情報が含まれています。
 
 * 統合の主なメリットと機能
 * 次を含む、統合の実装

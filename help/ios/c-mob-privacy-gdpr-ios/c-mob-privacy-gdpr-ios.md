@@ -3,10 +3,10 @@ description: データ管理事業者は Experience Cloud Mobile SDK で提供�
 title: プライバシーと一般データ保護規則
 uuid: 69bb82de-1993-440c-a1b0-8d37919b48b6
 exl-id: 8549310d-31b8-49a3-9276-f8e9ab980a10
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: bd55e3525488f24bc9845220f0df62706ec28f31
 workflow-type: tm+mt
-source-wordcount: '354'
-ht-degree: 71%
+source-wordcount: '336'
+ht-degree: 74%
 
 ---
 
@@ -29,9 +29,9 @@ Adobe Experience Platform Mobile SDK に関する情報やドキュメントを�
 
 ## 概要
 
-Adobeが企業に対してソフトウェアやサービスを提供する場合、Adobeは、サービスの一部として処理および保存する個人データのデータ処理者としての役割を果たします。 Adobeはデータ処理者として、お客様の許可と指示 ( お客様とAdobeとの間で締結された契約の内容など ) に従って個人データを処理します。
+Adobeが企業に対してソフトウェアやサービスを提供する場合、Adobeは、サービスの提供の一環として処理および保管する個人データのデータ処理者としての役割を果たします。 Adobeはデータ処理者として、お客様の許可と指示 ( お客様とAdobeとの間で締結された契約の内容など ) に従って個人データを処理します。
 
-データ管理者は、AdobeMobile Services SDK を使用して、モバイルアプリからの GDPR の取得および削除要求をサポートできます。
+データ管理者は、AdobeのMobile Services SDK を使用して、モバイルアプリからの GDPR の取得および削除要求に対応できます。
 
 モバイルアプリケーションの Adobe Mobile SDK 部分に関しては、次の設定とメソッドを使用できます。
 
@@ -48,5 +48,4 @@ Adobeが企業に対してソフトウェアやサービスを提供する場合
 
 ## 追加情報 {#section_7C7124C50D85469C8C8714533FB1A37D}
 
-* GDPR の詳細については、「[GDPR とお客様のビジネス ](https://www.adobe.com/jp/privacy/general-data-protection-regulation.html)」を参照してください。
-* GDPR API のドキュメントを参照するには、[EU 一般データ保護規則 API](https://adobe.io/apis/cloudplatform/gdpr.html) に移動してください。
+* GDPR について詳しくは、 [GDPR とビジネス](https://www.adobe.com/jp/privacy/general-data-protection-regulation.html).
