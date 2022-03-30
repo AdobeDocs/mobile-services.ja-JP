@@ -1,12 +1,12 @@
 ---
 description: ユーザーが Apple App Store や Google Play からアプリを直接ダウンロードできるアプリストアリンクを作成できます。作成したリンクを使用すると、成功したイベントをダウンロードに関連付けることができます。
 keywords: モバイル
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: ダウンロード計測用リンクの作成
 topic-fix: Metrics
 uuid: bb603013-fca9-44a2-820a-59e1c85d9444
 exl-id: bc351d1e-c7da-4418-ac5a-9e5f989dd566
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '470'
 ht-degree: 100%

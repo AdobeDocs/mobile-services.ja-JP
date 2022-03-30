@@ -1,12 +1,12 @@
 ---
 description: 技術レポートでは、アプリが使用されている様々なデバイスタイプ、オペレーティングシステム、オペレーティングシステムのバージョンおよび携帯電話会社を確認できます。
 keywords: モバイル
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: 技術レポート
 topic-fix: Reports,Metrics
 uuid: 4b7322c4-8920-43cd-bb72-5a5bd515ae84
 exl-id: 767c1538-68b1-4193-bd3d-3eb80e5b36f7
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '544'
 ht-degree: 100%

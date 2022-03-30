@@ -1,12 +1,12 @@
 ---
-description: モバイルライブラリによって自動的に測定される指標とディメンションを示します。
+description: モバイルライブラリで自動的に測定できる指標とディメンションを示します。
 keywords: Android, ライブラリ, モバイル, SDK
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: ライフサイクル指標
 topic-fix: Developer and implementation
 uuid: f958c3ef-1d79-4b30-8966-ef74bd48a5d6
 exl-id: 19572f15-c5df-40fe-9979-3a5bdd581f2b
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '905'
 ht-degree: 84%
@@ -15,16 +15,16 @@ ht-degree: 84%
 
 # ライフサイクル指標 {#lifecycle-metrics}
 
-モバイルライブラリによって自動的に測定される指標とディメンションを示します。
+モバイルライブラリで自動的に測定できる指標とディメンションを示します。
 
-詳細については、「[ ライフサイクルデータのトラブルシューティング ](https://helpx.adobe.com/jp/analytics/kb/troubleshoot-lifecycle-data.html)」を参照してください。
+詳しくは、 [ライフサイクルデータのトラブルシューティング](https://helpx.adobe.com/jp/analytics/kb/troubleshoot-lifecycle-data.html).
 
 
 ## ライフサイクル指標およびディメンション {#section_78F036C4296F4BA3A47C2044F79C86C1}
 
 ライフサイクル指標は設定されると、Analytics にはコンテキストデータパラメーターの形で送信され、Target にはパラメーターの形で mbox コールごとに、Audience management へのシグナルとして送信されます。Analytics および Target は同じ形式を使用しますが、Audience management は、各指標に異なるプレフィックスを使用します。
 
-Analytics の場合、各ライフサイクルトラッキングコールと共に送信されるコンテキストデータは、自動的にキャプチャされ、指標またはディメンションを使用してレポートされます。 例外は内容に記載されています。
+Analytics の場合、各ライフサイクルトラッキングコールと共に送信されるコンテキストデータは、自動的にキャプチャされ、指標またはディメンションを使用してレポートされます。 例外はコンテンツに記載されています。
 
 ## 指標
 
@@ -264,21 +264,21 @@ Analytics の場合、各ライフサイクルトラッキングコールと共�
 
 * **目標点名**
 
-   デバイスが定義された目標地点内に入ると、`trackLocation` メソッドによって設定されます。
+   入力者 `trackLocation` メソッドを使用します。
 
    * Analytics コンテキストデータ／Target パラメーター：`a.loc.poi`
-   * Audience Manager特性：`c_a_loc_poi`
+   * Audience Manager特性： `c_a_loc_poi`
 
 * **目標地点の中心までの距離**
 
-   デバイスが定義された目標地点内にある場合に `trackLocation` メソッドによって設定されます。
+   入力者 `trackLocation` メソッドを使用します。
 
    * Analytics コンテキストデータ／Target パラメーター：`a.loc.dist`
-   * Audience Manager特性：`c_a_loc_dist`
+   * Audience Manager特性： `c_a_loc_dist`
 
 * **ライフタイム値（コンバージョン変数）**
 
    `trackLifetimeValue` メソッドによって設定されます。
 
-   * Analytics コンテキストデータ／Target パラメーター：  `a.ltv.amount`
-   * Audience Manager特性：`c_a_ltv_amount`
+   * Analytics コンテキストデータ／Target パラメーター： `a.ltv.amount`
+   * Audience Manager特性： `c_a_ltv_amount`

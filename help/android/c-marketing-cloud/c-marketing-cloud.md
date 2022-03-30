@@ -1,12 +1,12 @@
 ---
 description: この情報は、Android SDK を Adobe Experience Cloud で使用する場合に役立ちます。
 keywords: Android, ライブラリ, モバイル, SDK
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Experience Cloud の概要
 topic-fix: Developer and implementation
 uuid: dbf6e019-8707-42e7-97b8-e18a8a7d5e2c
 exl-id: 660187ab-c744-4aef-aea1-ede61d08897c
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '126'
 ht-degree: 100%

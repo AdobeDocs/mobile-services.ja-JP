@@ -1,12 +1,12 @@
 ---
 description: Android ウィジェットは、アプリと同じメソッドを使用して追跡できます。ウィジェットはアプリケーションコンテキストをアプリと共有するので、ヒットの順序と訪問者 ID が保持されます。
 keywords: Android, ライブラリ, モバイル, SDK
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Android ウィジェット
 topic-fix: Developer and implementation
 uuid: 1a3718ff-967b-4c8e-ae0b-ba15bddbda0a
 exl-id: 229ea987-256a-45f4-a5ca-afe17dd596b8
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '152'
 ht-degree: 100%

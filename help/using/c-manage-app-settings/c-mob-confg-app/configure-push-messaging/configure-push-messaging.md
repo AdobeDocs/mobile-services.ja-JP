@@ -1,12 +1,12 @@
 ---
 description: この情報を使用すると、新しいアプリの作成中または既存のアプリの編集中に、アプリ設定ページでプッシュサービスオプションを設定するのに役立ちます。
 keywords: モバイル
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: プッシュメッセージの設定
 topic-fix: Metrics
 uuid: 6763858d-6046-4d36-87c0-cf3600a44fb1
 exl-id: d4989c31-2692-4062-8fae-d41c3e3c179b
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '287'
 ht-degree: 100%

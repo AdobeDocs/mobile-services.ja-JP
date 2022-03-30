@@ -1,11 +1,11 @@
 ---
 description: Adobe Experience Platform ID サービスは、Experience Cloud ソリューション全体に汎用の訪問者 ID を提供します。Analytics は、Target、ビデオのハートビート、将来の Experience Cloud 統合に ID サービスを必要とします。
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Experience Cloud ID
 topic-fix: Developer and implementation
 uuid: 13628ea8-3cd4-4cfc-8ff6-722c33f7813a
 exl-id: aa7db365-ad21-431f-bff6-2a6da212dd0c
-source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '230'
 ht-degree: 91%
@@ -18,7 +18,7 @@ Adobe Experience Platform ID サービスは、Experience Cloud ソリューシ�
 
 >[!TIP]
 >
->Adobe Experience Platform ID サービスを使用しない場合は、Experience Cloud ID を設定する必要はありません。詳しくは、[Adobe Experience Platform ID サービス ](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=ja) のドキュメントを参照してください。
+>Adobe Experience Platform ID サービスを使用しない場合は、Experience Cloud ID を設定する必要はありません。詳しくは、 [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=ja) ドキュメント。
 
 ## Experience Cloud ID の有効化 {#section_79F984271C3B4366B7B04F864F4FF8C2}
 

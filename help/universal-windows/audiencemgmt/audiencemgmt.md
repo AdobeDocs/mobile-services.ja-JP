@@ -1,10 +1,10 @@
 ---
-description: シグナルの送信や訪問者セグメントの取得に役立つAudience Manager。
-solution: Experience Cloud,Analytics
+description: Visitor からシグナルを送信し、訪問者セグメントを取得する際に役立つAudience Manager情報です。
+solution: Experience Cloud Services,Analytics
 title: Audience Manager
 topic-fix: Developer and implementation
 uuid: 7fa58ffb-ecc6-46bb-b920-bda42c1f78b5
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '35'
 ht-degree: 25%
@@ -14,7 +14,7 @@ ht-degree: 25%
 
 # Audience Manager {#audience-manager}
 
-シグナルの送信や訪問者セグメントの取得に役立つAudience Manager。
+Visitor からシグナルを送信し、訪問者セグメントを取得する際に役立つAudience Manager情報です。
 
 ## 追加情報
 

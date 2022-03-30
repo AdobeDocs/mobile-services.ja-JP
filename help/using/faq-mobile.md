@@ -1,12 +1,12 @@
 ---
 description: Adobe Mobile Services のよくある質問と回答、および一般的な機能説明です。
 keywords: モバイル
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: よくある質問
 topic-fix: Metrics
 uuid: 62a9241c-2ada-483a-a594-b023916cb0b6
 exl-id: d7dfc36e-56f0-498a-ad50-93fee90cb6ff
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '1031'
 ht-degree: 96%
@@ -21,7 +21,7 @@ ht-degree: 96%
 
 ### どの SDK バージョンを使用すべきですか？
 
-現在の SDK は、バージョン 4.11 です。詳しくは、[ リリースノート ](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=ja) を参照してください。
+現在の SDK は、バージョン 4.11 です。詳しくは、 [リリースノート](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=ja).
 
 ### SDK はどこからダウンロードできますか？
 
@@ -45,7 +45,7 @@ Adobe Mobile SDK は、標準 iOS および Android ネットワークスタッ�
 
 ### 処理ルールをトラブルシューティングする方法を教えてください。
 
-Adobe Analyticsのドキュメントの [ 処理ルールのヒントとテクニック ](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-tips.html) を参照してください。
+詳しくは、 [処理ルールのヒントとテクニック](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-tips.html) (Adobe Analyticsドキュメント ) を参照してください。
 
 ### 解析データを複数のレポートスイートに送信することはできますか。
 

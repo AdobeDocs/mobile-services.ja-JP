@@ -1,11 +1,11 @@
 ---
 description: 状態とは、アプリケーションの様々な画面またはビューのことです。
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: アプリの状態の追跡
 topic-fix: Developer and implementation
 uuid: 69c99d05-5816-4c86-97c5-d218dc26c129
 exl-id: ee1ea716-ee72-4c28-92cb-26df1327f5c6
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '278'
 ht-degree: 100%

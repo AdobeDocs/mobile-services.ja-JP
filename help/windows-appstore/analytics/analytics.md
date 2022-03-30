@@ -1,11 +1,11 @@
 ---
 description: プロジェクトにライブラリを追加した後、アプリケーションの任意の場所で任意の Analytics メソッドを呼び出すことができます。
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Analytics
 topic-fix: Developer and implementation
 uuid: fa0ef6c4-c04d-4695-9eb4-ada4e9920e6c
 exl-id: 1a7b32b8-731d-4ae3-9feb-dafbb7495590
-source-git-commit: 1fa6111d6bf1c2d36f15d2f037718646a035435a
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '945'
 ht-degree: 17%
@@ -18,28 +18,28 @@ ht-degree: 17%
 
 >[!TIP]
 >
->必ず `ADBMobile.h` をクラスに読み込んでください。
+>必ず `ADBMobile.h` クラスに送信します。
 
-## Analytics でのモバイルアプリレポートの有効化 {#section_F2F9234009184F20BA36B5CDE872B424}
+## Analytics でモバイルアプリレポートを有効にする {#section_F2F9234009184F20BA36B5CDE872B424}
 
-コードを追加する前に、Analytics 管理者に次の手順を完了させて、モバイルアプリのライフサイクル追跡を有効にしてもらいます。 これにより、開発を開始する際に、レポートスイートで指標をキャプチャする準備が整います。
+コードを追加する前に、Analytics 管理者に次の手順を実行して、Mobile App Lifecycle Tracking を有効にしてもらいます。 これにより、開発を開始する際に、レポートスイートで指標を収集する準備が整います。
 
-1. **[!UICONTROL 管理ツール]** / **[!UICONTROL レポートスイート]** を開き、モバイルレポートスイートを選択します。
-1. **[!UICONTROL 設定を編集]** / **[!UICONTROL モバイル管理]** / **[!UICONTROL モバイルアプリケーションレポート]** をクリックします。
+1. 開く **[!UICONTROL 管理ツール]** > **[!UICONTROL レポートスイート]** モバイルレポートスイートを選択します。
+1. クリック **[!UICONTROL 設定を編集]** > **[!UICONTROL Mobile Management]** > **[!UICONTROL Mobile Application Reporting]**.
 
-   ![モバイル設定](assets/mobile-settings.png)
+   ![Mobile設定](assets/mobile-settings.png)
 
-1. 「**[!UICONTROL 最新のアプリレポートを有効にする]**」をクリックします。
+1. クリック **[!UICONTROL 最新のアプリレポートを有効にする]**.
 
-   必要に応じて、「**[!UICONTROL モバイルロケーションの追跡を有効にする]**」および「**[!UICONTROL バックグラウンドヒットの従来のレポートと属性を有効にする]**」をクリックすることもできます。
+   また、 **[!UICONTROL Mobile Location Tracking の有効化]** および **[!UICONTROL バックグラウンドのヒット数の従来のレポートおよび属性を有効にします]**.
 
-   ![ライフサイクルの有効化](assets/enable-lifecycle.png)
+   ![ライフサイクルを有効にする](assets/enable-lifecycle.png)
 
-これで、ライフサイクル指標を取り込む準備が整い、モバイルアプリケーションレポートがマーケティングレポートインターフェイスの **[!UICONTROL レポート]** メニューに表示されます。
+これで、ライフサイクル指標を取り込む準備が整い、Mobile Application Reports が **[!UICONTROL レポート]** 」メニューを使用します。
 
 ### 新しいバージョン
 
-定期的に、新しいバージョンのモバイルアプリケーションレポートがリリースされています。 新しいバージョンはレポートスイートに自動的に適用されないので、アップグレードを実行するには、これらの手順を繰り返す必要があります。 アプリに新しいExperience Cloud機能を追加するたびに、これらの手順を繰り返して最新の設定を使用することをお勧めします。
+モバイルアプリケーションレポートの新しいバージョンが定期的にリリースされます。 新しいバージョンはレポートスイートに自動的には適用されません。アップグレードを実行するには、これらの手順を繰り返す必要があります。 アプリに新しいExperience Cloud機能を追加するたびに、これらの手順を繰り返して最新の設定を使用することをお勧めします。
 
 ## ライフサイクル指標 {#section_532702562A7A43809407C9A2CBA80E1E}
 
@@ -118,23 +118,23 @@ void App::OnLaunched(Windows::ApplicationModel::Activation::LaunchActivatedEvent
 }
 ```
 
-`CollectLifecycleData()` が同じセッションで 2 回呼び出された場合、最初の呼び出しの後、アプリケーションは呼び出しごとにクラッシュを報告します。 アプリケーションがシャットダウンされると、SDK は終了が成功したことを示すフラグを設定します。 このフラグが設定されていない場合、`CollectLifecyleData()` はクラッシュを報告します。
+If `CollectLifecycleData()` が同じセッションで 2 回呼び出されると、最初の呼び出しのたびにアプリケーションがクラッシュを報告します。 SDK は、アプリケーションがシャットダウンされたときに、正常終了を示すフラグを設定します。 このフラグが設定されていない場合、 `CollectLifecyleData()` はクラッシュを報告します。
 
 ## event、prop、eVar  {#section_76EA6F5611184C5CAE6E62956D84D7B6}
 
-[ADBMobile クラスとメソッドのリファレンス ](/help/windows-appstore/c-configuration/methods.md) を見てみると、イベント、eVar、prop、heir、リストを設定する場所がわかるでしょう。 バージョン 4 では、これらのタイプの変数を直接アプリに割り当てることができなくなりました。 代わりに、SDK は、コンテキストデータと処理ルールを使用して、レポート用にアプリデータを Analytics 変数へとマッピングします。
+もし [ADBMobile クラスとメソッドのリファレンス](/help/windows-appstore/c-configuration/methods.md)イベント、eVar、prop、heir、リストを設定する場所について疑問が生じる場合があります。 バージョン 4 では、これらのタイプの変数を直接アプリに割り当てることができなくなりました。 代わりに、SDK は、コンテキストデータと処理ルールを使用して、レポート用にアプリデータを Analytics 変数へとマッピングします。
 
-処理ルールには、次のようないくつかの利点があります。
+処理ルールには、次のような利点があります。
 
 * アプリストアにアップデートを送信しなくてもデータマッピングを変更できます。
 * データには、レポートスイートに固有の変数を設定する代わりに、意味のある名前を付けることができます。
 * 追加のデータを送信しても、影響はほとんどありません。これらの値は、処理ルールを使用してマッピングされるまで、レポートに表示されません。
 
-変数に直接割り当てていた値は、代わりにコンテキストデータに追加する必要があります。
+変数に直接代入していた値は、代わりにコンテキストデータに追加する必要があります。
 
 ## 処理ルール {#section_66EE762EEA5E4728864166201617DEBF}
 
-処理ルールは、コンテキストデータ変数で送信したデータを、レポート用に eVar、prop およびその他の変数にコピーするために使用します。
+処理ルールは、コンテキストデータ変数で送信したデータを、レポート用に eVar、prop およびその他の変数にコピーするために使用されます。
 
 [処理ルールの概要](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html)
 
@@ -148,13 +148,13 @@ Adobeでは、論理的な順序を維持するのに役立つように、「名
 
 コンテキストデータ変数は、処理ルールインターフェイスでアルファベット順に並べ替えられるので、名前空間を使用すると、同じ名前空間にある変数をすばやく確認できます。
 
-また、eVarや prop 番号を使用してコンテキストデータキーに名前を付ける方もいると聞きました。
+また、eVarまたは prop 番号を使用してコンテキストデータキーに名前を付ける方もいると聞きました。
 
 ```js
 "eVar1":"jimbo";
 ```
 
-これにより、処理ルールで 1 回限りのマッピングを実行すると *少し* の方が簡単になりますが、コードが読みにくくなるので、デバッグや将来のコード更新が困難になる可能性があります。 代わりに、キーと値にはわかりやすい名前を使用することを強くお勧めします。
+これで間に合うかもしれない *若干* 処理ルールで 1 回限りのマッピングを実行するときの手間は軽減されますが、デバッグ中や将来のコード更新が困難になる可能性があります。 代わりに、キーと値にはわかりやすい名前を使用することを強くお勧めします。
 
 ```js
 "username":"jimbo";
@@ -174,22 +174,22 @@ Adobeでは、論理的な順序を維持するのに役立つように、「名
 
 >[!NOTE]
 >
->アドビは名前空間「`a.`」を予約します。この小さな制限に加え、コンテキストデータ変数は、衝突を回避するために、ログイン会社内で一意である必要があります。
+>アドビは名前空間「`a.`」を予約します。この小さな制限に加えて、競合を回避するために、コンテキストデータ変数はログイン会社内で一意である必要があります。
 
 ## products 変数 {#section_AFBA36F3718C44D29AF81B9E1056A1B4}
 
-モバイル SDK で *`products`* を設定するには、特殊な構文を使用する必要があります。 [products 変数 ](/help/windows-appstore/analytics/products/products.md) を参照してください。
+設定するには *`products`* モバイル SDK では、特別な構文を使用する必要があります。 詳しくは、 [products 変数](/help/windows-appstore/analytics/products/products.md).
 
-## （オプション）オフライン追跡を有効にする {#section_955B2A03EB854742BDFC4A0A3C287009}
+## （オプション）オフライントラッキングを有効にする {#section_955B2A03EB854742BDFC4A0A3C287009}
 
-デバイスがオフラインの場合にヒットを保存するには、[ADBMobileConfig.json config](/help/windows-appstore/c-configuration/methods.md) でオフライン追跡を有効にします。 オフライン追跡を有効にする前に、設定ファイルのリファレンスで説明されているタイムスタンプ要件に注意してください。
+デバイスがオフラインのときにヒットを保存するには、 [ADBMobileConfig.json config](/help/windows-appstore/c-configuration/methods.md). オフライン追跡を有効にする前に、設定ファイルのリファレンスで説明されているタイムスタンプ要件に注意してください。
 
 ## 位置情報と目標地点 {#section_BAD34A8DD013454DB355121316BD7FD4}
 
-位置情報を使用すると、位置データ（緯度/経度）および事前に定義された目標地点を測定できます。 `TrackLocation` 呼び出しごとに、次の情報が送信されます。
+位置情報を使用すると、位置データ（緯度/経度）と事前に定義された目標地点を測定できます。 各 `TrackLocation` コール送信数：
 
-* 緯度/経度および POI（`ADBMobileConfig.json` 設定ファイルで定義された POI 内の場合）。 これらは、自動レポート用にモバイルソリューション変数に渡されます。
-* 中心からの距離と精度がコンテキストデータとして渡されます。 処理ルールを使用してキャプチャします。
+* 緯度/経度および POI( `ADBMobileConfig.json` 設定ファイル )。 これらは、自動レポート用にモバイルソリューション変数に渡されます。
+* コンテキストデータとして渡される中心からの距離と精度。 処理ルールを使用してキャプチャします。
 
 位置を追跡するには：
 
@@ -198,7 +198,7 @@ var ADB = ADBMobile;
 ADB.Analytics.trackLocation(37.75345, -122.33207, null);
 ```
 
-`ADBMobileConfig.json` 設定ファイルで次の POI が定義されている場合：
+次の POI が `ADBMobileConfig.json` 設定ファイル：
 
 ```js
 "poi" : [ 
@@ -206,7 +206,7 @@ ADB.Analytics.trackLocation(37.75345, -122.33207, null);
         ]
 ```
 
-デバイスの位置が定義した点から 7000 メートルの半径内にあると判断された場合、値が「San Francisco」の `a.loc.poi` コンテキストデータ変数が `TrackLocation` ヒットと共に送信されます。 `a.loc.dist` コンテキスト変数が、定義された座標からの距離（メートル単位）と共に送信されます。
+デバイスの位置が定義された点から半径 7000 メートル以内にあると判断された場合、 `a.loc.poi` コンテキストデータ変数に値「San Francisco」を設定し、 `TrackLocation` ヒット。 An `a.loc.dist` context 変数は、定義された座標からの距離（メートル単位）と共に送信されます。
 
 ## ライフタイム値 {#section_D2C6971545BA4D639FBE07F13EF08895}
 

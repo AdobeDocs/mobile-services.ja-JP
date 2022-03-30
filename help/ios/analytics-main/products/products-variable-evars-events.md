@@ -1,11 +1,11 @@
 ---
 description: マーチャンダイジング eVar および製品固有のイベントを持つ products 変数の例を以下に示します。
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: マーチャンダイジング eVar および製品固有のイベントを持つ products 変数
 topic-fix: Developer and implementation
 uuid: f913211e-97ad-4237-bfe4-7ded01295caf
 exl-id: f438190d-0d2d-4bcd-a1c7-156e46e61162
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '76'
 ht-degree: 100%

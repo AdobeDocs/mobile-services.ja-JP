@@ -1,10 +1,10 @@
 ---
 description: 'iOS ライブラリでは、次の獲得メソッドが提供されています。 '
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: 獲得メソッド
 uuid: 6f88de57-793d-4d33-9a54-f6714289fd2c
 exl-id: dd2721ae-b9a6-48b9-bc92-8e12ee551929
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '80'
 ht-degree: 100%

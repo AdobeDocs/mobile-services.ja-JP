@@ -1,12 +1,12 @@
 ---
 description: 様々な変数および指標を設定することで、アプリから受け取ったデータを追跡および管理できます。
 keywords: モバイル
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: アプリの管理
 topic-fix: Metrics
 uuid: 0cc356c3-8457-40a7-8c97-7cbc68a5dc0c
 exl-id: 599fef94-c188-47f5-b9d6-25a7c8cb07bc
-source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '1020'
 ht-degree: 91%
@@ -36,7 +36,7 @@ ht-degree: 91%
 
 **[!UICONTROL アプリ設定]**／**[!UICONTROL 変数と指標を管理]**／**[!UICONTROL カスタム変数]**&#x200B;をクリックします。
 
-これらのマッピングは、[ 処理ルール ](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html) がAdobe Analyticsで使用するのと同じ API を呼び出します。
+これらのマッピングは、 [処理ルール](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html) はAdobe Analyticsで使用します。
 
 ![コンテキストデータマッピング](assets/custom_data_content.png)
 
@@ -46,8 +46,8 @@ ht-degree: 91%
 
    ある値がトラッキングコール（またはヒット）のプロパティに対して設定されている場合、値はそのコールにのみ適用されます。
 
-* **[!UICONTROL カスタム変数]**（または eVar）も、「どれが該当するか」という問いに対する回答を提供します。 ただし、eVar値は、送信されたヒットに限らず、値の有効期限が切れるか新しい値が設定されるまで、後続のヒットで送信された変数と指標にも適用できます。
-* **[!UICONTROL カスタムリスト変数（複数値変数）]**&#x200B;は、1 回のヒットの複数値をキャプチャできることを除いて、変数と同じように動作します。詳しくは、Adobe Analyticsのドキュメントの [list](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/list.html?lang=en) 変数を参照してください。
+* この **[!UICONTROL カスタム変数]** （または eVar）は、「どれが該当するか」という問いに対する回答も提供します。 ただし、eVar値は、送信されたヒットにのみならず、値の有効期限が切れるか新しい値が設定されるまで、後続のヒットで送信された変数と指標にも適用できます。
+* **[!UICONTROL カスタムリスト変数（複数値変数）]**&#x200B;は、1 回のヒットの複数値をキャプチャできることを除いて、変数と同じように動作します。詳しくは、 [リスト](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/list.html?lang=en) 変数については、 Adobe Analyticsのドキュメントを参照してください。
 
 次のマッピングは、Mobile Services で作成されたものとして Analytics で表示されます。
 

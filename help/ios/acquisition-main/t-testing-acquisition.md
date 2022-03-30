@@ -1,10 +1,10 @@
 ---
 description: デバイスのフィンガープリントに基づく従来の獲得キャンペーンリンクのラウンドトリップに役立つ情報です。
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: 従来の獲得のテスト
 uuid: e0591f4a-e26b-4fe4-97c1-a6831a926fa5
 exl-id: 431dc400-952a-4515-9d14-ba2efef4b2c4
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '251'
 ht-degree: 100%

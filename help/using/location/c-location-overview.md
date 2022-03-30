@@ -1,12 +1,12 @@
 ---
 description: ロケーション概要レポートでは、アプリが使用されている様々な国、地域、目標地点を確認できます。
 keywords: モバイル
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: 概要（ロケーション）
 topic-fix: Reports,Metrics
 uuid: a701abc3-001b-4015-843f-5fb2c6c80d17
 exl-id: 9a9f4f64-251f-48d4-a838-af14a357c575
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '556'
 ht-degree: 100%

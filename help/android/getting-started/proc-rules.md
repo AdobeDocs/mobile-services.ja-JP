@@ -1,11 +1,11 @@
 ---
-description: 処理ルールは、コンテキストデータ変数で送信したデータを、レポート用に eVar、prop およびその他の変数にコピーするために使用します。
-solution: Experience Cloud,Analytics
+description: 処理ルールは、コンテキストデータ変数で送信したデータを、レポート用に eVar、prop およびその他の変数にコピーするために使用されます。
+solution: Experience Cloud Services,Analytics
 title: 処理ルールとコンテキストデータ
 topic-fix: Developer and implementation
 uuid: ea892228-86f5-4980-acb8-45ae43c6996d
 exl-id: 543201fd-8118-485f-8235-26ec8f9bbb11
-source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '242'
 ht-degree: 72%
@@ -14,7 +14,7 @@ ht-degree: 72%
 
 # 処理ルールとコンテキストデータ  {#processing-rules-and-context-data}
 
-処理ルールは、コンテキストデータ変数で送信したデータを、レポート用に eVar、prop およびその他の変数にコピーするために使用します。 詳しくは、「[処理ルール](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html)」を参照してください。
+処理ルールは、コンテキストデータ変数で送信したデータを、レポート用に eVar、prop およびその他の変数にコピーするために使用されます。 詳しくは、「[処理ルール](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html)」を参照してください。
 
 処理ルールを使用する際には、次の情報に留意してください。
 
@@ -28,7 +28,7 @@ ht-degree: 72%
 
 * 処理ルールインターフェイスでは、コンテキストデータ変数がアルファベット順に並べ替えられるので、同じ名前空間内の変数をすばやく確認できます。
 
-   コンテキストデータキーには、eVarまたは prop 番号を使用して命名しないでください。
+   データまたは prop 番号を使用して、コンテキストeVarキーに名前を付けないでください。
 
    ```js
    "eVar1":"jimbo"

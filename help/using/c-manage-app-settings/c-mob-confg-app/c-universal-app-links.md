@@ -1,18 +1,18 @@
 ---
-description: ユーザーエクスペリエンスを維持するには、アプリや Web サイト内でのリンクが重要です。 ユニバーサルリンクとアプリリンクの仕組みとその違いについて説明します。
-solution: Experience Cloud,Analytics
+description: アプリや Web サイト内でのリンクは、ユーザーエクスペリエンスを維持するために重要です。 ユニバーサルリンクとアプリリンクの仕組みとその違いについて説明します。
+solution: Experience Cloud Services,Analytics
 title: ユニバーサルリンクとアプリリンクガイド
 topic-fix: Metrics
 uuid: 8d6441dc-4307-4454-95ea-d77ec796f918
 exl-id: 6613189f-7a14-4066-89e9-996d4fe7f128
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '1118'
 ht-degree: 96%
 
 ---
 
-# ユニバーサルリンクとアプリリンクの比較：どうやって？ {#universal-links-and-app-links}
+# ユニバーサルリンクとアプリリンクの比較：仕組みは？ {#universal-links-and-app-links}
 
 ユニバーサルリンク（iOS）およびアプリリンク（Android）を使用すると、iOS または Android アプリでディープリンクに接続できます。
 

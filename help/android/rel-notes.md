@@ -1,11 +1,11 @@
 ---
 description: Experience Cloud ソリューション用 Android SDK 4.x のリリースノートと既知の問題です。
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: リリースノート
 topic-fix: Developer and implementation
 uuid: 16bb4de8-a216-47a8-928c-0b1e1421adcf
 exl-id: 5cc3d031-5952-4e9b-b551-9402d3c05ccb
-source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '283'
 ht-degree: 72%
@@ -18,11 +18,11 @@ Experience Cloud ソリューション用 Android SDK 4.x のリリースノー�
 
 ## 2020 年 4 月 4 日：4.18.2
 
-* アプリ内メッセージ：セキュリティ上の理由から、SDK で作成された WebViews で、プロパティ `setAllowFileAccess` が `false` に設定されるようになりました。
+* アプリ内メッセージ：セキュリティ上の理由から、SDK で作成された WebViews で、プロパティが設定されるようになりました `setAllowFileAccess` から `false`.
 
 ## 2020 年 3 月 13 日：4.18.1
 
-* Target:Target セッション ID が、Adobe Analyticsに送信される内部 Analytics-for-Target ヒットで、コンテキストデータパラメーター `a.target.sessionId` として追加されるようになりました。
+* Target:Target セッション ID がコンテキストデータパラメーターとして追加されました `a.target.sessionId` (Adobe Analyticsに送信される Analytics-for-Target 内部ヒット )。
 
 ## 2020 年 1 月 17 日：4.18.0
 
@@ -49,7 +49,7 @@ Experience Cloud ソリューション用 Android SDK 4.x のリリースノー�
 
 ## 2019 年 5 月 24 日（PT）：バージョン 4.17.6
 
-* 訪問者 ID サービス： `setPushIdentifier` API 呼び出しは、呼び出されるたびに同期呼び出しを訪問者 ID サービスに送信するようになりました。
+* 訪問者 ID サービス — `setPushIdentifier` API 呼び出しは、呼び出されるたびに同期呼び出しを訪問者 ID サービスに送信するようになりました。
 * 訪問者 ID サービス - 接続と読み取りのタイムアウトを 2 秒から 5 秒に増やしました。
 
 すべてのソリューションに関する現在および過去のリリースノートについては、[Adobe Experience Cloud リリースノート](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=ja)を参照してください。

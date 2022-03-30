@@ -1,11 +1,11 @@
 ---
-description: ユニバーサル Windows プラットフォームライブラリが提供するクラスとメソッド。
-solution: Experience Cloud,Analytics
+description: Universal Windows Platform ライブラリが提供するクラスとメソッド。
+solution: Experience Cloud Services,Analytics
 title: SDK メソッド
 topic-fix: Developer and implementation
 uuid: e3aa41d6-7bc0-4208-a662-12907c209a77
 exl-id: 0aac477c-074d-457c-b117-bb205119c475
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '576'
 ht-degree: 63%
@@ -14,11 +14,11 @@ ht-degree: 63%
 
 # SDK メソッド {#sdk-methods}
 
-ユニバーサル Windows プラットフォームライブラリが提供するクラスとメソッド。
+Universal Windows Platform ライブラリが提供するクラスとメソッド。
 
 >[!TIP]
 >
->winJS(JavaScript) の `winmd` メソッドを使用すると、すべてのメソッドの最初の文字が自動的に小文字に変換されます。
+>消費時 `winmd` メソッドを winJS(JavaScript) から呼び出すと、すべてのメソッドで最初の文字が自動的に小文字に変換されます。
 
 * **GetVersion (winJS:getVersion)**
 
@@ -44,7 +44,7 @@ ht-degree: 63%
    * `ADBMobilePrivacyStatusOptOut` ：ヒットは破棄されます。
    * `ADBMobilePrivacyStatusUnknown`：レポートスイートのタイムスタンプが有効になっている場合、プライバシーステータスがオプトイン（ヒットが送信される）またはオプトアウト（ヒットが破棄される）に変更されるまで、ヒットは保存されます。レポートスイートのタイムスタンプが有効になっていない場合、プライバシーステータスがオプトインに変更されるまで、ヒットは破棄されます。
 
-      デフォルト値は `ADBMobileConfig.json` 設定ファイルで設定します。 詳しくは、[ADBMobileConfig.json config file](/help/universal-windows/c-configuration/c.json.md) を参照してください。
+      デフォルト値は `ADBMobileConfig.json` 設定ファイル。 詳しくは、 [ADBMobileConfig.json 設定ファイル](/help/universal-windows/c-configuration/c.json.md).
 
    * このメソッドの構文を次に示します。
 
@@ -78,7 +78,7 @@ ht-degree: 63%
    現在のユーザーのプライバシーステータスを `status` に設定します。次のいずれかの値に設定します。
    * `ADBMobilePrivacyStatusOptIn`：ヒットは即座に送信されます。
    * `ADBMobilePrivacyStatusOptOut`：ヒットは破棄されます。
-   * `DBMobilePrivacyStatusUnknown` ：レポートスイートのタイムスタンプが有効になっている場合、プライバシーステータスがオプトイン（ヒットが送信される）またはオプトアウト（ヒットが破棄される）に変更されるまで、ヒットは保存されます。レポートスイートのタイムスタンプが有効になっていない場合、プライバシーステータスがオプトインに変更されるまで、ヒットは破棄されます。
+   * `DBMobilePrivacyStatusUnknown` ：レポートスイートのタイムスタンプが有効になっている場合、プライバシーステータスがオプトイン（ヒットが送信される）またはオプトアウト（ヒットが破棄される）に変更されるまで、ヒットは保存されます。 レポートスイートのタイムスタンプが有効になっていない場合、プライバシーステータスがオプトインに変更されるまで、ヒットは破棄されます。
 
       * このメソッドの構文を次に示します。
 
@@ -88,7 +88,7 @@ ht-degree: 63%
 
       * このメソッドのコードサンプルを次に示します。
 
-         **C シャープ**
+         **C-sharp**
 
          ```csharp
          public enum class ADBMobilePrivacyStatus : int { 
@@ -125,7 +125,7 @@ ht-degree: 63%
 
 * **GetUserIdentifier (winJS:getUserIdentifier)**
 
-   カスタム識別子が設定されている場合、カスタムユーザー識別子を返します。 カスタム識別子が設定されていない場合は `null` を返します。
+   カスタム識別子が設定されている場合、カスタムユーザー識別子を返します。 戻り値 `null` カスタム識別子が設定されていない場合。
 デフォルト値は `null` です。
 
    >[!IMPORTANT]
@@ -181,7 +181,7 @@ ht-degree: 63%
 
 * **SetDebugLogging (winJS:setDebugLogging)**
 
-   デバッグログの環境設定を `debugLogging` に設定します。デバッグのログは、ライブラリのデバッグバージョンを使用している場合にのみ機能します。リリースバージョンでは、この設定が無視されます。
+   デバッグログの環境設定を `debugLogging` に設定します。デバッグログは、ライブラリのデバッグバージョンを使用している場合にのみ機能します。リリースバージョンでは、この設定は無視されます。
 
    * このメソッドの構文を次に示します。
 
@@ -213,9 +213,9 @@ ht-degree: 63%
       ADB.Config.collectLifecycleData();
       ```
 
-* **ライフサイク&#x200B;ルデータの一時停止 (winJS:pauseCollecting &#x200B; LifecycleData)**
+* **LifecycleData の収&#x200B;集を一時停止します (winJS:pauseCollecting &#x200B; LifecycleData)**
 
-   ライフサイクル指標が正しく計算されるように、アプリが一時停止されたことを SDK に通知します。例えば、一時停止時に、タイムスタンプを収集して、以前のセッションの長さを決定します。 また、これは、アプリがクラッシュしなかったことをライフサイクルが正しく認識できるようにフラグを設定します。 詳しくは、「[ライフサイクル指標](/help/universal-windows/metrics.md)」を参照してください。
+   ライフサイクル指標が正しく計算されるように、アプリが一時停止されたことを SDK に通知します。例えば、一時停止時に、タイムスタンプを収集して、以前のセッションの長さを決定します。 また、これにより、アプリがクラッシュしなかったことをライフサイクルが正しく認識できるようにフラグが設定されます。 詳しくは、「[ライフサイクル指標](/help/universal-windows/metrics.md)」を参照してください。
 
    * このメソッドの構文を次に示します。
 

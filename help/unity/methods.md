@@ -1,12 +1,11 @@
 ---
-description: ADBMobile.cs設定メソッド
+description: ADBMobile.cs 設定メソッド
 keywords: Unity
-solution: Experience Cloud
+solution: Experience Cloud Services
 title: ADBMobile.cs メソッド
 uuid: af504934-febd-45d9-81e2-2a310f4c65dc
 exl-id: d12c16f1-c25c-4698-8943-a660d9c08faf
-translation-type: tm+mt
-source-git-commit: b9ee49ba26d4726b1f97ef36f5c2e9923361b1ee
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '1324'
 ht-degree: 66%
@@ -33,7 +32,7 @@ ht-degree: 66%
       ADBMobile.CollectLifecycleData();
       ```
 
-* **EnableLocalNotifications（iOSのみ）**
+* **EnableLocalNotifications(iOSのみ )**
 
    アプリでローカル通知を有効にします。
 
@@ -86,9 +85,9 @@ ht-degree: 66%
    現在のユーザーのプライバシーステータスの enum 表現を返します。
    * `MOBILE_PRIVACY_STATUS_OPT_IN`：ヒットは即座に送信されます。
    * `MOBILE_PRIVACY_STATUS_OPT_OUT`：ヒットが破棄されます。
-   * `MOBILE_PRIVACY_STATUS_UNKNOWN`:オフライン追跡が有効な場合、プライバシーステータスがオプトイン（ヒットが送信される）またはオプトアウト（ヒットが破棄される）に変わるまで、ヒットは保存されます。
+   * `MOBILE_PRIVACY_STATUS_UNKNOWN`:オフライン追跡が有効になっている場合、プライバシーステータスがオプトイン（ヒットが送信される）またはオプトアウト（ヒットが破棄される）に変更されるまで、ヒットは保存されます。
 
-      オフライン追跡が有効になっていない場合、プライバシーステータスがオプトインに変更されるまで、ヒットは破棄されます。デフォルト値は[ADBMobileConfig.json](/help/ios/configuration/json-config/json-config.md)ファイルに設定されます。
+      オフライン追跡が有効になっていない場合、プライバシーステータスがオプトインに変更されるまで、ヒットは破棄されます。デフォルト値は [ADBMobileConfig.json](/help/ios/configuration/json-config/json-config.md) ファイル。
 
    * このメソッドの構文を次に示します。
 
@@ -104,7 +103,7 @@ ht-degree: 66%
 
 * **GetUserIdentifier**
 
-   カスタム識別子が設定されている場合、カスタムユーザ識別子を返します。 カスタム識別子が設定されていない場合はnullを返します。 デフォルト値は `null` です。
+   カスタム識別子が設定されている場合、カスタムユーザー識別子を返します。 カスタム識別子が設定されていない場合は null を返します。 デフォルト値は `null` です。
 
    * このメソッドの構文を次に示します。
 
@@ -134,7 +133,7 @@ ht-degree: 66%
       var version = ADBMobile.GetVersion();
       ```
 
-* **KeepLifecycleSessionAlive（iOSのみ）**
+* **KeepLifecycleSessionAlive(iOSのみ )**
 
    設定ファイル内のライフサイクルセッションのタイムアウト値にかかわらず、バックグラウンドから次に戻ったときに新しいセッションを開始しないように SDK に指示します。
 
@@ -154,9 +153,9 @@ ht-degree: 66%
       ADBMobile.KeepLifecycleSessionAlive();
       ```
 
-* **PauseCollectingLifecycleData（Androidのみ）**
+* **PauseCollectingLifecycleData（Android のみ）**
 
-   ライフサイクル指標が正しく計算されるように、アプリが一時停止されたことを SDK に通知します。例えば、一時停止中にタイムスタンプを収集して、以前のセッションの長さを判断します。 また、これは、アプリがクラッシュしなかったことをライフサイクルが正しく認識できるようにフラグを設定します。 詳しくは、「[ライフサイクル指標](/help/android/metrics.md)」を参照してください。
+   ライフサイクル指標が正しく計算されるように、アプリが一時停止されたことを SDK に通知します。例えば、一時停止時に、タイムスタンプを収集して、以前のセッションの長さを決定します。 また、これにより、アプリがクラッシュしなかったことをライフサイクルが正しく認識できるようにフラグが設定されます。 詳しくは、「[ライフサイクル指標](/help/android/metrics.md)」を参照してください。
 
    * このメソッドの構文を次に示します。
 
@@ -170,9 +169,9 @@ ht-degree: 66%
       ADBMobile.PauseCollectingLifecycleData();
       ```
 
-* **SetContext（Androidのみ）**
+* **SetContext（Android のみ）**
 
-   Unity Playerの現在のアクティビティからアプリケーションコンテキストを設定する必要があるSDKを示します。
+   UnityPlayer の現在のアクティビティからアプリケーションコンテキストを設定する必要があることを SDK に示します。
 
    * このメソッドの構文を次に示します。
 
@@ -188,7 +187,7 @@ ht-degree: 66%
 
 * **SetDebugLogging**
 
-   デバッグログの環境設定を有効に設定します。
+   デバッグログの環境設定を有効にします。
 
    * このメソッドの構文を次に示します。
 
@@ -204,11 +203,11 @@ ht-degree: 66%
 
 * **SetPrivacyStatus**
 
-   現在のユーザーのプライバシーステータスをステータスに設定します。 次のいずれかの値に設定します。
+   現在のユーザーのプライバシーステータスを status に設定します。 次のいずれかの値に設定します。
 
    * `MOBILE_PRIVACY_STATUS_OPT_IN`：ヒットは即座に送信されます。
    * `MOBILE_PRIVACY_STATUS_OPT_OUT`：ヒットが破棄されます。
-   * `MOBILE_PRIVACY_STATUS_UNKNOWN`:オフライン追跡が有効な場合、プライバシーステータスがオプトイン（ヒットが送信される）またはオプトアウト（ヒットが破棄される）に変わるまで、ヒットは保存されます。オフライン追跡が有効になっていない場合、プライバシーステータスがオプトインに変更されるまで、ヒットは破棄されます。
+   * `MOBILE_PRIVACY_STATUS_UNKNOWN`:オフライン追跡が有効になっている場合、プライバシーステータスがオプトイン（ヒットが送信される）またはオプトアウト（ヒットが破棄される）に変更されるまで、ヒットは保存されます。 オフライン追跡が有効になっていない場合、プライバシーステータスがオプトインに変更されるまで、ヒットは破棄されます。
 
    * このメソッドの構文を次に示します。
 
@@ -216,7 +215,7 @@ ht-degree: 66%
       public static void SetPrivacyStatus(ADBPrivacyStatusstatus);
       ```
 
-   * この構文のコード例を次に示します。
+   * この構文のコードサンプルを次に示します。
 
       ```java
       ADBMobile.SetPrivacyStatus(ADBMobile.ADBPrivacyStatus.MOBILE_PRIVACY_STATUS_OPT_IN);
@@ -224,7 +223,7 @@ ht-degree: 66%
 
 * **SetUserIdentifier**
 
-   ユーザー識別子をuserIdに設定します。
+   ユーザー識別子を userId に設定します。
 
    * このメソッドの構文を次に示します。
 
@@ -258,9 +257,9 @@ ht-degree: 66%
 
 * **TrackState**
 
-   オプションのコンテキストデータを使用してアプリの状態を追跡します。状態とは、「title screen」、「level 1」、「pause」など、アプリで使用できる表示です。 これらの状態は Web サイト上のページによく似ており、`TrackState` コールにより、ページビュー数が増分されます。
+   オプションのコンテキストデータを使用してアプリの状態を追跡します。状態とは、アプリで使用可能なビューのことで、「タイトル画面」、「レベル 1」、「一時停止」などがあります。 これらの状態は Web サイト上のページによく似ており、`TrackState` コールにより、ページビュー数が増分されます。
 
-   状態が空の場合、レポートには&#x200B;*`app name app version (build)`*&#x200B;と表示されます。 レポートにこの値が表示される場合は、各`TrackState`呼び出しで状態を設定していることを確認してください。
+   状態が空の場合は、 *`app name app version (build)`* （レポート内） レポートにこの値が表示される場合は、各 `TrackState` 呼び出し。
 
    >[!TIP]
    >
@@ -282,7 +281,7 @@ ht-degree: 66%
 
 * **TrackAction**
 
-   アプリのアクションを追跡します。アクションとは、アプリ内で測定したい、「deaths」、「level gained」、「feed購読」などの指標です。
+   アプリのアクションを追跡します。アクションとは、アプリ内で測定に価する重要な操作のことで、「deaths」、「level gained」、「feed subscriptions」などの指標があります。
 
    >[!TIP]
    >
@@ -300,7 +299,7 @@ ht-degree: 66%
       ADBMobile.TrackAction("level gained", null);
       ```
 
-* **TrackActionFromBackground（iOSのみ）**
+* **TrackActionFromBackground(iOSのみ )**
 
    バックグラウンドで発生したアクションを追跡します。これにより、特定のシナリオでライフサイクルイベントが発生しないようにします。
 
@@ -322,7 +321,7 @@ ht-degree: 66%
 
 * **TrackLocation**
 
-   現在地点の緯度と経度の座標を送信します。また、現在位置が `ADBMobileConfig.json` ファイルで定義された目標地点内にあるかどうかを判定します。現在の座標が定義したPOI内にある場合、コンテキストデータ変数に値が設定され、TrackLocation呼び出しで送信されます。
+   現在地点の緯度と経度の座標を送信します。また、現在位置が `ADBMobileConfig.json` ファイルで定義された目標地点内にあるかどうかを判定します。現在の座標が定義した目標地点内にある場合、コンテキストデータ変数に代入され、 TrackLocation 呼び出しで送信されます。
 
    * このメソッドの構文を次に示します。
 
@@ -400,7 +399,7 @@ ht-degree: 66%
 
 * **TrackTimedActionUpdate**
 
-   データを渡して、特定のアクションに関連付けられたコンテキストデータを更新します。 渡されたデータは、特定のアクションの既存のデータに追加され、同じキーが既にアクションに定義されている場合は、データを上書きします。
+   データを渡して、特定のアクションに関連付けられたコンテキストデータを更新します。 渡されたデータは、指定されたアクションの既存のデータに追加され、同じキーが既にアクションに定義されている場合は、データを上書きします。
 
    >[!TIP]
    >
@@ -500,7 +499,7 @@ ht-degree: 66%
       var queueSize = ADBMobile.TrackingGetQueueSize();
       ```
 
-## Experience CloudIDメソッド
+## Experience CloudID メソッド
 
 * **GetMarketingCloudID**
 
@@ -520,7 +519,7 @@ ht-degree: 66%
 
 * **VisitorSyncIdentifiers**
 
-   Experience CloudIDを使用して、各訪問者に関連付ける追加の顧客IDを設定できます。 訪問者APIは、同じ訪問者に対して複数の顧客IDと、異なる顧客IDの範囲を区切るための顧客タイプ識別子を受け取ります。 このメソッドは、JavaScript ライブラリの setCustomerIDs に相当します。
+   Experience CloudID を使用して、各訪問者に関連付ける追加の顧客 ID を設定できます。 訪問者 API は、同じ訪問者に対して複数の顧客 ID と、異なる顧客 ID の範囲を区別するための顧客タイプ識別子を受け取ります。 このメソッドは、JavaScript ライブラリの setCustomerIDs に相当します。
 
    * このメソッドの構文を次に示します。
 
@@ -538,9 +537,9 @@ ht-degree: 66%
 
 ## 獲得メソッド
 
-* **ProcessGooglePlayInstallReferrerUrl** *（Androidのみ）*
+* **ProcessGooglePlayInstallReferrerUrl** *（Android のみ）*
 
-   Google Play Install転送者APIへの呼び出しから返された転送者URLをこのメソッドに渡します。
+   呼び出しから返されたリファラー URL をGoogle Play Install Referrer API に渡して、このメソッドにします。
 
    * このメソッドの構文を次に示します。
 

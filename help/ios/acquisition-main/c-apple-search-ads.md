@@ -1,11 +1,11 @@
 ---
 description: Adobe SDK は、Apple Search Ads アプリのアトリビューション API を利用して、開発者とマーケターが Apple App Store の Search Ads キャンペーンからのアプリのダウンロード数を追跡し、アトリビューションをおこなえるようにします。
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Apple Search Ads
 topic-fix: Developer and implementation
 uuid: 790080e8-067e-4bfd-a169-0027db4fdff3
 exl-id: efcdd430-f08d-4ee2-85f3-2697c3bd72db
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '245'
 ht-degree: 100%
@@ -46,7 +46,7 @@ Search Ads アトリビューションに対してアプリを有効にするに
    さらに、以下の値が `"iad"` 辞書から一般的な獲得コンテキストデータフィールドにマッピングされます。
 
    * `"iad-campaign-id"` --> `"a.referrer.campaign.trackingcode"`
-   * `"iad-campaign-name"` —>  `"a.referrer.campaign.name"`
-   * `"iad-adgroup-id"` —>  `"a.referrer.campaign.content"`
-   * `"iad-keyword"` —>  `"a.referrer.campaign.term"`
+   * `"iad-campaign-name"` —> `"a.referrer.campaign.name"`
+   * `"iad-adgroup-id"` —> `"a.referrer.campaign.content"`
+   * `"iad-keyword"` —> `"a.referrer.campaign.term"`
    このマッピングは、標準のレポートで値を使用できるようにします。

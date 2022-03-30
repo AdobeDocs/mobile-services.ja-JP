@@ -1,12 +1,12 @@
 ---
 description: この情報は、Adobe Mobile Services の理解と使用に役立ちます。
 keywords: モバイル
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: はじめに
 topic-fix: Metrics
 uuid: a7ae7c5a-dab8-4603-b4cd-af73a2f09f71
 exl-id: 0c08e154-8747-45dc-9731-ab2a3e78bc5a
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '1344'
 ht-degree: 97%
@@ -111,7 +111,7 @@ Adobe Mobile では、次のタイプのメッセージを設定できます。
 
 *最適化*&#x200B;では、コンバージョン（購読、コマース、広告収入など）を最適化して、顧客維持を強化します。アプリでのユーザーエクスペリエンスを最適化すると、コンテンツをパーソナライズして ROI とコンバージョンを最大限に高めることができます。
 
-テストとAdobe Targetについて詳しくは、 [Adobe Target](https://docs.adobe.com/content/help/ja-JP/experience-cloud/user-guides/home.translate.html) のドキュメントを参照してください。
+テストとAdobe Targetについて詳しくは、 [Adobe Target](https://docs.adobe.com/content/help/ja-JP/experience-cloud/user-guides/home.translate.html) ドキュメント。
 
 ### 地域ターゲット設定
 

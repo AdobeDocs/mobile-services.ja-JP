@@ -1,12 +1,12 @@
 ---
 description: Adobe Mobile Services ユーザーインターフェイスを使用する代わりに .csv ファイルを使用してリンクを処理したい場合は、ダウンロード計測用リンクをインポートまたはエクスポートします。
 keywords: モバイル
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: ダウンロード計測用リンクの読み込み／書き出し
 topic-fix: Metrics
 uuid: 94ea008a-473a-40c3-9fa8-a94eb0208c8f
 exl-id: 9be2377e-7f46-44f7-9c5e-1c20c617276d
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '101'
 ht-degree: 100%

@@ -1,12 +1,12 @@
 ---
 description: 日付範囲オプション、Analytics セグメントおよびカスタムセグメントを含む、プッシュメッセージのオーディエンスオプションを定義および設定できます。
 keywords: モバイル
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: オーディエンス：プッシュメッセージ用のオーディエンスセグメントの定義および設定
 topic-fix: Metrics
 uuid: efd410e7-3b6c-4cf4-a26f-b11688adc491
 exl-id: d1062a76-2e72-4649-8497-58617a7a47cb
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '976'
 ht-degree: 98%
@@ -106,7 +106,7 @@ Adobe Mobile Services では、マーケターはプラットフォームごと�
 
    * **[!UICONTROL Analytics セグメント]**
 
-      ドロップダウンリストから既存の Adobe Analytics セグメントを選択します。詳しくは、Adobe Analyticsのドキュメントの [ セグメントビルダー ](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-build.html?lang=ja) を参照してください。
+      ドロップダウンリストから既存の Adobe Analytics セグメントを選択します。詳しくは、 [セグメントビルダー](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-build.html?lang=ja) (Adobe Analyticsドキュメント ) を参照してください。
 
    * **[!UICONTROL カスタムセグメント]**
 

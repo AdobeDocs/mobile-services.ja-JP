@@ -1,12 +1,12 @@
 ---
 description: Apple Push Notification Service（APNS）または Firebase Cloud Messaging（FCM）を使用するようにアプリを設定できます。
 keywords: モバイル
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: APNS または FCM を使用するアプリ設定
 topic-fix: Metrics
 uuid: fa411f2a-ba47-4499-bbe5-1aedef6b49ad
 exl-id: 9064e1f3-f176-4699-b1e6-90f29e1af0d3
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '629'
 ht-degree: 100%
@@ -67,7 +67,7 @@ Apple Push Notification Service（APNS）または Firebase Cloud Messaging（FC
 
 1. 後で使用するために、**[!UICONTROL レガシーサーバーキー]**&#x200B;と&#x200B;**[!UICONTROL 送信者 ID]** をコピーします。
 
-   以下に例を示します。
+   例：
 
    ```
    - Legacy server key = AIzaSyC6FNgsCOpBL5eXhDvwf8979mWba6x7Roo

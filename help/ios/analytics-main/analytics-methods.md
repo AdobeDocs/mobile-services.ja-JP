@@ -1,11 +1,11 @@
 ---
 description: iOS ライブラリが提供する Adobe Analytics メソッドの一覧を以下に示します。
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Analytics メソッド
 topic-fix: Developer and implementation
 uuid: d49fe6de-cb32-4b96-9891-c567310e59a6
 exl-id: 327ec44a-be15-47af-a2c8-a373124999ad
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '767'
 ht-degree: 100%

@@ -1,11 +1,11 @@
 ---
-description: Windows 8.1 ユニバーサルアプリストアライブラリが提供するAudience Managerメソッドの一覧です。
-solution: Experience Cloud,Analytics
+description: Windows 8.1 ユニバーサルApp Storeライブラリが提供するAudience Managerメソッドの一覧です。
+solution: Experience Cloud Services,Analytics
 title: Audience Manager メソッド
 topic-fix: Developer and implementation
 uuid: e39c9c3e-fd53-4b46-8fff-88101a064a9c
 exl-id: b10d7274-0fc6-4822-a40b-1192b71592b9
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '264'
 ht-degree: 46%
@@ -14,19 +14,19 @@ ht-degree: 46%
 
 # Audience Manager メソッド {#audience-manager-methods}
 
-Windows 8.1 ユニバーサルアプリストアライブラリが提供するAudience Managerメソッドの一覧です。
+Windows 8.1 ユニバーサルApp Storeライブラリが提供するAudience Managerメソッドの一覧です。
 
-SDK は現在、Analytics、Target、Audience Managerを含む複数のAdobe Experience Cloudソリューションをサポートしています。 メソッドには、ソリューションに応じたプレフィックスが付きます。Audience Managerメソッドの場合、プレフィックスは「AudienceManager」です。
+SDK は現在、Analytics、Target、Audience Managerなど、複数のAdobe Experience Cloudソリューションをサポートしています。 メソッドには、ソリューションに応じたプレフィックスが付きます。Audience Managerメソッドの前には「AudienceManager」というプレフィックスが付きます。
 
 >[!NOTE]
 >
->winJS(JavaScript) から winmd メソッドを使用する場合、すべてのメソッドの最初の文字が自動的に小文字に変換されます。
+>winJS (JavaScript) から winmd メソッドを使用する場合、すべてのメソッドで最初の文字が自動的に小文字に変換されます。
 
 JSON ファイル内で Audience Manager が設定されている場合は、ライフサイクル指標を含むシグナルがライフサイクルヒットと共に送信されます。
 
 * **GetVisitorProfile (winJS:getVisitorProfile)**
 
-   取得された最も直近の訪問者プロファイルを返します。まだシグナルが送信されていない場合は `null` を返します。 訪問者プロファイルは、複数回起動しても簡単にアクセスできるように、`SharedPreferences` に保存されます。
+   取得された最も直近の訪問者プロファイルを返します。戻り値 `null` （まだシグナルが送信されていない場合）。 訪問者プロファイルはに保存されます `SharedPreferences` を使用すると、複数回の起動時でも簡単にアクセスできます。
 
    * このメソッドの構文を次に示します。
 
@@ -94,7 +94,7 @@ JSON ファイル内で Audience Manager が設定されている場合は、ラ
 
 * **SignalWithData (winJS:signalWithData)**
 
-   Audience Managerに特性を含むシグナルを送信し、ブロックコールバックで返された一致するセグメントを取得します。
+   Audience Managerに特性を持つシグナルを送信し、ブロック callback で返された一致するセグメントを取得します。
 
    * このメソッドの構文を次に示します。
 

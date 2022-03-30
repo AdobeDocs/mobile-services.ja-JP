@@ -1,14 +1,14 @@
 ---
 description: 'レポートスイートを設定して Android アプリデータを収集する前に、前提条件のタスクを完了してください。 '
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: 事前準備
 topic-fix: Developer and implementation
 uuid: 0ca9e937-8d40-4570-9dbf-9aecc6ecedf6
 exl-id: e9c0fd94-b61d-4f56-97b8-f71aac096c93
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '731'
-ht-degree: 95%
+ht-degree: 96%
 
 ---
 
@@ -49,7 +49,7 @@ Adobe Mobile Services UI には、以下のいずれかの方法でログイン�
 
 ### Experience Cloud
 
-Adobe ID を使用して [Experience Cloud](https://experiencecloud.adobe.com) にログインします。この方法は、会社が Experience Cloud でプロビジョニングされていることと、お使いの Analytics アカウントがリンクされていることを前提としています。詳細については、『Experience Cloud中央インターフェイスコンポーネントガイド』の「[Experience Cloudユーザーと製品の管理 ](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html)」を参照してください。
+Adobe ID を使用して [Experience Cloud](https://experiencecloud.adobe.com) にログインします。この方法は、会社が Experience Cloud でプロビジョニングされていることと、お使いの Analytics アカウントがリンクされていることを前提としています。詳しくは、 [Experience Cloudユーザーと製品を管理する](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=ja) (『Experience Cloud中央インターフェイスコンポーネント』ガイド ) を参照してください。
 
 >[!TIP]
 >
@@ -63,7 +63,7 @@ Adobe ID を使用して [Experience Cloud](https://experiencecloud.adobe.com) �
 
 アプリのデータを収集し、アプリを定義するレポートスイートを作成するには、以下のようにします。
 
-1. [Mobile Services](https://mobilemarketing.adobe.com)Adobeにログインします。
+1. にログインします。 [AdobeMobile Services](https://mobilemarketing.adobe.com).
 1. 「**[!UICONTROL アプリケーションを作成]**」をクリックします。
 
    このボタンが表示されない場合、**[!UICONTROL アプリ設定]**／**[!UICONTROL 追加]**&#x200B;をクリックします。

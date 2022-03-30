@@ -1,14 +1,14 @@
 ---
 description: iOS アプリデータを収集するようにレポートスイートを設定するには、次の手順を実行します。
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: 事前準備
 topic-fix: Developer and implementation
 uuid: 04133f68-3618-41fd-8a13-aec5b6f04df6
 exl-id: 83da7cf5-3211-484d-bfe8-7b3b4999eea2
-source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '584'
-ht-degree: 91%
+ht-degree: 94%
 
 ---
 
@@ -52,7 +52,7 @@ Adobe Mobile Services には、以下のいずれかの方法でログインで�
 
    Adobe ID を使用して [Experience Cloud](https://experience.adobe.com) にログインします。
 
-   この方法は、会社がプロビジョニングされていることと、お使いの Analytics アカウントがリンクされていることを前提としています。プロビジョニングの詳細については、『Experience Cloud中央インターフェイスコンポーネントガイド』の「[Experience Cloudユーザーと製品の管理 ](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html)」を参照してください。 アカウントのリンクについて詳しくは、[Experience Cloudの組織 ](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html) を参照してください。
+   この方法は、会社がプロビジョニングされていることと、お使いの Analytics アカウントがリンクされていることを前提としています。プロビジョニングの詳細については、 [Experience Cloudユーザーと製品を管理する](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=ja) (『Experience Cloud中央インターフェイスコンポーネント』ガイド ) を参照してください。 アカウントのリンクについて詳しくは、 [Experience Cloud内の組織](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=ja).
 
    >[!TIP]
    >

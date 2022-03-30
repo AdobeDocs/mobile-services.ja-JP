@@ -1,11 +1,11 @@
 ---
 description: 解析データやイベントからトリガーされるアプリ内メッセージを配信できます。実装後、メッセージはアプリへと動的に配信され、コードを更新する必要はありません。
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: アプリ内メッセージ
 topic-fix: Developer and implementation
 uuid: 351ee3d2-80b9-4f2d-9696-21f274d89f5a
 exl-id: ca9414d1-86e6-4bb2-a2d6-57df37df2403
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '770'
 ht-degree: 100%

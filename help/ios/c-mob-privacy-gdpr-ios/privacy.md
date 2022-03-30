@@ -1,11 +1,11 @@
 ---
 description: この情報は、GDPR のデータ削除要求に対処する場合に役立ちます。
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: ユーザーのオプトステータスの設定
 topic-fix: Developer and implementation
 uuid: 44a09a25-93c6-4e1a-b69e-710018e8b6c3
 exl-id: 8fd30bea-6316-46ac-9787-8ca594545d1b
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '255'
 ht-degree: 100%

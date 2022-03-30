@@ -1,11 +1,11 @@
 ---
 description: この情報は、Adobe Experience Cloud で iOS SDK を使用するのに役立ちます。
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Experience Cloud
 topic-fix: Developer and implementation
 uuid: fb498937-b263-4cff-adde-8d709f51b950
 exl-id: 2834fa29-8b37-4951-b0df-e3b21763a915
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '121'
 ht-degree: 100%

@@ -1,18 +1,18 @@
 ---
 description: この情報は、iOS アプリケーションでターゲットコンテンツを配信する場合に役立ちます。
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Target
 topic-fix: Developer and implementation
 uuid: c2b134bb-1c29-4617-bd9e-fa3940483361
 exl-id: 1494bf8e-a9e5-4594-a09d-903c141fdd68
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '113'
 ht-degree: 100%
 
 ---
 
-# Target{#target}
+# ターゲット{#target}
 
 この節の情報は、iOS アプリケーションでターゲットコンテンツを配信する場合に役立ちます。
 

@@ -1,11 +1,11 @@
 ---
 description: 'Experience Cloud ソリューションで iOS SDK の利用を開始するのに役立つ情報です。 '
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: 導入の概要
 topic-fix: Developer and implementation
 uuid: a2b9baad-b959-4b9a-893d-99c0f4072e8d
 exl-id: bf1c059d-3ca7-4d77-8acb-597350c03433
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '165'
 ht-degree: 100%

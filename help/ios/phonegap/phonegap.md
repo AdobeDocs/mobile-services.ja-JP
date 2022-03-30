@@ -1,12 +1,12 @@
 ---
 description: このプラグインを使用すると、PhoneGap プロジェクトから iOS AppMeasurement コールを送信できます。
 keywords: phonegap
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: PhoneGap プラグイン
 topic-fix: Developer and implementation
 uuid: f88bcf10-1f9e-4c97-b348-40db797c9923
 exl-id: c20b2f85-b8d4-47c7-8177-106c7ddfe083
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '314'
 ht-degree: 100%

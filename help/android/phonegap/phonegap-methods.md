@@ -1,12 +1,12 @@
 ---
 description: iOS PhoneGap プラグインメソッドを使用して、様々なタスクを完了できます。
 keywords: Android, ライブラリ, モバイル, SDK
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: PhoneGap プラグインのメソッド
 topic-fix: Developer and implementation
 uuid: bc3db9ce-81b7-45ec-88aa-6020c1db5d9c
 exl-id: 4e6cf200-c826-4b23-87cf-4b8e1e691981
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '1557'
 ht-degree: 100%

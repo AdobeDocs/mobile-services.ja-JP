@@ -1,12 +1,12 @@
 ---
 description: 処理ルールではイベントのシリアル化はサポートされていません。Mobile SDK では、コンテキストデータパラメーターで特殊な構文を使用して、サーバーコールでシリアル化されたイベントを直接設定する必要があります。
 keywords: Android, ライブラリ, モバイル, SDK
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: イベントのシリアル化
 topic-fix: Developer and implementation
 uuid: acdeda16-ab83-4cfc-907d-33448b801b31
 exl-id: 03556912-fdcc-402e-b1de-233771f4e719
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '74'
 ht-degree: 100%

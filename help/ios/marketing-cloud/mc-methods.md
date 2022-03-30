@@ -1,11 +1,11 @@
 ---
 description: iOS ライブラリが提供する Adobe Experience Platform サービスメソッドを以下に示します。
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Adobe Experience Platform ID サービスのメソッド
 topic-fix: Developer and implementation
 uuid: cdd307bc-8b7d-47a8-b77e-00902b9e2968
 exl-id: 82a246fc-f679-4fa5-b9c0-dc909a7e7d93
-source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '439'
 ht-degree: 96%
@@ -22,7 +22,7 @@ SDK は現在、Analytics、Target、Audience Manager、Experience Cloud ID サ�
 
 * **`+`(nullable NSURL `*`)visitorAppendToURL:(nullable NSURL `*`)url;**
 
-   アドビ JavaScript ライブラリで使用するために、アドビ訪問者データを URL 文字列に追加します。このメソッドを使用するには、Mobile SDK 4.12 以降が必要です。詳しくは、 Adobe Experience Cloud ID サービスのドキュメントの [appendVisitorIDsTo](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/methods/appendvisitorid.html?lang=ja) を参照してください。
+   アドビ JavaScript ライブラリで使用するために、アドビ訪問者データを URL 文字列に追加します。このメソッドを使用するには、Mobile SDK 4.12 以降が必要です。詳しくは、 [appendVisitorIDsTo](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/methods/appendvisitorid.html?lang=ja) ( Adobe Experience Cloud ID サービスドキュメント ) を参照してください。
 
    >[!IMPORTANT]
    >

@@ -1,12 +1,12 @@
 ---
 description: Adobe Mobile を使用して様々な指標を測定したり、アプリに関して追跡する指標を収集したりできます。
 keywords: モバイル
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: モバイル指標
 topic-fix: Metrics
 uuid: c4457f4a-9d1c-4fe9-ad4a-9eb2e37feab7
 exl-id: 13912d5e-9813-4f8f-80d5-1f3cfcdd6aa3
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '529'
 ht-degree: 100%

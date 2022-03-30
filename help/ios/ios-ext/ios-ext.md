@@ -1,11 +1,11 @@
 ---
 description: iOS エクステンションを使用して、Apple Watch アプリ（WatchOS 1）、Today ウィジェット、Photo Editing ウィジェットおよびその他の iOS エクステンションアプリから使用状況データを収集できます。
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: iOS エクステンション実装
 topic-fix: Developer and implementation
 uuid: 8afc03fe-403e-4643-ada1-30e403ede238
 exl-id: 741b0cd5-6245-480a-b5bf-a33a1f82a425
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '691'
 ht-degree: 100%

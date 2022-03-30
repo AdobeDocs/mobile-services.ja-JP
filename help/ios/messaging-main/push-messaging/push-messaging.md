@@ -1,11 +1,11 @@
 ---
 description: Adobe Mobile および Adobe Mobile SDK を使用すると、ユーザーにプッシュメッセージを送信できます。また、SDK では、プッシュメッセージをクリックした結果としてアプリを開いたユーザーを簡単に報告できます。
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: プッシュメッセージ
 topic-fix: Developer and implementation
 uuid: 2e2d8175-d7d0-4b6b-a14e-d419da1f9615
 exl-id: 89796668-e0e7-45d2-8391-3c26a7ac8496
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '485'
 ht-degree: 100%

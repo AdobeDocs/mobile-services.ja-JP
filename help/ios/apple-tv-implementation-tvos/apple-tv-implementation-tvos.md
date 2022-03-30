@@ -1,11 +1,11 @@
 ---
 description: tvOS を使用した Apple TV を実装するのに役立つ情報です。
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: tvOS を使用した Apple TV 実装
 topic-fix: Developer and implementation
 uuid: d1571ea2-a5de-4b96-a527-72abbf51fab8
 exl-id: 35b7f02d-ae48-4c6f-9a3a-6d106a1026ad
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '388'
 ht-degree: 100%

@@ -1,11 +1,11 @@
 ---
 description: アクションは、Android アプリ内で発生し、測定対象となるイベントです。
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: アプリのアクションの追跡
 topic-fix: Developer and implementation
 uuid: fe01c1df-f6bb-4b32-b3ef-959d2c724af6
 exl-id: 495a6aa8-781d-4499-ad46-e19d57cccf40
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '361'
 ht-degree: 100%

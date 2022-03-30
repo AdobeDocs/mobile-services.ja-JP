@@ -1,11 +1,11 @@
 ---
 description: マイルストーンビデオ測定を使用した iOS でのビデオ測定に関する情報を以下に示します。
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: ビデオ分析
 topic-fix: Developer and implementation
 uuid: d75fa415-78f6-4f50-a563-76949f040138
 exl-id: d4d11ca0-1280-49db-8983-5b6d83856482
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '933'
 ht-degree: 94%
@@ -18,7 +18,7 @@ ht-degree: 94%
 
 >[!TIP]
 >
->ビデオの再生中に、頻繁な「ハートビート」コールが送信され、再生時間を測定します。これらのハートビート呼び出しは、10 秒ごとに送信されるので、ビデオエンゲージメント指標やビデオフォールアウトレポートがより正確になります。詳しくは、[Adobe Analyticsでのストリーミングメディアの測定 ](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=ja) を参照してください。
+>ビデオの再生中に、頻繁な「ハートビート」コールが送信され、再生時間を測定します。これらのハートビート呼び出しは、10 秒ごとに送信されるので、ビデオエンゲージメント指標やビデオフォールアウトレポートがより正確になります。詳しくは、 [Adobe Analyticsでのストリーミングメディアの測定](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=ja).
 
 ビデオを測定する一般的なプロセスは、どのプラットフォームでも同様です。ここでは、開発者タスクの基本的な概要とコードサンプルを提示します。
 
@@ -45,7 +45,7 @@ ht-degree: 94%
 
 * **a.media.segment**
 
-   （必須）セグメント名や、ビデオ内でのセグメントの発生順序を含め、ビデオセグメントデータを収集します。この変数を入力するには、プレーヤーイベントを自動的に追跡する場合に `segmentByMilestones` 変数を有効にするか、プレーヤーイベントを手動で追跡する場合にカスタムセグメント名を設定します。例えば、訪問者がビデオの最初のセグメントを表示すると、SiteCatalystによって `1:M:0-25` SegmentseVarに次の情報が収集されます。
+   （必須）セグメント名や、ビデオ内でのセグメントの発生順序を含め、ビデオセグメントデータを収集します。この変数を入力するには、プレーヤーイベントを自動的に追跡する場合に `segmentByMilestones` 変数を有効にするか、プレーヤーイベントを手動で追跡する場合にカスタムセグメント名を設定します。例えば、訪問者がビデオの最初のセグメントを表示すると、SiteCatalystによって次の情報が `1:M:0-25` セグメントeVar。
 
    デフォルトのビデオデータ収集方法では、次の時点でデータが収集されます。
 

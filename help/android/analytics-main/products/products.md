@@ -1,12 +1,12 @@
 ---
 description: products 変数は、処理ルールを使用して設定することはできません。Mobile SDK では、コンテキストデータパラメーターで特殊な構文を使用して、サーバーコールで製品を設定する必要があります。
 keywords: Android, ライブラリ, モバイル, SDK
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: products 変数
 topic-fix: Developer and implementation
 uuid: f4484022-cb8b-4dea-9209-5a110ba607df
 exl-id: 1d850ce1-6fd4-463e-8949-8b8cf40d8467
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '155'
 ht-degree: 100%

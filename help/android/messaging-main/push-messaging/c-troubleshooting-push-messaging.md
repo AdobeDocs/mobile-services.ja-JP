@@ -1,12 +1,12 @@
 ---
 description: この情報は、プッシュメッセージのトラブルシューティングに役立ちます。
 keywords: モバイル
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: プッシュメッセージのトラブルシューティング
 topic-fix: Metrics
 uuid: 9c4a9371-6691-4a2c-a6c1-b9f901a41599
 exl-id: 82b89f56-f43e-4b0d-80c5-5bff4013e5f7
-source-git-commit: 1fa6111d6bf1c2d36f15d2f037718646a035435a
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '296'
 ht-degree: 100%

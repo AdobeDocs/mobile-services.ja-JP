@@ -1,11 +1,11 @@
 ---
 description: 次の表に、多くの iOS デバイスから送信される iOS バージョン文字列を示します。
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: iOS デバイスのバージョン
 topic-fix: Developer and implementation
 uuid: 8b8a9bc3-0737-4de2-9792-0b112aa4cf65
 exl-id: 9aaf2f35-4de9-47a0-8e9d-8d098dfaadef
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 100%

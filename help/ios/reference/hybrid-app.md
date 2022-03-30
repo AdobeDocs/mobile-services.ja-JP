@@ -1,11 +1,11 @@
 ---
 description: アプリでモバイル Web コンテンツを開く場合は、訪問者がネイティブアプリからモバイル Web に移動したり、その逆に移動したりしても、別の訪問者として識別されないようにする必要があります。
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: アプリとモバイル Web にまたがる訪問者トラッキング
 topic-fix: Developer and implementation
 uuid: 2d951de6-3954-4379-a4ff-99b9695b9869
 exl-id: d8459d59-0edd-42c4-81b5-529b250accb4
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '494'
 ht-degree: 100%

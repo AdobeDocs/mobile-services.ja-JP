@@ -1,11 +1,11 @@
 ---
 description: この情報は、ADBMobile.json 設定ファイルを使用する場合に役立ちます。
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: ADBMobile JSON 設定
 topic-fix: Developer and implementation
 uuid: d9708d59-e30a-4f6c-ab1b-d9499855d0c2
 exl-id: e3515de3-3aec-4dd0-996d-9c561ad1b1de
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '1708'
 ht-degree: 99%
@@ -70,7 +70,7 @@ ht-degree: 99%
 
 * **charset**
 
-   Analytics に送信されるデータに使用する文字セットを定義します。この文字セットは、受信データを格納およびレポート用に UTF-8 に変換するために使用されます。詳しくは、Adobe Analyticsのドキュメントの [charSet](https://experienceleague.adobe.com/docs/analytics/implementation/vars/config-vars/charset.html?lang=ja) 変数を参照してください。
+   Analytics に送信されるデータに使用する文字セットを定義します。この文字セットは、受信データを格納およびレポート用に UTF-8 に変換するために使用されます。詳しくは、 [charSet](https://experienceleague.adobe.com/docs/analytics/implementation/vars/config-vars/charset.html?lang=ja) 変数に関する情報をAdobe Analyticsドキュメントで参照してください。
 
    * 最小 SDK バージョン：4.0
 

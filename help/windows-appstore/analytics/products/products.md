@@ -1,11 +1,11 @@
 ---
 description: products 変数は、処理ルールを使用して設定することはできません。 モバイル SDK では、コンテキストデータパラメーター内で特殊な構文を使用して、サーバー呼び出しで直接製品を設定する必要があります。
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: products 変数
 topic-fix: Developer and implementation
 uuid: 2057a564-06ae-4171-bbe7-0baffa71608b
 exl-id: b731e794-7134-4c6d-a41b-09ac9b84763d
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '139'
 ht-degree: 15%
@@ -16,7 +16,7 @@ ht-degree: 15%
 
 products 変数は、処理ルールを使用して設定することはできません。 モバイル SDK では、コンテキストデータパラメーター内で特殊な構文を使用して、サーバー呼び出しで直接製品を設定する必要があります。
 
-*`products`* 変数を設定するには、コンテキストデータキーを `"&&products"` に設定し、*`products`* 用に定義された構文を使用して値を設定します。
+次の手順で *`products`* 変数を使用する場合は、コンテキストデータキーをに設定します。 `"&&products"`を設定し、 *`products`*:
 
 ```js
 cdata["&&products"] = "Category;Product;Quantity;Price[,Category;Product;Quantity;Price]";
@@ -46,4 +46,4 @@ ADB.Analytics.trackState("Order Confirmation", cdata);
 
 ![](assets/products-procrules.png)
 
-*`products`* 変数は SDK によってイメージリクエストに直接設定されるので、処理ルールを使用してマッピングする必要はありません。
+この *`products`* 変数をマッピングする必要はありません。画像リクエストに直接設定されるからです。

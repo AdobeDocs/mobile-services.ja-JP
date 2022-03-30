@@ -1,11 +1,11 @@
 ---
 description: Adobe Analyticsで Universal Windows Platform SDK を使用する際に役立つ情報です。
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Analytics メソッド
 topic-fix: Developer and implementation
 uuid: cc299bb5-ec61-49bf-869a-f3c3bc83359f
 exl-id: 3ceaedfa-274f-4dc7-9e4c-15233d09f935
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '617'
 ht-degree: 58%
@@ -16,17 +16,17 @@ ht-degree: 58%
 
 Adobe Analyticsで Universal Windows Platform SDK を使用する際に役立つ情報です。
 
-SDK は現在、Analytics、Target、Audience Managerを含む複数のAdobe Experience Cloudソリューションをサポートしています。 メソッドには、ソリューションに応じたプレフィックスが付きます。Analytics メソッドの場合、プレフィックスは「Analytics」です。
+SDK は現在、Analytics、Target、Audience Managerなど、複数のAdobe Experience Cloudソリューションをサポートしています。 メソッドには、ソリューションに応じたプレフィックスが付きます。Analytics メソッドの場合、プレフィックスは「Analytics」です。
 
 これらの各メソッドを使用して、Adobe Analytics レポートスイートにデータを送信します。
 
 >[!TIP]
 >
->winJS(JavaScript) の `winmd` メソッドを使用すると、すべてのメソッドの最初の文字が自動的に小文字に変換されます。
+>消費時 `winmd` メソッドを winJS(JavaScript) から呼び出すと、すべてのメソッドで最初の文字が自動的に小文字に変換されます。
 
-* **TrackState(winJS:trackState)**
+* **TrackState (winJS:trackState)**
 
-   オプションのコンテキストデータを使用してアプリの状態を追跡します。状態とは、「home dashboard」、「app settings」、「cart」など、アプリで使用可能なビューです。 これらの状態は Web サイト上のページによく似ており、`TrackState` コールにより、ページビュー数が増分されます。`state` が空の場合は、レポートに「app name app version (build)」と表示されます。 レポートにこの値が表示される場合は、各 `TrackState` 呼び出しで `state` を設定していることを確認してください。
+   オプションのコンテキストデータを使用してアプリの状態を追跡します。状態とは、アプリで使用可能なビューのことで、「home dashboard」、「app settings」、「cart」などがあります。 これらの状態は Web サイト上のページによく似ており、`TrackState` コールにより、ページビュー数が増分されます。If `state` が空の場合は、レポートに「app name app version (build)」と表示されます。 レポートにこの値が表示される場合は、次の設定を行っていることを確認してください： `state` 各 `TrackState` 呼び出し。
 
    >[!TIP]
    >
@@ -64,7 +64,7 @@ SDK は現在、Analytics、Target、Audience Managerを含む複数のAdobe Exp
 
 * **GetTrackingIdentifierAsync (winJS:getTrackingIdentifierAsync)**
 
-   Analytics 用に自動的に生成された訪問者 ID を返します。 これは、初回起動時に生成され、その時点から保存および使用される、アプリ固有の一意の訪問者 ID です。 この ID は、アプリをアップグレードしても保持され、アンインストール時に削除されます。
+   Analytics 用に自動的に生成された訪問者 ID を返します。 これは、初回起動時に生成され、その時点から保存および使用される、アプリ固有の一意の訪問者 ID です。 この ID は、アプリがアップグレードされても保持され、アンインストール時に削除されます。
 
    * このメソッドの構文を次に示します。
 
@@ -115,7 +115,7 @@ SDK は現在、Analytics、Target、Audience Managerを含む複数のAdobe Exp
       ADB.Analytics.trackLifetimeValueIncrease(10,null);
       ```
 
-* **TrackTimed ActionStart(&#x200B;winJS:trackTimed ActionStart&#x200B;)**
+* **TrackTimed ActionStart (&#x200B;winJS:trackTimed ActionStart&#x200B;)**
 
    `action` という名前の時間計測アクションを開始します。既に開始しているアクションでこのメソッドを呼び出すと、以前の時間計測アクションが上書きされます。
 
@@ -136,7 +136,7 @@ SDK は現在、Analytics、Target、Audience Managerを含む複数のAdobe Exp
       ADB.Analytics.trackTimedActionStart("cartToCheckout",null); 
       ```
 
-* **TrackTimed ActionUpdate (&#x200B;winJS:trackTimed ActionUpdate&#x200B;)**
+* **TrackTimed ActionUpdate &#x200B; (winJS:trackTimed ActionUpdate&#x200B;)**
 
    `contextData` を渡して、特定の `action` に関連付けられているコンテキストデータを更新します。渡された `data` は、特定のアクションの既存のデータに追加され、同じキーが既に `action` に定義されている場合は、データを上書きします。
 
@@ -161,7 +161,7 @@ SDK は現在、Analytics、Target、Audience Managerを含む複数のAdobe Exp
 
 * **TrackTimedActionExistsAsync (winJS:trackTimedActionExistsAsync)**
 
-   指定した時間計測アクションが存在する場合は true を返し、存在しない場合は false を返します。
+   指定された時間計測アクションが存在する場合は true を返し、存在しない場合は false を返します。
 
    * このメソッドの構文を次に示します。
 
@@ -212,7 +212,7 @@ SDK は現在、Analytics、Target、Audience Managerを含む複数のAdobe Exp
 
 * **GetQueueSizeAsync (winJS:getQueueSizeAsync)**
 
-   現在 Analytics キューに保存されているヒット数を返します。
+   Analytics キューに現在保存されているヒット数を返します。
 
    * このメソッドの構文を次に示します。
 

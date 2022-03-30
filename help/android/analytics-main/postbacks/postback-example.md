@@ -1,12 +1,12 @@
 ---
 description: この情報は、ポストバックの機能とそのしくみを理解するのに役立ちます。
 keywords: Android, ライブラリ, モバイル, SDK
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: ポストバックの例
 topic-fix: Developer and implementation
 uuid: 8010cd00-d42b-4e16-8403-692fab2550f1
 exl-id: 2ff41066-e2ee-425f-8aff-e5e3f3e5f0f5
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '128'
 ht-degree: 99%

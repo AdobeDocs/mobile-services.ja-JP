@@ -1,11 +1,11 @@
 ---
 description: Adobe Mobile Services で一意のトラッキングコードを持つダウンロード計測用リンクを生成できます。生成されたリンクをユーザーがクリックした後で AppleApp Store からアプリをダウンロードして実行すると、SDK が自動的に獲得データを収集し、Adobe Mobile Services へと送信します。
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: モバイルアプリの獲得
 topic-fix: Developer and implementation
 uuid: 5fece619-e4b8-4d06-9250-dcb66fa32ce0
 exl-id: a90dcb2f-babb-4c97-b67a-8468925ee5c8
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 100%

@@ -1,11 +1,11 @@
 ---
 description: Experience Cloudソリューション 4.x SDK 用 Xamarin コンポーネントの Android メソッド。
 keywords: Xamarin
-solution: Experience Cloud
+solution: Experience Cloud Services
 title: Android メソッド
 uuid: 860af1c4-f57e-4bcb-8308-4e316da9a27b
 exl-id: 0de1fa11-37e9-49be-8d42-a13cb4a3f0e3
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '1755'
 ht-degree: 68%
@@ -20,7 +20,7 @@ Experience Cloudソリューション 4.x SDK 用 Xamarin コンポーネント�
 
 * **DebugLogging**
 
-   現在のデバッグログの環境設定を返し、デフォルトは false です。
+   現在のデバッグログの環境設定を返します。デフォルトは false です。
 
    * このメソッドの構文を次に示します。
 
@@ -58,7 +58,7 @@ Experience Cloudソリューション 4.x SDK 用 Xamarin コンポーネント�
    * `ADBMobilePrivacyStatus.OptOut`：ヒットは破棄されます。
    * `ADBMobilePrivacyStatus.Unknown`：オフライン追跡が有効になっている場合、プライバシーステータスがオプトイン（ヒットが送信される）またはオプトアウト（ヒットが破棄される）に変更されるまで、ヒットは保存されます。オフライン追跡が有効になっていない場合、プライバシーステータスがオプトインに変更されるまで、ヒットは破棄されます。
 
-   デフォルト値は [ADBMobileConfig.json](/help/android/configuration/json-config/json-config.md) ファイルに設定されます。
+   デフォルト値は [ADBMobileConfig.json](/help/android/configuration/json-config/json-config.md) ファイル。
 
    * このメソッドの構文を次に示します。
 
@@ -109,7 +109,7 @@ Experience Cloudソリューション 4.x SDK 用 Xamarin コンポーネント�
 
 * **PauseCollectingLifecycleData**
 
-   ライフサイクル指標が正しく計算されるように、アプリが一時停止されたことを SDK に通知します。例えば、一時停止時に、タイムスタンプを収集して、以前のセッションの長さを決定します。 また、これは、アプリがクラッシュしなかったことをライフサイクルが正しく認識できるようにフラグを設定します。 詳しくは、「[ライフサイクル指標](/help/android/metrics.md)」を参照してください。
+   ライフサイクル指標が正しく計算されるように、アプリが一時停止されたことを SDK に通知します。例えば、一時停止時に、タイムスタンプを収集して、以前のセッションの長さを決定します。 また、これにより、アプリがクラッシュしなかったことをライフサイクルが正しく認識できるようにフラグが設定されます。 詳しくは、「[ライフサイクル指標](/help/android/metrics.md)」を参照してください。
 
    * このメソッドの構文を次に示します。
 
@@ -160,7 +160,7 @@ Experience Cloudソリューション 4.x SDK 用 Xamarin コンポーネント�
 
 * **OverrideConfigStream**
 
-   （4.2 以降）アプリケーションの起動時に、別の `ADBMobile JSON` 設定ファイルを読み込むことができます。 アプリケーションが閉じられるまで、この設定が使用されます。
+   （4.2 以降） `ADBMobile JSON` 設定ファイルに保存されます。 アプリケーションが閉じられるまで、この設定が使用されます。
 
    * このメソッドの構文を次に示します。
 
@@ -211,7 +211,7 @@ Experience Cloudソリューション 4.x SDK 用 Xamarin コンポーネント�
 
 * **TrackingIdentifier**
 
-   Analytics 用に自動的に生成された ID を返します。 これは、初回起動時に生成され、その時点から保存および使用される、アプリ固有の一意の ID です。 この ID は、アプリをアップグレードしても保持され、アンインストール時に削除されます。
+   Analytics 用に自動的に生成された ID を返します。 これは、初回起動時に生成され、その時点から保存されて使用される、アプリ固有の一意の ID です。 この ID は、アプリがアップグレードされても保持され、アンインストール時に削除されます。
 
    * このメソッドの構文を次に示します。
 
@@ -227,7 +227,7 @@ Experience Cloudソリューション 4.x SDK 用 Xamarin コンポーネント�
 
 * **TrackState**
 
-   オプションのコンテキストデータを使用してアプリの状態を追跡します。`States` は、「タイトル画面」、「レベル 1」、「一時停止」など、アプリで使用可能なビューです。これらの状態は Web サイト上のページによく似ており、`TrackState` コールにより、ページビュー数が増分されます。state が空の場合、レポートに「app name app version (build)」と表示されます。 レポートにこの値が表示される場合は、各 `TrackState` 呼び出しで状態を設定していることを確認してください。
+   オプションのコンテキストデータを使用してアプリの状態を追跡します。`States` は、「タイトル画面」、「レベル 1」、「一時停止」など、アプリで使用可能なビューです。 これらの状態は Web サイト上のページによく似ており、`TrackState` コールにより、ページビュー数が増分されます。state が空の場合、レポートに「app name app version (build)」と表示されます。 レポートにこの値が表示される場合は、各 `TrackState` 呼び出し。
 
    >[!TIP]
    >
@@ -274,7 +274,7 @@ Experience Cloudソリューション 4.x SDK 用 Xamarin コンポーネント�
 
 * **TrackLocation**
 
-   現在地点の緯度と経度の座標を送信します。また、現在位置が `ADBMobileConfig.json` ファイルで定義された目標地点内にあるかどうかを判定します。 現在の座標が定義した目標地点内にある場合、コンテキストデータ変数に代入され、`TrackLocation` コールで送信されます。
+   現在地点の緯度と経度の座標を送信します。また、 `ADBMobileConfig.json` ファイルを使用して、パラメーターとして指定された場所がいずれかの POI 内にあるかどうかを判断します。 現在の座標が定義した目標地点内にある場合、コンテキストデータ変数に代入され、`TrackLocation` コールで送信されます。
 
    * このメソッドの構文を次に示します。
 
@@ -363,7 +363,7 @@ Experience Cloudソリューション 4.x SDK 用 Xamarin コンポーネント�
 
 * **TrackTimedActionUpdate**
 
-   データを渡して、指定されたアクションに関連付けられているコンテキストデータを更新します。渡されたデータは、特定のアクションの既存のデータに追加され、同じキーが既にアクションに定義されている場合は、データを上書きします。
+   データを渡して、指定されたアクションに関連付けられているコンテキストデータを更新します。渡されたデータは、指定されたアクションの既存のデータに追加され、同じキーが既にアクションに定義されている場合は、データを上書きします。
 
    >[!TIP]
    >
@@ -511,7 +511,7 @@ Experience Cloudソリューション 4.x SDK 用 Xamarin コンポーネント�
 
 * **LoadRequest**
 
-   設定した Target サーバーにリクエストを送信し、`Action<NSDictionary>` コールバックで生成されたオファーの文字列値を返します。
+   設定した Target サーバーにリクエストを送信し、 `Action<NSDictionary>` コールバック。
 
    * このメソッドの構文を次に示します。
 
@@ -534,7 +534,7 @@ Experience Cloudソリューション 4.x SDK 用 Xamarin コンポーネント�
 
 * **CreateRequest**
 
-   指定したパラメーターを持つ `ADBTargetLocationRequest` オブジェクトを作成する便利なコンストラクター。
+   次を作成する便利なコンストラクター： `ADBTargetLocationRequest` オブジェクトに指定したパラメーターを含めます。
 
    * このメソッドの構文を次に示します。
 
@@ -602,7 +602,7 @@ Experience Cloudソリューション 4.x SDK 用 Xamarin コンポーネント�
 
 * **Dpid**
 
-   現在の `DPID` を返します。
+   現在の `DPID`.
 
    * このメソッドの構文を次に示します。
 
@@ -618,7 +618,7 @@ Experience Cloudソリューション 4.x SDK 用 Xamarin コンポーネント�
 
 * **Dpuuid**
 
-   現在の `DPUUID` を返します。
+   現在の `DPUUID`.
 
    * このメソッドの構文を次に示します。
 
@@ -634,7 +634,7 @@ Experience Cloudソリューション 4.x SDK 用 Xamarin コンポーネント�
 
 * **AudienceSetDpidAndDpuuid**
 
-   `dpid` と `dpuuid` を設定します。 `dpid` と `dpuuid` が設定されている場合は、各シグナルと共に送信されます。
+   を設定します。 `dpid` および `dpuuid`. If `dpid` および `dpuuid` が設定されている場合は、各シグナルと共に送信されます。
 
    * このメソッドの構文を次に示します。
 
@@ -650,7 +650,7 @@ Experience Cloudソリューション 4.x SDK 用 Xamarin コンポーネント�
 
 * **SignalWithData**
 
-   特性を持つシグナルを Audience Management に送信し、`Action<NSDictionary>` コールバックで返された一致するセグメントを取得します。
+   特性を持つシグナルを Audience Management に送信し、 `Action<NSDictionary>` コールバック。
 
    * このメソッドの構文を次に示します。
 
@@ -676,7 +676,7 @@ Experience Cloudソリューション 4.x SDK 用 Xamarin コンポーネント�
 
 * **リセット**
 
-   Audience Manager `UUID` をリセットし、現在の訪問者プロファイルを削除します。
+   Audience Manager をリセット `UUID` 現在の訪問者プロファイルを削除します。
 
    * このメソッドの構文を次に示します。
 
@@ -692,7 +692,7 @@ Experience Cloudソリューション 4.x SDK 用 Xamarin コンポーネント�
 
 ## ビデオ {#section_CBCE1951CE204A108AD4CA7BB07C7F98}
 
-ビデオ分析について詳しくは、[ ビデオ分析 ](/help/android/analytics-main/video-qs.md) を参照してください。
+ビデオ分析について詳しくは、 [ビデオ分析](/help/android/analytics-main/video-qs.md).
 
 * **MediaSettings**
 

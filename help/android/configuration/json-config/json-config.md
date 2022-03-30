@@ -1,11 +1,11 @@
 ---
 description: この情報は、ADBMobile.json 設定ファイルを使用する場合に役立ちます。
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: ADBMobile JSON 設定
 topic-fix: Developer and implementation
 uuid: 1decf605-7bc3-4e73-ad52-1ecd5821599e
 exl-id: 652aeb05-b052-448d-98c8-d513d050a6f5
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '1666'
 ht-degree: 100%

@@ -1,12 +1,12 @@
 ---
 description: このプラグインを使用すると、PhoneGap プロジェクトから Android AppMeasurement コールを送信できます。
 keywords: Android, ライブラリ, モバイル, SDK
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: PhoneGap プラグインの概要
 topic-fix: Developer and implementation
 uuid: c5c32357-d8df-458a-b0e8-e0c56040241d
 exl-id: ecd756ca-e333-4d28-bd1e-a75ffc6ebe22
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 97%
@@ -68,7 +68,7 @@ cordova plugin add adobe-mobile-services
 
    このファイルを移動するには、「**[!UICONTROL OK]**」をクリックします。
 
-1. `adobeMobileLibrary.jar` ファイルを右クリックし、「**[!UICONTROL ライブラリとして追加]**」を選択します。
+1. を右クリックします。 `adobeMobileLibrary.jar` ファイルと選択 **[!UICONTROL ライブラリとして追加]**.
 1. プロジェクトの要件に基づいて、ライブラリの名前、レベルおよび位置を入力します。
 1. `ADBMobileConfig.json` ファイルを、アプリケーションルートの `assets` フォルダーにドラッグします。
 1. アプリケーション内のアプリケーション&#x200B;**ではなく**、ルートアプリケーションを選択していることを確認します。

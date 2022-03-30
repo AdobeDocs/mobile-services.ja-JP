@@ -1,11 +1,11 @@
 ---
-description: Experience Cloudソリューション 4.x SDK 用 Xamarin コンポーネントの iOS メソッド。
+description: Experience Cloudソリューション 4.x SDK 用の Xamarin コンポーネントのiOSメソッド。
 keywords: Xamarin
-solution: Experience Cloud
+solution: Experience Cloud Services
 title: iOS メソッド
 uuid: d6a056db-80c1-44d0-970f-c961ad01b0bc
 exl-id: 92897d08-2b66-4688-9870-c877bea53cfc
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '1737'
 ht-degree: 70%
@@ -14,7 +14,7 @@ ht-degree: 70%
 
 # iOS メソッド{#ios-methods}
 
-Experience Cloudソリューション 4.x SDK 用 Xamarin コンポーネントの iOS メソッド。
+Experience Cloudソリューション 4.x SDK 用の Xamarin コンポーネントのiOSメソッド。
 
 ## 設定メソッド {#section_405AA09390E346E5BB7B1F4E0F65F51E}
 
@@ -87,9 +87,9 @@ Experience Cloudソリューション 4.x SDK 用 Xamarin コンポーネント�
    現在のユーザーのプライバシーステータスの enum 表現を返します。
    * `ADBMobilePrivacyStatus.OptIn`：ヒットは即座に送信されます。
    * `ADBMobilePrivacyStatus.OptOut`：ヒットは破棄されます。
-   * ADBMobilePrivacyStatus.Unknown — オフライン追跡が有効な場合、プライバシーステータスがオプトイン（ヒットが送信される）またはオプトアウト（ヒットが破棄される）に変更されるまで、ヒットは保存されます。 オフライン追跡が無効になっている場合、プライバシーステータスがオプトインに変更されるまで、ヒットは破棄されます。
+   * ADBMobilePrivacyStatus.Unknown — オフライン追跡が有効になっている場合、プライバシーステータスがオプトイン（ヒットが送信される）またはオプトアウト（ヒットが破棄される）に変更されるまで、ヒットは保存されます。 オフライン追跡が無効になっている場合、プライバシーステータスがオプトインに変更されるまで、ヒットは破棄されます。
 
-   デフォルト値は [ADBMobileConfig.json](/help/ios/configuration/json-config/json-config.md) に設定されます。
+   デフォルト値は [ADBMobileConfig.json](/help/ios/configuration/json-config/json-config.md).
 
    * このメソッドの構文を次に示します。
 
@@ -106,7 +106,7 @@ Experience Cloudソリューション 4.x SDK 用 Xamarin コンポーネント�
 
 * **SetPrivacyStatus**
 
-   現在のユーザーのプライバシーステータスを「 」に設定します。 次のいずれかの値に設定します。
+   現在のユーザーのプライバシーステータスを status に設定します。 次のいずれかの値に設定します。
    * `ADBMobilePrivacyStatus.OptIn`：ヒットは即座に送信されます。
    * `ADBMobilePrivacyStatus.OptOut`：ヒットは破棄されます。
    * `ADBMobilePrivacyStatus.Unknown`：オフライン追跡が有効になっている場合、プライバシーステータスがオプトイン（ヒットが送信される）またはオプトアウト（ヒットが破棄される）に変更されるまで、ヒットは保存されます。オフライン追跡が有効になっていない場合、プライバシーステータスがオプトインに変更されるまで、ヒットは破棄されます。
@@ -171,7 +171,7 @@ Experience Cloudソリューション 4.x SDK 用 Xamarin コンポーネント�
       var version = ADBMobile.Version();
       ```
 
-* **KeepLifecycleSessionAlive （iOS のみ）**
+* **KeepLifecycleSessionAlive(iOSのみ )**
 
    設定ファイル内のライフサイクルセッションのタイムアウト値にかかわらず、バックグラウンドから次に戻ったときに新しいセッションを開始しないように SDK に指示します。
 
@@ -211,7 +211,7 @@ Experience Cloudソリューション 4.x SDK 用 Xamarin コンポーネント�
 
 * **TrackState**
 
-   オプションのコンテキストデータを使用してアプリの状態を追跡します。状態とは、アプリで使用可能なビューのことで、「タイトル画面」、「レベル 1」、「一時停止」などがあります。 これらの状態は Web サイト上のページに似ており、`TrackState` 呼び出しはページビュー数を増分します。状態が空の場合、レポートに「app name app version (build)」と表示されます。 レポートにこの値が表示される場合は、各 `TrackState` 呼び出しで状態を設定していることを確認してください。
+   オプションのコンテキストデータを使用してアプリの状態を追跡します。状態とは、アプリで使用可能なビューのことで、「タイトル画面」、「レベル 1」、「一時停止」などがあります。 これらの状態は Web サイト上のページに似ており、 `TrackState` 呼び出しは、ページビュー数を増分します。state が空の場合、レポートに「app name app version (build)」と表示されます。 レポートにこの値が表示される場合は、各 `TrackState` 呼び出し。
 
    >[!TIP]
    >
@@ -251,7 +251,7 @@ Experience Cloudソリューション 4.x SDK 用 Xamarin コンポーネント�
       ADBMobile.TrackAction("level gained", null); 
       ```
 
-* **TrackActionFromBackground（iOS のみ）**
+* **TrackActionFromBackground(iOSのみ )**
 
    バックグラウンドで発生したアクションを追跡します。これにより、特定のシナリオでライフサイクルイベントが発生しないようにします。
 
@@ -327,7 +327,7 @@ Experience Cloudソリューション 4.x SDK 用 Xamarin コンポーネント�
 
    * このメソッドの構文を次に示します。
 
-      public nbsp;static void TrackLifetimeValueIncrease(double amount, NSDictionary data);
+      public nbsp;static void TrackLifetimeValueIncrease(double amount, NSDictionary cdata);
 
    * このメソッドのコードサンプルを次に示します。
 
@@ -357,7 +357,7 @@ Experience Cloudソリューション 4.x SDK 用 Xamarin コンポーネント�
 
 * **TrackTimedActionUpdate**
 
-   データを渡して、特定のアクションに関連付けられたコンテキストデータを更新します。 渡されたデータは、特定のアクションの既存のデータに追加され、同じキーが既にアクションに定義されている場合は、データを上書きします。
+   データを渡して、特定のアクションに関連付けられたコンテキストデータを更新します。 渡されたデータは、指定されたアクションの既存のデータに追加され、同じキーが既にアクションに定義されている場合は、データを上書きします。
 
    >[!TIP]
    >
@@ -500,7 +500,7 @@ Experience Cloudソリューション 4.x SDK 用 Xamarin コンポーネント�
 
 * **TargetLoadRequest**
 
-   設定した Target サーバーにリクエストを送信し、`Action<NSDictionary>` コールバックで生成されたオファーの文字列値を返します。
+   設定した Target サーバーに request を送信し、 `Action<NSDictionary>` コールバック。
 
    * このメソッドの構文を次に示します。
 
@@ -520,7 +520,7 @@ Experience Cloudソリューション 4.x SDK 用 Xamarin コンポーネント�
 
 * **TargetCreateRequest**
 
-   指定したパラメーターを持つ `ADBTargetLocationRequest` オブジェクトを作成する便利なコンストラクター。
+   次を作成する便利なコンストラクター： `ADBTargetLocationRequest` オブジェクトに指定したパラメーターを含めます。
 
    * このメソッドの構文を次に示します。
 
@@ -571,7 +571,7 @@ Experience Cloudソリューション 4.x SDK 用 Xamarin コンポーネント�
 
 * **AudienceVisitorProfile**
 
-   取得された最も直近の訪問者プロファイルを返します。まだシグナルが送信されていない場合は、nil を返します。 訪問者プロファイルは、複数回起動しても簡単にアクセスできるように、`NSUserDefaults` に保存されます。
+   取得された最も直近の訪問者プロファイルを返します。まだシグナルが送信されていない場合は、nil を返します。 訪問者プロファイルはに保存されます `NSUserDefaults` を使用すると、複数回の起動時でも簡単にアクセスできます。
 
    * このメソッドの構文を次に示します。
 
@@ -635,7 +635,7 @@ Experience Cloudソリューション 4.x SDK 用 Xamarin コンポーネント�
 
 * **AudienceSignalWithData**
 
-   特性を持つシグナルを Audience Management に送信し、`Action<NSDictionary>` コールバックで返された一致するセグメントを取得します。
+   特性を持つシグナルを Audience Management に送信し、 `Action<NSDictionary>`  コールバック。
 
    * このメソッドの構文を次に示します。
 
@@ -670,7 +670,7 @@ Experience Cloudソリューション 4.x SDK 用 Xamarin コンポーネント�
 
 ## ビデオ {#section_CBCE1951CE204A108AD4CA7BB07C7F98}
 
-詳しくは、[ ビデオ分析 ](/help/ios/getting-started/dev-qs.md) を参照してください。
+詳しくは、 [ビデオ分析](/help/ios/getting-started/dev-qs.md).
 
 * **MediaCreateSettings**
 

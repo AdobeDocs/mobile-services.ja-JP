@@ -1,11 +1,11 @@
 ---
 description: 時間計測アクションを使用すると、アクションの開始から終了までのアプリ内時間と合計時間を測定できます。SDK は、各セッションの時間と、アクションが完了するまでにかかる、セッションをまたいだ合計時間を計算します。時間計測アクションを使用して、セグメントを定義し、購入までの時間、パスレベル、チェックアウトフローなどを比較することができます。
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: 時間計測アクション
 topic-fix: Developer and implementation
 uuid: 5a48a580-b942-4e49-9f1b-078fea7fccdb
 exl-id: d9851440-6e65-4d89-a6b3-81c8abd2bf06
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '346'
 ht-degree: 100%

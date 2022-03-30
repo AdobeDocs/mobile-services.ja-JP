@@ -1,11 +1,11 @@
 ---
 description: 'この情報は、Experience Cloud ソリューション用 Android SDK の使用を開始する場合に役立ちます。 '
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: はじめに
 topic-fix: Developer and implementation
 uuid: 39c642e2-60f0-4bbe-b0d1-2635ee2c6d01
 exl-id: 895f3986-5e6a-4bb1-b11f-a4dad0ba6bc7
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '124'
 ht-degree: 100%

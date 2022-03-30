@@ -1,11 +1,11 @@
 ---
-description: ADBMobile JSON 設定ファイルの使用に役立つ情報を紹介します。
-solution: Experience Cloud,Analytics
+description: ADBMobile JSON 設定ファイルを使用する際に役立つ情報を紹介します。
+solution: Experience Cloud Services,Analytics
 title: ADBMobileConfig.json config
 topic-fix: Developer and implementation
 uuid: cbcb54a3-4b8f-4651-8ce9-2731ac988545
 exl-id: 57d50d30-651c-4943-835e-1cbce7467baf
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '613'
 ht-degree: 42%
@@ -14,13 +14,13 @@ ht-degree: 42%
 
 # ADBMobileConfig.json 設定ファイル {#adbmobileconfig-json-config}
 
-ADBMobile JSON 設定ファイルの使用に役立つ情報を紹介します。
+ADBMobile JSON 設定ファイルを使用する際に役立つ情報を紹介します。
 
-SDK は現在、Analytics、Target、Audience Managerを含む複数のAdobe Experience Cloudソリューションをサポートしています。 メソッドには、ソリューションに応じたプレフィックスが付きます。設定メソッドの場合、プレフィックスは「Config」です。
+SDK は現在、Analytics、Target、Audience Managerなど、複数のAdobe Experience Cloudソリューションをサポートしています。 メソッドには、ソリューションに応じたプレフィックスが付きます。設定メソッドの場合、プレフィックスは「Config」です。
 
 * **rsids**
 
-   （**Analytics で必要**）Analytics データを受け取る 1 つ以上のレポートスイート。 レポートスイート ID を複数指定する場合は、スペースを入れずにレポートスイート ID をコンマで区切る必要があります。
+   (**Analytics で必要**) Analytics データを受け取る 1 つ以上のレポートスイート。 レポートスイート ID を複数指定する場合は、スペースを入れずにレポートスイート ID をコンマで区切る必要があります。
 
    * このメソッドの構文を次に示します。
 
@@ -34,25 +34,25 @@ SDK は現在、Analytics、Target、Audience Managerを含む複数のAdobe Exp
 
 * **server**
 
-   （**Analytics と Audience Management で必要**）。 親ノードに基づく、Analytics または Audience Management サーバー。 この変数は、`"https://"` または `"https://"` プロトコルプレフィックスを付けずに、サーバードメインを設定する必要があります。プロトコルプレフィックスは、 `ssl` 変数に基づいて、ライブラリによって自動的に処理されます。
+   (**Analytics と Audience Management で必要**) をクリックします。 親ノードに基づく、Analytics または Audience Management サーバー。 この変数は、`"https://"` または `"https://"` プロトコルプレフィックスを付けずに、サーバードメインを設定する必要があります。プロトコルプレフィックスは、 `ssl` 変数を使用します。
 
    `ssl` が `true` の場合、このサーバーとの安全な接続が確立されます。`ssl` が `false` の場合、このサーバーとの安全でない接続が確立されます。
 
 * **charset**
 
-   Analytics に送信されるデータに使用する文字セットを定義します。 この文字セットは、受信データを格納およびレポート用に UTF-8 に変換するために使用されます。詳しくは、Adobe Analyticsのドキュメントの [charSet](https://experienceleague.adobe.com/docs/analytics/implementation/vars/config-vars/charset.html?lang=ja) 変数を参照してください。
+   Analytics に送信されるデータに使用する文字セットを定義します。 この文字セットは、受信データを格納およびレポート用に UTF-8 に変換するために使用されます。詳しくは、 [charSet](https://experienceleague.adobe.com/docs/analytics/implementation/vars/config-vars/charset.html?lang=ja) 変数に関する情報をAdobe Analyticsドキュメントで参照してください。
 
 * **ssl**
 
-   SSL(`HTTPS`) を介した測定データの送信を有効 (`true`) または無効 (`false`) にします。 デフォルト値は `false` です。
+   有効 (`true`) または無効 (`false`)SSL (`HTTPS`) をクリックします。 デフォルト値は `false` です。
 
 * **offlineEnabled**
 
-   有効 (`true`) にすると、ヒットはデバイスがオフラインの間キューに入れられ、デバイスがオンラインの間後で送信されます。 オフライン追跡を使用するには、レポートスイートでタイムスタンプを有効にする必要があります。
+   有効な場合 (`true`) のヒットは、デバイスがオフラインの間、キューに格納され、後でデバイスがオンラインになったときに送信されます。 オフライン追跡を使用するには、レポートスイートでタイムスタンプを有効にする必要があります。
 
-   レポートスイートでタイムスタンプが有効になっている場合、`offlineEnabled` 設定プロパティ *は `true` である必要があります。*&#x200B;レポートスイートでタイムスタンプが有効になっていない場合、`offlineEnabled` 設定プロパティ *は `false` にする必要があります。*
+   レポートスイートでタイムスタンプが有効になっている場合、 `offlineEnabled` 設定プロパティ *必須* は `true`. レポートスイートでタイムスタンプが有効になっていない場合、 `offlineEnabled` 設定プロパティ *必須* は `false`.
 
-   このプロパティを適切に設定しなければ、データが失われます。レポートスイートでタイムスタンプが有効になっているかどうかがわからない場合は、カスタマーケアにお問い合わせください。 現在、同じレポートスイートで JavaScript と AppMeasurement からデータを収集している場合は、モバイルデータのレポートスイートを個別に設定するか、`s.timestamp` 変数を使用してすべての JavaScript ヒットにカスタムタイムスタンプを含めます。
+   このプロパティを適切に設定しなければ、データが失われます。レポートスイートでタイムスタンプが有効になっているかどうかがわからない場合は、カスタマーケアにお問い合わせください。 現在、同じレポートスイートで JavaScript と AppMeasurement からデータを収集している場合は、モバイルデータのレポートスイートを個別に設定するか、 `s.timestamp` 変数を使用します。
 
    デフォルト値は `false` です。
 
@@ -64,9 +64,9 @@ SDK は現在、Analytics、Target、Audience Managerを含む複数のAdobe Exp
 
 * **batchLimit**
 
-   ヒットをバッチで送信します。
+   ヒットを一括で送信します。
 
-   例えば、 `50` に設定した場合、50 個のヒットが格納されるまでキューに登録され、キューに格納されたすべてのヒットが送信されます。 `offlineEnabled=true` が必要で、デフォルト値は `0`（バッチ処理なし）です。
+   例えば、 `50`、ヒットは 50 個が保存されるまでキューに登録され、キューに登録されているすべてのヒットが送信されます。 必要 `offlineEnabled=true`の場合、デフォルト値は `0` （バッチ処理なし）。
 
 * **privacyDefault**
 
@@ -74,9 +74,9 @@ SDK は現在、Analytics、Target、Audience Managerを含む複数のAdobe Exp
 
    * `optedin`：ヒットは即座に送信されます。
    * `optedout`：ヒットは破棄されます。
-   * `optunknown` ：レポートスイートのタイムスタンプが有効になっている場合、プライバシーステータスがオプトイン（ヒットが送信される）またはオプトアウト（ヒットが破棄される）に変更されるまで、ヒットは保存されます。レポートスイートのタイムスタンプが有効になっていない場合、プライバシーステータスがオプトインに変更されるまで、ヒットは破棄されます。
+   * `optunknown` ：レポートスイートのタイムスタンプが有効になっている場合、プライバシーステータスがオプトイン（ヒットが送信される）またはオプトアウト（ヒットが破棄される）に変更されるまで、ヒットは保存されます。 レポートスイートのタイムスタンプが有効になっていない場合、プライバシーステータスがオプトインに変更されるまで、ヒットは破棄されます。
 
-      これはデフォルト値のみを設定します。 この値がコード内で設定または変更された場合、コードによって設定された値はローカルストレージに保存され、変更されるまで使用されるか、アプリがアンインストールされて再インストールされます。
+      これはデフォルト値のみを設定します。 この値がコードで設定または変更された場合、コードで設定された値はローカルストレージに保存され、変更されるまで使用されるか、アプリがアンインストールされて再インストールされます。
 
       デフォルト値は `optedin` です。
 
@@ -95,13 +95,13 @@ SDK は現在、Analytics、Target、Audience Managerを含む複数のAdobe Exp
 
 * **clientCode**
 
-   （**Target で必要**）割り当てられたクライアントコード。
+   (**Target で必須**) 割り当てられたクライアントコード。
 
 * **timeout**
 
    ターゲットが応答を待つ時間を決定します。
 
-`ADBMobileConfig.json` ファイルの例を次に示します。
+次に、 `ADBMobileConfig.json` ファイル：
 
 ```js
 { 

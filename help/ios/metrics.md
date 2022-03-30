@@ -1,11 +1,11 @@
 ---
 description: 以下の表に、ライフサイクルを実装した後、モバイルアリブラリで自動的に測定可能な指標とディメンションを示します。
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: ライフサイクル指標
 topic-fix: Developer and implementation
 uuid: b795e383-d59b-4a3c-9e14-ffe8fb58412c
 exl-id: b51b6c41-843f-499d-9cf2-7ce96ed82fc0
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '1085'
 ht-degree: 100%

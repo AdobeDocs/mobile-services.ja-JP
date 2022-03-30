@@ -1,11 +1,11 @@
 ---
 description: Experience Cloud ソリューション用 Windows 8.1 ユニバーサルアプリストア SDK 4.x を使用すると、ネイティブの Windows 8.1 および Windows Phone 8.1 アプリケーションを測定したり、アプリ内からターゲットコンテンツを配信したり、Audience Manager でオーディエンスデータを活用および収集したりできます。
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: 'Experience Cloud ソリューション用 Windows 8.1 Universal アプリストア SDK 4.x '
 topic-fix: Developer and implementation
 uuid: a06d8cf2-5d2d-49a8-86ac-102e2934ea59
 exl-id: 5c511dea-99d8-40e9-a98f-8bc3cad937b8
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '190'
 ht-degree: 100%

@@ -1,11 +1,11 @@
 ---
 description: ライフタイム値を使用して、各ユーザーのライフタイム値を測定し、ターゲットを設定できます。
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: 訪問者のライフタイム値
 topic-fix: Developer and implementation
 uuid: d830d18b-4313-43bb-8d75-3789869d0f1d
 exl-id: f1b684b1-9919-400d-a88a-6d4a0809d9e1
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '156'
 ht-degree: 100%

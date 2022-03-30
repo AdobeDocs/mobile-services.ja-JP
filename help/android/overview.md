@@ -1,12 +1,12 @@
 ---
 description: Experience Cloud ソリューション用 Android SDK 4.x を使用すると、ネイティブ Android アプリケーションを測定したり、ターゲットコンテンツをアプリに配信したり、Audience Management を通じて視聴者データを活用および収集したりすることができます。
 keywords: Android, ライブラリ, モバイル, SDK
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Experience Cloud ソリューション用 Android SDK 4.x
 topic-fix: Developer and implementation
 uuid: 56f1ff41-0365-41dd-bdde-245c823dff07
 exl-id: c2454e94-a9af-42f3-ab45-14f68531faab
-source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '397'
 ht-degree: 93%
@@ -59,4 +59,4 @@ Experience Cloud リリースの最新情報については、[Experience Cloud 
 
 >[!IMPORTANT]
 >
->**2017 年 4 月 30 日** の時点で、AdobeBloodhound は廃止されました。 2017 年 5 月 1 日以降、追加の機能強化や追加のエンジニアリングまたはAdobeエキスパートケアのサポートは提供されません。
+>現在 **2017 年 4 月 31 日**、AdobeBloodhound は日没しています。 2017 年 5 月 1 日以降、追加の機能強化や追加のエンジニアリングまたはAdobeエキスパートケアのサポートは提供されません。

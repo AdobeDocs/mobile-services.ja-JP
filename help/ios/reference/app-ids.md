@@ -1,11 +1,11 @@
 ---
 description: 次の表に、iOS SDK および Adobe Mobile Services で使用される様々なアプリ識別子を示します。
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: アプリ ID
 topic-fix: Developer and implementation
 uuid: 24ebc716-23c7-4ee8-8256-b534210367e0
 exl-id: 82f0a097-b2eb-4313-8624-dd442e3da039
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '198'
 ht-degree: 100%

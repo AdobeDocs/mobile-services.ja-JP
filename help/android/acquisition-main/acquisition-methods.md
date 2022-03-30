@@ -1,12 +1,12 @@
 ---
 description: 'Android ライブラリでは、次の獲得メソッドが提供されています。 '
 keywords: Android, ライブラリ, モバイル, SDK
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: 獲得メソッド
 topic-fix: Developer and implementation
 uuid: 22ec432f-e7ae-4e89-be07-26206bbeacf8
 exl-id: 0ce1b8fb-fd45-45de-8f97-e297e4c6529f
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '74'
 ht-degree: 100%

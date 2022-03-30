@@ -1,11 +1,11 @@
 ---
-description: この節では、以前の Windows Mobile SDK のバージョン 3.x から、Experience Cloudソリューション用の Windows 8.1 ユニバーサルアプリストア 4.x SDK に移行する方法について説明します。
-solution: Experience Cloud,Analytics
+description: この節では、以前の Windows モバイル SDK の 3.x バージョンから、Experience Cloudソリューション用の Windows 8.1 Universal App Store 4.x SDK に移行する方法について説明します。
+solution: Experience Cloud Services,Analytics
 title: 4.x SDK への移行
 topic-fix: Developer and implementation
 uuid: e0fe3b7b-cda5-4a91-834c-2c7e17a501a3
 exl-id: d6dc34f2-61b7-4026-a66a-19284e21e69c
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '650'
 ht-degree: 25%
@@ -14,15 +14,15 @@ ht-degree: 25%
 
 # 4.x SDK への移行 {#migrate-to-the-x-sdks}
 
-この節では、以前の Windows Mobile SDK のバージョン 3.x から、Experience Cloudソリューション用の Windows 8.1 ユニバーサルアプリストア 4.x SDK に移行する方法について説明します。
+この節では、以前の Windows モバイル SDK の 3.x バージョンから、Experience Cloudソリューション用の Windows 8.1 Universal App Store 4.x SDK に移行する方法について説明します。
 
-バージョン 4.x に移行すると、すべての機能に静的メソッドを通じてアクセスできるようになり、独自のオブジェクトを追跡する必要がなくなります。
+バージョン 4.x に移行すると、すべての機能に静的メソッドでアクセスできるようになり、独自のオブジェクトを追跡する必要がなくなります。
 
-以降の節では、バージョン 3.x からバージョン 4.x への移行手順を説明します。
+以降の節では、バージョン 3.x からバージョン 4.x への移行手順について説明します。
 
 ## 使用されないプロパティの削除 {#section_145222EAA20F4CC2977DD883FDDBBFC5}
 
-新しい `ADBMobileConfig.json` ファイルがダウンロードに含まれているのに気付いたかもしれません。 このファイルには、アプリケーション固有のグローバル設定が含まれ、以前のバージョンで使用されていた設定変数のほとんどが置き換えられます。 `ADBMobileConfig.json` ファイルの例を次に示します。
+新しい `ADBMobileConfig.json` ファイルがダウンロードに含まれています。 このファイルには、アプリケーション固有のグローバル設定が含まれ、以前のバージョンで使用されていた設定変数のほとんどが置き換えられています。 `ADBMobileConfig.json` ファイルの例を次に示します。
 
 ```js
 { 
@@ -50,11 +50,11 @@ ht-degree: 25%
 }
 ```
 
-次の表に、設定ファイルに移動する必要がある設定変数を示します。最初の列の変数に設定されている値を 2 番目の列の変数に移動し、古い設定変数をコードから削除します。
+次の表に、設定ファイルに移動する必要がある設定変数を示します。最初の列の変数に設定されている値を 2 番目の列の変数に移動し、コードから古い設定変数を削除します。
 
 ## 3.x からの移行
 
-| 設定変数/方法 | `ADBMobileConfig.json` ファイル内の変数。 |
+| 設定変数/方法 | 変数 `ADBMobileConfig.json` ファイル。 |
 |--- |--- |
 | offlineTrackingEnabled | &quot;offlineEnabled&quot; |
 | reportSuiteIDs | &quot;rsids&quot; |
@@ -68,37 +68,37 @@ ht-degree: 25%
 
 ## トラッキングコールとトラッキング変数の更新 {#section_96E7D9B3CDAC444789503B7E7F139AB9}
 
-バージョン 4 の SDK では、Web に焦点を当てた `Track` 呼び出しと `TrackLink` 呼び出しを使用する代わりに、2 つのメソッドを使用してモバイル環境での理解を深めます。
+Web に焦点を当てた `Track` および `TrackLink` 呼び出しの場合、バージョン 4 の SDK では、モバイル環境で少し意味を持つ次の 2 つのメソッドを使用します。
 
-* `TrackState` 状態とは、「home dashboard」、「app settings」、「cart」など、アプリで使用可能なビューです。これらの状態は Web サイト上のページによく似ており、`trackState` コールにより、ページビュー数が増分されます。
+* `TrackState` 状態とは、アプリで使用可能なビューのことで、「home dashboard」、「app settings」、「cart」などがあります。 これらの状態は Web サイト上のページによく似ており、`trackState` コールにより、ページビュー数が増分されます。
 
-* `TrackAction` アクションとは、アプリ内で測定に価する重要な操作のことで、「logons」、「banner taps」、「feed subscriptions」などの指標があります。これらの呼び出しでは、ページビュー数は増分されません。
+* `TrackAction` アクションとは、アプリ内で測定に価する重要な操作のことで、「logons」、「banner taps」、「feed subscriptions」などの指標があります。 これらの呼び出しは、ページビュー数を増分しません。
 
-どちらのメソッドも `contextData` パラメーターには、コンテキストデータとして送信される名前と値のペアが含まれます。
+この `contextData` 両方のメソッド用のパラメーターには、コンテキストデータとして送信される名前と値のペアが含まれます。
 
 ## イベント、Prop、eVar
 
-[SDK メソッド ](/help/windows-appstore/c-configuration/methods.md) を見てみると、イベント、eVar、prop、heir、リストを設定する場所が分かるかもしれません。 バージョン 4 では、これらのタイプの変数を直接アプリに割り当てることができなくなりました。 代わりに、SDK は、コンテキストデータと処理ルールを使用して、レポート用にアプリデータを Analytics 変数へとマッピングします。
+もし [SDK メソッド](/help/windows-appstore/c-configuration/methods.md)イベント、eVar、prop、heir、リストを設定する場所について疑問が生じる場合があります。 バージョン 4 では、これらのタイプの変数を直接アプリに割り当てることができなくなりました。 代わりに、SDK は、コンテキストデータと処理ルールを使用して、レポート用にアプリデータを Analytics 変数へとマッピングします。
 
-処理ルールには、次のようないくつかの利点があります。
+処理ルールには、次のような利点があります。
 
 * アプリストアにアップデートを送信しなくてもデータマッピングを変更できます。
 * データには、レポートスイートに固有の変数を設定する代わりに、意味のある名前を付けることができます。
 * 追加のデータを送信しても、影響はほとんどありません。これらの値は、処理ルールを使用してマッピングされるまで、レポートに表示されません。
 
-詳しくは、[Analytics](/help/windows-appstore/analytics/analytics.md) の *処理ルール* を参照してください。
+詳しくは、 *処理ルール* in [Analytics](/help/windows-appstore/analytics/analytics.md).
 
-変数に直接割り当てていた値は、代わりにコンテキストデータに追加する必要があります。 つまり、 `SetProp` と `SetEvar` の呼び出しと、永続コンテキストデータへの割り当てをすべて削除し、値をコンテキストデータに追加する必要があります。
+変数に直接代入していた値は、代わりにコンテキストデータに追加する必要があります。 これは、が `SetProp`, `SetEvar`、および永続コンテキストデータへの割り当てをすべて削除し、値をコンテキストデータに追加する必要があります。
 
-**AppSection/Server、GeoZip、トランザクション ID、Campaign、その他の標準変数**
+**AppSection/Server、GeoZip、トランザクション ID、Campaign、その他の標準的な変数**
 
-上記の変数を含め、測定オブジェクトに設定していたその他のデータは、代わりにコンテキストデータに追加する必要があります。
+上記の変数など、測定オブジェクトに設定していたその他のデータは、代わりにコンテキストデータに追加する必要があります。
 
-簡単に言えば、`TrackState` または `TrackAction` 呼び出しで送信されるデータは、`data` パラメーターのペイロードだけです。
+簡単に言えば、と共に送信されるデータは `TrackState` または `TrackAction` 呼び出しは、 `data` パラメーター。
 
 ### トラッキングコールの置き換え
 
-コード全体で、次のメソッドを `trackState` または `trackAction` の呼び出しで置き換えます。
+コード全体で、次のメソッドをの呼び出しで置き換えます。 `trackState` または `trackAction`:
 
 ### 3.x からの移行
 
@@ -113,7 +113,7 @@ ht-degree: 25%
 
 ## オフライントラッキング {#section_5D4CD8CD1BE041A79A8657E31C0D24C6}
 
-オフライン追跡は `ADBMobileConfig.json` ファイルで有効になっています。その他のすべてのオフライン設定は自動的におこなわれます。
+オフライントラッキングは `ADBMobileConfig.json` ファイル。その他のすべてのオフライン設定は自動的におこなわれます。
 
 コード全体で、次のメソッドの呼び出しを削除します。
 
@@ -136,4 +136,4 @@ ADB.Analytics.trackAction("product view", cdata);
 
 ![](assets/prod-view.png)
 
-この例では、`"&&products"` の値は `";Cool Shoe`&quot;で、追跡するイベントのタイプの製品文字列構文に従う必要があります。
+この例では、 `"&&products"` が `";Cool Shoe`」およびは、追跡するイベントのタイプを表す products 文字列構文に従う必要があります。

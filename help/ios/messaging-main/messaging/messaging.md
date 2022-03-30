@@ -1,11 +1,11 @@
 ---
 description: この情報は、iOS アプリでアプリ内メッセージを使用する場合に役立ちます。
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: アプリ内メッセージ
 topic-fix: Developer and implementation
 uuid: 21fa6a94-bb7f-4c78-843b-a50f1974db22
 exl-id: 70b0ade4-dcd1-4e00-9800-352f11c4001d
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '407'
 ht-degree: 100%
@@ -83,7 +83,7 @@ iOS Mobile Services SDK は、アプリ内メッセージに関する以下の�
 
 * カスタムの全画面アプリ内メッセージの場合は、メッセージ内の HTML コンテンツに次のボタンに関する SDK 追跡を通知する正しいコードが含まれている必要があります。
 
-   * **[!UICONTROL クリックスルー]**（リダイレクト）のトラッキング例：  `adbinapp://confirm/?url=https://www.yoursite.com`
+   * **[!UICONTROL クリックスルー]**（リダイレクト）のトラッキング例： `adbinapp://confirm/?url=https://www.yoursite.com`
    * **[!UICONTROL キャンセル]**（終了）追跡の例：`adbinapp://cancel`
 
 * ローカル（リモート）通知の場合：

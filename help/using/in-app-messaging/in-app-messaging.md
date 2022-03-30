@@ -1,12 +1,12 @@
 ---
 description: アプリ内メッセージおよびプッシュメッセージを作成、管理およびレポートします。
 keywords: モバイル
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: メッセージ
 topic-fix: Metrics
 uuid: e32d3e35-2d09-4ddf-8919-75dc895abcb3
 exl-id: e6d076fc-3176-4591-8388-314b936c58cd
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '459'
 ht-degree: 100%

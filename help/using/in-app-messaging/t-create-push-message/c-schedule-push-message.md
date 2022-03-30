@@ -1,12 +1,12 @@
 ---
 description: Adobe Mobile Services UI では、プッシュイベントをすぐに配信する、後で配信する、および定期的なメッセージとして配信されるようにスケジュールできます。これらのイベントは、日別、週別、月別にスケジュールできます。
 keywords: モバイル
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: スケジュール：プッシュメッセージ
 topic-fix: Metrics
 uuid: 6810e27a-016f-4286-8fe2-9972d85fa326
 exl-id: 36f263a0-4aad-423e-bb78-9c532c98df19
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '684'
 ht-degree: 100%

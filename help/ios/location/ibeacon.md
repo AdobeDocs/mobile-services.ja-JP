@@ -1,11 +1,11 @@
 ---
 description: iBeacon トラッキングにより、iBeacon と Low Energy Bluetooth を使用してマイクロロケーションを測定し、ターゲットを設定することができます。
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: iBeacon トラッキング
 topic-fix: Developer and implementation
 uuid: 390883db-027e-4d12-8a16-86d514579db1
 exl-id: 7232e51d-5695-43ad-8d67-fb3cad70e8f2
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '182'
 ht-degree: 100%

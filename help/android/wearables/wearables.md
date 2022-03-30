@@ -1,11 +1,11 @@
 ---
 description: Android SDK バージョン 4.5 から新しい Android 拡張機能が追加され、Android ウェアラブルアプリからデータを収集できるようになりました。
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: ウェアラブルの概要
 topic-fix: Developer and implementation
 uuid: f9a5d692-0ef6-4cdf-831e-e50be291f083
 exl-id: 5b390aa9-5bbd-4f69-9b09-49b9900fa550
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '147'
 ht-degree: 100%
