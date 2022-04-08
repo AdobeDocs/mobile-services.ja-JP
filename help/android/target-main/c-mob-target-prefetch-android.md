@@ -3,9 +3,9 @@ description: Adobe Target のプリフェッチ機能では、サーバーから
 title: Android でのオファーコンテンツのプリフェッチ
 uuid: 063451b8-e191-4d58-8ed8-1723e310ad1a
 exl-id: 60fd9703-972b-4c2c-bf9c-86e1f59bfba5
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5d44c09a18a557e934628533c4eefaa9e26aba42
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '738'
 ht-degree: 93%
 
 ---
@@ -13,10 +13,6 @@ ht-degree: 93%
 # Android でのオファーコンテンツのプリフェッチ {#prefetch-offer-content-in-android}
 
 Adobe Target のプリフェッチ機能では、サーバーからの応答をキャッシュすることで、Android Mobile SDK を使用して可能な限り少ない回数でオファーコンテンツを取得できます。
-
->[!IMPORTANT]
->
->Android 用のモバイル SDK のプリフェッチ機能は、Adobe Target の自動ターゲット、自動配分、自動パーソナライゼーションアクティビティタイプではサポートされていません。
 
 このプロセスにより、読み込み時間が短縮され、複数のネットワーク呼び出しを防ぎ、モバイルアプリユーザーが mbox を訪問したことをAdobe Targetに通知できます。 プリフェッチ呼び出し中にすべてのコンテンツが取得され、キャッシュされます。このコンテンツは、指定された mbox 名のキャッシュされたコンテンツを含む今後のすべての呼び出しに対してキャッシュから取得されます。
 
@@ -72,7 +68,7 @@ if (MobileConfig.getInstance().mobileUsingTarget()){
 
 * **loadRequests**
 
-   リクエスト配列に指定された複数の mbox の場所に対してバッチリクエストを実行します。 配列内の各オブジェクトにコールバック関数が含まれ、指定された mbox の場所に対してコンテンツが使用可能になると呼び出されます。
+   リクエスト配列に指定された複数の mbox の場所に対してバッチリクエストを実行します。 配列内の各オブジェクトにコールバック関数が含まれ、指定された mbox の場所でコンテンツが使用可能になると呼び出されます。
 
    >[!IMPORTANT]
    >

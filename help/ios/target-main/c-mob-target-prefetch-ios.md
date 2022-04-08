@@ -3,20 +3,16 @@ description: Adobe Target のプリフェッチ機能では、iOS Mobile SDK が
 title: iOS でのオファーコンテンツのプリフェッチ
 uuid: fef58042-65e2-4579-b8f1-d21554d2af57
 exl-id: 64d43be7-6bd1-4657-8154-5b2c1cbbf42b
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5d44c09a18a557e934628533c4eefaa9e26aba42
 workflow-type: tm+mt
-source-wordcount: '731'
-ht-degree: 90%
+source-wordcount: '707'
+ht-degree: 89%
 
 ---
 
 # iOS でのオファーコンテンツのプリフェッチ {#prefetch-offer-content-in-ios}
 
 Adobe Target のプリフェッチ機能では、iOS Mobile SDK がサーバーからの応答をキャッシュするので、可能な限り少ない回数で効率良くオファーコンテンツを取得できるようになります。
-
->[!IMPORTANT]
->
->iOS 用のモバイル SDK のプリフェッチ機能は、Adobe Target の自動ターゲット、自動配分、自動パーソナライゼーションアクティビティタイプではサポートされていません。
 
 このプロセスにより、読み込み時間が短縮され、複数のネットワーク呼び出しを防ぎ、モバイルアプリユーザーが mbox を訪問したことをAdobe Targetに通知できます。 プリフェッチ呼び出し中にすべてのコンテンツが取得され、キャッシュされます。このコンテンツは、指定された mbox 名のキャッシュされたコンテンツを含む今後のすべての呼び出しに対してキャッシュから取得されます。
 
