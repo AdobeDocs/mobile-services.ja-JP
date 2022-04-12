@@ -1,45 +1,46 @@
 ---
-title: Adobe Mobile Services end-of-life FAQ
-description: Get answers to commonly asked questions around the end-of-life announcement for Adobe Mobile Services.
-source-git-commit: a0f834247c328b40d0f47fdf515c239cf66b7566
+title: AdobeMobile Services の提供終了に関する FAQ
+description: AdobeMobile Services の提供終了のお知らせに関するよくある質問への回答を紹介します。
+exl-id: c5f44341-7b87-4530-b86e-17e2911a7959
+source-git-commit: a6dd74b8df771249e3c50de93f44639cfbfe7e13
 workflow-type: tm+mt
-source-wordcount: '436'
+source-wordcount: '433'
 ht-degree: 2%
 
 ---
 
-# Adobe Mobile Services end-of-life FAQ
+# AdobeMobile Services の提供終了に関する FAQ
 
-****
+AdobeMobile Service の提供終了日： **2022 年 12 月 31 日**.
 
-## What is happening?
+## 何が起こってるの？
 
-Mobile Services reaches end-of-life on December 31, 2022. Mobile Services, which supports a mobile-centric UI, acquisition, deep linking, in-app messaging, push notification, and geo-location is no longer supported after this date.
+Mobile Services が 2022 年 12 月 31 日 (PT) に提供終了となります。 モバイル中心の UI、獲得、ディープリンク、アプリ内メッセージ、プッシュ通知、位置情報をサポートするMobile Services は、この日以降はサポートされなくなります。
 
-## What is included, and what is not included?
+## 何が含まれ、何が含まれないのか。
 
-[](https://mobilemarketing.adobe.com)The Mobile version 4 SDKs that rely on this interface were sunset on August 31, 2021.
+この提供終了には、スタンドアロンのAdobeである Mobile Services のみが含まれます。 [mobilemarketing.adobe.com](https://mobilemarketing.adobe.com). このインターフェイスに依存する Mobile バージョン 4 SDK は、2021 年 8 月 31 日に廃止されました。
 
-This end-of-life does NOT include Adobe Analytics for mobile apps, part of the Adobe Experience Platform Mobile SDKs. These features, which include in-app behavior, lifecycle analysis, messaging interaction tracking, and audience profiles, continue to receive support from Adobe.
+この提供終了には、Adobe Experience Platform Mobile SDK の一部であるモバイルアプリ用のAdobe Analyticsは含まれません。 これらの機能（アプリ内動作、ライフサイクル分析、メッセージングインタラクショントラッキング、オーディエンスプロファイルなど）は、引き続きAdobeからサポートを受けます。
 
-## Why is the capability being retired?
+## 機能が廃止される理由
 
-As Adobe continues to expand its mobile marketing capabilities, features previously available in Mobile Services will be released in Adobe Experience Cloud solutions or offered through Adobe Exchange Premier Partners. This transition provides you with more powerful and flexible mobile marketing capabilities.
+Adobeがモバイルマーケティング機能を拡大し続けるにつれ、以前 Mobile Services で使用できた機能は、Adobe Experience Cloudソリューションでリリースされるか、AdobeExchange プレミアパートナーを通じて提供されます。 この切り替えにより、より強力で柔軟なモバイルマーケティング機能が提供されます。
 
-## What happens to existing processing rules created in Mobile Services?
+## Mobile Services で作成された既存の処理ルールはどうなりますか？
 
-[](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html)Migrated processing rules behave similarly to other processing rules in Adobe Analytics, where you can freely view or edit them. No user action is required for this migration.
+[処理ルール](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html) Mobile Services UI で作成または生成されたデータは、Mobile Services の提供終了日の前に自動的にAdobe Analyticsに移行されます。 移行された処理ルールは、Adobe Analyticsの他の処理ルールと同様に動作します。処理ルールは自由に表示または編集できます。 この移行にユーザー操作は必要ありません。
 
-[](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/contextdata.html?lang=ja)
+Mobile Services の終了後、すべての処理ルールロジックは、通常、の使用を含め、Adobe Analytics内でのみ処理されます。 [コンテキストデータ変数](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/contextdata.html?lang=ja).
 
-## What transition options are available?
+## 使用可能な切り替えオプションは何ですか？
 
-Adobe offers three transition paths depending on your organization&#39;s use case.
+Adobeでは、組織の使用例に応じて、3 つのトランジションパスを提供します。
 
-1. **** This product helps organizations optimize and personalize experiences across the entire customer journey, including mobile messaging.
-1. **** These partners include Adjust, AppsFlyer, and Branch, who offer extensive acquisition capabilities. Adobe&#39;s partnership team can make appropriate introductions to ensure that you find the solution that best fits your needs.
-1. ****[](https://experienceleague.adobe.com/docs/places/using/home.html)
+1. **アプリ内メッセージおよびプッシュ通知**:Adobeは、メッセージングワークフローをAdobe Journey Optimizerに移行できます。 この製品を使用すると、モバイルメッセージを含め、カスタマージャーニー全体にわたって、組織がエクスペリエンスを最適化およびパーソナライズするのに役立ちます。
+1. **獲得とディープリンク**:獲得とディープリンクは、Exchange Premier Partners プログラムを通じてAdobeで提供されます。 これらのパートナーには、広範な獲得機能を提供する Adjust、AppsFlyer、Branch が含まれます。 Adobeのパートナーシップチームは、お客様のニーズに最適なソリューションを確実に見つけるために、適切な紹介を行うことができます。
+1. **Places Service**:Places Service は無料の位置情報機能を提供します。 詳しくは、 [Places Service ドキュメント](https://experienceleague.adobe.com/docs/places/using/home.html).
 
-## Where can I go if I have questions?
+## 質問がある場合は、どこに移動できますか？
 
-[](https://spark.adobe.com/page/C6D30y09zaRpD/)Contact your Adobe representative with any additional questions.
+詳しくは、 [AdobeMobile Services の提供終了の Spark ページ](https://spark.adobe.com/page/C6D30y09zaRpD/) を参照してください。 その他のご質問については、Adobe担当者にお問い合わせください。
