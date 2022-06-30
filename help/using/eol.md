@@ -2,9 +2,9 @@
 title: AdobeMobile Services の提供終了に関する FAQ
 description: AdobeMobile Services の提供終了のお知らせに関するよくある質問への回答を紹介します。
 exl-id: c5f44341-7b87-4530-b86e-17e2911a7959
-source-git-commit: a6dd74b8df771249e3c50de93f44639cfbfe7e13
+source-git-commit: c349c0f83df9d42b61a419ae71d6d2b67c5f7819
 workflow-type: tm+mt
-source-wordcount: '433'
+source-wordcount: '421'
 ht-degree: 2%
 
 ---
@@ -15,7 +15,7 @@ AdobeMobile Service の提供終了日： **2022 年 12 月 31 日**.
 
 ## 何が起こってるの？
 
-Mobile Services が 2022 年 12 月 31 日 (PT) に提供終了となります。 モバイル中心の UI、獲得、ディープリンク、アプリ内メッセージ、プッシュ通知、位置情報をサポートするMobile Services は、この日以降はサポートされなくなります。
+Mobile Services が 2022 年 12 月 31 日 (PT) に提供終了となります。 モバイル中心の UI、獲得、ディープリンク、アプリ内メッセージ、プッシュ通知および位置情報をサポートする Mobile Services は、この日以降はサポートされなくなります。
 
 ## 何が含まれ、何が含まれないのか。
 
@@ -38,7 +38,7 @@ Mobile Services の終了後、すべての処理ルールロジックは、通�
 Adobeでは、組織の使用例に応じて、3 つのトランジションパスを提供します。
 
 1. **アプリ内メッセージおよびプッシュ通知**:Adobeは、メッセージングワークフローをAdobe Journey Optimizerに移行できます。 この製品を使用すると、モバイルメッセージを含め、カスタマージャーニー全体にわたって、組織がエクスペリエンスを最適化およびパーソナライズするのに役立ちます。
-1. **獲得とディープリンク**:獲得とディープリンクは、Exchange Premier Partners プログラムを通じてAdobeで提供されます。 これらのパートナーには、広範な獲得機能を提供する Adjust、AppsFlyer、Branch が含まれます。 Adobeのパートナーシップチームは、お客様のニーズに最適なソリューションを確実に見つけるために、適切な紹介を行うことができます。
+1. **獲得とディープリンク**:獲得とディープリンクは、Exchange Premier Partners プログラムを通じてAdobeで提供されます。 Adobeのパートナーシップチームは、お客様のニーズに最適なソリューションを確実に見つけるために、適切な紹介を行うことができます。
 1. **Places Service**:Places Service は無料の位置情報機能を提供します。 詳しくは、 [Places Service ドキュメント](https://experienceleague.adobe.com/docs/places/using/home.html).
 
 ## 質問がある場合は、どこに移動できますか？
