@@ -3,9 +3,8 @@ cloud: Experience Cloud
 product: experience cloud
 solution: Experience Cloud Services
 type: Documentation
-git-repo: https://git.corp.adobe.com/AdobeDocs/mobile-services.ja-JP
+git-repo: https://github.com/AdobeDocs/mobile-services.ja-JP
 index: true
-translation-type: tm+mt
 source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '157'
@@ -16,7 +15,7 @@ ht-degree: 100%
 
 # 社内用のメタデータ
 
-metadata.md ファイルにはリポジトリー内のユーザーガイド TOC.md ファイルから渡される repo-level メタデータが含まれています。任意のユーザーガイドの metadata.md コンテンツを変更したい場合は、任意の TOC.md ファイル内でおこないます。
+metadata.md ファイルには、リポジトリー内にあるユーザーガイドの TOC.md ファイルにパススルーされる、リポジトリーレベルのメタデータが含まれています。任意のユーザーガイドの metadata.md コンテンツを変更したい場合は、任意の TOC.md ファイル内でおこないます。
 
 | メタデータ | 説明 |
 |--- |--- |
