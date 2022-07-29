@@ -7,8 +7,8 @@ git-repo: https://github.com/AdobeDocs/mobile-services.ja-JP
 index: true
 source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '157'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
