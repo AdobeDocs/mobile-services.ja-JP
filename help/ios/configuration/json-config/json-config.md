@@ -5,9 +5,9 @@ title: ADBMobile JSON 設定
 topic-fix: Developer and implementation
 uuid: d9708d59-e30a-4f6c-ab1b-d9499855d0c2
 exl-id: e3515de3-3aec-4dd0-996d-9c561ad1b1de
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 78b7a623a7811cf0ede789c74b3ca7a80372c9f4
 workflow-type: tm+mt
-source-wordcount: '1708'
+source-wordcount: '1591'
 ht-degree: 99%
 
 ---
@@ -83,24 +83,6 @@ ht-degree: 99%
    >この変数は Target で必要です。
 
    * 最小 SDK バージョン：4.0
-
-* **coopUnsafe**
-
-   Device Co-op のユーザーで、この値を `true` に設定する必要がある場合は、Co-op グループに連絡して、お使いの Device Co-op アカウント上でブロックリストフラグをリクエストする必要があります。これらのフラグをセルフサービスで有効にする方法はありません。
-
-   次の情報に留意してください。
-
-   * `coopUnsafe` を `coop_unsafe=1` に設定すると、常に Audience Manager および訪問者 ID ヒットに `true` が追加されます。
-   * Audience Manager への Analytics サーバー側の転送を有効にすると、Analytics ヒットに `coop_unsafe=1` も表示されます。
-
-   追加情報を以下に示します。
-
-   * 最小 SDK バージョン：4.16.1
-   * `marketingCloud` オブジェクトのブールプロパティが `true` に設定されると、デバイスが Experience Cloud の Device Co-op からオプトアウトします。
-   * デフォルト値は `false` です。
-   * この設定は、Device Co-op をプロビジョニングしたユーザー&#x200B;**にのみ**&#x200B;適用されます。
-
-
 
 * **environmentId**
 

@@ -1,17 +1,16 @@
 ---
 audience: end-user
 user-guide-title: Mobile Services Android ガイド
-breadcrumb-title: Androidガイド
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+breadcrumb-title: Android ガイド
+source-git-commit: 78b7a623a7811cf0ede789c74b3ca7a80372c9f4
 workflow-type: tm+mt
-source-wordcount: '273'
+source-wordcount: '269'
 ht-degree: 99%
 
 ---
 
 
-# Mobile Services Android ガイド {#android}
+# Mobile Services Android ガイド{#android}
 
 + [Experience Cloud ソリューション用 Android SDK 4.x](overview.md)
 + [リリースノート](rel-notes.md)
@@ -19,7 +18,7 @@ ht-degree: 99%
    + [はじめに](getting-started/getting-started.md)
    + [事前準備](getting-started/requirements.md)
    + [コア実装とライフサイクル](getting-started/dev-qs.md)
-   + [処理ルールとコンテキストデータ](getting-started/proc-rules.md)
+   + [処理ルールとコンテキストデータ ](getting-started/proc-rules.md)
    + [Android 4.x ライブラリへの移行](getting-started/migration-v3.md)
 + 設定 {#configuration-android}
    + [設定の概要](configuration/configuration.md)
@@ -37,7 +36,7 @@ ht-degree: 99%
    + [訪問者のライフタイム値](analytics-main/lifetime-value.md)
    + products 変数 {#products-variable}
       + [products 変数](analytics-main/products/products.md)
-      + [マーチャンダイジング eVar および製品固有のイベントを持つ products 変数 ](analytics-main/products/products-variable-evars-events.md)
+      + [マーチャンダイジング eVar および製品固有のイベントを持つ products 変数](analytics-main/products/products-variable-evars-events.md)
    + [イベントのシリアル化](analytics-main/event-serialization.md)
    + [ビデオ分析](analytics-main/video-qs.md)
    + ポストバック {#postbacks}
@@ -53,14 +52,14 @@ ht-degree: 99%
       + [ディープリンクの追跡](acquisition-main/tracking-deep-links/tracking-deep-links.md)
       + [サードパーティのディファードディープリンクの追跡](acquisition-main/tracking-deep-links/c-tracking-3rd-party-deferred-deep-links.md)
    + [マーケティングリンクによる獲得のテスト](acquisition-main/t-testing-marketing-link-acquisition.md)
-   + [V3 による獲得のテスト](acquisition-main/t-testing-version-3-acquisition.md)
+   + [V3 による獲得のテスト ](acquisition-main/t-testing-version-3-acquisition.md)
    + [従来の獲得のテスト](acquisition-main/t-testing-acquisition.md)
    + [獲得テストのトラブルシューティング](acquisition-main/troubleshoot-acquisition-testing.md)
 + メッセージ {#messaging-android}
    + [メッセージの概要](messaging-main/messaging-main-android.md)
    + アプリ内メッセージ {#inapp-messaging}
-      + [アプリ内メッセージ](messaging-main/messaging/messaging.md)
-      + [アプリ内メッセージのトラブルシューティング](messaging-main/messaging/in-apps-ts.md)
+      + [アプリ内メッセージ ](messaging-main/messaging/messaging.md)
+      + [アプリ内メッセージのトラブルシューティング ](messaging-main/messaging/in-apps-ts.md)
    + プッシュメッセージ {#push-messaging}
       + [プッシュメッセージ](messaging-main/push-messaging/push-messaging.md)
       + [ディープリンクを使用したプッシュメッセージの実装](messaging-main/push-messaging/t-mob-impl-push-deeplinking-android-4x.md)
@@ -69,7 +68,7 @@ ht-degree: 99%
 + ロケーション {#location}
    + [ロケーションの概要](location/location.md)
    + [位置情報と目標地点](location/geo-poi.md)
-   + [ビーコン追跡](location/beacon.md)
+   + [ビーコントラッキング](location/beacon.md)
 + Target {#target-android}
    + [Target の概要](target-main/target-main.md)
    + [Target の設定](target-main/target.md)
@@ -78,21 +77,20 @@ ht-degree: 99%
    + [Android の Target プレビュー](target-main/c-mob-target-preview-android.md)
 + Experience Cloud {#experience-cloud-android}
    + [Experience Cloud の概要](c-marketing-cloud/c-marketing-cloud.md)
-   + [Experience Cloud ID の設定 ](c-marketing-cloud/mcvid.md)
+   + [Experience Cloud ID の設定](c-marketing-cloud/mcvid.md)
    + [Adobe Experience Platform ID サービスのメソッド](c-marketing-cloud/mc-methods.md)
-   + [Experience Cloud Device Co-op](c-marketing-cloud/t-mob-mc-device-coop-android-.md)
 + Audience Manager {#audience-manager-android}
    + [Audience Manager の概要](audience-manager/audience-manager.md)
    + [Audience Manager の設定](audience-manager/audiencemgmt.md)
    + [Audience Manager メソッド](audience-manager/c-audience-manager-methods.md)
 + ウェアラブル {#wearables-android}
    + [ウェアラブルの概要](wearables/wearables.md)
-   + [Android ウェアラブル：はじめに](wearables/android-wearable.md)
-   + [Android ウェアラブル：追加の注意事項](wearables/c-android-wearables--additional-notes.md)
+   + [Android ウェアラブル：はじめに ](wearables/android-wearable.md)
+   + [Android ウェアラブル：追加の注意事項 ](wearables/c-android-wearables--additional-notes.md)
 + Android SDK リファレンス {#sdk-reference-android}
    + [Android SDK リファレンスの概要](/help/android/reference/reference.md)
    + [アプリ ID](/help/android/reference/app-ids.md)
-   + [アプリとモバイル Web にまたがる訪問者トラッキング](/help/android/reference/hybrid-app.md)
+   + [アプリとモバイル Web にまたがる訪問者トラッキング ](/help/android/reference/hybrid-app.md)
    + [Android ウィジェット](/help/android/reference/widgets.md)
 + プライバシーと一般データ保護規則 {#gdpr-privacy-android}
    + [プライバシーと GDPR の概要](c-mob-privacy-gdpr-android/c-mob-privacy-gdpr-android.md)

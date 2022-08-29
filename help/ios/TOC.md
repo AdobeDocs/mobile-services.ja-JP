@@ -2,11 +2,10 @@
 audience: end-user
 user-guide-title: Mobile Services iOS ガイド
 breadcrumb-title: iOSガイド
-translation-type: tm+mt
-source-git-commit: b9ee49ba26d4726b1f97ef36f5c2e9923361b1ee
+source-git-commit: 78b7a623a7811cf0ede789c74b3ca7a80372c9f4
 workflow-type: tm+mt
-source-wordcount: '288'
-ht-degree: 99%
+source-wordcount: '284'
+ht-degree: 97%
 
 ---
 
@@ -19,8 +18,8 @@ ht-degree: 99%
    + [導入の概要](getting-started/getting-started.md)
    + [事前準備](getting-started/requirements.md)
    + [コア実装とライフサイクル](getting-started/dev-qs.md)
-   + [処理ルールとコンテキストデータ](getting-started/proc-rules.md)
-   + [Swift 統合 ](getting-started/swift-integration.md)
+   + [処理ルールとコンテキストデータ ](getting-started/proc-rules.md)
+   + [Swift 統合](getting-started/swift-integration.md)
    + [4.x iOS ライブラリへの移行](getting-started/migration-v3.md)
 + 設定 {#config-ios}
    + [設定の概要](configuration/configuration.md)
@@ -39,12 +38,12 @@ ht-degree: 99%
    + [訪問者のライフタイム値](analytics-main/lifetime-value.md)
    + products 変数 {#products-variable}
       + [products 変数](analytics-main/products/products.md)
-      + [マーチャンダイジング eVar および製品固有のイベントを持つ products 変数 ](analytics-main/products/products-variable-evars-events.md)
+      + [マーチャンダイジング eVar および製品固有のイベントを持つ products 変数](analytics-main/products/products-variable-evars-events.md)
    + [イベントのシリアル化](analytics-main/event-serialization.md)
    + [ビデオ分析](analytics-main/video-qs.md)
    + ポストバック {#postbacks}
       + [ポストバックの概要](analytics-main/postback/postback.md)
-      + [ポストバックのサンプル ](analytics-main/postback/postback-example.md)
+      + [ポストバックのサンプル](analytics-main/postback/postback-example.md)
       + [PII ポストバック](analytics-main/postback/c-pii-postbacks.md)
    + [Analytics メソッド](analytics-main/analytics-methods.md)
 + 獲得 {#acquisition-ios}
@@ -55,14 +54,14 @@ ht-degree: 99%
       + [ディープリンクの追跡](acquisition-main/tracking-deep-links/tracking-deep-links.md)
       + [サードパーティのディファードディープリンクの追跡](acquisition-main/tracking-deep-links/c-tracking-3rd-party-deep-deferred-links.md)
    + [マーケティングリンクによる獲得のテスト](acquisition-main/t-testing-marketing-link-acquisition.md)
-   + [V3 による獲得のテスト](acquisition-main/t-testing-version-3-acquisition.md)
+   + [V3 による獲得のテスト ](acquisition-main/t-testing-version-3-acquisition.md)
    + [従来の獲得のテスト](acquisition-main/t-testing-acquisition.md)
    + [Apple Search Ads](acquisition-main/c-apple-search-ads.md)
 + メッセージ {#messaging-ios}
    + [メッセージの概要](messaging-main/messaging-main.md)
    + アプリ内メッセージ {#in-app-messaging}
-      + [アプリ内メッセージ](messaging-main/messaging/messaging.md)
-      + [アプリ内メッセージのトラブルシューティング](messaging-main/messaging/in-apps-ts.md)
+      + [アプリ内メッセージ ](messaging-main/messaging/messaging.md)
+      + [アプリ内メッセージのトラブルシューティング ](messaging-main/messaging/in-apps-ts.md)
    + プッシュメッセージ {#push-messaging}
       + [プッシュメッセージ](messaging-main/push-messaging/push-messaging.md)
       + [ディープリンクを使用したプッシュメッセージの実装](messaging-main/push-messaging/t-mob-imp-push-deeplinking-ios-4x.md)
@@ -80,8 +79,7 @@ ht-degree: 99%
 + Experience Cloud {#exp-cloud-ios}
    + [Experience Cloud の概要](marketing-cloud/marketing-cloud.md)
    + [Experience Cloud ID](marketing-cloud/mcvid.md)
-   + [Adobe Experience Platform ID サービスのメソッド](marketing-cloud/mc-methods.md)
-   + [Experience Cloud Device Co-op](marketing-cloud/t-mob-mc-device-coop-ios-.md)
+   + [Adobe Experience Platform Identity Service メソッド](marketing-cloud/mc-methods.md)
 + [Audience Manager メソッド](amm/aam-methods.md)
 + tvOS を使用した Apple TV 実装 {#apple-tv-implementation-tvos-ios}
    + [tvOS を使用した Apple TV 実装](apple-tv-implementation-tvos/apple-tv-implementation-tvos.md)
@@ -90,16 +88,16 @@ ht-degree: 99%
 + iOS エクステンション実装 {#ios-ext}
    + [iOS エクステンション実装](ios-ext/ios-ext.md)
    + [スタンドアロンエクステンション実装](ios-ext/c-stand-alone-extension-implementation.md)
-+ [WatchOS 2 を使用した Apple Watch 実装](apple-watch-implementation-watchkit.md)
++ [WatchOS 2 を使用した Apple Watch 実装 ](apple-watch-implementation-watchkit.md)
 + iOS SDK リファレンス {#sdk-reference-ios}
-   + [iOS SDK リファレンス ](reference/reference.md)
+   + [iOS SDK リファレンス](reference/reference.md)
    + [アプリ ID](reference/app-ids.md)
-   + [アプリとモバイル Web にまたがる訪問者トラッキング](reference/hybrid-app.md)
+   + [アプリとモバイル Web にまたがる訪問者トラッキング ](reference/hybrid-app.md)
    + [iOS デバイスのバージョン](reference/device-versions.md)
 + プライバシーと一般データ保護規則 {#privacy-gdpr-ios}
    + [プライバシーと一般データ保護規則](c-mob-privacy-gdpr-ios/c-mob-privacy-gdpr-ios.md)
    + [保存されている ID の取得](c-mob-privacy-gdpr-ios/c-mob-gdpr-ret-stored-ids-ios.md)
    + [ユーザーのオプトステータスの設定](c-mob-privacy-gdpr-ios/privacy.md)
 + PhoneGap プラグイン {#phonegap-ios}
-   + [PhoneGap プラグイン](phonegap/phonegap.md)
-   + [PhoneGap プラグインのメソッド ](phonegap/phonegap-methods.md)
+   + [PhoneGap プラグイン ](phonegap/phonegap.md)
+   + [PhoneGap プラグインのメソッド](phonegap/phonegap-methods.md)
