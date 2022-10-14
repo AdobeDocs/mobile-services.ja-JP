@@ -6,9 +6,9 @@ title: よくある質問
 topic-fix: Metrics
 uuid: 62a9241c-2ada-483a-a594-b023916cb0b6
 exl-id: d7dfc36e-56f0-498a-ad50-93fee90cb6ff
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: dbe3af75010fbf5195a3f93fc43cb696aaa32b65
 workflow-type: tm+mt
-source-wordcount: '1031'
+source-wordcount: '1013'
 ht-degree: 96%
 
 ---
@@ -41,7 +41,7 @@ Adobe Mobile SDK は、標準 iOS および Android ネットワークスタッ�
 
 ### ライフサイクル指標とは
 
-ライフサイクル指標は、SDK が最初にアプリに実装されたときに自動的に収集される、「あらかじめ用意された」指標です。詳しくは、「[ライフサイクル指標（Android）](/help/android/metrics.md)」および「[ライフサイクル指標（iOS）](/help/ios/metrics.md)」を参照してください。
+ライフサイクル指標は、SDK が最初にアプリに実装されたときに自動的に収集される、「あらかじめ用意された」指標です。
 
 ### 処理ルールをトラブルシューティングする方法を教えてください。
 
@@ -49,7 +49,7 @@ Adobe Mobile SDK は、標準 iOS および Android ネットワークスタッ�
 
 ### 解析データを複数のレポートスイートに送信することはできますか。
 
-はい。SDK は、複数の Adobe Analytics レポートスイートにデータを送信する機能を提供します。1 つのイメージリクエストを使用して複数のレポートスイートにデータを取り込むには、 フ `ADBMobileConfig.json` ァイルの  **[!UICONTROL analytics]** セクションにある **[!UICONTROL rsids]** フィールドに複数のレポートスイート ID を設定します（コンマ区切り、間にスペースを挟まない）。詳しくは、「[ADBMobile JSON の設定](/help/ios/configuration/json-config/json-config.md)」を参照してください。
+はい。SDK は、複数の Adobe Analytics レポートスイートにデータを送信する機能を提供します。1 つのイメージリクエストを使用して複数のレポートスイートにデータを取り込むには、 フ `ADBMobileConfig.json` ァイルの  **[!UICONTROL analytics]** セクションにある **[!UICONTROL rsids]** フィールドに複数のレポートスイート ID を設定します（コンマ区切り、間にスペースを挟まない）。
 
 ### Mobile の訪問回数と起動回数の違いは何ですか？
 

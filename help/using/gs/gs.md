@@ -6,9 +6,9 @@ title: はじめに
 topic-fix: Metrics
 uuid: a7ae7c5a-dab8-4603-b4cd-af73a2f09f71
 exl-id: 0c08e154-8747-45dc-9731-ab2a3e78bc5a
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: dbe3af75010fbf5195a3f93fc43cb696aaa32b65
 workflow-type: tm+mt
-source-wordcount: '1344'
+source-wordcount: '1300'
 ht-degree: 97%
 
 ---
@@ -119,11 +119,7 @@ Adobe Mobile では、次のタイプのメッセージを設定できます。
 
 Adobe Target for Mobile アプリは、Adobe Analytics で利用できる強化されたセグメント化とレポートを最大限に活用できるようになりました。つまり、Adobe Target は、Analytics の主要なアプリ指標をターゲットやパーソナライズに活用することで、それらの指標をすべて活用できます。また、テストの成功に関する詳細なレベルのレポートを生成でき、マーケターは「what if（仮定について）の質問」に対する理解を深め、アプリマーケターはそれらの質問に回答することで、アプリの投資に対する投資回収率を示すというプレッシャーから回避できる場合があります。アプリ統合の Analytics／Target は、組み合わせオファーを提供します。これは、市場で利用可能な最も堅牢なアプリエンゲージメントソリューションです。
 
-ロケーションについて詳しくは、次のコンテンツを参照してください。
-
-* [Mobile Services ユーザーガイド内の場所](/help/using/location/c-location-overview.md)
-* [Android SDK ガイドの ロケーション](/help/android/location/location.md)
-* [iOS SDK ガイドの ロケーション](/help/ios/location/location.md)
+場所について詳しくは、 [場所](/help/using/location/c-location-overview.md).
 
 ## Adobeモバイル SDK {#mobile-services-sdk}
 
@@ -157,5 +153,3 @@ Adobe Mobile SDK は、次の機能を提供します。
 
    * Adobe サーバーやサードパーティ製システムにデータを送信する際の、デバイスの処理負荷を最小限に抑えます。
    * フットプリントが小さいため、アプリストアに送信されるアプリパッケージのサイズを最小限に抑えます。
-
-Adobe Mobile SDK について詳しくは、[Experience ソリューション 用 Android SDK 4.x](/help/android/overview.md) および [Experience Cloud ソリューション 用 iOS SDK 4.x](/help/ios/overview.md) を参照してください。

@@ -6,9 +6,9 @@ title: アプリ内メッセージのトラブルシューティング
 topic-fix: Metrics
 uuid: 8813e8d8-bb1e-46ad-83cd-98ae68f73ce6
 exl-id: 6be5beef-3bde-49f8-9ec0-c5d32bd43045
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: dbe3af75010fbf5195a3f93fc43cb696aaa32b65
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '603'
 ht-degree: 100%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 100%
 
 ## Android でローカルの通知メッセージが動作しません。
 
-マニフェストにローカルの通知ブロードキャスト受信者が宣言されていることを確認します。詳しくは、「[アプリ内メッセージ](/help/android/messaging-main/messaging/messaging.md)」の手順 1 を参照してください。
+マニフェストにローカルの通知ブロードキャスト受信者が宣言されていることを確認します。
 
 ## メッセージが発行されているか確認したい場合
 
@@ -43,7 +43,7 @@ ht-degree: 100%
 
 ## 起動イベントをトリガーとして使用する場合
 
-起動イベントは、新規セッションでのみ実行されます。セッションの開始時期について詳しくは、[ADBMobile JSON config ](/help/ios/configuration/json-config/json-config.md) ファイルの `lifecycleTimeout` を参照してください。
+起動イベントは、新規セッションでのみ実行されます。
 
 ## メッセージをリモートで更新しましたがアプリで古いメッセージが表示されます。
 

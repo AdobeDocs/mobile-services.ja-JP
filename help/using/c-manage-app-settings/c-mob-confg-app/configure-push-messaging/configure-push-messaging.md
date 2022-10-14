@@ -6,9 +6,9 @@ title: プッシュメッセージの設定
 topic-fix: Metrics
 uuid: 6763858d-6046-4d36-87c0-cf3600a44fb1
 exl-id: d4989c31-2692-4062-8fae-d41c3e3c179b
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: dbe3af75010fbf5195a3f93fc43cb696aaa32b65
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '272'
 ht-degree: 100%
 
 ---
@@ -48,9 +48,4 @@ ht-degree: 100%
 
       有効な API キーを指定します。API キーの取得について詳しくは、「[APNS または FCM を使用するアプリ設定](/help/using/c-manage-app-settings/c-mob-confg-app/configure-push-messaging/configure-app-apns-gcm.md)」を参照してください。
 
-      詳しくは、次のトピックを参照してください。
-
-      * [Android でのプッシュメッセージ](/help/android/messaging-main/push-messaging/push-messaging.md)
-      * [iOS でのプッシュメッセージ](/help/ios/messaging-main/push-messaging/push-messaging.md)
-
-1. 「**[!UICONTROL 保存]**」をクリックします。
+2. 「**[!UICONTROL 保存]**」をクリックします。

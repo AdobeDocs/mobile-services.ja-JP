@@ -3,9 +3,9 @@ description: ポストバックでは、SDK によって収集されたデータ
 title: ポストバックの設定
 uuid: a026575c-057b-4868-b6c8-9514cbc32b4d
 exl-id: 99b27f16-303a-4853-bfdb-2066a53867bf
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: dbe3af75010fbf5195a3f93fc43cb696aaa32b65
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '421'
 ht-degree: 100%
 
 ---
@@ -16,11 +16,11 @@ ht-degree: 100%
 
 >[!IMPORTANT]
 >
->ポストバックを使用するには、4.6 以降の SDK をインストールする必要があります。詳しくは、「[Android - ポストバック](/help/android/analytics-main/postbacks/postbacks.md)」または「[iOS - ポストバック](/help/ios/analytics-main/postback/postback.md)」を参照してください。
+>ポストバックを使用するには、4.6 以降の SDK をインストールする必要があります。
 
 1. 目的のアプリの名前をクリックして、そのアプリ設定ページに移動し、ページ右上端の&#x200B;**[!UICONTROL ポストバックを管理]**&#x200B;リンクをクリックします。
-1. 「**[!UICONTROL ポストバックを作成]**」をクリックします。
-1. フィールドに次の情報を入力します。
+2. 「**[!UICONTROL ポストバックを作成]**」をクリックします。
+3. フィールドに次の情報を入力します。
 
    * **[!UICONTROL ポストバックのタイプ]**
 
@@ -32,7 +32,7 @@ ht-degree: 100%
 
    * **[!UICONTROL URL]**
 
-      有効なエンドポイント URL（および GET リクエストの必要に応じて適切なクエリーパラメーター）を指定します。この URL は、データ送信先（広告サーバーまたは独自のエンドポイント）から取得します。例：`https://my.server.com/?user=bob&amp;zip=90210&amp;c16=4.6.0-iOS&amp;c27=cln,132`。
+      有効なエンドポイント URL（および GET リクエストの必要に応じて適切なクエリーパラメーター）を指定します。この URL は、データ送信先（広告サーバーまたは独自のエンドポイント）から取得します。例：`https://example.com/?user=bob&amp;zip=90210&amp;c16=4.6.0-iOS&amp;c27=cln,132`。
 
    * **[!UICONTROL コンテキスト変数]**
 
@@ -53,7 +53,7 @@ ht-degree: 100%
    * **[!UICONTROL 特徴]**
    トリガーされたらメッセージが表示されるユーザーを指定します。オプションには、**[!UICONTROL セッションの長さ]**、**[!UICONTROL 初回起動日]**&#x200B;および&#x200B;**[!UICONTROL アプリ ID]** があります。
 
-1. 「**[!UICONTROL 保存]**」をクリックしてポストバックを作成し、**[!UICONTROL ポストバックを管理]**&#x200B;リストに追加します。
+4. 「**[!UICONTROL 保存]**」をクリックしてポストバックを作成し、**[!UICONTROL ポストバックを管理]**&#x200B;リストに追加します。
 
    将来的にポストバックをアクティブにするには、次のいずれかを実行します。
 

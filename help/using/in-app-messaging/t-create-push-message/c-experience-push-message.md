@@ -6,10 +6,10 @@ title: エクスペリエンス：プッシュメッセージ
 topic-fix: Metrics
 uuid: 1a8baf3e-9fea-452c-b0fc-4ba8ac270861
 exl-id: 9158487e-6ac5-4f17-a8ff-15de0360ab60
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: dbe3af75010fbf5195a3f93fc43cb696aaa32b65
 workflow-type: tm+mt
-source-wordcount: '763'
-ht-degree: 100%
+source-wordcount: '738'
+ht-degree: 95%
 
 ---
 
@@ -60,6 +60,7 @@ ht-degree: 100%
       >[!IMPORTANT]
       >
       >次の情報に留意してください。
+      >
       >* 以前のバージョンに送信されたリッチプッシュメッセージは、依然として送信されますが、テキストのみが表示されます。
       >* 現時点では所要時間のサポートはありません。
 
@@ -75,12 +76,7 @@ ht-degree: 100%
    * HTTPS のみ
 
 * **サイズ調整**
-   * 画像は、2：1 の形式である必要があります。そうしないと、切り抜かれます。
-
-リッチプッシュ通知の設定について詳しくは、次のコンテンツを参照してください。
-
-* [プッシュ通知の受信（Android）](/help/android/messaging-main/push-messaging/c-set-up-rich-push-notif-android.md)
-* [リッチプッシュ通知の受信（iOS）](/help/ios/messaging-main/push-messaging/c-set-up-rich-push-notif-ios.md)
+   * 画像は 2:1 形式である必要があります。そうしないと、切り抜かれます。
 
 エクスペリエンスページでプッシュメッセージを設定するには、次の手順を実行します。
 
@@ -88,7 +84,7 @@ ht-degree: 100%
 
    * **[!UICONTROL ペイロード：データ]**
 
-      プッシュ通知またはローカル通知経由でアプリに送信される JSON 形式のカスタムプッシュペイロードを指定します。Android および iOS の上限は 4 KB です。
+      プッシュ通知またはローカル通知経由でアプリに送信される JSON 形式のカスタムプッシュペイロードを指定します。 Android および iOS の上限は 4 KB です。
 
    * **[!UICONTROL Apple オプション：カテゴリ]**
 
@@ -102,7 +98,7 @@ ht-degree: 100%
 
       このオプションを選択して、メッセージが届くと、iOS はバックグラウンドでアプリを起動し、アプリがメッセージのペイロードに基づいてコードを実行できるようにします。詳しくは、[iOS Developer Library](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html#//apple_ref/doc/uid/TP40008194-CH8-SW1) の *Apple Push Notification Service* を参照してください。
 
-1. （オプション）次のアイコンをクリックして、メッセージのレイアウトをプレビューします。
+2. （オプション）次のアイコンをクリックして、メッセージのレイアウトをプレビューします。
 
    * **[!UICONTROL x 概要]**
 
@@ -125,11 +121,11 @@ ht-degree: 100%
       ユーザーのタブレットでメッセージをプレビューするには、![タブレットアイコン](assets/icon_tablet.png)をクリックします。
    プレビューパネルの下部に、前の手順で選択したオーディエンスの説明を表示できます。
 
-1. （**オプション**）「**[!UICONTROL テスト]**」をクリックして、指定したデバイスにテスト用のメッセージをプッシュします。
-1. サービスを選択し、メッセージのプッシュ先となる少なくとも 1 つのデバイスのプッシュトークンを入力します。
+3. （**オプション**）「**[!UICONTROL テスト]**」をクリックして、指定したデバイスにテスト用のメッセージをプッシュします。
+4. サービスを選択し、メッセージのプッシュ先となる少なくとも 1 つのデバイスのプッシュトークンを入力します。
 
    複数のデバイスにメッセージをプッシュするには、トークンをコンマ区切りリストで指定します。
 
-1. スケジュールオプションを設定します。
+5. スケジュールオプションを設定します。
 
    詳しくは、「[スケジュール：プッシュメッセージ](/help/using/in-app-messaging/t-create-push-message/c-schedule-push-message.md)」を参照してください。

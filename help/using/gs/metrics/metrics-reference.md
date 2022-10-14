@@ -6,9 +6,9 @@ title: モバイル指標およびディメンションのリファレンス
 topic-fix: Metrics
 uuid: 96170ae7-8553-4f3e-ae01-65e5b664adf4
 exl-id: ddfbf11e-a4c3-4d59-92b3-1d192dc3e7cd
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: dbe3af75010fbf5195a3f93fc43cb696aaa32b65
 workflow-type: tm+mt
-source-wordcount: '621'
+source-wordcount: '609'
 ht-degree: 100%
 
 ---
@@ -124,7 +124,7 @@ ht-degree: 100%
 
 * **デバイス名**
 
-   デバイス名が格納されます。iOS では、iOS デバイスを識別するコンマ区切りの 2 桁の文字列。最初の番号は、デバイスの世代を表します。次の番号は、デバイスファミリー内の個々のメンバーのバージョン番号です。一般的なデバイス名の完全なリストについては、[iOS デバイスのバージョン](/help/ios/reference/device-versions.md)を参照してください。
+   デバイス名が格納されます。iOS では、iOS デバイスを識別するコンマ区切りの 2 桁の文字列。最初の番号は、デバイスの世代を表します。次の番号は、デバイスファミリー内の個々のメンバーのバージョン番号です。
 
 * **通信事業者名**
 

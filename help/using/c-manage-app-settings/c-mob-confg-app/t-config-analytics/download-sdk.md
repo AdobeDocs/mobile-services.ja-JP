@@ -6,10 +6,10 @@ title: Mobile SDK およびツールのダウンロード
 topic-fix: Developer and implementation,Metrics
 uuid: 4af757f7-4e4d-4939-9b6a-49a29c220192
 exl-id: 34ec76fa-3bcb-4b77-9d1e-7160941deb44
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: dbe3af75010fbf5195a3f93fc43cb696aaa32b65
 workflow-type: tm+mt
-source-wordcount: '155'
-ht-degree: 100%
+source-wordcount: '128'
+ht-degree: 82%
 
 ---
 
@@ -27,9 +27,4 @@ ht-degree: 100%
 
 ## ネイティブライブラリ {#section_C2ADC3068D9F4EAEBE5B266852738C90}
 
-事前入力された設定ファイルを含むカスタマイズ済みパッケージをダウンロードできるように、Adobe Mobile Services のアプリを設定します。
-
-* [iOS の手順](/help/ios/getting-started/requirements.md)
-* [Android の手順](/help/android/getting-started/requirements.md)
-
-Windows Phone 8、Blackberry、Xamarin などのネイティブライブラリのドキュメントを確認するには、[Adobe Mobile Services](/help/using/home.md) の「*SDK ドキュメント*」の節を参照してください。.
+事前入力された設定ファイルを含むカスタマイズ済みパッケージをダウンロードできるように、AdobeMobile Services のアプリを設定します。

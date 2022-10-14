@@ -6,10 +6,10 @@ title: アプリの管理
 topic-fix: Metrics
 uuid: 0cc356c3-8457-40a7-8c97-7cbc68a5dc0c
 exl-id: 599fef94-c188-47f5-b9d6-25a7c8cb07bc
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: dbe3af75010fbf5195a3f93fc43cb696aaa32b65
 workflow-type: tm+mt
-source-wordcount: '1020'
-ht-degree: 91%
+source-wordcount: '1001'
+ht-degree: 92%
 
 ---
 
@@ -22,11 +22,6 @@ ht-degree: 91%
 * **標準変数および指標**
 
    各アプリには、買い物かごと購入アクティビティを追跡するための変数と指標が含まれています。一部の購入情報は処理ルールで処理できないので、SDK では、特別なコンテキストデータ「`"&&products"`」を提供しています。例えば、買い物かごへの追加、買い物かごからの削除、チェックアウト、注文件数などの変数を設定できます。コンテキストデータは、Adobe Analytics のデータにマッピングする必要があります。この変数がコンテキストデータからの単純なマッピングで設定される場合、マッピングのためのキーになります。変数が Analytics 管理ツールのより複雑なルールによって設定されている場合は、空のままにします。
-
-   これらの変数および指標について詳しくは、次を参照してください。
-
-   * [Android の製品変数](/help/android/analytics-main/products/products.md)
-   * [iOS の製品変数](/help/ios/analytics-main/products/products.md)
 
 * **カスタム変数**
 
@@ -47,7 +42,7 @@ ht-degree: 91%
    ある値がトラッキングコール（またはヒット）のプロパティに対して設定されている場合、値はそのコールにのみ適用されます。
 
 * この **[!UICONTROL カスタム変数]** （または eVar）は、「どれが該当するか」という問いに対する回答も提供します。 ただし、eVar値は、送信されたヒットにのみならず、値の有効期限が切れるか新しい値が設定されるまで、後続のヒットで送信された変数と指標にも適用できます。
-* **[!UICONTROL カスタムリスト変数（複数値変数）]**&#x200B;は、1 回のヒットの複数値をキャプチャできることを除いて、変数と同じように動作します。詳しくは、 [リスト](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/list.html?lang=en) 変数については、 Adobe Analyticsのドキュメントを参照してください。
+* **[!UICONTROL カスタムリスト変数（複数値変数）]**&#x200B;は、1 回のヒットの複数値をキャプチャできることを除いて、変数と同じように動作します。詳しくは、 [リスト](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/list.html?lang=ja) 変数については、 Adobe Analyticsのドキュメントを参照してください。
 
 次のマッピングは、Mobile Services で作成されたものとして Analytics で表示されます。
 

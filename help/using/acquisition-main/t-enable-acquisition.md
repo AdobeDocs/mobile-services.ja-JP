@@ -6,9 +6,9 @@ title: 獲得の設定
 topic-fix: Metrics
 uuid: e996e43e-8a77-47a3-a6fb-53f676f92bef
 exl-id: 3a12dfab-70d0-41e6-8d4e-5aba21bb8606
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: dbe3af75010fbf5195a3f93fc43cb696aaa32b65
 workflow-type: tm+mt
-source-wordcount: '195'
+source-wordcount: '183'
 ht-degree: 100%
 
 ---
@@ -32,4 +32,4 @@ ht-degree: 100%
 
 1. アプリの新しい SDK 設定ファイルをダウンロードして使用します。
 
-   **iOS** で獲得が正常に設定されました。**Android** で獲得を有効にするには、「[モバイルの獲得の追跡](/help/android/acquisition-main/acquisition.md)」に記載された手順を実行します。
+   **iOS** で獲得が正常に設定されました。

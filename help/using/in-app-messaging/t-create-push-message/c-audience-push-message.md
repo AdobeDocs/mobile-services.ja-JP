@@ -6,9 +6,9 @@ title: オーディエンス：プッシュメッセージ用のオーディエ�
 topic-fix: Metrics
 uuid: efd410e7-3b6c-4cf4-a26f-b11688adc491
 exl-id: d1062a76-2e72-4649-8497-58617a7a47cb
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: dbe3af75010fbf5195a3f93fc43cb696aaa32b65
 workflow-type: tm+mt
-source-wordcount: '976'
+source-wordcount: '958'
 ht-degree: 98%
 
 ---
@@ -84,11 +84,6 @@ Adobe Mobile Services では、マーケターはプラットフォームごと�
       これは、SDK がプッシュメッセージオプトイン eVar に対して `True` の値を送信していることを意味します。
 
    * デバイスに有効なデバイストークンがあっても、Adobe Analytics にオプトインフラグがない限り、メッセージはデバイスにプッシュされません。
-
-   * プッシュメッセージのトラブルシューティングについては、次を参照してください。
-
-      * [iOS でのプッシュメッセージ](/help/ios/messaging-main/push-messaging/push-messaging.md)
-      * [Android でのプッシュメッセージ](/help/android/messaging-main/push-messaging/push-messaging.md)
 
 2. 次のフィールドに情報を入力します。
 
