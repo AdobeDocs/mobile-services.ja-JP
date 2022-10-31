@@ -6,7 +6,7 @@ title: プッシュメッセージの設定
 topic-fix: Metrics
 uuid: 6763858d-6046-4d36-87c0-cf3600a44fb1
 exl-id: d4989c31-2692-4062-8fae-d41c3e3c179b
-source-git-commit: dbe3af75010fbf5195a3f93fc43cb696aaa32b65
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '272'
 ht-degree: 100%
@@ -14,6 +14,8 @@ ht-degree: 100%
 ---
 
 # プッシュメッセージの設定 {#configure-push-messaging}
+
+{#eol}
 
 この情報を使用すると、新しいアプリの作成中または既存のアプリを編集する際に、アプリ設定ページでプッシュサービスオプションを設定するのに役立ちます。
 

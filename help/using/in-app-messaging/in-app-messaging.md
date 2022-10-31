@@ -6,7 +6,7 @@ title: メッセージ
 topic-fix: Metrics
 uuid: e32d3e35-2d09-4ddf-8919-75dc895abcb3
 exl-id: e6d076fc-3176-4591-8388-314b936c58cd
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '459'
 ht-degree: 100%
@@ -14,6 +14,8 @@ ht-degree: 100%
 ---
 
 # メッセージ {#messaging}
+
+{#eol}
 
 アプリ内メッセージおよびプッシュメッセージを作成、管理およびレポートできます。
 

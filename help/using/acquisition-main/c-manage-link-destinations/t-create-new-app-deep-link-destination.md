@@ -6,7 +6,7 @@ title: 新しいリンク先の作成
 topic-fix: Metrics
 uuid: 390e3dea-0221-4f97-980d-a90ca9f162fa
 exl-id: 2d2f5938-1461-43e2-a375-45c18afc9d5a
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 100%
@@ -14,6 +14,8 @@ ht-degree: 100%
 ---
 
 # 新しいリンク先の作成 {#create-new-link-destination}
+
+{#eol}
 
 Web またはアプリ内のディープリンクにユーザーを導く、新しいリンク先を作成できます。
 

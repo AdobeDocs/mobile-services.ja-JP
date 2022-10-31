@@ -6,7 +6,7 @@ title: エクスペリエンス：プッシュメッセージ
 topic-fix: Metrics
 uuid: 1a8baf3e-9fea-452c-b0fc-4ba8ac270861
 exl-id: 9158487e-6ac5-4f17-a8ff-15de0360ab60
-source-git-commit: dbe3af75010fbf5195a3f93fc43cb696aaa32b65
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '738'
 ht-degree: 95%
@@ -14,6 +14,8 @@ ht-degree: 95%
 ---
 
 # エクスペリエンス：プッシュメッセージ {#experience-push-message}
+
+{#eol}
 
 名前、メッセージテキストおよび宛先オプションを含む、プッシュメッセージおよびリッチプッシュメッセージのエクスペリエンスオプションを設定できます。iOS デバイス用のペイロードオプションやカスタムオプションなど、高度なオプションを設定することもできます。
 

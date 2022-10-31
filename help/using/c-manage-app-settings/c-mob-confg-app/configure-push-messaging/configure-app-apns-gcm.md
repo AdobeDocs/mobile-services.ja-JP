@@ -6,7 +6,7 @@ title: APNS または FCM を使用するアプリ設定
 topic-fix: Metrics
 uuid: fa411f2a-ba47-4499-bbe5-1aedef6b49ad
 exl-id: 9064e1f3-f176-4699-b1e6-90f29e1af0d3
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '629'
 ht-degree: 100%
@@ -14,6 +14,8 @@ ht-degree: 100%
 ---
 
 # APNS または FCM を使用するアプリ設定 {#configure-app-to-use-apns-or-fcm}
+
+{#eol}
 
 Apple Push Notification Service（APNS）または Firebase Cloud Messaging（FCM）を使用するようにアプリを設定できます。
 

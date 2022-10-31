@@ -6,7 +6,7 @@ title: レポートへのシリーズ（指標）の追加
 topic-fix: Reports,Metrics
 uuid: 84fdfb1f-70e6-4c02-9b3b-526e9c924f74
 exl-id: 1b1356c6-7f62-4b88-996a-09ed33b19c9d
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '285'
 ht-degree: 100%
@@ -14,6 +14,8 @@ ht-degree: 100%
 ---
 
 # レポートへのシリーズ（指標）の追加 {#add-series-metrics-to-reports}
+
+{#eol}
 
 この情報は、追加のシリーズ（指標）や、異なるレポートスイートのアプリを追加して組み込みのレポートをカスタマイズし、データを比較するのに役立ちます。
 

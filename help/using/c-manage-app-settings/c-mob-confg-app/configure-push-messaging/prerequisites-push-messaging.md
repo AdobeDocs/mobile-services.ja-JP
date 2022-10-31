@@ -6,7 +6,7 @@ title: プッシュメッセージを有効にするための前提条件
 topic-fix: Metrics
 uuid: 194e6e07-b794-4152-a838-a4125c3292d4
 exl-id: 543155a4-f687-48a6-8690-5c8da8490c62
-source-git-commit: dbe3af75010fbf5195a3f93fc43cb696aaa32b65
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '618'
 ht-degree: 95%
@@ -14,6 +14,8 @@ ht-degree: 95%
 ---
 
 # プッシュメッセージを有効にするための前提条件 {#prerequisites-to-enable-push-messaging}
+
+{#eol}
 
 アプリケーションでプッシュメッセージを設定する前に、いくつかのタスクを完了する必要があります。
 

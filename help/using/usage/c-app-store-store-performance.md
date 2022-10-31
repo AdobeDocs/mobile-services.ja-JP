@@ -6,7 +6,7 @@ title: アプリストアの概要レポート
 topic-fix: Metrics
 uuid: ac066f31-ec4b-4b67-b839-780c2cd1574e
 exl-id: da8663d6-9da8-440b-b7b8-06ff11e74b9f
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '473'
 ht-degree: 100%
@@ -14,6 +14,8 @@ ht-degree: 100%
 ---
 
 # アプリストアの概要レポート {#app-store-overview-report}
+
+{#eol}
 
 **[!UICONTROL アプリストアの概要]**&#x200B;レポートは、アプリストア指標のスナップショットを提供します（アプリストア指標には、ダウンロード数、アプリ内購入、アプリストア評価平均、ダウンロードの売上高、アプリ内での売上高、国別ダウンロード数、アプリストア別ダウンロード数、名前別アプリ内購入数が含まれます）。
 

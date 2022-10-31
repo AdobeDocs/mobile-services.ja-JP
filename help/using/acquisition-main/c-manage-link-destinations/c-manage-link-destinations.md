@@ -6,7 +6,7 @@ title: リンク先の作成と管理
 topic-fix: Metrics
 uuid: 43930e3a-6a11-40c6-8a61-6732a673dac7
 exl-id: 53e9f970-e53c-4c0d-9214-abb01a9b144b
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '131'
 ht-degree: 100%
@@ -14,6 +14,8 @@ ht-degree: 100%
 ---
 
 # リンク先の作成と管理 {#create-and-manage-link-destinations}
+
+{#eol}
 
 リンク先を管理ページで、リンク先を作成、編集、アーカイブ／アーカイブ解除および削除できます。これらのリンク先は、マーケティングリンク、プッシュ通知またはアプリ内メッセージを構築する際に呼び出すことができます。
 

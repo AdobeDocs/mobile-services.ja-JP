@@ -6,7 +6,7 @@ title: Digital Publishing Suite の概要
 topic-fix: Metrics
 uuid: ca335891-5d73-47dc-811f-374a0844109f
 exl-id: 5f5e09a3-c634-480c-863d-f9a34cd01464
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '114'
 ht-degree: 100%
@@ -14,6 +14,8 @@ ht-degree: 100%
 ---
 
 # Digital Publishing Suite の概要 {#digital-publishing-solution}
+
+{#eol}
 
 Digital Publishing Suite（DPS）のユーザーが利用できるレポートを表示できます。
 

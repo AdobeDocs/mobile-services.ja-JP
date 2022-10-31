@@ -6,7 +6,7 @@ title: アプリストアからのアプリの追加
 topic-fix: Metrics
 uuid: 94c8a924-5156-4742-8b5b-88d9ea13bfed
 exl-id: 874a132b-42d3-4074-8f14-22310fa60ec0
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '138'
 ht-degree: 100%
@@ -14,6 +14,8 @@ ht-degree: 100%
 ---
 
 # アプリストアからのアプリの追加 {#add-an-app-from-an-app-store}
+
+{#eol}
 
 Apple App Store または Google Play からアプリを追加できます。
 

@@ -6,7 +6,7 @@ title: ソーシャルシェア
 topic-fix: Metrics
 uuid: 900e58aa-c1d3-4590-af44-df67575214a4
 exl-id: 3f396c6d-dae4-4419-84fd-884a9e87dab1
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '118'
 ht-degree: 100%
@@ -14,6 +14,8 @@ ht-degree: 100%
 ---
 
 # ソーシャルシェア{#social-sharing}
+
+{#eol}
 
 **[!UICONTROL ソーシャルシェア]**&#x200B;レポートには、既存のデータのサンバーストチャートが表示されます。このレポートは、DPS のユーザーのみが利用できます。
 
