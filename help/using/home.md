@@ -11,7 +11,7 @@ ht-degree: 46%
 
 ---
 
-# AdobeMobile Services {#adobe-mobile-services}
+# Adobe Mobile Services {#adobe-mobile-services}
 
 このガイドでは、Adobe Mobile Services のテクニカルドキュメントとセルフヘルプについて説明します。Adobe Mobile Services には、モバイルアプリケーションのユーザーエンゲージメントを把握して改善できるよう、Adobe Experience Cloud 全体のモバイルアプリケーション用のモバイルマーケティング機能がまとめられています。
 

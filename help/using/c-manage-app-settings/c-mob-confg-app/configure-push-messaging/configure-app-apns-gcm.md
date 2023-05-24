@@ -69,7 +69,7 @@ Apple Push Notification Service（APNS）または Firebase Cloud Messaging（FC
 
 1. 後で使用するために、**[!UICONTROL レガシーサーバーキー]**&#x200B;と&#x200B;**[!UICONTROL 送信者 ID]** をコピーします。
 
-   例：
+   以下に例を示します。
 
    ```
    - Legacy server key = AIzaSyC6FNgsCOpBL5eXhDvwf8979mWba6x7Roo

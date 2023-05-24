@@ -9,7 +9,7 @@ exl-id: a9b5c98d-77c1-4a40-96e5-f9e234d55ec5
 source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '614'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 96%
 
       次のプリセットタグを使用できます。
 
-      * **カスタムコンテキスト**：データキーと値を指定します。カスタムコンテキストデータを追加する場合、処理ルールを作成する必要があります。詳しくは、 [処理ルールの概要](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html) (Adobe Analyticsドキュメント ) を参照してください。
+      * **カスタムコンテキスト**：データキーと値を指定します。カスタムコンテキストデータを追加する場合、処理ルールを作成する必要があります。詳しくは、 [処理ルールの概要](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html?lang=ja) (Adobe Analyticsドキュメント ) を参照してください。
 
       * **ソース**：「ニュースレター」または「ホームページ」など、元のリファラーを指定します。
 

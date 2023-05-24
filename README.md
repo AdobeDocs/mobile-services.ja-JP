@@ -21,7 +21,7 @@ ht-degree: 100%
 
 ### 軽微な変更
 
-軽微な変更をコントリビューションする場合には、目的の記事にアクセスし、**Edit** リンクをクリックしてください。当該記事の GitHub ソースが開きます。その後、GitHub UI を使用して更新を行います。詳しくは、一般的[アドビドキュメントのコントリビューターガイド](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)を参照してください。
+軽微な変更をコントリビューションする場合には、目的の記事にアクセスし、**Edit** リンクをクリックしてください。当該記事の GitHub ソースが開きます。その後、GitHub UI を使用して更新を行います。詳しくは、一般的[アドビドキュメントのコントリビューターガイド](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=ja)を参照してください。
 
 このリポジトリー内のドキュメントやコード例に対して提案される軽微な変更や補足説明には、アドビの利用規約が適用されます。
 
@@ -41,13 +41,13 @@ If you submit a pull request with significant changes to documentation and code 
 
 コミュニティのコントリビューターは、基本的な編集をするときには GitHub の UI を使用し、大きな変更を加えるときにはリポジトリーをフォークします。
 
-詳しくは、[アドビドキュメントのコントリビューターガイド](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)を参照してください。
+詳しくは、[アドビドキュメントのコントリビューターガイド](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=ja)を参照してください。
 
 ## Markdown を使用してトピックをフォーマットする方法
 
 このリポジトリーの記事はいずれも GitHub Flavored Markdown（GFM）を使用して書かれています。Markdown について詳しくない場合は、以下を参照してください。
 
-* [Markdown の基本](https://help.github.com/articles/markdown-basics/)（英語）
+* [Markdown の基本](https://docs.github.com/ja/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github)（英語）
 * [印刷可能な Markdown のクイックリファレンス](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)（英語）
 
 ## ラベル

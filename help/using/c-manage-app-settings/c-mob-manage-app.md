@@ -9,7 +9,7 @@ exl-id: 599fef94-c188-47f5-b9d6-25a7c8cb07bc
 source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '1001'
-ht-degree: 92%
+ht-degree: 93%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 92%
 
 **[!UICONTROL アプリ設定]**／**[!UICONTROL 変数と指標を管理]**／**[!UICONTROL カスタム変数]**&#x200B;をクリックします。
 
-これらのマッピングは、 [処理ルール](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html) はAdobe Analyticsで使用します。
+これらのマッピングは、 [処理ルール](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html?lang=ja) はAdobe Analyticsで使用します。
 
 ![コンテキストデータマッピング](assets/custom_data_content.png)
 

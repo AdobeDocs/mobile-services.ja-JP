@@ -68,7 +68,7 @@ Analytics 管理者は、ユーザーグループを管理したり、権限を�
    * ロケーションレポートを有効にする
    * 変数および指標の作成/更新/削除
 
-### モバイルアプリ管理者 権限
+### モバイルアプリ管理者 permissions
 
 * すべてのユーザー権限
 * 既存のレポートスイートを使用したアプリの作成
@@ -91,7 +91,7 @@ Analytics 管理者は、ユーザーグループを管理したり、権限を�
 グループとユーザーについて詳しくは、 Adobe Analyticsのドキュメントの次のコンテンツを参照してください。
 
 * [ユーザーグループ設定（レガシー）](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html?lang=ja)
-* [グループにユーザーを追加する](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html)
+* [グループにユーザーを追加する](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html?lang=ja)
 
 ### Mobile Services ユーザー
 

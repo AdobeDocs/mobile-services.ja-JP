@@ -28,7 +28,7 @@ Adobe Mobile Services は、次の要素で構成されています。
 
 現在、モバイルアプリの状況は、スマートフォンが初めてローンチされたときとは大きく異なっています。モバイルアプリを使用して顧客をブランドに結び付けるだけでは不十分です。今日では、様々なチャネルをまたいで、まとまりのある魅力的な顧客エクスペリエンスを推進し、最も忠実で価値の高い顧客を惹きつける戦略的なタッチポイントとして、モバイルアプリを使用する必要があります。しかし、これらのユーザーがアプリを操作できるようにするには、説得力のあるコンテンツ、コンテキスト通知、インテリジェントなパーソナライゼーション、統合されたアプリ分析などが必要です。
 
-## AdobeMobile Services UI {#mobile-services-ui}
+## Adobe Mobile Services UI {#mobile-services-ui}
 
 Mobile Services UI は次のブラウザーでサポートされています。
 
@@ -113,7 +113,7 @@ Adobe Mobile では、次のタイプのメッセージを設定できます。
 
 *最適化*&#x200B;では、コンバージョン（購読、コマース、広告収入など）を最適化して、顧客維持を強化します。アプリでのユーザーエクスペリエンスを最適化すると、コンテンツをパーソナライズして ROI とコンバージョンを最大限に高めることができます。
 
-テストとAdobe Targetについて詳しくは、 [Adobe Target](https://docs.adobe.com/content/help/ja-JP/experience-cloud/user-guides/home.translate.html) ドキュメント。
+テストとAdobe Targetについて詳しくは、 [Adobe Target](https://experienceleague.adobe.com/docs/target/using/target-home.html?lang=ja) ドキュメント。
 
 ### 地域ターゲット設定
 
@@ -123,7 +123,7 @@ Adobe Target for Mobile アプリは、Adobe Analytics で利用できる強化�
 
 場所について詳しくは、 [場所](/help/using/location/c-location-overview.md).
 
-## Adobeモバイル SDK {#mobile-services-sdk}
+## Adobe Mobile SDK {#mobile-services-sdk}
 
 アドビでは、これらすべての領域にわたる顧客エンゲージメントを加速するエンドツーエンドのモバイルマーケティングソリューションを提供しています。1 つの SDK で Adobe Analytics、Adobe Campaign、Adobe Audience Manager の機能にアクセスできるので、複数の異なる SDK の管理に伴う技術的なコストを削減できます。
 

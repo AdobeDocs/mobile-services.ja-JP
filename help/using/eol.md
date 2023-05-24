@@ -5,7 +5,7 @@ exl-id: c5f44341-7b87-4530-b86e-17e2911a7959
 source-git-commit: c349c0f83df9d42b61a419ae71d6d2b67c5f7819
 workflow-type: tm+mt
 source-wordcount: '421'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
 
@@ -29,7 +29,7 @@ Adobeがモバイルマーケティング機能を拡大し続けるにつれ、
 
 ## Mobile Services で作成された既存の処理ルールはどうなりますか？
 
-[処理ルール](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html) Mobile Services UI で作成または生成されたデータは、Mobile Services の提供終了日の前に自動的にAdobe Analyticsに移行されます。 移行された処理ルールは、Adobe Analyticsの他の処理ルールと同様に動作します。処理ルールは自由に表示または編集できます。 この移行にユーザー操作は必要ありません。
+[処理ルール](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html?lang=ja) Mobile Services UI で作成または生成されたデータは、Mobile Services の提供終了日の前に自動的にAdobe Analyticsに移行されます。 移行された処理ルールは、Adobe Analyticsの他の処理ルールと同様に動作します。処理ルールは自由に表示または編集できます。 この移行にユーザー操作は必要ありません。
 
 Mobile Services の終了後、すべての処理ルールロジックは、通常、の使用を含め、Adobe Analytics内でのみ処理されます。 [コンテキストデータ変数](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/contextdata.html?lang=ja).
 
