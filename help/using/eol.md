@@ -1,11 +1,10 @@
 ---
 title: AdobeMobile Services の提供終了に関する FAQ
 description: AdobeMobile Services の提供終了のお知らせに関するよくある質問への回答を紹介します。
-exl-id: c5f44341-7b87-4530-b86e-17e2911a7959
-source-git-commit: c349c0f83df9d42b61a419ae71d6d2b67c5f7819
+source-git-commit: 0a4e0c9e6172231d8a9f9b561d0a7b7fb230473a
 workflow-type: tm+mt
 source-wordcount: '421'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -39,7 +38,7 @@ Adobeでは、組織の使用例に応じて、3 つのトランジションパ�
 
 1. **アプリ内メッセージおよびプッシュ通知**:Adobeは、メッセージングワークフローをAdobe Journey Optimizerに移行できます。 この製品を使用すると、モバイルメッセージを含め、カスタマージャーニー全体にわたって、組織がエクスペリエンスを最適化およびパーソナライズするのに役立ちます。
 1. **獲得とディープリンク**:獲得とディープリンクは、Exchange Premier Partners プログラムを通じてAdobeで提供されます。 Adobeのパートナーシップチームは、お客様のニーズに最適なソリューションを確実に見つけるために、適切な紹介を行うことができます。
-1. **Places Service**:Places Service は無料の位置情報機能を提供します。 詳しくは、 [Places Service ドキュメント](https://experienceleague.adobe.com/docs/places/using/home.html).
+1. **Places Service**:Places Service は無料の位置情報機能を提供します。 詳しくは、 [Places Service ドキュメント](https://experienceleague.adobe.com/docs/places/using/home.html?lang=ja).
 
 ## 質問がある場合は、どこに移動できますか？
 
